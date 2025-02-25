@@ -6,7 +6,7 @@ env:
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -43,6 +43,9 @@ jobs:
         with:
           html_path: ${{ env.PUBLISH_DIR }}/index.html
           base_href: /SlimeIMWiki/
+          
+      - name: Clone file
+        run: cp "${{ env.PUBLISH_DIR }}/index.html" "${{ env.PUBLISH_DIR }}/404.html"
         
       - name: Setup Pages
         uses: actions/configure-pages@v5

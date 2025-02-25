@@ -24,7 +24,7 @@
                         Pages
                     </BarDropdownToggle>
                     <BarDropdownMenu>
-                        <BarDropdownItem To="/simple-form">Simple Form</BarDropdownItem>
+                        <BarDropdownItem To="simple-form">Simple Form</BarDropdownItem>
                     </BarDropdownMenu>
                 </BarDropdown>
             </BarItem>
@@ -37,7 +37,7 @@
                         Apps
                     </BarDropdownToggle>
                     <BarDropdownMenu>
-                        <BarDropdownItem To="/apps/todo">
+                        <BarDropdownItem To="apps/todo">
                             Todo
                         </BarDropdownItem>
                     </BarDropdownMenu>
@@ -50,6 +50,6 @@
 @code {
     private bool pagesBarVisible = true;
 
-    RenderFragment customIcon = @<img src="/brand-logo.png" style="width:32px; height: 32px"/>;
+    RenderFragment customIcon = @<img src="brand-logo.png" style="width:32px; height: 32px"/>;
 
 }
