@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Physical",
+		"icon": "battle/attack_types/physical.png"
+	},
+	{
+		"name": "Magic",
+		"icon": "battle/attack_types/magic.png"
+	}
+]

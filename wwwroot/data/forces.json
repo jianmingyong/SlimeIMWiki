@@ -1,0 +1,182 @@
+[
+	{
+		"name": "Otherworlder",
+		"category": "Tribe",
+		"icon": "forces/otherworlder.png"
+	},
+	{
+		"name": "Ogre's Pride",
+		"category": "Tribe",
+		"icon": "forces/ogres_pride.png"
+	},
+	{
+		"name": "Primal Demon",
+		"category": "Tribe",
+		"icon": "forces/primal_demon.png"
+	},
+	{
+		"name": "Dragon Haki",
+		"category": "Tribe",
+		"icon": "forces/dragon_haki.png"
+	},
+	{
+		"name": "Lycanthrope's Pride",
+		"category": "Tribe",
+		"icon": "forces/lycanthropes_pride.png"
+	},
+	{
+		"name": "Heart of a Hero",
+		"category": "Skill/Personality",
+		"icon": "forces/heart_of_a_hero.png"
+	},
+	{
+		"name": "Wielder of Magic",
+		"category": "Skill/Personality",
+		"icon": "forces/wielder_of_magic.png"
+	},
+	{
+		"name": "Commander",
+		"category": "Skill/Personality",
+		"icon": "forces/commander.png"
+	},
+	{
+		"name": "Stern of Spirit",
+		"category": "Skill/Personality",
+		"icon": "forces/stern_of_spirit.png"
+	},
+	{
+		"name": "Schemer",
+		"category": "Skill/Personality",
+		"icon": "forces/schemer.png"
+	},
+	{
+		"name": "Wholehearted Devotion",
+		"category": "Skill/Personality",
+		"icon": "forces/wholehearted_devotion.png"
+	},
+	{
+		"name": "Shizu's Will",
+		"category": "Skill/Personality",
+		"icon": "forces/shizus_will.png"
+	},
+	{
+		"name": "Hyper Heart",
+		"category": "Skill/Personality",
+		"icon": "forces/hyper_heart.png"
+	},
+	{
+		"name": "Tempest Elite",
+		"category": "Organization",
+		"icon": "forces/tempest_elite.png"
+	},
+	{
+		"name": "Ten Great Demon Lords",
+		"category": "Organization",
+		"icon": "forces/ten_great_demon_lords.png"
+	},
+	{
+		"name": "Octagram Demon Lord",
+		"category": "Organization",
+		"icon": "forces/octagram_demon_lord.png"
+	},
+	{
+		"name": "Antagonist",
+		"category": "Organization",
+		"icon": "forces/antagonist.png"
+	},
+	{
+		"name": "Adventurer",
+		"category": "Organization",
+		"icon": "forces/adventurer.png"
+	},
+	{
+		"name": "Festive Memories",
+		"category": "Event/Theme",
+		"icon": "forces/festive_memories.png"
+	},
+	{
+		"name": "New Year's Blessing",
+		"category": "Event/Theme",
+		"icon": "forces/new_years_blessing.png"
+	},
+	{
+		"name": "Valentine",
+		"category": "Event/Theme",
+		"icon": "forces/valentine.png"
+	},
+	{
+		"name": "Goddess of Destiny",
+		"category": "Event/Theme",
+		"icon": "forces/goddess_of_destiny.png"
+	},
+	{
+		"name": "Summer Memories",
+		"category": "Event/Theme",
+		"icon": "forces/summer_memories.png"
+	},
+	{
+		"name": "Otherworld Legend",
+		"category": "Event/Theme",
+		"icon": "forces/otherworld_legend.png"
+	},
+	{
+		"name": "Fount of Wisdom",
+		"category": "Event/Theme",
+		"icon": "forces/fount_of_wisdom.png"
+	},
+	{
+		"name": "World of Fantasy",
+		"category": "Event/Theme",
+		"icon": "forces/world_of_fantasy.png"
+	},
+	{
+		"name": "Warrior's Mind",
+		"category": "Event/Theme",
+		"icon": "forces/warriors_mind.png"
+	},
+	{
+		"name": "Visions of Coleus",
+		"category": "Event/Theme",
+		"icon": "forces/visions_of_coleus.png"
+	},
+	{
+		"name": "Flashback Beatdown Emissary",
+		"category": "Event/Theme",
+		"icon": "forces/flashback_beatdown_emissary.png"
+	},
+	{
+		"name": "Pretty Sparkle",
+		"category": "Event/Theme",
+		"icon": "forces/pretty_sparkle.png"
+	},
+	{
+		"name": "Exalted Champions",
+		"category": "Event/Theme",
+		"icon": "forces/exalted_champions.png"
+	},
+	{
+		"name": "Determination to Prosper",
+		"category": "Event/Theme",
+		"icon": "forces/determination_to_prosper.png"
+	},
+	{
+		"name": "Protector of Peace",
+		"category": "Event/Theme",
+		"icon": "forces/protector_of_peace.png"
+	},
+	{
+		"name": "Divine General",
+		"category": "Event/Theme",
+		"icon": "forces/divine_general.png"
+	},
+	{
+		"name": "Tournament Stalwart",
+		"category": "Event/Theme",
+		"icon": "forces/tournament_stalwart.png"
+	},
+	{
+		"name": "Octagram Bazaar",
+		"category": "Other",
+		"icon": "forces/octagram_bazaar.png"
+	}
+]

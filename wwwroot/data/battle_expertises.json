@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Katana",
+		"icon": "battle/expertises/katana.png"
+	},
+	{
+		"name": "Sword",
+		"icon": "battle/expertises/sword.png"
+	},
+	{
+		"name": "Greatsword",
+		"icon": "battle/expertises/greatsword.png"
+	},
+	{
+		"name": "Lance",
+		"icon": "battle/expertises/lance.png"
+	},
+	{
+		"name": "Hammer",
+		"icon": "battle/expertises/hammer.png"
+	},
+	{
+		"name": "Fist",
+		"icon": "battle/expertises/fist.png"
+	},
+	{
+		"name": "Magic Tome",
+		"icon": "battle/expertises/magic_tome.png"
+	}
+]

@@ -1,0 +1,58 @@
+[
+	{
+		"name": "Fire",
+		"icon": "battle/attributes/fire.png"
+	},
+	{
+		"name": "Fire+",
+		"icon": "battle/attributes/fire_attribute_unbound.png"
+	},
+	{
+		"name": "Water",
+		"icon": "battle/attributes/water.png"
+	},
+	{
+		"name": "Water+",
+		"icon": "battle/attributes/water_attribute_unbound.png"
+	},
+	{
+		"name": "Wind",
+		"icon": "battle/attributes/wind.png"
+	},
+	{
+		"name": "Wind+",
+		"icon": "battle/attributes/wind_attribute_unbound.png"
+	},
+	{
+		"name": "Space",
+		"icon": "battle/attributes/space.png"
+	},
+	{
+		"name": "Space+",
+		"icon": "battle/attributes/space_attribute_unbound.png"
+	},
+	{
+		"name": "Earth",
+		"icon": "battle/attributes/earth.png"
+	},
+	{
+		"name": "Earth+",
+		"icon": "battle/attributes/earth_attribute_unbound.png"
+	},
+	{
+		"name": "Light",
+		"icon": "battle/attributes/light.png"
+	},
+	{
+		"name": "Light+",
+		"icon": "battle/attributes/light_attribute_unbound.png"
+	},
+	{
+		"name": "Dark",
+		"icon": "battle/attributes/dark.png"
+	},
+	{
+		"name": "Dark+",
+		"icon": "battle/attributes/dark_attribute_unbound.png"
+	}
+]

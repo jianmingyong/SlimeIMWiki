@@ -1,0 +1,114 @@
+[
+	{
+		"name": "Fire",
+		"icon": "protection/attributes/fire.png"
+	},
+	{
+		"name": "Fire+",
+		"icon": "protection/attributes/fire_attribute_unbound.png"
+	},
+	{
+		"name": "Water",
+		"icon": "protection/attributes/water.png"
+	},
+	{
+		"name": "Water+",
+		"icon": "protection/attributes/water_attribute_unbound.png"
+	},
+	{
+		"name": "Wind",
+		"icon": "protection/attributes/wind.png"
+	},
+	{
+		"name": "Wind+",
+		"icon": "protection/attributes/wind_attribute_unbound.png"
+	},
+	{
+		"name": "Space",
+		"icon": "protection/attributes/space.png"
+	},
+	{
+		"name": "Space+",
+		"icon": "protection/attributes/space_attribute_unbound.png"
+	},
+	{
+		"name": "Earth",
+		"icon": "protection/attributes/earth.png"
+	},
+	{
+		"name": "Earth+",
+		"icon": "protection/attributes/earth_attribute_unbound.png"
+	},
+	{
+		"name": "Light",
+		"icon": "protection/attributes/light.png"
+	},
+	{
+		"name": "Light+",
+		"icon": "protection/attributes/light_attribute_unbound.png"
+	},
+	{
+		"name": "Dark",
+		"icon": "protection/attributes/dark.png"
+	},
+	{
+		"name": "Dark+",
+		"icon": "protection/attributes/dark_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Fire",
+		"icon": "protection/attributes/anti_fire.png"
+	},
+	{
+		"name": "Anti Fire+",
+		"icon": "protection/attributes/anti_fire_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Water",
+		"icon": "protection/attributes/anti_water.png"
+	},
+	{
+		"name": "Anti Water+",
+		"icon": "protection/attributes/anti_water_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Wind",
+		"icon": "protection/attributes/anti_wind.png"
+	},
+	{
+		"name": "Anti Wind+",
+		"icon": "protection/attributes/anti_wind_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Space",
+		"icon": "protection/attributes/anti_space.png"
+	},
+	{
+		"name": "Anti Space+",
+		"icon": "protection/attributes/anti_space_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Earth",
+		"icon": "protection/attributes/anti_earth.png"
+	},
+	{
+		"name": "Anti Earth+",
+		"icon": "protection/attributes/anti_earth_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Light",
+		"icon": "protection/attributes/anti_light.png"
+	},
+	{
+		"name": "Anti Light+",
+		"icon": "protection/attributes/anti_light_attribute_unbound.png"
+	},
+	{
+		"name": "Anti Dark",
+		"icon": "protection/attributes/anti_dark.png"
+	},
+	{
+		"name": "Anti Dark+",
+		"icon": "protection/attributes/anti_dark_attribute_unbound.png"
+	}
+]
