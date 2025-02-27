@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>SlimeIMWiki</title>
+
+    <title>SlimeIM Wiki</title>
+
     <base href="/"/>
 
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -14,15 +16,32 @@
     <link href="_content/Blazorise/blazorise.min.css?v=1.7.0.0" rel="stylesheet"/>
     <link href="_content/Blazorise.Bootstrap5/blazorise.bootstrap5.min.css?v=1.7.0.0" rel="stylesheet"/>
 
-    <link href="SlimeIMWiki.Styles.css" rel="stylesheet"/>
     <link href="css/blazor-ui.css" rel="stylesheet"/>
+
+    <style>
+        div.loading {
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation-name: slime_loading;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slime_loading {
+            0% { background-image: url("image/loading/slime1.png"); }
+            25% { background-image: url("image/loading/slime2.png"); }
+            50% { background-image: url("image/loading/slime3.png"); background-position-y: 45% }
+            75% { background-image: url("image/loading/slime4.png"); }
+            100% { background-image: url("image/loading/slime5.png"); }
+        }
+    </style>
 </head>
 
 <body>
 <div id="app">
-    <div class="loading">Loading...</div>
-    <link href="data:text/css,.loading%7Bfont-family%3A'Franklin%20Gothic%20Medium'%2C'Arial%20Narrow'%2CArial%2Csans-serif%3Bcolor%3A%2388a%3Bfont-size%3A18px%3Btext-align%3Acenter%3Bwidth%3A150px%3Bheight%3A150px%3Bposition%3Afixed%3Btop%3A0%3Bbottom%3A0%3Bleft%3A0%3Bright%3A0%3Bmargin%3Aauto%7D.loading%3A%3Aafter%7Bcontent%3A''%3Bborder%3Asolid%2010px%3Bborder-color%3A%2388a%20%23eee%20%23eee%3Bborder-radius%3A60px%3Bposition%3Aabsolute%3Bwidth%3A60px%3Bheight%3A60px%3Btop%3A0%3Bbottom%3A0%3Bleft%3A0%3Bright%3A0%3Bmargin%3Aauto%3Banimation%3Arotation%201.5s%20linear%200s%20infinite%7D%40keyframes%20rotation%7B0%25%7Btransform%3Arotate(45deg)%7D100%25%7Btransform%3Arotate(405deg)%7D%7D"
-          rel="stylesheet"/>
+    <div class="loading"></div>
 </div>
 
 <div id="blazor-error-ui">

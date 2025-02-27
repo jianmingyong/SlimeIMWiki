@@ -24,4 +24,17 @@
         <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.7.*"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\TodoApp\TodoItem.razor" />
+      <_ContentIncludedByDefault Remove="Components\TodoApp\TodoItems.razor" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.min.css.map" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\js\" />
+    </ItemGroup>
+
 </Project>

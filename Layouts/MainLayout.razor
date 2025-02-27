@@ -3,16 +3,9 @@
 
 <Layout>
     <LayoutHeader Fixed>
-        <TopMenu ThemeEnabledChanged="@OnThemeEnabledChanged"
-                 ThemeGradientChanged="@OnThemeGradientChanged"
-                 ThemeRoundedChanged="@OnThemeRoundedChanged"
-                 ThemeColorChanged="@OnThemeColorChanged"
-                 @bind-LayoutType="@layoutType"/>
+        <TopMenu/>
     </LayoutHeader>
     <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
         @Body
     </LayoutContent>
-    <LayoutFooter Fixed>
-        <FooterMenu></FooterMenu>
-    </LayoutFooter>
 </Layout>
