@@ -1,11 +1,30 @@
-﻿@using SlimeIMWiki.Components.Layout
-@inherits LayoutComponentBase
+﻿@inherits LayoutComponentBase
 
 <Layout>
     <LayoutHeader Fixed>
-        <TopMenu/>
+        <Bar Breakpoint="Breakpoint.Desktop" Background="Background.Secondary" ThemeContrast="ThemeContrast.Dark"
+             Style="box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5)">
+            <BarBrand>
+                <BarItem>
+                    <BarLink To="">SlimeIM Wiki</BarLink>
+                </BarItem>
+            </BarBrand>
+            <BarToggler/>
+            <BarMenu>
+                <BarStart>
+                    <BarItem>
+                        <BarLink To="">Home</BarLink>
+                    </BarItem>
+                    <BarItem>
+                        <BarLink To="Characters">Characters</BarLink>
+                    </BarItem>
+                </BarStart>
+            </BarMenu>
+        </Bar>
     </LayoutHeader>
-    <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
-        @Body
+    <LayoutContent Background="Background.Body">
+        <Container Padding="Padding.Is4" Breakpoint="Breakpoint.Large" Background="Background.Secondary">
+            @Body
+        </Container>
     </LayoutContent>
 </Layout>

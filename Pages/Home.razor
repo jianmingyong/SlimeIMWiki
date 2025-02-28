@@ -1,0 +1,177 @@
+﻿@page "/"
+@using SlimeIMWiki.Models
+
+@implements IDisposable
+
+@inject HttpClient HttpClient
+
+<Divider DividerType="DividerType.TextContent" Text="ABOUT" Margin="Margin.Is4.OnY" />
+
+<Card Background="Background.Primary">
+    <CardBody>
+        <Paragraph TextColor="TextColor.Body">SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.</Paragraph>
+    </CardBody>
+</Card>
+
+<Divider DividerType="DividerType.TextContent" Text="TIMERS" Margin="Margin.Is4.FromTop.Is5.FromBottom" />
+
+<Card Background="Background.Primary">
+    <CardBody>
+        <Buttons Margin="Margin.IsAuto" Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
+            <Button Size="Size.Small"
+                    Color="@(TimerSelection == "NA" ? Color.Light : Color.Dark)"
+                    Clicked="TimerNaClicked">
+                <Div Padding="Padding.Is3.OnX">NA</Div>
+            </Button>
+            <Button Size="Size.Small"
+                    Color="@(TimerSelection == "EU" ? Color.Light : Color.Dark)"
+                    Clicked="TimerEuClicked">
+                <Div Padding="Padding.Is3.OnX">EU</Div>
+            </Button>
+            <Button Size="Size.Small"
+                    Color="@(TimerSelection == "Asia" ? Color.Light : Color.Dark)"
+                    Clicked="TimerAsiaClicked">
+                <Div Padding="Padding.Is3.OnX">Asia</Div>
+            </Button>
+        </Buttons>
+        <Grid>
+            <Column ColumnSize="ColumnSize.Is6">
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center">Reset</Div>
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center"
+                     TextSize="TextSize.ExtraSmall">@TimerReset.ToString("F")</Div>
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center"
+                     TextSize="TextSize.Heading2">@TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
+            </Column>
+            <Column ColumnSize="ColumnSize.Is6">
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center">Update</Div>
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center"
+                     TextSize="TextSize.ExtraSmall">@TimerUpdate.ToString("F")</Div>
+                <Div TextColor="TextColor.Body"
+                     TextAlignment="TextAlignment.Center"
+                     TextSize="TextSize.Heading2">@TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
+            </Column>
+        </Grid>
+    </CardBody>
+</Card>
+
+<Divider DividerType="DividerType.TextContent" Text="RECENT LIVESTREAM" Margin="Margin.Is4.OnY" />
+
+<Card Background="Background.Primary">
+    <CardBody>
+        <Div TextAlignment="TextAlignment.Center">
+            <iframe width="640" height="360" src="@LiveStreamSrc"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </Div>
+    </CardBody>
+</Card>
+
+@code
+{
+    private string? TimerSelection { get; set; } = "NA";
+
+    private DateTime TimerReset { get; set; } = DateTime.Now;
+
+    private DateTime TimerUpdate { get; set; } = DateTime.Now;
+
+    private TimeSpan TimerResetIn { get; set; } = TimeSpan.Zero;
+
+    private TimeSpan TimerUpdateIn { get; set; } = TimeSpan.Zero;
+
+    private string? LiveStreamSrc { get; set; }
+
+    private Timer? Timer { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Timer = new Timer(TimerTicked, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
+
+        var liveStream = await HttpClient.GetFromJsonAsync<Livestream>("data/livestream.json", JsonSerializer.Default.Livestream);
+        LiveStreamSrc = liveStream?.YouTubeLink;
+
+        TimerNaClicked();
+    }
+
+    private void TimerNaClicked()
+    {
+        TimerSelection = "NA";
+        TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 19, 0, 0, TimeSpan.FromHours(8)).DateTime;
+        TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).DateTime;
+
+        if (TimerReset - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerReset = TimerReset.AddDays(1);
+        }
+
+        if (TimerUpdate - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerUpdate = TimerUpdate.AddDays(1);
+        }
+
+        TimerResetIn = TimerReset - DateTime.Now;
+        TimerUpdateIn = TimerUpdate - DateTime.Now;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void TimerEuClicked()
+    {
+        TimerSelection = "EU";
+        TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 12, 0, 0, TimeSpan.FromHours(8)).DateTime;
+        TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).DateTime;
+
+        if (TimerReset - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerReset = TimerReset.AddDays(1);
+        }
+
+        if (TimerUpdate - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerUpdate = TimerUpdate.AddDays(1);
+        }
+
+        TimerResetIn = TimerReset - DateTime.Now;
+        TimerUpdateIn = TimerUpdate - DateTime.Now;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void TimerAsiaClicked()
+    {
+        TimerSelection = "Asia";
+        TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 3, 0, 0, TimeSpan.FromHours(8)).DateTime;
+        TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).DateTime;
+
+        if (TimerReset - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerReset = TimerReset.AddDays(1);
+        }
+
+        if (TimerUpdate - DateTime.Now < TimeSpan.Zero)
+        {
+            TimerUpdate = TimerUpdate.AddDays(1);
+        }
+
+        TimerResetIn = TimerReset - DateTime.Now;
+        TimerUpdateIn = TimerUpdate - DateTime.Now;
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void TimerTicked(object? state)
+    {
+        TimerResetIn = TimerReset - DateTime.Now;
+        TimerUpdateIn = TimerUpdate - DateTime.Now;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Timer?.Dispose();
+    }
+}
