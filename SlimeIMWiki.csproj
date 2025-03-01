@@ -5,12 +5,10 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <Version>1.0</Version>
-        <Authors>Yong Jian Minf</Authors>
+        <Authors>Yong Jian Ming</Authors>
         <Company>The Dialga Team</Company>
-        <Description>This is a Slime IM Wiki</Description>
+        <Description>SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.</Description>
         <Copyright>Copyright 2025 The Dialga Team</Copyright>
-
-
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,17 +23,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="Components\TodoApp\TodoItem.razor" />
-      <_ContentIncludedByDefault Remove="Components\TodoApp\TodoItems.razor" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.css.map" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\material\material.min.css.map" />
+      <Folder Include="Components\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Components\" />
-      <Folder Include="wwwroot\js\" />
+      <_ContentIncludedByDefault Remove="ImageConverter\obj\ImageConverter.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="ImageConverter\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="ImageConverter\obj\project.packagespec.json" />
     </ItemGroup>
 
 </Project>

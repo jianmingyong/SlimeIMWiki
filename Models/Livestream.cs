@@ -2,7 +2,6 @@
 
 namespace SlimeIMWiki.Models;
 
-
 public class Livestream
 {
     [JsonPropertyName("youtube")]
