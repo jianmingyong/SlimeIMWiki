@@ -1,7 +1,7 @@
 ﻿@page "/characters"
 
 <Alert Color="Color.Danger" Visible="true">
-       <AlertDescription>Please be aware that some characters may contains outdated information.</AlertDescription>
+    <AlertDescription>Please be aware that some characters may contains outdated information.</AlertDescription>
 </Alert>
 
 <Divider DividerType="DividerType.TextContent" Text="Filters" Margin="Margin.Is4.OnY"/>
@@ -11,36 +11,36 @@
 <Divider DividerType="DividerType.TextContent" Text="Characters" Margin="Margin.Is4.OnY"/>
 
 <Div Flex="Flex.Wrap" Gap="Gap.Is3">
-       @for (var i = 0; i < 50; i++)
-       {
-       <a href="Characters/Alice" style="position: relative; width: 100px; height: 100px">
-              <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is25"
-                     Source="image/rarity/badgeClassUp.png"
-                     Style="z-index: 3"></Image>
-              <Image Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25"
-                     Source="image/battle/attributes/space.png"
-                     Style="z-index: 3"></Image>
-              <Image Position="Position.Absolute.End.Is0" Width="Width.Is25"
-                     Source="image/battle/attack_types/magic.png"
-                     Style="z-index: 3; top: 25%"></Image>
-              <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                     Source="image/rarity/starCharaL3A.png"
-                     Style="z-index: 3"></Image>
-              <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                     Source="image/rarity/frameMemberM3.png"
-                     Style="z-index: 2"></Image>
-              <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                     Source="image/battle/characters/AliceDefault/3/AliceDefault_3_CharaPartyM.png"
-                     Style="z-index: 1"></Image>
-              <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                     Source="image/rarity/baseMemberM3.png"
-                     Style="z-index: 0"></Image>
-              <Div Position="Position.Absolute.Start.Is0.Top.Is0.Translate.MiddleY"
-                   Padding="Padding.Is1.OnX"
-                   TextSize="TextSize.ExtraSmall"
-                   TextColor="TextColor.Body"
-                   Style="z-index:3; background-color: #000000BB">Alice
-              </Div>
-       </a>
-       }
+    @for (var i = 0; i < 50; i++)
+    {
+        <a href="Characters/Alice" style="position: relative; width: 100px; height: 100px">
+            <Div Position="Position.Absolute.Start.Is0.Top.Is0.Translate.MiddleY"
+                 Padding="Padding.Is1.OnX"
+                 TextSize="TextSize.ExtraSmall"
+                 TextColor="TextColor.Body"
+                 Style="z-index:4; background-color: #000000BB">Alice
+            </Div>
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is25"
+                   Source="image/rarity/badgeClassUp.png"
+                   Style="z-index: 3"></Image>
+            <Image Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25"
+                   Source="image/battle/attributes/space.png"
+                   Style="z-index: 3"></Image>
+            <Image Position="Position.Absolute.End.Is0" Width="Width.Is25"
+                   Source="image/battle/attack_types/magic.png"
+                   Style="z-index: 3; top: 25%"></Image>
+            <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                   Source="image/rarity/starCharaL3A.png"
+                   Style="z-index: 3"></Image>
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/frameMemberM3.png"
+                   Style="z-index: 2"></Image>
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/battle/characters/AliceDefault/3/AliceDefault_3_CharaPartyM.png"
+                   Style="z-index: 1"></Image>
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/baseMemberM3.png"
+                   Style="z-index: 0"></Image>
+        </a>
+    }
 </Div>

@@ -1,6 +1,5 @@
 ﻿@page "/"
 @using SlimeIMWiki.Models
-@using JsonSerializer = SlimeIMWiki.JsonSerializer
 
 @implements IDisposable
 
@@ -178,6 +177,7 @@
     {
         TimerResetIn = TimerReset - DateTime.Now;
         TimerUpdateIn = TimerUpdate - DateTime.Now;
+
         InvokeAsync(StateHasChanged);
     }
 

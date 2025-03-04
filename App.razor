@@ -6,7 +6,9 @@
             <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)"/>
         </Found>
         <NotFound>
-            <p>Sorry, there's nothing at this address.</p>
+            <Paragraph Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle">
+                Sorry, there's nothing at this address.
+            </Paragraph>
         </NotFound>
     </Router>
     <MessageProvider/>
@@ -18,11 +20,11 @@
     {
         BarOptions = new ThemeBarOptions
         {
-            HorizontalHeight = "72px"
+            HorizontalHeight = "40px"
         },
         ColorOptions = new ThemeColorOptions
         {
-            Primary = "#FFFFFF"
+            Primary = "#ffffff"
         },
         BackgroundOptions = new ThemeBackgroundOptions
         {
@@ -32,7 +34,11 @@
         },
         TextColorOptions = new ThemeTextColorOptions
         {
-            Body = "#FFFFFF"
+            Body = "#ffffff"
+        },
+        DividerOptions = new ThemeDividerOptions
+        {
+            Color = "#000000"
         }
     };
 }

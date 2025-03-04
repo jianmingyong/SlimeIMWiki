@@ -1,0 +1,12 @@
+﻿[
+  {
+    "name": "Myrd",
+    "title": "The Construction Artisan",
+    "permalink": "MyrdDefault",
+    "icon": "image/protection/characters/MyrdDefault/3/MyrdDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/MyrdDefault/3/MyrdDefault_3_BlessInfo.png",
+    "initial_rarity": "3",
+    "attack_type": "Magic",
+    "attribute": null
+  }
+]
