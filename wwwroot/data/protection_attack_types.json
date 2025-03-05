@@ -1,10 +1,10 @@
 [
 	{
 		"name": "Physical",
-		"icon": "protection/attack_types/physical.png"
+		"icon": "image/protection/attack_types/physical.png"
 	},
 	{
 		"name": "Magic",
-		"icon": "protection/attack_types/magic.png"
+		"icon": "image/protection/attack_types/magic.png"
 	}
 ]

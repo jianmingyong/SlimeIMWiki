@@ -1,5 +1,11 @@
 ﻿@page "/characters"
 
+@using SlimeIMWiki.Models
+@using SlimeIMWiki.Components.Characters
+
+@inject HttpClient HttpClient
+@inject IJSRuntime JsRuntime
+
 <Alert Color="Color.Danger" Visible="true">
     <AlertDescription>Please be aware that some characters may contains outdated information.</AlertDescription>
 </Alert>
@@ -10,8 +16,15 @@
 
 <Divider DividerType="DividerType.TextContent" Text="Characters" Margin="Margin.Is4.OnY"/>
 
-<Div Flex="Flex.Wrap" Gap="Gap.Is3">
-    @for (var i = 0; i < 50; i++)
+<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop">
+    @foreach (var unit in ProtectionUnits)
+    {
+        <ProtectionUnit Unit="unit"
+                        ProtectionAttributes="ProtectionAttributes"
+                        ProtectionAttackTypes="ProtectionAttackTypes"></ProtectionUnit>
+    }
+
+    @for (var i = 0; i < 1; i++)
     {
         <a href="Characters/Alice" style="position: relative; width: 100px; height: 100px">
             <Div Position="Position.Absolute.Start.Is0.Top.Is0.Translate.MiddleY"
@@ -44,3 +57,24 @@
         </a>
     }
 </Div>
+
+@code
+{
+    private Models.ProtectionUnit[] ProtectionUnits { get; set; } = [];
+
+    private ProtectionAttackType[] ProtectionAttackTypes { get; set; } = [];
+
+    private ProtectionAttribute[] ProtectionAttributes { get; set; } = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        ProtectionUnits = await HttpClient.GetFromJsonAsync("data/protection_units.json", JsonSerializer.Custom.ProtectionUnitArray) ?? [];
+        ProtectionAttackTypes = await HttpClient.GetFromJsonAsync("data/protection_attack_types.json", JsonSerializer.Custom.ProtectionAttackTypeArray) ?? [];
+        ProtectionAttributes = await HttpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray) ?? [];
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeVoidAsync("updateUnitIcons");
+    }
+}

@@ -1,9 +1,6 @@
-﻿using System.Text.Json.Serialization;
-
-namespace SlimeIMWiki.Models;
+﻿namespace SlimeIMWiki.Models;
 
 public class Livestream
 {
-    [JsonPropertyName("youtube")]
-    public string? YouTubeLink { get; set; }
+    public string? YoutubeLink { get; set; }
 }

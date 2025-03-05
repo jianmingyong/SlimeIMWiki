@@ -1,11 +1,85 @@
 ﻿[
   {
+    "name": "Gobuichi",
+    "title": "The Hobgoblin Chef",
+    "permalink": "GobuichiDefault",
+    "icon": "image/protection/characters/GobuichiDefault/3/GobuichiDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/GobuichiDefault/3/GobuichiDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Physical",
+    "attribute": null
+  },
+  {
+    "name": "Haruna",
+    "title": "The Affectionate Hobgoblin",
+    "permalink": "HarunaDefault",
+    "icon": "image/protection/characters/HarunaDefault/3/HarunaDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/HarunaDefault/3/HarunaDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Physical",
+    "attribute": null
+  },
+  {
+    "name": "Garm",
+    "title": "The Armor Artisan",
+    "permalink": "GarmDefault",
+    "icon": "image/protection/characters/GarmDefault/3/GarmDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/GarmDefault/3/GarmDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Physical",
+    "attribute": null
+  },
+  {
+    "name": "Butterflies of the Night Owner",
+    "title": "Bewitching Shopkeeper",
+    "permalink": "OwnerDefault",
+    "icon": "image/protection/characters/OwnerDefault/3/OwnerDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/OwnerDefault/3/OwnerDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Physical",
+    "attribute": null
+  },
+  {
+    "name": "Dord",
+    "title": "The Skilled Artisan",
+    "permalink": "DordDefault",
+    "icon": "image/protection/characters/DordDefault/3/DordDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/DordDefault/3/DordDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Magic",
+    "attribute": null
+  },
+  {
+    "name": "Psychic Elf",
+    "title": "Fortuneteller",
+    "permalink": "ElfDefault",
+    "icon": "image/protection/characters/ElfDefault/3/ElfDefault_3_BlessPartyM.png",
+    "image": "image/protection/characters/ElfDefault/3/ElfDefault_3_BlessInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "attack_type": "Magic",
+    "attribute": null
+  },
+  {
     "name": "Myrd",
     "title": "The Construction Artisan",
     "permalink": "MyrdDefault",
     "icon": "image/protection/characters/MyrdDefault/3/MyrdDefault_3_BlessPartyM.png",
     "image": "image/protection/characters/MyrdDefault/3/MyrdDefault_3_BlessInfo.png",
-    "initial_rarity": "3",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
     "attack_type": "Magic",
     "attribute": null
   }
