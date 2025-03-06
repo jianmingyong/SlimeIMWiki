@@ -4,6 +4,7 @@ using SlimeIMWiki.Models;
 
 namespace SlimeIMWiki;
 
+[JsonSerializable(typeof(Force[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(Livestream), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]

@@ -1,9 +1,9 @@
 ﻿@page "/"
-@using SlimeIMWiki.Models
 
 @implements IDisposable
 
 @inject HttpClient HttpClient
+@inject IMemoryCache MemoryCache
 
 <Divider DividerType="DividerType.TextContent" Text="ABOUT" Margin="Margin.Is4.OnY" />
 
@@ -101,7 +101,12 @@
     {
         Timer = new Timer(TimerTicked, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
 
-        var liveStream = await HttpClient.GetFromJsonAsync<Livestream>("data/livestream.json", JsonSerializer.Custom.Livestream);
+        var liveStream = await MemoryCache.GetOrCreateAsync(nameof(Livestream), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await HttpClient.GetFromJsonAsync<Livestream>("data/livestream.json", JsonSerializer.Custom.Livestream);
+        });
+
         LiveStreamSrc = liveStream?.YoutubeLink;
 
         TimerNaClicked();

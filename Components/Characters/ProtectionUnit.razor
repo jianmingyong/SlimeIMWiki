@@ -1,6 +1,4 @@
-﻿@using SlimeIMWiki.Models
-
-<a href="Characters/@Unit.Permalink" style="position: relative; width: 100px; height: 100px">
+﻿<a href="Characters/@Unit.Permalink" style="position: relative; width: 100px; height: 100px">
     <Div Position="Position.Absolute.Start.Is0.Top.Is0"
          Padding="Padding.Is1.OnX"
          TextSize="TextSize.ExtraSmall"
@@ -8,19 +6,29 @@
          Style="z-index:4; background-color: #000000BB; transform: translateY(-100%)">@Unit.Name
     </Div>
 
-    @if (Unit.Attribute != null)
-    {
-        <Image Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25"
-               Source="@(GetAttributeIcon(Unit.Attribute))"
-               Style="z-index: 3"></Image>
-    }
+    <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column"
+         Style="z-index: 3">
+        @if (Unit.Force != null)
+        {
+            <Image Width="Width.Is100" Height="Height.Is100"
+                   Source="@(GetForceIcon(Unit.Force))"></Image>
+        }
 
-    @if (Unit.AttackType != null)
-    {
-        <Image Position="Position.Absolute.End.Is0" Width="Width.Is25"
-               Source="@(GetAttackTypeIcon(Unit.AttackType))"
-               Style="z-index: 3; top: 25%"></Image>
-    }
+        @if (Unit.Attributes != null)
+        {
+            foreach (var attribute in Unit.Attributes)
+            {
+                <Image Width="Width.Is100" Height="Height.Is100"
+                       Source="@(GetAttributeIcon(attribute))"></Image>
+            }
+        }
+
+        @if (Unit.AttackType != null)
+        {
+            <Image Width="Width.Is100" Height="Height.Is100"
+                   Source="@(GetAttackTypeIcon(Unit.AttackType))"></Image>
+        }
+    </Div>
 
     @switch(Unit.InitialRarity)
     {
@@ -40,7 +48,7 @@
 
             <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
                  Style="z-index: 1; width: 90px; height: 90px">
-                <Image Class="unitIcon" Position="Position.Absolute"
+                <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
                        Source="@Unit.Icon"
                        Style="z-index: 1; mask-image: url('image/rarity/baseBlessM3.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
             </Div>
@@ -63,7 +71,7 @@
 
             <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
                  Style="z-index: 1; width: 90px; height: 90px">
-                <Image Class="unitIcon" Position="Position.Absolute"
+                <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
                        Source="@Unit.Icon"
                        Style="z-index: 1; mask-image: url('image/rarity/baseBlessM4.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
             </Div>
@@ -85,7 +93,7 @@
 
             <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
                  Style="z-index: 1; width: 90px; height: 90px">
-                <Image Class="unitIcon" Position="Position.Absolute"
+                <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
                        Source="@Unit.Icon"
                        Style="z-index: 1; mask-image: url('image/rarity/baseBlessM5.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
             </Div>
@@ -109,7 +117,7 @@
 
                 <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
                      Style="z-index: 1; width: 90px; height: 90px">
-                    <Image Class="unitIcon" Position="Position.Absolute"
+                    <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
                            Source="@Unit.Icon"
                            Style="z-index: 1; mask-image: url('image/rarity/baseBlessM6u.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
                 </Div>
@@ -130,7 +138,7 @@
 
                 <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
                      Style="z-index: 1; width: 90px; height: 90px">
-                    <Image Class="unitIcon" Position="Position.Absolute"
+                    <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
                            Source="@Unit.Icon"
                            Style="z-index: 1; mask-image: url('image/rarity/baseBlessM6up.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
                 </Div>
@@ -145,18 +153,26 @@
     public required Models.ProtectionUnit Unit { get; set; }
 
     [Parameter]
+    public required Force[] Forces { get; set; }
+
+    [Parameter]
     public required ProtectionAttribute[] ProtectionAttributes { get; set; }
 
     [Parameter]
     public required ProtectionAttackType[] ProtectionAttackTypes { get; set; }
 
+    private string? GetForceIcon(string force)
+    {
+        return Forces.FirstOrDefault(force1 => force1.Name.Equals(force, StringComparison.OrdinalIgnoreCase))?.Icon;
+    }
+
     private string? GetAttributeIcon(string attribute)
     {
-        return ProtectionAttributes.FirstOrDefault(protectionAttribute => protectionAttribute.Name?.Equals(attribute, StringComparison.OrdinalIgnoreCase) ?? false)?.Icon;
+        return ProtectionAttributes.FirstOrDefault(protectionAttribute => protectionAttribute.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase))?.Icon;
     }
 
     private string? GetAttackTypeIcon(string attackType)
     {
-        return ProtectionAttackTypes.FirstOrDefault(type => type.Name?.Equals(attackType, StringComparison.OrdinalIgnoreCase) ?? false)?.Icon;
+        return ProtectionAttackTypes.FirstOrDefault(type => type.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase))?.Icon;
     }
 }

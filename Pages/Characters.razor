@@ -1,13 +1,13 @@
 ﻿@page "/characters"
 
-@using SlimeIMWiki.Models
-@using SlimeIMWiki.Components.Characters
-
 @inject HttpClient HttpClient
+@inject IMemoryCache MemoryCache
 @inject IJSRuntime JsRuntime
 
 <Alert Color="Color.Danger" Visible="true">
-    <AlertDescription>Please be aware that some characters may contains outdated information.</AlertDescription>
+    <AlertDescription>
+        Please be aware that some characters may contains outdated information.
+    </AlertDescription>
 </Alert>
 
 <Divider DividerType="DividerType.TextContent" Text="Filters" Margin="Margin.Is4.OnY"/>
@@ -20,11 +20,12 @@
     @foreach (var unit in ProtectionUnits)
     {
         <ProtectionUnit Unit="unit"
+                        Forces="Forces"
                         ProtectionAttributes="ProtectionAttributes"
                         ProtectionAttackTypes="ProtectionAttackTypes"></ProtectionUnit>
     }
 
-    @for (var i = 0; i < 1; i++)
+    @for (var i = 0; i < 0; i++)
     {
         <a href="Characters/Alice" style="position: relative; width: 100px; height: 100px">
             <Div Position="Position.Absolute.Start.Is0.Top.Is0.Translate.MiddleY"
@@ -60,6 +61,8 @@
 
 @code
 {
+    private Force[] Forces { get; set; } = [];
+
     private Models.ProtectionUnit[] ProtectionUnits { get; set; } = [];
 
     private ProtectionAttackType[] ProtectionAttackTypes { get; set; } = [];
@@ -68,9 +71,29 @@
 
     protected override async Task OnInitializedAsync()
     {
-        ProtectionUnits = await HttpClient.GetFromJsonAsync("data/protection_units.json", JsonSerializer.Custom.ProtectionUnitArray) ?? [];
-        ProtectionAttackTypes = await HttpClient.GetFromJsonAsync("data/protection_attack_types.json", JsonSerializer.Custom.ProtectionAttackTypeArray) ?? [];
-        ProtectionAttributes = await HttpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray) ?? [];
+        Forces = await MemoryCache.GetOrCreateAsync(nameof(Force), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await HttpClient.GetFromJsonAsync("data/forces.json", JsonSerializer.Custom.ForceArray);
+        }) ?? [];
+
+        ProtectionUnits = await MemoryCache.GetOrCreateAsync(nameof(Models.ProtectionUnit), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await HttpClient.GetFromJsonAsync("data/protection_units.json", JsonSerializer.Custom.ProtectionUnitArray);
+        }) ?? [];
+
+        ProtectionAttackTypes = await MemoryCache.GetOrCreateAsync(nameof(ProtectionAttackType), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await HttpClient.GetFromJsonAsync("data/protection_attack_types.json", JsonSerializer.Custom.ProtectionAttackTypeArray);
+        }) ?? [];
+
+        ProtectionAttributes = await MemoryCache.GetOrCreateAsync(nameof(ProtectionAttribute), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await HttpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray);
+        }) ?? [];
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
