@@ -1,2 +1,66 @@
-﻿{
-}
+﻿[
+  {
+    "name": "Rigurd",
+    "title": "Hobgoblin Monarch",
+    "permalink": "RigurdDefault",
+    "icon": "image/battle/characters/RigurdDefault/3/RigurdDefault_3_CharaPartyM.png",
+    "facing": "Front",
+    "image": "image/battle/characters/RigurdDefault/3/RigurdDefault_3_CharaInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": ["Tempest Elite", "Determination to Prosper", "Protector of Peace"],
+    "attribute": "Wind",
+    "attack_type": "Physical"
+  },
+  {
+    "name": "Alice Rondo",
+    "title": "Golem Master",
+    "permalink": "AliceDefault",
+    "icon": "image/battle/characters/AliceDefault/3/AliceDefault_3_CharaPartyM.png",
+    "facing": "Front",
+    "image": "image/battle/characters/AliceDefault/3/AliceDefault_3_CharaInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": ["Shizu's Will", "Sparkle of Youth"],
+    "attribute": "Space",
+    "attack_type": "Magic"
+  },
+  {
+    "name": "Gale Gibson",
+    "title": "Earth Spirit Lodger",
+    "permalink": "GailDefault",
+    "icon": "image/battle/characters/GailDefault/3/GailDefault_3_CharaPartyM.png",
+    "facing": "Left",
+    "image": "image/battle/characters/GailDefault/3/GailDefault_3_CharaInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": ["Shizu's Will", "Sparkle of Youth"],
+    "attribute": "Earth",
+    "attack_type": "Magic"
+  },
+  {
+    "name": "Kenya Misaki",
+    "title": "Heroic Vessel",
+    "permalink": "KenyaDefault",
+    "icon": "image/battle/characters/KenyaDefault/3/KenyaDefault_3_CharaPartyM.png",
+    "facing": "Front",
+    "image": "image/battle/characters/KenyaDefault/3/KenyaDefault_3_CharaInfo.png",
+    "initial_rarity": 3,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": ["Shizu's Will", "Sparkle of Youth"],
+    "attribute": "Light",
+    "attack_type": "Physical"
+  }
+]

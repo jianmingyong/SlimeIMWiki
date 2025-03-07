@@ -1,30 +1,30 @@
 [
 	{
 		"name": "Katana",
-		"icon": "battle/expertises/katana.png"
+		"icon": "image/battle/expertises/katana.png"
 	},
 	{
 		"name": "Sword",
-		"icon": "battle/expertises/sword.png"
+		"icon": "image/battle/expertises/sword.png"
 	},
 	{
 		"name": "Greatsword",
-		"icon": "battle/expertises/greatsword.png"
+		"icon": "image/battle/expertises/greatsword.png"
 	},
 	{
 		"name": "Lance",
-		"icon": "battle/expertises/lance.png"
+		"icon": "image/battle/expertises/lance.png"
 	},
 	{
 		"name": "Hammer",
-		"icon": "battle/expertises/hammer.png"
+		"icon": "image/battle/expertises/hammer.png"
 	},
 	{
 		"name": "Fist",
-		"icon": "battle/expertises/fist.png"
+		"icon": "image/battle/expertises/fist.png"
 	},
 	{
 		"name": "Magic Tome",
-		"icon": "battle/expertises/magic_tome.png"
+		"icon": "image/battle/expertises/magic_tome.png"
 	}
 ]
