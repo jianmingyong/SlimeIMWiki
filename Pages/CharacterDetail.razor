@@ -1,0 +1,41 @@
+﻿@page "/characters/{permalink}"
+
+@inject DataModel DataModel
+
+<PageTitle>@GetPageTitle()</PageTitle>
+
+
+
+@code
+{
+    [Parameter]
+    public required string Permalink { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DataModel.LoadDataModelAsync();
+    }
+
+    private string GetPageTitle()
+    {
+        {
+            var unit = DataModel.BattleUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+
+            if (unit != null)
+            {
+                return $"{unit.Name} [{unit.Title}]";
+            }
+        }
+
+        {
+            var unit = DataModel.ProtectionUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+
+            if (unit != null)
+            {
+                return $"{unit.Name} [{unit.Title}]";
+            }
+        }
+
+        return string.Empty;
+    }
+}

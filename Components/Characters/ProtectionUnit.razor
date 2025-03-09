@@ -80,32 +80,10 @@
         }
         case 5:
         {
-            <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                   Source="image/rarity/starCharaL5A.png"
-                   Style="z-index: 3"></Image>
-
-            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/frameBlessM5.png"
-                   Style="z-index: 2"></Image>
-
-            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/baseBlessM5.png"
-                   Style="z-index: 0"></Image>
-
-            <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
-                 Style="z-index: 1; width: 90px; height: 90px">
-                <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
-                       Source="@Unit.Icon"
-                       Style="z-index: 1; mask-image: url('image/rarity/baseBlessM5.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
-            </Div>
-            break;
-        }
-        case 6:
-        {
             @if (Unit.IsEx)
             {
                 <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                       Source="image/rarity/starCharaL6.png"
+                       Source="image/rarity/starCharaL6UA.png"
                        Style="z-index: 3"></Image>
 
                 <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
@@ -126,7 +104,7 @@
             else if (Unit.IsAttributeUnbound)
             {
                 <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                       Source="image/rarity/starCharaL6UP.png"
+                       Source="image/rarity/starCharaL6UPA.png"
                        Style="z-index: 3"></Image>
 
                 <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
@@ -144,6 +122,28 @@
                            Style="z-index: 1; mask-image: url('image/rarity/baseBlessM6up.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
                 </Div>
             }
+            else
+            {
+                <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                       Source="image/rarity/starCharaL5A.png"
+                       Style="z-index: 3"></Image>
+
+                <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                       Source="image/rarity/frameBlessM5.png"
+                       Style="z-index: 2"></Image>
+
+                <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                       Source="image/rarity/baseBlessM5.png"
+                       Style="z-index: 0"></Image>
+
+                <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
+                     Style="z-index: 1; width: 90px; height: 90px">
+                    <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
+                           Source="@Unit.Icon"
+                           Style="z-index: 1; mask-image: url('image/rarity/baseBlessM5.png'); mask-repeat: no-repeat; mask-size: cover"></Image>
+                </Div>
+            }
+
             break;
         }
     }

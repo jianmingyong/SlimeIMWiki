@@ -14,19 +14,13 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.*"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.*" PrivateAssets="all"/>
-        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.*" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Blazorise" Version="1.7.*"/>
         <PackageReference Include="Blazorise.Bootstrap5" Version="1.7.*"/>
         <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.7.*"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="ImageConverter\obj\ImageConverter.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="ImageConverter\obj\project.assets.json" />
-      <_ContentIncludedByDefault Remove="ImageConverter\obj\project.packagespec.json" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,6 @@
 ﻿@page "/characters"
 
-@inject HttpClient HttpClient
-@inject IMemoryCache MemoryCache
+@inject DataModel DataModel
 @inject IJSRuntime JsRuntime
 
 <Alert Color="Color.Danger" Visible="true">
@@ -16,82 +15,30 @@
 
 <Divider DividerType="DividerType.TextContent" Text="Characters" Margin="Margin.Is4.OnY"/>
 
-<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop">
-    @foreach (var unit in BattleUnits)
+<Div Flex="Flex.Wrap.AlignContent.Start" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop">
+    @foreach (var unit in DataModel.BattleUnits)
     {
-        <BattleUnit Unit="unit"
-                    BattleAttributes="BattleAttributes"
-                    BattleAttackTypes="BattleAttackTypes"></BattleUnit>
+        <BattleUnit @key="unit.Permalink"
+                    Unit="unit"
+                    BattleAttributes="DataModel.BattleAttributes"
+                    BattleAttackTypes="DataModel.BattleAttackTypes"></BattleUnit>
     }
 
-    @foreach (var unit in ProtectionUnits)
+    @foreach (var unit in DataModel.ProtectionUnits)
     {
-        <ProtectionUnit Unit="unit"
-                        Forces="Forces"
-                        ProtectionAttributes="ProtectionAttributes"
-                        ProtectionAttackTypes="ProtectionAttackTypes"></ProtectionUnit>
+        <ProtectionUnit @key="unit.Permalink"
+                        Unit="unit"
+                        Forces="DataModel.Forces"
+                        ProtectionAttributes="DataModel.ProtectionAttributes"
+                        ProtectionAttackTypes="DataModel.ProtectionAttackTypes"></ProtectionUnit>
     }
 </Div>
 
 @code
 {
-    private Force[] Forces { get; set; } = [];
-
-    private Models.BattleUnit[] BattleUnits { get; set; } = [];
-
-    private BattleAttackType[] BattleAttackTypes { get; set; } = [];
-
-    private BattleAttribute[] BattleAttributes { get; set; } = [];
-
-    private Models.ProtectionUnit[] ProtectionUnits { get; set; } = [];
-
-    private ProtectionAttackType[] ProtectionAttackTypes { get; set; } = [];
-
-    private ProtectionAttribute[] ProtectionAttributes { get; set; } = [];
-
     protected override async Task OnInitializedAsync()
     {
-        Forces = await MemoryCache.GetOrCreateAsync(nameof(Force), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/forces.json", JsonSerializer.Custom.ForceArray);
-        }) ?? [];
-
-        BattleUnits = await MemoryCache.GetOrCreateAsync(nameof(Models.BattleUnit), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/battle_units.json", JsonSerializer.Custom.BattleUnitArray);
-        }) ?? [];
-
-        BattleAttackTypes = await MemoryCache.GetOrCreateAsync(nameof(BattleAttackType), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/battle_attack_types.json", JsonSerializer.Custom.BattleAttackTypeArray);
-        }) ?? [];
-
-        BattleAttributes = await MemoryCache.GetOrCreateAsync(nameof(BattleAttribute), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/battle_attributes.json", JsonSerializer.Custom.BattleAttributeArray);
-        }) ?? [];
-
-        ProtectionUnits = await MemoryCache.GetOrCreateAsync(nameof(Models.ProtectionUnit), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/protection_units.json", JsonSerializer.Custom.ProtectionUnitArray);
-        }) ?? [];
-
-        ProtectionAttackTypes = await MemoryCache.GetOrCreateAsync(nameof(ProtectionAttackType), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/protection_attack_types.json", JsonSerializer.Custom.ProtectionAttackTypeArray);
-        }) ?? [];
-
-        ProtectionAttributes = await MemoryCache.GetOrCreateAsync(nameof(ProtectionAttribute), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray);
-        }) ?? [];
+        await DataModel.LoadDataModelAsync();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
