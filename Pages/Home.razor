@@ -59,6 +59,38 @@
     </CardBody>
 </Card>
 
+<Divider DividerType="DividerType.TextContent" Text="LATEST" Margin="Margin.Is4.FromTop.Is5.FromBottom" />
+
+<Card Background="Background.Primary">
+    <CardBody>
+        <Buttons Margin="Margin.IsAuto" Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
+            <Button Size="Size.Small"
+                    Color="@(RegionSelection == "NA" ? Color.Light : Color.Dark)"
+                    Clicked="RegionNaClicked">
+                <Div Padding="Padding.Is3.OnX">NA</Div>
+            </Button>
+            <Button Size="Size.Small"
+                    Color="@(RegionSelection == "EU" ? Color.Light : Color.Dark)"
+                    Clicked="RegionEuClicked">
+                <Div Padding="Padding.Is3.OnX">EU</Div>
+            </Button>
+            <Button Size="Size.Small"
+                    Color="@(RegionSelection == "Asia" ? Color.Light : Color.Dark)"
+                    Clicked="RegionAsiaClicked">
+                <Div Padding="Padding.Is3.OnX">Asia</Div>
+            </Button>
+            <Button Size="Size.Small"
+                    Color="@(RegionSelection == "Japan" ? Color.Light : Color.Dark)"
+                    Clicked="RegionJapanClicked">
+                <Div Padding="Padding.Is3.OnX">Japan</Div>
+            </Button>
+        </Buttons>
+        <iframe height="500" src="https://api.ten-sura-m.wfs.games/web/announcement?region=@RegionCode&language=@(RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
+                referrerpolicy="strict-origin-when-cross-origin"
+                style="width: 100%; background-color: black"></iframe>
+    </CardBody>
+</Card>
+
 <Divider DividerType="DividerType.TextContent" Text="RECENT LIVESTREAM" Margin="Margin.Is4.OnY" />
 
 <Card Background="Background.Primary">
@@ -95,6 +127,10 @@
 
     private string? LiveStreamSrc { get; set; }
 
+    private string? RegionSelection { get; set; }
+
+    private int RegionCode { get; set; }
+
     private Timer? Timer { get; set; }
 
     protected override async Task OnInitializedAsync()
@@ -110,6 +146,7 @@
         LiveStreamSrc = liveStream?.YoutubeLink;
 
         TimerNaClicked();
+        RegionNaClicked();
     }
 
     private void TimerNaClicked()
@@ -176,6 +213,30 @@
         TimerUpdateIn = TimerUpdate - DateTime.Now;
 
         StateHasChanged();
+    }
+
+    private void RegionNaClicked()
+    {
+        RegionSelection = "NA";
+        RegionCode = 3;
+    }
+
+    private void RegionEuClicked()
+    {
+        RegionSelection = "EU";
+        RegionCode = 4;
+    }
+
+    private void RegionAsiaClicked()
+    {
+        RegionSelection = "Asia";
+        RegionCode = 2;
+    }
+
+    private void RegionJapanClicked()
+    {
+        RegionSelection = "Japan";
+        RegionCode = 1;
     }
 
     private void TimerTicked(object? state)
