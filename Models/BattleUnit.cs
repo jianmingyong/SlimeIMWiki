@@ -29,5 +29,5 @@ public record BattleUnit(
     string[] SuitedFacilities,
     string[] SecretSkills,
     string[] BattleSkills,
-    string ValorTrait,
+    string? ValorTrait,
     DateOnly? ReleaseDate);

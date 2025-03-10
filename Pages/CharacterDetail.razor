@@ -1,19 +1,33 @@
 ﻿@page "/characters/{permalink}"
 
+@using BattleUnit = SlimeIMWiki.Models.BattleUnit
+@using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
+
 @inject DataModel DataModel
+@inject NavigationManager NavigationManager
 
 <PageTitle>@GetPageTitle()</PageTitle>
-
-
 
 @code
 {
     [Parameter]
     public required string Permalink { get; set; }
 
+    private BattleUnit? BattleUnit { get; set; }
+
+    private ProtectionUnit? ProtectionUnit { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         await DataModel.LoadDataModelAsync();
+
+        BattleUnit = DataModel.BattleUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+        ProtectionUnit = DataModel.ProtectionUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+
+        if (BattleUnit == null && ProtectionUnit == null)
+        {
+            NavigationManager.NavigateTo("404");
+        }
     }
 
     private string GetPageTitle()

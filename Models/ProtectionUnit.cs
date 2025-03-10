@@ -12,4 +12,16 @@ public record ProtectionUnit(
     bool IsAttributeUnbound,
     string? Force,
     string[]? Attributes,
-    string? AttackType);
+    string? AttackType,
+    int? MinHealth,
+    int? MinAttack,
+    int? MinDefense,
+    int? MinOutput,
+    int MaxHealth,
+    int MaxAttack,
+    int MaxDefense,
+    int MaxOutput,
+    string CharacterType,
+    string TacticsType,
+    string[] SuitedFacilities,
+    DateOnly ReleaseDate);
