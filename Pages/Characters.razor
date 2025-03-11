@@ -24,7 +24,7 @@
                     BattleAttackTypes="DataModel.BattleAttackTypes"></BattleUnit>
     }
 
-    @foreach (var unit in DataModel.ProtectionUnits)
+    @foreach (var unit in DataModel.ProtectionUnits.OrderByDescending(unit => unit.ReleaseDate))
     {
         <ProtectionUnit @key="unit.Permalink"
                         Unit="unit"

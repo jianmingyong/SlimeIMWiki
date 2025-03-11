@@ -10,7 +10,7 @@ public record ProtectionUnit(
     int InitialRarity,
     bool IsEx,
     bool IsAttributeUnbound,
-    string? Force,
+    string[]? Forces,
     string[]? Attributes,
     string? AttackType,
     int? MinHealth,

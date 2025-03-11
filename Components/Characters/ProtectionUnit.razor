@@ -9,22 +9,32 @@
 
     <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column"
          Style="z-index: 3">
-        @if (Unit.Force != null)
+        @if (Unit.Forces != null)
         {
             <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@(GetForceIcon(Unit.Force))"></Image>
-        }
+                   Source="@(GetForceIcon(Unit.Forces[0]))"></Image>
 
-        @if (Unit.Attributes != null)
+            if (Unit.Attributes != null)
+            {
+                <Image Width="Width.Is100" Height="Height.Is100"
+                       Source="@(GetAttributeIcon(Unit.Attributes[0]))"></Image>
+            }
+        }
+        else if (Unit.Attributes != null)
         {
             foreach (var attribute in Unit.Attributes)
             {
                 <Image Width="Width.Is100" Height="Height.Is100"
                        Source="@(GetAttributeIcon(attribute))"></Image>
             }
-        }
 
-        @if (Unit.AttackType != null)
+            if (Unit.Attributes.Length == 1 && Unit.AttackType != null)
+            {
+                <Image Width="Width.Is100" Height="Height.Is100"
+                       Source="@(GetAttackTypeIcon(Unit.AttackType))"></Image>
+            }
+        }
+        else if (Unit.AttackType != null)
         {
             <Image Width="Width.Is100" Height="Height.Is100"
                    Source="@(GetAttackTypeIcon(Unit.AttackType))"></Image>
