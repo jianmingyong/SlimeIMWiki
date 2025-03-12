@@ -429,7 +429,7 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "forces": ["Stern of Spirit", "Tempest Elite"],
+    "forces": ["Stern of Spirit", "Tempest Elite", "Flashback Beatdown Emissary"],
     "attributes": ["Anti Light"],
     "attack_type": null,
     "release_date": "2024-01-26"
@@ -489,7 +489,7 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "forces": ["Pretty Sparkle", "Shizu's Will"],
+    "forces": ["Pretty Sparkle", "Shizu's Will", "Flashback Beatdown Emissary"],
     "attributes": ["Anti Space"],
     "attack_type": null,
     "release_date": "2023-11-29"

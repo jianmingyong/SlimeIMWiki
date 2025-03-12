@@ -9,7 +9,83 @@
 <PageTitle>@GetPageTitle()</PageTitle>
 
 <Grid>
+    <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
+        <Image Source="@GetLargeThumbnailImage()" Fluid></Image>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile" Position="Position.Relative">
+        <Div TextColor="TextColor.Body" TextWeight="TextWeight.SemiBold"
+             TextAlignment="TextAlignment.Center">@GetUnitTitle()</Div>
+        <Div TextColor="TextColor.Body" TextWeight="TextWeight.SemiBold"
+             TextAlignment="TextAlignment.Center">@GetUnitName()</Div>
 
+        <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="STATS"></Divider>
+
+        <Table Background="Background.Body">
+            <TableBody>
+                <TableRow>
+                    <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
+                        <Image Source="image/character_info/icHp.png"></Image> Health
+                    </TableHeaderCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
+                        <Image Source="image/character_info/icAtk.png"></Image> Attack
+                    </TableHeaderCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
+                        <Image Source="image/character_info/icDef.png"></Image> Defense
+                    </TableHeaderCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
+                        <Image Source="image/character_info/icConstruct.png"></Image> Output
+                    </TableHeaderCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  Width="Width.Is25">0</TableRowCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
+                        Release
+                    </TableHeaderCell>
+                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center"
+                                  ColumnSpan="2">@GetUnitReleaseDate()</TableRowCell>
+                </TableRow>
+            </TableBody>
+        </Table>
+
+        <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="FORCES"></Divider>
+
+        <Div>There is something here</Div>
+
+        <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="TAGS"></Divider>
+
+        <Div>There is something here</Div>
+
+    </Column>
 </Grid>
 
 @code
@@ -36,24 +112,31 @@
 
     private string GetPageTitle()
     {
-        {
-            var unit = DataModel.BattleUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+        if (BattleUnit != null) return $"{BattleUnit.Name} [{BattleUnit.Title}]";
+        return ProtectionUnit != null ? $"{ProtectionUnit.Name} [{ProtectionUnit.Title}]" : string.Empty;
+    }
 
-            if (unit != null)
-            {
-                return $"{unit.Name} [{unit.Title}]";
-            }
-        }
+    private string GetLargeThumbnailImage()
+    {
+        if (BattleUnit != null) return BattleUnit.Image;
+        return ProtectionUnit != null ? ProtectionUnit.Image : string.Empty;
+    }
 
-        {
-            var unit = DataModel.ProtectionUnits.FirstOrDefault(unit => unit.Permalink.Equals(Permalink, StringComparison.OrdinalIgnoreCase));
+    private string GetUnitTitle()
+    {
+        if (BattleUnit != null) return $"[ {BattleUnit.Title} ]";
+        return ProtectionUnit != null ? $"[ {ProtectionUnit.Title} ]" : string.Empty;
+    }
 
-            if (unit != null)
-            {
-                return $"{unit.Name} [{unit.Title}]";
-            }
-        }
+    private string GetUnitName()
+    {
+        if (BattleUnit != null) return BattleUnit.Name;
+        return ProtectionUnit != null ? ProtectionUnit.Name : string.Empty;
+    }
 
-        return string.Empty;
+    private DateOnly? GetUnitReleaseDate()
+    {
+        if (BattleUnit != null) return BattleUnit.ReleaseDate;
+        return ProtectionUnit?.ReleaseDate ?? DateOnly.MinValue;
     }
 }
