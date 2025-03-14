@@ -64,4 +64,9 @@ public class DataModel(IMemoryCache memoryCache, HttpClient httpClient)
             return await httpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray);
         }) ?? [];
     }
+
+    public Force? GetForce(string force)
+    {
+        return Forces.FirstOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
+    }
 }

@@ -12,6 +12,7 @@
     <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
         <Image Source="@GetLargeThumbnailImage()" Fluid></Image>
     </Column>
+
     <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile" Position="Position.Relative">
         <Div TextColor="TextColor.Body" TextWeight="TextWeight.SemiBold"
              TextAlignment="TextAlignment.Center">@GetUnitTitle()</Div>
@@ -24,53 +25,78 @@
             <TableBody>
                 <TableRow>
                     <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
-                        <Image Source="image/character_info/icHp.png"></Image> Health
+                        <Div Width="Width.Px(32)" Height="Height.Px(32)" Display="Display.InlineBlock">
+                            <Image Position="Position.Relative.Start.Is50.Top.Is50.Translate.Middle"
+                                   Source="image/character_info/icHp.png"></Image>
+                        </Div>
+                        <Div Display="Display.InlineBlock" VerticalAlignment="VerticalAlignment.Middle">Health</Div>
                     </TableHeaderCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                                  TextAlignment="TextAlignment.Center" Width="Width.Is33">
+                        @(GetUnitMinAttack() ?? 0)
+                    </TableRowCell>
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
-                                  TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
+                                  Width="Width.Is33">
+                        @(GetUnitMaxAttack())
+                    </TableRowCell>
                 </TableRow>
                 <TableRow>
                     <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
-                        <Image Source="image/character_info/icAtk.png"></Image> Attack
+                        <Div Width="Width.Px(32)" Height="Height.Px(32)" Display="Display.InlineBlock">
+                            <Image Position="Position.Relative.Start.Is50.Top.Is50.Translate.Middle"
+                                   Source="image/character_info/icAtk.png"></Image>
+                        </Div>
+                        <Div Display="Display.InlineBlock" VerticalAlignment="VerticalAlignment.Middle">Attack</Div>
                     </TableHeaderCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  Width="Width.Is33">0
+                    </TableRowCell>
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
+                                  Width="Width.Is33">0
+                    </TableRowCell>
                 </TableRow>
                 <TableRow>
                     <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
-                        <Image Source="image/character_info/icDef.png"></Image> Defense
+                        <Div Width="Width.Px(32)" Height="Height.Px(32)" Display="Display.InlineBlock">
+                            <Image Position="Position.Relative.Start.Is50.Top.Is50.Translate.Middle"
+                                   Source="image/character_info/icDef.png"></Image>
+                        </Div>
+                        <Div Display="Display.InlineBlock" VerticalAlignment="VerticalAlignment.Middle">Defense</Div>
                     </TableHeaderCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  Width="Width.Is33">0
+                    </TableRowCell>
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
+                                  Width="Width.Is33">0
+                    </TableRowCell>
                 </TableRow>
                 <TableRow>
                     <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
-                        <Image Source="image/character_info/icConstruct.png"></Image> Output
+                        <Div Width="Width.Px(32)" Height="Height.Px(32)" Display="Display.InlineBlock">
+                            <Image Position="Position.Relative.Start.Is50.Top.Is50.Translate.Middle"
+                                   Source="image/character_info/icConstruct.png"></Image>
+                        </Div>
+                        <Div Display="Display.InlineBlock" VerticalAlignment="VerticalAlignment.Middle">Output</Div>
                     </TableHeaderCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                                  Width="Width.Is33">0
+                    </TableRowCell>
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
-                                  Width="Width.Is25">0</TableRowCell>
+                                  Width="Width.Is33">0
+                    </TableRowCell>
                 </TableRow>
                 <TableRow>
                     <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body">
-                        Release
+                        <Div Display="Display.InlineBlock" VerticalAlignment="VerticalAlignment.Middle">Release</Div>
                     </TableHeaderCell>
-                    <TableRowCell Background="Background.Secondary" TextColor="TextColor.Body"
+                    <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                   TextAlignment="TextAlignment.Center"
                                   ColumnSpan="2">@GetUnitReleaseDate()</TableRowCell>
                 </TableRow>
@@ -79,13 +105,30 @@
 
         <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="FORCES"></Divider>
 
-        <Div>There is something here</Div>
+        <Div Background="Background.Dark" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is1">
+            @foreach (var force in GetUnitForces())
+            {
+                <Div Background="Background.Body" Height="Height.Px(42)" Padding="Padding.Is2.OnX.Is1.OnY"
+                     Border="Border.Rounded">
+                    <Image Position="Position.Relative.Top.Is50.Translate.MiddleY" Height="Height.Is100"
+                           Source="@DataModel.GetForce(force)!.Icon"></Image>
+                    <Span TextSize="TextSize.Small" TextColor="TextColor.Body"
+                          VerticalAlignment="VerticalAlignment.Middle">@force</Span>
+                </Div>
+            }
+        </Div>
 
         <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="TAGS"></Divider>
 
         <Div>There is something here</Div>
 
     </Column>
+</Grid>
+
+<Grid>
+    <Row>
+        <Divider DividerType="DividerType.TextContent" Margin="Margin.Is4.OnY" Text="DIVINE PROTECTION"></Divider>
+    </Row>
 </Grid>
 
 @code
@@ -134,9 +177,27 @@
         return ProtectionUnit != null ? ProtectionUnit.Name : string.Empty;
     }
 
+    private int? GetUnitMinAttack()
+    {
+        if (BattleUnit != null) return BattleUnit.MinAttack;
+        return ProtectionUnit != null ? ProtectionUnit.MinAttack : 0;
+    }
+
+    private int GetUnitMaxAttack()
+    {
+        if (BattleUnit != null) return BattleUnit.MaxAttack;
+        return ProtectionUnit?.MaxAttack ?? 0;
+    }
+
     private DateOnly? GetUnitReleaseDate()
     {
         if (BattleUnit != null) return BattleUnit.ReleaseDate;
         return ProtectionUnit?.ReleaseDate ?? DateOnly.MinValue;
+    }
+
+    private string[] GetUnitForces()
+    {
+        if (BattleUnit != null) return BattleUnit.Forces;
+        return ProtectionUnit != null ? ProtectionUnit.Forces ?? [] : [];
     }
 }
