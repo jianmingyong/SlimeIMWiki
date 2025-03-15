@@ -65,8 +65,33 @@ public class DataModel(IMemoryCache memoryCache, HttpClient httpClient)
         }) ?? [];
     }
 
+    public ICharacterUnit? GetUnit(string permalink)
+    {
+        return BattleUnits.FirstOrDefault(u => u.Permalink.Equals(permalink, StringComparison.OrdinalIgnoreCase)) as ICharacterUnit ?? ProtectionUnits.FirstOrDefault(u => u.Permalink.Equals(permalink, StringComparison.OrdinalIgnoreCase));
+    }
+
     public Force? GetForce(string force)
     {
         return Forces.FirstOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public BattleAttackType? GetBattleAttackType(string attackType)
+    {
+        return BattleAttackTypes.FirstOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public BattleAttribute? GetBattleAttribute(string attribute)
+    {
+        return BattleAttributes.FirstOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public ProtectionAttackType? GetProtectionAttackType(string attackType)
+    {
+        return ProtectionAttackTypes.FirstOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public ProtectionAttribute? GetProtectionAttribute(string attribute)
+    {
+        return ProtectionAttributes.FirstOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
     }
 }

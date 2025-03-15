@@ -5,113 +5,102 @@
 @inject HttpClient HttpClient
 @inject IMemoryCache MemoryCache
 
-<Divider DividerType="DividerType.TextContent" Text="ABOUT" Margin="Margin.Is4.OnY" />
+<CustomDivider Text="ABOUT" Margin="Margin.Is2.OnY"/>
 
-<Card Background="Background.Primary">
-    <CardBody TextColor="TextColor.Body">
-        SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.
-    </CardBody>
-</Card>
+<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3">
+    SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game
+    developed by WFS and published by Bandai Namco Entertainment.
+</Div>
 
-<Divider DividerType="DividerType.TextContent" Text="TIMERS" Margin="Margin.Is4.FromTop.Is5.FromBottom" />
+<CustomDivider Text="TIMERS" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
 
-<Card Background="Background.Primary">
-    <CardBody>
-        <Buttons Margin="Margin.IsAuto" Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
-            <Button Size="Size.Small"
-                    Color="@(TimerSelection == "NA" ? Color.Light : Color.Dark)"
-                    Clicked="TimerNaClicked">
-                <Div Padding="Padding.Is3.OnX">NA</Div>
-            </Button>
-            <Button Size="Size.Small"
-                    Color="@(TimerSelection == "EU" ? Color.Light : Color.Dark)"
-                    Clicked="TimerEuClicked">
-                <Div Padding="Padding.Is3.OnX">EU</Div>
-            </Button>
-            <Button Size="Size.Small"
-                    Color="@(TimerSelection == "Asia" ? Color.Light : Color.Dark)"
-                    Clicked="TimerAsiaClicked">
-                <Div Padding="Padding.Is3.OnX">Asia</Div>
-            </Button>
-        </Buttons>
-        <Grid>
-            <Column ColumnSize="ColumnSize.Is6">
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center">Reset</Div>
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center"
-                     TextSize="TextSize.ExtraSmall">@TimerReset.ToString("F")</Div>
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center"
-                     TextSize="TextSize.Heading2">@TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
-            </Column>
-            <Column ColumnSize="ColumnSize.Is6">
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center">Update</Div>
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center"
-                     TextSize="TextSize.ExtraSmall">@TimerUpdate.ToString("F")</Div>
-                <Div TextColor="TextColor.Body"
-                     TextAlignment="TextAlignment.Center"
-                     TextSize="TextSize.Heading2">@TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
-            </Column>
-        </Grid>
-    </CardBody>
-</Card>
+<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3"
+     Position="Position.Relative">
+    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
+        <Button Size="Size.Small"
+                Color="@(TimerSelection == "NA" ? Color.Light : Color.Dark)"
+                Clicked="TimerNaClicked">
+            <Div Padding="Padding.Is3.OnX">NA</Div>
+        </Button>
+        <Button Size="Size.Small"
+                Color="@(TimerSelection == "EU" ? Color.Light : Color.Dark)"
+                Clicked="TimerEuClicked">
+            <Div Padding="Padding.Is3.OnX">EU</Div>
+        </Button>
+        <Button Size="Size.Small"
+                Color="@(TimerSelection == "Asia" ? Color.Light : Color.Dark)"
+                Clicked="TimerAsiaClicked">
+            <Div Padding="Padding.Is3.OnX">Asia</Div>
+        </Button>
+    </Buttons>
+    <Grid>
+        <Column ColumnSize="ColumnSize.Is6">
+            <Div TextAlignment="TextAlignment.Center">Reset</Div>
+            <Div TextAlignment="TextAlignment.Center"
+                 TextSize="TextSize.ExtraSmall">@TimerReset.ToString("F")</Div>
+            <Div TextAlignment="TextAlignment.Center"
+                 TextSize="TextSize.Heading2">@TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
+        </Column>
+        <Column ColumnSize="ColumnSize.Is6">
+            <Div TextAlignment="TextAlignment.Center">Update</Div>
+            <Div TextAlignment="TextAlignment.Center"
+                 TextSize="TextSize.ExtraSmall">@TimerUpdate.ToString("F")</Div>
+            <Div TextAlignment="TextAlignment.Center"
+                 TextSize="TextSize.Heading2">@TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
+        </Column>
+    </Grid>
+</Div>
 
-<Divider DividerType="DividerType.TextContent" Text="LATEST" Margin="Margin.Is4.FromTop.Is5.FromBottom" />
+<CustomDivider Text="LATEST" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
 
-<Card Background="Background.Primary">
-    <CardBody>
-        <Buttons Margin="Margin.IsAuto" Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
-            <Button Size="Size.Small"
-                    Color="@(RegionSelection == "NA" ? Color.Light : Color.Dark)"
-                    Clicked="RegionNaClicked">
-                <Div Padding="Padding.Is3.OnX">NA</Div>
-            </Button>
-            <Button Size="Size.Small"
-                    Color="@(RegionSelection == "EU" ? Color.Light : Color.Dark)"
-                    Clicked="RegionEuClicked">
-                <Div Padding="Padding.Is3.OnX">EU</Div>
-            </Button>
-            <Button Size="Size.Small"
-                    Color="@(RegionSelection == "Asia" ? Color.Light : Color.Dark)"
-                    Clicked="RegionAsiaClicked">
-                <Div Padding="Padding.Is3.OnX">Asia</Div>
-            </Button>
-            <Button Size="Size.Small"
-                    Color="@(RegionSelection == "Japan" ? Color.Light : Color.Dark)"
-                    Clicked="RegionJapanClicked">
-                <Div Padding="Padding.Is3.OnX">Japan</Div>
-            </Button>
-        </Buttons>
-        <iframe height="500" src="https://api.ten-sura-m.wfs.games/web/announcement?region=@RegionCode&language=@(RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
-                referrerpolicy="strict-origin-when-cross-origin"
-                style="width: 100%; background-color: black"></iframe>
-    </CardBody>
-</Card>
+<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded"
+     Padding="Padding.Is3.OnX.Is3.FromBottom.Is4.FromTop" Position="Position.Relative">
+    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
+        <Button Size="Size.Small"
+                Color="@(RegionSelection == "NA" ? Color.Light : Color.Dark)"
+                Clicked="RegionNaClicked">
+            <Div Padding="Padding.Is3.OnX">NA</Div>
+        </Button>
+        <Button Size="Size.Small"
+                Color="@(RegionSelection == "EU" ? Color.Light : Color.Dark)"
+                Clicked="RegionEuClicked">
+            <Div Padding="Padding.Is3.OnX">EU</Div>
+        </Button>
+        <Button Size="Size.Small"
+                Color="@(RegionSelection == "Asia" ? Color.Light : Color.Dark)"
+                Clicked="RegionAsiaClicked">
+            <Div Padding="Padding.Is3.OnX">Asia</Div>
+        </Button>
+        <Button Size="Size.Small"
+                Color="@(RegionSelection == "Japan" ? Color.Light : Color.Dark)"
+                Clicked="RegionJapanClicked">
+            <Div Padding="Padding.Is3.OnX">Japan</Div>
+        </Button>
+    </Buttons>
 
-<Divider DividerType="DividerType.TextContent" Text="RECENT LIVESTREAM" Margin="Margin.Is4.OnY" />
+    <iframe height="500"
+            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@RegionCode&language=@(RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="width: 100%; background-color: black"></iframe>
+</Div>
 
-<Card Background="Background.Primary">
-    <CardBody>
-        @if (LiveStreamSrc == null)
-        {
-            <Paragraph TextSize="TextSize.Heading3"
-                       TextColor="TextColor.Body"
-                       TextAlignment="TextAlignment.Center">
-                No Stream Available
-            </Paragraph>
-        }
-        else
-        {
-            <iframe width="640" height="480" src="@LiveStreamSrc"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                    style="aspect-ratio: 16 / 9; width: 100%; height: 100%; max-width: 640px; max-height: 480px; position: relative; left: 50%; transform: translateX(-50%)"></iframe>
-        }
-    </CardBody>
-</Card>
+<CustomDivider Text="RECENT LIVESTREAM" Margin="Margin.Is2"/>
+
+<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3">
+    @if (LiveStreamSrc is null)
+    {
+        <Div TextSize="TextSize.Heading3" TextAlignment="TextAlignment.Center">
+            No Stream Available
+        </Div>
+    }
+    else
+    {
+        <iframe width="640" height="480" src="@LiveStreamSrc"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                style="aspect-ratio: 16 / 9; width: 100%; height: 100%; max-width: 640px; max-height: 480px; position: relative; left: 50%; transform: translateX(-50%)"></iframe>
+    }
+</Div>
 
 @code
 {

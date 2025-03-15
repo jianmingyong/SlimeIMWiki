@@ -1,5 +1,7 @@
 ﻿@page "/characters"
 
+@implements IAsyncDisposable
+
 @inject DataModel DataModel
 @inject IJSRuntime JsRuntime
 
@@ -9,33 +11,29 @@
     </AlertDescription>
 </Alert>
 
-<Divider DividerType="DividerType.TextContent" Text="Filters" Margin="Margin.Is4.OnY"/>
+<CustomDivider Text="FILTERS" Margin="Margin.Is2.OnY"/>
 
 <Div>Something here</Div>
 
-<Divider DividerType="DividerType.TextContent" Text="Characters" Margin="Margin.Is4.OnY"/>
+<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.OnY"/>
 
-<Div Flex="Flex.Wrap.AlignContent.Start" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop">
+<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
+     Background="Background.Body">
     @foreach (var unit in DataModel.BattleUnits)
     {
-        <BattleUnit @key="unit.Permalink"
-                    Unit="unit"
-                    BattleAttributes="DataModel.BattleAttributes"
-                    BattleAttackTypes="DataModel.BattleAttackTypes"></BattleUnit>
+        <BattleUnit @key="unit.Permalink" Unit="unit"/>
     }
 
     @foreach (var unit in DataModel.ProtectionUnits.OrderByDescending(unit => unit.ReleaseDate))
     {
-        <ProtectionUnit @key="unit.Permalink"
-                        Unit="unit"
-                        Forces="DataModel.Forces"
-                        ProtectionAttributes="DataModel.ProtectionAttributes"
-                        ProtectionAttackTypes="DataModel.ProtectionAttackTypes"></ProtectionUnit>
+        <ProtectionUnit @key="unit.Permalink" Unit="unit"/>
     }
 </Div>
 
 @code
 {
+    private IJSObjectReference? module;
+
     protected override async Task OnInitializedAsync()
     {
         await DataModel.LoadDataModelAsync();
@@ -43,6 +41,22 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JsRuntime.InvokeVoidAsync("updateUnitIcons");
+        if (firstRender)
+        {
+            module = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Characters.razor.js");
+        }
+
+        if (module is not null)
+        {
+            await module.InvokeVoidAsync("updateUnitIcons");
+        }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (module is not null)
+        {
+            await module.DisposeAsync();
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿function updateUnitIcons() {
+﻿export function updateUnitIcons() {
     let unitIcons = document.getElementsByClassName("unitIcon");
 
     for (const unitIconsKey of unitIcons) {

@@ -15,10 +15,10 @@ public record BattleUnit(
     string[] Forces,
     string Attribute,
     string AttackType,
-    int? MinHealth,
-    int? MinAttack,
-    int? MinDefense,
-    int? MinOutput,
+    int MinHealth,
+    int MinAttack,
+    int MinDefense,
+    int MinOutput,
     int MaxHealth,
     int MaxAttack,
     int MaxDefense,
@@ -30,4 +30,4 @@ public record BattleUnit(
     string[] SecretSkills,
     string[] BattleSkills,
     string? ValorTrait,
-    DateOnly? ReleaseDate);
+    DateOnly? ReleaseDate) : ICharacterUnit;

@@ -1,0 +1,21 @@
+﻿<Div Flex="Flex.AlignItems.Center.JustifyContent.Between" Margin="@Margin" Width="Width.Is100">
+    <Div Flex="Flex.Grow.Is1.Shrink.Is1" Height="Height.Px(1)" Background="@Background"></Div>
+    <Div Padding="Padding.Is4.OnX" TextColor="@TextColor">@Text</Div>
+    <Div Flex="Flex.Grow.Is1.Shrink.Is1" Height="Height.Px(1)" Background="@Background"></Div>
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required string Text { get; set; }
+
+    [Parameter]
+    public TextColor TextColor { get; set; } = TextColor.Body;
+
+    [Parameter]
+    public Background Background { get; set; } = Background.Body;
+
+    [Parameter]
+    public required IFluentSpacing Margin { get; set; }
+}
