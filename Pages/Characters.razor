@@ -1,5 +1,8 @@
 ﻿@page "/characters"
 
+@using BattleUnit = SlimeIMWiki.Models.BattleUnit
+@using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
+
 @implements IAsyncDisposable
 
 @inject DataModel DataModel
@@ -15,16 +18,60 @@
 
 <Div>Something here</Div>
 
-<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.OnY"/>
+<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
 
 <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
-     Background="Background.Body">
-    @foreach (var unit in DataModel.BattleUnits)
+     Background="Background.Body" Position="Position.Relative">
+    <Div Position="Position.Absolute.Top.Is0.End.Is0.Translate.MiddleY" Flex="Flex.Row">
+        <Buttons>
+            <Button Color="Color.Dark" Clicked="SortOrderButtonClicked">
+                <Icon Name="@(isDescending ? IconName.SortDown : IconName.SortUp)" />
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Release" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Release"))">
+                <Icon Name="IconName.Clock" />
+                <Span>Release</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Health" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Health"))">
+                <Image Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"/>
+                <Span>Health</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Attack" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Attack"))">
+                <Image Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"/>
+                <Span>Attack</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Defense" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Defense"))">
+                <Image Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"/>
+                <Span>Defense</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Rarity" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Rarity"))">
+                <Icon Name="IconName.Star"/>
+                <Span>Rarity</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(sortBy == "Name" ? Color.Light : Color.Dark)"
+                    Clicked="@(() => SortByButtonClicked("Name"))">
+                <Image Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"/>
+                <Span>Name</Span>
+            </Button>
+        </Buttons>
+    </Div>
+
+    @foreach (var unit in ApplySort(DataModel.BattleUnits).Cast<BattleUnit>())
     {
         <BattleUnit @key="unit.Permalink" Unit="unit"/>
     }
 
-    @foreach (var unit in DataModel.ProtectionUnits.OrderByDescending(unit => unit.ReleaseDate))
+    @foreach (var unit in ApplySort(DataModel.ProtectionUnits).Cast<ProtectionUnit>())
     {
         <ProtectionUnit @key="unit.Permalink" Unit="unit"/>
     }
@@ -33,6 +80,9 @@
 @code
 {
     private IJSObjectReference? module;
+
+    private string sortBy = "Release";
+    private bool isDescending = true;
 
     protected override async Task OnInitializedAsync()
     {
@@ -50,6 +100,44 @@
         {
             await module.InvokeVoidAsync("updateUnitIcons");
         }
+    }
+
+    private void SortOrderButtonClicked()
+    {
+        isDescending = !isDescending;
+    }
+
+    private void SortByButtonClicked(string sort)
+    {
+        sortBy = sort;
+    }
+
+    private IOrderedEnumerable<ICharacterUnit> ApplySort<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
+    {
+        if (isDescending)
+        {
+            return sortBy switch
+            {
+                "Release" => source.OrderByDescending(unit => unit.ReleaseDate),
+                "Health" => source.OrderByDescending(unit => unit.MaxHealth),
+                "Attack" => source.OrderByDescending(unit => unit.MaxAttack),
+                "Defense" => source.OrderByDescending(unit => unit.MaxDefense),
+                "Rarity" => source.OrderByDescending(unit => unit.InitialRarity),
+                "Name" => source.OrderByDescending(unit => unit.Name),
+                var _ => source.OrderByDescending(unit => unit.ReleaseDate)
+            };
+        }
+
+        return sortBy switch
+        {
+            "Release" => source.OrderBy(unit => unit.ReleaseDate),
+            "Health" => source.OrderBy(unit => unit.MaxHealth),
+            "Attack" => source.OrderBy(unit => unit.MaxAttack),
+            "Defense" => source.OrderBy(unit => unit.MaxDefense),
+            "Rarity" => source.OrderBy(unit => unit.InitialRarity),
+            "Name" => source.OrderBy(unit => unit.Name),
+            var _ => source.OrderBy(unit => unit.ReleaseDate)
+        };
     }
 
     public async ValueTask DisposeAsync()

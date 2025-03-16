@@ -12,6 +12,7 @@ namespace SlimeIMWiki;
 [JsonSerializable(typeof(ProtectionAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(TacticType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 public partial class JsonSerializer : JsonSerializerContext
 {
     public static JsonSerializer Custom { get; } = new(new JsonSerializerOptions

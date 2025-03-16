@@ -20,6 +20,8 @@ public class DataModel(IMemoryCache memoryCache, HttpClient httpClient)
 
     public ProtectionAttribute[] ProtectionAttributes { get; private set; } = [];
 
+    public TacticType[] TacticTypes { get; private set; } = [];
+
     public async Task LoadDataModelAsync()
     {
         Forces = await memoryCache.GetOrCreateAsync(nameof(Force), async entry =>
@@ -63,6 +65,12 @@ public class DataModel(IMemoryCache memoryCache, HttpClient httpClient)
             entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
             return await httpClient.GetFromJsonAsync("data/protection_attributes.json", JsonSerializer.Custom.ProtectionAttributeArray);
         }) ?? [];
+
+        TacticTypes = await memoryCache.GetOrCreateAsync(nameof(TacticType), async entry =>
+        {
+            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
+            return await httpClient.GetFromJsonAsync("data/tactics_types.json", JsonSerializer.Custom.TacticTypeArray);
+        }) ?? [];
     }
 
     public ICharacterUnit? GetUnit(string permalink)
@@ -93,5 +101,10 @@ public class DataModel(IMemoryCache memoryCache, HttpClient httpClient)
     public ProtectionAttribute? GetProtectionAttribute(string attribute)
     {
         return ProtectionAttributes.FirstOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public TacticType? GetTacticType(string tacticType)
+    {
+        return TacticTypes.FirstOrDefault(t => t.Name.Equals(tacticType, StringComparison.OrdinalIgnoreCase));
     }
 }

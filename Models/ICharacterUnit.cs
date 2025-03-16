@@ -32,7 +32,7 @@ public interface ICharacterUnit
     string CharacterType { get; }
     string TacticsType { get; }
 
-    string[] SuitedFacilities { get; }
+    string[]? SuitedFacilities { get; }
 
     DateOnly? ReleaseDate { get; }
 }

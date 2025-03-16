@@ -1,0 +1,22 @@
+﻿[
+  {
+    "name": "Speed",
+    "image": "image/tactics/speed.png"
+  },
+  {
+    "name": "Defense",
+    "image": "image/tactics/defense.png"
+  },
+  {
+    "name": "Charge",
+    "image": "image/tactics/charge.png"
+  },
+  {
+    "name": "Neutral",
+    "image": "image/tactics/neutral.png"
+  },
+  {
+    "name": "All Rounder",
+    "image": "image/tactics/all_rounder.png"
+  }
+]
