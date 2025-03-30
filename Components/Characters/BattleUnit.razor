@@ -7,7 +7,7 @@
      TextColor="TextColor.Body"
      Background="Background.Body"
      Style="z-index:4; transform: translateY(-100%)">
-    @Unit.Name
+    @DisplayText
 </Div>
 
 @if (Unit.HasEx || Unit.HasAttributeUnbound)
@@ -119,6 +119,10 @@
     [Parameter]
     [EditorRequired]
     public required Models.BattleUnit Unit { get; set; }
+    
+    [Parameter]
+    [EditorRequired]
+    public required string DisplayText { get; set; }
 
     private string GetPermalink()
     {

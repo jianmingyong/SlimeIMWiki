@@ -3126,5 +3126,76 @@
       "Symbol of Protection"
     ],
     "release_date": "2025-02-27"
+  },
+  {
+    "name": "Treyni",
+    "title": "Fey Medic",
+    "permalink": "TreyniMilitary",
+    "icon": "image/protection/characters/TreyniMilitary/4/TreyniMilitary_4_BlessPartyM.png",
+    "image": "image/protection/characters/TreyniMilitary/4/TreyniMilitary_4_BlessInfo.png",
+    "initial_rarity": 4,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Warrior's Mind",
+      "Flashback Beatdown Emissary"
+    ],
+    "attributes": [
+      "Anti Light"
+    ],
+    "attack_type": null,
+    "min_health": 197,
+    "min_attack": 92,
+    "min_defense": 111,
+    "min_output": 100,
+    "max_health": 2832,
+    "max_attack": 1201,
+    "max_defense": 1220,
+    "max_output": 220,
+    "character_type": "Balance Growth Type",
+    "tactics_type": "Speed",
+    "expertise": "undefined",
+    "suited_facilities": [
+      "Light Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-03-27"
+  },
+  {
+    "name": "Shuna",
+    "title": "Oracle Commander",
+    "permalink": "ShunaMilitary",
+    "icon": "image/protection/characters/ShunaMilitary/5/ShunaMilitary_5_BlessPartyM.png",
+    "image": "image/protection/characters/ShunaMilitary/5/ShunaMilitary_5_BlessInfo.png",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Warrior's Mind"
+    ],
+    "attributes": [
+      "Anti Light+"
+    ],
+    "attack_type": "Physical",
+    "min_health": 390,
+    "min_attack": 264,
+    "min_defense": 166,
+    "min_output": 100,
+    "max_health": 3658,
+    "max_attack": 1768,
+    "max_defense": 1506,
+    "max_output": 220,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Speed",
+    "expertise": "undefined",
+    "suited_facilities": [
+      "Light Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-03-27"
   }
 ]

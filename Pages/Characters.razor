@@ -3,10 +3,7 @@
 @using BattleUnit = SlimeIMWiki.Models.BattleUnit
 @using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
 
-@implements IAsyncDisposable
-
 @inject DataModel DataModel
-@inject IJSRuntime JsRuntime
 
 <Alert Color="Color.Danger" Visible="true">
     <AlertDescription>
@@ -18,53 +15,53 @@
 
 <Div>Something here</Div>
 
-<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
+<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is5.FromBottom"/>
 
 <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
      Background="Background.Body" Position="Position.Relative">
-    <Div Position="Position.Absolute.Top.Is0.End.Is0.Translate.MiddleY" Flex="Flex.Row">
+    <Div Position="Position.Absolute.Top.Is0.End.Is0" Flex="Flex.Row" Style="transform: translateY(-100%)">
         <Buttons>
             <Button Color="Color.Dark" Clicked="SortOrderButtonClicked">
-                <Icon Name="@(isDescending ? IconName.ChevronDown : IconName.ChevronUp)" />
+                <Icon Name="@(IsDescending ? IconName.ChevronDown : IconName.ChevronUp)" />
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Release" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Release" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Release"))">
                 <Icon Name="IconName.Clock" />
                 <Span Display="Display.None.Block.OnTablet">Release</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Health" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Health" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Health"))">
                 <Image Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
-                       Style="@(sortBy == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                       Style="@(SortBy == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Span Display="Display.None.Block.OnTablet">Health</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Attack" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Attack" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Attack"))">
                 <Image Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
-                       Style="@(sortBy == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                       Style="@(SortBy == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Span Display="Display.None.Block.OnTablet">Attack</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Defense" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Defense" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Defense"))">
                 <Image Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
-                       Style="@(sortBy == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                       Style="@(SortBy == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Span Display="Display.None.Block.OnTablet">Defense</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Rarity" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Rarity" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Rarity"))">
                 <Icon Name="IconName.Star"/>
                 <Span Display="Display.None.Block.OnTablet">Rarity</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(sortBy == "Name" ? Color.Light : Color.Dark)"
+                    Color="@(SortBy == "Name" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Name"))">
                 <Image Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
-                       Style="@(sortBy == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                       Style="@(SortBy == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Span Display="Display.None.Block.OnTablet">Name</Span>
             </Button>
         </Buttons>
@@ -72,21 +69,20 @@
 
     @foreach (var unit in ApplySort(DataModel.BattleUnits).Cast<BattleUnit>())
     {
-        <BattleUnit @key="unit.Permalink" Unit="unit"/>
+        <BattleUnit @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
 
     @foreach (var unit in ApplySort(DataModel.ProtectionUnits).Cast<ProtectionUnit>())
     {
-        <ProtectionUnit @key="unit.Permalink" Unit="unit"/>
+        <ProtectionUnit @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
 </Div>
 
 @code
 {
-    private IJSObjectReference? module;
-
-    private string sortBy = "Release";
-    private bool isDescending = true;
+    private string SortBy { get; set; } = "Release";
+    
+    private bool IsDescending { get; set; } = true;
 
     protected override async Task OnInitializedAsync()
     {
@@ -95,73 +91,68 @@
 
     private void SortOrderButtonClicked()
     {
-        isDescending = !isDescending;
+        IsDescending = !IsDescending;
     }
 
     private void SortByButtonClicked(string sort)
     {
-        sortBy = sort;
+        SortBy = sort;
+    }
+
+    private string DisplayText(ICharacterUnit unit)
+    {
+        return SortBy switch
+        {
+            "Release" => unit.Name,
+            "Health" => unit.MaxHealth.ToString("N0"),
+            "Attack" => unit.MaxAttack.ToString("N0"),
+            "Defense" => unit.MaxDefense.ToString("N0"),
+            "Rarity" => unit.Name,
+            "Name" => unit.Name,
+            var _ => unit.Name
+        };
     }
 
     private IOrderedEnumerable<ICharacterUnit> ApplySort<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
     {
-        if (isDescending)
+        if (IsDescending)
         {
-            return sortBy switch
+            return SortBy switch
             {
-                "Release" => source.OrderByDescending(unit => unit.ReleaseDate),
-                "Health" => source.OrderByDescending(unit => unit.MaxHealth),
-                "Attack" => source.OrderByDescending(unit => unit.MaxAttack),
-                "Defense" => source.OrderByDescending(unit => unit.MaxDefense),
-                "Rarity" => source.OrderByDescending(unit =>
-                {
-                    if (unit.IsAttributeUnbound)
-                    {
-                        return unit.InitialRarity + 2;
-                    }
-
-                    if (unit.IsEx)
-                    {
-                        return unit.InitialRarity + 1;
-                    }
-
-                    return unit.InitialRarity;
-                }),
-                "Name" => source.OrderByDescending(unit => unit.Name),
-                var _ => source.OrderByDescending(unit => unit.ReleaseDate)
+                "Release" => source.OrderByDescending(unit => unit.ReleaseDate).ThenByDescending(RaritySelector),
+                "Health" => source.OrderByDescending(unit => unit.MaxHealth).ThenByDescending(RaritySelector),
+                "Attack" => source.OrderByDescending(unit => unit.MaxAttack).ThenByDescending(RaritySelector),
+                "Defense" => source.OrderByDescending(unit => unit.MaxDefense).ThenByDescending(RaritySelector),
+                "Rarity" => source.OrderByDescending(RaritySelector),
+                "Name" => source.OrderByDescending(unit => unit.Name).ThenByDescending(RaritySelector),
+                var _ => source.OrderByDescending(unit => unit.ReleaseDate).ThenByDescending(RaritySelector)
             };
         }
 
-        return sortBy switch
+        return SortBy switch
         {
-            "Release" => source.OrderBy(unit => unit.ReleaseDate),
-            "Health" => source.OrderBy(unit => unit.MaxHealth),
-            "Attack" => source.OrderBy(unit => unit.MaxAttack),
-            "Defense" => source.OrderBy(unit => unit.MaxDefense),
-            "Rarity" => source.OrderBy(unit =>
-            {
-                if (unit.IsAttributeUnbound)
-                {
-                    return unit.InitialRarity + 2;
-                }
-
-                if (unit.IsEx)
-                {
-                    return unit.InitialRarity + 1;
-                }
-
-                return unit.InitialRarity;
-            }),
-            "Name" => source.OrderBy(unit => unit.Name),
-            var _ => source.OrderBy(unit => unit.ReleaseDate)
+            "Release" => source.OrderBy(unit => unit.ReleaseDate).ThenBy(RaritySelector),
+            "Health" => source.OrderBy(unit => unit.MaxHealth).ThenBy(RaritySelector),
+            "Attack" => source.OrderBy(unit => unit.MaxAttack).ThenBy(RaritySelector),
+            "Defense" => source.OrderBy(unit => unit.MaxDefense).ThenBy(RaritySelector),
+            "Rarity" => source.OrderBy(RaritySelector),
+            "Name" => source.OrderBy(unit => unit.Name).ThenBy(RaritySelector),
+            var _ => source.OrderBy(unit => unit.ReleaseDate).ThenBy(RaritySelector)
         };
-    }
 
-    public async ValueTask DisposeAsync()
-    {
-        if (module is not null)
+        int RaritySelector(ICharacterUnit unit)
         {
-            await module.DisposeAsync();
+            if (unit.IsAttributeUnbound)
+            {
+                return unit.InitialRarity + 2;
+            }
+
+            if (unit.IsEx)
+            {
+                return unit.InitialRarity + 1;
+            }
+
+            return unit.InitialRarity;
         }
     }
 }

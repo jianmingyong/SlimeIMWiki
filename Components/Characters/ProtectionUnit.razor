@@ -5,9 +5,9 @@
      Padding="Padding.Is1.OnX"
      TextSize="TextSize.ExtraSmall"
      TextColor="TextColor.Body"
-     Background="Background.Secondary"
+     Background="Background.Body"
      Style="z-index:4; transform: translateY(-100%)">
-    @Unit.Name
+    @DisplayText
 </Div>
 
 <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column" Style="z-index: 3">
@@ -141,6 +141,10 @@
     [Parameter]
     [EditorRequired]
     public required Models.ProtectionUnit Unit { get; set; }
+    
+    [Parameter]
+    [EditorRequired]
+    public required string DisplayText { get; set; }
 
     private string GetPermalink()
     {
