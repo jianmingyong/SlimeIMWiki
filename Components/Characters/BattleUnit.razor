@@ -27,9 +27,10 @@
 
 <Div Position="Position.Absolute.Start.Is50.Top.Is50.Translate.Middle" Overflow="Overflow.Hidden"
      Style="z-index: 1; width: 99px; height: 99px">
-    <Image Class="@("unitIcon facing" + Unit.Facing)" Position="Position.Absolute"
+    <Image Width="Width.Is100" Height="Height.Is100"
+           Position="Position.Absolute.Start.Is50.Translate.MiddleX"
            Source="@Unit.Icon"
-           Style="z-index: 1"></Image>
+           Style="z-index: 1"/>
 </Div>
 
 @switch(Unit.InitialRarity)

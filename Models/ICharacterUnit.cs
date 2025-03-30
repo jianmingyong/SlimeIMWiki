@@ -8,7 +8,6 @@ public interface ICharacterUnit
     string Permalink { get; }
 
     string Icon { get; }
-    string Facing { get; }
     string Image { get; }
 
     int InitialRarity { get; }

@@ -5,7 +5,6 @@ public record ProtectionUnit(
     string Title,
     string Permalink,
     string Icon,
-    string Facing,
     string Image,
     int InitialRarity,
     bool IsEx,

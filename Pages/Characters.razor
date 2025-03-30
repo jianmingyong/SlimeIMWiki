@@ -93,19 +93,6 @@
         await DataModel.LoadDataModelAsync();
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            module = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Characters.razor.js");
-        }
-
-        if (module is not null)
-        {
-            await module.InvokeVoidAsync("updateUnitIcons");
-        }
-    }
-
     private void SortOrderButtonClicked()
     {
         isDescending = !isDescending;
