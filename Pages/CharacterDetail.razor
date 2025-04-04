@@ -3,7 +3,7 @@
 @using BattleUnit = SlimeIMWiki.Models.BattleUnit
 @using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
 
-@inject DataModel DataModel
+@inject JsonDataModel JsonDataModel
 
 <PageTitle>@GetPageTitle()</PageTitle>
 
@@ -78,7 +78,7 @@ else
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
-                <Image Source="@unit.Image" Fluid/>
+                <Image Source="@JsonDataModel.GetUnitImage(unit)" Fluid/>
             </Div>
         </Column>
 
@@ -145,7 +145,7 @@ else
 
             <Grid>
                 <Column ColumnSize="ColumnSize.Is6.OnTablet.Is12.OnMobile">
-                    <CustomDivider Text="STATS" Margin="Margin.Is2.OnY"/>
+                    <TextDivider Text="STATS" Margin="Margin.Is2.OnY"/>
 
                     <Table Background="Background.Body">
                         <TableBody>
@@ -240,7 +240,7 @@ else
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center"
                                               ColumnSpan="2">
-                                    <Image Source="@DataModel.GetTacticType(unit.TacticsType)?.Image"
+                                    <Image Source="@JsonDataModel.GetTacticType(unit.TacticsType)?.Image"
                                            Text="@unit.TacticsType"
                                            Height="Height.Em(1.5)"/>
                                 </TableRowCell>
@@ -264,7 +264,7 @@ else
                 </Column>
 
                 <Column ColumnSize="ColumnSize.Is6.OnTablet.Is12.OnMobile">
-                    <CustomDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
+                    <TextDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
 
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
                          Gap="Gap.Is2">
@@ -276,7 +276,7 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@DataModel.GetForce(force)?.Icon" Text="Icon"/>
+                                               Source="@JsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
                                         <Div>@force</Div>
                                     </Div>
                                 }
@@ -290,7 +290,7 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@DataModel.GetForce(force)?.Icon" Text="Icon"/>
+                                               Source="@JsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
                                         <Div>@force</Div>
                                     </Div>
                                 }
@@ -309,7 +309,7 @@ else
                         }
                     </Div>
 
-                    <CustomDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
+                    <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
 
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
                         @if (unit.SuitedFacilities is null || unit.SuitedFacilities.Length == 0)
@@ -366,7 +366,7 @@ else
                 </Column>
             </Grid>
 
-            <CustomDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
+            <TextDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
 
             <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is2">
                 There is something here.
@@ -378,7 +378,7 @@ else
     {
         <Grid>
             <Column ColumnSize="ColumnSize.IsFull">
-                <CustomDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
+                <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
             </Column>
         </Grid>
     }
@@ -393,9 +393,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await DataModel.LoadDataModelAsync();
-
-        unit = DataModel.GetUnit(Permalink);
+        await JsonDataModel.LoadJsonDataModelAsync();
+        unit = JsonDataModel.GetUnit(Permalink);
     }
 
     private string GetPageTitle()

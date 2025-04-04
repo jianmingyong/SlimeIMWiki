@@ -1,58 +1,59 @@
 [
-	{
-		"name": "Fire",
-		"icon": "image/battle/attributes/fire.png"
-	},
-	{
-		"name": "Fire+",
-		"icon": "image/battle/attributes/fire_attribute_unbound.png"
-	},
-	{
-		"name": "Water",
-		"icon": "image/battle/attributes/water.png"
-	},
-	{
-		"name": "Water+",
-		"icon": "image/battle/attributes/water_attribute_unbound.png"
-	},
-	{
-		"name": "Wind",
-		"icon": "image/battle/attributes/wind.png"
-	},
-	{
-		"name": "Wind+",
-		"icon": "image/battle/attributes/wind_attribute_unbound.png"
-	},
-	{
-		"name": "Space",
-		"icon": "image/battle/attributes/space.png"
-	},
-	{
-		"name": "Space+",
-		"icon": "image/battle/attributes/space_attribute_unbound.png"
-	},
-	{
-		"name": "Earth",
-		"icon": "image/battle/attributes/earth.png"
-	},
-	{
-		"name": "Earth+",
-		"icon": "image/battle/attributes/earth_attribute_unbound.png"
-	},
-	{
-		"name": "Light",
-		"icon": "image/battle/attributes/light.png"
-	},
-	{
-		"name": "Light+",
-		"icon": "image/battle/attributes/light_attribute_unbound.png"
-	},
-	{
-		"name": "Dark",
-		"icon": "image/battle/attributes/dark.png"
-	},
-	{
-		"name": "Dark+",
-		"icon": "image/battle/attributes/dark_attribute_unbound.png"
-	}
+  {
+    "name": "Fire",
+    "icon": "image/battle/attributes/fire.png"
+  },
+  {
+    "name": "Water",
+    "icon": "image/battle/attributes/water.png"
+  },
+  {
+    "name": "Wind",
+    "icon": "image/battle/attributes/wind.png"
+  },
+  {
+    "name": "Space",
+    "icon": "image/battle/attributes/space.png"
+  },
+  {
+    "name": "Earth",
+    "icon": "image/battle/attributes/earth.png"
+  },
+  {
+    "name": "Light",
+    "icon": "image/battle/attributes/light.png"
+  },
+  {
+    "name": "Dark",
+    "icon": "image/battle/attributes/dark.png"
+  },
+  {
+    "name": "Fire+",
+    "icon": "image/battle/attributes/fire_attribute_unbound.png"
+  },
+  {
+    "name": "Water+",
+    "icon": "image/battle/attributes/water_attribute_unbound.png"
+  },
+  {
+    "name": "Wind+",
+    "icon": "image/battle/attributes/wind_attribute_unbound.png"
+  },
+  {
+    "name": "Space+",
+    "icon": "image/battle/attributes/space_attribute_unbound.png"
+  },
+  {
+    "name": "Earth+",
+    "icon": "image/battle/attributes/earth_attribute_unbound.png"
+  },
+  
+  {
+    "name": "Light+",
+    "icon": "image/battle/attributes/light_attribute_unbound.png"
+  },
+  {
+    "name": "Dark+",
+    "icon": "image/battle/attributes/dark_attribute_unbound.png"
+  }
 ]

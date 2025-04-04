@@ -1,10 +1,7 @@
 ﻿@page "/characters"
-
-@using BattleUnit = SlimeIMWiki.Models.BattleUnit
-@using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
 @using SlimeIMWiki.Components.Characters
 
-@inject DataModel DataModel
+@inject JsonDataModel JsonDataModel
 
 <Alert Color="Color.Danger" Visible="true">
     <AlertDescription>
@@ -12,23 +9,104 @@
     </AlertDescription>
 </Alert>
 
-<CustomDivider Text="FILTERS" Margin="Margin.Is2.OnY"/>
+<TextDivider Text="FILTERS" Margin="Margin.Is2.OnY"/>
 
-<Div>Something here</Div>
+<Div Flex="Flex.Column" Gap="Gap.Is2"
+     Background="Background.Body" Padding="Padding.Is3">
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        <Span>|</Span>
+        
+        @foreach (var attackType in JsonDataModel.BattleAttackTypes)
+        {
+            <Image Source="@attackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+        
+        <Span>|</Span>
 
-<CustomDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is5.FromBottom"/>
+        @foreach (var attribute in JsonDataModel.BattleAttributes)
+        {
+            <Image Source="@(attribute.Icon)" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+    </Div>
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <Image Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        <Span>|</Span>
+
+        @foreach (var attackType in JsonDataModel.ProtectionAttackTypes)
+        {
+            <Image Source="@attackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+
+        <Span>|</Span>
+
+        @foreach (var attribute in JsonDataModel.ProtectionAttributes)
+        {
+            <Image Source="@(attribute.Icon)" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+    </Div>
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <Div Position="Position.Relative" Width="Width.Em(4)" Height="Height.Em(2)">
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+        </Div>
+
+        <Span>|</Span>
+
+        <Div Position="Position.Relative" Width="Width.Em(5)" Height="Height.Em(2)">
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+        </Div>
+
+        <Span>|</Span>
+
+        <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+        </Div>
+    </Div>
+</Div>
+
+<TextDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is5.FromBottom"/>
 
 <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
      Background="Background.Body" Position="Position.Relative">
     <Div Position="Position.Absolute.Top.Is0.End.Is0" Flex="Flex.Row" Style="transform: translateY(-100%)">
         <Buttons>
             <Button Color="Color.Dark" Clicked="SortOrderButtonClicked">
-                <Icon Name="@(IsDescending ? IconName.ChevronDown : IconName.ChevronUp)" />
+                <Icon Name="@(IsDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
                     Color="@(SortBy == "Release" ? Color.Light : Color.Dark)"
                     Clicked="@(() => SortByButtonClicked("Release"))">
-                <Icon Name="IconName.Clock" />
+                <Icon Name="IconName.Clock"/>
                 <Span Display="Display.None.Block.OnTablet">Release</Span>
             </Button>
             <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
@@ -68,26 +146,26 @@
         </Buttons>
     </Div>
 
-    @foreach (var unit in ApplySort(DataModel.BattleUnits).Cast<BattleUnit>())
+    @foreach (var unit in ApplySort(JsonDataModel.BattleUnits).Cast<BattleUnit>())
     {
-        <BattleUnit @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
+        <BattleUnitIcon @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
 
-    @foreach (var unit in ApplySort(DataModel.ProtectionUnits).Cast<ProtectionUnit>())
+    @foreach (var unit in ApplySort(JsonDataModel.ProtectionUnits).Cast<ProtectionUnit>())
     {
-        <ProtectionUnit @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
+        <ProtectionUnitIcon @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
 </Div>
 
 @code
 {
     private string SortBy { get; set; } = "Release";
-    
+
     private bool IsDescending { get; set; } = true;
 
     protected override async Task OnInitializedAsync()
     {
-        await DataModel.LoadDataModelAsync();
+        await JsonDataModel.LoadJsonDataModelAsync();
     }
 
     private void SortOrderButtonClicked()

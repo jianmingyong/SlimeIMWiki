@@ -1,8 +1,7 @@
-﻿@inject HttpClient HttpClient
-@inject IMemoryCache MemoryCache
+﻿@inject JsonDataModel JsonDataModel
 
 <Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3">
-    @if (liveStreamSource is null)
+    @if (JsonDataModel.Livestream.YoutubeLink is null)
     {
         <Div TextSize="TextSize.Heading3" TextAlignment="TextAlignment.Center">
             No Stream Available
@@ -10,7 +9,7 @@
     }
     else
     {
-        <iframe width="640" height="480" src="@liveStreamSource"
+        <iframe width="640" height="480" src="@JsonDataModel.Livestream.YoutubeLink"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
                 style="aspect-ratio: 16 / 9; width: 100%; height: 100%; max-width: 640px; max-height: 480px; position: relative; left: 50%; transform: translateX(-50%)"></iframe>
@@ -19,16 +18,8 @@
 
 @code
 {
-    private string? liveStreamSource;
-    
     protected override async Task OnInitializedAsync()
     {
-        var liveStream = await MemoryCache.GetOrCreateAsync(nameof(Livestream), async entry =>
-        {
-            entry.SetAbsoluteExpiration(TimeSpan.FromHours(1));
-            return await HttpClient.GetFromJsonAsync<Livestream>("data/livestream.json", JsonSerializer.Custom.Livestream);
-        });
-
-        liveStreamSource = liveStream?.YoutubeLink;
+        await JsonDataModel.LoadJsonDataModelAsync();
     }
 }

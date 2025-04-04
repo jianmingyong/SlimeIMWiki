@@ -1,0 +1,147 @@
+﻿@inject JsonDataModel JsonDataModel
+
+<Link To="@($"Characters/{Unit.Permalink}")" 
+      Position="Position.Relative" 
+      Width="Width.Px(100)" Height="Height.Px(100)"
+      Style="user-select: none">
+<Div Position="Position.Absolute.Start.Is0.Top.Is0"
+     Padding="Padding.Is1.OnX"
+     TextSize="TextSize.ExtraSmall" TextColor="TextColor.Body"
+     Background="Background.Body"
+     Style="z-index:4; transform: translateY(-100%)">
+    @DisplayText
+</Div>
+
+<Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column" Style="z-index: 3">
+    @if (Unit.Forces is not null)
+    {
+        <Image Width="Width.Is100" Height="Height.Is100" Source="@(JsonDataModel.GetForce(Unit.Forces[0])?.Icon)"/>
+
+        if (Unit.Attributes is not null)
+        {
+            <Image Width="Width.Is100" Height="Height.Is100"
+                   Source="@(JsonDataModel.GetProtectionAttribute(Unit.Attributes[0])?.Icon)"/>
+        }
+    }
+    else if (Unit.Attributes is not null)
+    {
+        foreach (var attribute in Unit.Attributes)
+        {
+            <Image Width="Width.Is100" Height="Height.Is100"
+                   Source="@(JsonDataModel.GetProtectionAttribute(attribute)?.Icon)"/>
+        }
+
+        if (Unit.Attributes.Length == 1 && Unit.AttackType != null)
+        {
+            <Image Width="Width.Is100" Height="Height.Is100"
+                   Source="@(JsonDataModel.GetProtectionAttackType(Unit.AttackType)?.Icon)"/>
+        }
+    }
+    else if (Unit.AttackType is not null)
+    {
+        <Image Width="Width.Is100" Height="Height.Is100"
+               Source="@(JsonDataModel.GetProtectionAttackType(Unit.AttackType)?.Icon)"/>
+    }
+</Div>
+
+@switch (Unit.InitialRarity)
+{
+    case 3:
+    {
+        <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+               Source="image/rarity/starCharaL3A.png"
+               Style="z-index: 3"/>
+
+        <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+               Source="image/rarity/frameBlessM3.png"
+               Style="z-index: 2"/>
+
+        <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+               Source="image/rarity/baseBlessM3.png"
+               Style="z-index: 0"/>
+
+        break;
+    }
+
+    case 4:
+    {
+        <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+               Source="image/rarity/starCharaL4A.png"
+               Style="z-index: 3"/>
+
+        <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+               Source="image/rarity/frameBlessM4.png"
+               Style="z-index: 2"/>
+
+        <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+               Source="image/rarity/baseBlessM4.png"
+               Style="z-index: 0"/>
+
+        break;
+    }
+
+    case 5:
+    {
+        @if (Unit.IsEx)
+        {
+            <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                   Source="image/rarity/starCharaL6UA.png"
+                   Style="z-index: 3"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/frameBlessM6u.png"
+                   Style="z-index: 2"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/baseBlessM6u.png"
+                   Style="z-index: 0"/>
+        }
+        else if (Unit.IsAttributeUnbound)
+        {
+            <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                   Source="image/rarity/starCharaL6UPA.png"
+                   Style="z-index: 3"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/frameBlessM6up.png"
+                   Style="z-index: 2"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/baseBlessM6up.png"
+                   Style="z-index: 0"/>
+        }
+        else
+        {
+            <Image Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                   Source="image/rarity/starCharaL5A.png"
+                   Style="z-index: 3"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/frameBlessM5.png"
+                   Style="z-index: 2"/>
+
+            <Image Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                   Source="image/rarity/baseBlessM5.png"
+                   Style="z-index: 0"/>
+        }
+
+        break;
+    }
+}
+
+<Image Position="Position.Absolute.Start.Is50.Translate.MiddleX"
+       Width="Width.Px(99)" Height="Height.Px(99)"
+       Source="@JsonDataModel.GetUnitIcon(Unit)"
+       Style="z-index: 1"/>
+</Link>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required Models.ProtectionUnit Unit { get; set; }
+    
+    [Parameter]
+    [EditorRequired]
+    public required string DisplayText { get; set; }
+}

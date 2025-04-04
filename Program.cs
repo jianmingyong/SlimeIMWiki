@@ -5,7 +5,6 @@ using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using SlimeIMWiki;
-using SlimeIMWiki.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -19,8 +18,8 @@ builder.Services.AddScoped(_ => new HttpClient
         CacheControl = new CacheControlHeaderValue { NoCache = true }
     }
 });
-builder.Services.AddMemoryCache();
-builder.Services.AddScoped<DataModel>();
+builder.Services.AddHybridCache();
+builder.Services.AddScoped<JsonDataModel>();
 
 builder.Services
     .AddBlazorise()

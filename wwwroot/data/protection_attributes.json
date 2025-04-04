@@ -1,114 +1,114 @@
 [
-	{
-		"name": "Fire",
-		"icon": "image/protection/attributes/fire.png"
-	},
-	{
-		"name": "Fire+",
-		"icon": "image/protection/attributes/fire_attribute_unbound.png"
-	},
-	{
-		"name": "Water",
-		"icon": "image/protection/attributes/water.png"
-	},
-	{
-		"name": "Water+",
-		"icon": "image/protection/attributes/water_attribute_unbound.png"
-	},
-	{
-		"name": "Wind",
-		"icon": "image/protection/attributes/wind.png"
-	},
-	{
-		"name": "Wind+",
-		"icon": "image/protection/attributes/wind_attribute_unbound.png"
-	},
-	{
-		"name": "Space",
-		"icon": "image/protection/attributes/space.png"
-	},
-	{
-		"name": "Space+",
-		"icon": "image/protection/attributes/space_attribute_unbound.png"
-	},
-	{
-		"name": "Earth",
-		"icon": "image/protection/attributes/earth.png"
-	},
-	{
-		"name": "Earth+",
-		"icon": "image/protection/attributes/earth_attribute_unbound.png"
-	},
-	{
-		"name": "Light",
-		"icon": "image/protection/attributes/light.png"
-	},
-	{
-		"name": "Light+",
-		"icon": "image/protection/attributes/light_attribute_unbound.png"
-	},
-	{
-		"name": "Dark",
-		"icon": "image/protection/attributes/dark.png"
-	},
-	{
-		"name": "Dark+",
-		"icon": "image/protection/attributes/dark_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Fire",
-		"icon": "image/protection/attributes/anti_fire.png"
-	},
-	{
-		"name": "Anti Fire+",
-		"icon": "image/protection/attributes/anti_fire_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Water",
-		"icon": "image/protection/attributes/anti_water.png"
-	},
-	{
-		"name": "Anti Water+",
-		"icon": "image/protection/attributes/anti_water_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Wind",
-		"icon": "image/protection/attributes/anti_wind.png"
-	},
-	{
-		"name": "Anti Wind+",
-		"icon": "image/protection/attributes/anti_wind_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Space",
-		"icon": "image/protection/attributes/anti_space.png"
-	},
-	{
-		"name": "Anti Space+",
-		"icon": "image/protection/attributes/anti_space_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Earth",
-		"icon": "image/protection/attributes/anti_earth.png"
-	},
-	{
-		"name": "Anti Earth+",
-		"icon": "image/protection/attributes/anti_earth_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Light",
-		"icon": "image/protection/attributes/anti_light.png"
-	},
-	{
-		"name": "Anti Light+",
-		"icon": "image/protection/attributes/anti_light_attribute_unbound.png"
-	},
-	{
-		"name": "Anti Dark",
-		"icon": "image/protection/attributes/anti_dark.png"
-	},
-	{
-		"name": "Anti Dark+",
-		"icon": "image/protection/attributes/anti_dark_attribute_unbound.png"
-	}
+  {
+    "name": "Fire",
+    "icon": "image/protection/attributes/fire.png"
+  },
+  {
+    "name": "Water",
+    "icon": "image/protection/attributes/water.png"
+  },
+  {
+    "name": "Wind",
+    "icon": "image/protection/attributes/wind.png"
+  },
+  {
+    "name": "Space",
+    "icon": "image/protection/attributes/space.png"
+  },
+  {
+    "name": "Earth",
+    "icon": "image/protection/attributes/earth.png"
+  },
+  {
+    "name": "Light",
+    "icon": "image/protection/attributes/light.png"
+  },
+  {
+    "name": "Dark",
+    "icon": "image/protection/attributes/dark.png"
+  },
+  {
+    "name": "Fire+",
+    "icon": "image/protection/attributes/fire_attribute_unbound.png"
+  },
+  {
+    "name": "Water+",
+    "icon": "image/protection/attributes/water_attribute_unbound.png"
+  },
+  {
+    "name": "Wind+",
+    "icon": "image/protection/attributes/wind_attribute_unbound.png"
+  },
+  {
+    "name": "Space+",
+    "icon": "image/protection/attributes/space_attribute_unbound.png"
+  },
+  {
+    "name": "Earth+",
+    "icon": "image/protection/attributes/earth_attribute_unbound.png"
+  },
+  {
+    "name": "Light+",
+    "icon": "image/protection/attributes/light_attribute_unbound.png"
+  },
+  {
+    "name": "Dark+",
+    "icon": "image/protection/attributes/dark_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Fire",
+    "icon": "image/protection/attributes/anti_fire.png"
+  },
+  {
+    "name": "Anti Water",
+    "icon": "image/protection/attributes/anti_water.png"
+  },
+  {
+    "name": "Anti Wind",
+    "icon": "image/protection/attributes/anti_wind.png"
+  },
+  {
+    "name": "Anti Space",
+    "icon": "image/protection/attributes/anti_space.png"
+  },
+  {
+    "name": "Anti Earth",
+    "icon": "image/protection/attributes/anti_earth.png"
+  },
+  {
+    "name": "Anti Light",
+    "icon": "image/protection/attributes/anti_light.png"
+  },
+  {
+    "name": "Anti Dark",
+    "icon": "image/protection/attributes/anti_dark.png"
+  },
+  {
+    "name": "Anti Fire+",
+    "icon": "image/protection/attributes/anti_fire_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Water+",
+    "icon": "image/protection/attributes/anti_water_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Wind+",
+    "icon": "image/protection/attributes/anti_wind_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Space+",
+    "icon": "image/protection/attributes/anti_space_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Earth+",
+    "icon": "image/protection/attributes/anti_earth_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Light+",
+    "icon": "image/protection/attributes/anti_light_attribute_unbound.png"
+  },
+  {
+    "name": "Anti Dark+",
+    "icon": "image/protection/attributes/anti_dark_attribute_unbound.png"
+  }
 ]

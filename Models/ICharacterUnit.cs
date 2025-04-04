@@ -7,9 +7,6 @@ public interface ICharacterUnit
 
     string Permalink { get; }
 
-    string Icon { get; }
-    string Image { get; }
-
     int InitialRarity { get; }
 
     bool IsEx { get; }
@@ -31,7 +28,7 @@ public interface ICharacterUnit
     string CharacterType { get; }
     string TacticsType { get; }
 
-    string[]? SuitedFacilities { get; }
+    string[] SuitedFacilities { get; }
 
     DateOnly? ReleaseDate { get; }
 }
