@@ -11,8 +11,7 @@
 
 <TextDivider Text="FILTERS" Margin="Margin.Is2.OnY"/>
 
-<Div Flex="Flex.Column" Gap="Gap.Is2"
-     Background="Background.Body" Padding="Padding.Is3">
+<Div Flex="Flex.Column" Gap="Gap.Is2" Background="Background.Body" Padding="Padding.Is2">
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
         <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
         <Span>|</Span>
@@ -46,52 +45,132 @@
         }
     </Div>
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
-        <Div Position="Position.Relative" Width="Width.Em(4)" Height="Height.Em(2)">
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
+        <Div Position="Position.Relative" Width="Width.Em(3)" Height="Height.Em(1.5)" 
+             onclick="@(() => RarityFilterClicked(3))" Style="cursor: pointer">
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
                    Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
         </Div>
 
         <Span>|</Span>
 
-        <Div Position="Position.Relative" Width="Width.Em(5)" Height="Height.Em(2)">
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
+        <Div Position="Position.Relative" Width="Width.Em(3.75)" Height="Height.Em(1.5)"
+             onclick="@(() => RarityFilterClicked(4))" Style="cursor: pointer">
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
                    Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
         </Div>
 
         <Span>|</Span>
 
-        <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
+        <Div Position="Position.Relative" Width="Width.Em(4.5)" Height="Height.Em(1.5)"
+             onclick="@(() => RarityFilterClicked(5))" Style="cursor: pointer">
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
                    Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
 
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 3em"/>
         </Div>
     </Div>
+</Div>
+
+<Div Flex="Flex.Wrap" Margin="Margin.Is2.OnY" Gap="Gap.Is2">
+    @foreach (var filter in filterBy)
+    {
+        @if (filter.filterName.StartsWith("Rarity"))
+        {
+            <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is1"
+                 Background="Background.Body" Padding="Padding.Is2" Style="cursor: pointer"
+                 onclick="@(() => RemoveFilter(filter.filterName))">
+                <Icon Name="IconName.Times"/>
+                
+                @if (filter.filterName.Equals("Rarity_3"))
+                {
+                    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center">
+                        <Div Position="Position.Relative" Width="Width.Em(3)" Height="Height.Em(1.5)">
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
+                        </Div>
+                        
+                        <Div>3</Div>
+                    </Div>
+                }
+                else if (filter.filterName.Equals("Rarity_4"))
+                {
+                    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center">
+                        <Div Position="Position.Relative" Width="Width.Em(3.75)" Height="Height.Em(1.5)"
+                             Style="cursor: pointer">
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
+                        </Div>
+                        
+                        <Div>4</Div>
+                    </Div>
+                }
+                else if (filter.filterName.Equals("Rarity_5"))
+                {
+                    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center">
+                        <Div Position="Position.Relative" Width="Width.Em(4.5)" Height="Height.Em(1.5)"
+                             Style="cursor: pointer">
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
+
+                            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 3em"/>
+                        </Div>
+                        
+                        <Div>5</Div>
+                    </Div>
+                }
+            </Div>
+        }
+    }
 </Div>
 
 <TextDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is5.FromBottom"/>
@@ -146,12 +225,12 @@
         </Buttons>
     </Div>
 
-    @foreach (var unit in ApplySort(JsonDataModel.BattleUnits).Cast<BattleUnit>())
+    @foreach (var unit in ApplySort(ApplyFilter(JsonDataModel.BattleUnits)).Cast<BattleUnit>())
     {
         <BattleUnitIcon @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
 
-    @foreach (var unit in ApplySort(JsonDataModel.ProtectionUnits).Cast<ProtectionUnit>())
+    @foreach (var unit in ApplySort(ApplyFilter(JsonDataModel.ProtectionUnits)).Cast<ProtectionUnit>())
     {
         <ProtectionUnitIcon @key="unit.Permalink" Unit="unit" DisplayText="@DisplayText(unit)"/>
     }
@@ -162,6 +241,9 @@
     private string SortBy { get; set; } = "Release";
 
     private bool IsDescending { get; set; } = true;
+
+    private readonly List<(string filterName, Func<ICharacterUnit, bool> filterFunc)> filterBy = [];
+    private bool isOrSearch = true;
 
     protected override async Task OnInitializedAsync()
     {
@@ -190,6 +272,12 @@
             "Name" => unit.Name,
             var _ => unit.Name
         };
+    }
+
+    private IEnumerable<ICharacterUnit> ApplyFilter<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
+    {
+        if (filterBy.Count == 0) return source;
+        return isOrSearch ? source.Where(unit => filterBy.Any(tuple => tuple.filterFunc(unit))) : source.Where(unit => filterBy.All(tuple => tuple.filterFunc(unit)));
     }
 
     private IOrderedEnumerable<ICharacterUnit> ApplySort<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
@@ -233,5 +321,17 @@
 
             return unit.InitialRarity;
         }
+    }
+
+    private void RarityFilterClicked(int rarity)
+    {
+        filterBy.Add(($"Rarity_{rarity}", unit => unit.InitialRarity == rarity));
+        StateHasChanged();
+    }
+
+    private void RemoveFilter(string filterName)
+    {
+        filterBy.Remove(filterBy.FirstOrDefault(tuple => tuple.filterName == filterName));
+        StateHasChanged();
     }
 }
