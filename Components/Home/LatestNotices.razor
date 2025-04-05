@@ -1,52 +1,34 @@
-﻿<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded"
+﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.LatestNoticesViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded"
      Padding="Padding.Is3.OnX.Is3.FromBottom.Is4.FromTop" Position="Position.Relative">
     <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
         <Button Size="Size.Small"
-                Color="@(regionSelection == "NA" ? Color.Light : Color.Dark)"
-                Clicked="@(() => RegionButtonClicked("NA"))">
+                Color="@(ViewModel.RegionSelection == "NA" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetRegion("NA"))">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
-                Color="@(regionSelection == "EU" ? Color.Light : Color.Dark)"
-                Clicked="@(() => RegionButtonClicked("EU"))">
+                Color="@(ViewModel.RegionSelection == "EU" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetRegion("EU"))">
             <Div Padding="Padding.Is3.OnX">EU</Div>
         </Button>
         <Button Size="Size.Small"
-                Color="@(regionSelection == "Asia" ? Color.Light : Color.Dark)"
-                Clicked="@(() => RegionButtonClicked("Asia"))">
+                Color="@(ViewModel.RegionSelection == "Asia" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetRegion("Asia"))">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
         <Button Size="Size.Small"
-                Color="@(regionSelection == "Japan" ? Color.Light : Color.Dark)"
-                Clicked="@(() => RegionButtonClicked("Japan"))">
+                Color="@(ViewModel.RegionSelection == "Japan" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetRegion("Japan"))">
             <Div Padding="Padding.Is3.OnX">Japan</Div>
         </Button>
     </Buttons>
 
     <iframe height="500"
-            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@regionCode&language=@(regionSelection == "Japan" ? "1" : "2")&phoneType=1"
+            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
             referrerpolicy="strict-origin-when-cross-origin"
             style="width: 100%; background-color: black"></iframe>
 </Div>
-
-@code
-{
-    private string regionSelection = "NA";
-    private int regionCode = 3;
-
-    private Task RegionButtonClicked(string region)
-    {
-        regionSelection = region;
-        
-        regionCode = region switch
-        {
-            "NA" => 3,
-            "EU" => 4,
-            "Asia" => 2,
-            "Japan" => 1,
-            var _ => throw new ArgumentOutOfRangeException(nameof(region), region, null)
-        };
-
-        return Task.CompletedTask;
-    }
-}

@@ -1,21 +1,23 @@
-﻿@implements IDisposable
+﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.TimersViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
 <Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3"
      Position="Position.Relative">
     <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
         <Button Size="Size.Small"
-                Color="@(timerSelection == "NA" ? Color.Light : Color.Dark)"
-                Clicked="@(() => TimerButtonClicked("NA"))">
+                Color="@(ViewModel.TimerSelection == "NA" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetTimerSelection("NA"))">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
-                Color="@(timerSelection == "EU" ? Color.Light : Color.Dark)"
-                Clicked="@(() => TimerButtonClicked("EU"))">
+                Color="@(ViewModel.TimerSelection == "EU" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetTimerSelection("EU"))">
             <Div Padding="Padding.Is3.OnX">EU</Div>
         </Button>
         <Button Size="Size.Small"
-                Color="@(timerSelection == "Asia" ? Color.Light : Color.Dark)"
-                Clicked="@(() => TimerButtonClicked("Asia"))">
+                Color="@(ViewModel.TimerSelection == "Asia" ? Color.Light : Color.Dark)"
+                Clicked="@(() => ViewModel.SetTimerSelection("Asia"))">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
     </Buttons>
@@ -23,92 +25,16 @@
         <Column ColumnSize="ColumnSize.Is6">
             <Div TextAlignment="TextAlignment.Center">Reset</Div>
             <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.ExtraSmall">@timerReset.ToString("F")</Div>
+                 TextSize="TextSize.ExtraSmall">@ViewModel.TimerReset.ToString("F")</Div>
             <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.Heading2">@timerResetIn.ToString(@"hh\:mm\:ss")</Div>
+                 TextSize="TextSize.Heading2">@ViewModel.TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
         </Column>
         <Column ColumnSize="ColumnSize.Is6">
             <Div TextAlignment="TextAlignment.Center">Update</Div>
             <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.ExtraSmall">@timerUpdate.ToString("F")</Div>
+                 TextSize="TextSize.ExtraSmall">@ViewModel.TimerUpdate.ToString("F")</Div>
             <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.Heading2">@timerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
+                 TextSize="TextSize.Heading2">@ViewModel.TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
         </Column>
     </Grid>
 </Div>
-
-@code
-{
-    private Timer? timer;
-
-    private string timerSelection = "NA";
-    
-    private DateTime timerReset = DateTime.Now;
-    private DateTime timerUpdate = DateTime.Now;
-
-    private TimeSpan timerResetIn = TimeSpan.Zero;
-    private TimeSpan timerUpdateIn = TimeSpan.Zero;
-
-    protected override void OnInitialized()
-    {
-        timer = new Timer(TimerTicked, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
-        TimerButtonClicked(timerSelection);
-    }
-
-    private void TimerTicked(object? state)
-    {
-        timerResetIn = timerReset - DateTime.Now;
-        timerUpdateIn = timerUpdate - DateTime.Now;
-
-        InvokeAsync(StateHasChanged);
-    }
-    
-    private Task TimerButtonClicked(string selection)
-    {
-        timerSelection = selection;
-
-        switch (selection)
-        {
-            case "NA":
-            {
-                timerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 19, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                timerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                break;
-            }
-
-            case "EU":
-            {
-                timerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 12, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                timerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                break;
-            }
-                
-            case "Asia":
-            {
-                timerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 3, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                timerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
-                break;
-            }
-        }
-        
-        if (timerReset - DateTime.Now < TimeSpan.Zero)
-        {
-            timerReset = timerReset.AddDays(1);
-        }
-
-        if (timerUpdate - DateTime.Now < TimeSpan.Zero)
-        {
-            timerUpdate = timerUpdate.AddDays(1);
-        }
-
-        timerResetIn = timerReset - DateTime.Now;
-        timerUpdateIn = timerUpdate - DateTime.Now;
-        
-        return Task.CompletedTask;
-    }
-
-    public void Dispose()
-    {
-        timer?.Dispose();
-    }
-}
