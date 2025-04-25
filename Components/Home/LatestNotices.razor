@@ -7,22 +7,26 @@
     <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
         <Button Size="Size.Small"
                 Color="@(ViewModel.RegionSelection == "NA" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetRegion("NA"))">
+                Command="ViewModel.RegionChangeCommand"
+                CommandParameter="@("NA")">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.RegionSelection == "EU" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetRegion("EU"))">
+                Command="ViewModel.RegionChangeCommand"
+                CommandParameter="@("EU")">
             <Div Padding="Padding.Is3.OnX">EU</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.RegionSelection == "Asia" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetRegion("Asia"))">
+                Command="ViewModel.RegionChangeCommand"
+                CommandParameter="@("Asia")">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.RegionSelection == "Japan" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetRegion("Japan"))">
+                Command="ViewModel.RegionChangeCommand"
+                CommandParameter="@("Japan")">
             <Div Padding="Padding.Is3.OnX">Japan</Div>
         </Button>
     </Buttons>

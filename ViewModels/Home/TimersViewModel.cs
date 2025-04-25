@@ -1,12 +1,12 @@
 ﻿using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using Microsoft.JSInterop;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
+using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Home;
 
-public partial class TimersViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
 
@@ -25,12 +25,12 @@ public partial class TimersViewModel : ReactiveObject, IActivatableViewModel
     [Reactive]
     public partial TimeSpan TimerUpdateIn { get; private set; }
     
-    private readonly IJSRuntime _jsRuntime;
-    
-    public TimersViewModel(IJSRuntime jsRuntime)
+    private readonly IStorageService _storageService;
+
+    public TimersViewModel(IStorageService storageService)
     {
-        _jsRuntime = jsRuntime;
-        
+        _storageService = storageService;
+
         _timerSelection = "NA";
         
         _timerReset = DateTime.Now;
@@ -41,23 +41,40 @@ public partial class TimersViewModel : ReactiveObject, IActivatableViewModel
         
         this.WhenActivated(disposable =>
         {
-            Observable.StartAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable);
+            Observable.FromAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable);
             
             Observable.Interval(TimeSpan.FromSeconds(1), RxApp.TaskpoolScheduler).Subscribe(_ =>
             {
+                while (DateTime.Now > TimerReset)
+                {
+                    TimerReset = TimerReset.AddDays(1);
+                }
+
+                while (DateTime.Now > TimerUpdate)
+                {
+                    TimerUpdate = TimerUpdate.AddDays(1);
+                }
+                
                 TimerResetIn = TimerReset - DateTime.Now;
                 TimerUpdateIn = TimerUpdate - DateTime.Now;
             }).DisposeWith(disposable);
         });
     }
 
-    public async Task SetTimerSelection(string selection)
+    private async Task WhenActivatedAsync()
     {
-        TimerSelection = selection;
-
-        await _jsRuntime.InvokeVoidAsync("Cookies.set", nameof(TimerSelection), selection, new { expires = 30 });
-
-        switch (selection)
+        _timerSelection = await _storageService.GetFromCookieAsync(nameof(TimerSelection)) ?? "NA";
+        await RegionChange(_timerSelection);
+    }
+    
+    [ReactiveCommand]
+    private async Task RegionChange(string region)
+    {
+        TimerSelection = region;
+        
+        await _storageService.SetToCookieAsync(nameof(TimerSelection), region, TimeSpan.FromDays(30));
+        
+        switch (region)
         {
             case "NA":
             {
@@ -81,23 +98,17 @@ public partial class TimersViewModel : ReactiveObject, IActivatableViewModel
             }
         }
 
-        if (TimerReset - DateTime.Now < TimeSpan.Zero)
+        while (DateTime.Now > TimerReset)
         {
             TimerReset = TimerReset.AddDays(1);
         }
 
-        if (TimerUpdate - DateTime.Now < TimeSpan.Zero)
+        while (DateTime.Now > TimerUpdate)
         {
             TimerUpdate = TimerUpdate.AddDays(1);
         }
 
         TimerResetIn = TimerReset - DateTime.Now;
         TimerUpdateIn = TimerUpdate - DateTime.Now;
-    }
-
-    private async Task WhenActivatedAsync()
-    {
-        _timerSelection = await _jsRuntime.InvokeAsync<string?>("Cookies.get", nameof(TimerSelection)) ?? "NA";
-        await SetTimerSelection(_timerSelection);
     }
 }

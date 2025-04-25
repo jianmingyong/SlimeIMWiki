@@ -1,0 +1,73 @@
+﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.CharacterSectionViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
+     Background="Background.Body" Position="Position.Relative">
+
+    <Div Position="Position.Absolute.Top.Is0.End.Is0" Flex="Flex.Row" Style="transform: translateY(-100%)">
+        <Buttons>
+            <Button Color="Color.Dark" Command="ViewModel.ChangeCharacterUnitsOrderCommand">
+                <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Release" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Release")">
+                <Icon Name="IconName.Clock"/>
+                <Span Display="Display.None.Block.OnTablet">Release</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Health" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Health")">
+                <Image Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
+                       Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Span Display="Display.None.Block.OnTablet">Health</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Attack" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Attack")">
+                <Image Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
+                       Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Span Display="Display.None.Block.OnTablet">Attack</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Defense" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Defense")">
+                <Image Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
+                       Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Span Display="Display.None.Block.OnTablet">Defense</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Rarity" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Rarity")">
+                <Icon Name="IconName.Star"/>
+                <Span Display="Display.None.Block.OnTablet">Rarity</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.CharacterUnitsCategory == "Name" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
+                    CommandParameter="@("Name")">
+                <Image Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
+                       Style="@(ViewModel.CharacterUnitsCategory == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Span Display="Display.None.Block.OnTablet">Name</Span>
+            </Button>
+        </Buttons>
+    </Div>
+
+    @foreach (var unit in ViewModel.CharacterUnits)
+    {
+        if (unit is BattleUnit battleUnit)
+        {
+            <BattleUnitIcon @key="unit.Permalink" Unit="battleUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+        }
+        else if (unit is ProtectionUnit protectionUnit)
+        {
+            <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+        }
+    }
+</Div>

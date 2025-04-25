@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ReactiveUI;
 using SlimeIMWiki;
+using SlimeIMWiki.Models;
+using SlimeIMWiki.Services;
+using SlimeIMWiki.ViewModels.Characters;
 using SlimeIMWiki.ViewModels.Home;
 using Splat;
 using Splat.Microsoft.Extensions.DependencyInjection;
@@ -23,12 +26,22 @@ builder.Services.AddSingleton(_ => new HttpClient
         CacheControl = new CacheControlHeaderValue { NoCache = true }
     }
 });
-builder.Services.AddHybridCache();
-builder.Services.AddSingleton<JsonDataModel>();
 builder.Services.UseMicrosoftDependencyResolver();
 
+builder.Services.AddSingleton<CharacterListService>();
+builder.Services.AddSingleton<IStorageService, WebStorageService>();
+builder.Services.AddSingleton<JsonDataModelService>();
+
+builder.Services.AddSingleton<OldJsonDataModel>();
+
 builder.Services.AddSingleton<LatestNoticesViewModel>();
+builder.Services.AddSingleton<LiveStreamViewModel>();
 builder.Services.AddSingleton<TimersViewModel>();
+
+builder.Services.AddSingleton<CharacterSectionViewModel>();
+builder.Services.AddSingleton<FilterSectionViewModel>();
+builder.Services.AddSingleton<BattleUnitIconViewModel>();
+builder.Services.AddSingleton<ProtectionUnitIconViewModel>();
 
 builder.Services
     .AddBlazorise()

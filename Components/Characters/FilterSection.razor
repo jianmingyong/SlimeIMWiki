@@ -1,0 +1,65 @@
+﻿@using SlimeIMWiki.Components.Characters.Filters
+@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.FilterSectionViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Flex="Flex.Column" Gap="Gap.Is2" Background="Background.Body" Padding="Padding.Is2">
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        <Span>|</Span>
+        
+        <!--
+        @foreach (var attackType in ViewModel.AttackTypes)
+        {
+            <Image Source="@attackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+        -->
+        
+        <Span>|</Span>
+
+        <!--
+        @foreach (var attribute in ViewModel.JsonDataModel.BattleAttributes)
+        {
+            <Image Source="@(attribute.Icon)" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+        -->
+    </Div>
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <Image Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        <Span>|</Span>
+
+        <!--
+        @foreach (var attackType in ViewModel.JsonDataModel.ProtectionAttackTypes)
+        {
+            <Image Source="@attackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+        -->
+
+        <Span>|</Span>
+
+        <!--
+        @foreach (var attribute in ViewModel.JsonDataModel.ProtectionAttributes)
+        {
+            <Image Source="@(attribute.Icon)" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+        }
+        -->
+    </Div>
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        <InitialRarityFilter Rarity="3" />
+
+        <Span>|</Span>
+
+        <InitialRarityFilter Rarity="4" />
+
+        <Span>|</Span>
+
+        <InitialRarityFilter Rarity="5" />
+    </Div>
+</Div>
+
+<Div Flex="Flex.Wrap" Margin="Margin.Is2.OnY" Gap="Gap.Is2">
+    @foreach (var filter in ViewModel.Filters)
+    {
+        @filter.RemoveRenderFragment
+    }
+</Div>

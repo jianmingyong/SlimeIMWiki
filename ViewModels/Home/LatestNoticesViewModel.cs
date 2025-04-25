@@ -1,13 +1,14 @@
 ﻿using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using Microsoft.JSInterop;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
+using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Home;
 
-public partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewModel
 {
+    
     public ViewModelActivator Activator { get; } = new();
 
     [Reactive]
@@ -16,11 +17,11 @@ public partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewMo
     [ObservableAsProperty]
     public partial int RegionCode { get; }
 
-    private readonly IJSRuntime _jsRuntime;
+    private readonly IStorageService _storageService;
 
-    public LatestNoticesViewModel(IJSRuntime jsRuntime)
+    public LatestNoticesViewModel(IStorageService storageService)
     {
-        _jsRuntime = jsRuntime;
+        _storageService = storageService;
 
         _regionSelection = "NA";
         _regionCodeHelper = this.WhenAnyValue(model => model.RegionSelection).Select(s => s switch
@@ -30,20 +31,21 @@ public partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewMo
             "Asia" => 2,
             "Japan" => 1,
             var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), s, null)
-        }).ToProperty(this, model => model.RegionCode);
+        }).ToProperty(this, nameof(RegionCode));
 
-        this.WhenActivated(disposable => { Observable.StartAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable); });
+        this.WhenActivated(disposable => { Observable.FromAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable); });
     }
-
-    public async Task SetRegion(string region)
-    {
-        RegionSelection = region;
-        await _jsRuntime.InvokeVoidAsync("Cookies.set", nameof(RegionSelection), region, new { expires = 30 });
-    }
-
+    
     private async Task WhenActivatedAsync()
     {
-        RegionSelection = await _jsRuntime.InvokeAsync<string?>("Cookies.get", nameof(RegionSelection)) ?? "NA";
-        await SetRegion(RegionSelection);
+        RegionSelection = await _storageService.GetFromCookieAsync(nameof(RegionSelection)) ?? "NA";
+        await RegionChange(RegionSelection);
+    }
+    
+    [ReactiveCommand]
+    private async Task RegionChange(string region)
+    {
+        RegionSelection = region;
+        await _storageService.SetToCookieAsync(nameof(RegionSelection), region, TimeSpan.FromDays(30));
     }
 }

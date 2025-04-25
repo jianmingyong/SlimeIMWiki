@@ -6,6 +6,9 @@ public interface ICharacterUnit
     string Title { get; }
 
     string Permalink { get; }
+    
+    string Icon { get; }
+    string Image { get; }
 
     int InitialRarity { get; }
 
@@ -14,11 +17,6 @@ public interface ICharacterUnit
 
     bool HasEx { get; }
     bool HasAttributeUnbound { get; }
-
-    int MinHealth { get; }
-    int MinAttack { get; }
-    int MinDefense { get; }
-    int MinOutput { get; }
 
     int MaxHealth { get; }
     int MaxAttack { get; }

@@ -12,10 +12,6 @@ public record BattleUnit(
     string[] Forces,
     string Attribute,
     string AttackType,
-    int MinHealth,
-    int MinAttack,
-    int MinDefense,
-    int MinOutput,
     int MaxHealth,
     int MaxAttack,
     int MaxDefense,
@@ -27,4 +23,9 @@ public record BattleUnit(
     string[] SecretSkills,
     string[] BattleSkills,
     string? ValorTrait,
-    DateOnly? ReleaseDate) : ICharacterUnit;
+    DateOnly? ReleaseDate) : ICharacterUnit
+{
+    public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
+
+    public string Image => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
+}

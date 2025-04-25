@@ -1,0 +1,35 @@
+﻿@if (IsRemoveMode)
+{
+    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is1"
+         Background="Background.Body" Padding="Padding.Is2" Style="cursor: pointer"
+         @onclick="OnClick">
+        <Icon Name="IconName.Times"/>
+        
+        @ItemContent
+        
+        <Div>@DisplayText</Div>
+    </Div>
+}
+else
+{
+    <Div @onclick="OnClick">
+        @ItemContent
+    </Div>
+}
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required RenderFragment ItemContent { get; set; }
+    
+    [Parameter]
+    [EditorRequired]
+    public required Action OnClick { get; set; }
+    
+    [Parameter]
+    public bool IsRemoveMode { get; set; }
+    
+    [Parameter]
+    public string? DisplayText { get; set; }
+}

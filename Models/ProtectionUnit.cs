@@ -12,10 +12,6 @@ public record ProtectionUnit(
     string[]? Forces,
     string[]? Attributes,
     string? AttackType,
-    int MinHealth,
-    int MinAttack,
-    int MinDefense,
-    int MinOutput,
     int MaxHealth,
     int MaxAttack,
     int MaxDefense,
@@ -23,4 +19,9 @@ public record ProtectionUnit(
     string CharacterType,
     string TacticsType,
     string[] SuitedFacilities,
-    DateOnly? ReleaseDate) : ICharacterUnit;
+    DateOnly? ReleaseDate) : ICharacterUnit
+{
+    public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
+
+    public string Image => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
+}

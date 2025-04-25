@@ -1,9 +1,10 @@
 ﻿@page "/characters/{permalink}"
 
 @using BattleUnit = SlimeIMWiki.Models.BattleUnit
+@using JsonDataViewModel = SlimeIMWiki.Models.OldJsonDataModel
 @using ProtectionUnit = SlimeIMWiki.Models.ProtectionUnit
 
-@inject JsonDataModel JsonDataModel
+@inject JsonDataViewModel OldJsonDataModel
 
 <PageTitle>@GetPageTitle()</PageTitle>
 
@@ -78,7 +79,7 @@ else
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
-                <Image Source="@JsonDataModel.GetUnitImage(unit)" Fluid/>
+                <Image Source="@JsonDataViewModel.GetUnitImage(unit)" Fluid/>
             </Div>
         </Column>
 
@@ -160,10 +161,6 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center" Style="min-width: 5ch">
-                                    @unit?.MinHealth
-                                </TableRowCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" Style="min-width: 5ch">
                                     @unit?.MaxHealth
                                 </TableRowCell>
                             </TableRow>
@@ -176,10 +173,6 @@ else
                                     </Div>
                                     <Div>Attack</Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @unit?.MinAttack
-                                </TableRowCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
                                     @unit?.MaxAttack
@@ -196,10 +189,6 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    @unit?.MinDefense
-                                </TableRowCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
                                     @unit?.MaxDefense
                                 </TableRowCell>
                             </TableRow>
@@ -212,10 +201,6 @@ else
                                     </Div>
                                     <Div>Output</Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @unit?.MinOutput
-                                </TableRowCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
                                     @unit?.MaxOutput
@@ -238,9 +223,8 @@ else
                                     <Div>Tactics Type</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              ColumnSpan="2">
-                                    <Image Source="@JsonDataModel.GetTacticType(unit.TacticsType)?.Image"
+                                              TextAlignment="TextAlignment.Center">
+                                    <Image Source="@OldJsonDataModel.GetTacticType(unit.TacticsType)?.Image"
                                            Text="@unit.TacticsType"
                                            Height="Height.Em(1.5)"/>
                                 </TableRowCell>
@@ -254,8 +238,7 @@ else
                                     <Div>Release</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              ColumnSpan="2">
+                                              TextAlignment="TextAlignment.Center">
                                     @unit?.ReleaseDate
                                 </TableRowCell>
                             </TableRow>
@@ -276,7 +259,7 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@JsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
+                                               Source="@OldJsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
                                         <Div>@force</Div>
                                     </Div>
                                 }
@@ -290,7 +273,7 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@JsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
+                                               Source="@OldJsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
                                         <Div>@force</Div>
                                     </Div>
                                 }
@@ -393,8 +376,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await JsonDataModel.LoadJsonDataModelAsync();
-        unit = JsonDataModel.GetUnit(Permalink);
+        unit = OldJsonDataModel.GetUnit(Permalink);
     }
 
     private string GetPageTitle()

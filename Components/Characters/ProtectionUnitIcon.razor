@@ -1,4 +1,6 @@
-﻿@inject JsonDataModel JsonDataModel
+﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.ProtectionUnitIconViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
 <Link To="@($"Characters/{Unit.Permalink}")" 
       Position="Position.Relative" 
@@ -15,12 +17,12 @@
 <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column" Style="z-index: 3">
     @if (Unit.Forces is not null)
     {
-        <Image Width="Width.Is100" Height="Height.Is100" Source="@(JsonDataModel.GetForce(Unit.Forces[0])?.Icon)"/>
+        <Image Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.GetForceIcon(Unit.Forces[0])"/>
 
         if (Unit.Attributes is not null)
         {
             <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@(JsonDataModel.GetProtectionAttribute(Unit.Attributes[0])?.Icon)"/>
+                   Source="@ViewModel.GetAttributeIcon(Unit.Attributes[0])"/>
         }
     }
     else if (Unit.Attributes is not null)
@@ -28,19 +30,19 @@
         foreach (var attribute in Unit.Attributes)
         {
             <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@(JsonDataModel.GetProtectionAttribute(attribute)?.Icon)"/>
+                   Source="@ViewModel.GetAttributeIcon(attribute)"/>
         }
 
         if (Unit.Attributes.Length == 1 && Unit.AttackType != null)
         {
             <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@(JsonDataModel.GetProtectionAttackType(Unit.AttackType)?.Icon)"/>
+                   Source="@ViewModel.GetAttackTypeIcon(Unit.AttackType)"/>
         }
     }
     else if (Unit.AttackType is not null)
     {
         <Image Width="Width.Is100" Height="Height.Is100"
-               Source="@(JsonDataModel.GetProtectionAttackType(Unit.AttackType)?.Icon)"/>
+               Source="@ViewModel.GetAttackTypeIcon(Unit.AttackType)"/>
     }
 </Div>
 
@@ -131,7 +133,7 @@
 
 <Image Position="Position.Absolute.Start.Is50.Translate.MiddleX"
        Width="Width.Px(99)" Height="Height.Px(99)"
-       Source="@JsonDataModel.GetUnitIcon(Unit)"
+       Source="@Unit.Icon"
        Style="z-index: 1"/>
 </Link>
 
@@ -139,7 +141,7 @@
 {
     [Parameter]
     [EditorRequired]
-    public required Models.ProtectionUnit Unit { get; set; }
+    public required ProtectionUnit Unit { get; set; }
     
     [Parameter]
     [EditorRequired]

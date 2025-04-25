@@ -1,4 +1,6 @@
-﻿@inject JsonDataModel JsonDataModel
+﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.BattleUnitIconViewModel>
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
 <Link To="@($"Characters/{Unit.Permalink}")"
       Position="Position.Relative"
@@ -22,17 +24,17 @@
 
 <Image Position="Position.Absolute.End.Is0.Top.Is0"
        Width="Width.Is25"
-       Source="@JsonDataModel.GetBattleAttribute(Unit.Attribute)?.Icon"
+       Source="@ViewModel.GetAttributeIcon(Unit)"
        Style="z-index: 3"/>
 
 <Image Position="Position.Absolute.End.Is0"
        Width="Width.Is25"
-       Source="@JsonDataModel.GetBattleAttackType(Unit.AttackType)?.Icon"
+       Source="@ViewModel.GetAttackTypeIcon(Unit)"
        Style="z-index: 3; top: 25%"/>
 
 <Image Position="Position.Absolute.Start.Is50.Translate.MiddleX"
        Width="Width.Px(99)" Height="Height.Px(99)"
-       Source="@JsonDataModel.GetUnitIcon(Unit)"
+       Source="@Unit.Icon"
        Style="z-index: 1"/>
 
 @switch (Unit.InitialRarity)
@@ -140,7 +142,7 @@
 {
     [Parameter]
     [EditorRequired]
-    public required Models.BattleUnit Unit { get; set; }
+    public required BattleUnit Unit { get; set; }
 
     [Parameter]
     [EditorRequired]

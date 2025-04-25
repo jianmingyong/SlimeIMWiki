@@ -7,17 +7,20 @@
     <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "NA" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetTimerSelection("NA"))">
+                Command="@ViewModel.RegionChangeCommand"
+                CommandParameter="@("NA")">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "EU" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetTimerSelection("EU"))">
+                Command="@ViewModel.RegionChangeCommand"
+                CommandParameter="@("EU")">
             <Div Padding="Padding.Is3.OnX">EU</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "Asia" ? Color.Light : Color.Dark)"
-                Clicked="@(() => ViewModel.SetTimerSelection("Asia"))">
+                Command="@ViewModel.RegionChangeCommand"
+                CommandParameter="@("Asia")">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
     </Buttons>

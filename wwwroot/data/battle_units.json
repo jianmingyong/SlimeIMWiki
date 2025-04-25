@@ -4278,9 +4278,9 @@
     "max_attack": 3987,
     "max_defense": 2856,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Greatsword",
     "suited_facilities": [
       "Brewery",
       "Digsite for Defense Magistones"
@@ -4345,9 +4345,9 @@
     "max_attack": 3985,
     "max_defense": 2857,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Fist",
     "suited_facilities": [
       "Brewery",
       "Digsite for Training Magistones"
@@ -4379,9 +4379,9 @@
     "max_attack": 3989,
     "max_defense": 2854,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Sword",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Inn"
@@ -4479,9 +4479,9 @@
     "max_attack": 3979,
     "max_defense": 2879,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "Lance",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Digsite for Attack Magistones"
@@ -4814,9 +4814,9 @@
     "max_attack": 4016,
     "max_defense": 2867,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "Sword",
     "suited_facilities": [
       "Digsite for Stamina Magistones",
       "Sawmill"
@@ -4848,9 +4848,9 @@
     "max_attack": 4018,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Fist",
     "suited_facilities": [
       "Restaurant",
       "Digsite for Attack Magistones"
@@ -4947,9 +4947,9 @@
     "max_attack": 4018,
     "max_defense": 2866,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Fist",
     "suited_facilities": [
       "Training Ground",
       "Sawmill"
@@ -5147,9 +5147,9 @@
     "max_attack": 4017,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "Sword",
     "suited_facilities": [
       "Brewery",
       "Sawmill"
@@ -5215,9 +5215,9 @@
     "max_attack": 4017,
     "max_defense": 2870,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Lance",
     "suited_facilities": [
       "Trading Post",
       "Brewery"
@@ -5248,9 +5248,9 @@
     "max_attack": 4020,
     "max_defense": 2870,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Lance",
     "suited_facilities": [
       "Brewery",
       "Clothing Store"
@@ -5265,7 +5265,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
       "Stern of Spirit",
@@ -5281,9 +5281,9 @@
     "max_attack": 4018,
     "max_defense": 2870,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Greatsword",
     "suited_facilities": [
       "Feast Hot Pot",
       "Digsite for Attack Magistones"
@@ -5514,9 +5514,9 @@
     "max_attack": 4020,
     "max_defense": 2867,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "Fist",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Laboratory"
@@ -6021,5 +6021,73 @@
       "Traditional Snack Shop"
     ],
     "release_date": "2025-03-27"
+  },
+  {
+    "name": "Violet",
+    "title": "Battlefield Enchanter",
+    "permalink": "VioletMilitary",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Warrior's Mind",
+      "Primal Demon",
+      "Antagonist",
+      "Schemer"
+    ],
+    "attribute": "Fire+",
+    "attack_type": "Physical",
+    "min_health": 0,
+    "min_attack": 0,
+    "min_defense": 0,
+    "min_output": 0,
+    "max_health": 8431,
+    "max_attack": 4161,
+    "max_defense": 2944,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Speed",
+    "expertise": "Greatsword",
+    "suited_facilities": [
+      "Encampment",
+      "Armor Magicubeite Digsite"
+    ],
+    "release_date": "2025-04-10"
+  },
+  {
+    "name": "Blanc",
+    "title": "Ivory Blaze Commander",
+    "permalink": "BuranMilitary",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Warrior's Mind",
+      "Primal Demon",
+      "Fount of Wisdom",
+      "Schemer"
+    ],
+    "attribute": "Dark+",
+    "attack_type": "Physical",
+    "min_health": 0,
+    "min_attack": 0,
+    "min_defense": 0,
+    "min_output": 0,
+    "max_health": 8426,
+    "max_attack": 4161,
+    "max_defense": 2946,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Speed",
+    "expertise": "Katana",
+    "suited_facilities": [
+      "Digsite for Stamina Magigems",
+      "Weaving Workshop"
+    ],
+    "release_date": "2025-04-10"
   }
 ]
