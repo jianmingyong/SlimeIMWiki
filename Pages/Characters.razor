@@ -11,45 +11,6 @@
 
 <FilterSection/>
 
-<TextDivider Text="CHARACTERS" Margin="Margin.Is2.FromTop.Is5.FromBottom"/>
+<TextDivider Text="CHARACTERS" Margin="Margin.Is2.OnY"/>
 
 <CharacterSection/>
-
-@code
-{
-    private string SortBy { get; set; } = "Release";
-
-    private bool IsDescending { get; set; } = true;
-
-    private void SortOrderButtonClicked()
-    {
-        IsDescending = !IsDescending;
-    }
-
-    private void SortByButtonClicked(string sort)
-    {
-        SortBy = sort;
-    }
-
-    private string DisplayText(ICharacterUnit unit)
-    {
-        return SortBy switch
-        {
-            "Release" => unit.Name,
-            "Health" => unit.MaxHealth.ToString("N0"),
-            "Attack" => unit.MaxAttack.ToString("N0"),
-            "Defense" => unit.MaxDefense.ToString("N0"),
-            "Rarity" => unit.Name,
-            "Name" => unit.Name,
-            var _ => unit.Name
-        };
-    }
-
-    /*
-    private IEnumerable<ICharacterUnit> ApplyFilter<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
-    {
-        if (filterBy.Count == 0) return source;
-        return isOrSearch ? source.Where(unit => filterBy.Any(tuple => tuple.filterFunc(unit))) : source.Where(unit => filterBy.All(tuple => tuple.filterFunc(unit)));
-    }
-    */
-}

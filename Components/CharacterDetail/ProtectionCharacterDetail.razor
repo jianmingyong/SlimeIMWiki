@@ -1,39 +1,22 @@
-﻿@page "/characters/{permalink}"
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.ProtectionCharacterDetailViewModel>
+@inject IServiceProvider ServiceProvider
 
-<!--
-@if (unit is null)
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+@if (ViewModel.ProtectionUnit is not null)
 {
-    <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
-        There is no such character. Perhaps you have spelled incorrectly?
-    </Div>
-}
-else
-{
+    <PageTitle>@ViewModel.ProtectionUnit.Name [@ViewModel.ProtectionUnit.Title]</PageTitle>
+    
     <Grid>
         <Column ColumnSize="ColumnSize.Is12" Display="Display.None.OnDesktop">
-            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @unit.Title ]</Div>
-            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@unit.Name</Div>
+            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @ViewModel.ProtectionUnit.Title ]</Div>
+            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@ViewModel.ProtectionUnit.Name</Div>
 
             <Div Position="Position.Relative.Start.Is50.Translate.MiddleX" Style="width: fit-content"
                  Flex="Flex.AlignItems.Center" Gap="Gap.Is1" Padding="Padding.Is2.FromTop">
-                @switch (unit)
-                {
-                    case ProtectionUnit:
-                    {
-                        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                        <Span>Protection Unit</Span>
-
-                        break;
-                    }
-
-                    case BattleUnit:
-                    {
-                        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                        <Span>Battle Unit</Span>
-
-                        break;
-                    }
-                }
+                <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
+                <Span>Protection Unit</Span>
 
                 <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
                     <Image Position="Position.Absolute" Width="Width.Em(2)"
@@ -45,7 +28,7 @@ else
                     <Image Position="Position.Absolute" Width="Width.Em(2)"
                            Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
 
-                    @if (unit.InitialRarity >= 4)
+                    @if (ViewModel.ProtectionUnit.InitialRarity >= 4)
                     {
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
                                Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
@@ -56,7 +39,7 @@ else
                                Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
                     }
 
-                    @if (unit.InitialRarity >= 5)
+                    @if (ViewModel.ProtectionUnit.InitialRarity >= 5)
                     {
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
                                Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
@@ -72,35 +55,19 @@ else
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
-                <Image Source="@JsonDataViewModel.GetUnitImage(unit)" Fluid/>
+                <Image Source="@ViewModel.ProtectionUnit.Image" Fluid/>
             </Div>
         </Column>
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Display="Display.None.Block.OnDesktop">
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @unit.Title ]</Div>
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@unit.Name</Div>
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @ViewModel.ProtectionUnit.Title ]</Div>
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@ViewModel.ProtectionUnit.Name</Div>
 
                 <Div Position="Position.Relative.Start.Is50.Translate.MiddleX" Style="width: fit-content"
                      Flex="Flex.AlignItems.Center" Gap="Gap.Is1" Padding="Padding.Is2.FromTop">
-                    @switch (unit)
-                    {
-                        case ProtectionUnit:
-                        {
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                            <Span>Protection Unit</Span>
-
-                            break;
-                        }
-
-                        case BattleUnit:
-                        {
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                            <Span>Battle Unit</Span>
-
-                            break;
-                        }
-                    }
+                    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
+                    <Span>Protection Unit</Span>
 
                     <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
@@ -112,7 +79,7 @@ else
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
                                Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
 
-                        @if (unit.InitialRarity >= 4)
+                        @if (ViewModel.ProtectionUnit.InitialRarity >= 4)
                         {
                             <Image Position="Position.Absolute" Width="Width.Em(2)"
                                    Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
@@ -123,7 +90,7 @@ else
                                    Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
                         }
 
-                        @if (unit.InitialRarity >= 5)
+                        @if (ViewModel.ProtectionUnit.InitialRarity >= 5)
                         {
                             <Image Position="Position.Absolute" Width="Width.Em(2)"
                                    Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
@@ -154,7 +121,7 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center" Style="min-width: 5ch">
-                                    @unit?.MaxHealth
+                                    @ViewModel.ProtectionUnit?.MaxHealth
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
@@ -168,7 +135,7 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    @unit?.MaxAttack
+                                    @ViewModel.ProtectionUnit?.MaxAttack
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
@@ -182,7 +149,7 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    @unit?.MaxDefense
+                                    @ViewModel.ProtectionUnit?.MaxDefense
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
@@ -196,7 +163,7 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    @unit?.MaxOutput
+                                    @ViewModel.ProtectionUnit?.MaxOutput
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
@@ -207,7 +174,7 @@ else
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center"
                                               ColumnSpan="2">
-                                    @unit?.CharacterType
+                                    @ViewModel.ProtectionUnit?.CharacterType
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
@@ -217,8 +184,8 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    <Image Source="@OldJsonDataModel.GetTacticType(unit.TacticsType)?.Image"
-                                           Text="@unit.TacticsType"
+                                    <Image Source="@ViewModel.GetTacticTypeImage()"
+                                           Text="@ViewModel.ProtectionUnit.TacticsType"
                                            Height="Height.Em(1.5)"/>
                                 </TableRowCell>
                             </TableRow>
@@ -232,7 +199,7 @@ else
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                                               TextAlignment="TextAlignment.Center">
-                                    @unit?.ReleaseDate
+                                    @ViewModel.ProtectionUnit?.ReleaseDate
                                 </TableRowCell>
                             </TableRow>
                         </TableBody>
@@ -244,97 +211,47 @@ else
 
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
                          Gap="Gap.Is2">
-                        @switch (unit)
+                        @if (ViewModel.ProtectionUnit.Forces is not null)
                         {
-                            case ProtectionUnit { Forces: not null } protectionUnit:
+                            foreach (var force in ViewModel.ProtectionUnit.Forces)
                             {
-                                foreach (var force in protectionUnit.Forces)
-                                {
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@OldJsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
-                                        <Div>@force</Div>
-                                    </Div>
-                                }
-
-                                break;
-                            }
-
-                            case BattleUnit battleUnit:
-                            {
-                                foreach (var force in battleUnit.Forces)
-                                {
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Image Width="Width.Em(2)" Height="Height.Em(2)"
-                                               Source="@OldJsonDataModel.GetForce(force)?.Icon" Text="Icon"/>
-                                        <Div>@force</Div>
-                                    </Div>
-                                }
-
-                                break;
-                            }
-
-                            default:
-                            {
-                                <Div Flex="Flex.Grow.Is1.Shrink.Is1" TextAlignment="TextAlignment.Center">
-                                    No forces have been assigned.
+                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                    <Image Width="Width.Em(2)" Height="Height.Em(2)"
+                                           Source="@ViewModel.GetForceIcon(force)" Text="Icon"/>
+                                    <Div>@force</Div>
                                 </Div>
-
-                                break;
                             }
+                        }
+                        else
+                        {
+                            <Div Flex="Flex.Grow.Is1.Shrink.Is1" TextAlignment="TextAlignment.Center">
+                                No forces have been assigned.
+                            </Div>
                         }
                     </Div>
 
                     <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
 
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
-                        @if (unit.SuitedFacilities is null || unit.SuitedFacilities.Length == 0)
+                        @if (ViewModel.ProtectionUnit.SuitedFacilities is null || ViewModel.ProtectionUnit.SuitedFacilities.Length == 0)
                         {
                             <Div>No Suited Facilities have been assigned.</Div>
                         }
                         else
                         {
-                            if (unit.SuitedFacilities.Length >= 1)
+                            if (ViewModel.ProtectionUnit.SuitedFacilities.Length >= 1)
                             {
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@unit.SuitedFacilities[0]">
-                                    <Div>@unit.SuitedFacilities[0]</Div>
-
-                                    @switch (unit)
-                                    {
-                                        case ProtectionUnit:
-                                        {
-                                            <Div>200%</Div>
-                                            break;
-                                        }
-
-                                        case BattleUnit:
-                                        {
-                                            <Div>30%</Div>
-                                            break;
-                                        }
-                                    }
+                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@ViewModel.ProtectionUnit.SuitedFacilities[0]">
+                                    <Div>@ViewModel.ProtectionUnit.SuitedFacilities[0]</Div>
+                                    <Div>200%</Div>
                                 </Div>
                             }
 
-                            if (unit.SuitedFacilities.Length >= 2)
+                            if (ViewModel.ProtectionUnit.SuitedFacilities.Length >= 2)
                             {
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@unit.SuitedFacilities[1]">
-                                    <Div>@unit.SuitedFacilities[1]</Div>
-
-                                    @switch (unit)
-                                    {
-                                        case ProtectionUnit:
-                                        {
-                                            <Div>100%</Div>
-                                            break;
-                                        }
-
-                                        case BattleUnit:
-                                        {
-                                            <Div>10%</Div>
-                                            break;
-                                        }
-                                    }
+                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@ViewModel.ProtectionUnit.SuitedFacilities[1]">
+                                    <Div>@ViewModel.ProtectionUnit.SuitedFacilities[1]</Div>
+                                    <Div>100%</Div>
                                 </Div>
                             }
                         }
@@ -349,21 +266,17 @@ else
             </Div>
         </Column>
     </Grid>
-
-    @if (unit is ProtectionUnit)
-    {
-        <Grid>
-            <Column ColumnSize="ColumnSize.IsFull">
-                <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
-            </Column>
-        </Grid>
-    }
 }
--->
 
 @code
 {
     [Parameter]
     [EditorRequired]
     public required string Permalink { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<ProtectionCharacterDetailViewModel>(ServiceProvider, Permalink);
+        base.OnInitialized();
+    }
 }

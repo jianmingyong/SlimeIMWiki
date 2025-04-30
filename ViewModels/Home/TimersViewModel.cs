@@ -43,7 +43,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
         {
             Observable.FromAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable);
             
-            Observable.Interval(TimeSpan.FromSeconds(1), RxApp.TaskpoolScheduler).Subscribe(_ =>
+            Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
                 while (DateTime.Now > TimerReset)
                 {

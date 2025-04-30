@@ -1,7 +1,5 @@
-﻿using System.ComponentModel;
-using System.Reactive;
+﻿using System.Reactive;
 using System.Reactive.Disposables;
-using System.Reactive.Linq;
 using ReactiveUI;
 using SlimeIMWiki.Models;
 using SlimeIMWiki.Services;
@@ -14,9 +12,13 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
     
     public IEnumerable<ICharacterUnit> CharacterUnits => _characterListService.CharacterUnits;
 
+    public string DisplayCategory => _characterListService.DisplayCategory;
+
     public string CharacterUnitsCategory => _characterListService.OrderByCategory;
     
     public bool IsOrderByDescending => _characterListService.IsOrderByDescending;
+
+    public ReactiveCommand<string, Unit> ChangeCharacterUnitsDisplayCategoryCommand => _characterListService.ChangeCharacterUnitsDisplayCategoryCommand;
 
     public ReactiveCommand<string, Unit> ChangeCharacterUnitsOrderByCategoryCommand => _characterListService.ChangeCharacterUnitsOrderByCategoryCommand;
     
@@ -30,15 +32,20 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
         
         this.WhenActivated(disposable =>
         {
-            Observable.FromEvent<PropertyChangedEventHandler, PropertyChangedEventArgs>(
-                    eventHandler =>
-                    {
-                        return Handler;
-                        void Handler(object? sender, PropertyChangedEventArgs e) => eventHandler(e);
-                    },
-                    eh => characterListService.PropertyChanged += eh,
-                    eh => characterListService.PropertyChanged -= eh)
-                .Subscribe(args => this.RaisePropertyChanged(args.PropertyName))
+            this.WhenAnyValue(model => model._characterListService.CharacterUnits)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(CharacterUnits)))
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._characterListService.DisplayCategory)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(DisplayCategory)))
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._characterListService.OrderByCategory)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(CharacterUnitsCategory)))
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._characterListService.IsOrderByDescending)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(IsOrderByDescending)))
                 .DisposeWith(disposable);
         });
     }

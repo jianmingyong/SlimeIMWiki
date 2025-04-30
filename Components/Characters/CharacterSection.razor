@@ -2,10 +2,27 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
-     Background="Background.Body" Position="Position.Relative">
-
-    <Div Position="Position.Absolute.Top.Is0.End.Is0" Flex="Flex.Row" Style="transform: translateY(-100%)">
+<Div Flex="Flex.Wrap.JustifyContent.Between" Gap="Gap.Is2.OnY" Margin="Margin.Is2.OnY">
+    <Div Flex="Flex.Row">
+        <Buttons>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayCategory == "Battle" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
+                    CommandParameter="@("Battle")">
+                <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <Span Display="Display.None.Block.OnTablet">Battle Units</Span>
+            </Button>
+            <Button Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayCategory == "Protection" ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
+                    CommandParameter="@("Protection")">
+                <Image Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <Span Display="Display.None.Block.OnTablet">Protection Units</Span>
+            </Button>
+        </Buttons>
+    </Div>
+    
+    <Div Flex="Flex.Row">
         <Buttons>
             <Button Color="Color.Dark" Command="ViewModel.ChangeCharacterUnitsOrderCommand">
                 <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
@@ -58,7 +75,11 @@
             </Button>
         </Buttons>
     </Div>
+</Div>
 
+<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
+     Background="Background.Body" Position="Position.Relative">
+    
     @foreach (var unit in ViewModel.CharacterUnits)
     {
         if (unit is BattleUnit battleUnit)

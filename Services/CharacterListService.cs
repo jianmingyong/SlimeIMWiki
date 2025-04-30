@@ -14,33 +14,38 @@ public sealed partial class CharacterListService : ReactiveObject
 {
     [ObservableAsProperty]
     private IEnumerable<ICharacterUnit> _characterUnits = [];
+
+    [Reactive]
+    private string _displayCategory = "Battle";
     
     [Reactive]
-    public partial string OrderByCategory { get; set; }
+    private string _orderByCategory = "Release";
     
     [Reactive]
-    public partial bool IsOrderByDescending { get; set; }
+    private bool _isOrderByDescending = true;
 
     public ObservableCollection<Filter> Filters { get; } = [];
     
     [Reactive]
-    public partial bool IsOrFilter { get; set; }
+    private bool _isOrFilter = true;
     
     private readonly JsonDataModelService _jsonDataModelService;
     
     public CharacterListService(JsonDataModelService jsonDataModelService)
     {
         _jsonDataModelService = jsonDataModelService;
-        
-        _orderByCategory = "Release";
-        _isOrderByDescending = true;
-        _isOrFilter = true;
 
         _characterUnitsHelper = Observable.CombineLatest(
             this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits),
+            this.WhenAnyValue(service => service.DisplayCategory),
             this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
             Filters.ToObservableChangeSet(),
-            (units, _, _) => ApplySort(ApplyFilter(units.Item1.Cast<ICharacterUnit>().Concat(units.Item2))))
+            (units, displayCategory, _, _) => ApplySort(ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
+            {
+                "Battle" => units.Item1,
+                "Protection" => units.Item2,
+                var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+            })))
             .ToProperty(this, nameof(CharacterUnits));
     }
     
@@ -91,6 +96,12 @@ public sealed partial class CharacterListService : ReactiveObject
     {
         if (Filters.Count == 0) return source;
         return IsOrFilter ? source.Where(unit => Filters.Any(filter => filter.FilterFunction(unit))) : source.Where(unit => Filters.All(filter => filter.FilterFunction(unit)));
+    }
+
+    [ReactiveCommand]
+    private void ChangeCharacterUnitsDisplayCategory(string category)
+    {
+        DisplayCategory = category;
     }
 
     [ReactiveCommand]
