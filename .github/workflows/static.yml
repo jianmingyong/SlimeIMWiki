@@ -36,7 +36,7 @@ jobs:
           dotnet-version: '9.0'
 
       - name: Publish app
-        run: dotnet publish -c Release
+        run: dotnet workload restore && dotnet publish -c Release
 
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
