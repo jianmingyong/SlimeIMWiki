@@ -11,10 +11,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Magic",
-    "min_health": 142,
-    "min_attack": 70,
-    "min_defense": 69,
-    "min_output": 100,
     "max_health": 2813,
     "max_attack": 1193,
     "max_defense": 1192,
@@ -26,7 +22,17 @@
       "Symbol of Protection",
       "Space Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": "Building a Base",
+    "divine_protection_effect": "Increases M-ATK by 11%",
+    "support_divine_protection_effect": "Increases M-ATK by 4%",
+    "protection_skill_name": "Silent Support",
+    "protection_skill_effect": "Increase skill cost limit until the end of battle by 40 (Max: 999)\nIncrease all Soul of Skills gauges' increases by 40% (Turns: 3)",
+    "trait_name": "Effect - Critical Resistance DOWN",
+    "trait_effect": "When 1 or more enemies are affected by ATK UP, decreases all targets' critical resistance by 11% at start of turn (available in support formation)",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Butterflies of the Night Owner",
@@ -40,10 +46,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Physical",
-    "min_health": 144,
-    "min_attack": 72,
-    "min_defense": 66,
-    "min_output": 100,
     "max_health": 3234,
     "max_attack": 1163,
     "max_defense": 1009,
@@ -55,7 +57,17 @@
       "Symbol of Protection",
       "Earth Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": "Peek Into the Future",
+    "divine_protection_effect": "Increases M-ATK by 11%",
+    "support_divine_protection_effect": "Increases M-ATK by 4%",
+    "protection_skill_name": "Astrology",
+    "protection_skill_effect": "Increase Soul of Secrets damage by 40% (Turns: 3)\nIncreases all Soul of Secrets gauges' increase by 40% (Turns: 3)",
+    "trait_name": "Troop - Evade Poison",
+    "trait_effect": "When your troop contains 3 or more battle characters, increases all allies' poison evasion rate by 15% during battle (available in support formation)",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Haruna",
@@ -69,10 +81,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Physical",
-    "min_health": 145,
-    "min_attack": 68,
-    "min_defense": 68,
-    "min_output": 100,
     "max_health": 2816,
     "max_attack": 1191,
     "max_defense": 1191,
@@ -84,7 +92,17 @@
       "Symbol of Protection",
       "Dark Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Dord",
@@ -98,10 +116,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Magic",
-    "min_health": 142,
-    "min_attack": 73,
-    "min_defense": 65,
-    "min_output": 100,
     "max_health": 3232,
     "max_attack": 1164,
     "max_defense": 1008,
@@ -113,7 +127,17 @@
       "Symbol of Protection",
       "Wind Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Gobuichi",
@@ -127,10 +151,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Physical",
-    "min_health": 141,
-    "min_attack": 64,
-    "min_defense": 79,
-    "min_output": 100,
     "max_health": 3343,
     "max_attack": 1049,
     "max_defense": 1332,
@@ -142,7 +162,17 @@
       "Symbol of Protection",
       "Light Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Garm",
@@ -156,10 +186,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Physical",
-    "min_health": 138,
-    "min_attack": 67,
-    "min_defense": 78,
-    "min_output": 100,
     "max_health": 3340,
     "max_attack": 1052,
     "max_defense": 1331,
@@ -171,7 +197,17 @@
       "Symbol of Protection",
       "Fire Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Psychic Elf",
@@ -185,10 +221,6 @@
     "forces": null,
     "attributes": null,
     "attack_type": "Magic",
-    "min_health": 140,
-    "min_attack": 66,
-    "min_defense": 76,
-    "min_output": 100,
     "max_health": 3342,
     "max_attack": 1051,
     "max_defense": 1329,
@@ -200,7 +232,17 @@
       "Symbol of Protection",
       "Water Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Light Spirit",
@@ -217,10 +259,6 @@
       "Water"
     ],
     "attack_type": null,
-    "min_health": 204,
-    "min_attack": 106,
-    "min_defense": 106,
-    "min_output": 100,
     "max_health": 2933,
     "max_attack": 1255,
     "max_defense": 1255,
@@ -232,7 +270,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Vesta",
@@ -249,10 +297,6 @@
       "Wind"
     ],
     "attack_type": null,
-    "min_health": 209,
-    "min_attack": 108,
-    "min_defense": 100,
-    "min_output": 100,
     "max_health": 3358,
     "max_attack": 1227,
     "max_defense": 1064,
@@ -264,7 +308,17 @@
       "Space Magic Device",
       "Wind Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Fuze",
@@ -281,10 +335,6 @@
       "Dark"
     ],
     "attack_type": null,
-    "min_health": 211,
-    "min_attack": 98,
-    "min_defense": 120,
-    "min_output": 100,
     "max_health": 3472,
     "max_attack": 1104,
     "max_defense": 1408,
@@ -296,7 +346,17 @@
       "Wind Magic Device",
       "Dark Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Sky Dragon",
@@ -313,10 +373,6 @@
       "Space"
     ],
     "attack_type": null,
-    "min_health": 214,
-    "min_attack": 99,
-    "min_defense": 118,
-    "min_output": 100,
     "max_health": 3475,
     "max_attack": 1105,
     "max_defense": 1406,
@@ -328,7 +384,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Salamander",
@@ -345,10 +411,6 @@
       "Earth"
     ],
     "attack_type": null,
-    "min_health": 211,
-    "min_attack": 98,
-    "min_defense": 118,
-    "min_output": 100,
     "max_health": 3472,
     "max_attack": 1104,
     "max_defense": 1406,
@@ -360,7 +422,17 @@
       "Fire Magic Device",
       "Earth Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Gard Mjolmire",
@@ -377,10 +449,6 @@
       "Light"
     ],
     "attack_type": null,
-    "min_health": 208,
-    "min_attack": 110,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 3357,
     "max_attack": 1229,
     "max_defense": 1060,
@@ -392,7 +460,17 @@
       "Water Magic Device",
       "Light Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Kaijin",
@@ -409,10 +487,6 @@
       "Fire"
     ],
     "attack_type": null,
-    "min_health": 213,
-    "min_attack": 110,
-    "min_defense": 94,
-    "min_output": 100,
     "max_health": 3362,
     "max_attack": 1229,
     "max_defense": 1058,
@@ -424,7 +498,17 @@
       "Earth Magic Device",
       "Fire Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -440,10 +524,6 @@
       "Water"
     ],
     "attack_type": null,
-    "min_health": 206,
-    "min_attack": 102,
-    "min_defense": 101,
-    "min_output": 100,
     "max_health": 2935,
     "max_attack": 1251,
     "max_defense": 1250,
@@ -455,7 +535,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Ramiris",
@@ -472,10 +562,6 @@
       "Earth"
     ],
     "attack_type": null,
-    "min_health": 351,
-    "min_attack": 184,
-    "min_defense": 165,
-    "min_output": 100,
     "max_health": 3928,
     "max_attack": 1505,
     "max_defense": 1280,
@@ -487,7 +573,17 @@
       "Light Magic Device",
       "Earth Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -504,10 +600,6 @@
       "Space"
     ],
     "attack_type": null,
-    "min_health": 354,
-    "min_attack": 168,
-    "min_defense": 200,
-    "min_output": 100,
     "max_health": 4043,
     "max_attack": 1325,
     "max_defense": 1742,
@@ -519,7 +611,17 @@
       "Water Magic Device",
       "Space Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Charybdis",
@@ -536,10 +638,6 @@
       "Wind"
     ],
     "attack_type": null,
-    "min_health": 358,
-    "min_attack": 173,
-    "min_defense": 174,
-    "min_output": 100,
     "max_health": 3514,
     "max_attack": 1507,
     "max_defense": 1508,
@@ -551,7 +649,17 @@
       "Space Magic Device",
       "Wind Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Orc Disaster",
@@ -568,10 +676,6 @@
       "Fire"
     ],
     "attack_type": null,
-    "min_health": 351,
-    "min_attack": 176,
-    "min_defense": 175,
-    "min_output": 100,
     "max_health": 3507,
     "max_attack": 1510,
     "max_defense": 1509,
@@ -583,7 +687,17 @@
       "Dark Magic Device",
       "Fire Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Elemental Colossus",
@@ -600,10 +714,6 @@
       "Water"
     ],
     "attack_type": null,
-    "min_health": 348,
-    "min_attack": 169,
-    "min_defense": 198,
-    "min_output": 100,
     "max_health": 4037,
     "max_attack": 1326,
     "max_defense": 1740,
@@ -615,7 +725,17 @@
       "Earth Magic Device",
       "Water Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -632,10 +752,6 @@
       "Dark"
     ],
     "attack_type": null,
-    "min_health": 362,
-    "min_attack": 180,
-    "min_defense": 180,
-    "min_output": 100,
     "max_health": 3518,
     "max_attack": 1514,
     "max_defense": 1514,
@@ -647,7 +763,17 @@
       "Wind Magic Device",
       "Dark Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Ifrit",
@@ -664,10 +790,6 @@
       "Light"
     ],
     "attack_type": null,
-    "min_health": 352,
-    "min_attack": 180,
-    "min_defense": 175,
-    "min_output": 100,
     "max_health": 3929,
     "max_attack": 1501,
     "max_defense": 1290,
@@ -679,7 +801,17 @@
       "Fire Magic Device",
       "Light Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -696,10 +828,6 @@
       "Wind"
     ],
     "attack_type": null,
-    "min_health": 345,
-    "min_attack": 185,
-    "min_defense": 173,
-    "min_output": 100,
     "max_health": 3501,
     "max_attack": 1519,
     "max_defense": 1507,
@@ -711,7 +839,17 @@
       "Fire Magic Device",
       "Wind Magic Device"
     ],
-    "release_date": "2021-12-30"
+    "release_date": "2021-12-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -728,10 +866,6 @@
       "Water"
     ],
     "attack_type": null,
-    "min_health": 350,
-    "min_attack": 175,
-    "min_defense": 175,
-    "min_output": 100,
     "max_health": 4039,
     "max_attack": 1332,
     "max_defense": 1717,
@@ -743,7 +877,17 @@
       "Wind Magic Device",
       "Water Magic Device"
     ],
-    "release_date": "2021-11-29"
+    "release_date": "2021-11-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shion",
@@ -760,10 +904,6 @@
       "Fire"
     ],
     "attack_type": null,
-    "min_health": 350,
-    "min_attack": 175,
-    "min_defense": 175,
-    "min_output": 100,
     "max_health": 3927,
     "max_attack": 1496,
     "max_defense": 1290,
@@ -775,7 +915,17 @@
       "Dark Magic Device",
       "Fire Magic Device"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Hakurou",
@@ -792,10 +942,6 @@
       "Fire"
     ],
     "attack_type": null,
-    "min_health": 360,
-    "min_attack": 192,
-    "min_defense": 164,
-    "min_output": 100,
     "max_health": 3516,
     "max_attack": 1526,
     "max_defense": 1498,
@@ -807,7 +953,17 @@
       "Earth Magic Device",
       "Fire Magic Device"
     ],
-    "release_date": "2022-03-29"
+    "release_date": "2022-03-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Chloe Aubert",
@@ -824,10 +980,6 @@
       "Light"
     ],
     "attack_type": null,
-    "min_health": 355,
-    "min_attack": 185,
-    "min_defense": 182,
-    "min_output": 100,
     "max_health": 3932,
     "max_attack": 1506,
     "max_defense": 1297,
@@ -839,7 +991,17 @@
       "Water Magic Device",
       "Light Magic Device"
     ],
-    "release_date": "2022-02-27"
+    "release_date": "2022-02-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Soka",
@@ -856,10 +1018,6 @@
       "Earth"
     ],
     "attack_type": null,
-    "min_health": 359,
-    "min_attack": 179,
-    "min_defense": 181,
-    "min_output": 100,
     "max_health": 3515,
     "max_attack": 1513,
     "max_defense": 1515,
@@ -871,7 +1029,17 @@
       "Light Magic Device",
       "Earth Magic Device"
     ],
-    "release_date": "2022-01-27"
+    "release_date": "2022-01-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -888,10 +1056,6 @@
       "Dark"
     ],
     "attack_type": null,
-    "min_health": 384,
-    "min_attack": 232,
-    "min_defense": 153,
-    "min_output": 100,
     "max_health": 3540,
     "max_attack": 1566,
     "max_defense": 1487,
@@ -903,7 +1067,17 @@
       "Space Magic Device",
       "Dark Magic Device"
     ],
-    "release_date": "2022-04-24"
+    "release_date": "2022-04-24",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -920,10 +1094,6 @@
       "Space"
     ],
     "attack_type": null,
-    "min_health": 410,
-    "min_attack": 190,
-    "min_defense": 190,
-    "min_output": 100,
     "max_health": 3987,
     "max_attack": 1511,
     "max_defense": 1305,
@@ -935,7 +1105,17 @@
       "Dark Magic Device",
       "Space Magic Device"
     ],
-    "release_date": "2022-05-09"
+    "release_date": "2022-05-09",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -951,10 +1131,6 @@
       "Light"
     ],
     "attack_type": "Physical",
-    "min_health": 365,
-    "min_attack": 214,
-    "min_defense": 181,
-    "min_output": 100,
     "max_health": 3521,
     "max_attack": 1548,
     "max_defense": 1515,
@@ -966,7 +1142,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-05-30"
+    "release_date": "2022-05-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Gabiru",
@@ -982,10 +1168,6 @@
       "Wind"
     ],
     "attack_type": "Magic",
-    "min_health": 355,
-    "min_attack": 227,
-    "min_defense": 176,
-    "min_output": 100,
     "max_health": 3511,
     "max_attack": 1561,
     "max_defense": 1510,
@@ -997,7 +1179,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-06-29"
+    "release_date": "2022-06-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1013,10 +1205,6 @@
       "Water"
     ],
     "attack_type": "Magic",
-    "min_health": 355,
-    "min_attack": 221,
-    "min_defense": 162,
-    "min_output": 100,
     "max_health": 3435,
     "max_attack": 1612,
     "max_defense": 1421,
@@ -1028,7 +1216,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-07-28"
+    "release_date": "2022-07-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -1044,10 +1242,6 @@
       "Space"
     ],
     "attack_type": "Physical",
-    "min_health": 362,
-    "min_attack": 235,
-    "min_defense": 163,
-    "min_output": 100,
     "max_health": 3442,
     "max_attack": 1626,
     "max_defense": 1422,
@@ -1059,7 +1253,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-08-29"
+    "release_date": "2022-08-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -1075,10 +1279,6 @@
       "Earth"
     ],
     "attack_type": "Magic",
-    "min_health": 374,
-    "min_attack": 169,
-    "min_defense": 241,
-    "min_output": 100,
     "max_health": 3476,
     "max_attack": 1461,
     "max_defense": 1686,
@@ -1090,7 +1290,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-09-29"
+    "release_date": "2022-09-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -1106,10 +1316,6 @@
       "Dark"
     ],
     "attack_type": "Magic",
-    "min_health": 365,
-    "min_attack": 245,
-    "min_defense": 145,
-    "min_output": 100,
     "max_health": 3445,
     "max_attack": 1636,
     "max_defense": 1404,
@@ -1121,7 +1327,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-10-27"
+    "release_date": "2022-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Towa",
@@ -1137,10 +1353,6 @@
       "Fire"
     ],
     "attack_type": "Physical",
-    "min_health": 391,
-    "min_attack": 244,
-    "min_defense": 137,
-    "min_output": 100,
     "max_health": 3471,
     "max_attack": 1635,
     "max_defense": 1396,
@@ -1152,7 +1364,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-11-24"
+    "release_date": "2022-11-24",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -1168,10 +1390,6 @@
       "Light"
     ],
     "attack_type": "Magic",
-    "min_health": 380,
-    "min_attack": 246,
-    "min_defense": 150,
-    "min_output": 100,
     "max_health": 3460,
     "max_attack": 1637,
     "max_defense": 1409,
@@ -1183,7 +1401,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2022-12-28"
+    "release_date": "2022-12-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Ramiris",
@@ -1199,10 +1427,6 @@
       "Space"
     ],
     "attack_type": "Magic",
-    "min_health": 351,
-    "min_attack": 245,
-    "min_defense": 163,
-    "min_output": 100,
     "max_health": 3431,
     "max_attack": 1636,
     "max_defense": 1422,
@@ -1214,7 +1438,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-01-30"
+    "release_date": "2023-01-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Chloe Aubert",
@@ -1233,10 +1467,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 90,
-    "min_defense": 90,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1199,
     "max_defense": 1199,
@@ -1248,7 +1478,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-02-27"
+    "release_date": "2023-02-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -1267,10 +1507,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 362,
-    "min_attack": 248,
-    "min_defense": 153,
-    "min_output": 100,
     "max_health": 3538,
     "max_attack": 1687,
     "max_defense": 1459,
@@ -1282,7 +1518,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-02-27"
+    "release_date": "2023-02-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1298,10 +1544,6 @@
     ],
     "attributes": null,
     "attack_type": null,
-    "min_health": 490,
-    "min_attack": 245,
-    "min_defense": 245,
-    "min_output": 100,
     "max_health": 3894,
     "max_attack": 1685,
     "max_defense": 1685,
@@ -1312,7 +1554,17 @@
     "suited_facilities": [
       "Symbol of Protection"
     ],
-    "release_date": "2023-03-28"
+    "release_date": "2023-03-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Souei",
@@ -1331,10 +1583,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 201,
-    "min_attack": 83,
-    "min_defense": 98,
-    "min_output": 100,
     "max_health": 2836,
     "max_attack": 1192,
     "max_defense": 1207,
@@ -1346,7 +1594,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-03-28"
+    "release_date": "2023-03-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Frey",
@@ -1365,10 +1623,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 365,
-    "min_attack": 250,
-    "min_defense": 148,
-    "min_output": 100,
     "max_health": 3541,
     "max_attack": 1689,
     "max_defense": 1454,
@@ -1380,7 +1634,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-03-28"
+    "release_date": "2023-03-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Deeno",
@@ -1399,10 +1663,6 @@
       "Anti Space"
     ],
     "attack_type": null,
-    "min_health": 192,
-    "min_attack": 85,
-    "min_defense": 100,
-    "min_output": 100,
     "max_health": 2827,
     "max_attack": 1194,
     "max_defense": 1209,
@@ -1414,7 +1674,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-04-27"
+    "release_date": "2023-04-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -1432,10 +1702,6 @@
       "Anti Space"
     ],
     "attack_type": "Physical",
-    "min_health": 346,
-    "min_attack": 252,
-    "min_defense": 152,
-    "min_output": 100,
     "max_health": 3522,
     "max_attack": 1691,
     "max_defense": 1458,
@@ -1447,7 +1713,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-04-27"
+    "release_date": "2023-04-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Eren",
@@ -1466,10 +1742,6 @@
       "Anti Dark"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 88,
-    "min_defense": 92,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1197,
     "max_defense": 1201,
@@ -1481,7 +1753,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-05-30"
+    "release_date": "2023-05-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Myulan",
@@ -1500,10 +1782,6 @@
       "Anti Dark"
     ],
     "attack_type": null,
-    "min_health": 352,
-    "min_attack": 249,
-    "min_defense": 155,
-    "min_output": 100,
     "max_health": 3528,
     "max_attack": 1688,
     "max_defense": 1461,
@@ -1515,7 +1793,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-05-30"
+    "release_date": "2023-05-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -1535,10 +1823,6 @@
       "Anti Earth"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 2821,
     "max_attack": 1199,
     "max_defense": 1201,
@@ -1550,7 +1834,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-06-29"
+    "release_date": "2023-06-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1569,10 +1863,6 @@
       "Anti Earth"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 3533,
     "max_attack": 1690,
     "max_defense": 1455,
@@ -1584,7 +1874,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-06-29"
+    "release_date": "2023-06-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1603,10 +1903,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 87,
-    "min_defense": 94,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1196,
     "max_defense": 1203,
@@ -1618,7 +1914,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-07-27"
+    "release_date": "2023-07-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Treyni",
@@ -1637,10 +1943,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 353,
-    "min_attack": 251,
-    "min_defense": 151,
-    "min_output": 100,
     "max_health": 3529,
     "max_attack": 1690,
     "max_defense": 1457,
@@ -1652,7 +1954,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-07-27"
+    "release_date": "2023-07-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Albis",
@@ -1671,10 +1983,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 206,
-    "min_attack": 80,
-    "min_defense": 102,
-    "min_output": 100,
     "max_health": 2841,
     "max_attack": 1189,
     "max_defense": 1211,
@@ -1686,7 +1994,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-08-29"
+    "release_date": "2023-08-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -1705,10 +2023,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 362,
-    "min_attack": 201,
-    "min_defense": 248,
-    "min_output": 100,
     "max_health": 3560,
     "max_attack": 1540,
     "max_defense": 1741,
@@ -1720,7 +2034,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-08-29"
+    "release_date": "2023-08-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rigurd",
@@ -1739,10 +2063,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 185,
-    "min_attack": 89,
-    "min_defense": 92,
-    "min_output": 100,
     "max_health": 2820,
     "max_attack": 1198,
     "max_defense": 1201,
@@ -1754,7 +2074,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-09-28"
+    "release_date": "2023-09-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1773,10 +2103,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 353,
-    "min_attack": 252,
-    "min_defense": 150,
-    "min_output": 100,
     "max_health": 3529,
     "max_attack": 1691,
     "max_defense": 1456,
@@ -1788,7 +2114,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-09-28"
+    "release_date": "2023-09-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1807,10 +2143,6 @@
       "Anti Wind"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 96,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1205,
     "max_defense": 1205,
@@ -1822,7 +2154,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-10-30"
+    "release_date": "2023-10-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -1840,10 +2182,6 @@
       "Anti Wind"
     ],
     "attack_type": "Magic",
-    "min_health": 377,
-    "min_attack": 263,
-    "min_defense": 155,
-    "min_output": 100,
     "max_health": 3553,
     "max_attack": 1702,
     "max_defense": 1461,
@@ -1855,7 +2193,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-10-30"
+    "release_date": "2023-10-30",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Chloe Aubert",
@@ -1875,10 +2223,6 @@
       "Anti Space"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -1887,7 +2231,17 @@
     "tactics_type": null,
     "expertise": "undefined",
     "suited_facilities": null,
-    "release_date": "2023-11-28"
+    "release_date": "2023-11-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1905,10 +2259,6 @@
       "Anti Space"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -1917,7 +2267,17 @@
     "tactics_type": null,
     "expertise": "undefined",
     "suited_facilities": null,
-    "release_date": "2023-11-28"
+    "release_date": "2023-11-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -1936,10 +2296,6 @@
       "Anti Dark"
     ],
     "attack_type": null,
-    "min_health": 192,
-    "min_attack": 94,
-    "min_defense": 99,
-    "min_output": 100,
     "max_health": 2827,
     "max_attack": 1203,
     "max_defense": 1208,
@@ -1951,7 +2307,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-12-28"
+    "release_date": "2023-12-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shion",
@@ -1969,10 +2335,6 @@
       "Anti Dark"
     ],
     "attack_type": "Physical",
-    "min_health": 380,
-    "min_attack": 262,
-    "min_defense": 157,
-    "min_output": 100,
     "max_health": 3556,
     "max_attack": 1701,
     "max_defense": 1463,
@@ -1984,7 +2346,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2023-12-28"
+    "release_date": "2023-12-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Gabiru",
@@ -2004,10 +2376,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2016,7 +2384,17 @@
     "tactics_type": null,
     "expertise": "undefined",
     "suited_facilities": null,
-    "release_date": "2024-01-25"
+    "release_date": "2024-01-25",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2034,10 +2412,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2046,7 +2420,17 @@
     "tactics_type": null,
     "expertise": "undefined",
     "suited_facilities": null,
-    "release_date": "2024-01-25"
+    "release_date": "2024-01-25",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Soka",
@@ -2065,10 +2449,6 @@
       "Anti Earth"
     ],
     "attack_type": null,
-    "min_health": 192,
-    "min_attack": 95,
-    "min_defense": 97,
-    "min_output": 100,
     "max_health": 2827,
     "max_attack": 1204,
     "max_defense": 1206,
@@ -2080,7 +2460,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-02-28"
+    "release_date": "2024-02-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Treyni",
@@ -2098,10 +2488,6 @@
       "Anti Earth"
     ],
     "attack_type": "Physical",
-    "min_health": 384,
-    "min_attack": 262,
-    "min_defense": 156,
-    "min_output": 100,
     "max_health": 3560,
     "max_attack": 1701,
     "max_defense": 1462,
@@ -2113,7 +2499,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-02-28"
+    "release_date": "2024-02-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Rain",
@@ -2132,10 +2528,6 @@
       "Anti Wind"
     ],
     "attack_type": null,
-    "min_health": 197,
-    "min_attack": 96,
-    "min_defense": 93,
-    "min_output": 100,
     "max_health": 2832,
     "max_attack": 1205,
     "max_defense": 1202,
@@ -2147,7 +2539,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-03-28"
+    "release_date": "2024-03-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Violet",
@@ -2165,10 +2567,6 @@
       "Anti Wind"
     ],
     "attack_type": "Physical",
-    "min_health": 386,
-    "min_attack": 263,
-    "min_defense": 153,
-    "min_output": 100,
     "max_health": 3562,
     "max_attack": 1702,
     "max_defense": 1459,
@@ -2180,7 +2578,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-03-28"
+    "release_date": "2024-03-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Kagali",
@@ -2199,10 +2607,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 187,
-    "min_attack": 98,
-    "min_defense": 95,
-    "min_output": 100,
     "max_health": 2822,
     "max_attack": 1207,
     "max_defense": 1204,
@@ -2214,7 +2618,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-04-25"
+    "release_date": "2024-04-25",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -2232,10 +2646,6 @@
       "Anti Water"
     ],
     "attack_type": "Magic",
-    "min_health": 380,
-    "min_attack": 264,
-    "min_defense": 154,
-    "min_output": 100,
     "max_health": 3556,
     "max_attack": 1703,
     "max_defense": 1460,
@@ -2247,7 +2657,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-04-25"
+    "release_date": "2024-04-25",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shion",
@@ -2266,10 +2686,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 96,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1205,
     "max_defense": 1205,
@@ -2281,7 +2697,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-05-28"
+    "release_date": "2024-05-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Renard Jester",
@@ -2299,10 +2725,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2314,7 +2736,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-05-28"
+    "release_date": "2024-05-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Ritus",
@@ -2333,10 +2765,6 @@
       "Anti Space"
     ],
     "attack_type": null,
-    "min_health": 192,
-    "min_attack": 96,
-    "min_defense": 95,
-    "min_output": 100,
     "max_health": 2827,
     "max_attack": 1205,
     "max_defense": 1204,
@@ -2348,7 +2776,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-06-26"
+    "release_date": "2024-06-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Maribel Rozzo",
@@ -2366,10 +2804,6 @@
       "Anti Space"
     ],
     "attack_type": "Magic",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 3553,
     "max_attack": 1699,
     "max_defense": 1473,
@@ -2381,7 +2815,17 @@
       "Space Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-06-26"
+    "release_date": "2024-06-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Albis",
@@ -2399,10 +2843,6 @@
       "Anti Earth"
     ],
     "attack_type": "Magic",
-    "min_health": 195,
-    "min_attack": 95,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 2830,
     "max_attack": 1204,
     "max_defense": 1205,
@@ -2414,7 +2854,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-07-28"
+    "release_date": "2024-07-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -2432,10 +2882,6 @@
       "Anti Earth"
     ],
     "attack_type": "Magic",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 3551,
     "max_attack": 1702,
     "max_defense": 1464,
@@ -2447,7 +2893,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-07-28"
+    "release_date": "2024-07-28",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Frey",
@@ -2466,10 +2922,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 197,
-    "min_attack": 97,
-    "min_defense": 93,
-    "min_output": 100,
     "max_health": 2832,
     "max_attack": 1206,
     "max_defense": 1202,
@@ -2481,7 +2933,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-08-29"
+    "release_date": "2024-08-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Masayuki Honjo",
@@ -2499,10 +2961,6 @@
       "Anti Fire"
     ],
     "attack_type": "Physical",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 3553,
     "max_attack": 1704,
     "max_defense": 1467,
@@ -2514,7 +2972,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-08-29"
+    "release_date": "2024-08-29",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Izis",
@@ -2533,10 +3001,6 @@
       "Anti Dark"
     ],
     "attack_type": null,
-    "min_health": 189,
-    "min_attack": 97,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 2824,
     "max_attack": 1206,
     "max_defense": 1205,
@@ -2548,7 +3012,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-09-26"
+    "release_date": "2024-09-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Emils",
@@ -2567,10 +3041,6 @@
       "Anti Dark"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2579,7 +3049,17 @@
     "tactics_type": null,
     "expertise": "undefined",
     "suited_facilities": null,
-    "release_date": "2024-09-26"
+    "release_date": "2024-09-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -2597,10 +3077,6 @@
       "Anti Light+"
     ],
     "attack_type": "Magic",
-    "min_health": 377,
-    "min_attack": 267,
-    "min_defense": 149,
-    "min_output": 100,
     "max_health": 3645,
     "max_attack": 1771,
     "max_defense": 1489,
@@ -2612,7 +3088,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-10-16"
+    "release_date": "2024-10-16",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Towa",
@@ -2631,10 +3117,6 @@
       "Anti Wind"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 96,
-    "min_defense": 98,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1205,
     "max_defense": 1207,
@@ -2646,7 +3128,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-10-27"
+    "release_date": "2024-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Elmesia El Ru Thalion",
@@ -2664,10 +3156,6 @@
       "Anti Wind+"
     ],
     "attack_type": "Magic",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 3648,
     "max_attack": 1769,
     "max_defense": 1492,
@@ -2679,7 +3167,17 @@
       "Wind Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-10-27"
+    "release_date": "2024-10-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Alice Rondo",
@@ -2698,10 +3196,6 @@
       "Anti Earth"
     ],
     "attack_type": null,
-    "min_health": 197,
-    "min_attack": 94,
-    "min_defense": 99,
-    "min_output": 100,
     "max_health": 2832,
     "max_attack": 1203,
     "max_defense": 1208,
@@ -2713,7 +3207,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-11-26"
+    "release_date": "2024-11-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Albis",
@@ -2731,10 +3235,6 @@
       "Anti Earth+"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2746,7 +3246,17 @@
       "Earth Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-11-26"
+    "release_date": "2024-11-26",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -2764,10 +3274,6 @@
       "Anti Dark"
     ],
     "attack_type": "Magic",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 2830,
     "max_attack": 1209,
     "max_defense": 1205,
@@ -2779,7 +3285,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-12-19"
+    "release_date": "2024-12-19",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Himmel",
@@ -2797,10 +3313,6 @@
       "Anti Dark+"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2812,7 +3324,17 @@
       "Dark Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2024-12-19"
+    "release_date": "2024-12-19",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Jiwu",
@@ -2831,10 +3353,6 @@
       "Anti Water"
     ],
     "attack_type": null,
-    "min_health": 190,
-    "min_attack": 97,
-    "min_defense": 96,
-    "min_output": 100,
     "max_health": 2825,
     "max_attack": 1206,
     "max_defense": 1205,
@@ -2846,7 +3364,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-01-19"
+    "release_date": "2025-01-19",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -2864,10 +3392,6 @@
       "Anti Water+"
     ],
     "attack_type": null,
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 100,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -2879,7 +3403,17 @@
       "Water Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-01-19"
+    "release_date": "2025-01-19",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Carrion",
@@ -2898,10 +3432,6 @@
       "Anti Fire"
     ],
     "attack_type": null,
-    "min_health": 202,
-    "min_attack": 94,
-    "min_defense": 105,
-    "min_output": 100,
     "max_health": 2837,
     "max_attack": 1203,
     "max_defense": 1214,
@@ -2913,7 +3443,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-02-27"
+    "release_date": "2025-02-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Masayuki Honjo",
@@ -2931,10 +3471,6 @@
       "Anti Fire+"
     ],
     "attack_type": "Magic",
-    "min_health": 397,
-    "min_attack": 265,
-    "min_defense": 161,
-    "min_output": 100,
     "max_health": 3695,
     "max_attack": 1637,
     "max_defense": 1748,
@@ -2946,7 +3482,17 @@
       "Fire Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-02-27"
+    "release_date": "2025-02-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Treyni",
@@ -2965,10 +3511,6 @@
       "Anti Light"
     ],
     "attack_type": null,
-    "min_health": 197,
-    "min_attack": 92,
-    "min_defense": 111,
-    "min_output": 100,
     "max_health": 2832,
     "max_attack": 1201,
     "max_defense": 1220,
@@ -2980,7 +3522,17 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-03-27"
+    "release_date": "2025-03-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -2998,10 +3550,6 @@
       "Anti Light+"
     ],
     "attack_type": "Physical",
-    "min_health": 390,
-    "min_attack": 264,
-    "min_defense": 166,
-    "min_output": 100,
     "max_health": 3658,
     "max_attack": 1768,
     "max_defense": 1506,
@@ -3013,6 +3561,96 @@
       "Light Magic Device",
       "Symbol of Protection"
     ],
-    "release_date": "2025-03-27"
+    "release_date": "2025-03-27",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
+  },
+  {
+    "name": "Ramiris",
+    "title": "Trueform Fairy",
+    "permalink": "RamirisHA2025",
+    "initial_rarity": 4,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Flashback Beatdown Emissary"
+    ],
+    "attributes": [
+      "Anti Space"
+    ],
+    "attack_type": null,
+    "max_health": 2840,
+    "max_attack": 1209,
+    "max_defense": 1209,
+    "max_output": 220,
+    "character_type": "Balance Growth Type",
+    "tactics_type": "Charge",
+    "expertise": "undefined",
+    "suited_facilities": [
+      "Space Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-04-24",
+    "divine_protection_name": null,
+    "divine_protection_effect": null,
+    "support_divine_protection_effect": null,
+    "protection_skill_name": null,
+    "protection_skill_effect": null,
+    "trait_name": null,
+    "trait_effect": null,
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "guidance_enhancement_trait_effect": null
+  },
+  {
+    "name": "Masked Hero",
+    "title": "Veiled Armaments",
+    "permalink": "MaskedHeroHA2025",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Heart of a Hero"
+    ],
+    "attributes": [
+      "Anti Space+"
+    ],
+    "attack_type": "Magic",
+    "max_health": 3655,
+    "max_attack": 1775,
+    "max_defense": 1501,
+    "max_output": 220,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Charge",
+    "expertise": "undefined",
+    "suited_facilities": [
+      "Space Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-04-24",
+    "divine_protection_name": "Fantastical Recess",
+    "divine_protection_effect": "Increases damage done by Spirit Master and Heart of a Hero Force characters to space attribute enemies by 120%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
+    "support_divine_protection_effect": "Increases charge-type magic characters' ATK by 15%; increases DEF by 3%",
+    "protection_skill_name": "Reverse Spirit",
+    "protection_skill_effect": "Increases P-ATK/M-ATK for all allies including rearguard until the end of battle by 20% (Unlimited)\nApplies Spirit Blessing to charge-type characters (Turns: 1)\n(Continuous Heal: 30%; Secret Skill Vitalization: 50%)\nIncrease Soul of Divine Protection skill point increase until the end of battle by 100% (Max: 500%)",
+    "trait_name": "HP - ATK UP",
+    "trait_effect": "When 3 vanguard have 75% or more HP, increases all allies' ATK by 6% at start of turn (available in support formation)",
+    "valor_trait_name": "Charge - Concentrate",
+    "valor_trait_effect": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the single-target attack damage resistance of all allies is increased by 30% (Turns: 1; Uses by this character per battle: 2)",
+    "guidance_enhancement_trait_effect": null
   }
 ]

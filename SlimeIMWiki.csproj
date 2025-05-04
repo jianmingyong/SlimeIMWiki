@@ -9,18 +9,21 @@
         <Company>The Dialga Team</Company>
         <Description>SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.</Description>
         <Copyright>Copyright 2025 The Dialga Team</Copyright>
+
+        <RunAOTCompilation>true</RunAOTCompilation>
+        <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.*"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.*" PrivateAssets="all"/>
-        
-        <PackageReference Include="ReactiveUI.Blazor" Version="20.2.*" />
+
+        <PackageReference Include="ReactiveUI.Blazor" Version="20.2.*"/>
         <PackageReference Include="ReactiveUI.SourceGenerators" Version="2.1.27">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Splat.Microsoft.Extensions.DependencyInjection" Version="15.3.*" />
+        <PackageReference Include="Splat.Microsoft.Extensions.DependencyInjection" Version="15.3.*"/>
     </ItemGroup>
 
     <ItemGroup>

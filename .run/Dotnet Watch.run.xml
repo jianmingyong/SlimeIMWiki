@@ -6,6 +6,7 @@
     <option name="projectFilePath" value="$PROJECT_DIR$/SlimeIMWiki.csproj" />
     <option name="projectTfm" value="net9.0" />
     <option name="restartOnRudeEditEditor" value="true" />
+    <option name="usePollingFileWatcher" value="true" />
     <option name="watchParameters" value="--launch-profile https" />
     <option name="workingDirectory" value="$PROJECT_DIR$" />
     <method v="2" />
