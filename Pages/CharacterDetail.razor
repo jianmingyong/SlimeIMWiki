@@ -349,16 +349,59 @@ else
             <TextDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
 
             <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is2">
-                There is something here.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </Div>
         </Column>
     </Grid>
 
-    @if (ViewModel.Unit is ProtectionUnit)
+    @if (ViewModel.Unit is ProtectionUnit unit)
     {
         <Grid>
             <Column ColumnSize="ColumnSize.IsFull">
                 <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
+                
+                <Div Flex="Flex.Wrap">
+                    <Div Flex="Flex.Column.Grow.Is1.Shrink.Is1" Width="Width.Is33.OnDesktop">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Padding="Padding.Is2"
+                             Background="Background.Primary">
+                            <Div Background="Background.Body" Border="Border.RoundedCircle">
+                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
+                            </Div>
+                            <Div Flex="Flex.Column">
+                                <Div TextWeight="TextWeight.Bold">@unit.DivineProtectionName</Div>
+                                <Div TextSize="TextSize.ExtraSmall">Primary</Div>
+                            </Div>
+                        </Div>
+                        
+                        <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2">
+                            @foreach (var line in unit.DivineProtectionEffect.Split('\n'))
+                            {
+                                <Div>@line</Div>
+                            }
+                        </Div>
+                    </Div>
+                    
+                    <Div Flex="Flex.Column.Grow.Is1.Shrink.Is1" Width="Width.Is33.OnDesktop">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Padding="Padding.Is2"
+                             Background="Background.Primary">
+                            <Div Background="Background.Body" Border="Border.RoundedCircle">
+                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
+                            </Div>
+                            <Div Flex="Flex.Column">
+                                <Div TextWeight="TextWeight.Bold">@unit.DivineProtectionName</Div>
+                                <Div TextSize="TextSize.ExtraSmall">Support</Div>
+                            </Div>
+                        </Div>
+                        
+                        <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2">
+                            @unit.SupportDivineProtectionEffect
+                        </Div>
+                    </Div>
+                </Div>
+            </Column>
+            
+            <Column ColumnSize="ColumnSize.IsFull">
+                <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
             </Column>
         </Grid>
     }

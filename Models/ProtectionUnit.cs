@@ -19,7 +19,10 @@ public record ProtectionUnit(
     string CharacterType,
     string TacticsType,
     string[] SuitedFacilities,
-    DateOnly? ReleaseDate) : ICharacterUnit
+    DateOnly? ReleaseDate,
+    string DivineProtectionName,
+    string DivineProtectionEffect,
+    string SupportDivineProtectionEffect) : ICharacterUnit
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
 
