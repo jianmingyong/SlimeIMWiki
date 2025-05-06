@@ -2,13 +2,13 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3"
-     Position="Position.Relative">
-    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle">
+<Div Background="Background.Body" Padding="Padding.Is3" Position="Position.Relative">
+    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle" Border="Border.White">
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "NA" ? Color.Light : Color.Dark)"
                 Command="@ViewModel.RegionChangeCommand"
-                CommandParameter="@("NA")">
+                CommandParameter="@("NA")"
+                Border="Border.RoundedStart">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
@@ -20,7 +20,8 @@
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "Asia" ? Color.Light : Color.Dark)"
                 Command="@ViewModel.RegionChangeCommand"
-                CommandParameter="@("Asia")">
+                CommandParameter="@("Asia")"
+                Border="Border.RoundedEnd">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
     </Buttons>

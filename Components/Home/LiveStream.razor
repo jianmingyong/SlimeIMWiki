@@ -2,7 +2,7 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Background="Background.Body" Border="Border.Primary.OnAll.Rounded" Padding="Padding.Is3">
+<Div Background="Background.Body" Padding="Padding.Is3">
     @if (ViewModel.LivestreamUrl is null)
     {
         <Div TextSize="TextSize.Heading3" TextAlignment="TextAlignment.Center">

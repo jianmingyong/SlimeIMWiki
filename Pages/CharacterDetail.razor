@@ -75,7 +75,7 @@ else
         </Column>
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
-            <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
+            <Div Flex="Flex.JustifyContent.Center.AlignItems.Center">
                 <Image Source="@ViewModel.Unit.Image" Fluid/>
             </Div>
         </Column>
@@ -148,95 +148,105 @@ else
                     <Table Background="Background.Body">
                         <TableBody>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)" Height="Height.Em(2)">
-                                        <Image Width="Width.Max100" Height="Height.Is100"
-                                               Source="image/character_info/icHp.png" Text="Hp"/>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                            <Image Width="Width.Max100" Height="Height.Is100" 
+                                                   Source="image/character_info/icHp.png" Text="Hp"/>
+                                        </Div>
+                                        <Div TextSize="TextSize.Small">Health</Div>
                                     </Div>
-                                    <Div>Health</Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" Style="min-width: 5ch">
-                                    @ViewModel.Unit?.MaxHealth
+                                <TableRowCell Background="Background.Body" TextColor="TextColor.Body" Style="min-width: 5ch"
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxHealth</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)" Height="Height.Em(2)">
-                                        <Image Width="Width.Max100" Height="Height.Is100"
-                                               Source="image/character_info/icAtk.png" Text="Atk"/>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                            <Image Width="Width.Max100" Height="Height.Is100"
+                                                   Source="image/character_info/icAtk.png" Text="Atk"/>
+                                        </Div>
+                                        <Div TextSize="TextSize.Small">Attack</Div>
                                     </Div>
-                                    <Div>Attack</Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @ViewModel.Unit?.MaxAttack
+                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body" Style="min-width: 5ch"
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxAttack</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)" Height="Height.Em(2)">
-                                        <Image Width="Width.Max100" Height="Height.Is100"
-                                               Source="image/character_info/icDef.png" Text="Def"/>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                            <Image Width="Width.Max100" Height="Height.Is100"
+                                                   Source="image/character_info/icDef.png" Text="Def"/>
+                                        </Div>
+                                        <Div TextSize="TextSize.Small">Defense</Div>
                                     </Div>
-                                    <Div>Defense</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @ViewModel.Unit?.MaxDefense
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxDefense</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)" Height="Height.Em(2)">
-                                        <Image Width="Width.Max100" Height="Height.Is100"
-                                               Source="image/character_info/icConstruct.png" Text="Output"/>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                            <Image Width="Width.Max100" Height="Height.Is100"
+                                                   Source="image/character_info/icConstruct.png" Text="Output"/>
+                                        </Div>
+                                        <Div TextSize="TextSize.Small">Output</Div>
                                     </Div>
-                                    <Div>Output</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @ViewModel.Unit?.MaxOutput
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxOutput</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div>Character Type</Div>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">Character Type</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle"
                                               ColumnSpan="2">
-                                    @ViewModel.Unit?.CharacterType
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.CharacterType</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div>Tactics Type</Div>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">Tactics Type</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
                                     <Image Source="@ViewModel.GetTacticTypeImage()"
                                            Text="@ViewModel.Unit.TacticsType"
                                            Height="Height.Em(1.5)"/>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
-                                <TableHeaderCell Background="Background.Primary" TextColor="TextColor.Body"
-                                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Width="Width.Em(2)" Height="Height.Em(2)">
-                                        <Icon IconSize="IconSize.x2" Name="IconName.Clock"/>
+                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                                                 VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                        <Div Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                            <Icon IconSize="IconSize.Large" Name="IconName.Clock"/>
+                                        </Div>
+                                        <Div TextSize="TextSize.Small">Release</Div>
                                     </Div>
-                                    <Div>Release</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center">
-                                    @ViewModel.Unit?.ReleaseDate
+                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.ReleaseDate</Div>
                                 </TableRowCell>
                             </TableRow>
                         </TableBody>
@@ -345,26 +355,16 @@ else
                     </Div>
                 </Column>
             </Grid>
-
-            <TextDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
-
-            <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </Div>
-        </Column>
-    </Grid>
-
-    @if (ViewModel.Unit is ProtectionUnit unit)
-    {
-        <Grid>
-            <Column ColumnSize="ColumnSize.IsFull">
+            
+            @if (ViewModel.Unit is ProtectionUnit unit)
+            {
                 <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
                 
-                <Div Flex="Flex.Wrap">
-                    <Div Flex="Flex.Column.Grow.Is1.Shrink.Is1" Width="Width.Is33.OnDesktop">
+                <Div Flex="Flex.Column">
+                    <Div Flex="Flex.Column">
                         <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Padding="Padding.Is2"
-                             Background="Background.Primary">
-                            <Div Background="Background.Body" Border="Border.RoundedCircle">
+                             Background="Background.Body">
+                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
                                 <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
                             </Div>
                             <Div Flex="Flex.Column">
@@ -381,16 +381,10 @@ else
                         </Div>
                     </Div>
                     
-                    <Div Flex="Flex.Column.Grow.Is1.Shrink.Is1" Width="Width.Is33.OnDesktop">
-                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Padding="Padding.Is2"
-                             Background="Background.Primary">
-                            <Div Background="Background.Body" Border="Border.RoundedCircle">
-                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
-                            </Div>
-                            <Div Flex="Flex.Column">
-                                <Div TextWeight="TextWeight.Bold">@unit.DivineProtectionName</Div>
-                                <Div TextSize="TextSize.ExtraSmall">Support</Div>
-                            </Div>
+                    <Div Flex="Flex.Column">
+                        <Div Flex="Flex.Row.AlignItems.Center" Padding="Padding.Is2"
+                             Background="@(new Background("body-secondary"))">
+                            <Div TextWeight="TextWeight.Bold">Supporting Divine Protection</Div>
                         </Div>
                         
                         <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2">
@@ -398,13 +392,15 @@ else
                         </Div>
                     </Div>
                 </Div>
-            </Column>
-            
-            <Column ColumnSize="ColumnSize.IsFull">
-                <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
-            </Column>
-        </Grid>
-    }
+            }
+
+            <TextDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
+
+            <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </Div>
+        </Column>
+    </Grid>
 }
 
 @code

@@ -22,7 +22,14 @@ public record ProtectionUnit(
     DateOnly? ReleaseDate,
     string DivineProtectionName,
     string DivineProtectionEffect,
-    string SupportDivineProtectionEffect) : ICharacterUnit
+    string SupportDivineProtectionEffect,
+    string ProtectionSkillName,
+    string ProtectionSkillEffect,
+    string TraitName,
+    string TraitEffect,
+    string? ValorTraitName,
+    string? ValorTraitEffect,
+    string? GuidanceEnhancementTraitEffect) : ICharacterUnit
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
 
