@@ -360,36 +360,31 @@ else
             {
                 <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
                 
-                <Div Flex="Flex.Column">
-                    <Div Flex="Flex.Column">
-                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Padding="Padding.Is2"
-                             Background="Background.Body">
-                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
-                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
-                            </Div>
-                            <Div Flex="Flex.Column">
-                                <Div TextWeight="TextWeight.Bold">@unit.DivineProtectionName</Div>
-                                <Div TextSize="TextSize.ExtraSmall">Primary</Div>
-                            </Div>
+                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
+                            <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
                         </Div>
-                        
-                        <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2">
-                            @foreach (var line in unit.DivineProtectionEffect.Split('\n'))
-                            {
-                                <Div>@line</Div>
-                            }
+                        <Div>
+                            <Div TextWeight="TextWeight.Bold">@unit.DivineProtectionName</Div>
+                            <Div TextSize="TextSize.ExtraSmall">Primary</Div>
                         </Div>
                     </Div>
-                    
-                    <Div Flex="Flex.Column">
-                        <Div Flex="Flex.Row.AlignItems.Center" Padding="Padding.Is2"
-                             Background="@(new Background("body-secondary"))">
-                            <Div TextWeight="TextWeight.Bold">Supporting Divine Protection</Div>
-                        </Div>
                         
-                        <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2">
-                            @unit.SupportDivineProtectionEffect
-                        </Div>
+                    <Div>
+                        @foreach (var line in unit.DivineProtectionEffect.Split('\n'))
+                        {
+                            <Div>@line</Div>
+                        }
+                    </Div>
+                    
+                    <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
+                         Padding="Padding.Is2" TextAlignment="TextAlignment.Center" TextSize="TextSize.ExtraSmall">
+                        Supporting Divine Protection
+                    </Div>
+                    
+                    <Div>
+                        @unit.SupportDivineProtectionEffect
                     </Div>
                 </Div>
             }
