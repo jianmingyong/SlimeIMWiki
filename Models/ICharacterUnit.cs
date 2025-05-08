@@ -29,4 +29,12 @@ public interface ICharacterUnit
     string[] SuitedFacilities { get; }
 
     DateOnly? ReleaseDate { get; }
+    
+    string TraitName { get; }
+    
+    string TraitEffect { get; }
+    
+    string? ValorTraitName { get; }
+    
+    string? ValorTraitEffect { get; }
 }

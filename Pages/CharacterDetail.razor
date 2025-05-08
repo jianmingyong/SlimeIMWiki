@@ -7,69 +7,72 @@
 
 @if (ViewModel.Unit is null)
 {
-    <Div Flex="Flex.JustifyContent.Center.AlignContent.Center">
-        There is no such character. Perhaps you have spelled incorrectly?
-    </Div>
+    <Div>There is no such character. Perhaps you have spelled incorrectly?</Div>
 }
 else
 {
     <Grid>
         <Column ColumnSize="ColumnSize.Is12" Display="Display.None.OnDesktop">
-            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @ViewModel.Unit.Title ]</Div>
-            <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@ViewModel.Unit.Name</Div>
+            <Div Flex="Flex.Column">
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                    [ @ViewModel.Unit.Title ]
+                </Div>
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                    @ViewModel.Unit.Name
+                </Div>
 
-            <Div Position="Position.Relative.Start.Is50.Translate.MiddleX" Style="width: fit-content"
-                 Flex="Flex.AlignItems.Center" Gap="Gap.Is1" Padding="Padding.Is2.FromTop">
-                @switch (ViewModel.Unit)
-                {
-                    case ProtectionUnit:
+                <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
+                    @switch (ViewModel.Unit)
                     {
-                        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                        <Span>Protection Unit</Span>
+                        case ProtectionUnit:
+                        {
+                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
+                            <Div>Protection Unit</Div>
 
-                        break;
+                            break;
+                        }
+
+                        case BattleUnit:
+                        {
+                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
+                            <Div>Battle Unit</Div>
+
+                            break;
+                        }
                     }
 
-                    case BattleUnit:
-                    {
-                        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                        <Span>Battle Unit</Span>
-
-                        break;
-                    }
-                }
-
-                <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
-                    <Image Position="Position.Absolute" Width="Width.Em(2)"
-                           Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
-
-                    <Image Position="Position.Absolute" Width="Width.Em(2)"
-                           Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
-
-                    <Image Position="Position.Absolute" Width="Width.Em(2)"
-                           Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
-
-                    @if (ViewModel.Unit.InitialRarity >= 4)
-                    {
+                    <Div Position="Position.Relative" Width="Width.Em(6)" Height="Height.Em(2)">
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
-                    }
-                    else
-                    {
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
-                    }
+                               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
-                    @if (ViewModel.Unit.InitialRarity >= 5)
-                    {
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
-                    }
-                    else
-                    {
+                               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+
                         <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
-                    }
+                               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+
+                        @if (ViewModel.Unit.InitialRarity >= 4)
+                        {
+                            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+                        }
+                        else
+                        {
+                            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
+                        }
+
+                        @if (ViewModel.Unit.InitialRarity >= 5)
+                        {
+                            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+                        }
+                        else
+                        {
+                            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
+                        }
+                    </Div>
                 </Div>
             </Div>
         </Column>
@@ -81,18 +84,21 @@ else
         </Column>
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
-            <Div Display="Display.None.Block.OnDesktop">
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">[ @ViewModel.Unit.Title ]</Div>
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">@ViewModel.Unit.Name</Div>
+            <Div Display="Display.None.Flex.Column.OnDesktop">
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                    [ @ViewModel.Unit.Title ]
+                </Div>
+                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                    @ViewModel.Unit.Name
+                </Div>
 
-                <Div Position="Position.Relative.Start.Is50.Translate.MiddleX" Style="width: fit-content"
-                     Flex="Flex.AlignItems.Center" Gap="Gap.Is1" Padding="Padding.Is2.FromTop">
+                <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
                     @switch (ViewModel.Unit)
                     {
                         case ProtectionUnit:
                         {
                             <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                            <Span>Protection Unit</Span>
+                            <Div>Protection Unit</Div>
 
                             break;
                         }
@@ -100,7 +106,7 @@ else
                         case BattleUnit:
                         {
                             <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                            <Span>Battle Unit</Span>
+                            <Div>Battle Unit</Div>
 
                             break;
                         }
@@ -151,102 +157,115 @@ else
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
-                                            <Image Width="Width.Max100" Height="Height.Is100" 
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)"
+                                             Height="Height.Em(2)">
+                                            <Image Width="Width.Max100" Height="Height.Is100"
                                                    Source="image/character_info/icHp.png" Text="Hp"/>
                                         </Div>
-                                        <Div TextSize="TextSize.Small">Health</Div>
+                                        <Div>Health</Div>
                                     </Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Body" TextColor="TextColor.Body" Style="min-width: 5ch"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxHealth</Div>
+                                <TableRowCell Background="Background.Body" TextColor="TextColor.Body"
+                                              Style="min-width: 5ch"
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.MaxHealth</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)"
+                                             Height="Height.Em(2)">
                                             <Image Width="Width.Max100" Height="Height.Is100"
                                                    Source="image/character_info/icAtk.png" Text="Atk"/>
                                         </Div>
-                                        <Div TextSize="TextSize.Small">Attack</Div>
+                                        <Div>Attack</Div>
                                     </Div>
                                 </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body" Style="min-width: 5ch"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxAttack</Div>
+                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                                              Style="min-width: 5ch"
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.MaxAttack</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)"
+                                             Height="Height.Em(2)">
                                             <Image Width="Width.Max100" Height="Height.Is100"
                                                    Source="image/character_info/icDef.png" Text="Def"/>
                                         </Div>
-                                        <Div TextSize="TextSize.Small">Defense</Div>
+                                        <Div>Defense</Div>
                                     </Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxDefense</Div>
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.MaxDefense</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)" Height="Height.Em(1.5)">
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)"
+                                             Height="Height.Em(2)">
                                             <Image Width="Width.Max100" Height="Height.Is100"
                                                    Source="image/character_info/icConstruct.png" Text="Output"/>
                                         </Div>
-                                        <Div TextSize="TextSize.Small">Output</Div>
+                                        <Div>Output</Div>
                                     </Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.MaxOutput</Div>
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.MaxOutput</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">Character Type</Div>
+                                    <Div>Character Type</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle"
-                                              ColumnSpan="2">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.CharacterType</Div>
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.CharacterType</Div>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">Tactics Type</Div>
+                                    <Div>Tactics Type</Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
                                     <Image Source="@ViewModel.GetTacticTypeImage()"
                                            Text="@ViewModel.Unit.TacticsType"
-                                           Height="Height.Em(1.5)"/>
+                                           Height="Height.Em(2)"/>
                                 </TableRowCell>
                             </TableRow>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                                                  VerticalAlignment="VerticalAlignment.Middle">
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Width="Width.Em(1.5)" Height="Height.Em(1.5)">
-                                            <Icon IconSize="IconSize.Large" Name="IconName.Clock"/>
+                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(2)"
+                                             Height="Height.Em(2)">
+                                            <Icon IconSize="IconSize.x2" Name="IconName.Clock"/>
                                         </Div>
-                                        <Div TextSize="TextSize.Small">Release</Div>
+                                        <Div>Output</Div>
                                     </Div>
                                 </TableHeaderCell>
                                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center" VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div TextSize="TextSize.Small">@ViewModel.Unit?.ReleaseDate</Div>
+                                              TextAlignment="TextAlignment.Center"
+                                              VerticalAlignment="VerticalAlignment.Middle">
+                                    <Div>@ViewModel.Unit?.ReleaseDate</Div>
                                 </TableRowCell>
                             </TableRow>
                         </TableBody>
@@ -310,7 +329,7 @@ else
                         {
                             if (ViewModel.Unit.SuitedFacilities.Length >= 1)
                             {
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@ViewModel.Unit.SuitedFacilities[0]">
+                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                     <Div>@ViewModel.Unit.SuitedFacilities[0]</Div>
 
                                     @switch (ViewModel.Unit)
@@ -332,7 +351,7 @@ else
 
                             if (ViewModel.Unit.SuitedFacilities.Length >= 2)
                             {
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" @key="@ViewModel.Unit.SuitedFacilities[1]">
+                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                     <Div>@ViewModel.Unit.SuitedFacilities[1]</Div>
 
                                     @switch (ViewModel.Unit)
@@ -355,11 +374,11 @@ else
                     </Div>
                 </Column>
             </Grid>
-            
+
             @if (ViewModel.Unit is ProtectionUnit unit)
             {
                 <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
-                
+
                 <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                         <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
@@ -370,30 +389,87 @@ else
                             <Div TextSize="TextSize.ExtraSmall">Primary</Div>
                         </Div>
                     </Div>
-                        
+
                     <Div>
                         @foreach (var line in unit.DivineProtectionEffect.Split('\n'))
                         {
                             <Div>@line</Div>
                         }
                     </Div>
-                    
+
                     <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
                          Padding="Padding.Is2" TextAlignment="TextAlignment.Center" TextSize="TextSize.ExtraSmall">
                         Supporting Divine Protection
                     </Div>
-                    
+
                     <Div>
                         @unit.SupportDivineProtectionEffect
                     </Div>
                 </Div>
+
+                <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
+
+                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
+                            <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
+                        </Div>
+                        <Div>
+                            <Div TextWeight="TextWeight.Bold">@unit.ProtectionSkillName</Div>
+                        </Div>
+                    </Div>
+
+                    <Div>
+                        @foreach (var line in unit.ProtectionSkillEffect.Split('\n'))
+                        {
+                            <Div>@line</Div>
+                        }
+                    </Div>
+                </Div>
             }
+            
+            <TextDivider Text="TRAIT" Margin="Margin.Is2.OnY"/>
+            
+            <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
+                        <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
+                    </Div>
+                    <Div>
+                        <Div TextWeight="TextWeight.Bold">@ViewModel.Unit.TraitName</Div>
+                    </Div>
+                </Div>
 
-            <TextDivider Text="TAGS" Margin="Margin.Is2.OnY"/>
-
-            <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Wrap" Gap="Gap.Is2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <Div>
+                    @foreach (var line in ViewModel.Unit.TraitEffect.Split('\n'))
+                    {
+                        <Div>@line</Div>
+                    }
+                </Div>
             </Div>
+            
+            @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffect is not null)
+            {
+                <TextDivider Text="VALOR TRAIT" Margin="Margin.Is2.OnY"/>
+                
+                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle">
+                            <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Em(4)"/>
+                        </Div>
+                        <Div>
+                            <Div TextWeight="TextWeight.Bold">@ViewModel.Unit.ValorTraitName</Div>
+                        </Div>
+                    </Div>
+
+                    <Div>
+                        @foreach (var line in ViewModel.Unit.ValorTraitEffect.Split('\n'))
+                        {
+                            <Div>@line</Div>
+                        }
+                    </Div>
+                </Div>
+            }
         </Column>
     </Grid>
 }

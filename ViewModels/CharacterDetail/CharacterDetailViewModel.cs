@@ -6,10 +6,8 @@ using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.CharacterDetail;
 
-public sealed partial class CharacterDetailViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class CharacterDetailViewModel : ReactiveObject
 {
-    public ViewModelActivator Activator { get; } = new();
-
     [ObservableAsProperty]
     private ICharacterUnit? _unit;
     

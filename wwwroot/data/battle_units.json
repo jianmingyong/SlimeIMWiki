@@ -14,22 +14,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 392,
-    "min_attack": 196,
-    "min_defense": 196,
-    "min_output": 180,
     "max_health": 6679,
     "max_attack": 2631,
     "max_defense": 2807,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rigurd",
@@ -47,22 +47,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 392,
-    "min_attack": 191,
-    "min_defense": 208,
-    "min_output": 180,
     "max_health": 6504,
     "max_attack": 2425,
     "max_defense": 3292,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Kenya Misaki",
@@ -79,22 +79,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 392,
-    "min_attack": 208,
-    "min_defense": 171,
-    "min_output": 180,
     "max_health": 6304,
     "max_attack": 2896,
     "max_defense": 2428,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Restaurant"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gale Gibson",
@@ -111,22 +111,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 392,
-    "min_attack": 190,
-    "min_defense": 206,
-    "min_output": 180,
     "max_health": 6504,
     "max_attack": 2424,
     "max_defense": 3290,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Kurobe",
@@ -142,22 +142,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 392,
-    "min_attack": 182,
-    "min_defense": 216,
-    "min_output": 180,
     "max_health": 6504,
     "max_attack": 2416,
     "max_defense": 3300,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Stamina Magistones",
       "Farm"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Alice Rondo",
@@ -174,22 +174,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 392,
-    "min_attack": 186,
-    "min_defense": 213,
-    "min_output": 180,
     "max_health": 6504,
     "max_attack": 2420,
     "max_defense": 3297,
     "max_output": 450,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Field"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Souei",
@@ -205,22 +205,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 592,
-    "min_attack": 309,
-    "min_defense": 262,
-    "min_output": 120,
     "max_health": 6658,
     "max_attack": 3132,
     "max_defense": 2449,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Farm",
       "Training Ground"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -236,22 +236,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 591,
-    "min_attack": 300,
-    "min_defense": 282,
-    "min_output": 120,
     "max_health": 6657,
     "max_attack": 3123,
     "max_defense": 2469,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -267,22 +267,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 273,
-    "min_defense": 336,
-    "min_output": 120,
     "max_health": 6853,
     "max_attack": 2562,
     "max_defense": 3512,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Restaurant"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -299,22 +299,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 295,
-    "min_defense": 293,
-    "min_output": 120,
     "max_health": 6894,
     "max_attack": 2874,
     "max_defense": 2872,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Tavern"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -331,22 +331,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 598,
-    "min_attack": 312,
-    "min_defense": 316,
-    "min_output": 120,
     "max_health": 6905,
     "max_attack": 2891,
     "max_defense": 2895,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -362,22 +362,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 590,
-    "min_attack": 280,
-    "min_defense": 321,
-    "min_output": 120,
     "max_health": 6856,
     "max_attack": 2569,
     "max_defense": 3497,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Tavern"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -396,22 +396,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 588,
-    "min_attack": 305,
-    "min_defense": 272,
-    "min_output": 120,
     "max_health": 6895,
     "max_attack": 2884,
     "max_defense": 2851,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Training Ground"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Ranga",
@@ -427,22 +427,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 302,
-    "min_defense": 279,
-    "min_output": 120,
     "max_health": 6653,
     "max_attack": 3125,
     "max_defense": 2466,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -460,22 +460,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 599,
-    "min_attack": 302,
-    "min_defense": 272,
-    "min_output": 120,
     "max_health": 6665,
     "max_attack": 3125,
     "max_defense": 2459,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -492,22 +492,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 285,
-    "min_defense": 316,
-    "min_output": 120,
     "max_health": 6853,
     "max_attack": 2574,
     "max_defense": 3492,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Café"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -524,22 +524,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 309,
-    "min_defense": 268,
-    "min_output": 120,
     "max_health": 6653,
     "max_attack": 3132,
     "max_defense": 2455,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Farm"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Phobio",
@@ -555,22 +555,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 308,
-    "min_defense": 271,
-    "min_output": 120,
     "max_health": 6653,
     "max_attack": 3131,
     "max_defense": 2458,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Farm"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hakurou",
@@ -587,22 +587,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 584,
-    "min_attack": 295,
-    "min_defense": 293,
-    "min_output": 120,
     "max_health": 6891,
     "max_attack": 2874,
     "max_defense": 2872,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Trya",
@@ -618,22 +618,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 587,
-    "min_attack": 274,
-    "min_defense": 338,
-    "min_output": 120,
     "max_health": 6853,
     "max_attack": 2563,
     "max_defense": 3514,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Field"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Souei",
@@ -650,22 +650,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 295,
-    "min_defense": 295,
-    "min_output": 120,
     "max_health": 6894,
     "max_attack": 2874,
     "max_defense": 2874,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -682,22 +682,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 311,
-    "min_defense": 261,
-    "min_output": 120,
     "max_health": 6653,
     "max_attack": 3134,
     "max_defense": 2448,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gobta",
@@ -714,22 +714,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 583,
-    "min_attack": 297,
-    "min_defense": 297,
-    "min_output": 120,
     "max_health": 6890,
     "max_attack": 2876,
     "max_defense": 2876,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gelmud",
@@ -745,22 +745,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 592,
-    "min_attack": 285,
-    "min_defense": 312,
-    "min_output": 120,
     "max_health": 6858,
     "max_attack": 2574,
     "max_defense": 3488,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Protection Magistone Digsite",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Geld",
@@ -778,22 +778,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 285,
-    "min_defense": 312,
-    "min_output": 120,
     "max_health": 6853,
     "max_attack": 2574,
     "max_defense": 3488,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Field",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Kurobe",
@@ -811,22 +811,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 584,
-    "min_attack": 295,
-    "min_defense": 293,
-    "min_output": 120,
     "max_health": 6891,
     "max_attack": 2874,
     "max_defense": 2872,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Tavern"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Chloe Aubert",
@@ -843,22 +843,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 588,
-    "min_attack": 296,
-    "min_defense": 296,
-    "min_output": 120,
     "max_health": 6895,
     "max_attack": 2875,
     "max_defense": 2875,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Field"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gabiru",
@@ -875,22 +875,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 279,
-    "min_defense": 328,
-    "min_output": 120,
     "max_health": 6853,
     "max_attack": 2568,
     "max_defense": 3504,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Grucius",
@@ -907,22 +907,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 573,
-    "min_attack": 230,
-    "min_defense": 230,
-    "min_output": 120,
     "max_health": 6880,
     "max_attack": 2809,
     "max_defense": 2809,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2022-05-01"
+    "release_date": "2022-05-01",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Suphia",
@@ -939,22 +939,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 587,
-    "min_attack": 266,
-    "min_defense": 333,
-    "min_output": 120,
     "max_health": 6894,
     "max_attack": 2845,
     "max_defense": 2912,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2022-05-01"
+    "release_date": "2022-05-01",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -973,22 +973,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 978,
-    "min_attack": 461,
-    "min_defense": 558,
-    "min_output": 60,
     "max_health": 8140,
     "max_attack": 3066,
     "max_defense": 4265,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Laboratory"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1005,22 +1005,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 978,
-    "min_attack": 514,
-    "min_defense": 449,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3761,
     "max_defense": 2952,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Ranga",
@@ -1037,22 +1037,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 978,
-    "min_attack": 502,
-    "min_defense": 468,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3749,
     "max_defense": 2971,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Beretta",
@@ -1068,22 +1068,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 975,
-    "min_attack": 490,
-    "min_defense": 489,
-    "min_output": 60,
     "max_health": 8176,
     "max_attack": 3457,
     "max_defense": 3456,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Protection Magistone Digsite",
       "Digsite for Training Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -1101,22 +1101,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 981,
-    "min_attack": 518,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 7943,
     "max_attack": 3765,
     "max_defense": 2946,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Farm",
       "Digsite for Attack Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hakurou",
@@ -1133,22 +1133,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 976,
-    "min_attack": 508,
-    "min_defense": 459,
-    "min_output": 60,
     "max_health": 7938,
     "max_attack": 3755,
     "max_defense": 2962,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Farm"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Treyni",
@@ -1165,22 +1165,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 982,
-    "min_attack": 460,
-    "min_defense": 561,
-    "min_output": 60,
     "max_health": 8144,
     "max_attack": 3065,
     "max_defense": 4268,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Field",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Souei",
@@ -1198,22 +1198,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 982,
-    "min_attack": 490,
-    "min_defense": 490,
-    "min_output": 60,
     "max_health": 8183,
     "max_attack": 3457,
     "max_defense": 3457,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Mountain Supply Corps Base"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -1231,22 +1231,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 980,
-    "min_attack": 491,
-    "min_defense": 491,
-    "min_output": 60,
     "max_health": 8181,
     "max_attack": 3458,
     "max_defense": 3458,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Café"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -1266,22 +1266,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 979,
-    "min_attack": 462,
-    "min_defense": 554,
-    "min_output": 60,
     "max_health": 8180,
     "max_attack": 3429,
     "max_defense": 3521,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Forest Supply Corps Base",
       "Café"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -1298,22 +1298,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 978,
-    "min_attack": 505,
-    "min_defense": 464,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3752,
     "max_defense": 2967,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Forest Supply Corps Base",
       "Clothing Store"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gazel Dwargo",
@@ -1331,22 +1331,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 978,
-    "min_attack": 520,
-    "min_defense": 442,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3767,
     "max_defense": 2945,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Tavern"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1363,22 +1363,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 978,
-    "min_attack": 520,
-    "min_defense": 442,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3767,
     "max_defense": 2945,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Digsite for Attack Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1398,22 +1398,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 988,
-    "min_attack": 494,
-    "min_defense": 492,
-    "min_output": 60,
     "max_health": 8189,
     "max_attack": 3461,
     "max_defense": 3459,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Digsite for Training Magistones"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -1430,22 +1430,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 976,
-    "min_attack": 529,
-    "min_defense": 439,
-    "min_output": 60,
     "max_health": 7938,
     "max_attack": 3776,
     "max_defense": 2942,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Protection Magistone Digsite",
       "Tavern"
     ],
-    "release_date": "2022-01-13"
+    "release_date": "2022-01-13",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gobta",
@@ -1463,22 +1463,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 988,
-    "min_attack": 481,
-    "min_defense": 481,
-    "min_output": 60,
     "max_health": 8189,
     "max_attack": 3448,
     "max_defense": 3448,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Farm"
     ],
-    "release_date": "2022-01-06"
+    "release_date": "2022-01-06",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1496,22 +1496,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 967,
-    "min_attack": 525,
-    "min_defense": 449,
-    "min_output": 60,
     "max_health": 7929,
     "max_attack": 3772,
     "max_defense": 2952,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2021-12-30"
+    "release_date": "2021-12-30",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1530,22 +1530,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 979,
-    "min_attack": 471,
-    "min_defense": 508,
-    "min_output": 60,
     "max_health": 8141,
     "max_attack": 3076,
     "max_defense": 4215,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Laboratory"
     ],
-    "release_date": "2021-12-07"
+    "release_date": "2021-12-07",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -1563,22 +1563,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 986,
-    "min_attack": 488,
-    "min_defense": 488,
-    "min_output": 60,
     "max_health": 8187,
     "max_attack": 3455,
     "max_defense": 3455,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": "2021-11-29"
+    "release_date": "2021-11-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -1595,22 +1595,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 982,
-    "min_attack": 493,
-    "min_defense": 472,
-    "min_output": 60,
     "max_health": 7944,
     "max_attack": 3740,
     "max_defense": 2975,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Field"
     ],
-    "release_date": "2021-12-21"
+    "release_date": "2021-12-21",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -1627,22 +1627,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 980,
-    "min_attack": 522,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 7942,
     "max_attack": 3769,
     "max_defense": 2943,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Restaurant"
     ],
-    "release_date": "2021-11-08"
+    "release_date": "2021-11-08",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -1660,22 +1660,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 979,
-    "min_attack": 518,
-    "min_defense": 445,
-    "min_output": 60,
     "max_health": 7941,
     "max_attack": 3765,
     "max_defense": 2948,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Stamina Magistones",
       "Training Ground"
     ],
-    "release_date": "2021-11-15"
+    "release_date": "2021-11-15",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -1692,22 +1692,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 978,
-    "min_attack": 489,
-    "min_defense": 489,
-    "min_output": 60,
     "max_health": 8179,
     "max_attack": 3456,
     "max_defense": 3456,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1727,22 +1727,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 978,
-    "min_attack": 489,
-    "min_defense": 489,
-    "min_output": 60,
     "max_health": 7940,
     "max_attack": 3736,
     "max_defense": 2992,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Forest Supply Corps Base",
       "Laboratory"
     ],
-    "release_date": "2021-11-24"
+    "release_date": "2021-11-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -1761,22 +1761,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 999,
-    "min_attack": 528,
-    "min_defense": 427,
-    "min_output": 60,
     "max_health": 7961,
     "max_attack": 3775,
     "max_defense": 2930,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Protection Magistone Digsite",
       "Café"
     ],
-    "release_date": "2022-04-11"
+    "release_date": "2022-04-11",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Souei",
@@ -1793,22 +1793,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 956,
-    "min_attack": 501,
-    "min_defense": 501,
-    "min_output": 60,
     "max_health": 8157,
     "max_attack": 3468,
     "max_defense": 3468,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Forest Supply Corps Base",
       "Training Ground"
     ],
-    "release_date": "2022-04-05"
+    "release_date": "2022-04-05",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -1825,22 +1825,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 991,
-    "min_attack": 523,
-    "min_defense": 429,
-    "min_output": 60,
     "max_health": 7953,
     "max_attack": 3770,
     "max_defense": 2932,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Restaurant"
     ],
-    "release_date": "2022-03-29"
+    "release_date": "2022-03-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1857,22 +1857,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 998,
-    "min_attack": 519,
-    "min_defense": 445,
-    "min_output": 60,
     "max_health": 8199,
     "max_attack": 3486,
     "max_defense": 3412,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Stamina Magistones",
       "Laboratory"
     ],
-    "release_date": "2022-03-08"
+    "release_date": "2022-03-08",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -1888,22 +1888,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 983,
-    "min_attack": 529,
-    "min_defense": 436,
-    "min_output": 60,
     "max_health": 7945,
     "max_attack": 3776,
     "max_defense": 2939,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2022-03-15"
+    "release_date": "2022-03-15",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Alice Rondo",
@@ -1923,22 +1923,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 968,
-    "min_attack": 524,
-    "min_defense": 451,
-    "min_output": 60,
     "max_health": 8169,
     "max_attack": 3491,
     "max_defense": 3418,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Clothing Store"
     ],
-    "release_date": "2022-02-27"
+    "release_date": "2022-02-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Leon Cromwell",
@@ -1955,22 +1955,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 994,
-    "min_attack": 526,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 7956,
     "max_attack": 3773,
     "max_defense": 2941,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Laboratory"
     ],
-    "release_date": "2022-02-13"
+    "release_date": "2022-02-13",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -1989,22 +1989,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 951,
-    "min_attack": 472,
-    "min_defense": 563,
-    "min_output": 60,
     "max_health": 8152,
     "max_attack": 3439,
     "max_defense": 3530,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2022-02-03"
+    "release_date": "2022-02-03",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -2024,22 +2024,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 984,
-    "min_attack": 458,
-    "min_defense": 559,
-    "min_output": 60,
     "max_health": 8146,
     "max_attack": 3063,
     "max_defense": 4266,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Clothing Store"
     ],
-    "release_date": "2022-01-27"
+    "release_date": "2022-01-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -2057,22 +2057,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 967,
-    "min_attack": 541,
-    "min_defense": 428,
-    "min_output": 60,
     "max_health": 7929,
     "max_attack": 3788,
     "max_defense": 2931,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Training Ground"
     ],
-    "release_date": "2022-04-24"
+    "release_date": "2022-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Masked Hero",
@@ -2089,22 +2089,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 1001,
-    "min_attack": 539,
-    "min_defense": 422,
-    "min_output": 60,
     "max_health": 7963,
     "max_attack": 3786,
     "max_defense": 2925,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2022-04-24"
+    "release_date": "2022-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Carrion",
@@ -2123,22 +2123,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 945,
-    "min_attack": 525,
-    "min_defense": 455,
-    "min_output": 60,
     "max_health": 7907,
     "max_attack": 3772,
     "max_defense": 2958,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2022-05-01"
+    "release_date": "2022-05-01",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -2155,22 +2155,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 997,
-    "min_attack": 534,
-    "min_defense": 423,
-    "min_output": 60,
     "max_health": 7959,
     "max_attack": 3781,
     "max_defense": 2926,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2022-05-09"
+    "release_date": "2022-05-09",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -2189,22 +2189,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 987,
-    "min_attack": 538,
-    "min_defense": 419,
-    "min_output": 60,
     "max_health": 7949,
     "max_attack": 3785,
     "max_defense": 2922,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Café"
     ],
-    "release_date": "2022-05-30"
+    "release_date": "2022-05-30",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2223,22 +2223,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 965,
-    "min_attack": 523,
-    "min_defense": 485,
-    "min_output": 60,
     "max_health": 8166,
     "max_attack": 3490,
     "max_defense": 3452,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Inn"
     ],
-    "release_date": "2022-06-06"
+    "release_date": "2022-06-06",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Daggrull",
@@ -2255,22 +2255,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 905,
-    "min_attack": 535,
-    "min_defense": 475,
-    "min_output": 60,
     "max_health": 7867,
     "max_attack": 3782,
     "max_defense": 2978,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2022-06-14"
+    "release_date": "2022-06-14",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Treyni",
@@ -2287,22 +2287,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 965,
-    "min_attack": 523,
-    "min_defense": 485,
-    "min_output": 60,
     "max_health": 8166,
     "max_attack": 3490,
     "max_defense": 3452,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Forest Supply Corps Base"
     ],
-    "release_date": "2022-07-06"
+    "release_date": "2022-07-06",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -2320,22 +2320,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 965,
-    "min_attack": 542,
-    "min_defense": 423,
-    "min_output": 60,
     "max_health": 7927,
     "max_attack": 3789,
     "max_defense": 2926,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Inn"
     ],
-    "release_date": "2022-06-29"
+    "release_date": "2022-06-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Deeno",
@@ -2352,22 +2352,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 905,
-    "min_attack": 537,
-    "min_defense": 481,
-    "min_output": 60,
     "max_health": 7867,
     "max_attack": 3784,
     "max_defense": 2984,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Ocean Supply Corps Base"
     ],
-    "release_date": "2022-07-13"
+    "release_date": "2022-07-13",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -2385,22 +2385,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 988,
-    "min_attack": 523,
-    "min_defense": 444,
-    "min_output": 60,
     "max_health": 8230,
     "max_attack": 3489,
     "max_defense": 3410,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Restaurant"
     ],
-    "release_date": "2022-08-04"
+    "release_date": "2022-08-04",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -2418,22 +2418,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 969,
-    "min_attack": 518,
-    "min_defense": 447,
-    "min_output": 60,
     "max_health": 8000,
     "max_attack": 3835,
     "max_defense": 2784,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Clothing Store"
     ],
-    "release_date": "2022-07-28"
+    "release_date": "2022-07-28",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -2452,22 +2452,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 952,
-    "min_attack": 518,
-    "min_defense": 454,
-    "min_output": 60,
     "max_health": 7983,
     "max_attack": 3835,
     "max_defense": 2791,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Digsite for Training Magistones"
     ],
-    "release_date": "2022-08-11"
+    "release_date": "2022-08-11",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -2485,22 +2485,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 928,
-    "min_attack": 524,
-    "min_defense": 415,
-    "min_output": 60,
     "max_health": 7959,
     "max_attack": 3841,
     "max_defense": 2752,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Tavern"
     ],
-    "release_date": "2022-08-29"
+    "release_date": "2022-08-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rain",
@@ -2516,22 +2516,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 972,
-    "min_attack": 515,
-    "min_defense": 451,
-    "min_output": 60,
     "max_health": 8003,
     "max_attack": 3832,
     "max_defense": 2788,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2022-09-06"
+    "release_date": "2022-09-06",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Leon Cromwell",
@@ -2549,22 +2549,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 907,
-    "min_attack": 519,
-    "min_defense": 426,
-    "min_output": 60,
     "max_health": 7938,
     "max_attack": 3836,
     "max_defense": 2763,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Inn"
     ],
-    "release_date": "2022-09-14"
+    "release_date": "2022-09-14",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Myulan",
@@ -2583,22 +2583,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 961,
-    "min_attack": 455,
-    "min_defense": 571,
-    "min_output": 60,
     "max_health": 8092,
     "max_attack": 3067,
     "max_defense": 4276,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Field"
     ],
-    "release_date": "2022-09-29"
+    "release_date": "2022-09-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Adalman",
@@ -2614,22 +2614,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 949,
-    "min_attack": 436,
-    "min_defense": 582,
-    "min_output": 60,
     "max_health": 8080,
     "max_attack": 3048,
     "max_defense": 4287,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": "2022-10-06"
+    "release_date": "2022-10-06",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Clayman",
@@ -2647,22 +2647,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 929,
-    "min_attack": 478,
-    "min_defense": 569,
-    "min_output": 60,
     "max_health": 8060,
     "max_attack": 3090,
     "max_defense": 4274,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Clothing Store"
     ],
-    "release_date": "2022-10-13"
+    "release_date": "2022-10-13",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2682,22 +2682,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 985,
-    "min_attack": 543,
-    "min_defense": 430,
-    "min_output": 60,
     "max_health": 8016,
     "max_attack": 3860,
     "max_defense": 2767,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Field"
     ],
-    "release_date": "2022-10-27"
+    "release_date": "2022-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -2716,22 +2716,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 963,
-    "min_attack": 551,
-    "min_defense": 422,
-    "min_output": 60,
     "max_health": 7994,
     "max_attack": 3868,
     "max_defense": 2759,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Training Ground"
     ],
-    "release_date": "2022-10-27"
+    "release_date": "2022-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shinsha",
@@ -2747,22 +2747,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 960,
-    "min_attack": 543,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 7991,
     "max_attack": 3860,
     "max_defense": 2777,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Farm"
     ],
-    "release_date": "2022-11-03"
+    "release_date": "2022-11-03",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -2779,22 +2779,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 990,
-    "min_attack": 542,
-    "min_defense": 421,
-    "min_output": 60,
     "max_health": 8021,
     "max_attack": 3859,
     "max_defense": 2758,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Digsite for Training Magistones"
     ],
-    "release_date": "2022-11-10"
+    "release_date": "2022-11-10",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -2811,22 +2811,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 981,
-    "min_attack": 548,
-    "min_defense": 421,
-    "min_output": 60,
     "max_health": 8012,
     "max_attack": 3865,
     "max_defense": 2758,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Tavern"
     ],
-    "release_date": "2022-11-24"
+    "release_date": "2022-11-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Violet",
@@ -2844,22 +2844,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 960,
-    "min_attack": 551,
-    "min_defense": 425,
-    "min_output": 60,
     "max_health": 7991,
     "max_attack": 3868,
     "max_defense": 2762,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Farm"
     ],
-    "release_date": "2022-12-01"
+    "release_date": "2022-12-01",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -2877,22 +2877,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 902,
-    "min_attack": 540,
-    "min_defense": 460,
-    "min_output": 60,
     "max_health": 7933,
     "max_attack": 3857,
     "max_defense": 2797,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2022-12-11"
+    "release_date": "2022-12-11",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Velzard",
@@ -2909,22 +2909,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 994,
-    "min_attack": 549,
-    "min_defense": 409,
-    "min_output": 60,
     "max_health": 8025,
     "max_attack": 3866,
     "max_defense": 2746,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Training Ground"
     ],
-    "release_date": "2022-12-11"
+    "release_date": "2022-12-11",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2942,22 +2942,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 949,
-    "min_attack": 550,
-    "min_defense": 435,
-    "min_output": 60,
     "max_health": 7980,
     "max_attack": 3867,
     "max_defense": 2772,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Protection Magistone Digsite"
     ],
-    "release_date": "2022-12-28"
+    "release_date": "2022-12-28",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -2976,22 +2976,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 902,
-    "min_attack": 549,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 7933,
     "max_attack": 3866,
     "max_defense": 2787,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Restaurant"
     ],
-    "release_date": "2023-01-05"
+    "release_date": "2023-01-05",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -3010,22 +3010,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 993,
-    "min_attack": 550,
-    "min_defense": 411,
-    "min_output": 60,
     "max_health": 8024,
     "max_attack": 3867,
     "max_defense": 2748,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Protection Magistone Digsite",
       "Tavern"
     ],
-    "release_date": "2023-01-15"
+    "release_date": "2023-01-15",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -3044,22 +3044,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 990,
-    "min_attack": 548,
-    "min_defense": 419,
-    "min_output": 60,
     "max_health": 8021,
     "max_attack": 3865,
     "max_defense": 2756,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": "2023-01-30"
+    "release_date": "2023-01-30",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shinsha",
@@ -3077,22 +3077,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 954,
-    "min_attack": 547,
-    "min_defense": 436,
-    "min_output": 60,
     "max_health": 7985,
     "max_attack": 3864,
     "max_defense": 2773,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2023-02-05"
+    "release_date": "2023-02-05",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -3110,22 +3110,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 980,
-    "min_attack": 548,
-    "min_defense": 430,
-    "min_output": 60,
     "max_health": 8011,
     "max_attack": 3865,
     "max_defense": 2767,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Field",
       "Digsite for Attack Magistones"
     ],
-    "release_date": "2023-02-13"
+    "release_date": "2023-02-13",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -3142,22 +3142,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 1370,
-    "min_attack": 685,
-    "min_defense": 685,
-    "min_output": 60,
     "max_health": 8962,
     "max_attack": 3899,
     "max_defense": 3487,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Restaurant"
     ],
-    "release_date": "2021-10-27"
+    "release_date": "2021-10-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Ramiris",
@@ -3174,22 +3174,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 1397,
-    "min_attack": 665,
-    "min_defense": 699,
-    "min_output": 60,
     "max_health": 9189,
     "max_attack": 3569,
     "max_defense": 4042,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": "2021-10-28"
+    "release_date": "2021-10-28",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -3206,22 +3206,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 1360,
-    "min_attack": 722,
-    "min_defense": 625,
-    "min_output": 60,
     "max_health": 8952,
     "max_attack": 3936,
     "max_defense": 3427,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Attack Magistones",
       "Restaurant"
     ],
-    "release_date": "2022-03-30"
+    "release_date": "2022-03-30",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Leon Cromwell",
@@ -3239,22 +3239,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 1380,
-    "min_attack": 717,
-    "min_defense": 637,
-    "min_output": 60,
     "max_health": 8972,
     "max_attack": 3931,
     "max_defense": 3439,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Digsite for Defense Magistones"
     ],
-    "release_date": "2022-04-24"
+    "release_date": "2022-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -3271,22 +3271,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 1363,
-    "min_attack": 687,
-    "min_defense": 687,
-    "min_output": 60,
     "max_health": 9132,
     "max_attack": 3741,
     "max_defense": 3741,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Clothing Store"
     ],
-    "release_date": "2022-06-29"
+    "release_date": "2022-06-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Daggrull",
@@ -3303,22 +3303,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 1401,
-    "min_attack": 696,
-    "min_defense": 636,
-    "min_output": 60,
     "max_health": 9170,
     "max_attack": 3750,
     "max_defense": 3690,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Inn"
     ],
-    "release_date": "2022-08-29"
+    "release_date": "2022-08-29",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Deeno",
@@ -3335,22 +3335,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 1401,
-    "min_attack": 672,
-    "min_defense": 692,
-    "min_output": 60,
     "max_health": 9193,
     "max_attack": 3576,
     "max_defense": 4035,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Digsite for Attack Magistones"
     ],
-    "release_date": "2022-11-24"
+    "release_date": "2022-11-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -3368,10 +3368,6 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 489,
-    "min_attack": 245,
-    "min_defense": 245,
-    "min_output": 120,
     "max_health": 6613,
     "max_attack": 2745,
     "max_defense": 2745,
@@ -3383,7 +3379,11 @@
       "Tavern",
       "Mountain Supply Corps Base"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -3402,10 +3402,6 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 475,
-    "min_attack": 255,
-    "min_defense": 239,
-    "min_output": 120,
     "max_health": 8202,
     "max_attack": 2538,
     "max_defense": 2522,
@@ -3417,7 +3413,11 @@
       "Restaurant",
       "Clothing Store"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -3437,10 +3437,6 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 481,
-    "min_attack": 262,
-    "min_defense": 231,
-    "min_output": 120,
     "max_health": 8208,
     "max_attack": 2545,
     "max_defense": 2514,
@@ -3452,7 +3448,11 @@
       "Clothing Store",
       "Field"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Myulan",
@@ -3471,10 +3471,6 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 481,
-    "min_attack": 247,
-    "min_defense": 257,
-    "min_output": 120,
     "max_health": 8208,
     "max_attack": 2530,
     "max_defense": 2540,
@@ -3486,7 +3482,11 @@
       "Clothing Store",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Ranga",
@@ -3504,10 +3504,6 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 433,
-    "min_attack": 266,
-    "min_defense": 239,
-    "min_output": 120,
     "max_health": 7990,
     "max_attack": 2329,
     "max_defense": 3031,
@@ -3519,7 +3515,11 @@
       "Mountain Supply Corps Base",
       "Farm"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Albis",
@@ -3536,10 +3536,6 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 429,
-    "min_attack": 284,
-    "min_defense": 212,
-    "min_output": 120,
     "max_health": 7986,
     "max_attack": 2347,
     "max_defense": 3004,
@@ -3551,7 +3547,11 @@
       "Field",
       "Mountain Supply Corps Base"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Frey",
@@ -3569,10 +3569,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 442,
-    "min_attack": 291,
-    "min_defense": 202,
-    "min_output": 120,
     "max_health": 8169,
     "max_attack": 2574,
     "max_defense": 2485,
@@ -3584,7 +3580,11 @@
       "Mountain Supply Corps Base",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shinsha",
@@ -3602,10 +3602,6 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 502,
-    "min_attack": 254,
-    "min_defense": 252,
-    "min_output": 120,
     "max_health": 8229,
     "max_attack": 2537,
     "max_defense": 2535,
@@ -3617,7 +3613,11 @@
       "Clothing Store",
       "Restaurant"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Geld",
@@ -3635,10 +3635,6 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 486,
-    "min_attack": 273,
-    "min_defense": 222,
-    "min_output": 120,
     "max_health": 8043,
     "max_attack": 2336,
     "max_defense": 3014,
@@ -3650,7 +3646,11 @@
       "Digsite for Stamina Magistones",
       "Laboratory"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3669,10 +3669,6 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 491,
-    "min_attack": 254,
-    "min_defense": 254,
-    "min_output": 120,
     "max_health": 8218,
     "max_attack": 2537,
     "max_defense": 2537,
@@ -3684,7 +3680,11 @@
       "Ocean Supply Corps Base",
       "Inn"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Misery",
@@ -3701,10 +3701,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 453,
-    "min_attack": 286,
-    "min_defense": 233,
-    "min_output": 120,
     "max_health": 8010,
     "max_attack": 2349,
     "max_defense": 3025,
@@ -3716,7 +3712,11 @@
       "Café",
       "Digsite for Defense Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Eren",
@@ -3734,10 +3734,6 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 486,
-    "min_attack": 273,
-    "min_defense": 222,
-    "min_output": 120,
     "max_health": 8213,
     "max_attack": 2556,
     "max_defense": 2505,
@@ -3749,7 +3745,11 @@
       "Farm",
       "Inn"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Izis",
@@ -3767,10 +3767,6 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 486,
-    "min_attack": 273,
-    "min_defense": 222,
-    "min_output": 120,
     "max_health": 8213,
     "max_attack": 2556,
     "max_defense": 2505,
@@ -3782,7 +3778,11 @@
       "Laboratory",
       "Clothing Store"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hiiro",
@@ -3799,10 +3799,6 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 441,
-    "min_attack": 293,
-    "min_defense": 201,
-    "min_output": 120,
     "max_health": 8168,
     "max_attack": 2576,
     "max_defense": 2484,
@@ -3814,7 +3810,11 @@
       "Forest Supply Corps Base",
       "Digsite for Stamina Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Soka",
@@ -3832,10 +3832,6 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 432,
-    "min_attack": 263,
-    "min_defense": 263,
-    "min_output": 120,
     "max_health": 8159,
     "max_attack": 2546,
     "max_defense": 2546,
@@ -3847,7 +3843,11 @@
       "Forest Supply Corps Base",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Suphia",
@@ -3866,10 +3866,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 493,
-    "min_attack": 239,
-    "min_defense": 286,
-    "min_output": 120,
     "max_health": 8050,
     "max_attack": 2302,
     "max_defense": 3078,
@@ -3881,7 +3877,11 @@
       "Farm",
       "Tavern"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3898,22 +3898,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 120,
     "max_health": 8190,
     "max_attack": 2538,
     "max_defense": 2538,
     "max_output": 300,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
     "expertise": "Magic Tome",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Field"
     ],
-    "release_date": "2022-11-24"
+    "release_date": "2022-11-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Youm",
@@ -3932,22 +3932,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 973,
-    "min_attack": 534,
-    "min_defense": 465,
-    "min_output": 60,
     "max_health": 8340,
     "max_attack": 3238,
     "max_defense": 4286,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Tavern"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Myulan",
@@ -3965,22 +3965,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 973,
-    "min_attack": 520,
-    "min_defense": 494,
-    "min_output": 60,
     "max_health": 8447,
     "max_attack": 3586,
     "max_defense": 3560,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Forest Supply Corps Base",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Tear",
@@ -3998,22 +3998,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 970,
-    "min_attack": 580,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 8237,
     "max_attack": 4013,
     "max_defense": 2866,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Ice Cream Cart",
       "Gift Shop"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Clayman",
@@ -4031,22 +4031,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 970,
-    "min_attack": 575,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 8237,
     "max_attack": 4008,
     "max_defense": 2876,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Armor Magicubeite Digsite",
       "Decoration Magicubeite Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4065,22 +4065,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 943,
-    "min_attack": 553,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 8210,
     "max_attack": 3986,
     "max_defense": 2864,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Albis",
@@ -4099,22 +4099,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 970,
-    "min_attack": 548,
-    "min_defense": 439,
-    "min_output": 60,
     "max_health": 8237,
     "max_attack": 3981,
     "max_defense": 2865,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Laboratory",
       "Inn"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4134,22 +4134,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 960,
-    "min_attack": 555,
-    "min_defense": 428,
-    "min_output": 60,
     "max_health": 8227,
     "max_attack": 3988,
     "max_defense": 2854,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Café",
       "Clothing Store"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -4167,22 +4167,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 969,
-    "min_attack": 541,
-    "min_defense": 451,
-    "min_output": 60,
     "max_health": 8236,
     "max_attack": 3974,
     "max_defense": 2877,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Feast Hot Pot",
       "Tavern"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -4202,22 +4202,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 953,
-    "min_attack": 550,
-    "min_defense": 441,
-    "min_output": 60,
     "max_health": 8220,
     "max_attack": 3983,
     "max_defense": 2867,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Masked Hero",
@@ -4236,22 +4236,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 953,
-    "min_attack": 557,
-    "min_defense": 428,
-    "min_output": 60,
     "max_health": 8220,
     "max_attack": 3990,
     "max_defense": 2854,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Sawmill",
       "Digsite for Defense Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -4270,10 +4270,6 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 961,
-    "min_attack": 554,
-    "min_defense": 430,
-    "min_output": 60,
     "max_health": 8228,
     "max_attack": 3987,
     "max_defense": 2856,
@@ -4285,7 +4281,11 @@
       "Brewery",
       "Digsite for Defense Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -4304,22 +4304,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 968,
-    "min_attack": 549,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 8235,
     "max_attack": 3982,
     "max_defense": 2864,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Tavern",
       "Protection Magistone Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Violet",
@@ -4337,10 +4337,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 970,
-    "min_attack": 552,
-    "min_defense": 431,
-    "min_output": 60,
     "max_health": 8237,
     "max_attack": 3985,
     "max_defense": 2857,
@@ -4352,7 +4348,11 @@
       "Brewery",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4371,10 +4371,6 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 957,
-    "min_attack": 556,
-    "min_defense": 428,
-    "min_output": 60,
     "max_health": 8224,
     "max_attack": 3989,
     "max_defense": 2854,
@@ -4386,7 +4382,11 @@
       "Digsite for Defense Magistones",
       "Inn"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -4405,22 +4405,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 942,
-    "min_attack": 548,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 8209,
     "max_attack": 3981,
     "max_defense": 2876,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Protection Magistone Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Soka",
@@ -4438,22 +4438,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 950,
-    "min_attack": 550,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8217,
     "max_attack": 3983,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rain",
@@ -4471,10 +4471,6 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 945,
-    "min_attack": 546,
-    "min_defense": 453,
-    "min_output": 60,
     "max_health": 8212,
     "max_attack": 3979,
     "max_defense": 2879,
@@ -4486,7 +4482,11 @@
       "Ocean Supply Corps Base",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -4505,22 +4505,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 965,
-    "min_attack": 546,
-    "min_defense": 445,
-    "min_output": 60,
     "max_health": 8232,
     "max_attack": 3979,
     "max_defense": 2871,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Digsite for Defense Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -4538,22 +4538,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 946,
-    "min_attack": 551,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8213,
     "max_attack": 3984,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Feast Hot Pot"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -4571,22 +4571,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 954,
-    "min_attack": 546,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 8221,
     "max_attack": 3979,
     "max_defense": 2876,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Restaurant",
       "Sawmill"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4604,22 +4604,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 951,
-    "min_attack": 553,
-    "min_defense": 437,
-    "min_output": 60,
     "max_health": 8218,
     "max_attack": 3986,
     "max_defense": 2863,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Training Ground",
       "Brewery"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4637,22 +4637,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 975,
-    "min_attack": 499,
-    "min_defense": 536,
-    "min_output": 60,
     "max_health": 8342,
     "max_attack": 3203,
     "max_defense": 4357,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -4670,22 +4670,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 955,
-    "min_attack": 502,
-    "min_defense": 538,
-    "min_output": 60,
     "max_health": 8322,
     "max_attack": 3206,
     "max_defense": 4359,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Brewery",
       "Clothing Store"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Veldora Tempest",
@@ -4704,22 +4704,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 960,
-    "min_attack": 554,
-    "min_defense": 432,
-    "min_output": 60,
     "max_health": 8227,
     "max_attack": 3987,
     "max_defense": 2858,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Feast Hot Pot",
       "Protection Magistone Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shinsha",
@@ -4737,22 +4737,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 947,
-    "min_attack": 555,
-    "min_defense": 435,
-    "min_output": 60,
     "max_health": 8214,
     "max_attack": 3988,
     "max_defense": 2861,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -4771,22 +4771,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 982,
-    "min_attack": 580,
-    "min_defense": 444,
-    "min_output": 60,
     "max_health": 8249,
     "max_attack": 4013,
     "max_defense": 2870,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Feast Hot Pot",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4806,10 +4806,6 @@
     ],
     "attribute": "Water",
     "attack_type": "Magic",
-    "min_health": 974,
-    "min_attack": 583,
-    "min_defense": 441,
-    "min_output": 60,
     "max_health": 8241,
     "max_attack": 4016,
     "max_defense": 2867,
@@ -4821,7 +4817,11 @@
       "Digsite for Stamina Magistones",
       "Sawmill"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Violet",
@@ -4840,10 +4840,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 961,
-    "min_attack": 585,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8228,
     "max_attack": 4018,
     "max_defense": 2869,
@@ -4855,7 +4851,11 @@
       "Restaurant",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4873,22 +4873,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 973,
-    "min_attack": 581,
-    "min_defense": 446,
-    "min_output": 60,
     "max_health": 8240,
     "max_attack": 4014,
     "max_defense": 2872,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Neutral",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Feast Hot Pot"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Blanc",
@@ -4906,22 +4906,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 953,
-    "min_attack": 585,
-    "min_defense": 446,
-    "min_output": 60,
     "max_health": 8220,
     "max_attack": 4018,
     "max_defense": 2872,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Brewery"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Jaune",
@@ -4939,10 +4939,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 968,
-    "min_attack": 585,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 8235,
     "max_attack": 4018,
     "max_defense": 2866,
@@ -4954,7 +4950,11 @@
       "Training Ground",
       "Sawmill"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -4973,22 +4973,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 978,
-    "min_attack": 574,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 8245,
     "max_attack": 4017,
     "max_defense": 2864,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Inn"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5007,22 +5007,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 958,
-    "min_attack": 586,
-    "min_defense": 442,
-    "min_output": 60,
     "max_health": 8225,
     "max_attack": 4019,
     "max_defense": 2868,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Sawmill",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -5040,22 +5040,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 973,
-    "min_attack": 578,
-    "min_defense": 452,
-    "min_output": 60,
     "max_health": 8240,
     "max_attack": 4011,
     "max_defense": 2878,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Feast Hot Pot",
       "Training Ground"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shinsha",
@@ -5073,22 +5073,22 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 968,
-    "min_attack": 585,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 8235,
     "max_attack": 4018,
     "max_defense": 2866,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -5106,22 +5106,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
-    "min_health": 959,
-    "min_attack": 582,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 8226,
     "max_attack": 4015,
     "max_defense": 2876,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Clothing Store",
       "Protection Magistone Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Benimaru",
@@ -5139,10 +5139,6 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 966,
-    "min_attack": 584,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8233,
     "max_attack": 4017,
     "max_defense": 2869,
@@ -5154,7 +5150,11 @@
       "Brewery",
       "Sawmill"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5174,22 +5174,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 959,
-    "min_attack": 586,
-    "min_defense": 442,
-    "min_output": 60,
     "max_health": 8226,
     "max_attack": 4019,
     "max_defense": 2868,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Trading Post",
       "Digsite for Training Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -5207,10 +5207,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 964,
-    "min_attack": 584,
-    "min_defense": 444,
-    "min_output": 60,
     "max_health": 8231,
     "max_attack": 4017,
     "max_defense": 2870,
@@ -5222,7 +5218,11 @@
       "Trading Post",
       "Brewery"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Blanc",
@@ -5240,10 +5240,6 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "min_health": 950,
-    "min_attack": 587,
-    "min_defense": 444,
-    "min_output": 60,
     "max_health": 8217,
     "max_attack": 4020,
     "max_defense": 2870,
@@ -5255,7 +5251,11 @@
       "Brewery",
       "Clothing Store"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Jaune",
@@ -5273,10 +5273,6 @@
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
-    "min_health": 960,
-    "min_attack": 585,
-    "min_defense": 444,
-    "min_output": 60,
     "max_health": 8227,
     "max_attack": 4018,
     "max_defense": 2870,
@@ -5288,7 +5284,11 @@
       "Feast Hot Pot",
       "Digsite for Attack Magistones"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Guy Crimson",
@@ -5306,22 +5306,22 @@
     ],
     "attribute": "Space",
     "attack_type": "Magic",
-    "min_health": 958,
-    "min_attack": 584,
-    "min_defense": 447,
-    "min_output": 60,
     "max_health": 8225,
     "max_attack": 4017,
     "max_defense": 2873,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Inn",
       "Feast Hot Pot"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Milim Nava",
@@ -5339,22 +5339,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 951,
-    "min_attack": 588,
-    "min_defense": 422,
-    "min_output": 60,
     "max_health": 8218,
     "max_attack": 4021,
     "max_defense": 2868,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Sawmill",
       "Brewery"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5372,22 +5372,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Magic",
-    "min_health": 963,
-    "min_attack": 583,
-    "min_defense": 447,
-    "min_output": 60,
     "max_health": 8230,
     "max_attack": 4016,
     "max_defense": 2873,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Brewery",
       "Trading Post"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Masked Hero",
@@ -5405,22 +5405,22 @@
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
-    "min_health": 948,
-    "min_attack": 588,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8215,
     "max_attack": 4021,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Speed",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Farm",
       "Sawmill"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5440,22 +5440,22 @@
     ],
     "attribute": "Light",
     "attack_type": "Physical",
-    "min_health": 963,
-    "min_attack": 584,
-    "min_defense": 445,
-    "min_output": 60,
     "max_health": 8230,
     "max_attack": 4017,
     "max_defense": 2871,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magistones",
       "Brewery"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -5473,22 +5473,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 966,
-    "min_attack": 583,
-    "min_defense": 446,
-    "min_output": 60,
     "max_health": 8233,
     "max_attack": 4016,
     "max_defense": 2872,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Feast Hot Pot",
       "Café"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Diablo",
@@ -5506,10 +5506,6 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 958,
-    "min_attack": 587,
-    "min_defense": 441,
-    "min_output": 60,
     "max_health": 8225,
     "max_attack": 4020,
     "max_defense": 2867,
@@ -5521,7 +5517,11 @@
       "Digsite for Defense Magistones",
       "Laboratory"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Luminus Valentine",
@@ -5539,22 +5539,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 995,
-    "min_attack": 487,
-    "min_defense": 624,
-    "min_output": 60,
     "max_health": 8362,
     "max_attack": 3191,
     "max_defense": 4445,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Weapon Magicubeite Digsite",
       "Armor Magicubeite Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Elmesia El Ru Thalion",
@@ -5573,22 +5573,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 992,
-    "min_attack": 579,
-    "min_defense": 441,
-    "min_output": 60,
     "max_health": 8259,
     "max_attack": 4012,
     "max_defense": 2867,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Defense",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Decoration Magicubeite Digsite",
       "Souvenir Shop"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5608,22 +5608,22 @@
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
-    "min_health": 955,
-    "min_attack": 587,
-    "min_defense": 440,
-    "min_output": 60,
     "max_health": 8222,
     "max_attack": 4020,
     "max_defense": 2866,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Traditional Inn",
       "Weapon Magicubeite Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Momiji",
@@ -5641,22 +5641,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 963,
-    "min_attack": 586,
-    "min_defense": 441,
-    "min_output": 60,
     "max_health": 8230,
     "max_attack": 4019,
     "max_defense": 2867,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Traditional Snack Shop",
       "Digsite for Stamina Magigems"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Souei",
@@ -5674,22 +5674,22 @@
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
-    "min_health": 963,
-    "min_attack": 585,
-    "min_defense": 443,
-    "min_output": 60,
     "max_health": 8230,
     "max_attack": 4018,
     "max_defense": 2869,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Digsite for Training Magigems",
       "Weapon Magicubeite Digsite"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shuna",
@@ -5707,22 +5707,22 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 966,
-    "min_attack": 587,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 8233,
     "max_attack": 4020,
     "max_defense": 2864,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
+    "expertise": "",
     "suited_facilities": [
       "Weaving Workshop",
       "Digsite for Defense Magigems"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5740,19 +5740,19 @@
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
-    "min_health": 971,
-    "min_attack": 584,
-    "min_defense": 450,
-    "min_output": 60,
     "max_health": 8238,
     "max_attack": 4017,
     "max_defense": 2876,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
-    "suited_facilities": null,
-    "release_date": null
+    "expertise": "",
+    "suited_facilities": [],
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5772,10 +5772,6 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 971,
-    "min_attack": 588,
-    "min_defense": 442,
-    "min_output": 60,
     "max_health": 8238,
     "max_attack": 4021,
     "max_defense": 2868,
@@ -5787,7 +5783,11 @@
       "Savory Pancake Stall",
       "Digsite for Attack Magigems"
     ],
-    "release_date": null
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -5805,19 +5805,19 @@
     ],
     "attribute": "Water",
     "attack_type": "Physical",
-    "min_health": 966,
-    "min_attack": 591,
-    "min_defense": 438,
-    "min_output": 60,
     "max_health": 8233,
     "max_attack": 4024,
     "max_defense": 2864,
     "max_output": 150,
-    "character_type": null,
+    "character_type": "",
     "tactics_type": "Charge",
-    "expertise": null,
-    "suited_facilities": null,
-    "release_date": null
+    "expertise": "",
+    "suited_facilities": [],
+    "release_date": null,
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shizue Izawa",
@@ -5836,10 +5836,6 @@
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
-    "min_health": 494,
-    "min_attack": 261,
-    "min_defense": 292,
-    "min_output": 120,
     "max_health": 8259,
     "max_attack": 2662,
     "max_defense": 2693,
@@ -5851,7 +5847,11 @@
       "Weaving Workshop",
       "Shishkabob Stall"
     ],
-    "release_date": "2025-02-27"
+    "release_date": "2025-02-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5870,10 +5870,6 @@
     ],
     "attribute": "Light+",
     "attack_type": "Magic",
-    "min_health": 976,
-    "min_attack": 584,
-    "min_defense": 456,
-    "min_output": 60,
     "max_health": 8523,
     "max_attack": 3358,
     "max_defense": 4465,
@@ -5885,7 +5881,11 @@
       "Digsite for Training Magigems",
       "Savory Pancake Stall"
     ],
-    "release_date": "2025-02-27"
+    "release_date": "2025-02-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -5904,10 +5904,6 @@
     ],
     "attribute": "Wind+",
     "attack_type": "Magic",
-    "min_health": 986,
-    "min_attack": 582,
-    "min_defense": 456,
-    "min_output": 60,
     "max_health": 8533,
     "max_attack": 3356,
     "max_defense": 4465,
@@ -5919,7 +5915,11 @@
       "Digsite for Attack Magigems",
       "Hot Dog Stall"
     ],
-    "release_date": "2025-03-09"
+    "release_date": "2025-03-09",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Frey",
@@ -5938,10 +5938,6 @@
     ],
     "attribute": "Water+",
     "attack_type": "Magic",
-    "min_health": 976,
-    "min_attack": 596,
-    "min_defense": 432,
-    "min_output": 60,
     "max_health": 8427,
     "max_attack": 4157,
     "max_defense": 2928,
@@ -5953,7 +5949,11 @@
       "Weapon Magicubeite Digsite",
       "Dango Shop"
     ],
-    "release_date": "2025-03-18"
+    "release_date": "2025-03-18",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Shion",
@@ -5972,10 +5972,6 @@
     ],
     "attribute": "Fire",
     "attack_type": "Physical",
-    "min_health": 489,
-    "min_attack": 264,
-    "min_defense": 288,
-    "min_output": 120,
     "max_health": 8254,
     "max_attack": 2665,
     "max_defense": 2689,
@@ -5987,7 +5983,11 @@
       "Japanese Style Tavern",
       "Savory Pancake Stall"
     ],
-    "release_date": "2025-03-27"
+    "release_date": "2025-03-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Gobwa",
@@ -6005,10 +6005,6 @@
     ],
     "attribute": "Dark+",
     "attack_type": "Physical",
-    "min_health": 973,
-    "min_attack": 588,
-    "min_defense": 449,
-    "min_output": 60,
     "max_health": 8424,
     "max_attack": 4149,
     "max_defense": 2945,
@@ -6020,7 +6016,11 @@
       "Digsite for Defense Magigems",
       "Traditional Snack Shop"
     ],
-    "release_date": "2025-03-27"
+    "release_date": "2025-03-27",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Violet",
@@ -6039,10 +6039,6 @@
     ],
     "attribute": "Fire+",
     "attack_type": "Physical",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 0,
     "max_health": 8431,
     "max_attack": 4161,
     "max_defense": 2944,
@@ -6054,7 +6050,11 @@
       "Encampment",
       "Armor Magicubeite Digsite"
     ],
-    "release_date": "2025-04-10"
+    "release_date": "2025-04-10",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   },
   {
     "name": "Blanc",
@@ -6073,10 +6073,6 @@
     ],
     "attribute": "Dark+",
     "attack_type": "Physical",
-    "min_health": 0,
-    "min_attack": 0,
-    "min_defense": 0,
-    "min_output": 0,
     "max_health": 8426,
     "max_attack": 4161,
     "max_defense": 2946,
@@ -6088,6 +6084,111 @@
       "Digsite for Stamina Magigems",
       "Weaving Workshop"
     ],
-    "release_date": "2025-04-10"
+    "release_date": "2025-04-10",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
+  },
+  {
+    "name": "Ritus",
+    "title": "Holy Knight of Water",
+    "permalink": "RitusDefault",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Wielder of Magic",
+      "Flashback Beatdown Emissary"
+    ],
+    "attribute": "Light",
+    "attack_type": "Magic",
+    "max_health": 8294,
+    "max_attack": 2671,
+    "max_defense": 2669,
+    "max_output": 300,
+    "character_type": "Balance Growth Type",
+    "tactics_type": "Charge",
+    "expertise": "Magic Tome",
+    "suited_facilities": [
+      "Purple Magicluster Digsite",
+      "Crystal Hotel"
+    ],
+    "release_date": "2025-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
+  },
+  {
+    "name": "Leon Cromwell",
+    "title": "Platinum Bulwark",
+    "permalink": "LeonHA2025",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Octagram Demon Lord",
+      "Heart of a Hero",
+      "Fount of Wisdom"
+    ],
+    "attribute": "Earth+",
+    "attack_type": "Magic",
+    "max_health": 8428,
+    "max_attack": 4164,
+    "max_defense": 2939,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Charge",
+    "expertise": "Sword",
+    "suited_facilities": [
+      "Magic Fang Atelier",
+      "Red Magicluster Digsite"
+    ],
+    "release_date": "2025-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
+  },
+  {
+    "name": "Velzard",
+    "title": "Frostplate Dragon",
+    "permalink": "WerzardHA2025",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Dragon Haki",
+      "Exalted Champions",
+      "Stern of Spirit"
+    ],
+    "attribute": "Water+",
+    "attack_type": "Magic",
+    "max_health": 8428,
+    "max_attack": 4161,
+    "max_defense": 2945,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Charge",
+    "expertise": "Sword",
+    "suited_facilities": [
+      "Magic Hide Atelier",
+      "Digsite for Attack Magigems"
+    ],
+    "release_date": "2025-04-24",
+    "trait_name": "",
+    "trait_effect": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null
   }
 ]
