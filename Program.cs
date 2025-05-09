@@ -32,15 +32,12 @@ builder.Services.AddSingleton<CharacterListService>();
 builder.Services.AddSingleton<IStorageService, WebStorageService>();
 builder.Services.AddSingleton<JsonDataModelService>();
 
-builder.Services.AddSingleton<OldJsonDataModel>();
-
 builder.Services.AddSingleton<LatestNoticesViewModel>();
 builder.Services.AddSingleton<LiveStreamViewModel>();
 builder.Services.AddSingleton<TimersViewModel>();
 
 builder.Services.AddSingleton<CharacterSectionViewModel>();
 builder.Services.AddSingleton<FilterSectionViewModel>();
-builder.Services.AddSingleton<BattleUnitIconViewModel>();
 builder.Services.AddSingleton<ProtectionUnitIconViewModel>();
 
 builder.Services

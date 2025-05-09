@@ -1,37 +1,36 @@
-﻿using System.Reactive.Disposables;
+﻿using System.Reactive.Linq;
 using ReactiveUI;
+using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models;
 using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Characters;
 
-public sealed class BattleUnitIconViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class BattleUnitIconViewModel : ReactiveObject
 {
-    public ViewModelActivator Activator { get; } = new();
+    [ObservableAsProperty]
+    private string? _attributeIcon;
+
+    [ObservableAsProperty]
+    private string? _attackTypeIcon;
     
     private readonly JsonDataModelService _jsonDataModelService;
 
-    public BattleUnitIconViewModel(JsonDataModelService jsonDataModelService)
+    public BattleUnitIconViewModel(BattleUnit unit, JsonDataModelService jsonDataModelService)
     {
         _jsonDataModelService = jsonDataModelService;
         
-        this.WhenActivated(disposable =>
-        {
-            this.WhenAnyValue(
-                    model => model._jsonDataModelService.BattleAttributes,
-                    model => model._jsonDataModelService.BattleAttackTypes)
-                .Subscribe(_ => this.RaisePropertyChanged())
-                .DisposeWith(disposable);
-        });
+        _attributeIconHelper = this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
+            .Select(_ => jsonDataModelService.GetBattleAttribute(unit.Attribute)?.Icon)
+            .ToProperty(this, nameof(AttributeIcon));
+
+        _attackTypeIconHelper = this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
+            .Select(_ => jsonDataModelService.GetBattleAttackType(unit.AttackType)?.Icon)
+            .ToProperty(this, nameof(AttackTypeIcon));
     }
 
-    public string? GetAttributeIcon(BattleUnit battleUnit)
+    public override int GetHashCode()
     {
-        return _jsonDataModelService.GetBattleAttribute(battleUnit.Attribute)?.Icon;
-    }
-    
-    public string? GetAttackTypeIcon(BattleUnit battleUnit)
-    {
-        return _jsonDataModelService.GetBattleAttackType(battleUnit.AttackType)?.Icon;
+        return HashCode.Combine(AttributeIcon, AttackTypeIcon);
     }
 }

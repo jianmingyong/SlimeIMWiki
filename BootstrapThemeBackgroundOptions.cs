@@ -3,7 +3,7 @@ using Blazorise;
 
 namespace SlimeIMWiki;
 
-public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumerable<KeyValuePair<string, Func<string>>>, IEnumerable
+public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumerable<KeyValuePair<string, Func<string>>>
 {
 #nullable disable
     public string BodySecondary { get; set; }

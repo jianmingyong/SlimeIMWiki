@@ -1,4 +1,6 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.BattleUnitIconViewModel>
+﻿@using SlimeIMWiki.ViewModels.Characters
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.Characters.BattleUnitIconViewModel>
+@inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -24,12 +26,12 @@
 
 <Image Position="Position.Absolute.End.Is0.Top.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.GetAttributeIcon(Unit)"
+       Source="@ViewModel.AttributeIcon"
        Style="z-index: 3"/>
 
 <Image Position="Position.Absolute.End.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.GetAttackTypeIcon(Unit)"
+       Source="@ViewModel.AttackTypeIcon"
        Style="z-index: 3; top: 25%"/>
 
 <Image Position="Position.Absolute.Start.Is50.Translate.MiddleX"
@@ -147,4 +149,20 @@
     [Parameter]
     [EditorRequired]
     public required string DisplayText { get; set; }
+
+    private int _changeHash;
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<BattleUnitIconViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+
+    protected override bool ShouldRender()
+    {
+        var newHash = ViewModel?.GetHashCode() ?? 0;
+        if (newHash == _changeHash) return false;
+        _changeHash = newHash;
+        return true;
+    }
 }
