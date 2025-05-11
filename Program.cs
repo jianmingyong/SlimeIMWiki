@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ReactiveUI;
 using SlimeIMWiki;
-using SlimeIMWiki.Models;
 using SlimeIMWiki.Services;
 using SlimeIMWiki.ViewModels.Characters;
 using SlimeIMWiki.ViewModels.Home;
@@ -17,6 +16,8 @@ using Splat.ModeDetection;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
 builder.Services.AddSingleton(_ => new HttpClient
 {

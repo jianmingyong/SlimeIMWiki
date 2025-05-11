@@ -20,11 +20,10 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
     <link href="_content/Blazorise.Icons.FontAwesome/v6/css/all.min.css" rel="stylesheet">
 
-    <link href="_content/Blazorise/blazorise.css?v=1.7.5.0" rel="stylesheet"/>
-    <link href="_content/Blazorise.Bootstrap5/blazorise.bootstrap5.css?v=1.7.5.0" rel="stylesheet"/>
+    <link href="_content/Blazorise/blazorise.css" rel="stylesheet"/>
+    <link href="_content/Blazorise.Bootstrap5/blazorise.bootstrap5.css" rel="stylesheet"/>
 
     <link href="css/blazor-ui.css" rel="stylesheet"/>
-
     <link href="css/custom.css" rel="stylesheet">
 
     <link as="image" href="image/loading/slime1.webp" rel="preload"/>
@@ -78,30 +77,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-
-<script autostart="false" src="_framework/blazor.webassembly.js"></script>
-
-<script type="module">
-    import {BrotliDecode} from './js/decode.min.js';
-
-    Blazor.start({
-        loadBootResource: function (type, name, defaultUri, integrity) {
-            if (type !== 'dotnetjs' && location.hostname !== 'localhost' && location.hostname !== 'slimeimwiki.gatewayroleplay.org' && type !== 'configuration') {
-                return (async function () {
-                    const response = await fetch(defaultUri + '.br', {cache: 'no-cache'});
-                    if (!response.ok) {
-                        throw new Error(response.statusText);
-                    }
-                    const originalResponseBuffer = await response.arrayBuffer();
-                    const originalResponseArray = new Int8Array(originalResponseBuffer);
-                    const decompressedResponseArray = BrotliDecode(originalResponseArray);
-                    const contentType = type === 'dotnetwasm' ? 'application/wasm' : 'application/octet-stream';
-                    return new Response(decompressedResponseArray, {headers: {'content-type': contentType}});
-                })();
-            }
-        }
-    });
-</script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="_framework/blazor.webassembly.js"></script>
 
 </body>
 

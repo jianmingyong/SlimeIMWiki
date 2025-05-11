@@ -14,6 +14,9 @@ public sealed partial class CharacterListService : ReactiveObject
 {
     [ObservableAsProperty]
     private IEnumerable<ICharacterUnit> _characterUnits = [];
+    
+    [ObservableAsProperty]
+    private int _characterUnitsCount;
 
     [Reactive]
     private string _displayCategory = "Battle";
@@ -47,6 +50,20 @@ public sealed partial class CharacterListService : ReactiveObject
                 var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
             })))
             .ToProperty(this, nameof(CharacterUnits));
+
+        _characterUnitsCountHelper = Observable.CombineLatest(
+                this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits),
+                this.WhenAnyValue(service => service.DisplayCategory),
+                this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
+                Filters.ToObservableChangeSet(),
+                (units, displayCategory, _, _) => ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
+                {
+                    "Battle" => units.Item1,
+                    "Protection" => units.Item2,
+                    var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+                }))
+            .Select(units => units.Count())
+            .ToProperty(this, nameof(CharacterUnitsCount));
     }
     
     private IEnumerable<ICharacterUnit> ApplySort<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>

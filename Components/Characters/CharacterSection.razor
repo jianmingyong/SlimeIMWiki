@@ -1,4 +1,8 @@
 ﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.CharacterSectionViewModel>
+@using ReactiveUI
+@implements IAsyncDisposable
+@inject IJSRuntime JS
+@inject ILogger<CharacterSection> Logger
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -77,18 +81,110 @@
     </Div>
 </Div>
 
-<Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
-     Background="Background.Body" Position="Position.Relative">
+<Div Background="Background.Body" Position="Position.Relative" 
+     Style="height: calc(100vh - 5.5rem); overflow-y: scroll"
+     @onscroll="OnScrollAsync" ElementId="UnitScrollContainer">
     
-    @foreach (var unit in ViewModel.CharacterUnits)
-    {
-        if (unit is BattleUnit battleUnit)
-        {
-            <BattleUnitIcon @key="unit.Permalink" Unit="battleUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
-        }
-        else if (unit is ProtectionUnit protectionUnit)
-        {
-            <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
-        }
-    }
+    <Div Style="@($"height: {_unitContainerHeight}px")">
+        <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
+             Position="Position.Absolute" Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
+            @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
+            {
+                if (unit is BattleUnit battleUnit)
+                {
+                    <BattleUnitIcon @key="unit.Permalink" Unit="battleUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+                }
+                else if (unit is ProtectionUnit protectionUnit)
+                {
+                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+                }
+            }
+        </Div>
+    </Div>
 </Div>
+
+@code
+{
+    private IJSObjectReference? _module;
+    private int _renderedHashCode;
+
+    private float _unitScrollContainerWidth;
+    private float _unitScrollContainerHeight;
+    private float _unitContainerHeight;
+    private int _scrollPosition;
+
+    private int _itemWidth = 100;
+    private int _itemHeight = 100;
+    private int _itemWidthGap = 16;
+    private int _itemHeightGap = 48;
+    private int _itemsPerRow = 1;
+    private int _visibleRow = 1;
+
+    private int _startIndex;
+    private int _endIndex = 1;
+
+    protected override bool ShouldRender()
+    {
+        var newRenderHashcode = HashCode.Combine(ViewModel, _unitContainerHeight, _startIndex, _endIndex);
+        if (_renderedHashCode == newRenderHashcode) return false;
+        _renderedHashCode = newRenderHashcode;
+        return true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _module = await JS.InvokeAsync<IJSObjectReference>("import", "./Components/Characters/CharacterSection.razor.js");
+            await OnScrollAsync();
+
+            this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(i => UpdateVisibleItems());
+        }
+
+        if (!firstRender)
+        {
+            Logger.LogTrace("Component has re-render");
+        }
+        
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task OnScrollAsync()
+    {
+        if (_module is null) return;
+        
+        _unitScrollContainerWidth = await _module.InvokeAsync<float>("getElementWidth", "UnitScrollContainer");
+        _unitScrollContainerHeight = await _module.InvokeAsync<float>("getElementHeight", "UnitScrollContainer");
+        _scrollPosition = await _module.InvokeAsync<int>("getScrollPosition", "UnitScrollContainer");
+        
+        Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
+        Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
+
+        UpdateVisibleItems();
+    }
+
+    private void UpdateVisibleItems()
+    {
+        if (_module is null) return;
+        
+        _itemsPerRow = (int) Math.Floor(_unitScrollContainerWidth / (_itemWidth + _itemWidthGap));
+        _visibleRow = (int) Math.Ceiling(_unitScrollContainerHeight / (_itemHeight + _itemHeightGap)) + 2;
+
+        _startIndex = _scrollPosition / (_itemHeight + _itemHeightGap) * _itemsPerRow;
+        _endIndex = _startIndex + _itemsPerRow * _visibleRow;
+
+        _unitContainerHeight = (ViewModel?.CharacterUnitsCount ?? 0f) / _itemsPerRow * (_itemHeight + _itemHeightGap);
+        
+        Logger.LogTrace("Item Per Row: {itemsPerRow}", _itemsPerRow);
+        Logger.LogTrace("Visible Row: {visibleRow}", _visibleRow);
+        Logger.LogTrace("Unit Count: {count}", ViewModel?.CharacterUnitsCount ?? 0);
+        Logger.LogTrace("Index: {start} / {end}", _startIndex, _endIndex);
+
+        StateHasChanged();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_module != null) await _module.DisposeAsync();
+    }
+}

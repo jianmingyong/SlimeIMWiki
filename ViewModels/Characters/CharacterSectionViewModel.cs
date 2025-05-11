@@ -11,6 +11,8 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
     public ViewModelActivator Activator { get; } = new();
     
     public IEnumerable<ICharacterUnit> CharacterUnits => _characterListService.CharacterUnits;
+    
+    public int CharacterUnitsCount => _characterListService.CharacterUnitsCount;
 
     public string DisplayCategory => _characterListService.DisplayCategory;
 
@@ -34,6 +36,10 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
         {
             this.WhenAnyValue(model => model._characterListService.CharacterUnits)
                 .Subscribe(_ => this.RaisePropertyChanged(nameof(CharacterUnits)))
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._characterListService.CharacterUnitsCount)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(CharacterUnitsCount)))
                 .DisposeWith(disposable);
             
             this.WhenAnyValue(model => model._characterListService.DisplayCategory)
@@ -62,5 +68,10 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
             "Name" => unit.Name,
             var _ => unit.Name
         };
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(CharacterUnits, CharacterUnitsCount, DisplayCategory, CharacterUnitsCategory, IsOrderByDescending);
     }
 }

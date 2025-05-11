@@ -1,6 +1,7 @@
 ﻿@using SlimeIMWiki.ViewModels.Characters
 @inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.Characters.BattleUnitIconViewModel>
 @inject IServiceProvider ServiceProvider
+@inject ILogger<BattleUnitIcon> Logger
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -150,7 +151,7 @@
     [EditorRequired]
     public required string DisplayText { get; set; }
 
-    private int _changeHash;
+    private int _renderedHashCode;
 
     protected override void OnInitialized()
     {
@@ -160,9 +161,9 @@
 
     protected override bool ShouldRender()
     {
-        var newHash = ViewModel?.GetHashCode() ?? 0;
-        if (newHash == _changeHash) return false;
-        _changeHash = newHash;
+        var newRenderHashcode = HashCode.Combine(ViewModel, DisplayText);
+        if (_renderedHashCode == newRenderHashcode) return false;
+        _renderedHashCode = newRenderHashcode;
         return true;
     }
 }

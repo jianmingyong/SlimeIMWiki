@@ -7,8 +7,8 @@ public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumera
 {
 #nullable disable
     public string BodySecondary { get; set; }
-    
-    protected new Dictionary<string, Func<string>> ColorMap
+
+    private new Dictionary<string, Func<string>> ColorMap
     {
         get
         {
