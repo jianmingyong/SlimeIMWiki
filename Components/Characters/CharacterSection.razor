@@ -138,7 +138,9 @@
             _module = await JS.InvokeAsync<IJSObjectReference>("import", "./Components/Characters/CharacterSection.razor.js");
             await OnScrollAsync();
 
-            this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(i => UpdateVisibleItems());
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(_ => UpdateVisibleItems());
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
 
         if (!firstRender)
