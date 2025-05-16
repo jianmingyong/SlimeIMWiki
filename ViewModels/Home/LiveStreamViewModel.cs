@@ -8,10 +8,10 @@ namespace SlimeIMWiki.ViewModels.Home;
 public sealed partial class LiveStreamViewModel : ReactiveObject
 {
     [ObservableAsProperty]
-    public partial string? LivestreamUrl { get; }
+    private string? _livestreamUrl;
 
     public LiveStreamViewModel(HttpClient httpClient)
     {
-        _livestreamUrlHelper = Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/livestream.json", JsonSerializer.Custom.Livestream, token)).WhereNotNull().Select(livestream => livestream.YoutubeLink).ToProperty(this, nameof(LivestreamUrl));
+        Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/livestream.json", JsonSerializer.Custom.Livestream, token)).WhereNotNull().Select(livestream => livestream.YoutubeLink).ToProperty(this, nameof(LivestreamUrl), out _livestreamUrlHelper);
     }
 }

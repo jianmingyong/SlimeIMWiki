@@ -15,6 +15,8 @@
         
         <RunAOTCompilation>true</RunAOTCompilation>
         <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
+
+        <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
     </PropertyGroup>
 
     <ItemGroup>
@@ -35,5 +37,9 @@
         <PackageReference Include="Blazorise.Bootstrap5" Version="1.7.*"/>
         <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.7.*"/>
     </ItemGroup>
+
+    <Target Name="CopyWebConfig" AfterTargets="Publish">
+        <Copy SourceFiles="web.config" DestinationFolder="$(PublishDir)" />
+    </Target>
 
 </Project>

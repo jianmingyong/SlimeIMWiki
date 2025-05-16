@@ -3,11 +3,10 @@
 <Layout>
     <LayoutHeader Fixed>
         <Bar Breakpoint="Breakpoint.Desktop" Background="Background.Body" ThemeContrast="ThemeContrast.Dark"
-             NavigationBreakpoint="Breakpoint.Desktop" Visible="false"
-             Style="box-shadow: 0 10px 8px rgba(33,37,41,0.5)">
+             NavigationBreakpoint="Breakpoint.Desktop" Visible="false">
             <BarBrand>
                 <BarItem Padding="Padding.Is3.FromStart">
-                    <Image Height="Height.Px(35)" Source="image/slime_icon.png" Text="Slime Image"></Image>
+                    <Image Height="Height.Px(35)" Source="image/slime_icon.png" Text="Slime Image"/>
                     <Span VerticalAlignment="VerticalAlignment.Middle">Slime IM Wiki</Span>
                 </BarItem>
             </BarBrand>
@@ -21,6 +20,22 @@
                         <BarLink To="Characters">Characters</BarLink>
                     </BarItem>
                 </BarStart>
+                <BarEnd>
+                    <BarItem>
+                        <BarLink To="https://docs.google.com/spreadsheets/d/1JbFrlGxupmuOssj59nFwLhAin2CH4tcIQUSn4VxrwcI/edit?usp=sharing" Target="Target.Blank"
+                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <BarIcon IconName="IconName.FileExcel" IconSize="IconSize.x2"/>
+                            <Div>Google Sheets</Div>
+                        </BarLink>
+                    </BarItem>
+                    <BarItem>
+                        <BarLink To="https://github.com/jianmingyong/SlimeIMWiki" Target="Target.Blank"
+                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <BarIcon IconName="IconName.Github" IconSize="IconSize.x2"/>
+                            <Div>GitHub</Div>
+                        </BarLink>
+                    </BarItem>
+                </BarEnd>
             </BarMenu>
         </Bar>
     </LayoutHeader>

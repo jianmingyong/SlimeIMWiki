@@ -8,14 +8,13 @@ namespace SlimeIMWiki.ViewModels.Home;
 
 public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewModel
 {
-    
     public ViewModelActivator Activator { get; } = new();
 
-    [Reactive]
-    public partial string RegionSelection { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private string _regionSelection = "NA";
 
     [ObservableAsProperty]
-    public partial int RegionCode { get; }
+    private int _regionCode = 3;
 
     private readonly IStorageService _storageService;
 
@@ -23,25 +22,24 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     {
         _storageService = storageService;
 
-        _regionSelection = "NA";
-        _regionCodeHelper = this.WhenAnyValue(model => model.RegionSelection).Select(s => s switch
+        this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {
             "NA" => 3,
             "EU" => 4,
             "Asia" => 2,
             "Japan" => 1,
-            var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), s, null)
-        }).ToProperty(this, nameof(RegionCode));
+            var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), value, null)
+        }).ToProperty(this, nameof(RegionCode), out _regionCodeHelper);
 
-        this.WhenActivated(disposable => { Observable.FromAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable); });
+        this.WhenActivated(disposable => { Observable.FromAsync(WhenActivatedAsync).Subscribe().DisposeWith(disposable); });
     }
-    
+
     private async Task WhenActivatedAsync()
     {
         RegionSelection = await _storageService.GetFromCookieAsync(nameof(RegionSelection)) ?? "NA";
         await RegionChange(RegionSelection);
     }
-    
+
     [ReactiveCommand]
     private async Task RegionChange(string region)
     {

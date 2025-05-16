@@ -10,53 +10,34 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
 {
     public ViewModelActivator Activator { get; } = new();
 
-    [Reactive]
-    public partial string TimerSelection { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private string _timerSelection = "NA";
     
-    [Reactive]
-    public partial DateTime TimerReset { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private DateTime _timerReset = DateTime.Now;
     
-    [Reactive]
-    public partial DateTime TimerUpdate { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private DateTime _timerUpdate = DateTime.Now;
     
-    [Reactive]
-    public partial TimeSpan TimerResetIn { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private TimeSpan _timerResetIn = TimeSpan.Zero;
     
-    [Reactive]
-    public partial TimeSpan TimerUpdateIn { get; private set; }
+    [Reactive(SetModifier = AccessModifier.Private)]
+    private TimeSpan _timerUpdateIn = TimeSpan.Zero;
     
     private readonly IStorageService _storageService;
 
     public TimersViewModel(IStorageService storageService)
     {
         _storageService = storageService;
-
-        _timerSelection = "NA";
-        
-        _timerReset = DateTime.Now;
-        _timerUpdate = DateTime.Now;
-        
-        _timerResetIn = TimeSpan.Zero;
-        _timerUpdateIn = TimeSpan.Zero;
         
         this.WhenActivated(disposable =>
         {
-            Observable.FromAsync(WhenActivatedAsync, RxApp.MainThreadScheduler).Subscribe().DisposeWith(disposable);
+            Observable.FromAsync(WhenActivatedAsync).Subscribe().DisposeWith(disposable);
             
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
-                while (DateTime.Now > TimerReset)
-                {
-                    TimerReset = TimerReset.AddDays(1);
-                }
-
-                while (DateTime.Now > TimerUpdate)
-                {
-                    TimerUpdate = TimerUpdate.AddDays(1);
-                }
-                
-                TimerResetIn = TimerReset - DateTime.Now;
-                TimerUpdateIn = TimerUpdate - DateTime.Now;
+                UpdateTimers();
             }).DisposeWith(disposable);
         });
     }
@@ -98,6 +79,11 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
             }
         }
 
+        UpdateTimers();
+    }
+
+    private void UpdateTimers()
+    {
         while (DateTime.Now > TimerReset)
         {
             TimerReset = TimerReset.AddDays(1);
@@ -107,7 +93,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
         {
             TimerUpdate = TimerUpdate.AddDays(1);
         }
-
+                
         TimerResetIn = TimerReset - DateTime.Now;
         TimerUpdateIn = TimerUpdate - DateTime.Now;
     }

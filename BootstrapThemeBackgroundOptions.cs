@@ -3,9 +3,10 @@ using Blazorise;
 
 namespace SlimeIMWiki;
 
+#nullable disable
+
 public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumerable<KeyValuePair<string, Func<string>>>
 {
-#nullable disable
     public string BodySecondary { get; set; }
 
     private new Dictionary<string, Func<string>> ColorMap

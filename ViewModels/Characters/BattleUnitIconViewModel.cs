@@ -20,13 +20,13 @@ public sealed partial class BattleUnitIconViewModel : ReactiveObject
     {
         _jsonDataModelService = jsonDataModelService;
         
-        _attributeIconHelper = this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
+        this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
             .Select(_ => jsonDataModelService.GetBattleAttribute(unit.Attribute)?.Icon)
-            .ToProperty(this, nameof(AttributeIcon));
+            .ToProperty(this, nameof(AttributeIcon), out _attributeIconHelper);
 
-        _attackTypeIconHelper = this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
+        this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
             .Select(_ => jsonDataModelService.GetBattleAttackType(unit.AttackType)?.Icon)
-            .ToProperty(this, nameof(AttackTypeIcon));
+            .ToProperty(this, nameof(AttackTypeIcon), out _attackTypeIconHelper);
     }
 
     public override int GetHashCode()

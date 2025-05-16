@@ -12,47 +12,47 @@ public record Filter(Func<ICharacterUnit, bool> FilterFunction, RenderFragment R
 
 public sealed partial class CharacterListService : ReactiveObject
 {
+    public ObservableCollection<Filter> Filters { get; } = [];
+
     [ObservableAsProperty]
     private IEnumerable<ICharacterUnit> _characterUnits = [];
-    
+
     [ObservableAsProperty]
     private int _characterUnitsCount;
 
     [Reactive]
     private string _displayCategory = "Battle";
-    
+
     [Reactive]
     private string _orderByCategory = "Release";
-    
+
     [Reactive]
     private bool _isOrderByDescending = true;
 
-    public ObservableCollection<Filter> Filters { get; } = [];
-    
     [Reactive]
     private bool _isOrFilter = true;
-    
+
     private readonly JsonDataModelService _jsonDataModelService;
-    
+
     public CharacterListService(JsonDataModelService jsonDataModelService)
     {
         _jsonDataModelService = jsonDataModelService;
 
-        _characterUnitsHelper = Observable.CombineLatest(
-            this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits),
-            this.WhenAnyValue(service => service.DisplayCategory),
-            this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
-            Filters.ToObservableChangeSet(),
-            (units, displayCategory, _, _) => ApplySort(ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
-            {
-                "Battle" => units.Item1,
-                "Protection" => units.Item2,
-                var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
-            })))
-            .ToProperty(this, nameof(CharacterUnits));
+        this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits)
+            .CombineLatest(
+                this.WhenAnyValue(service => service.DisplayCategory),
+                this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
+                Filters.ToObservableChangeSet(),
+                (units, displayCategory, _, _) => ApplySort(ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
+                {
+                    "Battle" => units.Item1,
+                    "Protection" => units.Item2,
+                    var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+                })))
+            .ToProperty(this, nameof(CharacterUnits), out _characterUnitsHelper);
 
-        _characterUnitsCountHelper = Observable.CombineLatest(
-                this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits),
+        this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits)
+            .CombineLatest(
                 this.WhenAnyValue(service => service.DisplayCategory),
                 this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
                 Filters.ToObservableChangeSet(),
@@ -62,10 +62,11 @@ public sealed partial class CharacterListService : ReactiveObject
                     "Protection" => units.Item2,
                     var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
                 }))
-            .Select(units => units.Count())
-            .ToProperty(this, nameof(CharacterUnitsCount));
+            .SelectMany(units => units)
+            .Count()
+            .ToProperty(this, nameof(CharacterUnitsCount), out _characterUnitsCountHelper);
     }
-    
+
     private IEnumerable<ICharacterUnit> ApplySort<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
     {
         if (IsOrderByDescending)
@@ -108,7 +109,7 @@ public sealed partial class CharacterListService : ReactiveObject
             return unit.InitialRarity;
         }
     }
-    
+
     private IEnumerable<ICharacterUnit> ApplyFilter<TSource>(TSource source) where TSource : IEnumerable<ICharacterUnit>
     {
         if (Filters.Count == 0) return source;

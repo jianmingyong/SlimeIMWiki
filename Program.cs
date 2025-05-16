@@ -29,17 +29,18 @@ builder.Services.AddSingleton(_ => new HttpClient
 });
 builder.Services.UseMicrosoftDependencyResolver();
 
+builder.Services.AddSingleton<StaticWebRootAssetsMapping>();
 builder.Services.AddSingleton<CharacterListService>();
 builder.Services.AddSingleton<IStorageService, WebStorageService>();
 builder.Services.AddSingleton<JsonDataModelService>();
 
-builder.Services.AddSingleton<LatestNoticesViewModel>();
-builder.Services.AddSingleton<LiveStreamViewModel>();
-builder.Services.AddSingleton<TimersViewModel>();
+builder.Services.AddTransient<LatestNoticesViewModel>();
+builder.Services.AddTransient<LiveStreamViewModel>();
+builder.Services.AddTransient<TimersViewModel>();
 
-builder.Services.AddSingleton<CharacterSectionViewModel>();
-builder.Services.AddSingleton<FilterSectionViewModel>();
-builder.Services.AddSingleton<ProtectionUnitIconViewModel>();
+builder.Services.AddTransient<CharacterSectionViewModel>();
+builder.Services.AddTransient<FilterSectionViewModel>();
+builder.Services.AddTransient<ProtectionUnitIconViewModel>();
 
 builder.Services
     .AddBlazorise()
