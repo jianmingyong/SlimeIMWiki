@@ -31,29 +31,22 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     {
         _storageService = storageService;
         
+        RegionChange(_storageService.GetFromCookie(nameof(TimerSelection)) ?? "NA");
+        
         this.WhenActivated(disposable =>
         {
-            Observable.FromAsync(WhenActivatedAsync).Subscribe().DisposeWith(disposable);
-            
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
                 UpdateTimers();
             }).DisposeWith(disposable);
         });
     }
-
-    private async Task WhenActivatedAsync()
-    {
-        _timerSelection = await _storageService.GetFromCookieAsync(nameof(TimerSelection)) ?? "NA";
-        await RegionChange(_timerSelection);
-    }
     
     [ReactiveCommand]
-    private async Task RegionChange(string region)
+    private void RegionChange(string region)
     {
         TimerSelection = region;
-        
-        await _storageService.SetToCookieAsync(nameof(TimerSelection), region, TimeSpan.FromDays(30));
+        _storageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
         
         switch (region)
         {

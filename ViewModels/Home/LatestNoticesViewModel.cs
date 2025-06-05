@@ -1,5 +1,4 @@
-﻿using System.Reactive.Disposables;
-using System.Reactive.Linq;
+﻿using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Services;
@@ -31,19 +30,13 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
             var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), value, null)
         }).ToProperty(this, nameof(RegionCode), out _regionCodeHelper);
 
-        this.WhenActivated(disposable => { Observable.FromAsync(WhenActivatedAsync).Subscribe().DisposeWith(disposable); });
-    }
-
-    private async Task WhenActivatedAsync()
-    {
-        RegionSelection = await _storageService.GetFromCookieAsync(nameof(RegionSelection)) ?? "NA";
-        await RegionChange(RegionSelection);
+        RegionChange(_storageService.GetFromCookie(nameof(RegionSelection)) ?? "NA");
     }
 
     [ReactiveCommand]
-    private async Task RegionChange(string region)
+    private void RegionChange(string region)
     {
         RegionSelection = region;
-        await _storageService.SetToCookieAsync(nameof(RegionSelection), region, TimeSpan.FromDays(30));
+        _storageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
     }
 }
