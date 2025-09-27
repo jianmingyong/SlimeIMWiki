@@ -154,11 +154,11 @@
     private async Task OnScrollAsync()
     {
         if (_module is null) return;
-        
+
         _unitScrollContainerWidth = await _module.InvokeAsync<float>("getElementWidth", "UnitScrollContainer");
         _unitScrollContainerHeight = await _module.InvokeAsync<float>("getElementHeight", "UnitScrollContainer");
-        _scrollPosition = await _module.InvokeAsync<int>("getScrollPosition", "UnitScrollContainer");
-        
+        _scrollPosition = (int) await _module.InvokeAsync<float>("getScrollPosition", "UnitScrollContainer");
+
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
         Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
 

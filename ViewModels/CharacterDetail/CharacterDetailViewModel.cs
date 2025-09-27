@@ -35,4 +35,9 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
     {
         return Unit is null ? null : _jsonDataModelService.GetForce(force)?.Icon;
     }
+
+    public string? GetFieldBuildingIcon(string fieldBuilding)
+    {
+        return Unit is null ? null : _jsonDataModelService.GetFieldBuilding(fieldBuilding)?.Icon;
+    }
 }

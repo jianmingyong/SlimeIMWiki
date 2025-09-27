@@ -22,12 +22,15 @@ public record BattleUnit(
     string[] SuitedFacilities,
     string[] SecretSkills,
     string[] BattleSkills,
-    string? ValorTrait,
     DateOnly? ReleaseDate,
     string TraitName,
     string TraitEffect,
+    string TraitEffectMax,
+    string TraitIcon,
     string? ValorTraitName,
-    string? ValorTraitEffect) : ICharacterUnit
+    string? ValorTraitEffect,
+    string? ValorTraitEffectMax,
+    string? ValorTraitIcon) : ICharacterUnit
 {
     public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
 

@@ -185,6 +185,16 @@
     "icon": "image/forces/sparkle_of_youth.png"
   },
   {
+    "name": "Dungeon Crawler",
+    "category": "Event/Theme",
+    "icon": "image/forces/dungeon_crawler.png"
+  },
+  {
+    "name": "Scourge Wielder",
+    "category": "Event/Theme",
+    "icon": "image/forces/scourge_wielder.png"
+  },
+  {
     "name": "Octagram Bazaar",
     "category": "Other",
     "icon": "image/forces/octagram_bazaar.png"

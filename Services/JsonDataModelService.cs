@@ -31,6 +31,9 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     [ObservableAsProperty]
     private TacticType[] _tacticTypes = [];
+    
+    [ObservableAsProperty]
+    private FieldBuilding[] _fieldBuildings = [];
 
     public JsonDataModelService(HttpClient httpClient)
     {
@@ -44,6 +47,7 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
         Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/forces.json", JsonSerializer.Custom.ForceArray, token)).WhereNotNull().ToProperty(this, nameof(Forces), out _forcesHelper);
         Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/tactics_types.json", JsonSerializer.Custom.TacticTypeArray, token)).WhereNotNull().ToProperty(this, nameof(TacticTypes), out _tacticTypesHelper);
+        Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/field_buildings.json", JsonSerializer.Custom.FieldBuildingArray, token)).WhereNotNull().ToProperty(this, nameof(FieldBuilding), out _fieldBuildingsHelper);
     }
 
     public BattleAttackType? GetBattleAttackType(string attackType)
@@ -74,5 +78,10 @@ public sealed partial class JsonDataModelService : ReactiveObject
     public TacticType? GetTacticType(string tacticType)
     {
         return TacticTypes.FirstOrDefault(t => t.Name.Equals(tacticType, StringComparison.OrdinalIgnoreCase));
+    }
+
+    public FieldBuilding? GetFieldBuilding(string fieldBuilding)
+    {
+        return FieldBuildings.FirstOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
     }
 }

@@ -34,7 +34,15 @@ public interface ICharacterUnit
     
     string TraitEffect { get; }
     
+    string TraitEffectMax { get; }
+    
+    string TraitIcon { get; }
+    
     string? ValorTraitName { get; }
     
     string? ValorTraitEffect { get; }
+    
+    string? ValorTraitEffectMax { get; }
+    
+    string? ValorTraitIcon { get; }
 }
