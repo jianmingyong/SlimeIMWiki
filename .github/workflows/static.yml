@@ -33,7 +33,7 @@ jobs:
       - name: Get latest .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0'
+          dotnet-version: "9.0"
 
       - name: Publish app
         run: dotnet workload restore && dotnet publish -c Release
@@ -43,13 +43,14 @@ jobs:
         with:
           html_path: ${{ env.PUBLISH_DIR }}/index.html
           base_href: /SlimeIMWiki/
-          
+
       - name: Clone file
         run: cp "${{ env.PUBLISH_DIR }}/index.html" "${{ env.PUBLISH_DIR }}/404.html"
-        
+
       - name: Update Product Token
-        run: sed -i 's/"ProductToken": ""/"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"/g' "${{ env.PUBLISH_DIR }}/appsettings.json"
-        
+        run: |
+          sed -i 's/"ProductToken": ""/"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"/g' "${{ env.PUBLISH_DIR }}/appsettings.json"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
