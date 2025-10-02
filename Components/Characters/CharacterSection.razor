@@ -85,7 +85,7 @@
      Style="height: calc(100vh - 5.5rem); overflow-y: scroll"
      @onscroll="OnScrollAsync" ElementId="UnitScrollContainer">
     
-    <Div Style="@($"height: {_unitContainerHeight}px")">
+    <Div Style="@($"height: calc({_unitContainerHeight}px + 1rem)")">
         <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
              Position="Position.Absolute" Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
             @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
@@ -111,14 +111,18 @@
     private float _unitScrollContainerWidth;
     private float _unitScrollContainerHeight;
     private float _unitContainerHeight;
-    private int _scrollPosition;
+    private float _scrollPosition;
 
     private int _itemWidth = 100;
     private int _itemHeight = 100;
     private int _itemWidthGap = 16;
     private int _itemHeightGap = 48;
+    private int _overscanRowCount = 3;
     private int _itemsPerRow = 1;
-    private int _visibleRow = 1;
+    private int _visibleRowCount = 1;
+
+    private int _overscanAboveRowCount;
+    private int _overscanBelowRowCount;
 
     private int _startIndex;
     private int _endIndex = 1;
@@ -157,29 +161,36 @@
 
         _unitScrollContainerWidth = await _module.InvokeAsync<float>("getElementWidth", "UnitScrollContainer");
         _unitScrollContainerHeight = await _module.InvokeAsync<float>("getElementHeight", "UnitScrollContainer");
-        _scrollPosition = (int) await _module.InvokeAsync<float>("getScrollPosition", "UnitScrollContainer");
+        _scrollPosition = await _module.InvokeAsync<float>("getScrollPosition", "UnitScrollContainer");
 
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
         Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
 
         UpdateVisibleItems();
     }
-
+    
     private void UpdateVisibleItems()
     {
         if (_module is null) return;
         
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+        
         _itemsPerRow = (int) Math.Floor(_unitScrollContainerWidth / (_itemWidth + _itemWidthGap));
-        _visibleRow = (int) Math.Ceiling(_unitScrollContainerHeight / (_itemHeight + _itemHeightGap)) + 2;
+        _visibleRowCount = (int) Math.Ceiling(_unitScrollContainerHeight / (_itemHeight + _itemHeightGap));
 
-        _startIndex = _scrollPosition / (_itemHeight + _itemHeightGap) * _itemsPerRow;
-        _endIndex = _startIndex + _itemsPerRow * _visibleRow;
+        _overscanAboveRowCount = Math.Clamp((int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)), 0, _overscanRowCount);
+        _overscanBelowRowCount = _overscanRowCount;
+        
+        _startIndex = (int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)) * _itemsPerRow - _itemsPerRow * _overscanAboveRowCount;
+        _endIndex = _startIndex + _itemsPerRow * (_overscanAboveRowCount + _visibleRowCount + _overscanBelowRowCount);
+        _endIndex = Math.Min(_endIndex, ViewModel.CharacterUnitsCount);
 
-        _unitContainerHeight = (ViewModel?.CharacterUnitsCount ?? 0f) / _itemsPerRow * (_itemHeight + _itemHeightGap);
+        _unitContainerHeight = MathF.Ceiling((float) ViewModel.CharacterUnitsCount / _itemsPerRow) * (_itemHeight + _itemHeightGap);
         
         Logger.LogTrace("Item Per Row: {itemsPerRow}", _itemsPerRow);
-        Logger.LogTrace("Visible Row: {visibleRow}", _visibleRow);
-        Logger.LogTrace("Unit Count: {count}", ViewModel?.CharacterUnitsCount ?? 0);
+        Logger.LogTrace("Overscan Above Row Count: {renderedRowCount}", _overscanAboveRowCount);
+        Logger.LogTrace("Overscan Below Row Count: {renderedRowCount}", _overscanBelowRowCount);
+        Logger.LogTrace("Unit Count: {count}", ViewModel.CharacterUnitsCount);
         Logger.LogTrace("Index: {start} / {end}", _startIndex, _endIndex);
 
         StateHasChanged();

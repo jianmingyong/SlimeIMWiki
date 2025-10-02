@@ -4239,7 +4239,7 @@
     "attributes": [
       "Anti Wind"
     ],
-    "attack_type": "Physical",
+    "attack_type": null,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -4330,7 +4330,7 @@
     "attributes": [
       "Anti Earth"
     ],
-    "attack_type": "Magic",
+    "attack_type": null,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -4421,7 +4421,7 @@
     "attributes": [
       "Anti Light"
     ],
-    "attack_type": "Magic",
+    "attack_type": null,
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
@@ -4512,7 +4512,7 @@
     "attributes": [
       "Anti Water"
     ],
-    "attack_type": "Magic",
+    "attack_type": null,
     "max_health": 2837,
     "max_attack": 1209,
     "max_defense": 1210,
@@ -4586,6 +4586,99 @@
     "valor_trait_effect": null,
     "valor_trait_effect_max": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the single-target attack damage resistance of all allies is increased by 30% (Turns: 1; Uses by this character per battle: 2)",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_013_03_2.png",
+    "guidance_enhancement_trait_effect": null
+  },
+  {
+    "name": "Eren",
+    "title": "Mischief Mage",
+    "permalink": "ErenDevil",
+    "initial_rarity": 4,
+    "is_ex": false,
+    "is_attribute_unbound": false,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Scourge Wielder",
+      "Flashback Beatdown Emissary"
+    ],
+    "attributes": [
+      "Anti Dark",
+      "Anti Light"
+    ],
+    "attack_type": null,
+    "max_health": 2842,
+    "max_attack": 1209,
+    "max_defense": 1208,
+    "max_output": 220,
+    "character_type": "Balance Growth Type",
+    "tactics_type": "Speed",
+    "suited_facilities": [
+      "Dark Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-09-28",
+    "divine_protection_name": "Charming Mask",
+    "divine_protection_effect": "Increases damage done by Scourge Wielder Force characters to light attribute and dark attribute enemies by 30%; increases Scourge Wielder Force characters' ATK by 12%\n",
+    "divine_protection_effect_max": "Increases damage done by Scourge Wielder Force characters to light attribute and dark attribute enemies by 30%; increases Scourge Wielder Force characters' ATK by 12%\n",
+    "support_divine_protection_effect": "Increases Scourge Wielder Force characters' ATK by 12%",
+    "support_divine_protection_effect_max": "Increases Scourge Wielder Force characters' ATK by 12%",
+    "protection_skill_name": "Fiendish Fancy",
+    "protection_skill_effect": "",
+    "protection_skill_icon": "",
+    "trait_name": "",
+    "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null,
+    "guidance_enhancement_trait_effect": null
+  },
+  {
+    "name": "Elmesia El Ru Thalion",
+    "title": "Key Sovereign",
+    "permalink": "ElmesiaDevil",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Scourge Wielder"
+    ],
+    "attributes": [
+      "Anti Dark+",
+      "Anti Light+"
+    ],
+    "attack_type": "Physical",
+    "max_health": 3648,
+    "max_attack": 1776,
+    "max_defense": 1502,
+    "max_output": 220,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Speed",
+    "suited_facilities": [
+      "Dark Magic Device",
+      "Symbol of Protection"
+    ],
+    "release_date": "2025-09-28",
+    "divine_protection_name": "",
+    "divine_protection_effect": null,
+    "divine_protection_effect_max": "",
+    "support_divine_protection_effect": null,
+    "support_divine_protection_effect_max": "",
+    "protection_skill_name": "",
+    "protection_skill_effect": "",
+    "protection_skill_icon": "",
+    "trait_name": "",
+    "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null,
     "guidance_enhancement_trait_effect": null
   }
 ]

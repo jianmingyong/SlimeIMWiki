@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Components;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models;
+using SlimeIMWiki.ViewModels.Characters;
 
 namespace SlimeIMWiki.Services;
 
@@ -51,19 +52,8 @@ public sealed partial class CharacterListService : ReactiveObject
                 })))
             .ToProperty(this, nameof(CharacterUnits), out _characterUnitsHelper);
 
-        this.WhenAnyValue(service => service._jsonDataModelService.BattleUnits, service => service._jsonDataModelService.ProtectionUnits)
-            .CombineLatest(
-                this.WhenAnyValue(service => service.DisplayCategory),
-                this.WhenAnyValue(service => service.OrderByCategory, service => service.IsOrderByDescending, service => service.IsOrFilter),
-                Filters.ToObservableChangeSet(),
-                (units, displayCategory, _, _) => ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
-                {
-                    "Battle" => units.Item1,
-                    "Protection" => units.Item2,
-                    var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
-                }))
-            .SelectMany(units => units)
-            .Count()
+        this.WhenAnyValue(service => service.CharacterUnits)
+            .Select(units => units.Count())
             .ToProperty(this, nameof(CharacterUnitsCount), out _characterUnitsCountHelper);
     }
 
