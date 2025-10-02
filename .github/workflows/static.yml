@@ -47,6 +47,9 @@ jobs:
       - name: Clone file
         run: cp "${{ env.PUBLISH_DIR }}/index.html" "${{ env.PUBLISH_DIR }}/404.html"
         
+      - name: Update Product Token
+        run: sed -i 's/"ProductToken": ""/"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"/g' "${{ env.PUBLISH_DIR }}/appsettings.json"
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

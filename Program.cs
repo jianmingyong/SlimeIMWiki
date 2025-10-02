@@ -43,7 +43,10 @@ builder.Services.AddTransient<FilterSectionViewModel>();
 builder.Services.AddTransient<ProtectionUnitIconViewModel>();
 
 builder.Services
-    .AddBlazorise()
+    .AddBlazorise(options =>
+    {
+        options.ProductToken = builder.Configuration["Blazorise:ProductToken"];
+    })
     .AddBootstrap5Providers()
     .AddFontAwesomeIcons();
 
