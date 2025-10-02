@@ -49,7 +49,7 @@ jobs:
 
       - name: Update Product Token
         run: |
-          sed -i 's/"ProductToken": ""/"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"/g' "${{ env.PUBLISH_DIR }}/appsettings.json"
+          sed -i 's|"ProductToken": ""|"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"|g' "${{ env.PUBLISH_DIR }}/appsettings.json"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
