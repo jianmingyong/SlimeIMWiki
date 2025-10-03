@@ -7,27 +7,27 @@
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
         @foreach (var attackType in ViewModel.AttackTypes)
         {
-            <Image Source="@attackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+            <AttackTypeFilter AttackType="attackType"/>
         }
-        
+
         <Span>|</Span>
-        
+
         @foreach (var attribute in ViewModel.Attributes)
         {
-            <Image Source="@(attribute.Icon)" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+            <AttributeFilter Attribute="attribute"/>
         }
     </Div>
-    
+
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
-        <InitialRarityFilter Rarity="3" />
+        <InitialRarityFilter Rarity="3"/>
 
         <Span>|</Span>
 
-        <InitialRarityFilter Rarity="4" />
+        <InitialRarityFilter Rarity="4"/>
 
         <Span>|</Span>
 
-        <InitialRarityFilter Rarity="5" />
+        <InitialRarityFilter Rarity="5"/>
     </Div>
 </Div>
 

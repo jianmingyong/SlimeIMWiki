@@ -1,8 +1,8 @@
-﻿.initialRarityFilter {
+﻿.filterIcon {
     cursor: pointer;
     filter: brightness(75%);
 }
 
-.initialRarityFilter:hover {
+.filterIcon:hover {
     filter: brightness(100%);
 }

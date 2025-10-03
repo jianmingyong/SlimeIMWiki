@@ -1,0 +1,54 @@
+﻿@using SlimeIMWiki.Services
+@inject CharacterListService CharacterListService
+
+<FilterComponent DisplayText="@AttackType.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ItemContent>
+        <Image Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+    </ItemContent>
+</FilterComponent>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required IAttackType AttackType { get; set; }
+
+    [Parameter]
+    public bool IsRemoveMode { get; set; }
+
+    [Parameter]
+    public Filter? Filter { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter(unit =>
+            {
+                return unit switch
+                {
+                    BattleUnit battleUnit => battleUnit.AttackType == AttackType.Name,
+                    ProtectionUnit protectionUnit => protectionUnit.AttackType == AttackType.Name,
+                    var _ => false
+                };
+            },
+            @<AttackTypeFilter AttackType="AttackType" IsRemoveMode="true" Filter="Filter"/>);
+
+        base.OnInitialized();
+    }
+
+    private void Execute()
+    {
+        Debug.Assert(Filter != null, nameof(Filter) + " != null");
+
+        if (!IsRemoveMode)
+        {
+            if (!CharacterListService.Filters.Contains(Filter))
+            {
+                CharacterListService.Filters.Add(Filter);
+            }
+        }
+        else
+        {
+            CharacterListService.Filters.Remove(Filter);
+        }
+    }
+}

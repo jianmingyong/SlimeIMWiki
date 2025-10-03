@@ -110,6 +110,7 @@ public sealed partial class CharacterListService : ReactiveObject
     private void ChangeCharacterUnitsDisplayCategory(string category)
     {
         DisplayCategory = category;
+        Filters.Clear();
     }
 
     [ReactiveCommand]

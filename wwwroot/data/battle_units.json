@@ -26,10 +26,24 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Berserk Break",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rigurd",
@@ -59,10 +73,26 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Muscle Strike",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [
+      "Unleashes a single-target wind physical attack for 420% normal damage"
+    ],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Kenya Misaki",
@@ -91,10 +121,26 @@
       "Restaurant"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Heroic Braver",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [
+      "Unleashes a single-target light physical attack for 420% normal damage"
+    ],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gale Gibson",
@@ -123,10 +169,26 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Grand Blaster",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [
+      "Unleashes a single-target earth magic attack for 420% normal damage"
+    ],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Kurobe",
@@ -154,10 +216,26 @@
       "Farm"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Heavy Blow",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [
+      "Unleashes a single-target fire physical attack for 420% normal damage"
+    ],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Alice Rondo",
@@ -186,10 +264,26 @@
       "Field"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "Puppet Rondo",
+    "secret_skill_target": "Single",
+    "secret_skill_types": [
+      "Normal"
+    ],
+    "secret_skill_descriptions": [
+      "Unleashes a single-target space magic attack for 420% normal damage"
+    ],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Souei",
@@ -217,10 +311,22 @@
       "Training Ground"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -248,10 +354,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -279,10 +397,22 @@
       "Restaurant"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -311,10 +441,22 @@
       "Tavern"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -343,10 +485,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -374,10 +528,22 @@
       "Tavern"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -408,10 +574,22 @@
       "Training Ground"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Ranga",
@@ -439,10 +617,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -472,10 +662,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -504,10 +706,22 @@
       "Café"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -536,10 +750,22 @@
       "Farm"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Phobio",
@@ -567,10 +793,22 @@
       "Farm"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hakurou",
@@ -599,10 +837,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Trya",
@@ -630,10 +880,22 @@
       "Field"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Souei",
@@ -662,10 +924,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -694,10 +968,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gobta",
@@ -726,10 +1012,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gelmud",
@@ -757,10 +1055,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Geld",
@@ -790,10 +1100,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Kurobe",
@@ -823,10 +1145,22 @@
       "Tavern"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Chloe Aubert",
@@ -855,10 +1189,22 @@
       "Field"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gabiru",
@@ -887,10 +1233,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Grucius",
@@ -919,10 +1277,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2022-05-01",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Suphia",
@@ -951,10 +1321,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2022-05-01",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -985,10 +1367,22 @@
       "Laboratory"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -1017,10 +1411,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Ranga",
@@ -1049,10 +1455,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Beretta",
@@ -1080,10 +1498,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -1113,10 +1543,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hakurou",
@@ -1145,10 +1587,22 @@
       "Farm"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Treyni",
@@ -1177,10 +1631,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Souei",
@@ -1210,10 +1676,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -1243,10 +1721,22 @@
       "Café"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -1278,10 +1768,22 @@
       "Café"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -1310,10 +1812,22 @@
       "Clothing Store"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gazel Dwargo",
@@ -1343,10 +1857,22 @@
       "Tavern"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -1375,10 +1901,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1410,10 +1948,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Guy Crimson",
@@ -1442,10 +1992,22 @@
       "Tavern"
     ],
     "release_date": "2022-01-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gobta",
@@ -1475,10 +2037,22 @@
       "Farm"
     ],
     "release_date": "2022-01-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -1508,10 +2082,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2021-12-30",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1542,10 +2128,22 @@
       "Laboratory"
     ],
     "release_date": "2021-12-07",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -1575,10 +2173,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": "2021-11-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Veldora Tempest",
@@ -1607,10 +2217,22 @@
       "Field"
     ],
     "release_date": "2021-12-21",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Veldora Tempest",
@@ -1639,10 +2261,22 @@
       "Restaurant"
     ],
     "release_date": "2021-11-08",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -1672,10 +2306,22 @@
       "Training Ground"
     ],
     "release_date": "2021-11-15",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -1704,10 +2350,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1739,10 +2397,22 @@
       "Laboratory"
     ],
     "release_date": "2021-11-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -1773,10 +2443,22 @@
       "Café"
     ],
     "release_date": "2022-04-11",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Souei",
@@ -1805,10 +2487,22 @@
       "Training Ground"
     ],
     "release_date": "2022-04-05",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -1837,10 +2531,22 @@
       "Restaurant"
     ],
     "release_date": "2022-03-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1869,10 +2575,22 @@
       "Laboratory"
     ],
     "release_date": "2022-03-08",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Velzard",
@@ -1900,10 +2618,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2022-03-15",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Alice Rondo",
@@ -1935,10 +2665,22 @@
       "Clothing Store"
     ],
     "release_date": "2022-02-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Leon Cromwell",
@@ -1967,10 +2709,22 @@
       "Laboratory"
     ],
     "release_date": "2022-02-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -2001,10 +2755,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2022-02-03",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -2036,10 +2802,22 @@
       "Clothing Store"
     ],
     "release_date": "2022-01-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -2069,10 +2847,22 @@
       "Training Ground"
     ],
     "release_date": "2022-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Masked Hero",
@@ -2101,10 +2891,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2022-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Carrion",
@@ -2135,10 +2937,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2022-05-01",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -2167,10 +2981,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2022-05-09",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -2201,10 +3027,22 @@
       "Café"
     ],
     "release_date": "2022-05-30",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2235,10 +3073,22 @@
       "Inn"
     ],
     "release_date": "2022-06-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Daggrull",
@@ -2267,10 +3117,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2022-06-14",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Treyni",
@@ -2299,10 +3161,22 @@
       "Forest Supply Corps Base"
     ],
     "release_date": "2022-07-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -2332,10 +3206,22 @@
       "Inn"
     ],
     "release_date": "2022-06-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Deeno",
@@ -2364,10 +3250,22 @@
       "Ocean Supply Corps Base"
     ],
     "release_date": "2022-07-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -2397,10 +3295,22 @@
       "Restaurant"
     ],
     "release_date": "2022-08-04",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -2430,10 +3340,22 @@
       "Clothing Store"
     ],
     "release_date": "2022-07-28",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -2464,10 +3386,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": "2022-08-11",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Velzard",
@@ -2497,10 +3431,22 @@
       "Tavern"
     ],
     "release_date": "2022-08-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rain",
@@ -2528,10 +3474,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2022-09-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Leon Cromwell",
@@ -2561,10 +3519,22 @@
       "Inn"
     ],
     "release_date": "2022-09-14",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Myulan",
@@ -2595,10 +3565,22 @@
       "Field"
     ],
     "release_date": "2022-09-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Adalman",
@@ -2626,10 +3608,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": "2022-10-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Clayman",
@@ -2659,10 +3653,22 @@
       "Clothing Store"
     ],
     "release_date": "2022-10-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2694,10 +3700,22 @@
       "Field"
     ],
     "release_date": "2022-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -2728,10 +3746,22 @@
       "Training Ground"
     ],
     "release_date": "2022-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shinsha",
@@ -2759,10 +3789,22 @@
       "Farm"
     ],
     "release_date": "2022-11-03",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -2791,10 +3833,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": "2022-11-10",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -2823,10 +3877,22 @@
       "Tavern"
     ],
     "release_date": "2022-11-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Violet",
@@ -2856,10 +3922,22 @@
       "Farm"
     ],
     "release_date": "2022-12-01",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -2889,10 +3967,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2022-12-11",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Velzard",
@@ -2921,10 +4011,22 @@
       "Training Ground"
     ],
     "release_date": "2022-12-11",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2954,10 +4056,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": "2022-12-28",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -2988,10 +4102,22 @@
       "Restaurant"
     ],
     "release_date": "2023-01-05",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -3022,10 +4148,22 @@
       "Tavern"
     ],
     "release_date": "2023-01-15",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -3056,10 +4194,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": "2023-01-30",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shinsha",
@@ -3089,10 +4239,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2023-02-05",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -3122,10 +4284,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": "2023-02-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -3154,10 +4328,22 @@
       "Restaurant"
     ],
     "release_date": "2021-10-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Ramiris",
@@ -3186,10 +4372,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": "2021-10-28",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Guy Crimson",
@@ -3218,10 +4416,22 @@
       "Restaurant"
     ],
     "release_date": "2022-03-30",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Leon Cromwell",
@@ -3251,10 +4461,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": "2022-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -3283,10 +4505,22 @@
       "Clothing Store"
     ],
     "release_date": "2022-06-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Daggrull",
@@ -3315,10 +4549,22 @@
       "Inn"
     ],
     "release_date": "2022-08-29",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Deeno",
@@ -3347,10 +4593,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": "2022-11-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -3380,10 +4638,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -3414,10 +4684,22 @@
       "Clothing Store"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -3449,10 +4731,22 @@
       "Field"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Myulan",
@@ -3483,10 +4777,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Ranga",
@@ -3516,10 +4822,22 @@
       "Farm"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Albis",
@@ -3548,10 +4866,22 @@
       "Mountain Supply Corps Base"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Frey",
@@ -3581,10 +4911,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shinsha",
@@ -3614,10 +4956,22 @@
       "Restaurant"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Geld",
@@ -3647,10 +5001,22 @@
       "Laboratory"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3681,10 +5047,22 @@
       "Inn"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Misery",
@@ -3713,10 +5091,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Eren",
@@ -3746,10 +5136,22 @@
       "Inn"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Izis",
@@ -3779,10 +5181,22 @@
       "Clothing Store"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hiiro",
@@ -3811,10 +5225,22 @@
       "Digsite for Stamina Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Soka",
@@ -3844,10 +5270,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Suphia",
@@ -3878,10 +5316,22 @@
       "Tavern"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3910,10 +5360,22 @@
       "Field"
     ],
     "release_date": "2022-11-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Youm",
@@ -3944,10 +5406,22 @@
       "Tavern"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Myulan",
@@ -3977,10 +5451,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Tear",
@@ -4010,10 +5496,22 @@
       "Gift Shop"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Clayman",
@@ -4043,10 +5541,22 @@
       "Decoration Magicubeite Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4077,10 +5587,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Albis",
@@ -4111,10 +5633,22 @@
       "Inn"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4146,10 +5680,22 @@
       "Clothing Store"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -4179,10 +5725,22 @@
       "Tavern"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -4214,10 +5772,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Masked Hero",
@@ -4248,10 +5818,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Guy Crimson",
@@ -4282,10 +5864,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -4316,10 +5910,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Violet",
@@ -4349,10 +5955,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4383,10 +6001,22 @@
       "Inn"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -4417,10 +6047,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Soka",
@@ -4450,10 +6092,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rain",
@@ -4483,10 +6137,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -4517,10 +6183,22 @@
       "Digsite for Defense Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -4550,10 +6228,22 @@
       "Feast Hot Pot"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -4583,10 +6273,22 @@
       "Sawmill"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4616,10 +6318,22 @@
       "Brewery"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4649,10 +6363,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -4682,10 +6408,22 @@
       "Clothing Store"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Veldora Tempest",
@@ -4716,10 +6454,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shinsha",
@@ -4749,10 +6499,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -4783,10 +6545,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -4818,10 +6592,22 @@
       "Sawmill"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Violet",
@@ -4852,10 +6638,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4885,10 +6683,22 @@
       "Feast Hot Pot"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Blanc",
@@ -4918,10 +6728,22 @@
       "Brewery"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Jaune",
@@ -4951,10 +6773,22 @@
       "Sawmill"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -4985,10 +6819,22 @@
       "Inn"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5019,10 +6865,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -5052,10 +6910,22 @@
       "Training Ground"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shinsha",
@@ -5085,10 +6955,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -5118,10 +7000,22 @@
       "Protection Magistone Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Benimaru",
@@ -5151,10 +7045,22 @@
       "Sawmill"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5186,10 +7092,22 @@
       "Digsite for Training Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -5219,10 +7137,22 @@
       "Brewery"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Blanc",
@@ -5252,10 +7182,22 @@
       "Clothing Store"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Jaune",
@@ -5285,10 +7227,22 @@
       "Digsite for Attack Magistones"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Guy Crimson",
@@ -5318,10 +7272,22 @@
       "Feast Hot Pot"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Milim Nava",
@@ -5351,10 +7317,22 @@
       "Brewery"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5384,10 +7362,22 @@
       "Trading Post"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Masked Hero",
@@ -5417,10 +7407,22 @@
       "Sawmill"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5452,10 +7454,22 @@
       "Brewery"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -5485,10 +7499,22 @@
       "Café"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Diablo",
@@ -5518,10 +7544,22 @@
       "Laboratory"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Luminus Valentine",
@@ -5551,10 +7589,22 @@
       "Armor Magicubeite Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Elmesia El Ru Thalion",
@@ -5585,10 +7635,22 @@
       "Souvenir Shop"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5620,10 +7682,22 @@
       "Weapon Magicubeite Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Momiji",
@@ -5653,10 +7727,22 @@
       "Digsite for Stamina Magigems"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Souei",
@@ -5686,10 +7772,22 @@
       "Weapon Magicubeite Digsite"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shuna",
@@ -5719,10 +7817,22 @@
       "Digsite for Defense Magigems"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5749,10 +7859,22 @@
     "expertise": "",
     "suited_facilities": [],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5784,10 +7906,22 @@
       "Digsite for Attack Magigems"
     ],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -5814,10 +7948,22 @@
     "expertise": "",
     "suited_facilities": [],
     "release_date": null,
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shizue Izawa",
@@ -5848,10 +7994,22 @@
       "Shishkabob Stall"
     ],
     "release_date": "2025-02-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5882,10 +8040,22 @@
       "Savory Pancake Stall"
     ],
     "release_date": "2025-02-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -5916,10 +8086,22 @@
       "Hot Dog Stall"
     ],
     "release_date": "2025-03-09",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Frey",
@@ -5950,10 +8132,22 @@
       "Dango Shop"
     ],
     "release_date": "2025-03-18",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Shion",
@@ -5984,10 +8178,22 @@
       "Savory Pancake Stall"
     ],
     "release_date": "2025-03-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Gobwa",
@@ -6017,10 +8223,22 @@
       "Traditional Snack Shop"
     ],
     "release_date": "2025-03-27",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Violet",
@@ -6051,10 +8269,22 @@
       "Armor Magicubeite Digsite"
     ],
     "release_date": "2025-04-10",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Blanc",
@@ -6085,10 +8315,22 @@
       "Weaving Workshop"
     ],
     "release_date": "2025-04-10",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Ritus",
@@ -6118,10 +8360,22 @@
       "Crystal Hotel"
     ],
     "release_date": "2025-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Leon Cromwell",
@@ -6152,10 +8406,22 @@
       "Red Magicluster Digsite"
     ],
     "release_date": "2025-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   },
   {
     "name": "Velzard",
@@ -6186,9 +8452,113 @@
       "Digsite for Attack Magigems"
     ],
     "release_date": "2025-04-24",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
     "trait_name": "",
     "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
     "valor_trait_name": null,
-    "valor_trait_effect": null
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
+  },
+  {
+    "name": "Jaune",
+    "title": "Amber Avenger",
+    "permalink": "JauneHA2025",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Primal Demon",
+      "Warrior's Mind",
+      "Exalted Champions"
+    ],
+    "attribute": "Space+",
+    "attack_type": "Magic",
+    "max_health": 8418,
+    "max_attack": 4162,
+    "max_defense": 2947,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Charge",
+    "expertise": "Sword",
+    "suited_facilities": [
+      "Magic Feather Atelier",
+      "Decoration Magicubeite Digsite"
+    ],
+    "release_date": "2025-05-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
+    "trait_name": "",
+    "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
+  },
+  {
+    "name": "Rimuru Tempest",
+    "title": "Twinshade Vanquisher",
+    "permalink": "RimuruHA2025",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_ex": false,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Spirit Master",
+      "Octagram Demon Lord",
+      "Warrior's Mind",
+      "Exalted Champions"
+    ],
+    "attribute": "Earth+",
+    "attack_type": "Magic",
+    "max_health": 8423,
+    "max_attack": 4164,
+    "max_defense": 2941,
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
+    "tactics_type": "Charge",
+    "expertise": "Sword",
+    "suited_facilities": [
+      "Shaved Ice Shop",
+      "Elemental Colossus Bay"
+    ],
+    "release_date": "2025-05-13",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_types": [],
+    "secret_skill_descriptions": [],
+    "battle_skill_1_name": "",
+    "battle_skill_1_descriptions": [],
+    "battle_skill_2_name": "",
+    "battle_skill_2_descriptions": [],
+    "trait_name": "",
+    "trait_effect": "",
+    "trait_effect_max": "",
+    "trait_icon": "",
+    "valor_trait_name": null,
+    "valor_trait_effect": null,
+    "valor_trait_effect_max": null,
+    "valor_trait_icon": null
   }
 ]
