@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Components;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models;
-using SlimeIMWiki.ViewModels.Characters;
 
 namespace SlimeIMWiki.Services;
 
@@ -67,7 +66,7 @@ public sealed partial class CharacterListService : ReactiveObject
                 "Health" => source.OrderByDescending(unit => unit.MaxHealth).ThenByDescending(RaritySelector),
                 "Attack" => source.OrderByDescending(unit => unit.MaxAttack).ThenByDescending(RaritySelector),
                 "Defense" => source.OrderByDescending(unit => unit.MaxDefense).ThenByDescending(RaritySelector),
-                "Rarity" => source.OrderByDescending(RaritySelector),
+                "Rarity" => source.OrderByDescending(RaritySelector).ThenByDescending(unit => unit.ReleaseDate),
                 "Name" => source.OrderByDescending(unit => unit.Name).ThenByDescending(RaritySelector),
                 var _ => source.OrderByDescending(unit => unit.ReleaseDate).ThenByDescending(RaritySelector)
             };
@@ -79,7 +78,7 @@ public sealed partial class CharacterListService : ReactiveObject
             "Health" => source.OrderBy(unit => unit.MaxHealth).ThenBy(RaritySelector),
             "Attack" => source.OrderBy(unit => unit.MaxAttack).ThenBy(RaritySelector),
             "Defense" => source.OrderBy(unit => unit.MaxDefense).ThenBy(RaritySelector),
-            "Rarity" => source.OrderBy(RaritySelector),
+            "Rarity" => source.OrderBy(RaritySelector).ThenBy(unit => unit.ReleaseDate),
             "Name" => source.OrderBy(unit => unit.Name).ThenBy(RaritySelector),
             var _ => source.OrderBy(unit => unit.ReleaseDate).ThenBy(RaritySelector)
         };

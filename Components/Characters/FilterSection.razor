@@ -3,6 +3,10 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
+<Div Flex="Flex.Wrap.JustifyContent.End.OnTablet.AlignContent.End.OnTablet" Width="Width.Is100" Padding="Padding.Is2.OnY">
+    <Switch TValue="bool" @bind-Checked="ViewModel.IsOrFilter">OR Filters Toggle (Uncheck for AND Filters)</Switch>
+</Div>
+
 <Div Flex="Flex.Column" Gap="Gap.Is2" Background="Background.Body" Padding="Padding.Is2">
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
         @foreach (var attackType in ViewModel.AttackTypes)

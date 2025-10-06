@@ -32,9 +32,11 @@ else
                             break;
                         }
 
-                        case BattleUnit:
+                        case BattleUnit battleUnit:
                         {
+                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
                             <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
+                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
                             <Div>Battle Unit</Div>
 
                             break;
@@ -103,9 +105,11 @@ else
                             break;
                         }
 
-                        case BattleUnit:
+                        case BattleUnit battleUnit:
                         {
+                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
                             <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
+                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
                             <Div>Battle Unit</Div>
 
                             break;

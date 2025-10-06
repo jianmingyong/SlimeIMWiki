@@ -13,6 +13,12 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
     public IEnumerable<Filter> Filters => _characterListService.Filters;
 
+    public bool IsOrFilter
+    {
+        get => _characterListService.IsOrFilter;
+        set => _characterListService.IsOrFilter = value;
+    }
+
     [ObservableAsProperty]
     private IEnumerable<IAttackType> _attackTypes = [];
     
