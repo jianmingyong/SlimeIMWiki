@@ -6,3 +6,8 @@
 .filterIcon:hover {
     filter: brightness(100%);
 }
+
+.dropdown-item:hover {
+    color: rgb(33, 37, 41) !important;
+    background-color: rgb(248, 249, 250) !important;
+}

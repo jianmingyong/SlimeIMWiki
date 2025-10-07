@@ -34,9 +34,14 @@ else
 
                         case BattleUnit battleUnit:
                         {
+                            if (battleUnit.HasEx || battleUnit.HasAttributeUnbound)
+                            {
+                                <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+                            }
+                            
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
+                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
                             <Div>Battle Unit</Div>
 
                             break;
@@ -107,9 +112,14 @@ else
 
                         case BattleUnit battleUnit:
                         {
+                            if (battleUnit.HasEx || battleUnit.HasAttributeUnbound)
+                            {
+                                <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+                            }
+                            
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
+                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
                             <Div>Battle Unit</Div>
 
                             break;

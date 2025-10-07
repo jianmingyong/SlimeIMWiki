@@ -19,6 +19,8 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
         set => _characterListService.IsOrFilter = value;
     }
 
+    public IEnumerable<Force> Forces => _jsonDataModelService.Forces;
+
     [ObservableAsProperty]
     private IEnumerable<IAttackType> _attackTypes = [];
     
@@ -60,11 +62,15 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                     var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
                 };
             }).ToProperty(this, nameof(Attributes));
-
+        
         this.WhenActivated(disposable =>
         {
             characterListService.Filters.ToObservableChangeSet()
                 .Subscribe(_ => this.RaisePropertyChanged(nameof(Filters)))
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._jsonDataModelService.Forces)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(Forces)))
                 .DisposeWith(disposable);
         });
     }

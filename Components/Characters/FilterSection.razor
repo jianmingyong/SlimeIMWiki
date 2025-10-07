@@ -3,7 +3,8 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Flex="Flex.Wrap.JustifyContent.End.OnTablet.AlignContent.End.OnTablet" Width="Width.Is100" Padding="Padding.Is2.OnY">
+<Div Flex="Flex.Wrap.JustifyContent.End.OnTablet.AlignContent.End.OnTablet" Width="Width.Is100"
+     Padding="Padding.Is2.OnY">
     <Switch TValue="bool" @bind-Checked="ViewModel.IsOrFilter">OR Filters Toggle (Uncheck for AND Filters)</Switch>
 </Div>
 
@@ -33,6 +34,27 @@
 
         <InitialRarityFilter Rarity="5"/>
     </Div>
+</Div>
+
+<Div Flex="Flex.Column" Gap="Gap.Is2" Background="Background.Body" Padding="Padding.Is2">
+    <Dropdown>
+        <DropdownToggle Color="Color.Dark">Forces</DropdownToggle>
+        <DropdownMenu MaxMenuHeight="50vh" Background="Background.Dark">
+            @foreach (var forceGroup in ViewModel.Forces.GroupBy(force => force.Category))
+            {
+                <DropdownHeader TextColor="TextColor.White50">@forceGroup.Key</DropdownHeader>
+
+                @foreach (var force in forceGroup)
+                {
+                    <DropdownItem TextColor="TextColor.Light">
+                        <ForceFilter Force="force"/>
+                    </DropdownItem>
+                }
+
+                <DropdownDivider/>
+            }
+        </DropdownMenu>
+    </Dropdown>
 </Div>
 
 <Div Flex="Flex.Wrap" Margin="Margin.Is2.OnY" Gap="Gap.Is2">

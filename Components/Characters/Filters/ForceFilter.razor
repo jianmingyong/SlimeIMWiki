@@ -1,0 +1,32 @@
+﻿@using SlimeIMWiki.Services
+@inherits BaseFilterComponent
+
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ItemContent>
+        <Image Source="@Force.Icon" Width="Width.Em(2)" Text="@Force.Name"/>
+        @Force.Name
+    </ItemContent>
+</FilterComponent>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required Force Force { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter(unit =>
+            {
+                return unit switch
+                {
+                    BattleUnit battleUnit => battleUnit.Forces.Contains(Force.Name),
+                    ProtectionUnit protectionUnit => protectionUnit.Forces?.Contains(Force.Name) ?? false,
+                    var _ => false
+                };
+            },
+            @<ForceFilter Force="Force" IsRemoveMode="true" Filter="Filter"/>);
+
+        base.OnInitialized();
+    }
+}
