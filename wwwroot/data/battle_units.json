@@ -1347,8 +1347,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Tempest Elite",
       "Warrior's Mind"
@@ -1523,8 +1523,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Commander",
       "Determination to Prosper"
@@ -2102,8 +2102,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Dragon Haki",
       "Exalted Champions"
@@ -2151,7 +2151,8 @@
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki",
-      "Exalted Champions"
+      "Exalted Champions",
+      "Scourge Wielder"
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
@@ -2600,8 +2601,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Valentine",
       "World of Fantasy",
@@ -3054,7 +3055,8 @@
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
-      "Primal Demon"
+      "Primal Demon",
+      "Scourge Wielder"
     ],
     "attribute": "Fire",
     "attack_type": "Magic",
@@ -3501,7 +3503,8 @@
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
-      "Tempest Elite"
+      "Tempest Elite",
+      "Scourge Wielder"
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
@@ -3678,8 +3681,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
       "Warrior's Mind"
@@ -3856,8 +3859,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Commander",
       "Wielder of Magic"
@@ -4398,7 +4401,8 @@
     "forces": [
       "Wielder of Magic",
       "Adventurer",
-      "Flashback Beatdown Emissary"
+      "Flashback Beatdown Emissary",
+      "Dungeon Crawler"
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
@@ -4799,7 +4803,8 @@
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
-      "Stern of Spirit"
+      "Stern of Spirit",
+      "Scourge Wielder"
     ],
     "attribute": "Water",
     "attack_type": "Physical",
@@ -4927,8 +4932,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
       "Schemer",
@@ -5834,7 +5839,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "World of Fantasy",
       "Heart of a Hero",
@@ -5928,7 +5933,8 @@
       "Warrior's Mind",
       "Octagram Demon Lord",
       "Primal Demon",
-      "Exalted Champions"
+      "Exalted Champions",
+      "Scourge Wielder"
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
@@ -6065,7 +6071,8 @@
       "Warrior's Mind",
       "Commander",
       "Antagonist",
-      "Stern of Spirit"
+      "Stern of Spirit",
+      "Scourge Wielder"
     ],
     "attribute": "Earth",
     "attack_type": "Physical",
@@ -6586,7 +6593,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Summer Memories",
       "Goddess of Destiny",
@@ -6631,7 +6638,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Summer Memories",
       "Heart of a Hero",
@@ -6942,7 +6949,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Wielder of Magic",
       "World of Fantasy",
@@ -7518,11 +7525,12 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "New Year's Blessing",
       "Octagram Demon Lord",
-      "Dragon Haki"
+      "Dragon Haki",
+      "Scourge Wielder"
     ],
     "attribute": "Wind",
     "attack_type": "Physical",
@@ -8039,11 +8047,12 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
       "Tempest Elite",
-      "Commander"
+      "Commander",
+      "Scourge Wielder"
     ],
     "attribute": "Space",
     "attack_type": "Physical",
@@ -8353,7 +8362,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Exalted Champions",
       "Heart of a Hero",
@@ -8936,7 +8945,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -8981,7 +8990,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -9117,11 +9126,12 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Protector of Peace",
       "Shizu's Will",
-      "Commander"
+      "Commander",
+      "Heart of a Hero"
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
@@ -9334,7 +9344,8 @@
       "Antagonist",
       "Dragon Haki",
       "Schemer",
-      "Dungeon Crawler"
+      "Dungeon Crawler",
+      "Scourge Wielder"
     ],
     "attribute": "Space+",
     "attack_type": "Magic",
@@ -9594,7 +9605,8 @@
       "Divine General",
       "Otherworld Legend",
       "Primal Demon",
-      "Fount of Wisdom"
+      "Fount of Wisdom",
+      "Scourge Wielder"
     ],
     "attribute": "Space+",
     "attack_type": "Magic",
@@ -9722,7 +9734,8 @@
     "forces": [
       "Festive Memories",
       "Schemer",
-      "Stern of Spirit"
+      "Stern of Spirit",
+      "Scourge Wielder"
     ],
     "attribute": "Water+",
     "attack_type": "Physical",
@@ -10017,7 +10030,8 @@
       "Tournament Stalwart",
       "Octagram Demon Lord",
       "Commander",
-      "Warrior's Mind"
+      "Warrior's Mind",
+      "Scourge Wielder"
     ],
     "attribute": "Wind+",
     "attack_type": "Physical",
@@ -10422,7 +10436,8 @@
       "Warrior's Mind",
       "Primal Demon",
       "Antagonist",
-      "Schemer"
+      "Schemer",
+      "Scourge Wielder"
     ],
     "attribute": "Fire+",
     "attack_type": "Physical",
