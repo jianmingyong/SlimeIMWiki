@@ -31,40 +31,10 @@
     <link as="image" href="image/loading/slime3.webp" rel="preload"/>
     <link as="image" href="image/loading/slime4.webp" rel="preload"/>
     <link as="image" href="image/loading/slime5.webp" rel="preload"/>
-    
-    <style>
-        div.loading {
-            width: 100vw;
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            animation-name: slime_loading;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes slime_loading {
-            0% {
-                background-image: url("image/loading/slime1.webp");
-            }
-            25% {
-                background-image: url("image/loading/slime2.webp");
-            }
-            50% {
-                background-image: url("image/loading/slime3.webp");
-                background-position-y: 45%
-            }
-            75% {
-                background-image: url("image/loading/slime4.webp");
-            }
-            100% {
-                background-image: url("image/loading/slime5.webp");
-            }
-        }
-    </style>
+    <link as="image" href="image/charaInfoBgZoomOut.webp" rel="preload"/>
 </head>
 
-<body style="background-color: #212529">
+<body>
 
 <div id="app">
     <div class="loading"></div>

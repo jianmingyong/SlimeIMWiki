@@ -2,8 +2,8 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Background="Background.Body" Padding="Padding.Is3.OnX.Is3.FromBottom.Is4.FromTop" Position="Position.Relative">
-    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle" Border="Border.White">
+<Div Flex="Flex.JustifyContent.Center.AlignItems.Center" Margin="Margin.Is2.FromBottom">
+    <Buttons Border="Border.White">
         <Button Size="Size.Small"
                 Color="@(ViewModel.RegionSelection == "NA" ? Color.Light : Color.Dark)"
                 Command="ViewModel.RegionChangeCommand"
@@ -31,9 +31,9 @@
             <Div Padding="Padding.Is3.OnX">Japan</Div>
         </Button>
     </Buttons>
-
-    <iframe height="500"
-            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
-            referrerpolicy="strict-origin-when-cross-origin"
-            style="width: 100%; background-color: black"></iframe>
 </Div>
+
+<iframe height="500"
+        src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
+        referrerpolicy="strict-origin-when-cross-origin"
+        style="width: 100%"></iframe>

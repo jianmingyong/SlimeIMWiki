@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<Layout>
+<Layout Overflow="Overflow.Auto">
     <LayoutHeader Fixed>
         <Bar Breakpoint="Breakpoint.Desktop" Background="Background.Body" ThemeContrast="ThemeContrast.Dark"
              NavigationBreakpoint="Breakpoint.Desktop" Visible="false">
@@ -25,8 +25,10 @@
                 </BarStart>
                 <BarEnd>
                     <BarItem>
-                        <BarLink To="https://docs.google.com/spreadsheets/d/1JbFrlGxupmuOssj59nFwLhAin2CH4tcIQUSn4VxrwcI/edit?usp=sharing" Target="Target.Blank"
-                                 Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                        <BarLink
+                            To="https://docs.google.com/spreadsheets/d/1JbFrlGxupmuOssj59nFwLhAin2CH4tcIQUSn4VxrwcI/edit?usp=sharing"
+                            Target="Target.Blank"
+                            Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                             <BarIcon IconName="IconName.FileExcel" IconSize="IconSize.x2"/>
                             <Div>Google Sheets</Div>
                         </BarLink>
@@ -42,8 +44,8 @@
             </BarMenu>
         </Bar>
     </LayoutHeader>
-    <LayoutContent Background="Background.Body">
-        <Container Padding="Padding.Is4" Breakpoint="Breakpoint.Desktop" Background="@(new Background("body-secondary"))">
+    <LayoutContent>
+        <Container Padding="Padding.Is2" Breakpoint="Breakpoint.Desktop">
             @Body
         </Container>
     </LayoutContent>

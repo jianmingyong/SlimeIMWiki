@@ -1,21 +1,25 @@
 ﻿@page "/"
 @using SlimeIMWiki.Components.Home
 
-<TextDivider Text="ABOUT" Margin="Margin.Is2.OnY"/>
-
-<Div Background="Background.Body" Padding="Padding.Is3">
-    SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game
-    developed by WFS and published by Bandai Namco Entertainment.
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <Heading TextAlignment="TextAlignment.Center">ABOUT</Heading>
+    <Paragraph>
+        SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game
+        developed by WFS and published by Bandai Namco Entertainment.
+    </Paragraph>
 </Div>
 
-<TextDivider Text="TIMERS" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <Heading TextAlignment="TextAlignment.Center">TIMERS</Heading>
+    <Timers/>
+</Div>
 
-<Timers/>
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <Heading TextAlignment="TextAlignment.Center">LATEST</Heading>
+    <LatestNotices/>
+</Div>
 
-<TextDivider Text="LATEST" Margin="Margin.Is2.FromTop.Is4.FromBottom"/>
-
-<LatestNotices/>
-
-<TextDivider Text="RECENT LIVESTREAM" Margin="Margin.Is2.OnY"/>
-
-<LiveStream/>
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <Heading TextAlignment="TextAlignment.Center">RECENT LIVESTREAM</Heading>
+    <LiveStream/>
+</Div>

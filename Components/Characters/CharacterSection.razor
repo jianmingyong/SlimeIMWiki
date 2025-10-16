@@ -86,7 +86,7 @@
      @onscroll="OnScrollAsync" ElementId="UnitScrollContainer">
     
     <Div Style="@($"height: calc({_unitContainerHeight}px + 1rem)")">
-        <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is3.OnX.Is5.FromTop.Is3.FromBottom"
+        <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop.Is3.FromBottom"
              Position="Position.Absolute" Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
             @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
             {

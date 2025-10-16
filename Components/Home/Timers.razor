@@ -2,8 +2,8 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-<Div Background="Background.Body" Padding="Padding.Is3" Position="Position.Relative">
-    <Buttons Position="Position.Absolute.Start.Is50.Top.Is0.Translate.Middle" Border="Border.White">
+<Div Flex="Flex.JustifyContent.Center.AlignItems.Center" Margin="Margin.Is2.FromBottom">
+    <Buttons Border="Border.White">
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "NA" ? Color.Light : Color.Dark)"
                 Command="@ViewModel.RegionChangeCommand"
@@ -25,20 +25,21 @@
             <Div Padding="Padding.Is3.OnX">Asia</Div>
         </Button>
     </Buttons>
-    <Grid>
-        <Column ColumnSize="ColumnSize.Is6">
-            <Div TextAlignment="TextAlignment.Center">Reset</Div>
-            <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.ExtraSmall">@ViewModel.TimerReset.ToString("F")</Div>
-            <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.Heading2">@ViewModel.TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
-        </Column>
-        <Column ColumnSize="ColumnSize.Is6">
-            <Div TextAlignment="TextAlignment.Center">Update</Div>
-            <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.ExtraSmall">@ViewModel.TimerUpdate.ToString("F")</Div>
-            <Div TextAlignment="TextAlignment.Center"
-                 TextSize="TextSize.Heading2">@ViewModel.TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
-        </Column>
-    </Grid>
 </Div>
+
+<Grid>
+    <Column ColumnSize="ColumnSize.Is6">
+        <Heading TextAlignment="TextAlignment.Center" Size="HeadingSize.Is5">Reset</Heading>
+        <Div TextAlignment="TextAlignment.Center"
+             TextSize="TextSize.ExtraSmall">@ViewModel.TimerReset.ToString("F")</Div>
+        <Div TextAlignment="TextAlignment.Center"
+             TextSize="TextSize.Heading2">@ViewModel.TimerResetIn.ToString(@"hh\:mm\:ss")</Div>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is6">
+        <Heading TextAlignment="TextAlignment.Center" Size="HeadingSize.Is5">Update</Heading>
+        <Div TextAlignment="TextAlignment.Center"
+             TextSize="TextSize.ExtraSmall">@ViewModel.TimerUpdate.ToString("F")</Div>
+        <Div TextAlignment="TextAlignment.Center"
+             TextSize="TextSize.Heading2">@ViewModel.TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
+    </Column>
+</Grid>

@@ -14,11 +14,16 @@ else
     <Grid>
         <Column ColumnSize="ColumnSize.Is12" Display="Display.None.OnDesktop">
             <Div Flex="Flex.Column">
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                    [ @ViewModel.Unit.Title ]
-                </Div>
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                    @ViewModel.Unit.Name
+                <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
+                    <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)" />
+                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                        [ @ViewModel.Unit.Title ]
+                    </Div>
+                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center"
+                         TextSize="TextSize.Large">
+                        @ViewModel.Unit.Name
+                    </Div>
+                    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)" />
                 </Div>
 
                 <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
@@ -92,11 +97,16 @@ else
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Display="Display.None.Flex.Column.OnDesktop">
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                    [ @ViewModel.Unit.Title ]
-                </Div>
-                <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                    @ViewModel.Unit.Name
+                <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
+                    <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)" />
+                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
+                        [ @ViewModel.Unit.Title ]
+                    </Div>
+                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center"
+                         TextSize="TextSize.Large">
+                        @ViewModel.Unit.Name
+                    </Div>
+                    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)" />
                 </Div>
 
                 <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
@@ -116,7 +126,7 @@ else
                             {
                                 <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
                             }
-                            
+
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
                             <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
                             <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
