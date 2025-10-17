@@ -30,19 +30,19 @@ public interface ICharacterUnit
 
     DateOnly? ReleaseDate { get; }
     
-    string TraitName { get; }
+    string Trait1Name { get; }
     
-    string TraitEffect { get; }
+    string Trait1Icon { get; }
     
-    string TraitEffectMax { get; }
+    string Trait1Effect { get; }
     
-    string TraitIcon { get; }
+    string Trait1EffectMax { get; }
     
     string? ValorTraitName { get; }
+    
+    string? ValorTraitIcon { get; }
     
     string? ValorTraitEffect { get; }
     
     string? ValorTraitEffectMax { get; }
-    
-    string? ValorTraitIcon { get; }
 }

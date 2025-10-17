@@ -1,4 +1,6 @@
-﻿namespace SlimeIMWiki.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace SlimeIMWiki.Models;
 
 public record ProtectionUnit(
     string Name,
@@ -28,14 +30,18 @@ public record ProtectionUnit(
     string ProtectionSkillName,
     string ProtectionSkillEffect,
     string ProtectionSkillIcon,
-    string TraitName,
-    string TraitEffect,
-    string TraitEffectMax,
-    string TraitIcon,
+    [property: JsonPropertyName("trait_1_name")]
+    string Trait1Name,
+    [property: JsonPropertyName("trait_1_icon")]
+    string Trait1Icon,
+    [property: JsonPropertyName("trait_1_effect")]
+    string Trait1Effect,
+    [property: JsonPropertyName("trait_1_effect_max")]
+    string Trait1EffectMax,
     string? ValorTraitName,
+    string? ValorTraitIcon,
     string? ValorTraitEffect,
     string? ValorTraitEffectMax,
-    string? ValorTraitIcon,
     string? GuidanceEnhancementTraitEffect) : ICharacterUnit
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";

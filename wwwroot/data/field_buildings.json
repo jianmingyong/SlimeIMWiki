@@ -40,148 +40,358 @@
     "icon": "image/field_buildings/FieldBuilding_1614_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Fire Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1627_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Water Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1628_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Earth Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1629_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Wind Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1630_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Space Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1631_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Light Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1632_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Dark Arts Shrine",
+    "category": "Parameter Enhancement Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1633_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Armory",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1209_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Tempest Wheel",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1216_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Mini Coaster",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1218_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Clothing Store",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1305_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Restaurant",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1306_03_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Tavern",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1307_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Café",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1308_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Inn",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1316_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Sawmill",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1317_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Brewery",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1318_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Weaving Workshop",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1320_02_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Traditional Brewery",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1325_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Encampment",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1326_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Gift Shop",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1335_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Sweets Shop",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1339_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Geological Survey Station",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1341_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Monster Museum",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1345_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Water Purification Station",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1346_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Crystal Hotel",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1453_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Traditional Snack Shop",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1568_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Souvenir Shop",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1570_01_icon.png"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": ""
+    "name": "Traditional Inn",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1213_01_icon.png"
+  },
+  {
+    "name": "Japanese Style Tavern",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1214_01_icon.png"
+  },
+  {
+    "name": "Farm",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1301_03_icon.png"
+  },
+  {
+    "name": "Mountain Supply Corps Base",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1302_03_icon.png"
+  },
+  {
+    "name": "Ocean Supply Corps Base",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1303_03_icon.png"
+  },
+  {
+    "name": "Forest Supply Corps Base",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1304_03_icon.png"
+  },
+  {
+    "name": "Field",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1313_03_icon.png"
+  },
+  {
+    "name": "Ice Cream Cart",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1327_01_icon.png"
+  },
+  {
+    "name": "Ramen Shop",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1328_01_icon.png"
+  },
+  {
+    "name": "Savory Pancake Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1329_01_icon.png"
+  },
+  {
+    "name": "Fruit Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1330_01_icon.png"
+  },
+  {
+    "name": "Shishkabob Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1331_01_icon.png"
+  },
+  {
+    "name": "Hot Dog Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1336_01_icon.png"
+  },
+  {
+    "name": "Hamburger Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1337_01_icon.png"
+  },
+  {
+    "name": "Churros Stall",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1338_01_icon.png"
+  },
+  {
+    "name": "Crystal Restaurant",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1347_01_icon.png"
+  },
+  {
+    "name": "Shaved Ice Shop",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1351_01_icon.png"
+  },
+  {
+    "name": "Orchard",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1355_01_icon.png"
+  },
+  {
+    "name": "Feast Hot Pot",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1422_02_icon.png"
+  },
+  {
+    "name": "Snack Bar Jura",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1523_01_icon.png"
+  },
+  {
+    "name": "Dango Shop",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1551_01_icon.png"
+  },
+  {
+    "name": "Digsite for Stamina Magistones",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1309_02_icon.png"
+  },
+  {
+    "name": "Digsite for Attack Magistones",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1310_02_icon.png"
+  },
+  {
+    "name": "Protection Magistone Digsite",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1311_02_icon.png"
+  },
+  {
+    "name": "Digsite for Training Magistones",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1312_02_icon.png"
+  },
+  {
+    "name": "Digsite for Defense Magistones",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1315_02_icon.png"
+  },
+  {
+    "name": "Digsite for Attack Magigems",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1324_01_icon.png"
+  },
+  {
+    "name": "Digsite for Defense Magigems",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1321_01_icon.png"
+  },
+  {
+    "name": "Digsite for Stamina Magigems",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1322_01_icon.png"
+  },
+  {
+    "name": "Digsite for Training Magigems",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1323_01_icon.png"
+  },
+  {
+    "name": "Purple Magicluster Digsite",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1352_02_icon.png"
+  },
+  {
+    "name": "Red Magicluster Digsite",
+    "category": "Magistone & Magigem Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1353_02_icon.png"
+  },
+  {
+    "name": "Trading Post",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1206_02_icon.png"
+  },
+  {
+    "name": "Training Ground",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1314_03_icon.png"
+  },
+  {
+    "name": "Weapon Magicubeite Digsite",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1332_01_icon.png"
+  },
+  {
+    "name": "Armor Magicubeite Digsite",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1333_01_icon.png"
+  },
+  {
+    "name": "Decoration Magicubite Digsite",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1334_01_icon.png"
+  },
+  {
+    "name": "Elemental Colossus Bay",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1344_01_icon.png"
+  },
+  {
+    "name": "Magic Fang Atelier",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1348_01_icon.png"
+  },
+  {
+    "name": "Magic Hide Atelier",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1349_01_icon.png"
+  },
+  {
+    "name": "Magic Feather Atelier",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1350_01_icon.png"
+  },
+  {
+    "name": "Photo Studio",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1362_02_icon.png"
+  },
+  {
+    "name": "Laboratory",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1606_02_icon.png"
   }
 ]
