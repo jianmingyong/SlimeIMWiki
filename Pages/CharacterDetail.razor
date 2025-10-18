@@ -1,4 +1,5 @@
 ﻿@page "/characters/{permalink}"
+@using SlimeIMWiki.Components.CharacterDetail
 @using SlimeIMWiki.ViewModels.CharacterDetail
 @inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.CharacterDetailViewModel>
 @inject IServiceProvider ServiceProvider
@@ -18,9 +19,9 @@ else
                 <Image Position="Position.Absolute.Start.Is0.Top.Is0"
                        Width="Width.Rem(4)" Height="Height.Rem(4)"
                        Source="image/character_info/btnReturnNormal.png"
-                       Style="cursor: pointer"
+                       Style="cursor: pointer; user-select: none"
                        @onclick="ReturnBack"/>
-                
+
                 <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
                     <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
                     <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
@@ -112,9 +113,9 @@ else
                    Width="Width.Rem(4)" Height="Height.Rem(4)"
                    Display="Display.None.Block.OnDesktop"
                    Source="image/character_info/btnReturnNormal.png"
-                   Style="cursor: pointer"
+                   Style="cursor: pointer; user-select: none"
                    @onclick="ReturnBack"/>
-            
+
             <Div Flex="Flex.JustifyContent.Center.AlignItems.Center">
                 <Image Source="@ViewModel.Unit.Image" Fluid/>
             </Div>
@@ -122,89 +123,14 @@ else
 
         <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
             <Div Display="Display.None.Flex.Column.OnDesktop">
-                <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
-                    <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
-                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                        [ @ViewModel.Unit.Title ]
-                    </Div>
-                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center"
-                         TextSize="TextSize.Large">
-                        @ViewModel.Unit.Name
-                    </Div>
-                    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
-                </Div>
-
-                <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
-                    @switch (ViewModel.Unit)
-                    {
-                        case ProtectionUnit:
-                        {
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                            <Div>Protection Unit</Div>
-
-                            break;
-                        }
-
-                        case BattleUnit battleUnit:
-                        {
-                            if (battleUnit.HasEx || battleUnit.HasAttributeUnbound)
-                            {
-                                <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
-                            }
-
-                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
-                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                            <Div>Battle Unit</Div>
-
-                            break;
-                        }
-                    }
-
-                    <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
-
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
-
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
-
-                        @if (ViewModel.Unit.InitialRarity >= 4)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
-                        }
-
-                        @if (ViewModel.Unit.InitialRarity >= 5)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
-                        }
-
-                        @if (ViewModel.Unit.IsEx || ViewModel.Unit.IsAttributeUnbound)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
-                        }
-                    </Div>
-                </Div>
+                @if (ViewModel.Unit is ProtectionUnit protectionUnit)
+                {
+                    <ProtectionUnitName Unit="protectionUnit"/>
+                }
+                else if (ViewModel.Unit is BattleUnit battleUnit)
+                {
+                    <BattleUnitName Unit="battleUnit"/>
+                }
             </Div>
 
             <Grid>
@@ -510,28 +436,28 @@ else
                 <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                     <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
                          Width="Width.Em(4)" Height="Height.Em(4)">
-                        @if (!string.IsNullOrEmpty(ViewModel.Unit.Trait1Icon))
+                        @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                         {
-                            <Image Source="@ViewModel.Unit.Trait1Icon" Width="Width.Is100" Text="Icon"/>
+                            <Image Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
                         }
                     </Div>
                     <Div>
                         <Div TextWeight="TextWeight.Bold">
-                            @(string.IsNullOrEmpty(ViewModel.Unit.Trait1Name) ? "???" : ViewModel.Unit.Trait1Name)
+                            @(string.IsNullOrEmpty(ViewModel.Unit.TraitOneName) ? "???" : ViewModel.Unit.TraitOneName)
                         </Div>
                         <Div TextSize="TextSize.ExtraSmall">At 3rd Awaken</Div>
                     </Div>
                 </Div>
 
                 <Div>
-                    @foreach (var line in ViewModel.Unit.Trait1EffectMax.Split('\n'))
+                    @foreach (var line in ViewModel.Unit.TraitOneEffectMax.Split('\n'))
                     {
                         <Div>@line</Div>
                     }
                 </Div>
             </Div>
 
-            @if (ViewModel.Unit is BattleUnit { Trait2Name: not null, Trait2EffectMax: not null } battleUnit)
+            @if (ViewModel.Unit is BattleUnit { TraitTwoName: not null, TraitTwoEffectMax: not null } battleUnit)
             {
                 <TextDivider Text="TRAIT 2" Margin="Margin.Is2.OnY"/>
 
@@ -539,21 +465,21 @@ else
                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                         <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
                              Width="Width.Em(4)" Height="Height.Em(4)">
-                            @if (!string.IsNullOrEmpty(battleUnit.Trait2Icon))
+                            @if (!string.IsNullOrEmpty(battleUnit.TraitTwoIcon))
                             {
-                                <Image Source="@battleUnit.Trait2Icon" Width="Width.Is100" Text="Icon"/>
+                                <Image Source="@battleUnit.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
                             }
                         </Div>
                         <Div>
                             <Div TextWeight="TextWeight.Bold">
-                                @(string.IsNullOrEmpty(battleUnit.Trait2Name) ? "???" : battleUnit.Trait2Name)
+                                @(string.IsNullOrEmpty(battleUnit.TraitTwoName) ? "???" : battleUnit.TraitTwoName)
                             </Div>
                             <Div TextSize="TextSize.ExtraSmall">At 5th Awaken</Div>
                         </Div>
                     </Div>
 
                     <Div>
-                        @foreach (var line in battleUnit.Trait2EffectMax.Split('\n'))
+                        @foreach (var line in battleUnit.TraitTwoEffectMax.Split('\n'))
                         {
                             <Div>@line</Div>
                         }
@@ -569,7 +495,7 @@ else
                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                         <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
                              Width="Width.Em(4)" Height="Height.Em(4)">
-                            @if (!string.IsNullOrEmpty(ViewModel.Unit.Trait1Icon))
+                            @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                             {
                                 <Image Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
                             }

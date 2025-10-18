@@ -8,6 +8,9 @@ namespace SlimeIMWiki.Services;
 
 public sealed partial class JsonDataModelService : ReactiveObject
 {
+    private readonly HttpClient _httpClient;
+    private readonly StaticWebRootAssetsMapping _staticWebRootAssetsMapping;
+
     [ObservableAsProperty]
     private BattleUnit[] _battleUnits = [];
 
@@ -37,6 +40,9 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     public JsonDataModelService(HttpClient httpClient, StaticWebRootAssetsMapping staticWebRootAssetsMapping)
     {
+        _httpClient = httpClient;
+        _staticWebRootAssetsMapping = staticWebRootAssetsMapping;
+
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.BattleUnits, JsonSerializer.Custom.BattleUnitArray, token)).WhereNotNull().ToProperty(this, nameof(BattleUnits), out _battleUnitsHelper);
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.BattleAttackTypes, JsonSerializer.Custom.BattleAttackTypeArray, token)).WhereNotNull().ToProperty(this, nameof(BattleAttackTypes), out _battleAttackTypesHelper);
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token)).WhereNotNull().ToProperty(this, nameof(BattleAttributes), out _battleAttributesHelper);
@@ -48,6 +54,11 @@ public sealed partial class JsonDataModelService : ReactiveObject
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.Forces, JsonSerializer.Custom.ForceArray, token)).WhereNotNull().ToProperty(this, nameof(Forces), out _forcesHelper);
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.TacticTypes, JsonSerializer.Custom.TacticTypeArray, token)).WhereNotNull().ToProperty(this, nameof(TacticTypes), out _tacticTypesHelper);
         Observable.FromAsync(token => httpClient.GetFromJsonAsync(staticWebRootAssetsMapping.FieldBuildings, JsonSerializer.Custom.FieldBuildingArray, token)).WhereNotNull().ToProperty(this, nameof(FieldBuilding), out _fieldBuildingsHelper);
+    }
+
+    public IObservable<Livestream?> GetLivestream()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.LiveStream, JsonSerializer.Custom.Livestream, token));
     }
 
     public BattleAttackType? GetBattleAttackType(string attackType)

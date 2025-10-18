@@ -28,19 +28,17 @@ public record ProtectionUnit(
     string SupportDivineProtectionEffect,
     string SupportDivineProtectionEffectMax,
     string ProtectionSkillName,
-    string ProtectionSkillEffect,
     string ProtectionSkillIcon,
-    [property: JsonPropertyName("trait_1_name")]
-    string Trait1Name,
-    [property: JsonPropertyName("trait_1_icon")]
-    string Trait1Icon,
-    [property: JsonPropertyName("trait_1_effect")]
-    string Trait1Effect,
-    [property: JsonPropertyName("trait_1_effect_max")]
-    string Trait1EffectMax,
+    string ProtectionSkillEffect,
+    string TraitOneName,
+    string TraitOneIcon,
+    string TraitOneEffect,
+    string TraitOneIconMax,
+    string TraitOneEffectMax,
     string? ValorTraitName,
     string? ValorTraitIcon,
     string? ValorTraitEffect,
+    string? ValorTraitIconMax,
     string? ValorTraitEffectMax,
     string? GuidanceEnhancementTraitEffect) : ICharacterUnit
 {

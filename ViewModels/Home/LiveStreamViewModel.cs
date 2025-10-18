@@ -1,17 +1,26 @@
-﻿using System.Net.Http.Json;
-using System.Reactive.Linq;
+﻿using System.Reactive.Disposables.Fluent;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
+using SlimeIMWiki.Models;
+using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Home;
 
-public sealed partial class LiveStreamViewModel : ReactiveObject
+public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableViewModel
 {
-    [ObservableAsProperty]
-    private string? _livestreamUrl;
+    public ViewModelActivator Activator { get; } = new();
+    
+    [ObservableAsProperty(ReadOnly = false)]
+    private Livestream? _livestream;
 
-    public LiveStreamViewModel(HttpClient httpClient)
+    public LiveStreamViewModel(JsonDataModelService jsonDataModelService)
     {
-        Observable.FromAsync(token => httpClient.GetFromJsonAsync("data/livestream.json", JsonSerializer.Custom.Livestream, token)).WhereNotNull().Select(livestream => livestream.YoutubeLink).ToProperty(this, nameof(LivestreamUrl), out _livestreamUrlHelper);
+        this.WhenActivated(disposable =>
+        {
+            jsonDataModelService
+                .GetLivestream()
+                .ToProperty(this, nameof(Livestream), out _livestreamHelper)
+                .DisposeWith(disposable);
+        });
     }
 }

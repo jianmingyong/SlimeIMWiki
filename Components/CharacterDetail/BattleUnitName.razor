@@ -1,0 +1,94 @@
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.BattleUnitNameViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
+    <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
+    <Div TextWeight="TextWeight.SemiBold" Style="text-shadow: black 2px 2px">
+        [ @Unit.Title ]
+    </Div>
+    <Div TextWeight="TextWeight.SemiBold" TextSize="TextSize.Large" Style="text-shadow: black 2px 2px">
+        @Unit.Name
+    </Div>
+    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
+</Div>
+
+<Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
+    @if (Unit.HasEx || Unit.HasAttributeUnbound)
+    {
+        <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+    }
+
+    @if (ViewModel.AttributeIcon is not null)
+    {
+        <Image Width="Width.Em(2)" Source="@ViewModel.AttributeIcon"/>
+    }
+    
+    @if (ViewModel.AttackTypeIcon is not null)
+    {
+        <Image Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
+    }
+    
+    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
+    
+    <Div>Battle Unit</Div>
+
+    <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
+        <Image Position="Position.Absolute" Width="Width.Em(2)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+        <Image Position="Position.Absolute" Width="Width.Em(2)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+
+        <Image Position="Position.Absolute" Width="Width.Em(2)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+
+        @if (Unit.InitialRarity >= 4)
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+        }
+        else
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
+        }
+
+        @if (Unit.InitialRarity >= 5)
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+        }
+        else
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
+        }
+
+        @if (Unit.IsEx || Unit.IsAttributeUnbound)
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
+        }
+        else
+        {
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
+        }
+    </Div>
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required BattleUnit Unit { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<BattleUnitNameViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}

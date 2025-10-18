@@ -5,10 +5,8 @@ using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Home;
 
-public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class LatestNoticesViewModel : ReactiveObject
 {
-    public ViewModelActivator Activator { get; } = new();
-
     [Reactive(SetModifier = AccessModifier.Private)]
     private string _regionSelection = "NA";
 

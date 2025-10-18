@@ -16,6 +16,8 @@ public class StaticWebRootAssetsMapping(IConfiguration configuration)
     public Uri TacticTypes => GenerateUri("data/tactics_types.json");
     public Uri FieldBuildings => GenerateUri("data/field_buildings.json");
     
+    public Uri LiveStream => GenerateUri("data/livestream.json");
+    
     private readonly bool _useContentDeliveryNetwork = configuration.GetValue<bool>("StaticWebRootAssetsMapping:UseContentDeliveryNetwork");
     private readonly string? _contentDeliveryNetwork = configuration.GetValue<string?>("StaticWebRootAssetsMapping:ContentDeliveryNetwork");
 
