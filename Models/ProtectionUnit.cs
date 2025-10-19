@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace SlimeIMWiki.Models;
+﻿namespace SlimeIMWiki.Models;
 
 public record ProtectionUnit(
     string Name,
@@ -44,5 +42,16 @@ public record ProtectionUnit(
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
 
-    public string Image => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
+    public string Image
+    {
+        get
+        {
+            if (IsEx || IsAttributeUnbound || HasEx || HasAttributeUnbound)
+            {
+                return $"image/protection/characters/{Permalink}/6/{Permalink}_6_BlessInfo.png";
+            }
+
+            return $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
+        }
+    }
 }

@@ -63,36 +63,36 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     public BattleAttackType? GetBattleAttackType(string attackType)
     {
-        return BattleAttackTypes.FirstOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
+        return BattleAttackTypes.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
     }
 
     public BattleAttribute? GetBattleAttribute(string attribute)
     {
-        return BattleAttributes.FirstOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
+        return BattleAttributes.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
     }
 
     public ProtectionAttackType? GetProtectionAttackType(string attackType)
     {
-        return ProtectionAttackTypes.FirstOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
+        return ProtectionAttackTypes.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
     }
 
     public ProtectionAttribute? GetProtectionAttribute(string attribute)
     {
-        return ProtectionAttributes.FirstOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
+        return ProtectionAttributes.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
     }
 
     public Force? GetForce(string force)
     {
-        return Forces.FirstOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
+        return Forces.SingleOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
     }
 
     public TacticType? GetTacticType(string tacticType)
     {
-        return TacticTypes.FirstOrDefault(t => t.Name.Equals(tacticType, StringComparison.OrdinalIgnoreCase));
+        return TacticTypes.SingleOrDefault(t => t.Name.Equals(tacticType, StringComparison.OrdinalIgnoreCase));
     }
 
     public FieldBuilding? GetFieldBuilding(string fieldBuilding)
     {
-        return FieldBuildings.FirstOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
+        return FieldBuildings.SingleOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
     }
 }

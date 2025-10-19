@@ -60,5 +60,16 @@ public record BattleUnit(
 {
     public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
 
-    public string Image => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
+    public string Image
+    {
+        get
+        {
+            if (IsEx || IsAttributeUnbound || HasEx || HasAttributeUnbound)
+            {
+                return $"image/battle/characters/{Permalink}/6/{Permalink}_6_CharaInfo.png";
+            }
+
+            return $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
+        }
+    }
 }

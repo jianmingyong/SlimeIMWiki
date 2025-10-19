@@ -1,7 +1,5 @@
 ﻿using System.Reactive;
-using System.Reactive.Disposables;
 using System.Reactive.Disposables.Fluent;
-using System.Reactive.Linq;
 using ReactiveUI;
 using SlimeIMWiki.Models;
 using SlimeIMWiki.Services;
@@ -62,12 +60,9 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
     {
         return CharacterUnitsCategory switch
         {
-            "Release" => unit.Name,
             "Health" => unit.MaxHealth.ToString("N0"),
             "Attack" => unit.MaxAttack.ToString("N0"),
             "Defense" => unit.MaxDefense.ToString("N0"),
-            "Rarity" => unit.Name,
-            "Name" => unit.Name,
             var _ => unit.Name
         };
     }

@@ -1,5 +1,4 @@
-﻿using System.Reactive.Disposables;
-using System.Reactive.Disposables.Fluent;
+﻿using System.Reactive.Disposables.Fluent;
 using DynamicData.Binding;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;

@@ -150,19 +150,9 @@
     [EditorRequired]
     public required string DisplayText { get; set; }
 
-    private int _renderedHashCode;
-
     protected override void OnInitialized()
     {
         ViewModel = ActivatorUtilities.CreateInstance<BattleUnitIconViewModel>(ServiceProvider, Unit);
         base.OnInitialized();
-    }
-
-    protected override bool ShouldRender()
-    {
-        var newRenderHashcode = HashCode.Combine(ViewModel, DisplayText);
-        if (_renderedHashCode == newRenderHashcode) return false;
-        _renderedHashCode = newRenderHashcode;
-        return true;
     }
 }

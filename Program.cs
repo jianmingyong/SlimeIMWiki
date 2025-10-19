@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using Blazorise;
+﻿using Blazorise;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.Web;
@@ -21,11 +20,7 @@ builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
 builder.Services.AddSingleton(_ => new HttpClient
 {
-    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress), 
-    DefaultRequestHeaders =
-    {
-        CacheControl = new CacheControlHeaderValue { NoCache = true }
-    }
+    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
 });
 builder.Services.UseMicrosoftDependencyResolver();
 

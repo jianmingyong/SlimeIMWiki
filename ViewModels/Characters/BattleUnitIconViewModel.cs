@@ -1,4 +1,5 @@
-﻿using System.Reactive.Linq;
+﻿using System.Reactive.Disposables.Fluent;
+using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models;
@@ -6,31 +7,33 @@ using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.Characters;
 
-public sealed partial class BattleUnitIconViewModel : ReactiveObject
+public sealed partial class BattleUnitIconViewModel : ReactiveObject, IActivatableViewModel
 {
-    [ObservableAsProperty]
+    public ViewModelActivator Activator { get; } = new();
+
+    private readonly JsonDataModelService _jsonDataModelService;
+
+    [ObservableAsProperty(ReadOnly = false)]
     private string? _attributeIcon;
 
-    [ObservableAsProperty]
+    [ObservableAsProperty(ReadOnly = false)]
     private string? _attackTypeIcon;
-    
-    private readonly JsonDataModelService _jsonDataModelService;
 
     public BattleUnitIconViewModel(BattleUnit unit, JsonDataModelService jsonDataModelService)
     {
         _jsonDataModelService = jsonDataModelService;
-        
-        this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
-            .Select(_ => jsonDataModelService.GetBattleAttribute(unit.Attribute)?.Icon)
-            .ToProperty(this, nameof(AttributeIcon), out _attributeIconHelper);
 
-        this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
-            .Select(_ => jsonDataModelService.GetBattleAttackType(unit.AttackType)?.Icon)
-            .ToProperty(this, nameof(AttackTypeIcon), out _attackTypeIconHelper);
-    }
-
-    public override int GetHashCode()
-    {
-        return HashCode.Combine(AttributeIcon, AttackTypeIcon);
+        this.WhenActivated(disposable =>
+        {
+            this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
+                .Select(attributes => attributes.SingleOrDefault(attribute => attribute.Name.Equals(unit.Attribute, StringComparison.OrdinalIgnoreCase))?.Icon)
+                .ToProperty(this, nameof(AttributeIcon), out _attributeIconHelper)
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
+                .Select(types => types.SingleOrDefault(type => type.Name.Equals(unit.AttackType, StringComparison.OrdinalIgnoreCase))?.Icon)
+                .ToProperty(this, nameof(AttackTypeIcon), out _attackTypeIconHelper)
+                .DisposeWith(disposable);
+        });
     }
 }
