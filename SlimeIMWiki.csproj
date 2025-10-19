@@ -13,17 +13,12 @@
         <PublishIISAssets>true</PublishIISAssets>
         <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
 		
-		<ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
-        
         <RunAOTCompilation>false</RunAOTCompilation>
         <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
 
         <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
     </PropertyGroup>
-	
-	<ItemGroup>
-	    <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
-	</ItemGroup>
+
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.10" />
@@ -42,10 +37,6 @@
         <PackageReference Include="Blazorise" Version="1.8.5" />
         <PackageReference Include="Blazorise.Bootstrap5" Version="1.8.5" />
         <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.8.5" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Include="wwwroot\.gitignore" />
     </ItemGroup>
 
     <Target Name="CopyWebConfig" AfterTargets="Publish">
