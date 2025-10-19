@@ -1,10 +1,10 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent Key="@Rarity.ToString()" DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ItemContent>
         <Div Class="filterIcon" Position="Position.Relative"
-             Width="Width.Em(1.5 + 1.5/2 * (Rarity - 1))" Height="Height.Em(1.5)">
+             Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
             <Image Position="Position.Absolute" Width="Width.Em(1.5)"
                    Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
@@ -37,9 +37,9 @@
     
     protected override void OnInitialized()
     {
-        Filter ??= new Filter(unit => unit.InitialRarity == Rarity, 
-            @<InitialRarityFilter Rarity="Rarity" IsRemoveMode="true" Filter="Filter" />);
-        
+        Filter ??= new Filter(unit => unit.InitialRarity == Rarity,
+            @<InitialRarityFilter Rarity="Rarity" IsRemoveMode="true" Filter="Filter"/>);
+
         base.OnInitialized();
     }
 }

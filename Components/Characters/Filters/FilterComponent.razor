@@ -1,6 +1,6 @@
 ﻿@if (IsRemoveMode)
 {
-    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is1"
+    <Div @key="Key" Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is1"
          Background="Background.Body" Padding="Padding.Is2" Style="cursor: pointer"
          @onclick="OnClick">
         <Icon Name="IconName.Times"/>
@@ -12,13 +12,17 @@
 }
 else
 {
-    <Div @onclick="OnClick">
+    <Div @key="Key" @onclick="OnClick">
         @ItemContent
     </Div>
 }
 
 @code
 {
+    [Parameter]
+    [EditorRequired]
+    public string Key { get; set; }
+    
     [Parameter]
     [EditorRequired]
     public required RenderFragment ItemContent { get; set; }

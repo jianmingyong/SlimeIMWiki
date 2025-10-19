@@ -19,14 +19,14 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
         set => _characterListService.IsOrFilter = value;
     }
 
-    public IEnumerable<Force> Forces => _jsonDataModelService.Forces;
+    public IEnumerable<Force> Forces => _jsonDataModelService.Forces ?? [];
 
-    [ObservableAsProperty]
+    [ObservableAsProperty(ReadOnly = false)]
     private IEnumerable<IAttackType> _attackTypes = [];
-    
-    [ObservableAsProperty]
+
+    [ObservableAsProperty(ReadOnly = false)]
     private IEnumerable<IAttribute> _attributes = [];
-    
+
     private readonly CharacterListService _characterListService;
     private readonly JsonDataModelService _jsonDataModelService;
 
@@ -35,42 +35,48 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
         _characterListService = characterListService;
         _jsonDataModelService = jsonDataModelService;
 
-        _attackTypesHelper = this.WhenAnyValue(
-            model => model._characterListService.DisplayCategory,
-            model => model._jsonDataModelService.BattleAttackTypes,
-            model => model._jsonDataModelService.ProtectionAttackTypes,
-            (displayCategory, battleAttackType, protectionAttackType) =>
-            {
-                return displayCategory switch
-                {
-                    "Battle" => battleAttackType.Cast<IAttackType>(),
-                    "Protection" => protectionAttackType.Cast<IAttackType>(),
-                    var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
-                };
-            }).ToProperty(this, nameof(AttackTypes));
-
-        _attributesHelper = this.WhenAnyValue(
-            model => model._characterListService.DisplayCategory,
-            model => model._jsonDataModelService.BattleAttributes,
-            model => model._jsonDataModelService.ProtectionAttributes,
-            (displayCategory, battleAttribute, protectionAttribute) =>
-            {
-                return displayCategory switch
-                {
-                    "Battle" => battleAttribute.Cast<IAttribute>(),
-                    "Protection" => protectionAttribute.Cast<IAttribute>(),
-                    var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
-                };
-            }).ToProperty(this, nameof(Attributes));
-        
         this.WhenActivated(disposable =>
         {
             characterListService.Filters.ToObservableChangeSet()
                 .Subscribe(_ => this.RaisePropertyChanged(nameof(Filters)))
                 .DisposeWith(disposable);
-            
+
             this.WhenAnyValue(model => model._jsonDataModelService.Forces)
                 .Subscribe(_ => this.RaisePropertyChanged(nameof(Forces)))
+                .DisposeWith(disposable);
+
+            this.WhenAnyValue(
+                    model => model._characterListService.DisplayCategory,
+                    model => model._jsonDataModelService.BattleAttackTypes,
+                    model => model._jsonDataModelService.ProtectionAttackTypes,
+                    (displayCategory, battleAttackType, protectionAttackType) =>
+                    {
+                        return displayCategory switch
+                        {
+                            "Battle" => battleAttackType?.Cast<IAttackType>(),
+                            "Protection" => protectionAttackType?.Cast<IAttackType>(),
+                            var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+                        };
+                    })
+                .WhereNotNull()
+                .ToProperty(this, nameof(AttackTypes), out _attackTypesHelper)
+                .DisposeWith(disposable);
+
+            this.WhenAnyValue(
+                    model => model._characterListService.DisplayCategory,
+                    model => model._jsonDataModelService.BattleAttributes,
+                    model => model._jsonDataModelService.ProtectionAttributes,
+                    (displayCategory, battleAttribute, protectionAttribute) =>
+                    {
+                        return displayCategory switch
+                        {
+                            "Battle" => battleAttribute?.Cast<IAttribute>(),
+                            "Protection" => protectionAttribute?.Cast<IAttribute>(),
+                            var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+                        };
+                    })
+                .WhereNotNull()
+                .ToProperty(this, nameof(Attributes), out _attributesHelper)
                 .DisposeWith(disposable);
         });
     }

@@ -1,7 +1,7 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent Key="@Force.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ItemContent>
         <Image Source="@Force.Icon" Width="Width.Em(2)" Text="@Force.Name"/>
         @Force.Name

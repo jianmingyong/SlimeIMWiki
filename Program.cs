@@ -20,7 +20,8 @@ builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
 builder.Services.AddSingleton(_ => new HttpClient
 {
-    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress),
+    Timeout = TimeSpan.FromMinutes(5)
 });
 builder.Services.UseMicrosoftDependencyResolver();
 
