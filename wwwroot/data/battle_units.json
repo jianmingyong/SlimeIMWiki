@@ -2892,8 +2892,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki",

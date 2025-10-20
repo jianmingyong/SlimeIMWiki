@@ -22,89 +22,14 @@ else
                        Style="cursor: pointer; user-select: none"
                        @onclick="ReturnBack"/>
 
-                <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
-                    <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
-                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center">
-                        [ @ViewModel.Unit.Title ]
-                    </Div>
-                    <Div TextWeight="TextWeight.SemiBold" TextAlignment="TextAlignment.Center"
-                         TextSize="TextSize.Large">
-                        @ViewModel.Unit.Name
-                    </Div>
-                    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
-                </Div>
-
-                <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
-                    @switch (ViewModel.Unit)
-                    {
-                        case ProtectionUnit:
-                        {
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-                            <Div>Protection Unit</Div>
-
-                            break;
-                        }
-
-                        case BattleUnit battleUnit:
-                        {
-                            if (battleUnit.HasEx || battleUnit.HasAttributeUnbound)
-                            {
-                                <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
-                            }
-
-                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttributeIcon(battleUnit.Attribute)"/>
-                            <Image Width="Width.Em(2)" Source="@ViewModel.GetAttackTypeIcon(battleUnit.AttackType)"/>
-                            <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png"/>
-                            <Div>Battle Unit</Div>
-
-                            break;
-                        }
-                    }
-
-                    <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
-
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
-
-                        <Image Position="Position.Absolute" Width="Width.Em(2)"
-                               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
-
-                        @if (ViewModel.Unit.InitialRarity >= 4)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
-                        }
-
-                        @if (ViewModel.Unit.InitialRarity >= 5)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
-                        }
-
-                        @if (ViewModel.Unit.IsEx || ViewModel.Unit.IsAttributeUnbound)
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
-                        }
-                        else
-                        {
-                            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                                   Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
-                        }
-                    </Div>
-                </Div>
+                @if (ViewModel.Unit is ProtectionUnit protectionUnit)
+                {
+                    <ProtectionUnitName Unit="protectionUnit"/>
+                }
+                else if (ViewModel.Unit is BattleUnit battleUnit)
+                {
+                    <BattleUnitName Unit="battleUnit"/>
+                }
             </Div>
         </Column>
 
@@ -318,7 +243,7 @@ else
                                     <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                            Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[0])"
                                            Text="Icon"/>
-                                    <Div>@ViewModel.Unit.SuitedFacilities[0]</Div>
+                                    <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[0]</Div>
 
                                     @switch (ViewModel.Unit)
                                     {
@@ -340,10 +265,10 @@ else
                             if (ViewModel.Unit.SuitedFacilities.Length >= 2)
                             {
                                 <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Image Width="Width.Em(2)" Height="Height.Em(2)"
+                                    <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                            Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[1])"
                                            Text="Icon"/>
-                                    <Div>@ViewModel.Unit.SuitedFacilities[1]</Div>
+                                    <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[1]</Div>
 
                                     @switch (ViewModel.Unit)
                                     {

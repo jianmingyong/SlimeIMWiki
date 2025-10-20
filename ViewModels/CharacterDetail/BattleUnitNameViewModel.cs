@@ -26,12 +26,12 @@ public sealed partial class BattleUnitNameViewModel : ReactiveObject, IActivatab
         this.WhenActivated(disposable =>
         {
             this.WhenAnyValue(model => model._jsonDataModelService.BattleAttributes)
-                .Select(attributes => attributes.SingleOrDefault(attribute => attribute.Name == unit.Attribute)?.Icon)
+                .Select(attributes => attributes?.SingleOrDefault(attribute => attribute.Name.Equals(unit.Attribute, StringComparison.OrdinalIgnoreCase))?.Icon)
                 .ToProperty(this, nameof(AttributeIcon), out _attributeIconHelper)
                 .DisposeWith(disposable);
 
             this.WhenAnyValue(model => model._jsonDataModelService.BattleAttackTypes)
-                .Select(attackTypes => attackTypes.SingleOrDefault(attackType => attackType.Name == unit.AttackType)?.Icon)
+                .Select(attackTypes => attackTypes?.SingleOrDefault(attackType => attackType.Name.Equals(unit.AttackType, StringComparison.OrdinalIgnoreCase))?.Icon)
                 .ToProperty(this, nameof(AttackTypeIcon), out _attackTypeIconHelper)
                 .DisposeWith(disposable);
         });

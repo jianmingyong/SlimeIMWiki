@@ -1,4 +1,6 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.ProtectionUnitIconViewModel>
+﻿@using SlimeIMWiki.ViewModels.Characters
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.Characters.UnitIconViewModel>
+@inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -15,35 +17,8 @@
 </Div>
 
 <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column" Style="z-index: 3">
-    @if (Unit.Forces is not null)
-    {
-        <Image Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.GetForceIcon(Unit.Forces[0])"/>
-
-        if (Unit.Attributes is not null)
-        {
-            <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@ViewModel.GetAttributeIcon(Unit.Attributes[0])"/>
-        }
-    }
-    else if (Unit.Attributes is not null)
-    {
-        foreach (var attribute in Unit.Attributes)
-        {
-            <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@ViewModel.GetAttributeIcon(attribute)"/>
-        }
-
-        if (Unit.Attributes.Length == 1 && Unit.AttackType != null)
-        {
-            <Image Width="Width.Is100" Height="Height.Is100"
-                   Source="@ViewModel.GetAttackTypeIcon(Unit.AttackType)"/>
-        }
-    }
-    else if (Unit.AttackType is not null)
-    {
-        <Image Width="Width.Is100" Height="Height.Is100"
-               Source="@ViewModel.GetAttackTypeIcon(Unit.AttackType)"/>
-    }
+    <Image Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.FirstIcon"/>
+    <Image Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.SecondIcon"/>
 </Div>
 
 @switch (Unit.InitialRarity)
@@ -146,4 +121,10 @@
     [Parameter]
     [EditorRequired]
     public required string DisplayText { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<UnitIconViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
 }

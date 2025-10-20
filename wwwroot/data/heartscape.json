@@ -1,0 +1,303 @@
+[
+  {
+    "name": "Fateful Naming",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_2100101_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Recovers all allies from poison"
+  },
+  {
+    "name": "Glimpse From the Water",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1200111_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Water Attribute effect level by 1"
+  },
+  {
+    "name": "Pomp and Circumstance",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1100201_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Wind Attribute effect level by 2"
+  },
+  {
+    "name": "Mirror World Encounters",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1200401_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Earth Attribute effect level by 1"
+  },
+  {
+    "name": "In Need of a Bath",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1100601_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Water Attribute effect level by 2"
+  },
+  {
+    "name": "How Are You Eating That!?",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1100602_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Wind Attribute effect level by 2"
+  },
+  {
+    "name": "The Destined One",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1100801_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Light Attribute effect level by 3"
+  },
+  {
+    "name": "One's Ideals",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1200801_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Fire Attribute effect level by 1"
+  },
+  {
+    "name": "Taste of Revival",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101001_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Earth Attribute effect level by 2"
+  },
+  {
+    "name": "It's Going to Snap!",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101101_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Dark Attribute effect level by 3"
+  },
+  {
+    "name": "The Mirror Feeding Drama",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1201101_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Space Attribute effect level by 1"
+  },
+  {
+    "name": "Dress-Up Slime",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1201102_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Wind Attribute effect level by 1"
+  },
+  {
+    "name": "Thread That Cuts All",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101301_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Space Attribute effect level by 2"
+  },
+  {
+    "name": "Jura Forest's Future",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_2101401_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Changes non-Skills soul x1 into Soul of Skills"
+  },
+  {
+    "name": "Hot Springs Are the Best",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101603_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Water Attribute effect level by 3"
+  },
+  {
+    "name": "The Bellicose Dragoneye",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101602_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Fire Attribute effect level by 2"
+  },
+  {
+    "name": "Petting",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_2101701_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Changes non-Secrets soul x1 into Soul of Secrets"
+  },
+  {
+    "name": "Drago Buster",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1101901_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Light Attribute effect level by 2"
+  },
+  {
+    "name": "Composed Smile",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1202001_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Dark Attribute effect level by 1"
+  },
+  {
+    "name": "Gift",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1102101_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Light Attribute effect level by 2"
+  },
+  {
+    "name": "Awakened Shinsha",
+    "category": "Season 1",
+    "icon": "image/heartprints/skill_still_1202301_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Light Attribute effect level by 1"
+  },
+  {
+    "name": "Wonders of Magic",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1102801_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Dark Attribute effect level by 2"
+  },
+  {
+    "name": "Past Sins",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1102901_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Protection Characters effect level by 2"
+  },
+  {
+    "name": "Glad You're Safe",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1103101_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Space Attribute effect level by 2"
+  },
+  {
+    "name": "Megiddo",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_2103401_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Changes non-Divine Protection soul x1 into Soul of Divine Protection"
+  },
+  {
+    "name": "Evolution to Demon Lord",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1103501_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Fire Attribute effect level by 3"
+  },
+  {
+    "name": "You Can Go Home",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1103601_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Dark Attribute effect level by 2"
+  },
+  {
+    "name": "Chef",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1103701_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Wind Attribute effect level by 2"
+  },
+  {
+    "name": "As an Older Sister",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1104201_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Protection Characters effect level by 3"
+  },
+  {
+    "name": "Vampire Progenitor's True Form",
+    "category": "Season 2",
+    "icon": "image/heartprints/skill_still_1104801_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Space Attribute effect level by 3"
+  },
+  {
+    "name": "Questioning Justice",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_2105001_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Increases protection gauge by 5"
+  },
+  {
+    "name": "Hinata, Promoted to Captain of Crusaders",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_1105002_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Fire Attribute effect level by 2"
+  },
+  {
+    "name": "Geld's Worries",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_1105101_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Water Attribute effect level by 2"
+  },
+  {
+    "name": "Battle of the Hidden Village",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_2106401_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Transfers random soul x1 to the character with the highest ATK"
+  },
+  {
+    "name": "Emotional Reunion",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_1106402_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Protection Characters effect level by 2"
+  },
+  {
+    "name": "The Hero's Party",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_1106601_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Earth Attribute effect level by 3"
+  },
+  {
+    "name": "The Musical Performance",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_2106801_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%"
+  },
+  {
+    "name": "Fruits of Research",
+    "category": "Season 3",
+    "icon": "image/heartprints/skill_still_1106802_L.png",
+    "type": "Heartprint",
+    "descriptions": "Increases Earth Attribute effect level by 2"
+  },
+  {
+    "name": "Disguised as Ranga",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2400501_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": "Applies Vengeance Counterattack to all allies (Turns: 1); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)"
+  },
+  {
+    "name": "",
+    "category": "",
+    "icon": "",
+    "type": "",
+    "descriptions": ""
+  },
+  {
+    "name": "",
+    "category": "",
+    "icon": "",
+    "type": "",
+    "descriptions": ""
+  },
+  {
+    "name": "",
+    "category": "",
+    "icon": "",
+    "type": "",
+    "descriptions": ""
+  },
+  {
+    "name": "",
+    "category": "",
+    "icon": "",
+    "type": "",
+    "descriptions": ""
+  }
+]

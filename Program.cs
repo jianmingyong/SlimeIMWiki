@@ -36,7 +36,6 @@ builder.Services.AddTransient<TimersViewModel>();
 
 builder.Services.AddTransient<CharacterSectionViewModel>();
 builder.Services.AddTransient<FilterSectionViewModel>();
-builder.Services.AddTransient<ProtectionUnitIconViewModel>();
 
 builder.Services
     .AddBlazorise(options =>

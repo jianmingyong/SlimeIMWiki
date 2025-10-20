@@ -1,5 +1,5 @@
 ﻿@using SlimeIMWiki.ViewModels.Characters
-@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.Characters.BattleUnitIconViewModel>
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.Characters.UnitIconViewModel>
 @inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
@@ -26,12 +26,12 @@
 
 <Image Position="Position.Absolute.End.Is0.Top.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.AttributeIcon"
+       Source="@ViewModel.FirstIcon"
        Style="z-index: 3"/>
 
 <Image Position="Position.Absolute.End.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.AttackTypeIcon"
+       Source="@ViewModel.SecondIcon"
        Style="z-index: 3; top: 25%"/>
 
 <Image Position="Position.Absolute.Start.Is50.Translate.MiddleX"
@@ -152,7 +152,7 @@
 
     protected override void OnInitialized()
     {
-        ViewModel = ActivatorUtilities.CreateInstance<BattleUnitIconViewModel>(ServiceProvider, Unit);
+        ViewModel = ActivatorUtilities.CreateInstance<UnitIconViewModel>(ServiceProvider, Unit);
         base.OnInitialized();
     }
 }
