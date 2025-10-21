@@ -20,7 +20,11 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
         this.WhenAnyValue(
                 model => model._jsonDataModelService.BattleUnits,
                 model => model._jsonDataModelService.ProtectionUnits,
-                (battleUnits, protectionUnits) => battleUnits.Cast<ICharacterUnit>().Concat(protectionUnits))
+                (battleUnits, protectionUnits) =>
+                {
+                    if (battleUnits is null || protectionUnits is null) return [];
+                    return battleUnits.Cast<ICharacterUnit>().Concat(protectionUnits);
+                })
             .SelectMany(units => units)
             .FirstOrDefaultAsync(unit => unit.Permalink.Equals(permalink, StringComparison.InvariantCultureIgnoreCase))
             .ToProperty(this, nameof(Unit), out _unitHelper);

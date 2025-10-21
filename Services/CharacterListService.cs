@@ -45,8 +45,8 @@ public sealed partial class CharacterListService : ReactiveObject
                 Filters.ToObservableChangeSet(),
                 (units, displayCategory, _, _) => ApplySort(ApplyFilter<IEnumerable<ICharacterUnit>>(displayCategory switch
                 {
-                    "Battle" => units.Item1,
-                    "Protection" => units.Item2,
+                    "Battle" => units.Item1 ?? [],
+                    "Protection" => units.Item2 ?? [],
                     var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
                 })))
             .ToProperty(this, nameof(CharacterUnits), out _characterUnitsHelper);

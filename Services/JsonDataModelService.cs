@@ -12,31 +12,31 @@ public sealed partial class JsonDataModelService : ReactiveObject
     private readonly StaticWebRootAssetsMapping _staticWebRootAssetsMapping;
 
     [ObservableAsProperty]
-    private BattleUnit[]? _battleUnits = [];
+    private BattleUnit[]? _battleUnits;
 
     [ObservableAsProperty]
-    private BattleAttackType[]? _battleAttackTypes = [];
+    private BattleAttackType[]? _battleAttackTypes;
 
     [ObservableAsProperty]
-    private BattleAttribute[]? _battleAttributes = [];
+    private BattleAttribute[]? _battleAttributes;
 
     [ObservableAsProperty]
-    private ProtectionUnit[]? _protectionUnits = [];
+    private ProtectionUnit[]? _protectionUnits;
 
     [ObservableAsProperty]
-    private ProtectionAttackType[]? _protectionAttackTypes = [];
+    private ProtectionAttackType[]? _protectionAttackTypes;
 
     [ObservableAsProperty]
-    private ProtectionAttribute[]? _protectionAttributes = [];
+    private ProtectionAttribute[]? _protectionAttributes;
 
     [ObservableAsProperty]
-    private Force[]? _forces = [];
+    private Force[]? _forces;
 
     [ObservableAsProperty]
-    private TacticType[]? _tacticTypes = [];
+    private TacticType[]? _tacticTypes;
     
     [ObservableAsProperty]
-    private FieldBuilding[]? _fieldBuildings = [];
+    private FieldBuilding[]? _fieldBuildings;
 
     public JsonDataModelService(HttpClient httpClient, StaticWebRootAssetsMapping staticWebRootAssetsMapping)
     {
