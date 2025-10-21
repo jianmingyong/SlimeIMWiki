@@ -1,4 +1,6 @@
 ﻿@using SlimeIMWiki.Layouts
+@using SlimeIMWiki.Services
+@inject WebApplicationService WebApplicationService
 
 <Blazorise.ThemeProvider Theme="@theme">
     <Router AppAssembly="typeof(App).Assembly">
@@ -52,4 +54,12 @@
             Body = "rgb(222, 226, 230)",
         }
     };
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await WebApplicationService.RegisterService();
+        }
+    }
 }

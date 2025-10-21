@@ -29,6 +29,7 @@ builder.Services.AddSingleton<StaticWebRootAssetsMapping>();
 builder.Services.AddSingleton<CharacterListService>();
 builder.Services.AddSingleton<IStorageService, WebStorageService>();
 builder.Services.AddSingleton<JsonDataModelService>();
+builder.Services.AddSingleton<WebApplicationService>();
 
 builder.Services.AddTransient<LatestNoticesViewModel>();
 builder.Services.AddTransient<LiveStreamViewModel>();

@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace SlimeIMWiki.Models;
+﻿namespace SlimeIMWiki.Models;
 
 public record BattleUnit(
     string Name,

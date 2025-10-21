@@ -33,7 +33,14 @@
     </Buttons>
 </Div>
 
-<iframe height="500"
-        src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
-        referrerpolicy="strict-origin-when-cross-origin"
-        style="width: 100%"></iframe>
+@if (ViewModel.IsOnline)
+{
+    <iframe height="500"
+            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="width: 100%"></iframe>
+}
+else
+{
+    <Paragraph>In-Game Notices are not available in offline mode.</Paragraph>
+}

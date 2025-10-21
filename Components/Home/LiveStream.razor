@@ -2,7 +2,7 @@
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-@if (ViewModel.Livestream is null)
+@if (ViewModel.Livestream is null || !ViewModel.IsOnline)
 {
     <Paragraph TextSize="TextSize.Heading3" TextAlignment="TextAlignment.Center">
         No Stream Available
