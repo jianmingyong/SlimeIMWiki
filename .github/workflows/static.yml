@@ -1,6 +1,7 @@
 name: Deploy static content to Pages
 
 env:
+  ROOT_DIR: wwwroot
   PUBLISH_DIR: bin/Release/net9.0/publish/wwwroot
 
 on:
@@ -29,6 +30,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+          
+      - name: Rewrite base href
+        uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+        with:
+          html_path: ${{ env.ROOT_DIR }}/index.html
+          base_href: /SlimeIMWiki/
+
+      - name: Clone file
+        run: cp "${{ env.ROOT_DIR }}/index.html" "${{ env.ROOT_DIR }}/404.html"
+
+      - name: Update Product Token
+        run: |
+          sed -i 's|"ProductToken": ""|"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"|g' "${{ env.ROOT_DIR }}/appsettings.json"
 
       - name: Get latest .NET SDK
         uses: actions/setup-dotnet@v4
@@ -37,19 +51,6 @@ jobs:
 
       - name: Publish app
         run: dotnet workload restore && dotnet publish -c Release
-
-      - name: Rewrite base href
-        uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
-        with:
-          html_path: ${{ env.PUBLISH_DIR }}/index.html
-          base_href: /SlimeIMWiki/
-
-      - name: Clone file
-        run: cp "${{ env.PUBLISH_DIR }}/index.html" "${{ env.PUBLISH_DIR }}/404.html"
-
-      - name: Update Product Token
-        run: |
-          sed -i 's|"ProductToken": ""|"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"|g' "${{ env.PUBLISH_DIR }}/appsettings.json"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
