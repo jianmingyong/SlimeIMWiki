@@ -20,7 +20,7 @@ else
                        Width="Width.Rem(4)" Height="Height.Rem(4)"
                        Source="image/character_info/btnReturnNormal.png"
                        Text="Back"
-                       Style="cursor: pointer; user-select: none"
+                       Class="returnButton"
                        @onclick="ReturnBack"/>
 
                 @if (ViewModel.Unit is ProtectionUnit protectionUnit)
@@ -39,7 +39,7 @@ else
                    Display="Display.None.Block.OnDesktop"
                    Source="image/character_info/btnReturnNormal.png"
                    Text="Back"
-                   Style="cursor: pointer; user-select: none"
+                   Class="returnButton"
                    @onclick="ReturnBack"/>
 
             <Div Flex="Flex.JustifyContent.Center.AlignItems.Center">
@@ -451,7 +451,7 @@ else
     [Parameter]
     [EditorRequired]
     public required string Permalink { get; set; }
-
+    
     protected override void OnInitialized()
     {
         ViewModel = ActivatorUtilities.CreateInstance<CharacterDetailViewModel>(ServiceProvider, Permalink);

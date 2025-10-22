@@ -4,300 +4,491 @@
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_2100101_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Recovers all allies from poison"
+    "descriptions": [
+      "Recovers all allies from poison",
+      "Recovers all allies from poison and bind",
+      "Recovers all allies from poison, bind, and stun"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x1\nSeason 1 #2 Pomp and Circumstance",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Glimpse From the Water",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1200111_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Water Attribute effect level by 1"
+    "descriptions": [
+      "Increases Water Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nMain Story Chapter 1 Episode 5",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Pomp and Circumstance",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1100201_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Wind Attribute effect level by 2"
+    "descriptions": [
+      "Increases Wind Attribute effect level by 2"
+    ],
+    "unlock_condition": "3000 Population Milestone Reached",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Mirror World Encounters",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1200401_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Earth Attribute effect level by 1"
+    "descriptions": [
+      "Increases Earth Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nMain Story Chapter 4 Episode 6",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "In Need of a Bath",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1100601_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Water Attribute effect level by 2"
+    "descriptions": [
+      "Increases Water Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "How Are You Eating That!?",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1100602_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Wind Attribute effect level by 2"
+    "descriptions": [
+      "Increases Wind Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "The Destined One",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1100801_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Light Attribute effect level by 3"
+    "descriptions": [
+      "Increases Light Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "One's Ideals",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1200801_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Fire Attribute effect level by 1"
+    "descriptions": [
+      "Increases Fire Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5\nMain Story Chapter 8 Episode 11",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Taste of Revival",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101001_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Earth Attribute effect level by 2"
+    "descriptions": [
+      "Increases Earth Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "It's Going to Snap!",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101101_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Dark Attribute effect level by 3"
+    "descriptions": [
+      "Increases Dark Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "The Mirror Feeding Drama",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1201101_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Space Attribute effect level by 1"
+    "descriptions": [
+      "Increases Space Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5\nMain Story Chapter 11 Episode 7",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Dress-Up Slime",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1201102_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Wind Attribute effect level by 1"
+    "descriptions": [
+      "Increases Wind Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 11 Episode 7",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Thread That Cuts All",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101301_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Space Attribute effect level by 2"
+    "descriptions": [
+      "Increases Space Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Jura Forest's Future",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_2101401_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Changes non-Skills soul x1 into Soul of Skills"
+    "descriptions": [
+      "Changes non-Skills soul x1 into Soul of Skills",
+      "Changes non-Skills soul x2 into Soul of Skills",
+      "Changes non-Skills soul x3 into Soul of Skills"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 1 #13 Thread That Cuts All\nSeason 3 #51 Geld's Worries",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Hot Springs Are the Best",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101603_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Water Attribute effect level by 3"
+    "descriptions": [
+      "Increases Water Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "The Bellicose Dragoneye",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101602_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Fire Attribute effect level by 2"
+    "descriptions": [
+      "Increases Fire Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Petting",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_2101701_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Changes non-Secrets soul x1 into Soul of Secrets"
+    "descriptions": [
+      "Changes non-Secrets soul x1 into Soul of Secrets",
+      "Changes non-Secrets soul x2 into Soul of Secrets",
+      "Changes non-Secrets soul x3 into Soul of Secrets"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 1 #16 The Bellicose Dragoneye\nSeason 1 #19 Drago Buster",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Drago Buster",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1101901_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Light Attribute effect level by 2"
+    "descriptions": [
+      "Increases Light Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Composed Smile",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1202001_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Dark Attribute effect level by 1"
+    "descriptions": [
+      "Increases Dark Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 9 Episode 14",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Gift",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1102101_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Light Attribute effect level by 2"
+    "descriptions": [
+      "Increases Light Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Awakened Shinsha",
     "category": "Season 1",
     "icon": "image/heartprints/skill_still_1202301_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Light Attribute effect level by 1"
+    "descriptions": [
+      "Increases Light Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 10 Episode 10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Wonders of Magic",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1102801_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Dark Attribute effect level by 2"
+    "descriptions": [
+      "Increases Dark Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Past Sins",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1102901_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Protection Characters effect level by 2"
+    "descriptions": [
+      "Increases Protection Characters effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Glad You're Safe",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1103101_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Space Attribute effect level by 2"
+    "descriptions": [
+      "Increases Space Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Orange Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Megiddo",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_2103401_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Changes non-Divine Protection soul x1 into Soul of Divine Protection"
+    "descriptions": [
+      "Changes non-Divine Protection soul x1 into Soul of Divine Protection",
+      "Changes non-Divine Protection soul x2 into Soul of Divine Protection",
+      "Changes non-Divine Protection soul x3 into Soul of Divine Protection"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 2 #29 Past Sins\nSeason 2 #36 You Can Go Home",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Evolution to Demon Lord",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1103501_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Fire Attribute effect level by 3"
+    "descriptions": [
+      "Increases Fire Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "You Can Go Home",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1103601_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Dark Attribute effect level by 2"
+    "descriptions": [
+      "Increases Dark Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Chef",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1103701_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Wind Attribute effect level by 2"
+    "descriptions": [
+      "Increases Wind Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "As an Older Sister",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1104201_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Protection Characters effect level by 3"
+    "descriptions": [
+      "Increases Protection Characters effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Vampire Progenitor's True Form",
     "category": "Season 2",
     "icon": "image/heartprints/skill_still_1104801_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Space Attribute effect level by 3"
+    "descriptions": [
+      "Increases Space Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Questioning Justice",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_2105001_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Increases protection gauge by 5"
+    "descriptions": [
+      "Increases protection gauge by 5"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #8 The Destined One\nSeason 2 #48 Vampire Progenitor's True Form\nSeason 3 #50 Hinata, Promoted to Captain of Crusaders",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Hinata, Promoted to Captain of Crusaders",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_1105002_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Fire Attribute effect level by 2"
+    "descriptions": [
+      "Increases Fire Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Geld's Worries",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_1105101_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Water Attribute effect level by 2"
+    "descriptions": [
+      "Increases Water Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "Blue Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Battle of the Hidden Village",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_2106401_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Transfers random soul x1 to the character with the highest ATK"
+    "descriptions": [
+      "Transfers random soul x1 to the character with the highest ATK",
+      "Transfers random soul x2 to the character with the highest ATK",
+      "Transfers random soul x3 to the character with the highest ATK"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x15\nSeason 3 #64 Emotional Reunion",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Emotional Reunion",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_1106402_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Protection Characters effect level by 2"
+    "descriptions": [
+      "Increases Protection Characters effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "The Hero's Party",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_1106601_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Earth Attribute effect level by 3"
+    "descriptions": [
+      "Increases Earth Attribute effect level by 3"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "The Musical Performance",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_2106801_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%"
+    "descriptions": [
+      "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #11 It's Going to Snap!\nSeason 1 #16 Hot Springs Are the Best\nSeason 2 #37 Chef",
+    "unlock_material": "",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Fruits of Research",
     "category": "Season 3",
     "icon": "image/heartprints/skill_still_1106802_L.png",
     "type": "Heartprint",
-    "descriptions": "Increases Earth Attribute effect level by 2"
+    "descriptions": [
+      "Increases Earth Attribute effect level by 2"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
+    "unlock_material": "Green Developing Tool",
+    "release_date": "2025-10-16"
   },
   {
     "name": "Disguised as Ranga",
     "category": "Other",
     "icon": "image/heartprints/skill_still_2400501_L.png",
     "type": "Heartprint Skill",
-    "descriptions": "Applies Vengeance Counterattack to all allies (Turns: 1); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)"
+    "descriptions": [
+      "Applies Vengeance Counterattack to all allies (Turns: 1); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)",
+      "Applies Vengeance Counterattack to all allies (Turns: 2); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)",
+      "Applies Vengeance Counterattack to all allies (Turns: 3); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)"
+    ],
+    "unlock_condition": "Complete New Feature \"Heartscape\" Kick-Start Event (Missable)\nUnlock total Heartprint and Heartprint Skills: x2",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
   },
   {
-    "name": "",
-    "category": "",
-    "icon": "",
-    "type": "",
-    "descriptions": ""
-  },
-  {
-    "name": "",
-    "category": "",
-    "icon": "",
-    "type": "",
-    "descriptions": ""
-  },
-  {
-    "name": "",
-    "category": "",
-    "icon": "",
-    "type": "",
-    "descriptions": ""
-  },
-  {
-    "name": "",
-    "category": "",
-    "icon": "",
-    "type": "",
-    "descriptions": ""
+    "name": "Unexpected Challenge",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_1400101_L.png",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Protection Characters effect level by 1"
+    ],
+    "unlock_condition": "100 District Progress Milestone Reached (Eurazania)",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
   }
 ]

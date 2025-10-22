@@ -49,3 +49,13 @@ div.loading {
     color: rgb(33, 37, 41) !important;
     background-color: rgb(248, 249, 250) !important;
 }
+
+.returnButton {
+    content: url("../image/character_info/btnReturnNormal.png");
+    cursor: pointer;
+    user-select: none;
+}
+
+.returnButton:active {
+    content: url("../image/character_info/btnReturnActive.png");
+}

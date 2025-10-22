@@ -1,0 +1,16 @@
+﻿@page "/heartscape"
+
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <Div Flex="Flex.Row">
+        <Buttons Border="Border.White">
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@("" == "Battle" ? Color.Light : Color.Dark)">
+                <Text Display="Display.None.Block.OnTablet">Season 1</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@("" == "Protection" ? Color.Light : Color.Dark)">
+                <Text Display="Display.None.Block.OnTablet">Season 2</Text>
+            </Button>
+        </Buttons>
+    </Div>
+</Div>

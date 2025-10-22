@@ -49,6 +49,14 @@ async function onFetch(event) {
         const request = shouldServeIndexHtml ? 'index.html' : event.request;
         const cache = await caches.open(cacheName);
         cachedResponse = await cache.match(request);
+        
+        if (!cachedResponse) {
+            const missingAssets = self.assetsManifest.assets
+                .filter(asset => asset.url === event.request.url)
+                .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
+            await cache.addAll(missingAssets);
+            cachedResponse = await cache.match(request);
+        }
     }
 
     return cachedResponse || fetch(event.request);
