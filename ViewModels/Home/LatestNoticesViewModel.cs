@@ -10,8 +10,8 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
 {
     public ViewModelActivator Activator { get; } = new();
     
-    private readonly IStorageService _storageService;
-    private readonly WebApplicationService _webApplicationService;
+    private readonly IWebStorageService _webStorageService;
+    private readonly IWebApplicationService _webApplicationService;
 
     [ObservableAsProperty(ReadOnly = false)]
     private bool _isOnline;
@@ -22,9 +22,9 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     [ObservableAsProperty]
     private int _regionCode = 3;
     
-    public LatestNoticesViewModel(IStorageService storageService, WebApplicationService webApplicationService)
+    public LatestNoticesViewModel(IWebStorageService webStorageService, IWebApplicationService webApplicationService)
     {
-        _storageService = storageService;
+        _webStorageService = webStorageService;
         _webApplicationService = webApplicationService;
 
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
@@ -43,13 +43,13 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
                 .DisposeWith(disposable);
         });
 
-        RegionChange(_storageService.GetFromCookie(nameof(RegionSelection)) ?? "NA");
+        RegionChange(_webStorageService.GetFromCookie(nameof(RegionSelection)) ?? "NA");
     }
 
     [ReactiveCommand]
     private void RegionChange(string region)
     {
         RegionSelection = region;
-        _storageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
+        _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
     }
 }

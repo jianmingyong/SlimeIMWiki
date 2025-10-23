@@ -25,13 +25,13 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     [Reactive(SetModifier = AccessModifier.Private)]
     private TimeSpan _timerUpdateIn = TimeSpan.Zero;
     
-    private readonly IStorageService _storageService;
+    private readonly IWebStorageService _webStorageService;
 
-    public TimersViewModel(IStorageService storageService)
+    public TimersViewModel(IWebStorageService webStorageService)
     {
-        _storageService = storageService;
+        _webStorageService = webStorageService;
         
-        RegionChange(_storageService.GetFromCookie(nameof(TimerSelection)) ?? "NA");
+        RegionChange(_webStorageService.GetFromCookie(nameof(TimerSelection)) ?? "NA");
         
         this.WhenActivated(disposable =>
         {
@@ -46,7 +46,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     private void RegionChange(string region)
     {
         TimerSelection = region;
-        _storageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
+        _webStorageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
         
         switch (region)
         {

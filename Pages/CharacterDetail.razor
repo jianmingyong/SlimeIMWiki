@@ -13,42 +13,21 @@
 }
 else
 {
-    <Grid>
-        <Column ColumnSize="ColumnSize.Is12" Display="Display.None.OnDesktop">
-            <Div Flex="Flex.Column" Position="Position.Relative">
-                <Image Position="Position.Absolute.Start.Is0.Top.Is0"
-                       Width="Width.Rem(4)" Height="Height.Rem(4)"
-                       Source="image/character_info/btnReturnNormal.png"
-                       Text="Back"
-                       Class="returnButton"
-                       @onclick="ReturnBack"/>
-
-                @if (ViewModel.Unit is ProtectionUnit protectionUnit)
-                {
-                    <ProtectionUnitName Unit="protectionUnit"/>
-                }
-                else if (ViewModel.Unit is BattleUnit battleUnit)
-                {
-                    <BattleUnitName Unit="battleUnit"/>
-                }
-            </Div>
-        </Column>
-
-        <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
+    <Div Flex="Flex.Wrap" Margin="Margin.Is5.FromBottom">
+        <Div Width="Width.Is100">
             <Image Width="Width.Rem(4)" Height="Height.Rem(4)"
-                   Display="Display.None.Block.OnDesktop"
                    Source="image/character_info/btnReturnNormal.png"
                    Text="Back"
                    Class="returnButton"
                    @onclick="ReturnBack"/>
-
-            <Div Flex="Flex.JustifyContent.Center.AlignItems.Center">
-                <Image Source="@ViewModel.Unit.Image" Fluid/>
-            </Div>
-        </Column>
-
-        <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is12.OnMobile">
-            <Div Display="Display.None.Flex.Column.OnDesktop">
+        </Div>
+        
+        <Div Display="Display.Block.OnDesktop.None" Width="Width.Is50">
+            <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
+        </Div>
+        
+        <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
+            <Div Flex="Flex.Wrap">
                 @if (ViewModel.Unit is ProtectionUnit protectionUnit)
                 {
                     <ProtectionUnitName Unit="protectionUnit"/>
@@ -57,13 +36,15 @@ else
                 {
                     <BattleUnitName Unit="battleUnit"/>
                 }
-            </Div>
-
-            <Grid>
-                <Column ColumnSize="ColumnSize.Is6.OnTablet.Is12.OnMobile">
+                
+                <Div Display="Display.None.OnDesktop.Block" Width="Width.Is100">
+                    <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
+                </Div>
+                
+                <Div Flex="Flex.Grow.Is1.Shrink.Is1" Padding="Padding.Is2.OnX">
                     <TextDivider Text="STATS" Margin="Margin.Is2.OnY"/>
-
-                    <Table Background="Background.Body">
+                    
+                    <Table Flex="Flex.Shrink.Is1" Background="Background.Body">
                         <TableBody>
                             <TableRow>
                                 <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
@@ -182,18 +163,18 @@ else
                             </TableRow>
                         </TableBody>
                     </Table>
-                </Column>
-
-                <Column ColumnSize="ColumnSize.Is6.OnTablet.Is12.OnMobile">
+                </Div>
+                
+                <Div Flex="Flex.Grow.Is1.Shrink.Is1" Padding="Padding.Is2.OnX">
                     <TextDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
-
+                    
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
                          Gap="Gap.Is2">
                         @switch (ViewModel.Unit)
                         {
-                            case ProtectionUnit { Forces: not null } protectionUnit:
+                            case ProtectionUnit { Forces: not null } protectionUnit1:
                             {
-                                foreach (var force in protectionUnit.Forces)
+                                foreach (var force in protectionUnit1.Forces)
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
@@ -229,9 +210,9 @@ else
                             }
                         }
                     </Div>
-
+                    
                     <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
-
+                    
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
                         @if (ViewModel.Unit.SuitedFacilities.Length == 0)
                         {
@@ -290,132 +271,72 @@ else
                             }
                         }
                     </Div>
-                </Column>
-            </Grid>
-
-            @if (ViewModel.Unit is ProtectionUnit unit)
-            {
-                <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
-
-                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
-                             Width="Width.Em(4)" Height="Height.Em(4)">
-                            <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100" Text="Icon"/>
-                        </Div>
-                        <Div>
-                            <Div TextWeight="TextWeight.Bold">
-                                @(string.IsNullOrEmpty(unit.DivineProtectionName) ? "???" : unit.DivineProtectionName)
-                            </Div>
-                            <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
-                        </Div>
-                    </Div>
-
-                    <Div>
-                        @foreach (var line in unit.DivineProtectionEffectMax.Split('\n'))
-                        {
-                            <Div>@line</Div>
-                        }
-                    </Div>
-
-                    <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
-                         Padding="Padding.Is2" TextAlignment="TextAlignment.Center" TextSize="TextSize.ExtraSmall">
-                        Supporting Divine Protection
-                    </Div>
-
-                    <Div>
-                        @(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)
-                    </Div>
                 </Div>
+                
+                @if (ViewModel.Unit is ProtectionUnit unit)
+                {
+                    <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
 
-                <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
+                    <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
+                                 Width="Width.Em(4)" Height="Height.Em(4)">
+                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100" Text="Icon"/>
+                            </Div>
+                            <Div>
+                                <Div TextWeight="TextWeight.Bold">
+                                    @(string.IsNullOrEmpty(unit.DivineProtectionName) ? "???" : unit.DivineProtectionName)
+                                </Div>
+                                <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                            </Div>
+                        </Div>
 
-                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
-                             Width="Width.Em(4)" Height="Height.Em(4)">
-                            @if (!string.IsNullOrEmpty(unit.ProtectionSkillIcon))
+                        <Div>
+                            @foreach (var line in unit.DivineProtectionEffectMax.Split('\n'))
                             {
-                                <Image Source="@unit.ProtectionSkillIcon" Width="Width.Is100" Text="Icon"/>
+                                <Div>@line</Div>
                             }
                         </Div>
+
+                        <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
+                             Padding="Padding.Is2" TextAlignment="TextAlignment.Center" TextSize="TextSize.ExtraSmall">
+                            Supporting Divine Protection
+                        </Div>
+
                         <Div>
-                            <Div TextWeight="TextWeight.Bold">
-                                @(string.IsNullOrEmpty(unit.ProtectionSkillName) ? "???" : unit.ProtectionSkillName)
+                            @(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)
+                        </Div>
+                    </Div>
+
+                    <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
+
+                    <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
+                                 Width="Width.Em(4)" Height="Height.Em(4)">
+                                @if (!string.IsNullOrEmpty(unit.ProtectionSkillIcon))
+                                {
+                                    <Image Source="@unit.ProtectionSkillIcon" Width="Width.Is100" Text="Icon"/>
+                                }
                             </Div>
-                            <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                            <Div>
+                                <Div TextWeight="TextWeight.Bold">
+                                    @(string.IsNullOrEmpty(unit.ProtectionSkillName) ? "???" : unit.ProtectionSkillName)
+                                </Div>
+                                <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                            </Div>
                         </Div>
-                    </Div>
 
-                    <Div>
-                        @foreach (var line in unit.ProtectionSkillEffect.Split('\n'))
-                        {
-                            <Div>@line</Div>
-                        }
-                    </Div>
-                </Div>
-            }
-
-            <TextDivider Text="TRAIT" Margin="Margin.Is2.OnY"/>
-
-            <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                    <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
-                         Width="Width.Em(4)" Height="Height.Em(4)">
-                        @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
-                        {
-                            <Image Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
-                        }
-                    </Div>
-                    <Div>
-                        <Div TextWeight="TextWeight.Bold">
-                            @(string.IsNullOrEmpty(ViewModel.Unit.TraitOneName) ? "???" : ViewModel.Unit.TraitOneName)
-                        </Div>
-                        <Div TextSize="TextSize.ExtraSmall">At 3rd Awaken</Div>
-                    </Div>
-                </Div>
-
-                <Div>
-                    @foreach (var line in ViewModel.Unit.TraitOneEffectMax.Split('\n'))
-                    {
-                        <Div>@line</Div>
-                    }
-                </Div>
-            </Div>
-
-            @if (ViewModel.Unit is BattleUnit { TraitTwoName: not null, TraitTwoEffectMax: not null } battleUnit)
-            {
-                <TextDivider Text="TRAIT 2" Margin="Margin.Is2.OnY"/>
-
-                <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                        <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
-                             Width="Width.Em(4)" Height="Height.Em(4)">
-                            @if (!string.IsNullOrEmpty(battleUnit.TraitTwoIcon))
+                        <Div>
+                            @foreach (var line in unit.ProtectionSkillEffect.Split('\n'))
                             {
-                                <Image Source="@battleUnit.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
+                                <Div>@line</Div>
                             }
                         </Div>
-                        <Div>
-                            <Div TextWeight="TextWeight.Bold">
-                                @(string.IsNullOrEmpty(battleUnit.TraitTwoName) ? "???" : battleUnit.TraitTwoName)
-                            </Div>
-                            <Div TextSize="TextSize.ExtraSmall">At 5th Awaken</Div>
-                        </Div>
                     </Div>
+                }
 
-                    <Div>
-                        @foreach (var line in battleUnit.TraitTwoEffectMax.Split('\n'))
-                        {
-                            <Div>@line</Div>
-                        }
-                    </Div>
-                </Div>
-            }
-
-            @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffect is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
-            {
-                <TextDivider Text="VALOR TRAIT" Margin="Margin.Is2.OnY"/>
+                <TextDivider Text="TRAIT" Margin="Margin.Is2.OnY"/>
 
                 <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
@@ -423,27 +344,87 @@ else
                              Width="Width.Em(4)" Height="Height.Em(4)">
                             @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                             {
-                                <Image Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
+                                <Image Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
                             }
                         </Div>
                         <Div>
                             <Div TextWeight="TextWeight.Bold">
-                                @(string.IsNullOrEmpty(ViewModel.Unit.ValorTraitName) ? "???" : ViewModel.Unit.ValorTraitName)
+                                @(string.IsNullOrEmpty(ViewModel.Unit.TraitOneName) ? "???" : ViewModel.Unit.TraitOneName)
                             </Div>
-                            <Div TextSize="TextSize.ExtraSmall">At 2nd Awaken</Div>
+                            <Div TextSize="TextSize.ExtraSmall">At 3rd Awaken</Div>
                         </Div>
                     </Div>
 
                     <Div>
-                        @foreach (var line in ViewModel.Unit.ValorTraitEffectMax.Split('\n'))
+                        @foreach (var line in ViewModel.Unit.TraitOneEffectMax.Split('\n'))
                         {
                             <Div>@line</Div>
                         }
                     </Div>
                 </Div>
-            }
-        </Column>
-    </Grid>
+
+                @if (ViewModel.Unit is BattleUnit { TraitTwoName: not null, TraitTwoEffectMax: not null } battleUnit1)
+                {
+                    <TextDivider Text="TRAIT 2" Margin="Margin.Is2.OnY"/>
+
+                    <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
+                                 Width="Width.Em(4)" Height="Height.Em(4)">
+                                @if (!string.IsNullOrEmpty(battleUnit1.TraitTwoIcon))
+                                {
+                                    <Image Source="@battleUnit1.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
+                                }
+                            </Div>
+                            <Div>
+                                <Div TextWeight="TextWeight.Bold">
+                                    @(string.IsNullOrEmpty(battleUnit1.TraitTwoName) ? "???" : battleUnit1.TraitTwoName)
+                                </Div>
+                                <Div TextSize="TextSize.ExtraSmall">At 5th Awaken</Div>
+                            </Div>
+                        </Div>
+
+                        <Div>
+                            @foreach (var line in battleUnit1.TraitTwoEffectMax.Split('\n'))
+                            {
+                                <Div>@line</Div>
+                            }
+                        </Div>
+                    </Div>
+                }
+
+                @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffect is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
+                {
+                    <TextDivider Text="VALOR TRAIT" Margin="Margin.Is2.OnY"/>
+
+                    <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                            <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
+                                 Width="Width.Em(4)" Height="Height.Em(4)">
+                                @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
+                                {
+                                    <Image Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
+                                }
+                            </Div>
+                            <Div>
+                                <Div TextWeight="TextWeight.Bold">
+                                    @(string.IsNullOrEmpty(ViewModel.Unit.ValorTraitName) ? "???" : ViewModel.Unit.ValorTraitName)
+                                </Div>
+                                <Div TextSize="TextSize.ExtraSmall">At 2nd Awaken</Div>
+                            </Div>
+                        </Div>
+
+                        <Div>
+                            @foreach (var line in ViewModel.Unit.ValorTraitEffectMax.Split('\n'))
+                            {
+                                <Div>@line</Div>
+                            }
+                        </Div>
+                    </Div>
+                }
+            </Div>
+        </Div>
+    </Div>
 }
 
 @code

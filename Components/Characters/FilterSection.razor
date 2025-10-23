@@ -10,14 +10,14 @@
 
 <Div Flex="Flex.Column" Gap="Gap.Is2" Background="Background.Body" Margin="Margin.Is2.FromBottom">
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
-        @foreach (var attackType in ViewModel.AttackTypes)
+        @foreach (var attackType in ViewModel.AttackTypes ?? [])
         {
             <AttackTypeFilter AttackType="attackType"/>
         }
 
         <Span>|</Span>
 
-        @foreach (var attribute in ViewModel.Attributes)
+        @foreach (var attribute in ViewModel.Attributes ?? [])
         {
             <AttributeFilter Attribute="attribute"/>
         }
@@ -40,7 +40,7 @@
     <Dropdown>
         <DropdownToggle Color="Color.Dark" Border="Border.White">Forces</DropdownToggle>
         <DropdownMenu MaxMenuHeight="50vh" Background="Background.Dark">
-            @foreach (var forceGroup in ViewModel.Forces.GroupBy(force => force.Category))
+            @foreach (var forceGroup in ViewModel.Forces?.GroupBy(force => force.Category) ?? [])
             {
                 <DropdownHeader TextColor="TextColor.White50">@forceGroup.Key</DropdownHeader>
 

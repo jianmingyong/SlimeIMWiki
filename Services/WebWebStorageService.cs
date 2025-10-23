@@ -3,7 +3,7 @@ using Microsoft.JSInterop.Infrastructure;
 
 namespace SlimeIMWiki.Services;
 
-public sealed class WebStorageService(IJSRuntime jsRuntime) : IStorageService
+public sealed class WebWebStorageService(IJSRuntime jsRuntime) : IWebStorageService
 {
     private readonly IJSInProcessRuntime _jsRuntime = (IJSInProcessRuntime) jsRuntime;
     

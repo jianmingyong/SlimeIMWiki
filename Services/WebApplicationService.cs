@@ -4,7 +4,7 @@ using ReactiveUI.SourceGenerators;
 
 namespace SlimeIMWiki.Services;
 
-public sealed partial class WebApplicationService(IJSRuntime jsRuntime) : ReactiveObject, IDisposable, IAsyncDisposable
+public sealed partial class WebApplicationService(IJSRuntime jsRuntime) : ReactiveObject, IWebApplicationService, IDisposable, IAsyncDisposable
 {
     private readonly IJSInProcessRuntime _jsRuntime = (IJSInProcessRuntime) jsRuntime;
     private IJSInProcessObjectReference? _module;

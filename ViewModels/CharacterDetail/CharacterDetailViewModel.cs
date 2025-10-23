@@ -22,32 +22,13 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
                 model => model._jsonDataModelService.ProtectionUnits,
                 (battleUnits, protectionUnits) =>
                 {
-                    if (battleUnits is null || protectionUnits is null) return [];
+                    battleUnits ??= [];
+                    protectionUnits ??= [];
                     return battleUnits.Cast<ICharacterUnit>().Concat(protectionUnits);
                 })
             .SelectMany(units => units)
             .FirstOrDefaultAsync(unit => unit.Permalink.Equals(permalink, StringComparison.InvariantCultureIgnoreCase))
             .ToProperty(this, nameof(Unit), out _unitHelper);
-    }
-
-    public string? GetAttributeIcon(string attributeName)
-    {
-        if (Unit is BattleUnit battleUnit)
-        {
-            return Unit is null ? null : _jsonDataModelService.GetBattleAttribute(battleUnit.Attribute)?.Icon;
-        }
-
-        return null;
-    }
-
-    public string? GetAttackTypeIcon(string attackType)
-    {
-        if (Unit is BattleUnit battleUnit)
-        {
-            return Unit is null ? null : _jsonDataModelService.GetBattleAttackType(battleUnit.AttackType)?.Icon;
-        }
-        
-        return null;
     }
 
     public string? GetTacticTypeImage()

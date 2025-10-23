@@ -1,6 +1,6 @@
 ﻿namespace SlimeIMWiki.Services;
 
-public interface IStorageService
+public interface IWebStorageService
 {
     string? GetFromCookie(string key);
     

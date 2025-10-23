@@ -1,63 +1,67 @@
-﻿<Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
+﻿<Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center" Width="Width.Is100">
     <Image Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
+    
     <Div TextWeight="TextWeight.SemiBold" Style="text-shadow: black 2px 2px">
         [ @Unit.Title ]
     </Div>
+    
     <Div TextWeight="TextWeight.SemiBold" TextSize="TextSize.Large" Style="text-shadow: black 2px 2px">
         @Unit.Name
     </Div>
-    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
-</Div>
-
-<Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
-    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
     
-    <Div Style="text-shadow: black 2px 2px">Protection Unit</Div>
+    <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
 
-    <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
-        <Image Position="Position.Absolute" Width="Width.Em(2)"
-               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
+        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
 
-        <Image Position="Position.Absolute" Width="Width.Em(2)"
-               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+        <Div Style="text-shadow: black 2px 2px">Protection Unit</Div>
 
-        <Image Position="Position.Absolute" Width="Width.Em(2)"
-               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+        <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
+            <Image Position="Position.Absolute" Width="Width.Em(2)"
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
-        @if (Unit.InitialRarity >= 4)
-        {
             <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
-        }
-        else
-        {
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
-        }
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
 
-        @if (Unit.InitialRarity >= 5)
-        {
             <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
-        }
-        else
-        {
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
-        }
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
 
-        @if (Unit.IsEx || Unit.IsAttributeUnbound)
-        {
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
-        }
-        else
-        {
-            <Image Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
-        }
+            @if (Unit.InitialRarity >= 4)
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+            }
+            else
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
+            }
+
+            @if (Unit.InitialRarity >= 5)
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+            }
+            else
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
+            }
+
+            @if (Unit.IsEx || Unit.IsAttributeUnbound)
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
+            }
+            else
+            {
+                <Image Position="Position.Absolute" Width="Width.Em(2)"
+                       Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
+            }
+        </Div>
     </Div>
 </Div>
+
 
 @code
 {

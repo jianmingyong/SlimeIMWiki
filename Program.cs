@@ -25,11 +25,11 @@ builder.Services.AddSingleton(_ => new HttpClient
 });
 builder.Services.UseMicrosoftDependencyResolver();
 
+builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
+builder.Services.AddSingleton<IWebStorageService, WebWebStorageService>();
 builder.Services.AddSingleton<StaticWebRootAssetsMapping>();
-builder.Services.AddSingleton<CharacterListService>();
-builder.Services.AddSingleton<IStorageService, WebStorageService>();
 builder.Services.AddSingleton<JsonDataModelService>();
-builder.Services.AddSingleton<WebApplicationService>();
+builder.Services.AddSingleton<CharacterListService>();
 
 builder.Services.AddTransient<LatestNoticesViewModel>();
 builder.Services.AddTransient<LiveStreamViewModel>();
