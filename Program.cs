@@ -3,6 +3,7 @@ using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.JSInterop;
 using ReactiveUI;
 using SlimeIMWiki;
 using SlimeIMWiki.Services;
@@ -25,8 +26,9 @@ builder.Services.AddSingleton(_ => new HttpClient
 });
 builder.Services.UseMicrosoftDependencyResolver();
 
+builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
-builder.Services.AddSingleton<IWebStorageService, WebWebStorageService>();
+builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
 builder.Services.AddSingleton<StaticWebRootAssetsMapping>();
 builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListService>();

@@ -11,7 +11,6 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public ViewModelActivator Activator { get; } = new();
     
     private readonly IWebStorageService _webStorageService;
-    private readonly IWebApplicationService _webApplicationService;
 
     [ObservableAsProperty(ReadOnly = false)]
     private bool _isOnline;
@@ -25,8 +24,15 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public LatestNoticesViewModel(IWebStorageService webStorageService, IWebApplicationService webApplicationService)
     {
         _webStorageService = webStorageService;
-        _webApplicationService = webApplicationService;
-
+        
+        this.WhenActivated(disposable =>
+        {
+            webApplicationService
+                .WhenAnyValue(service => service.IsOnline)
+                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
+                .DisposeWith(disposable);
+        });
+        
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {
             "NA" => 3,
@@ -36,13 +42,6 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
             var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), value, null)
         }).ToProperty(this, nameof(RegionCode), out _regionCodeHelper);
         
-        this.WhenActivated(disposable =>
-        {
-            this.WhenAnyValue(model => model._webApplicationService.IsOnline)
-                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
-                .DisposeWith(disposable);
-        });
-
         RegionChange(_webStorageService.GetFromCookie(nameof(RegionSelection)) ?? "NA");
     }
 

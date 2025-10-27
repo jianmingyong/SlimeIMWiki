@@ -31,11 +31,6 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
             .ToProperty(this, nameof(Unit), out _unitHelper);
     }
 
-    public string? GetTacticTypeImage()
-    {
-        return Unit is null ? null : _jsonDataModelService.GetTacticType(Unit.TacticsType)?.Image;
-    }
-
     public string? GetForceIcon(string force)
     {
         return Unit is null ? null : _jsonDataModelService.GetForce(force)?.Icon;

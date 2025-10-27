@@ -1,0 +1,140 @@
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.UnitStatusSectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<TextDivider Text="STATS" Margin="Margin.Is2.OnY"/>
+
+<Table Flex="Flex.Shrink.Is1" Background="Background.Body">
+    <TableBody>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
+                         Height="Height.Em(1)">
+                        <Image Width="Width.Max100" Height="Height.Is100"
+                               Source="image/character_info/icHp.png" Text="Hp"/>
+                    </Div>
+                    <Text>Health</Text>
+                </Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Body" TextColor="TextColor.Body"
+                          Style="min-width: 5ch"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.MaxHealth</Div>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
+                         Height="Height.Em(1)">
+                        <Image Width="Width.Max100" Height="Height.Is100"
+                               Source="image/character_info/icAtk.png" Text="Atk"/>
+                    </Div>
+                    <Div>Attack</Div>
+                </Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          Style="min-width: 5ch"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.MaxAttack</Div>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
+                         Height="Height.Em(1)">
+                        <Image Width="Width.Max100" Height="Height.Is100"
+                               Source="image/character_info/icDef.png" Text="Def"/>
+                    </Div>
+                    <Div>Defense</Div>
+                </Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.MaxDefense</Div>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
+                         Height="Height.Em(1)">
+                        <Image Width="Width.Max100" Height="Height.Is100"
+                               Source="image/character_info/icConstruct.png" Text="Output"/>
+                    </Div>
+                    <Div>Output</Div>
+                </Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.MaxOutput</Div>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div>Character Type</Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.CharacterType</Div>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div>Tactics Type</Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Image Source="@ViewModel.TacticTypeIcon"
+                       Text="@Unit.TacticsType"
+                       Height="Height.Em(1.5)"/>
+            </TableRowCell>
+        </TableRow>
+        <TableRow>
+            <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
+                             VerticalAlignment="VerticalAlignment.Middle">
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
+                         Height="Height.Em(1)">
+                        <Icon Name="IconName.Clock"/>
+                    </Div>
+                    <Div>Release</Div>
+                </Div>
+            </TableHeaderCell>
+            <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
+                          TextAlignment="TextAlignment.Center"
+                          VerticalAlignment="VerticalAlignment.Middle">
+                <Div>@Unit.ReleaseDate</Div>
+            </TableRowCell>
+        </TableRow>
+    </TableBody>
+</Table>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ICharacterUnit Unit { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<UnitStatusSectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}

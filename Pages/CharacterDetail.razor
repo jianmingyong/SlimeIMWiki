@@ -3,7 +3,7 @@
 @using SlimeIMWiki.ViewModels.CharacterDetail
 @inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.CharacterDetailViewModel>
 @inject IServiceProvider ServiceProvider
-@inject IJSRuntime JSRuntime
+@inject IJSRuntime Js
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -21,153 +21,33 @@ else
                    Class="returnButton"
                    @onclick="ReturnBack"/>
         </Div>
-        
-        <Div Display="Display.Block.OnDesktop.None" Width="Width.Is50">
+
+        <Div Width="Width.Is50" Display="Display.Block.OnDesktop.None">
             <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
         </Div>
-        
+
         <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
             <Div Flex="Flex.Wrap">
                 @if (ViewModel.Unit is ProtectionUnit protectionUnit)
                 {
-                    <ProtectionUnitName Unit="protectionUnit"/>
+                    <ProtectionUnitNameSection Unit="protectionUnit"/>
                 }
                 else if (ViewModel.Unit is BattleUnit battleUnit)
                 {
-                    <BattleUnitName Unit="battleUnit"/>
+                    <BattleUnitNameSection Unit="battleUnit"/>
                 }
-                
+
                 <Div Display="Display.None.OnDesktop.Block" Width="Width.Is100">
                     <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
                 </Div>
-                
+
                 <Div Flex="Flex.Grow.Is1.Shrink.Is1" Padding="Padding.Is2.OnX">
-                    <TextDivider Text="STATS" Margin="Margin.Is2.OnY"/>
-                    
-                    <Table Flex="Flex.Shrink.Is1" Background="Background.Body">
-                        <TableBody>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
-                                             Height="Height.Em(1)">
-                                            <Image Width="Width.Max100" Height="Height.Is100"
-                                                   Source="image/character_info/icHp.png" Text="Hp"/>
-                                        </Div>
-                                        <Text>Health</Text>
-                                    </Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Body" TextColor="TextColor.Body"
-                                              Style="min-width: 5ch"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.MaxHealth</Div>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
-                                             Height="Height.Em(1)">
-                                            <Image Width="Width.Max100" Height="Height.Is100"
-                                                   Source="image/character_info/icAtk.png" Text="Atk"/>
-                                        </Div>
-                                        <Div>Attack</Div>
-                                    </Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              Style="min-width: 5ch"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.MaxAttack</Div>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
-                                             Height="Height.Em(1)">
-                                            <Image Width="Width.Max100" Height="Height.Is100"
-                                                   Source="image/character_info/icDef.png" Text="Def"/>
-                                        </Div>
-                                        <Div>Defense</Div>
-                                    </Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.MaxDefense</Div>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
-                                             Height="Height.Em(1)">
-                                            <Image Width="Width.Max100" Height="Height.Is100"
-                                                   Source="image/character_info/icConstruct.png" Text="Output"/>
-                                        </Div>
-                                        <Div>Output</Div>
-                                    </Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.MaxOutput</Div>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>Character Type</Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.CharacterType</Div>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>Tactics Type</Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Image Source="@ViewModel.GetTacticTypeImage()"
-                                           Text="@ViewModel.Unit.TacticsType"
-                                           Height="Height.Em(1.5)"/>
-                                </TableRowCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
-                                                 VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1)"
-                                             Height="Height.Em(1)">
-                                            <Icon Name="IconName.Clock"/>
-                                        </Div>
-                                        <Div>Release</Div>
-                                    </Div>
-                                </TableHeaderCell>
-                                <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
-                                              TextAlignment="TextAlignment.Center"
-                                              VerticalAlignment="VerticalAlignment.Middle">
-                                    <Div>@ViewModel.Unit?.ReleaseDate</Div>
-                                </TableRowCell>
-                            </TableRow>
-                        </TableBody>
-                    </Table>
+                    <UnitStatusSection Unit="ViewModel.Unit"/>
                 </Div>
-                
+
                 <Div Flex="Flex.Grow.Is1.Shrink.Is1" Padding="Padding.Is2.OnX">
                     <TextDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
-                    
+
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
                          Gap="Gap.Is2">
                         @switch (ViewModel.Unit)
@@ -210,9 +90,9 @@ else
                             }
                         }
                     </Div>
-                    
+
                     <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
-                    
+
                     <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
                         @if (ViewModel.Unit.SuitedFacilities.Length == 0)
                         {
@@ -272,7 +152,7 @@ else
                         }
                     </Div>
                 </Div>
-                
+
                 @if (ViewModel.Unit is ProtectionUnit unit)
                 {
                     <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
@@ -281,7 +161,8 @@ else
                         <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                             <Div Background="@(new Background("body-secondary"))" Border="Border.RoundedCircle"
                                  Width="Width.Em(4)" Height="Height.Em(4)">
-                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100" Text="Icon"/>
+                                <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100"
+                                       Text="Icon"/>
                             </Div>
                             <Div>
                                 <Div TextWeight="TextWeight.Bold">
@@ -432,7 +313,7 @@ else
     [Parameter]
     [EditorRequired]
     public required string Permalink { get; set; }
-    
+
     protected override void OnInitialized()
     {
         ViewModel = ActivatorUtilities.CreateInstance<CharacterDetailViewModel>(ServiceProvider, Permalink);
@@ -441,6 +322,6 @@ else
 
     private async Task ReturnBack()
     {
-        await JSRuntime.InvokeVoidAsync("history.back");
+        await Js.InvokeVoidAsync("history.back");
     }
 }

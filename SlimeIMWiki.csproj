@@ -31,8 +31,8 @@
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.10" PrivateAssets="all"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="9.0.10"/>
 
-        <PackageReference Include="ReactiveUI.Blazor" Version="22.1.1"/>
-        <PackageReference Include="ReactiveUI.SourceGenerators" Version="2.4.1">
+        <PackageReference Include="ReactiveUI.Blazor" Version="22.2.1" />
+        <PackageReference Include="ReactiveUI.SourceGenerators" Version="2.5.1">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>

@@ -34,7 +34,7 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     [ObservableAsProperty]
     private TacticType[]? _tacticTypes;
-    
+
     [ObservableAsProperty]
     private FieldBuilding[]? _fieldBuildings;
 
@@ -42,7 +42,7 @@ public sealed partial class JsonDataModelService : ReactiveObject
     {
         _httpClient = httpClient;
         _staticWebRootAssetsMapping = staticWebRootAssetsMapping;
-        
+
         GetBattleUnits().ToProperty(this, nameof(BattleUnits), out _battleUnitsHelper);
         GetBattleAttackTypes().ToProperty(this, nameof(BattleAttackTypes), out _battleAttackTypesHelper);
         GetBattleAttributes().ToProperty(this, nameof(BattleAttributes), out _battleAttributesHelper);
@@ -56,74 +56,51 @@ public sealed partial class JsonDataModelService : ReactiveObject
         GetFieldBuildings().ToProperty(this, nameof(FieldBuildings), out _fieldBuildingsHelper);
     }
 
-    public IObservable<BattleUnit[]?> GetBattleUnits()
+    public IObservable<BattleAttackType?> GetObservableBattleAttackType(string attackType)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleUnits, JsonSerializer.Custom.BattleUnitArray, token));
+        return this
+            .WhenAnyValue(service => service.BattleAttackTypes)
+            .Select(attackTypes => attackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public IObservable<BattleAttackType[]?> GetBattleAttackTypes()
+    public IObservable<BattleAttribute?> GetObservableBattleAttribute(string attribute)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttackTypes, JsonSerializer.Custom.BattleAttackTypeArray, token));
+        return this
+            .WhenAnyValue(service => service.BattleAttributes)
+            .Select(attributes => attributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public IObservable<BattleAttribute[]?> GetBattleAttributes()
+    public IObservable<ProtectionAttackType?> GetObservableProtectionAttackType(string attackType)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token));
+        return this
+            .WhenAnyValue(service => service.ProtectionAttackTypes)
+            .Select(attackTypes => attackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public IObservable<ProtectionUnit[]?> GetProtectionUnits()
+    public IObservable<ProtectionAttribute?> GetObservableProtectionAttribute(string attribute)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionUnits, JsonSerializer.Custom.ProtectionUnitArray, token));
+        return this
+            .WhenAnyValue(service => service.ProtectionAttributes)
+            .Select(attributes => attributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public IObservable<ProtectionAttackType[]?> GetProtectionAttackTypes()
+    public IObservable<Force?> GetObservableForce(string force)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttackTypes, JsonSerializer.Custom.ProtectionAttackTypeArray, token));
+        return this
+            .WhenAnyValue(service => service.Forces)
+            .Select(forces => forces?.SingleOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase)));
     }
     
-    public IObservable<ProtectionAttribute[]?> GetProtectionAttributes()
+    public IObservable<TacticType?> GetObservableTacticType(string type)
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttributes, JsonSerializer.Custom.ProtectionAttributeArray, token));
+        return this
+            .WhenAnyValue(service => service.TacticTypes)
+            .Select(tacticTypes => tacticTypes?.SingleOrDefault(t => t.Name.Equals(type, StringComparison.OrdinalIgnoreCase)));
     }
 
-    public IObservable<Force[]?> GetForces()
-    {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.Forces, JsonSerializer.Custom.ForceArray, token));
-    }
-
-    public IObservable<TacticType[]?> GetTacticTypes()
-    {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.TacticTypes, JsonSerializer.Custom.TacticTypeArray, token));
-    }
-
-    public IObservable<FieldBuilding[]?> GetFieldBuildings()
-    {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.FieldBuildings, JsonSerializer.Custom.FieldBuildingArray, token));
-    }
-    
     public IObservable<Livestream?> GetLivestream()
     {
         return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.LiveStream, JsonSerializer.Custom.Livestream, token));
-    }
-
-    public BattleAttackType? GetBattleAttackType(string attackType)
-    {
-        return BattleAttackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
-    }
-
-    public BattleAttribute? GetBattleAttribute(string attribute)
-    {
-        return BattleAttributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
-    }
-
-    public ProtectionAttackType? GetProtectionAttackType(string attackType)
-    {
-        return ProtectionAttackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase));
-    }
-
-    public ProtectionAttribute? GetProtectionAttribute(string attribute)
-    {
-        return ProtectionAttributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase));
     }
 
     public Force? GetForce(string force)
@@ -131,13 +108,53 @@ public sealed partial class JsonDataModelService : ReactiveObject
         return Forces?.SingleOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
     }
 
-    public TacticType? GetTacticType(string tacticType)
-    {
-        return TacticTypes?.SingleOrDefault(t => t.Name.Equals(tacticType, StringComparison.OrdinalIgnoreCase));
-    }
-
     public FieldBuilding? GetFieldBuilding(string fieldBuilding)
     {
         return FieldBuildings?.SingleOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
+    }
+
+    private IObservable<BattleUnit[]?> GetBattleUnits()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleUnits, JsonSerializer.Custom.BattleUnitArray, token));
+    }
+
+    private IObservable<BattleAttackType[]?> GetBattleAttackTypes()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttackTypes, JsonSerializer.Custom.BattleAttackTypeArray, token));
+    }
+
+    private IObservable<BattleAttribute[]?> GetBattleAttributes()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token));
+    }
+
+    private IObservable<ProtectionUnit[]?> GetProtectionUnits()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionUnits, JsonSerializer.Custom.ProtectionUnitArray, token));
+    }
+
+    private IObservable<ProtectionAttackType[]?> GetProtectionAttackTypes()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttackTypes, JsonSerializer.Custom.ProtectionAttackTypeArray, token));
+    }
+
+    private IObservable<ProtectionAttribute[]?> GetProtectionAttributes()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttributes, JsonSerializer.Custom.ProtectionAttributeArray, token));
+    }
+
+    private IObservable<Force[]?> GetForces()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.Forces, JsonSerializer.Custom.ForceArray, token));
+    }
+
+    private IObservable<TacticType[]?> GetTacticTypes()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.TacticTypes, JsonSerializer.Custom.TacticTypeArray, token));
+    }
+
+    private IObservable<FieldBuilding[]?> GetFieldBuildings()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.FieldBuildings, JsonSerializer.Custom.FieldBuildingArray, token));
     }
 }

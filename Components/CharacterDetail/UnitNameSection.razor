@@ -11,10 +11,13 @@
     
     <Image Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
 
-    <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
-        <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png"/>
-
-        <Div Style="text-shadow: black 2px 2px">Protection Unit</Div>
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
+        @if (Unit.HasEx || Unit.HasAttributeUnbound)
+        {
+            <Image Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+        }
+        
+        @Body
 
         <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
             <Image Position="Position.Absolute" Width="Width.Em(2)"
@@ -67,5 +70,9 @@
 {
     [Parameter]
     [EditorRequired]
-    public required ProtectionUnit Unit { get; set; }
+    public required ICharacterUnit Unit { get; set; }
+    
+    [Parameter]
+    [EditorRequired]
+    public required RenderFragment Body { get; set; }
 }

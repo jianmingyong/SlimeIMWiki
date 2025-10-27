@@ -4,15 +4,15 @@ using SlimeIMWiki.Models;
 
 namespace SlimeIMWiki;
 
+[JsonSerializable(typeof(BattleUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-[JsonSerializable(typeof(BattleUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-[JsonSerializable(typeof(Force[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-[JsonSerializable(typeof(Livestream), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(ProtectionUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-[JsonSerializable(typeof(ProtectionUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(Force[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(TacticType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(Livestream), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(FieldBuilding[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 public partial class JsonSerializer : JsonSerializerContext
 {

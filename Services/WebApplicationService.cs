@@ -1,20 +1,21 @@
-﻿using Microsoft.JSInterop;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.JSInterop;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 
 namespace SlimeIMWiki.Services;
 
-public sealed partial class WebApplicationService(IJSRuntime jsRuntime) : ReactiveObject, IWebApplicationService, IDisposable, IAsyncDisposable
+[method: DynamicDependency(nameof(SetIsOnline))]
+public sealed partial class WebApplicationService(IJSInProcessRuntime js) : ReactiveObject, IWebApplicationService, IDisposable, IAsyncDisposable
 {
-    private readonly IJSInProcessRuntime _jsRuntime = (IJSInProcessRuntime) jsRuntime;
     private IJSInProcessObjectReference? _module;
 
-    [Reactive]
+    [Reactive(SetModifier = AccessModifier.Private)]
     private bool _isOnline = true;
 
     public async Task RegisterService()
     {
-        _module = await _jsRuntime.InvokeAsync<IJSInProcessObjectReference?>("import", "./js/web-application-service.js");
+        _module = await js.InvokeAsync<IJSInProcessObjectReference?>("import", "/js/web-application-service.js");
         IsOnline = _module?.Invoke<bool>("isOnline") ?? true;
         _module?.InvokeVoid("registerEventListener", DotNetObjectReference.Create(this));
     }

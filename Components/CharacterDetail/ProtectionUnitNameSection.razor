@@ -1,0 +1,45 @@
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.ProtectionUnitNameSectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<UnitNameSection Unit="Unit">
+    <Body>
+    @foreach (var icon in ViewModel.ForceIcons)
+    {
+        if (icon is not null)
+        {
+            <Image @key="icon" Width="Width.Em(2)" Source="@icon"/>
+        }
+    }
+
+    @foreach (var icon in ViewModel.AttributeIcons)
+    {
+        if (icon is not null)
+        {
+            <Image @key="icon" Width="Width.Em(2)" Source="@icon"/>
+        }
+    }
+
+    @if (ViewModel.AttackTypeIcon is not null)
+    {
+        <Image Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
+    }
+
+    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png" Text="Protection Unit"/>
+    </Body>
+</UnitNameSection>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<ProtectionUnitNameSectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}

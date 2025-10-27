@@ -1,0 +1,34 @@
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.BattleUnitNameSectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<UnitNameSection Unit="Unit">
+    <Body>
+    @if (ViewModel.AttributeIcon is not null)
+    {
+        <Image Width="Width.Em(2)" Source="@ViewModel.AttributeIcon"/>
+    }
+
+    @if (ViewModel.AttackTypeIcon is not null)
+    {
+        <Image Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
+    }
+
+    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png" Text="Battle Unit"/>
+    </Body>
+</UnitNameSection>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required BattleUnit Unit { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<BattleUnitNameSectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}
