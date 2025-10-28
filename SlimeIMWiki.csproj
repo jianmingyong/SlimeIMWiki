@@ -19,11 +19,18 @@
         <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
 
         <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
+        
+        <PublishViaGHAction>false</PublishViaGHAction>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup Condition="'$(PublishViaGHAction)' == 'false'">
         <ServiceWorker Include="wwwroot\service-worker.js"
                        PublishedContent="wwwroot\service-worker.published.js" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(PublishViaGHAction)' == 'true'">
+        <ServiceWorker Include="wwwroot\service-worker.js"
+                       PublishedContent="wwwroot\service-worker-gh.published.js" />
     </ItemGroup>
 
     <ItemGroup>
