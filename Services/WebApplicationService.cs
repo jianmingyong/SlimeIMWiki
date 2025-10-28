@@ -15,7 +15,7 @@ public sealed partial class WebApplicationService(IJSInProcessRuntime js) : Reac
 
     public async Task RegisterService()
     {
-        _module = await js.InvokeAsync<IJSInProcessObjectReference?>("import", "/js/web-application-service.js");
+        _module = await js.InvokeAsync<IJSInProcessObjectReference?>("import", "./js/web-application-service.js");
         IsOnline = _module?.Invoke<bool>("isOnline") ?? true;
         _module?.InvokeVoid("registerEventListener", DotNetObjectReference.Create(this));
     }
