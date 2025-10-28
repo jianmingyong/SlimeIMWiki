@@ -82,7 +82,7 @@
       "Increases Light Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -118,7 +118,7 @@
       "Increases Dark Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -142,7 +142,7 @@
       "Increases Wind Attribute effect level by 1"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 11 Episode 7",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -180,7 +180,7 @@
       "Increases Water Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -230,7 +230,7 @@
       "Increases Dark Attribute effect level by 1"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 9 Episode 14",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -254,7 +254,7 @@
       "Increases Light Attribute effect level by 1"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10\nMain Story Chapter 10 Episode 10",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -304,7 +304,7 @@
       "Changes non-Divine Protection soul x3 into Soul of Divine Protection"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 2 #29 Past Sins\nSeason 2 #36 You Can Go Home",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -340,7 +340,7 @@
       "Increases Wind Attribute effect level by 2"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -364,7 +364,7 @@
       "Increases Space Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -373,7 +373,9 @@
     "icon": "image/heartprints/skill_still_2105001_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increases protection gauge by 5"
+      "Increases protection gauge by 5",
+      "Increases protection gauge by 10",
+      "Increases protection gauge by 15"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #8 The Destined One\nSeason 2 #48 Vampire Progenitor's True Form\nSeason 3 #50 Hinata, Promoted to Captain of Crusaders",
     "unlock_material": "",
@@ -388,7 +390,7 @@
       "Increases Fire Attribute effect level by 2"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x10",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
