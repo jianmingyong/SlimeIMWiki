@@ -1,16 +1,29 @@
 ﻿@page "/heartscape"
+@using SlimeIMWiki.Components.Heartscape
 
 <Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedStart"
                     Color="@("" == "Battle" ? Color.Light : Color.Dark)">
-                <Text Display="Display.None.Block.OnTablet">Season 1</Text>
+                <Text>Season 1</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
                     Color="@("" == "Protection" ? Color.Light : Color.Dark)">
-                <Text Display="Display.None.Block.OnTablet">Season 2</Text>
+                <Text>Season 2</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@("" == "Protection" ? Color.Light : Color.Dark)">
+                <Text>Season 3</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
+                    Color="@("" == "Protection" ? Color.Light : Color.Dark)">
+                <Text>Other</Text>
             </Button>
         </Buttons>
     </Div>
+</Div>
+
+<Div Background="Background.Body" Padding="Padding.Is2" Margin="Margin.Is2.FromBottom" Border="Border.Light.OnAll.Is1">
+    <HeartscapeSection/>
 </Div>

@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<Layout Overflow="Overflow.Auto">
+<Layout>
     <LayoutHeader Fixed>
         <Bar Breakpoint="Breakpoint.Desktop" Background="Background.Body" ThemeContrast="ThemeContrast.Dark"
              NavigationBreakpoint="Breakpoint.Desktop" Visible="false">
@@ -14,7 +14,7 @@
             <BarMenu Padding="Padding.Is3.OnX">
                 <BarStart>
                     <BarItem>
-                        <BarLink To="">Home</BarLink>
+                        <BarLink To="/">Home</BarLink>
                     </BarItem>
                     <BarItem>
                         <BarLink To="Characters">Characters</BarLink>
@@ -23,7 +23,7 @@
                         <BarLink To="Heartscape">Heartscape</BarLink>
                     </BarItem>
                     <BarItem>
-                        <BarLink To="https://slime-im-team-builder.vercel.app/">Team Builder</BarLink>
+                        <BarLink To="https://slime-im-team-builder.vercel.app/" Target="Target.Blank">Team Builder</BarLink>
                     </BarItem>
                 </BarStart>
                 <BarEnd>

@@ -9,14 +9,14 @@
 <Div Flex="Flex.Wrap.JustifyContent.Between" Gap="Gap.Is2.OnY" Margin="Margin.Is2.FromBottom">
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedStart"
                     Color="@(ViewModel.DisplayCategory == "Battle" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Battle")">
                 <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
             </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
                     Color="@(ViewModel.DisplayCategory == "Protection" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Protection")">
@@ -28,7 +28,8 @@
     
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
-            <Button Size="Size.Small" Color="Color.Dark" Command="ViewModel.ChangeCharacterUnitsOrderCommand">
+            <Button Size="Size.Small" Color="Color.Dark" Border="Border.RoundedStart"
+                    Command="ViewModel.ChangeCharacterUnitsOrderCommand">
                 <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
@@ -69,7 +70,7 @@
                 <Icon Name="IconName.Star"/>
                 <Text Display="Display.None.Block.OnTablet">Rarity</Text>
             </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
                     Color="@(ViewModel.CharacterUnitsCategory == "Name" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Name")">
@@ -82,7 +83,7 @@
 </Div>
 
 <Div Background="Background.Body" Position="Position.Relative" 
-     Style="height: calc(100vh - 5.5rem); overflow-y: scroll"
+     Style="height: calc(100vh - 1rem); overflow-y: scroll"
      @onscroll="OnScrollAsync" ElementId="UnitScrollContainer">
     
     <Div Style="@($"height: calc({_unitContainerHeight}px + 1rem)")">
