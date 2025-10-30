@@ -21,7 +21,7 @@ public class BaseFilterComponent : ComponentBase
 
         if (!IsRemoveMode)
         {
-            if (!CharacterListService.Filters.Contains(Filter))
+            if (CharacterListService.Filters.All(filter => filter.Key != Filter.Key))
             {
                 CharacterListService.Filters.Add(Filter);
             }

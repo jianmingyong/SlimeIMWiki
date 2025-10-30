@@ -1,10 +1,8 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@Attribute.Name" DisplayText="@Attribute.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ItemContent>
-        <Image Class="filterIcon" Source="@Attribute.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
-    </ItemContent>
+<FilterComponent Key="@($"{nameof(Attribute)}_{Attribute.Name}")" DisplayText="@Attribute.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Image Class="filterIcon" Source="@Attribute.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
 @code
@@ -15,7 +13,7 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter(unit =>
+        Filter ??= new Filter($"{nameof(Attribute)}_{Attribute.Name}", unit =>
             {
                 return unit switch
                 {

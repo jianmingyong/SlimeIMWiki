@@ -8,7 +8,7 @@ using SlimeIMWiki.Models;
 
 namespace SlimeIMWiki.Services;
 
-public record Filter(Func<ICharacterUnit, bool> FilterFunction, RenderFragment RemoveRenderFragment);
+public record Filter(string Key, Func<ICharacterUnit, bool> FilterFunction, RenderFragment RemoveRenderFragment);
 
 public sealed partial class CharacterListService : ReactiveObject
 {

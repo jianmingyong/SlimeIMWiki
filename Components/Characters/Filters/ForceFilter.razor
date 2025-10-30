@@ -1,11 +1,9 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@Force.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ItemContent>
-        <Image Source="@Force.Icon" Width="Width.Em(2)" Text="@Force.Name"/>
-        @Force.Name
-    </ItemContent>
+<FilterComponent Key="@($"{nameof(Force)}_{Force.Name}")" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Image Source="@Force.Icon" Width="Width.Em(2)" Text="@Force.Name"/>
+    <Text>@Force.Name</Text>
 </FilterComponent>
 
 @code
@@ -16,7 +14,7 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter(unit =>
+        Filter ??= new Filter($"{nameof(Force)}_{Force.Name}", unit =>
             {
                 return unit switch
                 {

@@ -1,0 +1,25 @@
+﻿@using SlimeIMWiki.Services
+@inherits BaseFilterComponent
+
+<FilterComponent Key="@($"{nameof(FieldBuilding)}_{FieldBuilding.Name}")" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Image Source="@FieldBuilding.Icon" Width="Width.Em(2)" Height="Height.Em(2)" Text="@FieldBuilding.Name"/>
+    <Text>@FieldBuilding.Name</Text>
+</FilterComponent>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required FieldBuilding FieldBuilding { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter($"{nameof(FieldBuilding)}_{FieldBuilding.Name}", unit =>
+            {
+                return unit.SuitedFacilities.Any(s => s.Equals(FieldBuilding.Name, StringComparison.OrdinalIgnoreCase));
+            },
+            @<FieldBuildingFilter FieldBuilding="FieldBuilding" IsRemoveMode="true" Filter="Filter"/>);
+
+        base.OnInitialized();
+    }
+}

@@ -1,10 +1,9 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@AttackType.Name" DisplayText="@AttackType.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ItemContent>
-        <Image Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
-    </ItemContent>
+<FilterComponent Key="@($"{nameof(AttackType)}_{AttackType.Name}")" DisplayText="@AttackType.Name"
+                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Image Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
 @code
@@ -15,7 +14,7 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter(unit =>
+        Filter ??= new Filter($"{nameof(AttackType)}_{AttackType.Name}", unit =>
             {
                 return unit switch
                 {

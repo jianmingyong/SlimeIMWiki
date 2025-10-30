@@ -1,7 +1,7 @@
 ﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.CharacterSectionViewModel>
 @using ReactiveUI
 @implements IAsyncDisposable
-@inject IJSRuntime JS
+@inject IJSInProcessRuntime JS
 @inject ILogger<CharacterSection> Logger
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
@@ -82,11 +82,11 @@
     </Div>
 </Div>
 
-<Div Background="Background.Body" Position="Position.Relative" 
-     Style="height: calc(100vh - 1rem); overflow-y: scroll"
-     @onscroll="OnScrollAsync" ElementId="UnitScrollContainer">
+<Div Background="Background.Body" Position="Position.Relative"
+     Style="height: calc(100vh - 56px - 2em - 1.5rem); overflow-y: scroll"
+     @onscroll="OnScroll" ElementId="UnitScrollContainer">
     
-    <Div Style="@($"height: calc({_unitContainerHeight}px + 1rem)")">
+    <Div Style="@($"height: {_unitContainerHeight}px")">
         <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop.Is3.FromBottom"
              Position="Position.Absolute" Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
             @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
@@ -106,7 +106,7 @@
 
 @code
 {
-    private IJSObjectReference? _module;
+    private IJSInProcessObjectReference? _module;
     private int _renderedHashCode;
 
     private float _unitScrollContainerWidth;
@@ -114,11 +114,11 @@
     private float _unitContainerHeight;
     private float _scrollPosition;
 
-    private int _itemWidth = 100;
-    private int _itemHeight = 100;
-    private int _itemWidthGap = 16;
-    private int _itemHeightGap = 48;
-    private int _overscanRowCount = 2;
+    private const int _itemWidth = 100;
+    private const int _itemHeight = 100;
+    private const int _itemWidthGap = 16;
+    private const int _itemHeightGap = 48;
+    private const int _overscanRowCount = 2;
     private int _itemsPerRow = 1;
     private int _visibleRowCount = 1;
 
@@ -140,30 +140,26 @@
     {
         if (firstRender)
         {
-            _module = await JS.InvokeAsync<IJSObjectReference>("import", "./Components/Characters/CharacterSection.razor.js");
-            await OnScrollAsync();
+            _module = await JS.InvokeAsync<IJSInProcessObjectReference?>("import", "./Components/Characters/CharacterSection.razor.js");
+            
+            OnScroll();
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(_ => UpdateVisibleItems());
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
-
-        if (!firstRender)
-        {
-            Logger.LogTrace("Component has re-render");
-        }
         
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    private async Task OnScrollAsync()
+    private void OnScroll()
     {
         if (_module is null) return;
 
-        _unitScrollContainerWidth = await _module.InvokeAsync<float>("getElementWidth", "UnitScrollContainer");
-        _unitScrollContainerHeight = await _module.InvokeAsync<float>("getElementHeight", "UnitScrollContainer");
-        _scrollPosition = await _module.InvokeAsync<float>("getScrollPosition", "UnitScrollContainer");
-
+        _unitScrollContainerWidth = _module.Invoke<float>("getElementWidth", "UnitScrollContainer");
+        _unitScrollContainerHeight = _module.Invoke<float>("getElementHeight", "UnitScrollContainer");
+        _scrollPosition = _module.Invoke<float>("getScrollPosition", "UnitScrollContainer");
+        
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
         Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
 

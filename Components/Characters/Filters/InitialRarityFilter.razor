@@ -1,32 +1,31 @@
 ﻿@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@Rarity.ToString()" DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ItemContent>
-        <Div Class="filterIcon" Position="Position.Relative"
-             Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
+<FilterComponent Key="@($"{nameof(Rarity)}_{Rarity}")" DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode"
+                 OnClick="Execute">
+    <Div Class="filterIcon" Position="Position.Relative"
+         Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
+        <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+
+        <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
+
+        <Image Position="Position.Absolute" Width="Width.Em(1.5)"
+               Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
+
+        @if (Rarity > 3)
+        {
             <Image Position="Position.Absolute" Width="Width.Em(1.5)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
+        }
 
+        @if (Rarity > 4)
+        {
             <Image Position="Position.Absolute" Width="Width.Em(1.5)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 0.75em"/>
-
-            <Image Position="Position.Absolute" Width="Width.Em(1.5)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 1.5em"/>
-
-            @if (Rarity > 3)
-            {
-                <Image Position="Position.Absolute" Width="Width.Em(1.5)"
-                       Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 2.25em"/>
-            }
-
-            @if (Rarity > 4)
-            {
-                <Image Position="Position.Absolute" Width="Width.Em(1.5)"
-                       Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 3em"/>
-            }
-        </Div>
-    </ItemContent>
+                   Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 3em"/>
+        }
+    </Div>
 </FilterComponent>
 
 @code
@@ -34,10 +33,10 @@
     [Parameter]
     [EditorRequired]
     public int Rarity { get; set; }
-    
+
     protected override void OnInitialized()
     {
-        Filter ??= new Filter(unit => unit.InitialRarity == Rarity,
+        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", unit => unit.InitialRarity == Rarity,
             @<InitialRarityFilter Rarity="Rarity" IsRemoveMode="true" Filter="Filter"/>);
 
         base.OnInitialized();

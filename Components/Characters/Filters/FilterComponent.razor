@@ -5,7 +5,7 @@
          @onclick="OnClick">
         <Icon Name="IconName.Times"/>
         
-        @ItemContent
+        @ChildContent
         
         <Div>@DisplayText</Div>
     </Div>
@@ -13,7 +13,7 @@
 else
 {
     <Div @key="Key" @onclick="OnClick">
-        @ItemContent
+        @ChildContent
     </Div>
 }
 
@@ -25,7 +25,7 @@ else
     
     [Parameter]
     [EditorRequired]
-    public required RenderFragment ItemContent { get; set; }
+    public required RenderFragment ChildContent { get; set; }
     
     [Parameter]
     [EditorRequired]
