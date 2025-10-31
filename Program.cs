@@ -21,15 +21,14 @@ builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
 builder.Services.AddSingleton(_ => new HttpClient
 {
-    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress),
-    Timeout = TimeSpan.FromMinutes(5)
+    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
 });
 builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
-builder.Services.AddSingleton<StaticWebRootAssetsMapping>();
+builder.Services.AddSingleton<StaticWebRootAssets>();
 builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListService>();
 

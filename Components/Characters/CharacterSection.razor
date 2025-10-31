@@ -13,14 +13,14 @@
                     Color="@(ViewModel.DisplayCategory == "Battle" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Battle")">
-                <Image Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
                     Color="@(ViewModel.DisplayCategory == "Protection" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Protection")">
-                <Image Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Protection Units</Text>
             </Button>
         </Buttons>
@@ -43,7 +43,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Health" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Health")">
-                <Image Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
+                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
                        Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Health</Text>
             </Button>
@@ -51,7 +51,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Attack" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Attack")">
-                <Image Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
+                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
                        Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Attack</Text>
             </Button>
@@ -59,7 +59,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Defense" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Defense")">
-                <Image Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
+                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
                        Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Defense</Text>
             </Button>
@@ -74,7 +74,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Name" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Name")">
-                <Image Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
+                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
                        Style="@(ViewModel.CharacterUnitsCategory == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Name</Text>
             </Button>

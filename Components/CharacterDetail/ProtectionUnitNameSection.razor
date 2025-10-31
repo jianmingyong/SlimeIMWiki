@@ -10,7 +10,7 @@
     {
         if (icon is not null)
         {
-            <Image @key="icon" Width="Width.Em(2)" Source="@icon"/>
+            <ImageProxy @key="icon" Width="Width.Em(2)" Source="@icon"/>
         }
     }
 
@@ -18,16 +18,16 @@
     {
         if (icon is not null)
         {
-            <Image @key="icon" Width="Width.Em(2)" Source="@icon"/>
+            <ImageProxy @key="icon" Width="Width.Em(2)" Source="@icon"/>
         }
     }
 
     @if (ViewModel.AttackTypeIcon is not null)
     {
-        <Image Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
+        <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
     }
 
-    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png" Text="Protection Unit"/>
+    <ImageProxy Width="Width.Em(2)" Source="image/character_types/icCharaTypeBless.png" Text="Protection Unit"/>
     </Body>
 </UnitNameSection>
 

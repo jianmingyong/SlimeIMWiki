@@ -8,15 +8,15 @@
     <Body>
     @if (ViewModel.AttributeIcon is not null)
     {
-        <Image Width="Width.Em(2)" Source="@ViewModel.AttributeIcon"/>
+        <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttributeIcon"/>
     }
 
     @if (ViewModel.AttackTypeIcon is not null)
     {
-        <Image Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
+        <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttackTypeIcon"/>
     }
 
-    <Image Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png" Text="Battle Unit"/>
+    <ImageProxy Width="Width.Em(2)" Source="image/character_types/icCharaTypePc.png" Text="Battle Unit"/>
     </Body>
 </UnitNameSection>
 

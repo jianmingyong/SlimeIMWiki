@@ -492,5 +492,18 @@
     "unlock_condition": "100 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "release_date": "2025-10-16"
+  },
+  {
+    "name": "Demon Lord and Dragon",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500082_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increase charge-type characters' critical damage by 5% (Turns: 1)",
+      "Increase charge-type characters' critical damage by 10% (Turns: 1)"
+    ],
+    "unlock_condition": "Complete Wild Winds of Kindred Catastrophe Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-30"
   }
 ]

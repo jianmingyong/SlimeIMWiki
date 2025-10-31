@@ -15,7 +15,7 @@ else
 {
     <Div Flex="Flex.Wrap" Margin="Margin.Is5.FromBottom">
         <Div Width="Width.Is100">
-            <Image Width="Width.Rem(4)" Height="Height.Rem(4)"
+            <ImageProxy Width="Width.Rem(4)" Height="Height.Rem(4)"
                    Source="image/character_info/btnReturnNormal.png"
                    Text="Back"
                    Class="returnButton"
@@ -23,7 +23,7 @@ else
         </Div>
 
         <Div Width="Width.Is50" Display="Display.Block.OnDesktop.None">
-            <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
+            <ImageProxy Source="@ViewModel.Unit.Image" Fluid="true"/>
         </Div>
 
         <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
@@ -40,7 +40,7 @@ else
                 </Div>
 
                 <Div Display="Display.None.OnDesktop.Block" Width="Width.Is100">
-                    <Image Source="@ViewModel.Unit.Image" Fluid="true"/>
+                    <ImageProxy Source="@ViewModel.Unit.Image" Fluid="true"/>
                 </Div>
 
                 <Div Flex="Flex.Wrap" Width="Width.Is100" Gap="Gap.Is2">
@@ -60,7 +60,7 @@ else
                                     foreach (var force in protectionUnit1.Forces)
                                     {
                                         <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                            <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                                            <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                                    Source="@ViewModel.GetForceIcon(force)" Text="Icon"/>
                                             <Div>@force</Div>
                                         </Div>
@@ -74,7 +74,7 @@ else
                                     foreach (var force in battleUnit.Forces)
                                     {
                                         <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                            <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                                            <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                                    Source="@ViewModel.GetForceIcon(force)" Text="Icon"/>
                                             <Div>@force</Div>
                                         </Div>
@@ -106,7 +106,7 @@ else
                                 if (ViewModel.Unit.SuitedFacilities.Length >= 1)
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                                        <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                                Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[0])"
                                                Text="Icon"/>
                                         <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[0]</Div>
@@ -131,7 +131,7 @@ else
                                 if (ViewModel.Unit.SuitedFacilities.Length >= 2)
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <Image Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                                        <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
                                                Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[1])"
                                                Text="Icon"/>
                                         <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[1]</Div>
@@ -165,7 +165,7 @@ else
                         <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                             <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                    <Image Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100"
+                                    <ImageProxy Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100"
                                            Text="Icon"/>
                                 </Div>
                                 <Div>
@@ -201,7 +201,7 @@ else
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                     @if (!string.IsNullOrEmpty(unit.ProtectionSkillIcon))
                                     {
-                                        <Image Source="@unit.ProtectionSkillIcon" Width="Width.Is100" Text="Icon"/>
+                                        <ImageProxy Source="@unit.ProtectionSkillIcon" Width="Width.Is100" Text="Icon"/>
                                     }
                                 </Div>
                                 <Div>
@@ -230,7 +230,7 @@ else
                             <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                 @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                                 {
-                                    <Image Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
+                                    <ImageProxy Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
                                 }
                             </Div>
                             <Div>
@@ -260,7 +260,7 @@ else
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                     @if (!string.IsNullOrEmpty(battleUnit1.TraitTwoIcon))
                                     {
-                                        <Image Source="@battleUnit1.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
+                                        <ImageProxy Source="@battleUnit1.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
                                     }
                                 </Div>
                                 <Div>
@@ -291,7 +291,7 @@ else
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                     @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                                     {
-                                        <Image Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
+                                        <ImageProxy Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
                                     }
                                 </Div>
                                 <Div>

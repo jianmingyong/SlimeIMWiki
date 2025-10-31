@@ -2,7 +2,7 @@
 @inherits BaseFilterComponent
 
 <FilterComponent Key="@($"{nameof(Attribute)}_{Attribute.Name}")" DisplayText="@Attribute.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <Image Class="filterIcon" Source="@Attribute.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+    <ImageProxy Class="filterIcon" Source="@Attribute.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
 @code

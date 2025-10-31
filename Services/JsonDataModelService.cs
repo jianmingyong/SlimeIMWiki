@@ -9,7 +9,7 @@ namespace SlimeIMWiki.Services;
 public sealed partial class JsonDataModelService : ReactiveObject
 {
     private readonly HttpClient _httpClient;
-    private readonly StaticWebRootAssetsMapping _staticWebRootAssetsMapping;
+    private readonly StaticWebRootAssets _staticWebRootAssets;
 
     [ObservableAsProperty]
     private BattleUnit[]? _battleUnits;
@@ -38,10 +38,10 @@ public sealed partial class JsonDataModelService : ReactiveObject
     [ObservableAsProperty]
     private FieldBuilding[]? _fieldBuildings;
 
-    public JsonDataModelService(HttpClient httpClient, StaticWebRootAssetsMapping staticWebRootAssetsMapping)
+    public JsonDataModelService(HttpClient httpClient, StaticWebRootAssets staticWebRootAssets)
     {
         _httpClient = httpClient;
-        _staticWebRootAssetsMapping = staticWebRootAssetsMapping;
+        _staticWebRootAssets = staticWebRootAssets;
 
         GetBattleUnits().ToProperty(this, nameof(BattleUnits), out _battleUnitsHelper);
         GetBattleAttackTypes().ToProperty(this, nameof(BattleAttackTypes), out _battleAttackTypesHelper);
@@ -100,7 +100,7 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     public IObservable<Livestream?> GetLivestream()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.LiveStream, JsonSerializer.Custom.Livestream, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.LiveStream, JsonSerializer.Custom.Livestream, token));
     }
 
     public Force? GetForce(string force)
@@ -115,46 +115,46 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     private IObservable<BattleUnit[]?> GetBattleUnits()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleUnits, JsonSerializer.Custom.BattleUnitArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleUnits, JsonSerializer.Custom.BattleUnitArray, token));
     }
 
     private IObservable<BattleAttackType[]?> GetBattleAttackTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttackTypes, JsonSerializer.Custom.BattleAttackTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttackTypes, JsonSerializer.Custom.BattleAttackTypeArray, token));
     }
 
     private IObservable<BattleAttribute[]?> GetBattleAttributes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token));
     }
 
     private IObservable<ProtectionUnit[]?> GetProtectionUnits()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionUnits, JsonSerializer.Custom.ProtectionUnitArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionUnits, JsonSerializer.Custom.ProtectionUnitArray, token));
     }
 
     private IObservable<ProtectionAttackType[]?> GetProtectionAttackTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttackTypes, JsonSerializer.Custom.ProtectionAttackTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttackTypes, JsonSerializer.Custom.ProtectionAttackTypeArray, token));
     }
 
     private IObservable<ProtectionAttribute[]?> GetProtectionAttributes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.ProtectionAttributes, JsonSerializer.Custom.ProtectionAttributeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttributes, JsonSerializer.Custom.ProtectionAttributeArray, token));
     }
 
     private IObservable<Force[]?> GetForces()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.Forces, JsonSerializer.Custom.ForceArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.Forces, JsonSerializer.Custom.ForceArray, token));
     }
 
     private IObservable<TacticType[]?> GetTacticTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.TacticTypes, JsonSerializer.Custom.TacticTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.TacticTypes, JsonSerializer.Custom.TacticTypeArray, token));
     }
 
     private IObservable<FieldBuilding[]?> GetFieldBuildings()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssetsMapping.FieldBuildings, JsonSerializer.Custom.FieldBuildingArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.FieldBuildings, JsonSerializer.Custom.FieldBuildingArray, token));
     }
 }

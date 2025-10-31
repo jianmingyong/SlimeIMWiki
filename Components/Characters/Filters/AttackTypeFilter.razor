@@ -3,7 +3,7 @@
 
 <FilterComponent Key="@($"{nameof(AttackType)}_{AttackType.Name}")" DisplayText="@AttackType.Name"
                  IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <Image Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+    <ImageProxy Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
 @code
