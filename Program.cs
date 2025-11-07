@@ -27,6 +27,7 @@ builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
+builder.Services.AddSingleton<IEagerLoadJavaScriptModule>(provider => (IEagerLoadJavaScriptModule) provider.GetRequiredService<IWebApplicationService>());
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
 builder.Services.AddSingleton<StaticWebRootAssets>();
 builder.Services.AddSingleton<JsonDataModelService>();

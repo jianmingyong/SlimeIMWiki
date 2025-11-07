@@ -31,8 +31,6 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     {
         _webStorageService = webStorageService;
         
-        RegionChange(_webStorageService.GetFromCookie(nameof(TimerSelection)) ?? "NA");
-        
         this.WhenActivated(disposable =>
         {
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
@@ -40,13 +38,18 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
                 UpdateTimers();
             }).DisposeWith(disposable);
         });
+
+        Observable
+            .FromAsync(() => _webStorageService.GetFromCookie(nameof(TimerSelection)).AsTask())
+            .Subscribe(s => _ = RegionChange(s ?? "NA"));
     }
     
     [ReactiveCommand]
-    private void RegionChange(string region)
+    private async Task RegionChange(string region)
     {
         TimerSelection = region;
-        _webStorageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
+        
+        await _webStorageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
         
         switch (region)
         {

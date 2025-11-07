@@ -2,7 +2,5 @@
 
 public interface IWebApplicationService
 {
-    bool IsOnline { get; }
-
-    Task RegisterService();
+    IObservable<bool> IsOnline { get; }
 }

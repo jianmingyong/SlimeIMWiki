@@ -1,38 +1,29 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using Microsoft.JSInterop;
-using ReactiveUI;
-using ReactiveUI.SourceGenerators;
 
 namespace SlimeIMWiki.Services;
 
 [method: DynamicDependency(nameof(SetIsOnline))]
-public sealed partial class WebApplicationService(IJSInProcessRuntime js) : ReactiveObject, IWebApplicationService, IDisposable, IAsyncDisposable
+public class WebApplicationService(IJSInProcessRuntime js) : BaseJavaScriptModule(js), IWebApplicationService
 {
-    private IJSInProcessObjectReference? _module;
+    public IObservable<bool> IsOnline => _isOnline.AsObservable();
 
-    [Reactive(SetModifier = AccessModifier.Private)]
-    private bool _isOnline = true;
+    protected override string ModuleFile => "./js/web-application-service.js";
 
-    public async Task RegisterService()
-    {
-        _module = await js.InvokeAsync<IJSInProcessObjectReference?>("import", "./js/web-application-service.js");
-        IsOnline = _module?.Invoke<bool>("isOnline") ?? true;
-        _module?.InvokeVoid("registerEventListener", DotNetObjectReference.Create(this));
-    }
+    private BehaviorSubject<bool> _isOnline { get; } = new(false);
 
     [JSInvokable]
-    public void SetIsOnline(bool isOnline)
+    public void SetIsOnline(bool value)
     {
-        IsOnline = isOnline;
+        _isOnline.OnNext(value);
     }
 
-    public void Dispose()
+    protected override ValueTask OnInitializedModule(IJSInProcessObjectReference module)
     {
-        _module?.Dispose();
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        if (_module != null) await _module.DisposeAsync();
+        _isOnline.OnNext(module.Invoke<bool>("isOnline"));
+        module.InvokeVoid("registerEventListener", DotNetObjectReference.Create(this));
+        return ValueTask.CompletedTask;
     }
 }

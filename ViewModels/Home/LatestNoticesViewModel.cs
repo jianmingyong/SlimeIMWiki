@@ -28,10 +28,14 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
         this.WhenActivated(disposable =>
         {
             webApplicationService
-                .WhenAnyValue(service => service.IsOnline)
+                .WhenAnyObservable(service => service.IsOnline)
                 .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
                 .DisposeWith(disposable);
         });
+        
+        Observable
+            .FromAsync(() => _webStorageService.GetFromCookie(nameof(RegionSelection)).AsTask())
+            .Subscribe(s => RegionChange(s ?? "NA"));
         
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {
@@ -41,14 +45,12 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
             "Japan" => 1,
             var _ => throw new ArgumentOutOfRangeException(nameof(RegionSelection), value, null)
         }).ToProperty(this, nameof(RegionCode), out _regionCodeHelper);
-        
-        RegionChange(_webStorageService.GetFromCookie(nameof(RegionSelection)) ?? "NA");
     }
 
     [ReactiveCommand]
-    private void RegionChange(string region)
+    private async Task RegionChange(string region)
     {
         RegionSelection = region;
-        _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
+        await _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
     }
 }

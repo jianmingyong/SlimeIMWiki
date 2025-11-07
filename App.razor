@@ -1,6 +1,6 @@
 ﻿@using SlimeIMWiki.Layouts
 @using SlimeIMWiki.Services
-@inject IWebApplicationService WebApplicationService
+@inject IEnumerable<IEagerLoadJavaScriptModule> EagerModules
 
 <Blazorise.ThemeProvider Theme="@theme">
     <Router AppAssembly="typeof(App).Assembly">
@@ -59,7 +59,10 @@
     {
         if (firstRender)
         {
-            await WebApplicationService.RegisterService();
+            foreach (var module in EagerModules)
+            {
+                await module.EagerLoadJavaScriptModule();
+            }
         }
     }
 }

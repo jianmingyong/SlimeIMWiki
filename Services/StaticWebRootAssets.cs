@@ -21,9 +21,8 @@ public class StaticWebRootAssets(IConfiguration configuration)
     private readonly bool _useContentDeliveryNetwork = configuration.GetValue<bool>("StaticWebRootAssetsMapping:UseContentDeliveryNetwork");
     private readonly string? _contentDeliveryNetwork = configuration.GetValue<string?>("StaticWebRootAssetsMapping:ContentDeliveryNetwork");
 
-    public Uri ResolveUri([StringSyntax(StringSyntaxAttribute.Uri)] string? url)
+    public Uri ResolveUri([StringSyntax(StringSyntaxAttribute.Uri)] string url)
     {
-        if (url is null) return new Uri("");
         if (!_useContentDeliveryNetwork || _contentDeliveryNetwork is null) return new Uri(url, UriKind.Relative);
         var cdn = new Uri(_contentDeliveryNetwork, UriKind.Absolute);
         return new Uri(cdn, url);

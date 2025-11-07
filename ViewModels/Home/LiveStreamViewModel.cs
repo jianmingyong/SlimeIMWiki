@@ -21,7 +21,7 @@ public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableVi
         this.WhenActivated(disposable =>
         {
             webApplicationService
-                .WhenAnyValue(service => service.IsOnline)
+                .WhenAnyObservable(service => service.IsOnline)
                 .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
                 .DisposeWith(disposable);
             

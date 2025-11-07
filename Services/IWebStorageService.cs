@@ -2,11 +2,7 @@
 
 public interface IWebStorageService
 {
-    string? GetFromCookie(string key);
-    
-    ValueTask<string?> GetFromCookieAsync(string key);
+    ValueTask<string?> GetFromCookie(string key);
 
-    void SetToCookie(string key, string value, TimeSpan? expiration = null);
-    
-    ValueTask SetToCookieAsync(string key, string value, TimeSpan? expiration = null);
+    ValueTask SetToCookie(string key, string value, TimeSpan? expiration = null);
 }

@@ -1,34 +1,25 @@
 ﻿using Microsoft.JSInterop;
-using Microsoft.JSInterop.Infrastructure;
 
 namespace SlimeIMWiki.Services;
 
-public sealed class WebStorageService(IJSInProcessRuntime js) : IWebStorageService
+public sealed class WebStorageService(IJSInProcessRuntime js) : BaseJavaScriptModule(js), IWebStorageService
 {
-    public string? GetFromCookie(string key)
+    protected override string ModuleFile => "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/+esm";
+
+    public async ValueTask<string?> GetFromCookie(string key)
     {
-        return js.Invoke<string?>("Cookies.get", key);
-    }
-    
-    public ValueTask<string?> GetFromCookieAsync(string key)
-    {
-        return js.InvokeAsync<string?>("Cookies.get", key);
+        return (await GetModule()).Invoke<string?>("default.get", key);
     }
 
-    public void SetToCookie(string key, string value, TimeSpan? expiration = null)
+    public async ValueTask SetToCookie(string key, string value, TimeSpan? expiration = null)
     {
         if (expiration is null)
         {
-            js.Invoke<IJSVoidResult>("Cookies.set", key, value);
+            (await GetModule()).InvokeVoid("default.set", key, value);
         }
         else
         {
-            js.Invoke<IJSVoidResult>("Cookies.set", key, value, new { expires = expiration.GetValueOrDefault().TotalDays });
+            (await GetModule()).InvokeVoid("default.set", key, value, new { expires = expiration.GetValueOrDefault().TotalDays });
         }
-    }
-    
-    public ValueTask SetToCookieAsync(string key, string value, TimeSpan? expiration = null)
-    {
-        return expiration is null ? js.InvokeVoidAsync("Cookies.set", key, value) : js.InvokeVoidAsync("Cookies.set", key, value, new { expires = expiration.GetValueOrDefault().TotalDays });
     }
 }
