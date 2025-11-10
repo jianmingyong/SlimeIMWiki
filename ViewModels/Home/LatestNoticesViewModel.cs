@@ -35,7 +35,10 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
         
         Observable
             .FromAsync(() => _webStorageService.GetFromCookie(nameof(RegionSelection)).AsTask())
-            .Subscribe(s => RegionChange(s ?? "NA"));
+            .Subscribe(s =>
+            {
+                Observable.FromAsync(() => RegionChange(s ?? "NA")).Subscribe();
+            });
         
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {

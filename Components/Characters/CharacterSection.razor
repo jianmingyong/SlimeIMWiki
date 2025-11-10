@@ -158,7 +158,7 @@
 
         _unitScrollContainerWidth = _module.Invoke<float>("getElementWidth", "UnitScrollContainer");
         _unitScrollContainerHeight = _module.Invoke<float>("getElementHeight", "UnitScrollContainer");
-        _scrollPosition = _module.Invoke<float>("getScrollPosition", "UnitScrollContainer");
+        _scrollPosition = MathF.Max(0, _module.Invoke<float>("getScrollPosition", "UnitScrollContainer"));
         
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
         Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
