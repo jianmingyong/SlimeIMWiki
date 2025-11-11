@@ -168,7 +168,7 @@
       "Changes non-Skills soul x3 into Soul of Skills"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 1 #13 Thread That Cuts All\nSeason 3 #51 Geld's Worries",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -206,7 +206,7 @@
       "Changes non-Secrets soul x3 into Soul of Secrets"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x3\nSeason 1 #16 The Bellicose Dragoneye\nSeason 1 #19 Drago Buster",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -316,7 +316,7 @@
       "Increases Fire Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -352,7 +352,7 @@
       "Increases Protection Characters effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -378,7 +378,7 @@
       "Increases protection gauge by 15"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #8 The Destined One\nSeason 2 #48 Vampire Progenitor's True Form\nSeason 3 #50 Hinata, Promoted to Captain of Crusaders",
-    "unlock_material": "",
+    "unlock_material": "Blue Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -416,7 +416,7 @@
       "Transfers random soul x3 to the character with the highest ATK"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x15\nSeason 3 #64 Emotional Reunion",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -440,7 +440,7 @@
       "Increases Earth Attribute effect level by 3"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x20",
-    "unlock_material": "",
+    "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -452,7 +452,7 @@
       "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #11 It's Going to Snap!\nSeason 1 #16 Hot Springs Are the Best\nSeason 2 #37 Chef",
-    "unlock_material": "",
+    "unlock_material": "Orange Developing Tool",
     "release_date": "2025-10-16"
   },
   {
@@ -466,6 +466,20 @@
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
     "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
+  },
+  {
+    "name": "Demon Lord and Dragon",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500082_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increase charge-type characters' critical damage by 5% (Turns: 1)",
+      "Increase charge-type characters' critical damage by 10% (Turns: 1)",
+      "Increase charge-type characters' critical damage by 15% (Turns: 1)"
+    ],
+    "unlock_condition": "Complete Wild Winds of Kindred Catastrophe Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-30"
   },
   {
     "name": "Disguised as Ranga",
@@ -482,6 +496,18 @@
     "release_date": "2025-10-16"
   },
   {
+    "name": "Send Some Over",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_1400102_L.png",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Wind Attribute effect level by 1"
+    ],
+    "unlock_condition": "400 District Progress Milestone Reached (Eurazania)",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
+  },
+  {
     "name": "Unexpected Challenge",
     "category": "Other",
     "icon": "image/heartprints/skill_still_1400101_L.png",
@@ -492,18 +518,5 @@
     "unlock_condition": "100 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "release_date": "2025-10-16"
-  },
-  {
-    "name": "Demon Lord and Dragon",
-    "category": "Other",
-    "icon": "image/heartprints/skill_still_2500082_L.png",
-    "type": "Heartprint Skill",
-    "descriptions": [
-      "Increase charge-type characters' critical damage by 5% (Turns: 1)",
-      "Increase charge-type characters' critical damage by 10% (Turns: 1)"
-    ],
-    "unlock_condition": "Complete Wild Winds of Kindred Catastrophe Story Event (Missable)",
-    "unlock_material": "No Developing Tool Required",
-    "release_date": "2025-10-30"
   }
 ]

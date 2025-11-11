@@ -53,10 +53,6 @@
         <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.8.5"/>
     </ItemGroup>
 
-    <ItemGroup>
-      <None Include="wwwroot\.gitignore" />
-    </ItemGroup>
-
     <Target Name="CopyWebConfig" AfterTargets="Publish">
         <Copy SourceFiles="web.config" DestinationFolder="$(PublishDir)"/>
     </Target>
