@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 env:
   ROOT_DIR: wwwroot
-  PUBLISH_DIR: bin/Release/net9.0/publish/wwwroot
+  PUBLISH_DIR: bin/Release/net10.0/publish/wwwroot
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
       - name: Get latest .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: "9.0"
+          dotnet-version: "10.0"
 
       - name: Publish app
         run: dotnet workload restore && dotnet publish -c Release -p:CompressionEnabled=false -p:PublishViaGHAction=true

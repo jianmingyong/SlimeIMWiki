@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <Version>1.0</Version>
@@ -12,6 +12,7 @@
 
         <PublishIISAssets>true</PublishIISAssets>
         <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+        <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>
 
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
         
@@ -34,10 +35,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Blazorise.Components" Version="1.8.5" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.10"/>
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.10" PrivateAssets="all"/>
-        <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="9.0.10"/>
+        <PackageReference Include="Blazorise.Components" Version="1.8.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="10.0.0" />
 
         <PackageReference Include="ReactiveUI.Blazor" Version="22.2.1" />
         <PackageReference Include="ReactiveUI.SourceGenerators" Version="2.5.1">
@@ -48,9 +49,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Blazorise" Version="1.8.5"/>
-        <PackageReference Include="Blazorise.Bootstrap5" Version="1.8.5"/>
-        <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.8.5"/>
+        <PackageReference Include="Blazorise" Version="1.8.6" />
+        <PackageReference Include="Blazorise.Bootstrap5" Version="1.8.6" />
+        <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.8.6" />
     </ItemGroup>
 
     <Target Name="CopyWebConfig" AfterTargets="Publish">

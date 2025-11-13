@@ -1,11 +1,12 @@
 ﻿<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Dotnet Watch" type="RunDotNetWatch" factoryName="RunDotNetWatch">
     <option name="autoAttachChildren" value="true" />
-    <option name="exePath" value="$USER_HOME$/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/9.0.10/tools/blazor-devserver.dll" />
+    <option name="exePath" value="$USER_HOME$/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/10.0.0/tools/blazor-devserver.dll" />
     <option name="programParameters" value="" />
     <option name="projectFilePath" value="$PROJECT_DIR$/SlimeIMWiki.csproj" />
-    <option name="projectTfm" value="net9.0" />
+    <option name="projectTfm" value="net10.0" />
     <option name="restartOnRudeEditEditor" value="true" />
+    <option name="terminalMode" value="Auto" />
     <option name="watchParameters" value="--launch-profile https" />
     <option name="workingDirectory" value="$PROJECT_DIR$" />
     <method v="2" />
