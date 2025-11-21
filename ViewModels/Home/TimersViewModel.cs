@@ -38,18 +38,14 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
                 UpdateTimers();
             }).DisposeWith(disposable);
         });
-
-        Observable
-            .FromAsync(() => _webStorageService.GetFromCookie(nameof(TimerSelection)).AsTask())
-            .Subscribe(s => _ = RegionChange(s ?? "NA"));
     }
     
     [ReactiveCommand]
-    private async Task RegionChange(string region)
+    public void RegionChange(string region)
     {
         TimerSelection = region;
         
-        await _webStorageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
+        _webStorageService.SetToCookie(nameof(TimerSelection), region, TimeSpan.FromDays(30));
         
         switch (region)
         {

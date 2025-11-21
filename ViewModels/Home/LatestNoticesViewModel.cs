@@ -11,6 +11,7 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public ViewModelActivator Activator { get; } = new();
     
     private readonly IWebStorageService _webStorageService;
+    private readonly IWebApplicationService _webApplicationService;
 
     [ObservableAsProperty(ReadOnly = false)]
     private bool _isOnline;
@@ -24,21 +25,14 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public LatestNoticesViewModel(IWebStorageService webStorageService, IWebApplicationService webApplicationService)
     {
         _webStorageService = webStorageService;
-        
+        _webApplicationService = webApplicationService;
+
         this.WhenActivated(disposable =>
         {
-            webApplicationService
-                .WhenAnyObservable(service => service.IsOnline)
+            this.WhenAnyObservable(model => model._webApplicationService.IsOnline)
                 .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
                 .DisposeWith(disposable);
         });
-        
-        Observable
-            .FromAsync(() => _webStorageService.GetFromCookie(nameof(RegionSelection)).AsTask())
-            .Subscribe(s =>
-            {
-                Observable.FromAsync(() => RegionChange(s ?? "NA")).Subscribe();
-            });
         
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {
@@ -51,9 +45,9 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     }
 
     [ReactiveCommand]
-    private async Task RegionChange(string region)
+    public void RegionChange(string region)
     {
         RegionSelection = region;
-        await _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
+        _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));
     }
 }

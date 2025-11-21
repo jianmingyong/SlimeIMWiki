@@ -7,6 +7,7 @@ using Microsoft.JSInterop;
 using ReactiveUI;
 using SlimeIMWiki;
 using SlimeIMWiki.Services;
+using SlimeIMWiki.Services.JavaScript;
 using SlimeIMWiki.ViewModels.Characters;
 using SlimeIMWiki.ViewModels.Home;
 using Splat;
@@ -27,8 +28,9 @@ builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
-builder.Services.AddSingleton<IEagerLoadJavaScriptModule>(provider => (IEagerLoadJavaScriptModule) provider.GetRequiredService<IWebApplicationService>());
+builder.Services.AddSingleton<IEagerRegisterJavaScriptModule>(provider => (IEagerRegisterJavaScriptModule) provider.GetRequiredService<IWebApplicationService>());
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
+builder.Services.AddSingleton<IEagerRegisterJavaScriptModule>(provider => (IEagerRegisterJavaScriptModule) provider.GetRequiredService<IWebStorageService>());
 builder.Services.AddSingleton<StaticWebRootAssets>();
 builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListService>();

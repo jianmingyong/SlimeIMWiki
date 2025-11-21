@@ -1,7 +1,7 @@
 ﻿@using SlimeIMWiki.Layouts
 @using SlimeIMWiki.Pages
-@using SlimeIMWiki.Services
-@inject IEnumerable<IEagerLoadJavaScriptModule> EagerModules
+@using SlimeIMWiki.Services.JavaScript
+@inject IEnumerable<IEagerRegisterJavaScriptModule> EagerModules
 
 <Blazorise.ThemeProvider Theme="@theme">
     <Router AppAssembly="typeof(App).Assembly" NotFoundPage="typeof(NotFound)">
@@ -52,14 +52,13 @@
         }
     };
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnInitializedAsync()
     {
-        if (firstRender)
+        foreach (var module in EagerModules)
         {
-            foreach (var module in EagerModules)
-            {
-                await module.EagerLoadJavaScriptModule();
-            }
+            await module.RegisterJavaScriptModuleAsync();
         }
+        
+        await base.OnInitializedAsync();
     }
 }

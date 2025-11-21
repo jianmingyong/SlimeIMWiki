@@ -1,4 +1,6 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.TimersViewModel>
+﻿@using SlimeIMWiki.Services
+@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.TimersViewModel>
+@inject IWebStorageService WebStorageService
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -43,3 +45,19 @@
              TextSize="TextSize.Heading2">@ViewModel.TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
     </Column>
 </Grid>
+
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+        
+        if (firstRender)
+        {
+            await WebStorageService.RegisterJavaScriptModuleAsync();
+            ViewModel.RegionChange(WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA");
+        }
+        
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}

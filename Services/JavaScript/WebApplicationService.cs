@@ -3,16 +3,17 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Microsoft.JSInterop;
 
-namespace SlimeIMWiki.Services;
+namespace SlimeIMWiki.Services.JavaScript;
 
 [method: DynamicDependency(nameof(SetIsOnline))]
-public class WebApplicationService(IJSInProcessRuntime js) : BaseJavaScriptModule(js), IWebApplicationService
+public class WebApplicationService(IJSInProcessRuntime js) : JavaScriptModule(js), IWebApplicationService
 {
     public IObservable<bool> IsOnline => _isOnline.AsObservable();
 
     protected override string ModuleFile => "./js/web-application-service.js";
-
-    private BehaviorSubject<bool> _isOnline { get; } = new(false);
+    
+    private readonly IJSInProcessRuntime _js = js;
+    private readonly BehaviorSubject<bool> _isOnline = new(false);
 
     [JSInvokable]
     public void SetIsOnline(bool value)
@@ -22,7 +23,7 @@ public class WebApplicationService(IJSInProcessRuntime js) : BaseJavaScriptModul
 
     protected override ValueTask OnInitializedModule(IJSInProcessObjectReference module)
     {
-        _isOnline.OnNext(module.Invoke<bool>("isOnline"));
+        _isOnline.OnNext(_js.GetValue<bool>("navigator.onLine"));
         module.InvokeVoid("registerEventListener", DotNetObjectReference.Create(this));
         return ValueTask.CompletedTask;
     }

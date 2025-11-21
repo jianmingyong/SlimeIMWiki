@@ -1,4 +1,6 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.LatestNoticesViewModel>
+﻿@using SlimeIMWiki.Services
+@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.LatestNoticesViewModel>
+@inject IWebStorageService WebStorageService
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -43,4 +45,20 @@
 else
 {
     <Paragraph>In-Game Notices are not available in offline mode.</Paragraph>
+}
+
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+        
+        if (firstRender)
+        {
+            await WebStorageService.RegisterJavaScriptModuleAsync();
+            ViewModel.RegionChange(WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA");
+        }
+        
+        await base.OnAfterRenderAsync(firstRender);
+    }
 }

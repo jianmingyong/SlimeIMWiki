@@ -1,15 +1,18 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Blazorise;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.CompilerServices;
 using Microsoft.AspNetCore.Components.Rendering;
 using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.Components;
 
-public class ImageProxy : Blazorise.Image
+public class ImageProxy : Image
 {
+#nullable disable
     [Inject]
-    public required StaticWebRootAssets StaticWebRootAssets { get; set; }
-    
+    protected StaticWebRootAssets StaticWebRootAssets { get; set; }
+#nullable restore
+
     protected override void BuildRenderTree(RenderTreeBuilder __builder)
     {
         __builder.OpenElement(0, "img");
