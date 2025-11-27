@@ -3167,8 +3167,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
       "Octagram Demon Lord",
@@ -3296,8 +3296,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
       "World of Fantasy",
@@ -3361,8 +3361,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
       "Dragon Haki"
@@ -7064,8 +7064,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
       "Heart of a Hero",
@@ -7128,8 +7128,8 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
       "Dragon Haki"
@@ -10504,7 +10504,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Pretty Sparkle",
       "Festive Memories",
