@@ -449,7 +449,9 @@
     "icon": "image/heartprints/skill_still_2106801_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%"
+      "Increases all allies' max HP by 20% (Turns: 3)\nRecovers all allies' HP by 20%",
+      "Increases all allies' max HP by 35% (Turns: 3)\nRecovers all allies' HP by 35%",
+      "Increases all allies' max HP by 50% (Turns: 3)\nRecovers all allies' HP by 50%"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x25\nSeason 1 #11 It's Going to Snap!\nSeason 1 #16 Hot Springs Are the Best\nSeason 2 #37 Chef",
     "unlock_material": "Orange Developing Tool",
@@ -466,6 +468,16 @@
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x5",
     "unlock_material": "Green Developing Tool",
     "release_date": "2025-10-16"
+  },
+  {
+    "name": "",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500083_L.png",
+    "type": "",
+    "descriptions": [],
+    "unlock_condition": null,
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-11-27"
   },
   {
     "name": "Demon Lord and Dragon",
@@ -496,6 +508,16 @@
     "release_date": "2025-10-16"
   },
   {
+    "name": "Hell Flare Strike",
+    "category": "Other",
+    "icon": "",
+    "type": "",
+    "descriptions": [],
+    "unlock_condition": "650 District Progress Milestone Reached (Eurazania)",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-10-16"
+  },
+  {
     "name": "Send Some Over",
     "category": "Other",
     "icon": "image/heartprints/skill_still_1400102_L.png",
@@ -518,5 +540,15 @@
     "unlock_condition": "100 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "release_date": "2025-10-16"
+  },
+  {
+    "name": "Valor Cup Begins",
+    "category": "Other",
+    "icon": "",
+    "type": "Heartprint",
+    "descriptions": [],
+    "unlock_condition": "Valor Cup Diamond 1 Rank Reached",
+    "unlock_material": "No Developing Tool Required",
+    "release_date": "2025-11-06"
   }
 ]
