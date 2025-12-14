@@ -220,6 +220,94 @@ else
                             </Div>
                         </Div>
                     }
+                    else if (ViewModel.Unit is BattleUnit battleUnit)
+                    {
+                        <TextDivider Text="SECRET SKILLS" Margin="Margin.Is2.OnY"/>
+                        
+                        <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                                    
+                                </Div>
+                                <Div>
+                                    <Div TextWeight="TextWeight.Bold">
+                                        @(string.IsNullOrEmpty(battleUnit.SecretSkillName) ? "???" : battleUnit.SecretSkillName)
+                                    </Div>
+                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                </Div>
+                            </Div>
+
+                            @if (!string.IsNullOrEmpty(battleUnit.SecretSkillNormalEffect))
+                            {
+                                <Div>
+                                    @foreach (var line in battleUnit.SecretSkillNormalEffect.Split('\n'))
+                                    {
+                                        <Div>@line</Div>
+                                    }
+                                </Div>
+                            }
+                            else
+                            {
+                                <Div>???</Div>
+                            }
+                        </Div>
+                        
+                        <TextDivider Text="BATTLE SKILLS" Margin="Margin.Is2.OnY"/>
+                        
+                        <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+                            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                <Div Flex="Flex.Column.AlignItems.Center">
+                                    <Div TextWeight="TextWeight.Bold">@battleUnit.BattleSkillOneEffectCost</Div>
+                                    <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                                        @if (!string.IsNullOrEmpty(battleUnit.BattleSkillOneIcon))
+                                        {
+                                            <ImageProxy Source="@battleUnit.BattleSkillOneIcon" Width="Width.Is100" Text="Icon"/>
+                                        }
+                                    </Div>
+                                </Div>
+                                <Div>
+                                    <Div TextWeight="TextWeight.Bold">
+                                        @(string.IsNullOrEmpty(battleUnit.BattleSkillOneName) ? "???" : battleUnit.BattleSkillOneName)
+                                    </Div>
+                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                </Div>
+                            </Div>
+
+                            <Div>
+                                @foreach (var line in battleUnit.BattleSkillOneEffect.Split('\n'))
+                                {
+                                    <Div>@line</Div>
+                                }
+                            </Div>
+                        </Div>
+                        
+                        <Div Flex="Flex.Column" Background="Background.Body" Margin="Margin.Is2.FromTop" Padding="Padding.Is2" Gap="Gap.Is2">
+                            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                                <Div Flex="Flex.Column.AlignItems.Center">
+                                    <Div TextWeight="TextWeight.Bold">@battleUnit.BattleSkillTwoEffectCost</Div>
+                                    <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                                        @if (!string.IsNullOrEmpty(battleUnit.BattleSkillTwoIcon))
+                                        {
+                                            <ImageProxy Source="@battleUnit.BattleSkillTwoIcon" Width="Width.Is100" Text="Icon"/>
+                                        }
+                                    </Div>
+                                </Div>
+                                <Div>
+                                    <Div TextWeight="TextWeight.Bold">
+                                        @(string.IsNullOrEmpty(battleUnit.BattleSkillTwoName) ? "???" : battleUnit.BattleSkillTwoName)
+                                    </Div>
+                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                </Div>
+                            </Div>
+
+                            <Div>
+                                @foreach (var line in battleUnit.BattleSkillTwoEffect.Split('\n'))
+                                {
+                                    <Div>@line</Div>
+                                }
+                            </Div>
+                        </Div>
+                    }
                 </Div>
 
                 <Div Width="Width.Is100">
@@ -282,7 +370,7 @@ else
                 </Div>
 
                 <Div Width="Width.Is100">
-                    @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffect is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
+                    @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
                     {
                         <TextDivider Text="VALOR TRAIT" Margin="Margin.Is2.OnY"/>
 

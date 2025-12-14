@@ -20,36 +20,51 @@ public record BattleUnit(
     string Expertise,
     string TacticsType,
     string[] SuitedFacilities,
-    string[] SecretSkills,
-    string[] BattleSkills,
     DateOnly? ReleaseDate,
+    
     string SecretSkillName,
     string SecretSkillTarget,
+    
     string? SecretSkillNormalEffect,
     string? SecretSkillAttackEffect,
     string? SecretSkillSupportEffect,
+    
     string BattleSkillOneName,
+    
     string BattleSkillOneIcon,
     int BattleSkillOneEffectCost,
     string BattleSkillOneEffect,
-    int? BattleSkillOneEffectFusedCost,
-    string? BattleSkillOneEffectFused,
+    
+    string? BattleSkillOneFusedIcon,
+    int? BattleSkillOneFusedEffectCost,
+    string? BattleSkillOneFusedEffect,
+    
+    string? BattleSkillOneUltimateManifestationIcon,
+    int? BattleSkillOneUltimateManifestationEffectCost,
+    string? BattleSkillOneUltimateManifestationEffect,
+    
     string BattleSkillTwoName,
+    
     string BattleSkillTwoIcon,
     int BattleSkillTwoEffectCost,
     string BattleSkillTwoEffect,
-    int? BattleSkillTwoEffectFusedCost,
-    string? BattleSkillTwoEffectFused,
+    
+    string? BattleSkillTwoFusedIcon,
+    int? BattleSkillTwoFusedEffectCost,
+    string? BattleSkillTwoFusedEffect,
+    
     string TraitOneName,
     string TraitOneIcon,
     string TraitOneEffect,
     string TraitOneIconMax,
     string TraitOneEffectMax,
+    
     string? TraitTwoName,
     string? TraitTwoIcon,
     string? TraitTwoEffect,
     string? TraitTwoIconMax,
     string? TraitTwoEffectMax,
+    
     string? ValorTraitName,
     string? ValorTraitIcon,
     string? ValorTraitEffect,
