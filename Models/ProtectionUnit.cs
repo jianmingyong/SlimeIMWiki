@@ -46,7 +46,7 @@ public record ProtectionUnit(
     {
         get
         {
-            if (IsEx || IsAttributeUnbound || HasEx || HasAttributeUnbound)
+            if (IsEx || IsAttributeUnbound)
             {
                 return $"image/protection/characters/{Permalink}/6/{Permalink}_6_BlessInfo.png";
             }

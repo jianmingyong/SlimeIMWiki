@@ -2020,10 +2020,11 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
-      "Fount of Wisdom"
+      "Fount of Wisdom",
+      "Dungeon Crawler"
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
@@ -2615,7 +2616,8 @@
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
-      "Dragon Haki"
+      "Dragon Haki",
+      "Dungeon Crawler"
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
@@ -3006,7 +3008,9 @@
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
-      "Hyper Heart"
+      "Hyper Heart",
+      "Spirit Master",
+      "Dungeon Crawler"
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
@@ -3071,7 +3075,8 @@
     "has_attribute_unbound": true,
     "forces": [
       "Dragon Haki",
-      "Exalted Champions"
+      "Exalted Champions",
+      "Dungeon Crawler"
     ],
     "attribute": "Dark",
     "attack_type": "Physical",
@@ -6502,7 +6507,8 @@
     "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
-      "Wielder of Magic"
+      "Wielder of Magic",
+      "Dungeon Crawler"
     ],
     "attribute": "Earth",
     "attack_type": "Magic",
@@ -6830,10 +6836,11 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_ex": true,
+    "has_attribute_unbound": true,
     "forces": [
-      "Antagonist"
+      "Antagonist",
+      "Dungeon Crawler"
     ],
     "attribute": "Dark",
     "attack_type": "Magic",
@@ -8417,7 +8424,8 @@
     "forces": [
       "World of Fantasy",
       "Dragon Haki",
-      "Octagram Demon Lord"
+      "Octagram Demon Lord",
+      "Dungeon Crawler"
     ],
     "attribute": "Water",
     "attack_type": "Physical",
@@ -12073,7 +12081,8 @@
     "forces": [
       "Exalted Champions",
       "Octagram Demon Lord",
-      "Primal Demon"
+      "Primal Demon",
+      "Dungeon Crawler"
     ],
     "attribute": "Space",
     "attack_type": "Magic",
@@ -12139,7 +12148,8 @@
     "forces": [
       "Exalted Champions",
       "Octagram Demon Lord",
-      "Dragon Haki"
+      "Dragon Haki",
+      "Dungeon Crawler"
     ],
     "attribute": "Wind",
     "attack_type": "Magic",
@@ -12205,7 +12215,8 @@
     "forces": [
       "Exalted Champions",
       "Shizu's Will",
-      "Octagram Demon Lord"
+      "Octagram Demon Lord",
+      "Dungeon Crawler"
     ],
     "attribute": "Light",
     "attack_type": "Magic",
@@ -12397,13 +12408,14 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_ex": false,
-    "has_attribute_unbound": false,
+    "has_attribute_unbound": true,
     "forces": [
       "Commander",
       "Shizu's Will",
       "Stern of Spirit",
       "Protector of Peace",
-      "Antagonist"
+      "Antagonist",
+      "Dungeon Crawler"
     ],
     "attribute": "Light",
     "attack_type": "Physical",
@@ -13326,7 +13338,8 @@
       "Shizu's Will",
       "Octagram Demon Lord",
       "Determination to Prosper",
-      "Tournament Stalwart"
+      "Tournament Stalwart",
+      "Dungeon Crawler"
     ],
     "attribute": "Water",
     "attack_type": "Physical",
@@ -14799,7 +14812,8 @@
       "Determination to Prosper",
       "Octagram Demon Lord",
       "Shizu's Will",
-      "Tempest Elite"
+      "Tempest Elite",
+      "Dungeon Crawler"
     ],
     "attribute": "Water+",
     "attack_type": "Physical",
