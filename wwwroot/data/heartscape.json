@@ -508,6 +508,21 @@
     "release_date": "2025-10-16"
   },
   {
+    "name": "The Otherworld Swordsmen",
+    "category": "Other",
+    "icon": "",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increase charge-type characters' synergy power by 5% (Turns: 1)",
+      "Increase charge-type characters' synergy power by 10% (Turns: 1)",
+      "Increase charge-type characters' synergy power by 15% (Turns: 1)"
+    ],
+    "unlock_condition": "Complete Reloaded World Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2025-12-18"
+  },
+  {
     "name": "Festive Gift",
     "category": "Other",
     "icon": "image/heartprints/skill_still_2500083_L.png",
@@ -555,9 +570,13 @@
   {
     "name": "Hell Flare Strike",
     "category": "Other",
-    "icon": "",
+    "icon": "image/heartprints/skill_still_2400101_L.png",
     "type": "Heartprint Skill",
-    "descriptions": [],
+    "descriptions": [
+      "Increases skill points by 5",
+      "Increases skill points by 15",
+      "Increases skill points by 25"
+    ],
     "unlock_condition": "650 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
@@ -592,9 +611,11 @@
   {
     "name": "Valor Cup Begins",
     "category": "Other",
-    "icon": "",
+    "icon": "image/heartprints/skill_still_1400201_L.png",
     "type": "Heartprint",
-    "descriptions": [],
+    "descriptions": [
+      "Increases Protection Characters effect level by 1"
+    ],
     "unlock_condition": "Valor Cup Diamond 1 Rank Reached",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
