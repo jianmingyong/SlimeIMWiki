@@ -77,7 +77,7 @@ public record BattleUnit(
     {
         get
         {
-            if (IsEx || IsAttributeUnbound || HasEx || HasAttributeUnbound)
+            if (IsEx || IsAttributeUnbound)
             {
                 return $"image/battle/characters/{Permalink}/6/{Permalink}_6_CharaInfo.png";
             }
