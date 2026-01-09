@@ -510,7 +510,7 @@
   {
     "name": "The Otherworld Swordsmen",
     "category": "Other",
-    "icon": "",
+    "icon": "image/heartprints/skill_still_2500085_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
       "Increase charge-type characters' synergy power by 5% (Turns: 1)",
