@@ -19,6 +19,9 @@ public sealed partial class JsonDataModelService : ReactiveObject
 
     [ObservableAsProperty]
     private BattleAttribute[]? _battleAttributes;
+    
+    [ObservableAsProperty]
+    private BattleExpertise[]? _battleExpertise;
 
     [ObservableAsProperty]
     private ProtectionUnit[]? _protectionUnits;
@@ -46,6 +49,7 @@ public sealed partial class JsonDataModelService : ReactiveObject
         GetBattleUnits().ToProperty(this, nameof(BattleUnits), out _battleUnitsHelper);
         GetBattleAttackTypes().ToProperty(this, nameof(BattleAttackTypes), out _battleAttackTypesHelper);
         GetBattleAttributes().ToProperty(this, nameof(BattleAttributes), out _battleAttributesHelper);
+        GetBattleExpertises().ToProperty(this, nameof(BattleExpertise), out _battleExpertiseHelper);
 
         GetProtectionUnits().ToProperty(this, nameof(ProtectionUnits), out _protectionUnitsHelper);
         GetProtectionAttackTypes().ToProperty(this, nameof(ProtectionAttackTypes), out _protectionAttackTypesHelper);
@@ -68,6 +72,13 @@ public sealed partial class JsonDataModelService : ReactiveObject
         return this
             .WhenAnyValue(service => service.BattleAttributes)
             .Select(attributes => attributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase)));
+    }
+
+    public IObservable<BattleExpertise?> GetObservableBattleExpertise(string expertise)
+    {
+        return this
+            .WhenAnyValue(service => service.BattleExpertise)
+            .Select(expertises => expertises?.SingleOrDefault(a => a.Name.Equals(expertise, StringComparison.OrdinalIgnoreCase)));
     }
 
     public IObservable<ProtectionAttackType?> GetObservableProtectionAttackType(string attackType)
@@ -126,6 +137,11 @@ public sealed partial class JsonDataModelService : ReactiveObject
     private IObservable<BattleAttribute[]?> GetBattleAttributes()
     {
         return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttributes, JsonSerializer.Custom.BattleAttributeArray, token));
+    }
+
+    private IObservable<BattleExpertise[]?> GetBattleExpertises()
+    {
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleExpertises, JsonSerializer.Custom.BattleExpertiseArray, token));
     }
 
     private IObservable<ProtectionUnit[]?> GetProtectionUnits()

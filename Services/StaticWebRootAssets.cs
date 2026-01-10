@@ -7,6 +7,7 @@ public class StaticWebRootAssets(IConfiguration configuration)
     public Uri BattleUnits => ResolveUri("data/battle_units.json");
     public Uri BattleAttackTypes => ResolveUri("data/battle_attack_types.json");
     public Uri BattleAttributes => ResolveUri("data/battle_attributes.json");
+    public Uri BattleExpertises => ResolveUri("data/battle_expertises.json");
     
     public Uri ProtectionUnits => ResolveUri("data/protection_units.json");
     public Uri ProtectionAttackTypes => ResolveUri("data/protection_attack_types.json");

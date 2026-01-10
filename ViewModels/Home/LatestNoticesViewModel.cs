@@ -11,7 +11,6 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public ViewModelActivator Activator { get; } = new();
     
     private readonly IWebStorageService _webStorageService;
-    private readonly IWebApplicationService _webApplicationService;
 
     [ObservableAsProperty(ReadOnly = false)]
     private bool _isOnline;
@@ -25,12 +24,11 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     public LatestNoticesViewModel(IWebStorageService webStorageService, IWebApplicationService webApplicationService)
     {
         _webStorageService = webStorageService;
-        _webApplicationService = webApplicationService;
 
         this.WhenActivated(disposable =>
         {
-            this.WhenAnyObservable(model => model._webApplicationService.IsOnline)
-                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
+            webApplicationService.GetIsOnlineAsObservable()
+                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper, () => webApplicationService.IsOnline)
                 .DisposeWith(disposable);
         });
         

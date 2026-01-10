@@ -33,6 +33,9 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
     private IEnumerable<IAttribute>? _attributes = [];
 
     [ObservableAsProperty(ReadOnly = false)]
+    private IEnumerable<BattleExpertise>? _expertises = [];
+
+    [ObservableAsProperty(ReadOnly = false)]
     private IEnumerable<Force>? _forces = [];
 
     [ObservableAsProperty(ReadOnly = false)]
@@ -86,6 +89,21 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
             this.WhenAnyValue(model => model._jsonDataModelService.Forces)
                 .ToProperty(this, nameof(Forces), out _forcesHelper)
+                .DisposeWith(disposable);
+            
+            this.WhenAnyValue(
+                    model => model._characterListService.DisplayCategory,
+                    model => model._jsonDataModelService.BattleExpertise,
+                    (displayCategory, battleExpertise) =>
+                    {
+                        return displayCategory switch
+                        {
+                            "Battle" => battleExpertise,
+                            "Protection" => [],
+                            var _ => throw new ArgumentOutOfRangeException(nameof(displayCategory), displayCategory, null)
+                        };
+                    })
+                .ToProperty(this, nameof(BattleExpertise), out _expertisesHelper)
                 .DisposeWith(disposable);
 
             this.WhenAnyValue(

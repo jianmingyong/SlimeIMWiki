@@ -14,6 +14,9 @@ public sealed partial class UnitStatusSectionViewModel : ReactiveObject, IActiva
     [ObservableAsProperty(ReadOnly = false)]
     private string? _tacticTypeIcon;
 
+    [ObservableAsProperty(ReadOnly = false)]
+    private string? _expertiseIcon;
+
     public UnitStatusSectionViewModel(ICharacterUnit unit, JsonDataModelService service)
     {
         this.WhenActivated(disposable =>
@@ -23,6 +26,15 @@ public sealed partial class UnitStatusSectionViewModel : ReactiveObject, IActiva
                 .Select(type => type?.Image)
                 .ToProperty(this, nameof(TacticTypeIcon), out _tacticTypeIconHelper)
                 .DisposeWith(disposable);
+
+            if (unit is BattleUnit battleUnit)
+            {
+                service
+                    .GetObservableBattleExpertise(battleUnit.Expertise)
+                    .Select(expertise => expertise?.Icon)
+                    .ToProperty(this, nameof(ExpertiseIcon), out _expertiseIconHelper)
+                    .DisposeWith(disposable);
+            }
         });
     }
 }

@@ -50,6 +50,13 @@
 
         <InitialRarityFilter Rarity="5"/>
     </Div>
+    
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        @foreach (var expertise in ViewModel.Expertises ?? [])
+        {
+            <ExpertiseFilter Expertise="expertise"/>
+        }
+    </Div>
 </Div>
 
 <Div Flex="Flex.Wrap" Gap="Gap.Is2" Background="Background.Body" Margin="Margin.Is2.FromBottom">

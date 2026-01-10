@@ -10,6 +10,8 @@
         <Description>SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.</Description>
         <Copyright>Copyright 2025 The Dialga Team</Copyright>
 
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
         <PublishIISAssets>true</PublishIISAssets>
         <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
         <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>

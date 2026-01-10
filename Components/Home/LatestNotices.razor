@@ -55,7 +55,6 @@ else
         
         if (firstRender)
         {
-            await WebStorageService.RegisterJavaScriptModuleAsync();
             ViewModel.RegionChange(WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA");
         }
         

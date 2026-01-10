@@ -42,7 +42,7 @@ jobs:
 
       - name: Update Product Token
         run: |
-          sed -i 's|"ProductToken": ""|"ProductToken": "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}"|g' "${{ env.ROOT_DIR }}/appsettings.json"
+          sed -i 's|BlazoriseProductToken = "";|BlazoriseProductToken = "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}";|g' "GlobalConstants.cs"
 
       - name: Get latest .NET SDK
         uses: actions/setup-dotnet@v4

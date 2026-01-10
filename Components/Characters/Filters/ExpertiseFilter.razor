@@ -1,0 +1,29 @@
+﻿@using SlimeIMWiki.Services
+@inherits BaseFilterComponent
+
+<FilterComponent Key="@($"{nameof(Expertise)}_{Expertise.Name}")" DisplayText="@Expertise.Name"
+                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ImageProxy Class="filterIcon" Source="@Expertise.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+</FilterComponent>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required BattleExpertise Expertise { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter($"{nameof(Expertise)}_{Expertise.Name}", unit =>
+            {
+                return unit switch
+                {
+                    BattleUnit battleUnit => battleUnit.Expertise == Expertise.Name,
+                    var _ => false
+                };
+            },
+            @<ExpertiseFilter Expertise="Expertise" IsRemoveMode="true" Filter="Filter"/>);
+
+        base.OnInitialized();
+    }
+}

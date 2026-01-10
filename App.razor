@@ -1,7 +1,5 @@
 ﻿@using SlimeIMWiki.Layouts
 @using SlimeIMWiki.Pages
-@using SlimeIMWiki.Services.JavaScript
-@inject IEnumerable<IEagerRegisterJavaScriptModule> EagerModules
 
 <Blazorise.ThemeProvider Theme="@theme">
     <Router AppAssembly="typeof(App).Assembly" NotFoundPage="typeof(NotFound)">
@@ -51,14 +49,4 @@
             Body = "rgb(222, 226, 230)"
         }
     };
-
-    protected override async Task OnInitializedAsync()
-    {
-        foreach (var module in EagerModules)
-        {
-            await module.RegisterJavaScriptModuleAsync();
-        }
-        
-        await base.OnInitializedAsync();
-    }
 }

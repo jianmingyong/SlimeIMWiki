@@ -12,17 +12,16 @@ public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableVi
     
     [ObservableAsProperty(ReadOnly = false)]
     private bool _isOnline;
-    
+
     [ObservableAsProperty(ReadOnly = false)]
     private Livestream? _livestream;
-
+    
     public LiveStreamViewModel(JsonDataModelService jsonDataModelService, IWebApplicationService webApplicationService)
     {
         this.WhenActivated(disposable =>
         {
-            webApplicationService
-                .WhenAnyObservable(service => service.IsOnline)
-                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper)
+            webApplicationService.GetIsOnlineAsObservable()
+                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper, () => webApplicationService.IsOnline)
                 .DisposeWith(disposable);
             
             jsonDataModelService

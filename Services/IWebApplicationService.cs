@@ -2,5 +2,7 @@
 
 public interface IWebApplicationService
 {
-    IObservable<bool> IsOnline { get; }
+    bool IsOnline { get; }
+    
+    IObservable<bool> GetIsOnlineAsObservable();
 }

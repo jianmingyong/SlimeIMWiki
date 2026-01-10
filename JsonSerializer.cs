@@ -7,6 +7,7 @@ namespace SlimeIMWiki;
 [JsonSerializable(typeof(BattleUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(BattleExpertise[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]

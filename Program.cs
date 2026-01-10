@@ -1,4 +1,5 @@
-﻿using Blazorise;
+﻿using System.Runtime.InteropServices.JavaScript;
+using Blazorise;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.Web;
@@ -7,7 +8,6 @@ using Microsoft.JSInterop;
 using ReactiveUI;
 using SlimeIMWiki;
 using SlimeIMWiki.Services;
-using SlimeIMWiki.Services.JavaScript;
 using SlimeIMWiki.ViewModels.Characters;
 using SlimeIMWiki.ViewModels.Home;
 using Splat;
@@ -28,9 +28,7 @@ builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
-builder.Services.AddSingleton<IEagerRegisterJavaScriptModule>(provider => (IEagerRegisterJavaScriptModule) provider.GetRequiredService<IWebApplicationService>());
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
-builder.Services.AddSingleton<IEagerRegisterJavaScriptModule>(provider => (IEagerRegisterJavaScriptModule) provider.GetRequiredService<IWebStorageService>());
 builder.Services.AddSingleton<StaticWebRootAssets>();
 builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListService>();
@@ -45,7 +43,7 @@ builder.Services.AddTransient<FilterSectionViewModel>();
 builder.Services
     .AddBlazorise(options =>
     {
-        options.ProductToken = builder.Configuration["Blazorise:ProductToken"];
+        options.ProductToken = GlobalConstants.BlazoriseProductToken;
     })
     .AddBootstrap5Providers()
     .AddFontAwesomeIcons();
@@ -56,4 +54,8 @@ resolver.InitializeReactiveUI();
 
 ModeDetector.OverrideModeDetector(Mode.Run);
 
-await builder.Build().RunAsync();
+var app = builder.Build();
+
+GlobalJsExport.ServiceProvider = app.Services;
+
+await app.RunAsync();
