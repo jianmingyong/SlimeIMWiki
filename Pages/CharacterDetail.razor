@@ -29,14 +29,7 @@ else
         <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
             <Div Flex="Flex.Wrap">
                 <Div Width="Width.Is100">
-                    @if (ViewModel.Unit is ProtectionUnit protectionUnit)
-                    {
-                        <ProtectionUnitNameSection Unit="protectionUnit"/>
-                    }
-                    else if (ViewModel.Unit is BattleUnit battleUnit)
-                    {
-                        <BattleUnitNameSection Unit="battleUnit"/>
-                    }
+                    <UnitNameSection Unit="ViewModel.Unit" />
                 </Div>
 
                 <Div Display="Display.None.OnDesktop.Block" Width="Width.Is100">
@@ -172,15 +165,12 @@ else
                                     <Div TextWeight="TextWeight.Bold">
                                         @(string.IsNullOrEmpty(unit.DivineProtectionName) ? "???" : unit.DivineProtectionName)
                                     </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
                                 </Div>
                             </Div>
 
                             <Div>
-                                @foreach (var line in unit.DivineProtectionEffectMax.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@unit.DivineProtectionEffectMax"/>
                             </Div>
 
                             <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
@@ -190,7 +180,7 @@ else
                             </Div>
 
                             <Div>
-                                @(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)
+                                <EffectStyler Text="@(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)"/>
                             </Div>
                         </Div>
 
@@ -208,15 +198,12 @@ else
                                     <Div TextWeight="TextWeight.Bold">
                                         @(string.IsNullOrEmpty(unit.ProtectionSkillName) ? "???" : unit.ProtectionSkillName)
                                     </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
                                 </Div>
                             </Div>
 
                             <Div>
-                                @foreach (var line in unit.ProtectionSkillEffect.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@unit.ProtectionSkillEffect"/>
                             </Div>
                         </Div>
                     }
@@ -233,17 +220,14 @@ else
                                     <Div TextWeight="TextWeight.Bold">
                                         @(string.IsNullOrEmpty(battleUnit.SecretSkillName) ? "???" : battleUnit.SecretSkillName)
                                     </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
                                 </Div>
                             </Div>
 
                             @if (!string.IsNullOrEmpty(battleUnit.SecretSkillNormalEffect))
                             {
                                 <Div>
-                                    @foreach (var line in battleUnit.SecretSkillNormalEffect.Split('\n'))
-                                    {
-                                        <Div>@line</Div>
-                                    }
+                                    <EffectStyler Text="@battleUnit.SecretSkillNormalEffect"/>
                                 </Div>
                             }
                             else
@@ -269,15 +253,12 @@ else
                                     <Div TextWeight="TextWeight.Bold">
                                         @(string.IsNullOrEmpty(battleUnit.BattleSkillOneName) ? "???" : battleUnit.BattleSkillOneName)
                                     </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
                                 </Div>
                             </Div>
 
                             <Div>
-                                @foreach (var line in battleUnit.BattleSkillOneEffect.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@battleUnit.BattleSkillOneEffect"/>
                             </Div>
                         </Div>
                         
@@ -296,15 +277,12 @@ else
                                     <Div TextWeight="TextWeight.Bold">
                                         @(string.IsNullOrEmpty(battleUnit.BattleSkillTwoName) ? "???" : battleUnit.BattleSkillTwoName)
                                     </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">Lv. Max</Div>
+                                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
                                 </Div>
                             </Div>
 
                             <Div>
-                                @foreach (var line in battleUnit.BattleSkillTwoEffect.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@battleUnit.BattleSkillTwoEffect"/>
                             </Div>
                         </Div>
                     }
@@ -330,10 +308,7 @@ else
                         </Div>
 
                         <Div>
-                            @foreach (var line in ViewModel.Unit.TraitOneEffectMax.Split('\n'))
-                            {
-                                <Div>@line</Div>
-                            }
+                            <EffectStyler Text="@ViewModel.Unit.TraitOneEffectMax"/>
                         </Div>
                     </Div>
                 </Div>
@@ -360,10 +335,7 @@ else
                             </Div>
 
                             <Div>
-                                @foreach (var line in battleUnit1.TraitTwoEffectMax.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@battleUnit1.TraitTwoEffectMax"/>
                             </Div>
                         </Div>
                     }
@@ -391,10 +363,7 @@ else
                             </Div>
 
                             <Div>
-                                @foreach (var line in ViewModel.Unit.ValorTraitEffectMax.Split('\n'))
-                                {
-                                    <Div>@line</Div>
-                                }
+                                <EffectStyler Text="@ViewModel.Unit.ValorTraitEffectMax"/>
                             </Div>
                         </Div>
                     }

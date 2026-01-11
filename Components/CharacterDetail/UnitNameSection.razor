@@ -1,65 +1,88 @@
-﻿<Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
+﻿@using SlimeIMWiki.ViewModels.CharacterDetail
+@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.UnitNameSectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
     <ImageProxy Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
-    
+
     <Div TextWeight="TextWeight.SemiBold" Style="text-shadow: black 2px 2px">
         [ @Unit.Title ]
     </Div>
-    
+
     <Div TextWeight="TextWeight.SemiBold" TextSize="TextSize.Large" Style="text-shadow: black 2px 2px">
         @Unit.Name
     </Div>
-    
+
     <ImageProxy Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
 
-    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2" Margin="Margin.Is2.FromTop">
         @if (Unit.HasEx || Unit.HasAttributeUnbound)
         {
-            <ImageProxy Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+            <Tooltip Text="Has Attribute Unbound Enhancement">
+                <ImageProxy Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+            </Tooltip>
         }
-        
-        @Body
+
+        @foreach (var attribute in ViewModel.Attributes)
+        {
+            if (attribute is not null)
+            {
+                <Tooltip Text="@(attribute.Name)">
+                    <ImageProxy @key="attribute.Icon" Width="Width.Em(2)" Source="@(attribute.Icon)"/>
+                </Tooltip>
+            }
+        }
+
+        @if (ViewModel.AttackType is not null)
+        {
+            <Tooltip Text="@(ViewModel.AttackType.Name)">
+                <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttackType.Icon"/>
+            </Tooltip>
+        }
 
         <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
 
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                   Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
 
             @if (Unit.InitialRarity >= 4)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
             }
 
             @if (Unit.InitialRarity >= 5)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
             }
 
             @if (Unit.IsEx || Unit.IsAttributeUnbound)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                       Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
             }
         </Div>
     </Div>
@@ -71,8 +94,10 @@
     [Parameter]
     [EditorRequired]
     public required ICharacterUnit Unit { get; set; }
-    
-    [Parameter]
-    [EditorRequired]
-    public required RenderFragment Body { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<UnitNameSectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
 }
