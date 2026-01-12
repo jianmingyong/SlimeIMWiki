@@ -1,10 +1,10 @@
 ﻿using System.Reactive;
 using System.Reactive.Disposables.Fluent;
 using ReactiveUI;
-using SlimeIMWiki.Models;
+using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.Characters;
+namespace SlimeIMWiki.Components.Characters;
 
 public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableViewModel
 {
@@ -19,6 +19,12 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
     public string CharacterUnitsCategory => _characterListService.OrderByCategory;
     
     public bool IsOrderByDescending => _characterListService.IsOrderByDescending;
+
+    public float ScrollPosition
+    {
+        get => _characterListService.ScrollPosition;
+        set => _characterListService.ScrollPosition = value;
+    }
 
     public ReactiveCommand<string, Unit> ChangeCharacterUnitsDisplayCategoryCommand => _characterListService.ChangeCharacterUnitsDisplayCategoryCommand;
 
@@ -53,6 +59,10 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
             this.WhenAnyValue(model => model._characterListService.IsOrderByDescending)
                 .Subscribe(_ => this.RaisePropertyChanged(nameof(IsOrderByDescending)))
                 .DisposeWith(disposable);
+
+            this.WhenAnyValue(model => model._characterListService.ScrollPosition)
+                .Subscribe(_ => this.RaisePropertyChanged(nameof(ScrollPosition)))
+                .DisposeWith(disposable);
         });
     }
     
@@ -69,6 +79,6 @@ public sealed class CharacterSectionViewModel : ReactiveObject, IActivatableView
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(CharacterUnits, CharacterUnitsCount, DisplayCategory, CharacterUnitsCategory, IsOrderByDescending);
+        return HashCode.Combine(CharacterUnits, CharacterUnitsCount, DisplayCategory, CharacterUnitsCategory, IsOrderByDescending, ScrollPosition);
     }
 }

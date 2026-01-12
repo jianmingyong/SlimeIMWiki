@@ -1,5 +1,6 @@
 ﻿@using SlimeIMWiki.Components.Characters.Filters
-@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.FilterSectionViewModel>
+@inherits ReactiveComponentBase<FilterSectionViewModel>
+@inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -105,3 +106,12 @@
         @filter.RemoveRenderFragment
     }
 </Div>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<FilterSectionViewModel>(ServiceProvider);
+        base.OnInitialized();
+    }
+}

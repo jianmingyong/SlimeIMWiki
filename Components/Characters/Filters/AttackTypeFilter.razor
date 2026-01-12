@@ -1,4 +1,5 @@
-﻿@using SlimeIMWiki.Services
+﻿@using SlimeIMWiki.Models.JsonData
+@using SlimeIMWiki.Services
 @inherits BaseFilterComponent
 
 <FilterComponent Key="@($"{nameof(AttackType)}_{AttackType.Name}")" DisplayText="@AttackType.Name"

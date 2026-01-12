@@ -1,8 +1,9 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.LiveStreamViewModel>
+﻿@inherits ReactiveComponentBase<LiveStreamViewModel>
+@inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
-@if (ViewModel.Livestream is null || !ViewModel.IsOnline)
+@if (ViewModel.Livestream is null || !(NetworkStatus?.IsOnline ?? true))
 {
     <Paragraph TextSize="TextSize.Heading3" TextAlignment="TextAlignment.Center">
         No Stream Available
@@ -14,4 +15,16 @@ else
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
             style="aspect-ratio: 16 / 9; width: 100%; height: 100%; max-width: 640px; max-height: 480px; position: relative; left: 50%; transform: translateX(-50%)"></iframe>
+}
+
+@code
+{
+    [CascadingParameter]
+    public INetworkStatus? NetworkStatus { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<LiveStreamViewModel>(ServiceProvider);
+        base.OnInitialized();
+    }
 }

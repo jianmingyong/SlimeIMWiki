@@ -4,7 +4,7 @@ using DynamicData.Binding;
 using Microsoft.AspNetCore.Components;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
-using SlimeIMWiki.Models;
+using SlimeIMWiki.Models.JsonData;
 
 namespace SlimeIMWiki.Services;
 
@@ -31,6 +31,9 @@ public sealed partial class CharacterListService : ReactiveObject
 
     [Reactive]
     private bool _isOrFilter = true;
+
+    [Reactive]
+    private float _scrollPosition;
 
     private readonly JsonDataModelService _jsonDataModelService;
 
@@ -110,6 +113,7 @@ public sealed partial class CharacterListService : ReactiveObject
     {
         DisplayCategory = category;
         Filters.Clear();
+        ScrollPosition = 0;
     }
 
     [ReactiveCommand]

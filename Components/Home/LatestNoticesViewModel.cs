@@ -1,36 +1,24 @@
-﻿using System.Reactive.Disposables.Fluent;
-using System.Reactive.Linq;
+﻿using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.Home;
+namespace SlimeIMWiki.Components.Home;
 
-public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatableViewModel
+public sealed partial class LatestNoticesViewModel : ReactiveObject
 {
-    public ViewModelActivator Activator { get; } = new();
-    
     private readonly IWebStorageService _webStorageService;
-
-    [ObservableAsProperty(ReadOnly = false)]
-    private bool _isOnline;
     
     [Reactive(SetModifier = AccessModifier.Private)]
-    private string _regionSelection = "NA";
+    private string _regionSelection;
 
     [ObservableAsProperty]
     private int _regionCode = 3;
-    
-    public LatestNoticesViewModel(IWebStorageService webStorageService, IWebApplicationService webApplicationService)
+
+    public LatestNoticesViewModel(IWebStorageService webStorageService)
     {
         _webStorageService = webStorageService;
-
-        this.WhenActivated(disposable =>
-        {
-            webApplicationService.GetIsOnlineAsObservable()
-                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper, () => webApplicationService.IsOnline)
-                .DisposeWith(disposable);
-        });
+        _regionSelection = webStorageService.GetFromCookie(nameof(RegionSelection)) ?? "NA";
         
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {
@@ -43,7 +31,7 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject, IActivatabl
     }
 
     [ReactiveCommand]
-    public void RegionChange(string region)
+    private void RegionChange(string region)
     {
         RegionSelection = region;
         _webStorageService.SetToCookie(nameof(RegionSelection), region, TimeSpan.FromDays(30));

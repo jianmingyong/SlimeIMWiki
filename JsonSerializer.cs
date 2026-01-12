@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
-using SlimeIMWiki.Models;
+using SlimeIMWiki.Models.JsonData;
 
 namespace SlimeIMWiki;
 

@@ -2,6 +2,10 @@
     return $(`#${elementId}`).scrollTop();
 }
 
+export function setScrollPosition(elementId, value) {
+    return $(`#${elementId}`).scrollTop(value);
+}
+
 export function getElementWidth(elementId) {
     return $(`#${elementId}`).width();
 }

@@ -2,7 +2,7 @@
 using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
-using SlimeIMWiki.Models;
+using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.ViewModels.CharacterDetail;

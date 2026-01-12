@@ -1,0 +1,63 @@
+﻿@inherits ReactiveComponentBase<NetworkStatusProviderViewModel>
+@inject IJSInProcessRuntime JS
+
+<CascadingValue TValue="INetworkStatus" Value="@ViewModel">
+    @ChildContent
+</CascadingValue>
+
+@code
+{
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private IJSInProcessObjectReference? _module;
+    private IJSInProcessObjectReference? _onlineEvent;
+    private IJSInProcessObjectReference? _offlineEvent;
+
+    protected override void OnInitialized()
+    {
+        ViewModel = new NetworkStatusProviderViewModel
+        {
+            IsOnline = JS.GetValue<bool>("navigator.onLine")
+        };
+
+        base.OnInitialized();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+
+        if (firstRender)
+        {
+            _module = await JS.InvokeAsync<IJSInProcessObjectReference?>("import", "./Components/NetworkStatusProvider.razor.js");
+
+            if (_module is not null)
+            {
+                var tempRef = DotNetObjectReference.Create(ViewModel);
+                _onlineEvent = _module.Invoke<IJSInProcessObjectReference>("registerOnlineEvent", tempRef);
+                _offlineEvent = _module.Invoke<IJSInProcessObjectReference>("registerOfflineEvent", tempRef);
+            }
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            if (_module is not null)
+            {
+                _module.InvokeVoid("unregisterOnlineEvent", _onlineEvent);
+                _module.InvokeVoid("unregisterOfflineEvent", _offlineEvent);
+                _module?.Dispose();
+            }
+
+            _onlineEvent?.Dispose();
+            _offlineEvent?.Dispose();
+        }
+
+        base.Dispose(disposing);
+    }
+}

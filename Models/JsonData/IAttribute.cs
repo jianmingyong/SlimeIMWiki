@@ -1,4 +1,4 @@
-﻿namespace SlimeIMWiki.Models;
+﻿namespace SlimeIMWiki.Models.JsonData;
 
 public interface IAttribute
 {

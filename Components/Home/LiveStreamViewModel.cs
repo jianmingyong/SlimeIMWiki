@@ -1,29 +1,22 @@
 ﻿using System.Reactive.Disposables.Fluent;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
-using SlimeIMWiki.Models;
+using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.Home;
+namespace SlimeIMWiki.Components.Home;
 
 public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
-    
-    [ObservableAsProperty(ReadOnly = false)]
-    private bool _isOnline;
 
     [ObservableAsProperty(ReadOnly = false)]
     private Livestream? _livestream;
-    
-    public LiveStreamViewModel(JsonDataModelService jsonDataModelService, IWebApplicationService webApplicationService)
+
+    public LiveStreamViewModel(JsonDataModelService jsonDataModelService)
     {
         this.WhenActivated(disposable =>
         {
-            webApplicationService.GetIsOnlineAsObservable()
-                .ToProperty(this, nameof(IsOnline), out _isOnlineHelper, () => webApplicationService.IsOnline)
-                .DisposeWith(disposable);
-            
             jsonDataModelService
                 .GetLivestream()
                 .ToProperty(this, nameof(Livestream), out _livestreamHelper)

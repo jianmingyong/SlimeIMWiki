@@ -4,14 +4,14 @@ using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.Home;
+namespace SlimeIMWiki.Components.Home;
 
 public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
 
     [Reactive(SetModifier = AccessModifier.Private)]
-    private string _timerSelection = "NA";
+    private string _timerSelection;
     
     [Reactive(SetModifier = AccessModifier.Private)]
     private DateTime _timerReset = DateTime.Now;
@@ -30,9 +30,12 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     public TimersViewModel(IWebStorageService webStorageService)
     {
         _webStorageService = webStorageService;
+        _timerSelection = webStorageService.GetFromCookie(nameof(TimerSelection)) ?? "NA";
         
         this.WhenActivated(disposable =>
         {
+            RegionChange(_timerSelection);
+            
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
                 UpdateTimers();
@@ -41,7 +44,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     }
     
     [ReactiveCommand]
-    public void RegionChange(string region)
+    private void RegionChange(string region)
     {
         TimerSelection = region;
         

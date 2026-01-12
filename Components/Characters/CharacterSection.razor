@@ -1,6 +1,9 @@
-﻿@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Characters.CharacterSectionViewModel>
+﻿@inherits ReactiveComponentBase<CharacterSectionViewModel>
 @using ReactiveUI
+@using SlimeIMWiki.Models.JsonData
 @implements IAsyncDisposable
+
+@inject IServiceProvider ServiceProvider
 @inject IJSInProcessRuntime JS
 @inject ILogger<CharacterSection> Logger
 
@@ -13,19 +16,21 @@
                     Color="@(ViewModel.DisplayCategory == "Battle" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Battle")">
-                <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)"
+                            Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
                     Color="@(ViewModel.DisplayCategory == "Protection" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
                     CommandParameter="@("Protection")">
-                <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+                <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)"
+                            Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Protection Units</Text>
             </Button>
         </Buttons>
     </Div>
-    
+
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
             <Button Size="Size.Small" Color="Color.Dark" Border="Border.RoundedStart"
@@ -44,7 +49,7 @@
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Health")">
                 <ImageProxy Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
-                       Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Health</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
@@ -52,7 +57,7 @@
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Attack")">
                 <ImageProxy Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
-                       Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Attack</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
@@ -60,7 +65,7 @@
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Defense")">
                 <ImageProxy Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
-                       Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Defense</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
@@ -75,7 +80,7 @@
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Name")">
                 <ImageProxy Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
-                       Style="@(ViewModel.CharacterUnitsCategory == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.CharacterUnitsCategory == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Name</Text>
             </Button>
         </Buttons>
@@ -85,10 +90,11 @@
 <Div Background="Background.Body" Position="Position.Relative"
      Style="height: calc(100vh - 56px - 4rem - 1.5rem); overflow-y: scroll"
      @onscroll="OnScroll" ElementId="UnitScrollContainer">
-    
+
     <Div Style="@($"height: {_unitContainerHeight}px")">
         <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop.Is3.FromBottom"
-             Position="Position.Absolute" Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
+             Position="Position.Absolute"
+             Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
             @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
             {
                 if (unit is BattleUnit battleUnit)
@@ -97,7 +103,8 @@
                 }
                 else if (unit is ProtectionUnit protectionUnit)
                 {
-                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit"
+                                        DisplayText="@ViewModel.DisplayText(unit)"/>
                 }
             }
         </Div>
@@ -128,6 +135,12 @@
     private int _startIndex;
     private int _endIndex = 1;
 
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<CharacterSectionViewModel>(ServiceProvider);
+        base.OnInitialized();
+    }
+
     protected override bool ShouldRender()
     {
         var newRenderHashcode = HashCode.Combine(ViewModel, _unitContainerHeight, _startIndex, _endIndex);
@@ -141,49 +154,65 @@
         if (firstRender)
         {
             _module = await JS.InvokeAsync<IJSInProcessObjectReference?>("import", "./Components/Characters/CharacterSection.razor.js");
-            
-            OnScroll();
+
+            UpdateScrollContainer();
+            UpdateVisibleItems();
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(_ => UpdateVisibleItems());
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
-        
+
+        _module?.InvokeVoid("setScrollPosition", "UnitScrollContainer", ViewModel?.ScrollPosition);
+
         await base.OnAfterRenderAsync(firstRender);
     }
 
     private void OnScroll()
     {
+        UpdateScrollContainer();
+        UpdateScrollPosition();
+        UpdateVisibleItems();
+    }
+
+    private void UpdateScrollContainer()
+    {
         if (_module is null) return;
 
         _unitScrollContainerWidth = _module.Invoke<float>("getElementWidth", "UnitScrollContainer");
         _unitScrollContainerHeight = _module.Invoke<float>("getElementHeight", "UnitScrollContainer");
-        _scrollPosition = MathF.Max(0, _module.Invoke<float>("getScrollPosition", "UnitScrollContainer"));
         
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
-        Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
-
-        UpdateVisibleItems();
     }
-    
+
+    private void UpdateScrollPosition()
+    {
+        if (_module is null) return;
+
+        _scrollPosition = MathF.Max(0, _module.Invoke<float>("getScrollPosition", "UnitScrollContainer"));
+        ViewModel?.ScrollPosition = _scrollPosition;
+
+        Logger.LogTrace("Scroll Position: {position}", _scrollPosition);
+    }
+
     private void UpdateVisibleItems()
     {
         if (_module is null) return;
-        
+
         Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
-        
+
         _itemsPerRow = (int) Math.Floor(_unitScrollContainerWidth / (_itemWidth + _itemWidthGap));
         _visibleRowCount = (int) Math.Ceiling(_unitScrollContainerHeight / (_itemHeight + _itemHeightGap));
 
         _overscanAboveRowCount = Math.Clamp((int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)), 0, _overscanRowCount);
         _overscanBelowRowCount = _overscanRowCount;
-        
+
         _startIndex = (int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)) * _itemsPerRow - _itemsPerRow * _overscanAboveRowCount;
         _endIndex = _startIndex + _itemsPerRow * (_overscanAboveRowCount + _visibleRowCount + _overscanBelowRowCount);
         _endIndex = Math.Min(_endIndex, ViewModel.CharacterUnitsCount);
 
         _unitContainerHeight = MathF.Ceiling((float) ViewModel.CharacterUnitsCount / _itemsPerRow) * (_itemHeight + _itemHeightGap);
-        
+
         Logger.LogTrace("Item Per Row: {itemsPerRow}", _itemsPerRow);
         Logger.LogTrace("Overscan Above Row Count: {renderedRowCount}", _overscanAboveRowCount);
         Logger.LogTrace("Overscan Below Row Count: {renderedRowCount}", _overscanBelowRowCount);

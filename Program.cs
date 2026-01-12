@@ -7,8 +7,6 @@ using Microsoft.JSInterop;
 using ReactiveUI;
 using SlimeIMWiki;
 using SlimeIMWiki.Services;
-using SlimeIMWiki.ViewModels.Characters;
-using SlimeIMWiki.ViewModels.Home;
 using Splat;
 using Splat.Microsoft.Extensions.DependencyInjection;
 using Splat.ModeDetection;
@@ -26,18 +24,10 @@ builder.Services.AddSingleton(_ => new HttpClient
 builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
-builder.Services.AddSingleton<IWebApplicationService, WebApplicationService>();
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
 builder.Services.AddSingleton<StaticWebRootAssets>();
 builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListService>();
-
-builder.Services.AddTransient<LatestNoticesViewModel>();
-builder.Services.AddTransient<LiveStreamViewModel>();
-builder.Services.AddTransient<TimersViewModel>();
-
-builder.Services.AddTransient<CharacterSectionViewModel>();
-builder.Services.AddTransient<FilterSectionViewModel>();
 
 builder.Services
     .AddBlazorise(options =>
@@ -53,8 +43,4 @@ resolver.InitializeReactiveUI();
 
 ModeDetector.OverrideModeDetector(Mode.Run);
 
-var app = builder.Build();
-
-GlobalJsExport.ServiceProvider = app.Services;
-
-await app.RunAsync();
+await builder.Build().RunAsync();

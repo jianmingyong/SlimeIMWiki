@@ -1,6 +1,5 @@
-﻿@using SlimeIMWiki.Services
-@inherits ReactiveInjectableComponentBase<SlimeIMWiki.ViewModels.Home.LatestNoticesViewModel>
-@inject IWebStorageService WebStorageService
+﻿@inherits ReactiveComponentBase<LatestNoticesViewModel>
+@inject IServiceProvider ServiceProvider
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -35,7 +34,7 @@
     </Buttons>
 </Div>
 
-@if (ViewModel.IsOnline)
+@if (NetworkStatus?.IsOnline ?? true)
 {
     <iframe height="500"
             src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
@@ -49,15 +48,12 @@ else
 
 @code
 {
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    [CascadingParameter]
+    public INetworkStatus? NetworkStatus { get; set; }
+
+    protected override void OnInitialized()
     {
-        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
-        
-        if (firstRender)
-        {
-            ViewModel.RegionChange(WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA");
-        }
-        
-        await base.OnAfterRenderAsync(firstRender);
+        ViewModel = ActivatorUtilities.CreateInstance<LatestNoticesViewModel>(ServiceProvider);
+        base.OnInitialized();
     }
 }
