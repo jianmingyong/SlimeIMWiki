@@ -197,7 +197,12 @@
   {
     "name": "Assault Team",
     "category": "Event/Theme",
-    "icon": "image/forces/category_140000000000054.png"
+    "icon": "image/forces/assault_team.png"
+  },
+  {
+    "name": "",
+    "category": "Event/Theme",
+    "icon": "image/forces/category_140000000000055.png"
   },
   {
     "name": "Octagram Bazaar",

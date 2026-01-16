@@ -1,7 +1,6 @@
 ﻿@inherits ReactiveComponentBase<CharacterSectionViewModel>
 @using ReactiveUI
 @using SlimeIMWiki.Models.JsonData
-@implements IAsyncDisposable
 
 @inject IServiceProvider ServiceProvider
 @inject IJSInProcessRuntime JS
@@ -222,8 +221,13 @@
         StateHasChanged();
     }
 
-    public async ValueTask DisposeAsync()
+    protected override void Dispose(bool disposing)
     {
-        if (_module != null) await _module.DisposeAsync();
+        if (disposing)
+        {
+            _module?.Dispose();
+        }
+        
+        base.Dispose(disposing);
     }
 }
