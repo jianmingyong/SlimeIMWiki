@@ -11,7 +11,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     public ViewModelActivator Activator { get; } = new();
 
     [Reactive(SetModifier = AccessModifier.Private)]
-    private string _timerSelection;
+    private string _timerSelection = "NA";
     
     [Reactive(SetModifier = AccessModifier.Private)]
     private DateTime _timerReset = DateTime.Now;
@@ -30,12 +30,9 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
     public TimersViewModel(IWebStorageService webStorageService)
     {
         _webStorageService = webStorageService;
-        _timerSelection = webStorageService.GetFromCookie(nameof(TimerSelection)) ?? "NA";
         
         this.WhenActivated(disposable =>
         {
-            RegionChange(_timerSelection);
-            
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
                 UpdateTimers();

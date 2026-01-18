@@ -1,8 +1,7 @@
 ﻿@page "/characters/{permalink}"
 @using SlimeIMWiki.Components.CharacterDetail
 @using SlimeIMWiki.Models.JsonData
-@using SlimeIMWiki.ViewModels.CharacterDetail
-@inherits ReactiveComponentBase<SlimeIMWiki.ViewModels.CharacterDetail.CharacterDetailViewModel>
+@inherits ReactiveComponentBase<CharacterDetailViewModel>
 @inject IServiceProvider ServiceProvider
 @inject IJSRuntime Js
 
@@ -10,17 +9,19 @@
 
 @if (ViewModel.Unit is null)
 {
-    <Div>There is no such character. Perhaps you have spelled incorrectly?</Div>
+    <Alert Color="Color.Danger" Visible>
+        <AlertMessage>There is no such character. Perhaps you have spelled incorrectly?</AlertMessage>
+    </Alert>
 }
 else
 {
     <Div Flex="Flex.Wrap" Margin="Margin.Is5.FromBottom">
         <Div Width="Width.Is100">
             <ImageProxy Width="Width.Rem(4)" Height="Height.Rem(4)"
-                   Source="image/character_info/btnReturnNormal.png"
-                   Text="Back"
-                   Class="returnButton"
-                   @onclick="ReturnBack"/>
+                        Source="image/character_info/btnReturnNormal.png"
+                        Text="Back"
+                        Class="returnButton"
+                        @onclick="ReturnBack"/>
         </Div>
 
         <Div Width="Width.Is50" Display="Display.Block.OnDesktop.None">
@@ -30,7 +31,7 @@ else
         <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
             <Div Flex="Flex.Wrap">
                 <Div Width="Width.Is100">
-                    <UnitNameSection Unit="ViewModel.Unit" />
+                    <UnitNameSection Unit="ViewModel.Unit"/>
                 </Div>
 
                 <Div Display="Display.None.OnDesktop.Block" Width="Width.Is100">
@@ -43,50 +44,7 @@ else
                     </Div>
 
                     <Div Flex="Flex.Grow.Is1.Shrink.Is1">
-                        <TextDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
-
-                        <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
-                             Gap="Gap.Is2">
-                            @switch (ViewModel.Unit)
-                            {
-                                case ProtectionUnit { Forces: not null } protectionUnit1:
-                                {
-                                    foreach (var force in protectionUnit1.Forces)
-                                    {
-                                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                            <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                                   Source="@ViewModel.GetForceIcon(force)" Text="Icon"/>
-                                            <Div>@force</Div>
-                                        </Div>
-                                    }
-
-                                    break;
-                                }
-
-                                case BattleUnit battleUnit:
-                                {
-                                    foreach (var force in battleUnit.Forces)
-                                    {
-                                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                            <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                                   Source="@ViewModel.GetForceIcon(force)" Text="Icon"/>
-                                            <Div>@force</Div>
-                                        </Div>
-                                    }
-
-                                    break;
-                                }
-
-                                default:
-                                {
-                                    <Div Flex="Flex.Grow.Is1.Shrink.Is1" TextAlignment="TextAlignment.Center">
-                                        No forces have been assigned.
-                                    </Div>
-
-                                    break;
-                                }
-                            }
-                        </Div>
+                        <UnitForceSection Unit="ViewModel.Unit"/>
 
                         <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
 
@@ -101,8 +59,8 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                               Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[0])"
-                                               Text="Icon"/>
+                                                    Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[0])"
+                                                    Text="Icon"/>
                                         <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[0]</Div>
 
                                         @switch (ViewModel.Unit)
@@ -126,8 +84,8 @@ else
                                 {
                                     <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                         <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                               Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[1])"
-                                               Text="Icon"/>
+                                                    Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[1])"
+                                                    Text="Icon"/>
                                         <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[1]</Div>
 
                                         @switch (ViewModel.Unit)
@@ -160,7 +118,7 @@ else
                             <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                     <ImageProxy Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100"
-                                           Text="Icon"/>
+                                                Text="Icon"/>
                                 </Div>
                                 <Div>
                                     <Div TextWeight="TextWeight.Bold">
@@ -181,7 +139,8 @@ else
                             </Div>
 
                             <Div>
-                                <EffectStyler Text="@(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)"/>
+                                <EffectStyler
+                                    Text="@(string.IsNullOrEmpty(unit.SupportDivineProtectionEffectMax) ? "???" : unit.SupportDivineProtectionEffectMax)"/>
                             </Div>
                         </Div>
 
@@ -211,11 +170,11 @@ else
                     else if (ViewModel.Unit is BattleUnit battleUnit)
                     {
                         <TextDivider Text="SECRET SKILLS" Margin="Margin.Is2.OnY"/>
-                        
+
                         <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                             <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                    
+
                                 </Div>
                                 <Div>
                                     <Div TextWeight="TextWeight.Bold">
@@ -236,9 +195,9 @@ else
                                 <Div>???</Div>
                             }
                         </Div>
-                        
+
                         <TextDivider Text="BATTLE SKILLS" Margin="Margin.Is2.OnY"/>
-                        
+
                         <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                             <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                 <Div Flex="Flex.Column.AlignItems.Center">
@@ -246,7 +205,8 @@ else
                                     <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                         @if (!string.IsNullOrEmpty(battleUnit.BattleSkillOneIcon))
                                         {
-                                            <ImageProxy Source="@battleUnit.BattleSkillOneIcon" Width="Width.Is100" Text="Icon"/>
+                                            <ImageProxy Source="@battleUnit.BattleSkillOneIcon" Width="Width.Is100"
+                                                        Text="Icon"/>
                                         }
                                     </Div>
                                 </Div>
@@ -262,15 +222,17 @@ else
                                 <EffectStyler Text="@battleUnit.BattleSkillOneEffect"/>
                             </Div>
                         </Div>
-                        
-                        <Div Flex="Flex.Column" Background="Background.Body" Margin="Margin.Is2.FromTop" Padding="Padding.Is2" Gap="Gap.Is2">
+
+                        <Div Flex="Flex.Column" Background="Background.Body" Margin="Margin.Is2.FromTop"
+                             Padding="Padding.Is2" Gap="Gap.Is2">
                             <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
                                 <Div Flex="Flex.Column.AlignItems.Center">
                                     <Div TextWeight="TextWeight.Bold">@battleUnit.BattleSkillTwoEffectCost</Div>
                                     <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                         @if (!string.IsNullOrEmpty(battleUnit.BattleSkillTwoIcon))
                                         {
-                                            <ImageProxy Source="@battleUnit.BattleSkillTwoIcon" Width="Width.Is100" Text="Icon"/>
+                                            <ImageProxy Source="@battleUnit.BattleSkillTwoIcon" Width="Width.Is100"
+                                                        Text="Icon"/>
                                         }
                                     </Div>
                                 </Div>
@@ -352,7 +314,8 @@ else
                                 <Div Width="Width.Em(4)" Height="Height.Em(4)">
                                     @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
                                     {
-                                        <ImageProxy Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100" Text="Icon"/>
+                                        <ImageProxy Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100"
+                                                    Text="Icon"/>
                                     }
                                 </Div>
                                 <Div>

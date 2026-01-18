@@ -4,7 +4,7 @@ using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.CharacterDetail;
+namespace SlimeIMWiki.Components.CharacterDetail;
 
 public sealed partial class CharacterDetailViewModel : ReactiveObject
 {
@@ -30,12 +30,7 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
             .FirstOrDefaultAsync(unit => unit.Permalink.Equals(permalink, StringComparison.InvariantCultureIgnoreCase))
             .ToProperty(this, nameof(Unit), out _unitHelper);
     }
-
-    public string? GetForceIcon(string force)
-    {
-        return Unit is null ? null : _jsonDataModelService.GetForce(force)?.Icon;
-    }
-
+    
     public string? GetFieldBuildingIcon(string fieldBuilding)
     {
         return Unit is null ? null : _jsonDataModelService.GetFieldBuilding(fieldBuilding)?.Icon;

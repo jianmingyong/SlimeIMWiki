@@ -1,0 +1,41 @@
+﻿@using SlimeIMWiki.Models.JsonData
+@inherits ReactiveComponentBase<UnitForceSectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<TextDivider Text="FORCES" Margin="Margin.Is2.OnY"/>
+
+<Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap"
+     Gap="Gap.Is2">
+    @if (!ViewModel.Forces.Any())
+    {
+        <Div Flex="Flex.Grow.Is1.Shrink.Is1" TextAlignment="TextAlignment.Center">
+            No forces have been assigned.
+        </Div>
+    }
+    else
+    {
+        @foreach (var force in ViewModel.Forces)
+        {
+            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                            Source="@force?.Icon" Text="Icon"/>
+                <Div>@force?.Name</Div>
+            </Div>
+        }
+    }
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ICharacterUnit Unit { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<UnitForceSectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}

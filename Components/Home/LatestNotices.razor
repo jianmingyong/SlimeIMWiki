@@ -1,5 +1,7 @@
-﻿@inherits ReactiveComponentBase<LatestNoticesViewModel>
+﻿@using SlimeIMWiki.Services
+@inherits ReactiveComponentBase<LatestNoticesViewModel>
 @inject IServiceProvider ServiceProvider
+@inject IWebStorageService WebStorageService
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -55,5 +57,17 @@ else
     {
         ViewModel = ActivatorUtilities.CreateInstance<LatestNoticesViewModel>(ServiceProvider);
         base.OnInitialized();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+
+        if (firstRender)
+        {
+            ViewModel.RegionChangeCommand.Execute(WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA").Subscribe();
+        }
+
+        base.OnAfterRender(firstRender);
     }
 }

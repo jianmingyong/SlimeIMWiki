@@ -10,7 +10,7 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject
     private readonly IWebStorageService _webStorageService;
     
     [Reactive(SetModifier = AccessModifier.Private)]
-    private string _regionSelection;
+    private string _regionSelection = "NA";
 
     [ObservableAsProperty]
     private int _regionCode = 3;
@@ -18,7 +18,6 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject
     public LatestNoticesViewModel(IWebStorageService webStorageService)
     {
         _webStorageService = webStorageService;
-        _regionSelection = webStorageService.GetFromCookie(nameof(RegionSelection)) ?? "NA";
         
         this.WhenAnyValue(model => model.RegionSelection).Select(value => value switch
         {

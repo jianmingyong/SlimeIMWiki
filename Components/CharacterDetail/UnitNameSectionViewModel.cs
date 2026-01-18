@@ -5,7 +5,7 @@ using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
-namespace SlimeIMWiki.ViewModels.CharacterDetail;
+namespace SlimeIMWiki.Components.CharacterDetail;
 
 public sealed partial class UnitNameSectionViewModel : ReactiveObject, IActivatableViewModel
 {

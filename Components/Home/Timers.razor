@@ -1,5 +1,7 @@
-﻿@inherits ReactiveComponentBase<TimersViewModel>
+﻿@using SlimeIMWiki.Services
+@inherits ReactiveComponentBase<TimersViewModel>
 @inject IServiceProvider ServiceProvider
+@inject IWebStorageService WebStorageService
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -51,5 +53,17 @@
     {
         ViewModel = ActivatorUtilities.CreateInstance<TimersViewModel>(ServiceProvider);
         base.OnInitialized();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+
+        if (firstRender)
+        {
+            ViewModel.RegionChangeCommand.Execute(WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA").Subscribe();
+        }
+
+        base.OnAfterRender(firstRender);
     }
 }
