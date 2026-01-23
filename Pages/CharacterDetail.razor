@@ -45,67 +45,7 @@ else
 
                     <Div Flex="Flex.Grow.Is1.Shrink.Is1">
                         <UnitForceSection Unit="ViewModel.Unit"/>
-
-                        <TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
-
-                        <Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
-                            @if (ViewModel.Unit.SuitedFacilities.Length == 0)
-                            {
-                                <Div>No Suited Facilities have been assigned.</Div>
-                            }
-                            else
-                            {
-                                if (ViewModel.Unit.SuitedFacilities.Length >= 1)
-                                {
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                                    Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[0])"
-                                                    Text="Icon"/>
-                                        <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[0]</Div>
-
-                                        @switch (ViewModel.Unit)
-                                        {
-                                            case ProtectionUnit:
-                                            {
-                                                <Div>200%</Div>
-                                                break;
-                                            }
-
-                                            case BattleUnit:
-                                            {
-                                                <Div>30%</Div>
-                                                break;
-                                            }
-                                        }
-                                    </Div>
-                                }
-
-                                if (ViewModel.Unit.SuitedFacilities.Length >= 2)
-                                {
-                                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                        <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
-                                                    Source="@ViewModel.GetFieldBuildingIcon(ViewModel.Unit.SuitedFacilities[1])"
-                                                    Text="Icon"/>
-                                        <Div Flex="Flex.Grow.Is1">@ViewModel.Unit.SuitedFacilities[1]</Div>
-
-                                        @switch (ViewModel.Unit)
-                                        {
-                                            case ProtectionUnit:
-                                            {
-                                                <Div>100%</Div>
-                                                break;
-                                            }
-
-                                            case BattleUnit:
-                                            {
-                                                <Div>10%</Div>
-                                                break;
-                                            }
-                                        }
-                                    </Div>
-                                }
-                            }
-                        </Div>
+                        <UnitSuitedFacilitySection Unit="ViewModel.Unit"/>
                     </Div>
                 </Div>
 

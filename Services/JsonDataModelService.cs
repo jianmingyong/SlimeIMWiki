@@ -108,6 +108,13 @@ public sealed partial class JsonDataModelService : ReactiveObject
             .WhenAnyValue(service => service.Forces)
             .Select(f => forces.Select(s => f?.SingleOrDefault(force => force.Name.Equals(s, StringComparison.OrdinalIgnoreCase))));
     }
+
+    public IObservable<IEnumerable<FieldBuilding?>> GetObservableFieldBuildings(string[] fieldBuildings)
+    {
+        return this
+            .WhenAnyValue(service => service.FieldBuildings)
+            .Select(f => fieldBuildings.Select(s => f?.SingleOrDefault(building => building.Name.Equals(s, StringComparison.OrdinalIgnoreCase))));
+    }
     
     public IObservable<TacticType?> GetObservableTacticType(string type)
     {

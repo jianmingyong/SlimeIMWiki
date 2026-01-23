@@ -17,19 +17,21 @@ public sealed partial class UnitForceSectionViewModel : ReactiveObject, IActivat
     {
         this.WhenActivated(disposables =>
         {
-            if (unit is BattleUnit battleUnit)
+            switch (unit)
             {
-                jsonDataModelService
-                    .GetObservableForces(battleUnit.Forces)
-                    .ToProperty(this, nameof(Forces), out _forcesHelper)
-                    .DisposeWith(disposables);
-            }
-            else if (unit is ProtectionUnit protectionUnit)
-            {
-                jsonDataModelService
-                    .GetObservableForces(protectionUnit.Forces ?? [])
-                    .ToProperty(this, nameof(Forces), out _forcesHelper)
-                    .DisposeWith(disposables);
+                case BattleUnit battleUnit:
+                    jsonDataModelService
+                        .GetObservableForces(battleUnit.Forces)
+                        .ToProperty(this, nameof(Forces), out _forcesHelper)
+                        .DisposeWith(disposables);
+                    break;
+
+                case ProtectionUnit protectionUnit:
+                    jsonDataModelService
+                        .GetObservableForces(protectionUnit.Forces ?? [])
+                        .ToProperty(this, nameof(Forces), out _forcesHelper)
+                        .DisposeWith(disposables);
+                    break;
             }
         });
     }

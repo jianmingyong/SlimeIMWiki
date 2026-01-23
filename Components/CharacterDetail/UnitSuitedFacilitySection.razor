@@ -1,0 +1,40 @@
+﻿@using SlimeIMWiki.Models.JsonData
+@inherits ReactiveComponentBase<UnitSuitedFacilitySectionViewModel>
+@inject IServiceProvider ServiceProvider
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<TextDivider Text="SUITED FACILITIES" Margin="Margin.Is2.OnY"/>
+
+<Div Background="Background.Body" Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
+    @if (!ViewModel.SuitedFacilities.Any())
+    {
+        <Div>No Suited Facilities have been assigned.</Div>
+    }
+    else
+    {
+        foreach (var suitedFacility in ViewModel.SuitedFacilities)
+        {
+            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                <ImageProxy Width="Width.Em(1.5)" Height="Height.Em(1.5)"
+                            Source="@suitedFacility.FieldBuilding?.Icon"
+                            Text="Icon"/>
+                <Div Flex="Flex.Grow.Is1">@suitedFacility.FieldBuilding?.Name</Div>
+                <Div>@(suitedFacility.Value)%</Div>
+            </Div>
+        }
+    }
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ICharacterUnit Unit { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<UnitSuitedFacilitySectionViewModel>(ServiceProvider, Unit);
+        base.OnInitialized();
+    }
+}
