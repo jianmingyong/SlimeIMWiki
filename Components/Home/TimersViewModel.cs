@@ -10,7 +10,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
 {
     public ViewModelActivator Activator { get; } = new();
 
-    [Reactive(SetModifier = AccessModifier.Private)]
+    [Reactive]
     private string _timerSelection = "NA";
     
     [Reactive(SetModifier = AccessModifier.Private)]

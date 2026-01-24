@@ -65,7 +65,7 @@ else
 
         if (firstRender)
         {
-            ViewModel.RegionChangeCommand.Execute(WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA").Subscribe();
+            ViewModel.RegionSelection = WebStorageService.GetFromCookie(nameof(ViewModel.RegionSelection)) ?? "NA";
         }
 
         base.OnAfterRender(firstRender);

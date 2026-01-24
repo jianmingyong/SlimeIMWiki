@@ -61,7 +61,7 @@
 
         if (firstRender)
         {
-            ViewModel.RegionChangeCommand.Execute(WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA").Subscribe();
+            ViewModel.TimerSelection = WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA";
         }
 
         base.OnAfterRender(firstRender);

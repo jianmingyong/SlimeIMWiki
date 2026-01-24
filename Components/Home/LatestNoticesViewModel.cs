@@ -9,7 +9,7 @@ public sealed partial class LatestNoticesViewModel : ReactiveObject
 {
     private readonly IWebStorageService _webStorageService;
     
-    [Reactive(SetModifier = AccessModifier.Private)]
+    [Reactive]
     private string _regionSelection = "NA";
 
     [ObservableAsProperty]
