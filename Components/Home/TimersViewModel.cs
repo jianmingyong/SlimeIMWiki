@@ -33,6 +33,36 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
         
         this.WhenActivated(disposable =>
         {
+            this.WhenAnyValue(model => model.TimerSelection)
+                .Subscribe(region =>
+                {
+                    switch (region)
+                    {
+                        case "NA":
+                        {
+                            TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 19, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            break;
+                        }
+
+                        case "EU":
+                        {
+                            TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 12, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            break;
+                        }
+
+                        case "Asia":
+                        {
+                            TimerReset = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 3, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            TimerUpdate = new DateTimeOffset(DateTimeOffset.UtcNow.Year, DateTimeOffset.UtcNow.Month, DateTimeOffset.UtcNow.Day, 10, 0, 0, TimeSpan.FromHours(8)).LocalDateTime;
+                            break;
+                        }
+                    }
+                    
+                    UpdateTimers();
+                });
+            
             Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
             {
                 UpdateTimers();
