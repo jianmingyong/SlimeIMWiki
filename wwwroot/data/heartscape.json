@@ -508,16 +508,31 @@
     "release_date": "2025-10-16"
   },
   {
+    "name": "Ogres' Pride",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500087_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increase speed-type characters' Aegis power by 5% (Turns: 1)",
+      "Increase speed-type characters' Aegis power by 10% (Turns: 1)",
+      "Increase speed-type characters' Aegis power by 15% (Turns: 1)"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Epitaph of Fate Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-01-26"
+  },
+  {
     "name": "The Otherworld Swordsmen",
     "category": "Other",
-    "icon": "image/heartprints/skill_still_2500085_L.png",
+    "icon": "image/heartprints/skill_still_2500086_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
       "Increase charge-type characters' synergy power by 5% (Turns: 1)",
       "Increase charge-type characters' synergy power by 10% (Turns: 1)",
       "Increase charge-type characters' synergy power by 15% (Turns: 1)"
     ],
-    "unlock_condition": "Complete Reloaded World Story Event (Missable)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Reloaded World Part 1 Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-12-18"
@@ -532,7 +547,7 @@
       "Increase speed-type characters' pierce power by 10% (Turns: 1)",
       "Increase speed-type characters' pierce power by 15% (Turns: 1)"
     ],
-    "unlock_condition": "Complete Festive Surprise Mission Story Event (Missable)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Festive Surprise Mission Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-11-27"
@@ -547,7 +562,7 @@
       "Increase charge-type characters' critical damage by 10% (Turns: 1)",
       "Increase charge-type characters' critical damage by 15% (Turns: 1)"
     ],
-    "unlock_condition": "Complete Wild Winds of Kindred Catastrophe Story Event (Missable)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Wild Winds of Kindred Catastrophe Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-30"
@@ -562,7 +577,7 @@
       "Applies Vengeance Counterattack to all allies (Turns: 2); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)",
       "Applies Vengeance Counterattack to all allies (Turns: 3); each time affected ally takes damage, adds Vengeance charge x1 to all targets including rearguard (Each charge x1 deals 50% of target's ATK in ongoing damage from Turn 5 onwards)"
     ],
-    "unlock_condition": "Complete New Feature \"Heartscape\" Kick-Start Event (Missable)\nUnlock total Heartprint and Heartprint Skills: x2",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete New Feature \"Heartscape\" Kick-Start Event (Missable)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-16"
@@ -577,7 +592,7 @@
       "Increases skill points by 15",
       "Increases skill points by 25"
     ],
-    "unlock_condition": "650 District Progress Milestone Reached (Eurazania)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\n650 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-16"
@@ -590,7 +605,7 @@
     "descriptions": [
       "Increases Wind Attribute effect level by 1"
     ],
-    "unlock_condition": "400 District Progress Milestone Reached (Eurazania)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\n400 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-16"
@@ -603,7 +618,7 @@
     "descriptions": [
       "Increases Protection Characters effect level by 1"
     ],
-    "unlock_condition": "100 District Progress Milestone Reached (Eurazania)",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\n100 District Progress Milestone Reached (Eurazania)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-16"
@@ -616,7 +631,7 @@
     "descriptions": [
       "Increases Protection Characters effect level by 1"
     ],
-    "unlock_condition": "Valor Cup Diamond 1 Rank Reached",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nValor Cup Diamond 1 Rank Reached",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-11-06"
