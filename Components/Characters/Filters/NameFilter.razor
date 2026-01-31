@@ -1,0 +1,31 @@
+﻿@using SlimeIMWiki.Models.JsonData
+@using SlimeIMWiki.Services
+@inherits BaseFilterComponent
+
+<FilterComponent Key="@($"{nameof(Search)}_{Search.DisplayValue}")"
+                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Text>@Search.DisplayValue</Text>
+</FilterComponent>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required SearchResult Search { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter($"{nameof(Search)}_{Search.DisplayValue}", unit =>
+            {
+                return unit switch
+                {
+                    BattleUnit battleUnit => Search.IsName ? battleUnit.Name.Equals(Search.Unit.Name, StringComparison.OrdinalIgnoreCase) : battleUnit.Title.Equals(Search.Unit.Title, StringComparison.OrdinalIgnoreCase),
+                    ProtectionUnit protectionUnit => Search.IsName ? protectionUnit.Name.Equals(Search.Unit.Name, StringComparison.OrdinalIgnoreCase) : protectionUnit.Title.Equals(Search.Unit.Title, StringComparison.OrdinalIgnoreCase),
+                    var _ => false
+                };
+            },
+            @<NameFilter Search="@Search" IsRemoveMode="true" Filter="Filter"/>);
+
+        base.OnInitialized();
+    }
+}

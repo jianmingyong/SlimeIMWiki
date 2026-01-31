@@ -8,7 +8,7 @@
         <Authors>Yong Jian Ming</Authors>
         <Company>The Dialga Team</Company>
         <Description>SLIMEIM.WIKI is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment.</Description>
-        <Copyright>Copyright 2025 The Dialga Team</Copyright>
+        <Copyright>Copyright 2026 The Dialga Team</Copyright>
 
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
@@ -18,11 +18,7 @@
 
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
         
-        <RunAOTCompilation>false</RunAOTCompilation>
-        <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
-
         <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
-        
         <PublishViaGHAction>false</PublishViaGHAction>
     </PropertyGroup>
 

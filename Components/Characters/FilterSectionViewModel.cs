@@ -3,6 +3,8 @@ using Blazorise.Components;
 using DynamicData.Binding;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
+using SlimeIMWiki.Components.Characters.Filters;
+using SlimeIMWiki.Models;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
@@ -23,8 +25,11 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
     [Reactive]
     private string _searchQuery = "";
 
+    [Reactive]
+    private SearchResult? _searchResultSelection;
+
     [ObservableAsProperty(ReadOnly = false)]
-    private IEnumerable<string>? _searchResults = [];
+    private IEnumerable<SearchResult>? _searchResults = [];
 
     [ObservableAsProperty(ReadOnly = false)]
     private IEnumerable<IAttackType>? _attackTypes = [];
@@ -134,24 +139,62 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                         {
                             case "Battle":
                             {
-                                return battleUnits?.Where(unit => unit.Name.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
-                                    .Select(unit => unit.Name)
-                                    .Distinct();
+                                var nameResults = battleUnits?.Where(unit => unit.Name.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
+                                    .Select(unit => new SearchResult(unit.Name, true, false, unit)) ?? [];
+                                
+                                var titleResults = battleUnits?.Where(unit => unit.Title.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
+                                    .Select(unit => new SearchResult($"{unit.Name} [{unit.Title}]", false, true, unit)) ?? [];
+                                
+                                return nameResults.Concat(titleResults).DistinctBy(result => result.DisplayValue);
                             }
 
                             case "Protection":
                             {
-                                return protectionUnits?.Where(unit => unit.Name.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
-                                    .Select(unit => unit.Name)
-                                    .Distinct();
+                                var nameResults = protectionUnits?.Where(unit => unit.Name.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
+                                    .Select(unit => new SearchResult(unit.Name, true, false, unit)) ?? [];
+                                
+                                var titleResults = protectionUnits?.Where(unit => unit.Title.StartsWith(searchQuery, StringComparison.OrdinalIgnoreCase))
+                                    .Select(unit => new SearchResult($"{unit.Name} [{unit.Title}]", false, true, unit)) ?? [];
+                                
+                                return nameResults.Concat(titleResults).DistinctBy(result => result.DisplayValue);
                             }
-
-                            default:
+                            
+                            case var _:
                                 return [];
                         }
                     })
                 .ToProperty(this, nameof(SearchResults), out _searchResultsHelper)
                 .DisposeWith(disposable);
+            
+            this.WhenAnyValue(model => model.SearchResultSelection)
+                .Subscribe(searchResult =>
+                {
+                    if (searchResult is null) return;
+                    
+                    if (characterListService.Filters.All(filter => filter.Key != $"Search_{searchResult.DisplayValue}"))
+                    {
+                        Filter? filter = null;
+                        filter = new Filter($"Search_{searchResult.DisplayValue}", unit =>
+                        {
+                            return unit switch
+                            {
+                                BattleUnit battleUnit => searchResult.IsName ? battleUnit.Name.Equals(searchResult.Unit.Name, StringComparison.OrdinalIgnoreCase) : battleUnit.Title.Equals(searchResult.Unit.Title, StringComparison.OrdinalIgnoreCase),
+                                ProtectionUnit protectionUnit => searchResult.IsName ? protectionUnit.Name.Equals(searchResult.Unit.Name, StringComparison.OrdinalIgnoreCase) : protectionUnit.Title.Equals(searchResult.Unit.Title, StringComparison.OrdinalIgnoreCase),
+                                var _ => false
+                            };
+                        }, builder =>
+                        {
+                            var i = 1;
+                            builder.OpenComponent<NameFilter>(i++);
+                            builder.AddComponentParameter(i++, nameof(NameFilter.Search), searchResult);
+                            builder.AddComponentParameter(i++, nameof(NameFilter.IsRemoveMode), true);
+                            builder.AddComponentParameter(i, nameof(NameFilter.Filter), filter);
+                            builder.CloseComponent();
+                        });
+                        
+                        characterListService.Filters.Add(filter);
+                    }
+                }).DisposeWith(disposable);
         });
     }
 

@@ -8,11 +8,13 @@
     <Div Flex="Flex.Row.JustifyContent.Start.AlignItems.Center.Grow.Is1" Gap="Gap.Is2">
         <Icon Name="IconName.Search" IconSize="IconSize.Default"/>
         <Autocomplete
-            TItem="string" TValue="string"
-            TextField="s => s" ValueField="s => s"
+            TItem="SearchResult" TValue="SearchResult"
+            TextField="s => s.DisplayValue" ValueField="s => s"
             Data="ViewModel.SearchResults"
             ReadData="ViewModel.AutoCompleteCallback"
-            Placeholder="Search..." FreeTyping="true">
+            Placeholder="Search..." FreeTyping="true"
+            Debounce="true" DebounceInterval="500"
+            @bind-SelectedValue="@ViewModel.SearchResultSelection">
         </Autocomplete>
     </Div>
 
