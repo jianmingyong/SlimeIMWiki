@@ -4492,9 +4492,9 @@
       "Anti Wind+"
     ],
     "attack_type": "Physical",
-    "max_health": 0,
-    "max_attack": 0,
-    "max_defense": 0,
+    "max_health": 3648,
+    "max_attack": 1776,
+    "max_defense": 1502,
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
