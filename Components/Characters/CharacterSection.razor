@@ -47,7 +47,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Health" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Health")">
-                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icHp.png" Text="Hp"
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icHpShadow.png" Text="Hp"
                             Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Health</Text>
             </Button>
@@ -55,7 +55,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Attack" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Attack")">
-                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icAtk.png" Text="Atk"
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icAtkShadow.png" Text="Atk"
                             Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Attack</Text>
             </Button>
@@ -63,7 +63,7 @@
                     Color="@(ViewModel.CharacterUnitsCategory == "Defense" ? Color.Light : Color.Dark)"
                     Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
                     CommandParameter="@("Defense")">
-                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icDef.png" Text="Def"
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icDefShadow.png" Text="Def"
                             Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Defense</Text>
             </Button>

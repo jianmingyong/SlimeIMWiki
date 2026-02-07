@@ -6,7 +6,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -49,7 +48,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -92,7 +90,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -135,7 +132,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -178,7 +174,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -221,7 +216,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -264,7 +258,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": null,
@@ -307,7 +300,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -353,7 +345,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -399,7 +390,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -445,7 +435,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -491,7 +480,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -537,7 +525,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -583,7 +570,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -629,7 +615,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -674,7 +659,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -720,7 +704,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -766,7 +749,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -812,7 +794,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -858,7 +839,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -904,7 +884,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -950,7 +929,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -996,7 +974,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1042,7 +1019,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1088,7 +1064,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1134,7 +1109,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1180,7 +1154,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1226,7 +1199,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1272,7 +1244,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1318,7 +1289,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1364,7 +1334,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1409,7 +1378,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1454,7 +1422,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1499,7 +1466,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1544,7 +1510,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1589,7 +1554,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1634,7 +1598,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1679,7 +1642,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1724,7 +1686,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": null,
     "attributes": [
@@ -1769,7 +1730,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Fount of Wisdom",
@@ -1817,7 +1777,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Fount of Wisdom",
@@ -1865,7 +1824,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Octagram Bazaar"
@@ -1909,7 +1867,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -1957,7 +1914,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -2005,7 +1961,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -2053,7 +2008,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind"
@@ -2100,7 +2054,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -2148,7 +2101,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -2196,7 +2148,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -2245,7 +2196,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -2293,7 +2243,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -2341,7 +2290,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -2389,7 +2337,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworld Legend",
@@ -2437,7 +2384,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworld Legend",
@@ -2485,7 +2431,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -2533,7 +2478,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -2581,7 +2525,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Visions of Coleus",
@@ -2629,7 +2572,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Visions of Coleus"
@@ -2676,7 +2618,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Pretty Sparkle",
@@ -2725,7 +2666,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Pretty Sparkle"
@@ -2772,7 +2712,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -2820,7 +2759,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing"
@@ -2867,7 +2805,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -2916,7 +2853,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit"
@@ -2963,7 +2899,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite",
@@ -3011,7 +2946,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite"
@@ -3058,7 +2992,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -3106,7 +3039,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon"
@@ -3153,7 +3085,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions",
@@ -3201,7 +3132,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions"
@@ -3248,7 +3178,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -3296,7 +3225,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander"
@@ -3343,7 +3271,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Determination to Prosper",
@@ -3391,7 +3318,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Determination to Prosper"
@@ -3438,7 +3364,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Flashback Beatdown Emissary"
@@ -3485,7 +3410,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -3532,7 +3456,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Protector of Peace",
@@ -3580,7 +3503,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Protector of Peace"
@@ -3627,7 +3549,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -3675,7 +3596,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -3723,7 +3643,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Octagram Demon Lord"
@@ -3770,7 +3689,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -3818,7 +3736,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General"
@@ -3865,7 +3782,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -3913,7 +3829,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories"
@@ -3960,7 +3875,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Flashback Beatdown Emissary"
@@ -4007,7 +3921,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer"
@@ -4054,7 +3967,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart",
@@ -4102,7 +4014,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart"
@@ -4149,7 +4060,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth",
@@ -4197,7 +4107,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth"
@@ -4244,7 +4153,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -4292,7 +4200,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind"
@@ -4339,7 +4246,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -4387,7 +4293,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -4435,7 +4340,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -4483,7 +4387,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer"
@@ -4530,7 +4433,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -4578,7 +4480,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy"
@@ -4625,7 +4526,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -4673,7 +4573,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories"
@@ -4720,7 +4619,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -4768,7 +4666,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -4816,7 +4713,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder",
@@ -4865,7 +4761,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder"
@@ -4913,7 +4808,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -4961,7 +4855,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -5009,7 +4902,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -5057,7 +4949,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories"
@@ -5104,7 +4995,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -5154,7 +5044,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -5203,7 +5092,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Flashback Beatdown Emissary"
@@ -5250,7 +5138,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",

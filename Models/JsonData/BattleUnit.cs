@@ -7,7 +7,6 @@ public record BattleUnit(
     int InitialRarity,
     bool IsEx,
     bool IsAttributeUnbound,
-    bool HasEx,
     bool HasAttributeUnbound,
     string[] Forces,
     string Attribute,
@@ -77,7 +76,7 @@ public record BattleUnit(
     {
         get
         {
-            if (IsEx || IsAttributeUnbound || HasEx || HasAttributeUnbound)
+            if (IsEx || IsAttributeUnbound || HasAttributeUnbound)
             {
                 return $"image/battle/characters/{Permalink}/6/{Permalink}_6_CharaInfo.png";
             }

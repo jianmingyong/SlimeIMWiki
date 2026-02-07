@@ -6,7 +6,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -71,7 +70,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite",
@@ -137,7 +135,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -202,7 +199,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -267,7 +263,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -331,7 +326,6 @@
     "initial_rarity": 3,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -396,7 +390,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -460,7 +453,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -524,7 +516,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -588,7 +579,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -653,7 +643,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -718,7 +707,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride"
@@ -782,7 +770,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -849,7 +836,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind"
@@ -913,7 +899,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -979,7 +964,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -1044,7 +1028,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -1109,7 +1092,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Lycanthrope's Pride"
@@ -1173,7 +1155,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -1238,7 +1219,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Fount of Wisdom",
@@ -1303,7 +1283,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -1368,7 +1347,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -1433,7 +1411,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Hyper Heart",
@@ -1498,7 +1475,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist"
@@ -1562,7 +1538,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite",
@@ -1628,7 +1603,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -1694,7 +1668,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -1759,7 +1732,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Hyper Heart",
@@ -1773,7 +1745,7 @@
     "max_output": 300,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Laboratory",
       "Ocean Supply Corps Base"
@@ -1824,7 +1796,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -1891,7 +1862,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
@@ -1956,7 +1926,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Tempest Elite",
@@ -2021,7 +1990,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Fount of Wisdom",
@@ -2086,7 +2054,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2152,7 +2119,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2217,7 +2183,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Commander",
@@ -2282,7 +2247,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2348,7 +2312,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2414,7 +2377,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Heart of a Hero",
@@ -2482,7 +2444,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2547,7 +2508,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -2613,7 +2573,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -2679,7 +2638,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -2747,7 +2705,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -2812,7 +2769,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -2877,7 +2833,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -2943,7 +2898,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -3008,7 +2962,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -3075,7 +3028,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Dragon Haki",
@@ -3141,7 +3093,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
@@ -3208,7 +3159,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Octagram Demon Lord",
@@ -3276,7 +3226,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
@@ -3291,7 +3240,7 @@
     "max_output": 150,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Café",
       "Digsite for Stamina Magistones"
@@ -3342,7 +3291,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -3409,7 +3357,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
@@ -3476,7 +3423,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
@@ -3541,7 +3487,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -3607,7 +3552,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -3675,7 +3619,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Hyper Heart",
@@ -3741,7 +3684,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -3806,7 +3748,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Valentine",
@@ -3874,7 +3815,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Valentine",
@@ -3941,7 +3881,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -4008,7 +3947,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -4073,7 +4011,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "World of Fantasy",
@@ -4141,7 +4078,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -4207,7 +4143,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -4272,7 +4207,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Dragon Haki"
@@ -4336,7 +4270,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -4401,7 +4334,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Lycanthrope's Pride",
@@ -4466,7 +4398,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -4532,7 +4463,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -4597,7 +4527,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -4664,7 +4593,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -4730,7 +4658,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Heart of a Hero",
@@ -4795,7 +4722,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -4861,7 +4787,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -4927,7 +4852,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Lycanthrope's Pride",
@@ -4992,7 +4916,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Lycanthrope's Pride",
@@ -5057,7 +4980,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
@@ -5124,7 +5046,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -5190,7 +5111,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -5206,7 +5126,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Clothing Store",
       "Café"
@@ -5257,7 +5177,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -5323,7 +5242,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworlder",
@@ -5390,7 +5308,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Ten Great Demon Lords",
@@ -5455,7 +5372,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -5521,7 +5437,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -5586,7 +5501,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite",
@@ -5652,7 +5566,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Commander",
@@ -5717,7 +5630,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -5782,7 +5694,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -5848,7 +5759,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -5915,7 +5825,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -5981,7 +5890,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Heart of a Hero",
@@ -6048,7 +5956,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -6063,7 +5970,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Clothing Store",
       "Tavern"
@@ -6114,7 +6021,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -6179,7 +6085,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -6244,7 +6149,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon"
@@ -6308,7 +6212,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Heart of a Hero",
@@ -6374,7 +6277,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Wholehearted Devotion",
@@ -6441,7 +6343,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -6508,7 +6409,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -6573,7 +6473,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -6639,7 +6538,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -6707,7 +6605,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -6774,7 +6671,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -6840,7 +6736,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Antagonist",
@@ -6905,7 +6800,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -6970,7 +6864,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
@@ -7035,7 +6928,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Octagram Bazaar",
@@ -7101,7 +6993,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -7166,7 +7057,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Shizu's Will",
@@ -7231,7 +7121,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
@@ -7297,7 +7186,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
@@ -7312,7 +7200,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Café",
       "Digsite for Defense Magistones"
@@ -7363,7 +7251,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Festive Memories",
@@ -7428,7 +7315,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -7494,7 +7380,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -7560,7 +7445,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -7627,7 +7511,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -7694,7 +7577,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Valentine",
@@ -7761,7 +7643,6 @@
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Valentine",
@@ -7828,7 +7709,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Valentine",
@@ -7894,7 +7774,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": true,
     "has_attribute_unbound": true,
     "forces": [
       "Shizu's Will",
@@ -7960,7 +7839,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wholehearted Devotion",
@@ -8027,7 +7905,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wholehearted Devotion",
@@ -8093,7 +7970,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Fount of Wisdom",
@@ -8160,7 +8036,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Fount of Wisdom",
@@ -8227,7 +8102,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Fount of Wisdom",
@@ -8294,7 +8168,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Fount of Wisdom",
@@ -8362,7 +8235,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -8429,7 +8301,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "World of Fantasy",
@@ -8496,7 +8367,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -8564,7 +8434,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "World of Fantasy",
@@ -8631,7 +8500,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -8698,7 +8566,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Warrior's Mind",
@@ -8766,7 +8633,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -8833,7 +8699,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -8899,7 +8764,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Warrior's Mind",
@@ -8967,7 +8831,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -9034,7 +8897,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Goddess of Destiny",
@@ -9101,7 +8963,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -9167,7 +9028,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Goddess of Destiny",
@@ -9182,7 +9042,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Ocean Supply Corps Base",
       "Digsite for Attack Magistones"
@@ -9233,7 +9093,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -9299,7 +9158,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -9365,7 +9223,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -9431,7 +9288,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -9494,7 +9350,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -9561,7 +9416,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -9629,7 +9483,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Summer Memories",
@@ -9695,7 +9548,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Summer Memories",
@@ -9761,7 +9613,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Summer Memories",
@@ -9827,7 +9678,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworld Legend",
@@ -9843,7 +9693,7 @@
     "max_output": 300,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Sawmill",
       "Digsite for Training Magistones"
@@ -9894,7 +9744,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworld Legend",
@@ -9960,7 +9809,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Otherworld Legend",
@@ -10026,7 +9874,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Otherworld Legend",
@@ -10093,7 +9940,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -10157,7 +10003,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Wielder of Magic",
@@ -10223,7 +10068,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Wielder of Magic",
@@ -10290,7 +10134,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Wielder of Magic",
@@ -10358,7 +10201,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -10421,7 +10263,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Visions of Coleus",
@@ -10488,7 +10329,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Visions of Coleus",
@@ -10554,7 +10394,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Visions of Coleus",
@@ -10620,7 +10459,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Visions of Coleus",
@@ -10686,7 +10524,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Pretty Sparkle",
@@ -10749,7 +10586,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Pretty Sparkle",
@@ -10812,7 +10648,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Pretty Sparkle",
@@ -10875,7 +10710,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Pretty Sparkle",
@@ -10942,7 +10776,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "New Year's Blessing",
@@ -11008,7 +10841,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "New Year's Blessing",
@@ -11075,7 +10907,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "New Year's Blessing",
@@ -11142,7 +10973,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "New Year's Blessing",
@@ -11208,7 +11038,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -11271,7 +11100,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -11334,7 +11162,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -11397,7 +11224,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -11460,7 +11286,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -11523,7 +11348,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tempest Elite",
@@ -11589,7 +11413,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Tempest Elite",
@@ -11655,7 +11478,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Tempest Elite",
@@ -11721,7 +11543,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Tempest Elite",
@@ -11789,7 +11610,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Primal Demon",
@@ -11855,7 +11675,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
@@ -11871,7 +11690,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Trading Post",
       "Brewery"
@@ -11922,7 +11741,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
@@ -11937,7 +11755,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Brewery",
       "Clothing Store"
@@ -11988,7 +11806,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Primal Demon",
@@ -12054,7 +11871,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions",
@@ -12122,7 +11938,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions",
@@ -12189,7 +12004,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions",
@@ -12256,7 +12070,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Exalted Champions",
@@ -12323,7 +12136,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Exalted Champions",
@@ -12389,7 +12201,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -12456,7 +12267,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Commander",
@@ -12525,7 +12335,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Commander",
@@ -12591,7 +12400,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Stern of Spirit",
@@ -12657,7 +12465,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ten Great Demon Lords",
@@ -12723,7 +12530,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Commander",
@@ -12789,7 +12595,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Determination to Prosper",
@@ -12856,7 +12661,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Determination to Prosper",
@@ -12922,7 +12726,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Determination to Prosper",
@@ -12989,7 +12792,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Determination to Prosper",
@@ -13057,7 +12859,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -13123,7 +12924,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
@@ -13189,7 +12989,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
@@ -13255,7 +13054,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Ogre's Pride",
@@ -13321,7 +13119,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Protector of Peace",
@@ -13389,7 +13186,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Protector of Peace",
@@ -13458,7 +13254,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Protector of Peace",
@@ -13522,7 +13317,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Protector of Peace",
@@ -13585,7 +13379,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -13648,7 +13441,6 @@
     "initial_rarity": 5,
     "is_ex": true,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": true,
     "forces": [
       "Antagonist",
@@ -13711,7 +13503,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Exalted Champions",
@@ -13776,7 +13567,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -13841,7 +13631,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -13905,7 +13694,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -13921,7 +13709,7 @@
     "max_output": 300,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Hamburger Stall",
       "Japanese Style Tavern"
@@ -13972,7 +13760,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -14037,7 +13824,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -14102,7 +13888,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -14166,7 +13951,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Divine General",
@@ -14231,7 +14015,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -14295,7 +14078,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -14359,7 +14141,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -14423,7 +14204,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -14486,7 +14266,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -14551,7 +14330,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -14614,7 +14392,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -14678,7 +14455,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Adventurer",
@@ -14741,7 +14517,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart",
@@ -14804,7 +14579,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart",
@@ -14872,7 +14646,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart",
@@ -14941,7 +14714,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Tournament Stalwart",
@@ -15008,7 +14780,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth",
@@ -15075,7 +14846,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth",
@@ -15142,7 +14912,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth",
@@ -15209,7 +14978,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Sparkle of Youth",
@@ -15276,7 +15044,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -15343,7 +15110,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -15409,7 +15175,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -15477,7 +15242,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Warrior's Mind",
@@ -15544,7 +15308,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -15610,7 +15373,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -15677,7 +15439,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -15744,7 +15505,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -15811,7 +15571,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Spirit Master",
@@ -15878,7 +15637,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -15944,7 +15702,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -16010,7 +15767,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -16076,7 +15832,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -16142,7 +15897,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -16208,7 +15962,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -16272,7 +16025,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -16336,7 +16088,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "World of Fantasy",
@@ -16400,7 +16151,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Antagonist",
@@ -16464,7 +16214,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -16528,7 +16277,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -16592,7 +16340,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Summer Memories",
@@ -16656,7 +16403,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -16722,7 +16468,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -16786,7 +16531,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -16849,7 +16593,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -16913,7 +16656,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dungeon Crawler",
@@ -16977,7 +16719,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder",
@@ -17044,7 +16785,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder",
@@ -17111,7 +16851,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder",
@@ -17178,7 +16917,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Scourge Wielder",
@@ -17194,7 +16932,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Mountain Supply Corps Base",
       "Churros Stall"
@@ -17245,7 +16983,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -17260,7 +16997,7 @@
     "max_output": 300,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Elemental Colossus Bay",
       "Sawmill"
@@ -17311,7 +17048,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -17380,7 +17116,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -17449,7 +17184,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -17516,7 +17250,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Dragon Haki",
@@ -17584,7 +17317,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -17650,7 +17382,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -17668,7 +17399,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Churros Stall",
       "Sweets Shop"
@@ -17719,7 +17450,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -17788,7 +17518,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Festive Memories",
@@ -17856,7 +17585,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -17923,7 +17651,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -17991,7 +17718,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -18060,7 +17786,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -18077,7 +17802,7 @@
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "expertise": "Lance",
+    "expertise": "Spear",
     "suited_facilities": [
       "Digsite for Defense Magistones",
       "Water Purification Station"
@@ -18128,7 +17853,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Assault Team",
@@ -18196,7 +17920,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": false,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Schemer",
@@ -18263,7 +17986,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -18331,7 +18053,6 @@
     "initial_rarity": 5,
     "is_ex": false,
     "is_attribute_unbound": true,
-    "has_ex": false,
     "has_attribute_unbound": false,
     "forces": [
       "Ogre's Pride",
@@ -18342,22 +18063,25 @@
     ],
     "attribute": "Fire+",
     "attack_type": "Physical",
-    "max_health": 0,
-    "max_attack": 0,
-    "max_defense": 0,
+    "max_health": 8401,
+    "max_attack": 4176,
+    "max_defense": 2926,
     "max_output": 150,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "expertise": "",
-    "suited_facilities": [],
+    "expertise": "Katana",
+    "suited_facilities": [
+      "Savory Pancake Stall",
+      "Crystal Restaurant"
+    ],
     "release_date": "2026-02-05",
-    "secret_skill_name": "",
+    "secret_skill_name": "Blazing Slash",
     "secret_skill_target": "Single",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": "Unleashes a single-target fire physical attack for 650% normal damage\nUse 200% of secret skill gauge to change to EX Soul of Combos: Damage x1.5",
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
+    "battle_skill_one_name": "Toast of Remembrance",
+    "battle_skill_one_icon": "image/skills/IcSkill_031_07_3_L.png",
     "battle_skill_one_effect_cost": 30,
     "battle_skill_one_effect": "Crimson Burns all targets for 20% additional damage (Turns: 2); Does additional damage to the afflicted target corresponding to the amount of fire attack damage dealt to them (Stacks; Seal critical rate, pierce rate, Aegis rate, synergy rate, and guard rate UP)\nIncreases EX Soul of Combos damage until the end of battle by 30% (Max: 90%)",
     "battle_skill_one_fused_icon": null,
@@ -18366,27 +18090,27 @@
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
+    "battle_skill_two_name": "Grief's Prison",
     "battle_skill_two_icon": "image/skills/IcSkill_064_10_3_L.png",
     "battle_skill_two_effect_cost": 50,
     "battle_skill_two_effect": "Decreases all targets' fire+ damage resistance by 140% (Turns: 3)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
+    "trait_one_name": "Soul Combo - ATK UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_001_01_1.png",
     "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
-    "trait_two_name": null,
-    "trait_two_icon": null,
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_001_01_2.png",
+    "trait_one_effect_max": "When you unleash a 6 combo attack with Soul of Secrets, increases own ATK by 8% for the next turn (available in support formation)",
+    "trait_two_name": "Troop - Protection UP",
+    "trait_two_icon": "image/traits/IcPassiveSkill_041_14_1.png",
     "trait_two_effect": null,
-    "trait_two_icon_max": null,
-    "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
+    "trait_two_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_two_effect_max": "When your troop contains 3 or more battle characters, increases the protection gauge by 8 once per turn from the start of battle to Turn 2 (available in support formation)",
+    "valor_trait_name": "Charge - Protection DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_02_1.png",
     "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_02_2.png",
+    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)"
   }
 ]

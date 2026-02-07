@@ -18,7 +18,7 @@
     <ImageProxy Source="image/character_info/nameDecorationBottom.png" Height="Height.Rem(1.5)"/>
 
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2" Margin="Margin.Is2.FromTop">
-        @if (Unit.HasEx || Unit.HasAttributeUnbound)
+        @if (Unit.HasAttributeUnbound)
         {
             <Tooltip Text="Has Attribute Unbound Enhancement">
                 <ImageProxy Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
@@ -31,6 +31,7 @@
             {
                 <Tooltip Text="@(attribute.Name)">
                     <ImageProxy @key="attribute.Icon" Width="Width.Em(2)" Source="@(attribute.Icon)"/>
+                    <Text>@(attribute.Name)</Text>
                 </Tooltip>
             }
         }
@@ -39,6 +40,7 @@
         {
             <Tooltip Text="@(ViewModel.AttackType.Name)">
                 <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttackType.Icon"/>
+                <Text>@(ViewModel.AttackType.Name)</Text>
             </Tooltip>
         }
 

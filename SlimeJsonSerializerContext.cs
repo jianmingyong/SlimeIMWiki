@@ -16,10 +16,5 @@ namespace SlimeIMWiki;
 [JsonSerializable(typeof(Livestream), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(FieldBuilding[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(Heartscape[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-public partial class JsonSerializer : JsonSerializerContext
-{
-    public static JsonSerializer Custom { get; } = new(new JsonSerializerOptions
-    {
-        PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
-    });
-}
+[JsonSourceGenerationOptions(JsonSerializerDefaults.General, PropertyNamingPolicy = JsonKnownNamingPolicy.SnakeCaseLower)]
+public partial class SlimeJsonSerializerContext : JsonSerializerContext;

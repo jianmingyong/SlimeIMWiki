@@ -14,8 +14,7 @@ public interface ICharacterUnit
 
     bool IsEx { get; }
     bool IsAttributeUnbound { get; }
-
-    bool HasEx { get; }
+    
     bool HasAttributeUnbound { get; }
 
     int MaxHealth { get; }

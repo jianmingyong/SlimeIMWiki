@@ -9,7 +9,7 @@
 {
     protected override void OnInitialized()
     {
-        Filter ??= new Filter("EX Enhancement", unit => unit.HasEx || unit.HasAttributeUnbound,
+        Filter ??= new Filter("EX Enhancement", unit => unit.HasAttributeUnbound,
             @<ExEnhancementFilter IsRemoveMode="true" Filter="Filter"/>);
 
         base.OnInitialized();
