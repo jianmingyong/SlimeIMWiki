@@ -1,0 +1,31 @@
+﻿@using SlimeIMWiki.Models.JsonData
+
+<TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
+
+<Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+        <Div Width="Width.Em(4)" Height="Height.Em(4)">
+            @if (!string.IsNullOrEmpty(Unit.ProtectionSkillIcon))
+            {
+                <ImageProxy Source="@Unit.ProtectionSkillIcon" Width="Width.Is100" Text="Icon"/>
+            }
+        </Div>
+        <Div>
+            <Div TextWeight="TextWeight.Bold">
+                @(string.IsNullOrEmpty(Unit.ProtectionSkillName) ? "???" : Unit.ProtectionSkillName)
+            </Div>
+            <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
+        </Div>
+    </Div>
+
+    <Div>
+        <EffectStyler Text="@Unit.ProtectionSkillEffect"/>
+    </Div>
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+}

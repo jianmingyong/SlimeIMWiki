@@ -1,0 +1,38 @@
+﻿@using SlimeIMWiki.Models.JsonData
+
+<TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
+
+<Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
+    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+        <Div Width="Width.Em(4)" Height="Height.Em(4)">
+            <ImageProxy Source="image/character_info/blessConfirmIcon.png" Width="Width.Is100" Text="Icon"/>
+        </Div>
+        <Div>
+            <Div TextWeight="TextWeight.Bold">
+                @(string.IsNullOrEmpty(Unit.DivineProtectionName) ? "???" : Unit.DivineProtectionName)
+            </Div>
+            <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
+        </Div>
+    </Div>
+
+    <Div>
+        <EffectStyler Text="@Unit.DivineProtectionEffectMax"/>
+    </Div>
+
+    <Div Background="@(new Background("body-secondary"))" TextWeight="TextWeight.Bold"
+         Padding="Padding.Is2" TextAlignment="TextAlignment.Center"
+         TextSize="TextSize.ExtraSmall">
+        Supporting Divine Protection
+    </Div>
+
+    <Div>
+        <EffectStyler Text="@(string.IsNullOrEmpty(Unit.SupportDivineProtectionEffectMax) ? "???" : Unit.SupportDivineProtectionEffectMax)"/>
+    </Div>
+</Div>
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+}

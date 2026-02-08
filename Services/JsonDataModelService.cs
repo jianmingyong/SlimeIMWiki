@@ -128,11 +128,6 @@ public sealed partial class JsonDataModelService : ReactiveObject
         return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.LiveStream, SlimeJsonSerializerContext.Default.Livestream, token));
     }
 
-    public Force? GetForce(string force)
-    {
-        return Forces?.SingleOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase));
-    }
-
     public FieldBuilding? GetFieldBuilding(string fieldBuilding)
     {
         return FieldBuildings?.SingleOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
