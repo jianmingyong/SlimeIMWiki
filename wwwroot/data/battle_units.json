@@ -61,7 +61,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Gale Gibson is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 2%\nIncreases pierce power by 2%",
+    "ex_ability_effect_two_name": "Water Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of water characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rigurd",
@@ -126,7 +134,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Gobta is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases guard power by 4%\nIncreases counter power by 4%",
+    "ex_ability_effect_two_name": "Wind Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of wind characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 54\nIncreases ATK by 14\nIncreases DEF by 30",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kenya Misaki",
@@ -190,7 +206,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Ryota Sekiguchi is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 2%\nIncreases pierce power by 2%",
+    "ex_ability_effect_two_name": "Light Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of light characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 45\nIncreases ATK by 20\nIncreases DEF by 12",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gale Gibson",
@@ -254,7 +278,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Kenya Misaki is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 2%\nIncreases pierce power by 2%",
+    "ex_ability_effect_two_name": "Earth Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of earth characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 54\nIncreases ATK by 14\nIncreases DEF by 30",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kurobe",
@@ -317,7 +349,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Benimaru is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases guard power by 4%\nIncreases counter power by 4%",
+    "ex_ability_effect_two_name": "Fire Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of fire characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 54\nIncreases ATK by 14\nIncreases DEF by 30",
+    "true_attribute_unbound": null
   },
   {
     "name": "Alice Rondo",
@@ -381,7 +421,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Chloe Aubert is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 2%\nIncreases pierce power by 2%",
+    "ex_ability_effect_two_name": "Space Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of space characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 54\nIncreases ATK by 14\nIncreases DEF by 30",
+    "true_attribute_unbound": null
   },
   {
     "name": "Souei",
@@ -444,7 +492,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -507,7 +563,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -570,7 +634,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -634,7 +706,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -698,7 +778,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -761,7 +849,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -827,7 +923,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ranga",
@@ -890,7 +994,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -955,7 +1067,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -1019,7 +1139,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -1083,7 +1211,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Phobio",
@@ -1146,7 +1282,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hakurou",
@@ -1210,7 +1354,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Trya",
@@ -1274,7 +1426,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Souei",
@@ -1338,7 +1498,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -1402,7 +1570,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gobta",
@@ -1466,7 +1642,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gelmud",
@@ -1529,7 +1713,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Geld",
@@ -1594,7 +1786,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kurobe",
@@ -1659,7 +1859,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Chloe Aubert",
@@ -1723,7 +1931,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gabiru",
@@ -1787,7 +2003,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -1853,7 +2077,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -1917,7 +2149,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ranga",
@@ -1981,7 +2221,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Beretta",
@@ -2045,7 +2293,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -2110,7 +2366,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hakurou",
@@ -2174,7 +2438,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Treyni",
@@ -2238,7 +2510,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Souei",
@@ -2303,7 +2583,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -2368,7 +2656,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -2435,7 +2731,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -2499,7 +2803,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gazel Dwargo",
@@ -2564,7 +2876,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -2629,7 +2949,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -2696,7 +3024,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -2760,7 +3096,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -2824,7 +3168,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -2889,7 +3241,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -2953,7 +3313,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ramiris",
@@ -3019,7 +3387,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Veldora Tempest",
@@ -3084,7 +3460,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -3150,7 +3534,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3217,7 +3609,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -3282,7 +3682,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -3348,7 +3756,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -3414,7 +3830,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Veldora Tempest",
@@ -3478,7 +3902,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -3543,7 +3975,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -3610,7 +4050,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gobta",
@@ -3675,7 +4123,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Guy Crimson",
@@ -3739,7 +4195,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -3806,7 +4270,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Myulan",
@@ -3872,7 +4344,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -3938,7 +4418,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Leon Cromwell",
@@ -4002,7 +4490,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Alice Rondo",
@@ -4069,7 +4565,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ranga",
@@ -4134,7 +4638,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -4198,7 +4710,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Velzard",
@@ -4261,7 +4781,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -4325,7 +4853,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Albis",
@@ -4389,7 +4925,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Guy Crimson",
@@ -4454,7 +4998,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Souei",
@@ -4518,7 +5070,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -4584,7 +5144,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -4649,7 +5217,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Masked Hero",
@@ -4713,7 +5289,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Leon Cromwell",
@@ -4778,7 +5362,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Frey",
@@ -4843,7 +5435,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Grucius",
@@ -4907,7 +5507,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Suphia",
@@ -4971,7 +5579,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Carrion",
@@ -5037,7 +5653,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -5102,7 +5726,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -5168,7 +5800,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -5233,7 +5873,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5299,7 +5947,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Daggrull",
@@ -5363,7 +6019,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -5428,7 +6092,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -5492,7 +6164,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Geld",
@@ -5557,7 +6237,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Treyni",
@@ -5621,7 +6309,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Deeno",
@@ -5685,7 +6381,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -5750,7 +6454,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -5816,7 +6528,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -5881,7 +6601,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -5947,7 +6675,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Velzard",
@@ -6012,7 +6748,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Daggrull",
@@ -6076,7 +6820,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Misery",
@@ -6140,7 +6892,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rain",
@@ -6203,7 +6963,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Leon Cromwell",
@@ -6268,7 +7036,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Myulan",
@@ -6334,7 +7110,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Eren",
@@ -6400,7 +7184,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Adalman",
@@ -6464,7 +7256,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Clayman",
@@ -6529,7 +7329,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -6596,7 +7404,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -6662,7 +7478,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Izis",
@@ -6727,7 +7551,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -6791,7 +7623,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -6855,7 +7695,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -6919,7 +7767,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Deeno",
@@ -6984,7 +7840,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hiiro",
@@ -7048,7 +7912,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -7112,7 +7984,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -7177,7 +8057,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -7242,7 +8130,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Velzard",
@@ -7306,7 +8202,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -7371,7 +8275,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Soka",
@@ -7436,7 +8348,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -7502,7 +8422,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -7568,7 +8496,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -7634,7 +8570,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Suphia",
@@ -7700,7 +8644,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -7765,7 +8717,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -7830,7 +8790,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Youm",
@@ -7896,7 +8864,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Myulan",
@@ -7961,7 +8937,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gobta",
@@ -8027,7 +9011,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -8093,7 +9085,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Albis",
@@ -8159,7 +9159,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -8226,7 +9234,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gabiru",
@@ -8292,7 +9308,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -8358,7 +9382,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -8425,7 +9457,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Masked Hero",
@@ -8491,7 +9531,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -8557,7 +9605,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Guy Crimson",
@@ -8624,7 +9680,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -8690,7 +9754,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -8755,7 +9827,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -8822,7 +9902,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Trya",
@@ -8888,7 +9976,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -8954,7 +10050,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Soka",
@@ -9019,7 +10123,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rain",
@@ -9084,7 +10196,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Darkness",
@@ -9149,7 +10269,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Megumin",
@@ -9214,7 +10342,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kazuma",
@@ -9279,7 +10415,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Aqua",
@@ -9341,7 +10485,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -9407,7 +10559,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ramiris",
@@ -9474,7 +10634,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -9539,7 +10707,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -9604,7 +10780,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -9669,7 +10853,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Youm",
@@ -9735,7 +10927,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -9800,7 +11000,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -9865,7 +11073,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Veldora Tempest",
@@ -9931,7 +11147,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ranga",
@@ -9994,7 +11218,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -10059,7 +11291,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -10125,7 +11365,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -10192,7 +11440,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Cliche",
@@ -10254,7 +11510,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -10320,7 +11584,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -10385,7 +11657,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Blanc",
@@ -10450,7 +11730,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Jaune",
@@ -10515,7 +11803,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Tsubasa Ibuki",
@@ -10577,7 +11873,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Mirai Kasuga",
@@ -10639,7 +11943,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizuka Mogami",
@@ -10701,7 +12013,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -10767,7 +12087,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -10832,7 +12160,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -10898,7 +12234,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -10964,7 +12308,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -11029,7 +12381,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Narberal Gamma",
@@ -11091,7 +12451,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ainz Ooal Gown",
@@ -11153,7 +12521,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Albedo",
@@ -11215,7 +12591,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -11277,7 +12661,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shalltear Bloodfallen",
@@ -11339,7 +12731,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gobta",
@@ -11404,7 +12804,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -11469,7 +12877,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -11534,7 +12950,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -11601,7 +13025,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Misery",
@@ -11666,7 +13098,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -11732,7 +13172,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Blanc",
@@ -11797,7 +13245,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Jaune",
@@ -11862,7 +13318,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Veldora Tempest",
@@ -11929,7 +13393,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Guy Crimson",
@@ -11995,7 +13467,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -12061,7 +13541,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -12127,7 +13615,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Masked Hero",
@@ -12192,7 +13688,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Glenda Attley",
@@ -12258,7 +13762,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -12326,7 +13838,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shizue Izawa",
@@ -12391,7 +13911,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Tear",
@@ -12456,7 +13984,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Clayman",
@@ -12521,7 +14057,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -12586,7 +14130,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rigur",
@@ -12652,7 +14204,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -12717,7 +14277,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Elmesia El Ru Thalion",
@@ -12783,7 +14351,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -12850,7 +14426,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hakurou",
@@ -12915,7 +14499,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Momiji",
@@ -12980,7 +14572,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Souei",
@@ -13045,7 +14645,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -13110,7 +14718,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Geld",
@@ -13177,7 +14793,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -13245,7 +14869,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -13308,7 +14940,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -13370,7 +15010,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Cliche",
@@ -13432,7 +15080,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -13494,7 +15150,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -13558,7 +15222,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Izis",
@@ -13622,7 +15294,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kokuyo",
@@ -13685,7 +15365,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gazel Dwargo",
@@ -13751,7 +15439,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -13815,7 +15511,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Diablo",
@@ -13879,7 +15583,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Masked Hero",
@@ -13942,7 +15654,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Blanc",
@@ -14006,7 +15726,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ritus",
@@ -14069,7 +15797,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Momiji",
@@ -14132,7 +15868,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Maribel Rozzo",
@@ -14195,7 +15939,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -14257,7 +16009,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Stark",
@@ -14321,7 +16081,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Frieren",
@@ -14383,7 +16151,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -14446,7 +16222,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Fern",
@@ -14508,7 +16292,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shinsha",
@@ -14570,7 +16362,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Luminus Valentine",
@@ -14637,7 +16437,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_27_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_27_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -14705,7 +16513,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_28_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_28_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' body and spirit-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' body and spirit-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Shinsha is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 12%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Gobta",
@@ -14771,7 +16587,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shizue Izawa",
@@ -14837,7 +16661,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -14903,7 +16735,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -14969,7 +16809,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Frey",
@@ -15035,7 +16883,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -15101,7 +16957,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Gobwa",
@@ -15166,7 +17030,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -15233,7 +17105,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Blanc",
@@ -15299,7 +17179,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ritus",
@@ -15364,7 +17252,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Leon Cromwell",
@@ -15430,7 +17326,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Velzard",
@@ -15496,7 +17400,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Jaune",
@@ -15562,7 +17474,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Rimuru Tempest",
@@ -15628,7 +17548,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Laplace",
@@ -15693,7 +17621,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Soka",
@@ -15758,7 +17694,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physcial attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Luminus Valentine",
@@ -15823,7 +17767,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -15888,7 +17840,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_27_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_27_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physcial attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Alphen",
@@ -15953,7 +17913,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shionne",
@@ -16016,7 +17984,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shion",
@@ -16079,7 +18055,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Hinata Sakaguchi",
@@ -16142,7 +18126,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ifrit",
@@ -16205,7 +18197,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Blanc",
@@ -16268,7 +18268,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Violet",
@@ -16331,7 +18339,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Jaune",
@@ -16394,7 +18410,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Soka",
@@ -16459,7 +18483,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Bell Cranel",
@@ -16522,7 +18554,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Shuna",
@@ -16584,7 +18624,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ais Wallenstein",
@@ -16647,7 +18695,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Ryu Lion",
@@ -16710,7 +18766,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kagali",
@@ -16776,7 +18840,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Counter Power UP effect of secret skills increases to 15%",
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Yuuki Kagurazaka is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
+    "true_attribute_unbound": null
   },
   {
     "name": "Masayuki Honjo",
@@ -16842,7 +18914,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_21_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_21_2.png",
-    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Masked Hero",
@@ -16908,7 +18988,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20%\n(Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20%\n(Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Luminus Valentine",
@@ -16974,7 +19062,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
     "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Trishula",
@@ -17039,7 +19135,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Guard Penetration UP effect of secret skills increases to 15%",
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Emils",
@@ -17107,7 +19211,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_02_1.png",
     "valor_trait_effect": "When you use souls while the enemy has a protection gauge with 120% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_02_2.png",
-    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases critical damage by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -17175,7 +19287,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Velzard",
@@ -17241,7 +19361,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Milim Nava",
@@ -17308,7 +19436,15 @@
     "valor_trait_icon": null,
     "valor_trait_effect": null,
     "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   },
   {
     "name": "Nine Head",
@@ -17373,7 +19509,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_10_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_10_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Ranga is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 45\nIncreases ATK by 20\nIncreases DEF by 12",
+    "true_attribute_unbound": null
   },
   {
     "name": "Frey",
@@ -17441,7 +19585,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Milim Nava is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -17509,7 +19661,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_21_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_21_2.png",
-    "valor_trait_effect_max": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Blanc",
@@ -17576,7 +19736,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Diablo is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Magic Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Masayuki Honjo",
@@ -17642,7 +19810,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Guard Penetration UP effect of secret skills increases to 15%",
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases guard power by 8%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
+    "true_attribute_unbound": null
   },
   {
     "name": "Kirito",
@@ -17709,7 +19885,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Masayuki Honjo is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Asuna",
@@ -17777,7 +19961,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Masayuki Honjo is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Sinon",
@@ -17844,7 +20036,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_02_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_02_2.png",
-    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Masayuki Honjo is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Yuuki",
@@ -17911,7 +20111,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Masayuki Honjo is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Clayman",
@@ -17977,7 +20185,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_10_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_10_2.png",
-    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Counter Power UP effect of secret skills increases to 15%",
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Milim Nava is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
+    "true_attribute_unbound": null
   },
   {
     "name": "Benimaru",
@@ -18044,7 +20260,15 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
-    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)"
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Shuna is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases Aegis Power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hiiro",
@@ -18111,6 +20335,86 @@
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_02_1.png",
     "valor_trait_effect": null,
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_02_2.png",
-    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)"
+    "valor_trait_effect_max": "When you use souls while the enemy has a protection gauge with 100% or higher, the enemy is afflicted with a protection seal (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "Individual Mercy",
+    "ex_ability_effect_one_condition": "Increases own following status when Benimaru is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases Aegis Power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
+  },
+  {
+    "name": "Violet",
+    "title": "Goddess of Mischief",
+    "permalink": "VioletMovieRevival",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_attribute_unbound": false,
+    "forces": [
+      "Primal Demon",
+      "Schemer",
+      "Antagonist",
+      "Goddess of Destiny",
+      "Pretty Sparkle"
+    ],
+    "attribute": "Water+",
+    "attack_type": "Physical",
+    "max_health": 0,
+    "max_attack": 0,
+    "max_defense": 0,
+    "max_output": 150,
+    "character_type": "",
+    "tactics_type": "Speed",
+    "expertise": "",
+    "suited_facilities": [],
+    "release_date": "2026-02-12",
+    "secret_skill_name": "",
+    "secret_skill_target": "All",
+    "secret_skill_normal_effect": null,
+    "secret_skill_attack_effect": null,
+    "secret_skill_support_effect": "Unleashes an all-target water physical attack for 150% normal damage\nIncreases weakness strike of Ogre's Pride and Schemer Force characters including rearguard until the end of battle by 85% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "",
+    "battle_skill_one_icon": "image/skills/IcSkill_031_70_3_L.png",
+    "battle_skill_one_effect_cost": 0,
+    "battle_skill_one_effect": "Increases activation count of Burn damage applied to all targets including rearguard by 1 (Turns: 1)\nSets Soul of Combos' gauge increase to the same amount as Soul of Secrets', with gauge-altering effects applied (Turns: 1)\nFor this turn, all allies' battle skills can be activated an unlimited number of times (Excluding skills with the same effect) (Cannot exceed the max activation limit during battle)",
+    "battle_skill_one_fused_icon": null,
+    "battle_skill_one_fused_effect_cost": null,
+    "battle_skill_one_fused_effect": null,
+    "battle_skill_one_ultimate_manifestation_icon": null,
+    "battle_skill_one_ultimate_manifestation_effect_cost": null,
+    "battle_skill_one_ultimate_manifestation_effect": null,
+    "battle_skill_two_name": "",
+    "battle_skill_two_icon": "image/skills/IcSkill_097_01_3_L.png",
+    "battle_skill_two_effect_cost": 50,
+    "battle_skill_two_effect": "Increases Aegis rate for all allies including rearguard by 100% (Turns: 3)\nIncreases Aegis power for all allies including rearguard by 75% (Turns: 3)\nIncreases DEF for all allies including rearguard by 100% (Turns: 3)",
+    "battle_skill_two_fused_icon": null,
+    "battle_skill_two_fused_effect_cost": null,
+    "battle_skill_two_fused_effect": null,
+    "trait_one_name": "",
+    "trait_one_icon": "",
+    "trait_one_effect": "",
+    "trait_one_icon_max": "",
+    "trait_one_effect_max": "",
+    "trait_two_name": null,
+    "trait_two_icon": null,
+    "trait_two_effect": null,
+    "trait_two_icon_max": null,
+    "trait_two_effect_max": null,
+    "valor_trait_name": null,
+    "valor_trait_icon": null,
+    "valor_trait_effect": null,
+    "valor_trait_icon_max": null,
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   }
 ]
