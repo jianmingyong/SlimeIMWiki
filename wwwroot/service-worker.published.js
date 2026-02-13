@@ -32,9 +32,9 @@ async function onInstall(event) {
             const skipIntegrityCheck = offlineAssetsIntegrityExclude.some(pattern => pattern.test(asset.url));
 
             if (skipIntegrityCheck) {
-                return new Request(asset.url, { cache: 'no-cache' });
+                return new Request(asset.url, {cache: 'no-cache'});
             } else {
-                return new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' })
+                return new Request(asset.url, {integrity: asset.hash, cache: 'no-cache'})
             }
         });
 
@@ -70,38 +70,46 @@ async function onFetch(event) {
     const preferLoadFromOrigin = offlineAssetsPreferLoadFromOrigin.some(pattern => pattern.test(new URL(request.url).pathname.slice(1)));
 
     if (preferLoadFromOrigin) {
-        response = await fetch(request, { cache: 'no-cache' });
-
         const cache = await caches.open(cacheName);
 
-        if (!response.ok) {
+        try {
+            response = await fetch(request, {cache: 'no-cache'});
+
+            if (!response.ok) {
+                response = await cache.match(request);
+            } else {
+                await cache.put(request, response.clone());
+            }
+        } catch (e) {
             response = await cache.match(request);
-        } else {
-            await cache.put(request, response.clone());
         }
     } else {
         const cache = await caches.open(cacheName);
         response = await cache.match(request);
 
         if (!response) {
-            const skipIntegrityCheck = offlineAssetsIntegrityExclude.some(pattern => pattern.test(new URL(request.url).pathname.slice(1)));
+            try {
+                const skipIntegrityCheck = offlineAssetsIntegrityExclude.some(pattern => pattern.test(new URL(request.url).pathname.slice(1)));
 
-            if (skipIntegrityCheck) {
-                response = await fetch(request, { cache: 'no-cache' });
-                await cache.put(request, response.clone());
-            } else {
-                const asset = self.assetsManifest.assets.find(asset => new URL(asset.url, baseUrl).href === request.url);
-
-                if (asset) {
-                    response = await fetch(request, { integrity: asset.hash, cache: 'no-cache' });
+                if (skipIntegrityCheck) {
+                    response = await fetch(request, {cache: 'no-cache'});
+                    await cache.put(request, response.clone());
                 } else {
-                    response = await fetch(request, { cache: 'no-cache' });
-                }
+                    const asset = self.assetsManifest.assets.find(asset => new URL(asset.url, baseUrl).href === request.url);
 
-                await cache.put(request, response.clone());
+                    if (asset) {
+                        response = await fetch(request, {integrity: asset.hash, cache: 'no-cache'});
+                    } else {
+                        response = await fetch(request, {cache: 'no-cache'});
+                    }
+
+                    await cache.put(request, response.clone());
+                }
+            } catch (e) {
+                response = Response.error();
             }
         }
     }
 
-    return response ?? Response.error();
+    return response;
 }
