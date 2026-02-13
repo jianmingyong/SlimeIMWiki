@@ -5,6 +5,7 @@ using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
+using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit;
 
 namespace SlimeIMWiki.Components.CharacterDetail;
 
