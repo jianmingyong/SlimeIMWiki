@@ -2157,7 +2157,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ranga",
@@ -2229,7 +2229,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Beretta",
@@ -2301,7 +2301,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Benimaru",
@@ -2518,7 +2518,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Souei",
@@ -2739,7 +2739,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -3176,7 +3176,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Benimaru",
@@ -3395,7 +3395,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Veldora Tempest",
@@ -3468,7 +3468,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Milim Nava",
@@ -3542,7 +3542,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -3690,7 +3690,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -3838,7 +3838,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Veldora Tempest",
@@ -3910,7 +3910,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Milim Nava",
@@ -4131,7 +4131,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Guy Crimson",
@@ -4278,7 +4278,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Myulan",
@@ -4573,7 +4573,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ranga",
@@ -4789,7 +4789,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Benimaru",
@@ -5006,7 +5006,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 4 ~ 7 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Souei",
@@ -5297,7 +5297,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 4 ~ 7 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Leon Cromwell",
@@ -5370,7 +5370,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Frey",
@@ -5661,7 +5661,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -6027,7 +6027,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -6172,7 +6172,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Geld",
@@ -6317,7 +6317,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Deeno",
@@ -6828,7 +6828,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Misery",
@@ -7118,7 +7118,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Eren",
@@ -7631,7 +7631,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -7775,7 +7775,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Deeno",
@@ -7848,7 +7848,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hiiro",
@@ -8065,7 +8065,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shizue Izawa",
@@ -8138,7 +8138,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Velzard",
@@ -8210,7 +8210,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -8578,7 +8578,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Suphia",
@@ -8725,7 +8725,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -8798,7 +8798,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Youm",
@@ -9093,7 +9093,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Albis",
@@ -9167,7 +9167,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -9242,7 +9242,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Gabiru",
@@ -9390,7 +9390,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shizue Izawa",
@@ -9539,7 +9539,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -9688,7 +9688,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Luminus Valentine",
@@ -9910,7 +9910,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Trya",
@@ -10058,7 +10058,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Soka",
@@ -10715,7 +10715,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Luminus Valentine",
@@ -10788,7 +10788,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -10861,7 +10861,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Youm",
@@ -11081,7 +11081,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Veldora Tempest",
@@ -11299,7 +11299,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shizue Izawa",
@@ -11373,7 +11373,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -11665,7 +11665,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 4 ~ 7 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Blanc",
@@ -11811,7 +11811,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Tsubasa Ibuki",
@@ -12095,7 +12095,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -12242,7 +12242,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Milim Nava",
@@ -12316,7 +12316,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shinsha",
@@ -12389,7 +12389,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Narberal Gamma",
@@ -12885,7 +12885,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Benimaru",
@@ -12958,7 +12958,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -13033,7 +13033,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Misery",
@@ -13180,7 +13180,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Blanc",
@@ -13253,7 +13253,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Jaune",
@@ -13326,7 +13326,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Veldora Tempest",
@@ -13623,7 +13623,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Masked Hero",
@@ -13696,7 +13696,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Glenda Attley",
@@ -13846,7 +13846,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shizue Izawa",
@@ -14138,7 +14138,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rigur",
@@ -14434,7 +14434,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hakurou",
@@ -14580,7 +14580,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Souei",
@@ -14653,7 +14653,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shuna",
@@ -14726,7 +14726,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Geld",
@@ -14877,7 +14877,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -14948,7 +14948,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -15158,7 +15158,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Milim Nava",
@@ -15230,7 +15230,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Izis",
@@ -15302,7 +15302,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Kokuyo",
@@ -15373,7 +15373,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Gazel Dwargo",
@@ -15519,7 +15519,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Diablo",
@@ -15591,7 +15591,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Masked Hero",
@@ -15662,7 +15662,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Blanc",
@@ -15734,7 +15734,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ritus",
@@ -15876,7 +15876,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Maribel Rozzo",
@@ -15947,7 +15947,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Violet",
@@ -16017,7 +16017,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Stark",
@@ -16109,8 +16109,8 @@
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
-    "max_output": 0,
-    "character_type": "",
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
     "expertise": "",
     "suited_facilities": [],
@@ -16159,7 +16159,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -16180,8 +16180,8 @@
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
-    "max_output": 0,
-    "character_type": "",
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
     "expertise": "",
     "suited_facilities": [],
@@ -16230,7 +16230,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Fern",
@@ -16250,8 +16250,8 @@
     "max_health": 0,
     "max_attack": 0,
     "max_defense": 0,
-    "max_output": 0,
-    "character_type": "",
+    "max_output": 150,
+    "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
     "expertise": "",
     "suited_facilities": [],
@@ -16300,7 +16300,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shinsha",
@@ -16317,59 +16317,62 @@
     ],
     "attribute": "Space",
     "attack_type": "Physical",
-    "max_health": 0,
-    "max_attack": 0,
-    "max_defense": 0,
-    "max_output": 0,
-    "character_type": "",
+    "max_health": 8250,
+    "max_attack": 2663,
+    "max_defense": 2686,
+    "max_output": 300,
+    "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "expertise": "",
-    "suited_facilities": [],
+    "expertise": "Fist",
+    "suited_facilities": [
+      "Tempest Wheel",
+      "Fruit Stall"
+    ],
     "release_date": "2025-01-20",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
-    "secret_skill_normal_effect": null,
+    "secret_skill_name": "Jail Shake",
+    "secret_skill_target": "Single",
+    "secret_skill_normal_effect": "Unleashes a single-target space physical attack for 470% normal damage\nIncreases all allies' guard penetration by 15% (Turns: 2)",
     "secret_skill_attack_effect": null,
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Hammering Jail",
+    "battle_skill_one_icon": "image/skills/IcSkill_025_01_3_L.png",
+    "battle_skill_one_effect_cost": 30,
+    "battle_skill_one_effect": "Increases all physical character allies' critical rate by 100% (Turns: 1)\nIncreases all physical character allies' critical power by 15% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Sticky Steel Binding Thread",
+    "battle_skill_two_icon": "image/skills/IcSkill_043_35_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Changes wind characters' Soul of Combos x2 into Soul of Divine Protection for this turn only\nIncreases all Soul of Divine Protection gauges' increase by 10% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "HP - Critical Power UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_025_02_1.png",
+    "trait_one_effect": "When you have 50% or more HP, increases own critical power by 5% at start of turn (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_025_02_2.png",
+    "trait_one_effect_max": "When you have 50% or more HP, increases own critical power by 8% at start of turn (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
+    "valor_trait_name": "Soul Combo - Soul of Skills Damage DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_24_1.png",
     "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
-    "secret_skill_enhancement_trait": null,
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_24_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, the enemy's Soul of Skills damage is decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Guard Penetration UP effect of secret skills increases to 15%",
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases guard power by 8%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
     "true_attribute_unbound": null
   },
   {
@@ -16625,50 +16628,50 @@
       "Shishkabob Stall"
     ],
     "release_date": "2025-02-28",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
-    "secret_skill_normal_effect": null,
+    "secret_skill_name": "Chrono Library",
+    "secret_skill_target": "All",
+    "secret_skill_normal_effect": "Unleashes an all-target fire magic attack for 290% normal damage\nIncreases all allies' counter power by 15% (Turns: 2)",
     "secret_skill_attack_effect": null,
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Passionate Guidance",
+    "battle_skill_one_icon": "image/skills/IcSkill_042_15_3_L.png",
+    "battle_skill_one_effect_cost": 25,
+    "battle_skill_one_effect": "Changes Sparkle of Youth Force characters' soul x2 into Soul of Skills\nAdds Reckoning charge x1 to all allies (Each charge x1 deals 150% of affected allies' current HP in ongoing damage to all targets from Turn 5 onward)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Answers Returned",
+    "battle_skill_two_icon": "image/skills/IcSkill_031_54_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Changes Soul of Combos x2 into Soul of Skills for this turn only\nAdds Reckoning charge x1 to all allies (Each charge x1 deals 150% of affected allies' current HP in ongoing damage to all target from Turn 5 onward)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "HP - Enhance Counterattack Rate",
+    "trait_one_icon": "image/traits/IcPassiveSkill_027_01_1.png",
+    "trait_one_effect": "When you have 50% or more HP, increases own counterattack rate by 6% at start of turn (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_027_01_2.png",
+    "trait_one_effect_max": "When you have 50% or more HP, increases own counterattack rate by 9% at start of turn (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
+    "valor_trait_name": "Soul Combo - Protection DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_12_1.png",
     "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_12_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Divine Protection gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
+    "ex_ability_effect_one_condition": "Increases own following status when Hinata Sakaguchi is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
     "true_attribute_unbound": null
   },
   {
@@ -16699,51 +16702,51 @@
       "Savory Pancake Stall"
     ],
     "release_date": "2025-02-28",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Fury Obliteration",
+    "secret_skill_target": "All",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": null,
-    "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "secret_skill_support_effect": "Unleashes an all-target light magic attack for 150% normal damage\nIncreases weakness strike of Sparkle of Youth Force characters including rearguard until the end of battle by 60% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "Remedial Evasion",
+    "battle_skill_one_icon": "image/skills/IcSkill_031_56_3_L.png",
+    "battle_skill_one_effect_cost": 30,
+    "battle_skill_one_effect": "Applies Damage Absorption to Sparkle of Youth and Fount of Wisdom Force characters (Turns: 1): Nullifies all damage and heals by 5% of max HP\nIncreases all gauges' increase of all souls by 10% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Writing Onslaught",
+    "battle_skill_two_icon": "image/skills/IcSkill_031_54_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Adds Reckoning charge x2 to all allies (Each charge x1 deals 150% of affected allies' current HP in ongoing damage to all targets from Turn 5 onward)\nIncreases Soul of Skills' protection gauge increase by 50% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Soul Combo - ATK UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_001_01_1.png",
+    "trait_one_effect": "When you unleash a 6 combo attack with Soul of Skills, increases own ATK by 5% for the next turn (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_001_01_2.png",
+    "trait_one_effect_max": "When you unleash a 6 combo attack with Soul of Skills, increases own ATK by 8% for the next turn (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Switch - Skill Seal",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Shizue Izawa is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%\nIncreases guard power by 8%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 114\nIncreases ATK by 30\nIncreases DEF by 65",
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Yuuki Kagurazaka",
@@ -16773,51 +16776,51 @@
       "Hot Dog Stall"
     ],
     "release_date": "2025-03-10",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Beat Spiral",
+    "secret_skill_target": "Single",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": null,
-    "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
+    "secret_skill_support_effect": "Unleashes a single-target wind magic attack for 150% normal damage\nIncreases weakness strike of Sparkle of Youth Force characters including rearguard until the end of battle by 60% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "Ingenious Play",
+    "battle_skill_one_icon": "image/skills/IcSkill_086_01_3_L.png",
     "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_effect": "For this turn, all allies' battle skills can be activated an unlimited number of times (Excluding skills with the same effect)\nIncreases all souls' skill point increase by 100% (Turns: 1)\n(Cannot exceed the max activation limit during battle)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Commander's Iron Rule",
+    "battle_skill_two_icon": "image/skills/IcSkill_042_07_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Changes non-Skills soul x2 into Soul of Skills\nAdds Reckoning charge x2 to all allies (Each charge x1 deals 150% of affected allies' current HP in ongoing damage to all targets from Turn 5 onward)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Protection UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_14_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases protection gauge by 5 every 3 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases protection gauge by 7 every 3 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Soul Combo - Secret DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_10_1.png",
+    "valor_trait_effect": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_10_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Shizue Izawa is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%\nIncreases guard power by 8%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 114\nIncreases ATK by 30\nIncreases DEF by 65",
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Frey",
@@ -16847,51 +16850,51 @@
       "Dango Shop"
     ],
     "release_date": "2025-03-19",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Feather Hurricane",
+    "secret_skill_target": "Single",
     "secret_skill_normal_effect": null,
-    "secret_skill_attack_effect": null,
+    "secret_skill_attack_effect": "Unleashes a single-target water magic attack for 600% normal damage\nUse 200% of secret skill gauge to change to EX Soul of Combos: Damage x1.5",
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Scholarly Radiance",
+    "battle_skill_one_icon": "image/skills/IcSkill_035_01_3_L.png",
+    "battle_skill_one_effect_cost": 25,
+    "battle_skill_one_effect": "Increases Fount of Wisdom Force and water attribute characters' max HP by 120% (Turns: 2)\nGives all allies a continuous heal that restores their HP up to 2 times when the enemy's turn ends (Heals by 40% of max HP)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Soaring Smash",
+    "battle_skill_two_icon": "image/skills/IcSkill_005_03_3_L.png",
+    "battle_skill_two_effect_cost": 90,
+    "battle_skill_two_effect": "Increases M-ATK for all allies including rearguard by 80% (Turns: 1)\nIncreases EX Soul of Combos damage by 100% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Skill UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_15_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases skill points by 3 every 2 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_15_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases skill points by 5 every 2 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Soul Combo - Skill DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
+    "valor_trait_effect": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Shizue Izawa is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases synergy power by 12%",
+    "ex_ability_effect_two_name": "Magic Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -16921,50 +16924,50 @@
       "Savory Pancake Stall"
     ],
     "release_date": "2025-03-28",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
-    "secret_skill_normal_effect": null,
+    "secret_skill_name": "Break Scaler",
+    "secret_skill_target": "Single",
+    "secret_skill_normal_effect": "Unleashes a single-target fire physical attack for 470% normal damage\nDecreases all targets' guard power by 15% (Turns: 2)",
     "secret_skill_attack_effect": null,
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Gleaming Victory",
+    "battle_skill_one_icon": "image/skills/IcSkill_041_09_3_L.png",
+    "battle_skill_one_effect_cost": 25,
+    "battle_skill_one_effect": "Increases Soul of Secrets' skill point increase by 100% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Seizing Triumph",
+    "battle_skill_two_icon": "image/skills/IcSkill_043_38_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Changes dark characters' Soul of Combos x2 into Soul of Secrets for this turn only\nDecreases all targets' super weakness resistance until the end of battle by 10% (Unlimited)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "HP - Pierce Power UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_021_02_1.png",
+    "trait_one_effect": "When you have 50% or more HP, increases own pierce power by 5% at start of turn (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_021_02_2.png",
+    "trait_one_effect_max": "When you have 50% or more HP, increases own pierce power by 8% at start of turn (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
+    "valor_trait_name": "Soul Combo - Skill DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
     "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
-    "secret_skill_enhancement_trait": null,
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Guard Power DOWN effect of secret skills increases to 15%",
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
+    "ex_ability_effect_one_condition": "Increases own following status when Shuna is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases guard power by 8%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
     "true_attribute_unbound": null
   },
   {
@@ -16994,51 +16997,51 @@
       "Traditional Snack Shop"
     ],
     "release_date": "2025-03-28",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Blue Flare Blade",
+    "secret_skill_target": "Single",
     "secret_skill_normal_effect": null,
-    "secret_skill_attack_effect": null,
+    "secret_skill_attack_effect": "Unleashes a single-target dark physical attack for 600% normal damage\nUse 200% of secret skill gauge to change to EX Soul of Combos: Damage x1.5",
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Order Adherence",
+    "battle_skill_one_icon": "image/skills/IcSkill_021_01_3_L.png",
+    "battle_skill_one_effect_cost": 50,
+    "battle_skill_one_effect": "Increases pierce rate for all allies including rearguard by 100% (Turns: 1)\nDecreases all targets' pierce resistance by 60% (Turns: 1); Increases by 3% for each weakening effect instance applied to a target (Total Max: 120%; effects applied to all targets count as 1 instance)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Rookie's Resolve",
+    "battle_skill_two_icon": "image/skills/IcSkill_016_09_3_L.png",
+    "battle_skill_two_effect_cost": 15,
+    "battle_skill_two_effect": "Decreases a single target's all attribute resistance by 55% (Turns: 2)\nDecreases a single target's weakness resistance by 50% (Turns: 2)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Protection UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_14_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases protection gauge by 4 every 2 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases protection gauge by 6 every 2 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Soul Combo - Secret DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_10_1.png",
+    "valor_trait_effect": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_10_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Shion is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Violet",
@@ -17069,51 +17072,51 @@
       "Armor Magicubeite Digsite"
     ],
     "release_date": "2025-04-11",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Venozen Banish",
+    "secret_skill_target": "All",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": null,
-    "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "secret_skill_support_effect": "Unleashes an all-target fire physical attack for 150% normal damage\nIncreases weakness strike of Warrior's Mind Force characters including rearguard until the end of battle by 60% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "Mystic Haze",
+    "battle_skill_one_icon": "image/skills/IcSkill_031_47_3_L.png",
+    "battle_skill_one_effect_cost": 50,
+    "battle_skill_one_effect": "Applies Control x2 to all targets (Turns: 2; Stacks)\n(When the enemy's turn ends, increases all allies' weakness strike until the end of battle by 15% (Unlimited), based on the number of Control applied to enemies)\nDecreases all targets' secret skill damage resistance by 40% (Turns: 2)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Pristine Assault",
+    "battle_skill_two_icon": "image/skills/IcSkill_042_94_3_L.png",
+    "battle_skill_two_effect_cost": 35,
+    "battle_skill_two_effect": "Changes all Primal Demon, Schemer, and Antagonist Force characters' souls into Soul of Unity\nIncreases all souls' protection gauge increase by 10% (Turns: 1)\n(Uses per battle: 2)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Skill UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_15_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases skill points by 3 every 2 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_15_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases skill points by 5 every 2 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Switch - Skill Seal",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Physical Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Blanc",
@@ -17143,51 +17146,51 @@
       "Weaving Workshop"
     ],
     "release_date": "2025-04-11",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Glinting Flurry",
+    "secret_skill_target": "All",
     "secret_skill_normal_effect": null,
-    "secret_skill_attack_effect": null,
+    "secret_skill_attack_effect": "Unleashes an all-target dark physical attack for 375% normal damage\nUse 200% of secret skill gauge to change to EX Soul of Combos: Damage x2",
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Elegant Twirl",
+    "battle_skill_one_icon": "image/skills/IcSkill_064_13_3_L.png",
+    "battle_skill_one_effect_cost": 90,
+    "battle_skill_one_effect": "Increases physical/magic attack damage for all allies including rearguard by 100% (Turns: 1)\nDecreases all targets' dark+ damage resistance by 140% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
+    "battle_skill_two_name": "Whirling Shadows",
+    "battle_skill_two_icon": "image/skills/IcSkill_041_09_3_L.png",
     "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_effect": "Increases all Soul of Secrets gauges' increase by 70% (Turns: 2)\nIncreases skill points by 40 (Activates from Turn 2)\n(Uses per battle: 3)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Protection UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_14_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases protection gauge by 5 every 3 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases protection gauge by 7 every 3 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Switch - Skill Seal",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_27_1.png",
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_27_2.png",
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases pierce power by 12%",
+    "ex_ability_effect_two_name": "Physical Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ritus",
@@ -17216,50 +17219,50 @@
       "Crystal Hotel"
     ],
     "release_date": "2025-04-25",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
-    "secret_skill_normal_effect": null,
+    "secret_skill_name": "Spirit Blast",
+    "secret_skill_target": "Single",
+    "secret_skill_normal_effect": "Unleashes a single-target light magic attack for 470% normal damage\nIncreases all allies' counter power by 15% (Turns: 2)",
     "secret_skill_attack_effect": null,
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Chant Manipulation",
+    "battle_skill_one_icon": "image/skills/IcSkill_042_16_3_L.png",
+    "battle_skill_one_effect_cost": 25,
+    "battle_skill_one_effect": "Changes Spirit Master Force characters' soul x2 into Soul of Divine Protection\nIncreases all Soul of Divine Protection gauges' increase by 10% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Spirit Melody",
+    "battle_skill_two_icon": "image/skills/IcSkill_043_35_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Changes earth characters' Soul of Combos x2 into Soul of Divine Protection for this turn only\nIncreases all Soul of Divine Protection gauges' increase by 10% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Soul Combo - Aegis Rate UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_097_01_1.png",
+    "trait_one_effect": "When you unleash a 4+ combo attack with Soul of Divine Protection, increases own Aegis Rate by 5% for the next turn (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_097_01_2.png",
+    "trait_one_effect_max": "When you unleash a 4+ combo attack with Soul of Divine Protection, increases own Aegis Rate by 8% for the next turn (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
+    "valor_trait_name": "Soul Combo - Secret DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_10_1.png",
     "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
-    "secret_skill_enhancement_trait": null,
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_10_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Secrets gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "secret_skill_enhancement_trait": "Counter Power UP effect of secret skills increases to 15%",
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases counter power by 8%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 64\nIncreases ATK by 18\nIncreases DEF by 18",
     "true_attribute_unbound": null
   },
   {
@@ -17290,51 +17293,51 @@
       "Red Magicluster Digsite"
     ],
     "release_date": "2025-04-25",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Corruption Full Burst",
+    "secret_skill_target": "Single",
     "secret_skill_normal_effect": null,
-    "secret_skill_attack_effect": null,
+    "secret_skill_attack_effect": "Unleashes a single-target earth magic attack for 600% normal damage\nUse 200% of secret skill gauge to change to EX Soul of Combos: Damage x1.5",
     "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "battle_skill_one_name": "Hope Within Reach",
+    "battle_skill_one_icon": "image/skills/IcSkill_009_01_3_L.png",
+    "battle_skill_one_effect_cost": 90,
+    "battle_skill_one_effect": "Increases Soul of Combos damage by 111% (Turns: 1)\nIncreases EX Soul of Combos damage by 111% (Turns: 1)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Dream Flash",
+    "battle_skill_two_icon": "image/skills/IcSkill_042_66_3_L.png",
+    "battle_skill_two_effect_cost": 30,
+    "battle_skill_two_effect": "Changes non-Divine Protection soul x3 into Soul of Divine Protection\nIncreases all Soul of Divine Protection gauges' increase by 10% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Skill UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_15_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases skill points by 3 every 2 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_15_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases skill points by 5 every 2 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Soul Combo - Skill DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_08_1.png",
+    "valor_trait_effect": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 10% (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_08_2.png",
+    "valor_trait_effect_max": "When you unleash a 2 combo, all of the enemy's Soul of Skills gauge increases are decreased by 20% (Turns: 1; Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases Aegis Power by 12%",
+    "ex_ability_effect_two_name": "Magic Mercy",
+    "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
+    "true_attribute_unbound": "True Attribute Unbound (Earth+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Velzard",
@@ -17364,51 +17367,51 @@
       "Digsite for Attack Magigems"
     ],
     "release_date": "2025-04-25",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Ice-Cold Spiritual",
+    "secret_skill_target": "All",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": null,
-    "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "secret_skill_support_effect": "Unleashes an all-target water magic attack for 150% normal damage\nIncreases weakness strike of Spirit Master and Dragon Haki Force characters including rearguard until the end of battle by 60% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "Spirit Domain",
+    "battle_skill_one_icon": "image/skills/IcSkill_097_01_3_L.png",
+    "battle_skill_one_effect_cost": 90,
+    "battle_skill_one_effect": "Increases Aegis Rate for all allies including rearguard by 100% (Turns: 1)\nDecreases all targets' Aegis Resistance by 100% (Turns: 1)\n(Aegis: A portion of attacker's DEF will be added to ATK when damage is dealt)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
-    "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_name": "Passion Void",
+    "battle_skill_two_icon": "image/skills/IcSkill_031_20_3_L.png",
+    "battle_skill_two_effect_cost": 25,
+    "battle_skill_two_effect": "Chance to freeze a single target: 100% (Turns: 1) (Stun / Frostbite - Weakening Effects: x1.3)\nIncreases stun strike for all allies including rearguard until the end of battle by 10% (Unlimited)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Protection UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_14_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases protection gauge by 6 every 3 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases protection gauge by 8 every 3 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Charge - Secret DOWN",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_041_21_1.png",
+    "valor_trait_effect": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_041_21_2.png",
+    "valor_trait_effect_max": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases Aegis Power by 12%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Jaune",
@@ -17438,51 +17441,51 @@
       "Decoration Magicubite Digsite"
     ],
     "release_date": "2025-05-07",
-    "secret_skill_name": "",
-    "secret_skill_target": "",
+    "secret_skill_name": "Spirit Bastard",
+    "secret_skill_target": "All",
     "secret_skill_normal_effect": null,
     "secret_skill_attack_effect": null,
-    "secret_skill_support_effect": null,
-    "battle_skill_one_name": "",
-    "battle_skill_one_icon": "",
-    "battle_skill_one_effect_cost": 0,
-    "battle_skill_one_effect": "",
+    "secret_skill_support_effect": "Unleashes an all-target space magic attack for 150% normal damage\nIncreases weakness strike of Spirit Master and Primal Demon Force characters including rearguard until the end of battle by 60% (Unlimited)\nUse 200% of secret skill gauge to change to EX Soul of Combos: Weakness Strike effect amount x2",
+    "battle_skill_one_name": "Azure Spirit Strike",
+    "battle_skill_one_icon": "image/skills/IcSkill_003_09_3_L.png",
+    "battle_skill_one_effect_cost": 90,
+    "battle_skill_one_effect": "Increases all attribute ATK for all allies including rearguard by 100% (Turns: 1)\nIncreases Aegis power for charge-type characters including rearguard by 100% (Turns: 1)\n(Aegis: A portion of attacker's DEF will be added to ATK when damage is dealt)",
     "battle_skill_one_fused_icon": null,
     "battle_skill_one_fused_effect_cost": null,
     "battle_skill_one_fused_effect": null,
     "battle_skill_one_ultimate_manifestation_icon": null,
     "battle_skill_one_ultimate_manifestation_effect_cost": null,
     "battle_skill_one_ultimate_manifestation_effect": null,
-    "battle_skill_two_name": "",
-    "battle_skill_two_icon": "",
+    "battle_skill_two_name": "Skyripper Battleblade",
+    "battle_skill_two_icon": "image/skills/IcSkill_041_36_3_L.png",
     "battle_skill_two_effect_cost": 0,
-    "battle_skill_two_effect": "",
+    "battle_skill_two_effect": "Sets Soul of Combos' gauge increase to the same amount as Soul of Divine Protection's, with gauge-altering effects applied (Turns: 1)\nIncreases Soul of Divine Protection's secret skill gauge increase by 50% (Turns: 1)",
     "battle_skill_two_fused_icon": null,
     "battle_skill_two_fused_effect_cost": null,
     "battle_skill_two_fused_effect": null,
-    "trait_one_name": "",
-    "trait_one_icon": "",
-    "trait_one_effect": "",
-    "trait_one_icon_max": "",
-    "trait_one_effect_max": "",
+    "trait_one_name": "Troop - Protection UP",
+    "trait_one_icon": "image/traits/IcPassiveSkill_041_14_1.png",
+    "trait_one_effect": "When your troop contains 3 or more battle characters, increases protection gauge by 5 every 2 turns (available in support formation)",
+    "trait_one_icon_max": "image/traits/IcPassiveSkill_041_14_2.png",
+    "trait_one_effect_max": "When your troop contains 3 or more battle characters, increases protection gauge by 7 every 2 turns (available in support formation)",
     "trait_two_name": null,
     "trait_two_icon": null,
     "trait_two_effect": null,
     "trait_two_icon_max": null,
     "trait_two_effect_max": null,
-    "valor_trait_name": null,
-    "valor_trait_icon": null,
-    "valor_trait_effect": null,
-    "valor_trait_icon_max": null,
-    "valor_trait_effect_max": null,
+    "valor_trait_name": "Switch - Skill Seal",
+    "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
+    "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
+    "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
     "ex_ability_effect_one_name": "Individual Mercy",
-    "ex_ability_effect_one_condition": "",
-    "ex_ability_effect_one_effect": "",
-    "ex_ability_effect_two_name": "",
-    "ex_ability_effect_two_condition": "",
-    "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "ex_ability_effect_one_condition": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+    "ex_ability_effect_one_effect": "Increases Aegis Power by 12%",
+    "ex_ability_effect_two_name": "Magic Blessing",
+    "ex_ability_effect_two_condition": "Increases other troop members' following status in accordance with the number of magic attack characters assigned to battle slots.",
+    "ex_ability_effect_two_effect": "Increases HP by 96\nIncreases ATK by 45\nIncreases DEF by 26",
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Rimuru Tempest",
@@ -17766,7 +17769,7 @@
     "trait_two_effect_max": null,
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -17839,7 +17842,7 @@
     "trait_two_effect_max": null,
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_27_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_27_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' attack-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -17993,7 +17996,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Fire+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shion",
@@ -18064,7 +18067,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Hinata Sakaguchi",
@@ -18135,7 +18138,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ifrit",
@@ -18280,7 +18283,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Violet",
@@ -18351,7 +18354,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Jaune",
@@ -18422,7 +18425,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Dark+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Soka",
@@ -18566,7 +18569,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Light+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Shuna",
@@ -18629,7 +18632,7 @@
     "trait_two_effect_max": null,
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -18710,7 +18713,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Ryu Lion",
@@ -18781,7 +18784,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Wind+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Kagali",
@@ -19302,7 +19305,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Velzard",
@@ -19376,7 +19379,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Space+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Milim Nava",
@@ -19451,7 +19454,7 @@
     "ex_ability_effect_two_name": "",
     "ex_ability_effect_two_condition": "",
     "ex_ability_effect_two_effect": "",
-    "true_attribute_unbound": null
+    "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 6 ~ 8 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
   },
   {
     "name": "Nine Head",
@@ -19741,7 +19744,7 @@
     "trait_two_effect_max": "When your troop contains 3 or more battle characters, increases skill points by 8 every 3 turns (available in support formation)",
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -19890,7 +19893,7 @@
     "trait_two_effect_max": "When you unleash a 6 combo attack with Soul of Divine Protection, increases own ATK by 8% for the next turn (available in support formation)",
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -19966,7 +19969,7 @@
     "trait_two_effect_max": "When your troop contains 3 or more battle characters, increases skill points by 5 every 2 turns (available in support formation)",
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_26_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_26_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' defense-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
@@ -20265,7 +20268,7 @@
     "trait_two_effect_max": "When you have 75% or more HP, increases own Aegis power by 12% at start of turn (available in support formation)",
     "valor_trait_name": "Switch - Skill Seal",
     "valor_trait_icon": "image/valor_traits/IcArenaPassiveSkill_031_29_1.png",
-    "valor_trait_effect": null,
+    "valor_trait_effect": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 1)",
     "valor_trait_icon_max": "image/valor_traits/IcArenaPassiveSkill_031_29_2.png",
     "valor_trait_effect_max": "When you switch this character to the vanguard and activate souls, all enemies' magic-changing battle skills are sealed (Turns: 1; Uses by this character per battle: 2)",
     "secret_skill_enhancement_trait": null,
