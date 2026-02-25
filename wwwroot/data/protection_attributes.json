@@ -56,6 +56,10 @@
     "icon": "image/protection/attributes/dark_attribute_unbound.png"
   },
   {
+    "name": "Anti Neutral",
+    "icon": "image/protection/attributes/anti_neutral.png"
+  },
+  {
     "name": "Anti Fire",
     "icon": "image/protection/attributes/anti_fire.png"
   },
