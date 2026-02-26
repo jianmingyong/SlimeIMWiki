@@ -4,12 +4,9 @@ using Blazorise.Icons.FontAwesome;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.JSInterop;
-using ReactiveUI;
+using ReactiveUI.Builder;
 using SlimeIMWiki;
 using SlimeIMWiki.Services;
-using Splat;
-using Splat.Microsoft.Extensions.DependencyInjection;
-using Splat.ModeDetection;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -21,7 +18,6 @@ builder.Services.AddSingleton(_ => new HttpClient
 {
     BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
 });
-builder.Services.UseMicrosoftDependencyResolver();
 
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
@@ -37,10 +33,7 @@ builder.Services
     .AddBootstrap5Providers()
     .AddFontAwesomeIcons();
 
-var resolver = Locator.CurrentMutable;
-resolver.InitializeSplat();
-resolver.InitializeReactiveUI();
-
-ModeDetector.OverrideModeDetector(Mode.Run);
+var app = RxAppBuilder.CreateReactiveUIBuilder().WithBlazor().BuildApp();
+builder.Services.AddSingleton(app);
 
 await builder.Build().RunAsync();
