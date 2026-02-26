@@ -5180,13 +5180,16 @@
   },
   {
     "name": "Hakurou",
-    "title": "",
+    "title": "Instructor at Leisure",
     "permalink": "HakuroMovie2",
     "initial_rarity": 4,
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
-    "forces": null,
+    "forces": [
+      "Tears of the Azure Sea",
+      "Flashback Beatdown Emissary"
+    ],
     "attributes": [
       "Anti Fire"
     ],

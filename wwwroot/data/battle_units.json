@@ -17730,7 +17730,8 @@
     "forces": [
       "Schemer",
       "Octagram Demon Lord",
-      "Commander"
+      "Commander",
+      "Tears of the Azure Sea"
     ],
     "attribute": "Light+",
     "attack_type": "Physical",
@@ -20443,7 +20444,7 @@
   },
   {
     "name": "Gobta",
-    "title": "",
+    "title": "Hobgoblin of Gallantry",
     "permalink": "GobtaMovie2",
     "initial_rarity": 5,
     "is_ex": false,
