@@ -508,6 +508,21 @@
     "release_date": "2025-10-17"
   },
   {
+    "name": "Memories by the Waves",
+    "category": "Other",
+    "icon": "",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increase speed-type characters' synergy power by 5% (Turns: 1)",
+      "Increase speed-type characters' synergy power by 10% (Turns: 1)",
+      "Increase speed-type characters' synergy power by 15% (Turns: 1)"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Azure Sea Harbinger Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-02-27"
+  },
+  {
     "name": "Ogres' Pride",
     "category": "Other",
     "icon": "image/heartprints/skill_still_2500087_L.png",
@@ -596,6 +611,32 @@
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2025-10-17"
+  },
+  {
+    "name": "Close Call",
+    "category": "Other",
+    "icon": "",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Wind Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nLogin During Azure Sea Harbinger Event",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-02-27"
+  },
+  {
+    "name": "Three Girls in Love",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500008_L.png",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Protection Characters effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Always My Valentine Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-02-13"
   },
   {
     "name": "Send Some Over",

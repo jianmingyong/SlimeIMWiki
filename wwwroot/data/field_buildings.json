@@ -165,6 +165,21 @@
     "icon": "image/field_buildings/FieldBuilding_1346_01_icon.png"
   },
   {
+    "name": "Paper Mill",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1354_01_icon.png"
+  },
+  {
+    "name": "Tableware Store",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1356_01_icon.png"
+  },
+  {
+    "name": "Flour Mill",
+    "category": "Gold Coin Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1365_01_icon.png"
+  },
+  {
     "name": "Crystal Hotel",
     "category": "Gold Coin Production Facilities",
     "icon": "image/field_buildings/FieldBuilding_1453_01_icon.png"
@@ -188,6 +203,11 @@
     "name": "Japanese Style Tavern",
     "category": "Food Production Facilities",
     "icon": "image/field_buildings/FieldBuilding_1214_01_icon.png"
+  },
+  {
+    "name": "Honey Café",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1225_01_icon.png"
   },
   {
     "name": "Farm",
@@ -268,6 +288,11 @@
     "name": "Orchard",
     "category": "Food Production Facilities",
     "icon": "image/field_buildings/FieldBuilding_1355_01_icon.png"
+  },
+  {
+    "name": "Juice Stand",
+    "category": "Food Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1357_01_icon.png"
   },
   {
     "name": "Feast Hot Pot",
@@ -383,6 +408,16 @@
     "name": "Magic Feather Atelier",
     "category": "Item Production Facilities",
     "icon": "image/field_buildings/FieldBuilding_1350_01_icon.png"
+  },
+  {
+    "name": "Obstacle Course",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1359_01_icon.png"
+  },
+  {
+    "name": "Dojo",
+    "category": "Item Production Facilities",
+    "icon": "image/field_buildings/FieldBuilding_1360_01_icon.png"
   },
   {
     "name": "Photo Studio",
