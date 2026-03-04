@@ -1,8 +1,9 @@
-﻿@using SlimeIMWiki.Models.JsonData
-@inherits ReactiveComponentBase<UnitNameSectionViewModel>
-@inject IServiceProvider ServiceProvider
-
-@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ICharacterUnit Unit { get; set; }
+}
 
 <Div Flex="Flex.Column.JustifyContent.Center.AlignItems.Center">
     <ImageProxy Source="image/character_info/nameDecorationTop.png" Height="Height.Rem(1.5)"/>
@@ -25,23 +26,35 @@
             </Tooltip>
         }
 
-        @foreach (var attribute in ViewModel.Attributes)
+        @if (Unit is BattleUnit battleUnit)
         {
-            if (attribute is not null)
+            <Tooltip Text="@(battleUnit.Attribute.Name)">
+                <ImageProxy @key="battleUnit.Attribute.Icon" Width="Width.Em(2)" Source="@(battleUnit.Attribute.Icon)"/>
+                <Text>@(battleUnit.Attribute.Name)</Text>
+            </Tooltip>
+
+            <Tooltip Text="@(battleUnit.AttackType.Name)">
+                <ImageProxy Width="Width.Em(2)" Source="@battleUnit.AttackType.Icon"/>
+                <Text>@(battleUnit.AttackType.Name)</Text>
+            </Tooltip>
+        }
+        else if (Unit is ProtectionUnit protectionUnit)
+        {
+            foreach (var attribute in protectionUnit.Attributes ?? [])
             {
                 <Tooltip Text="@(attribute.Name)">
                     <ImageProxy @key="attribute.Icon" Width="Width.Em(2)" Source="@(attribute.Icon)"/>
                     <Text>@(attribute.Name)</Text>
                 </Tooltip>
             }
-        }
 
-        @if (ViewModel.AttackType is not null)
-        {
-            <Tooltip Text="@(ViewModel.AttackType.Name)">
-                <ImageProxy Width="Width.Em(2)" Source="@ViewModel.AttackType.Icon"/>
-                <Text>@(ViewModel.AttackType.Name)</Text>
-            </Tooltip>
+            @if (protectionUnit.AttackType is not null)
+            {
+                <Tooltip Text="@(protectionUnit.AttackType.Name)">
+                    <ImageProxy Width="Width.Em(2)" Source="@protectionUnit.AttackType.Icon"/>
+                    <Text>@(protectionUnit.AttackType.Name)</Text>
+                </Tooltip>
+            }
         }
 
         <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
@@ -89,17 +102,3 @@
         </Div>
     </Div>
 </Div>
-
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required ICharacterUnit Unit { get; set; }
-
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<UnitNameSectionViewModel>(ServiceProvider, Unit);
-        base.OnInitialized();
-    }
-}

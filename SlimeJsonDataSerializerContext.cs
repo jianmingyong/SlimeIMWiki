@@ -4,11 +4,11 @@ using SlimeIMWiki.Models.JsonData;
 
 namespace SlimeIMWiki;
 
-[JsonSerializable(typeof(BattleUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(BattleUnitData[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(BattleExpertise[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
-[JsonSerializable(typeof(ProtectionUnit[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
+[JsonSerializable(typeof(ProtectionUnitData[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttackType[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(ProtectionAttribute[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(Force[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
@@ -17,4 +17,4 @@ namespace SlimeIMWiki;
 [JsonSerializable(typeof(FieldBuilding[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSerializable(typeof(Heartscape[]), GenerationMode = JsonSourceGenerationMode.Metadata)]
 [JsonSourceGenerationOptions(JsonSerializerDefaults.General, PropertyNamingPolicy = JsonKnownNamingPolicy.SnakeCaseLower)]
-public partial class SlimeJsonSerializerContext : JsonSerializerContext;
+public partial class SlimeJsonDataSerializerContext : JsonSerializerContext;

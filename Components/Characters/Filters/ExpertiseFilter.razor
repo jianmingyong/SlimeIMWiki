@@ -1,10 +1,7 @@
 ﻿@using SlimeIMWiki.Models.JsonData
-@using SlimeIMWiki.Services
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@($"{nameof(Expertise)}_{Expertise.Name}")" DisplayText="@Expertise.Name"
-                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent DisplayText="@Expertise.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ImageProxy Class="filterIcon" Source="@Expertise.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
@@ -16,15 +13,14 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(Expertise)}_{Expertise.Name}", unit =>
+        Filter ??= new Filter($"{nameof(Expertise)}_{Expertise.Name}", GetType(), Expertise, unit =>
+        {
+            return unit switch
             {
-                return unit switch
-                {
-                    BattleUnit battleUnit => battleUnit.Expertise == Expertise.Name,
-                    var _ => false
-                };
-            },
-            @<ExpertiseFilter Expertise="Expertise" IsRemoveMode="true" Filter="Filter"/>);
+                BattleUnitData battleUnit => battleUnit.Expertise.Equals(Expertise.Name, StringComparison.OrdinalIgnoreCase),
+                var _ => false
+            };
+        });
 
         base.OnInitialized();
     }

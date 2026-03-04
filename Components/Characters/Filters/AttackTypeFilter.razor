@@ -1,10 +1,7 @@
 ﻿@using SlimeIMWiki.Models.JsonData
-@using SlimeIMWiki.Services
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@($"{nameof(AttackType)}_{AttackType.Name}")" DisplayText="@AttackType.Name"
-                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent DisplayText="@AttackType.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ImageProxy Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
@@ -16,16 +13,15 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(AttackType)}_{AttackType.Name}", unit =>
+        Filter ??= new Filter($"{nameof(AttackType)}_{AttackType.Name}", GetType(), AttackType, unit =>
+        {
+            return unit switch
             {
-                return unit switch
-                {
-                    BattleUnit battleUnit => battleUnit.AttackType == AttackType.Name,
-                    ProtectionUnit protectionUnit => protectionUnit.AttackType == AttackType.Name,
-                    var _ => false
-                };
-            },
-            @<AttackTypeFilter AttackType="AttackType" IsRemoveMode="true" Filter="Filter"/>);
+                BattleUnitData battleUnit => battleUnit.AttackType.Equals(AttackType.Name, StringComparison.OrdinalIgnoreCase),
+                ProtectionUnitData protectionUnit => protectionUnit.AttackType?.Equals(AttackType.Name, StringComparison.OrdinalIgnoreCase) ?? false,
+                var _ => false
+            };
+        });
 
         base.OnInitialized();
     }

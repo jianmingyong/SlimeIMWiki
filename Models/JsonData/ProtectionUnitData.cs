@@ -1,6 +1,6 @@
 ﻿namespace SlimeIMWiki.Models.JsonData;
 
-public record ProtectionUnit(
+public record ProtectionUnitData(
     string Name,
     string Title,
     string Permalink,
@@ -37,7 +37,7 @@ public record ProtectionUnit(
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
     string? ValorTraitEffectMax,
-    string? GuidanceEnhancementTraitEffect) : ICharacterUnit
+    string? GuidanceEnhancementTraitEffect) : ICharacterUnitData
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
 

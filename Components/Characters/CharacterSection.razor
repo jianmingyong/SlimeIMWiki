@@ -1,11 +1,13 @@
 ﻿@inherits ReactiveComponentBase<CharacterSectionViewModel>
+@using System.Reactive.Disposables.Fluent
+@using DynamicData.Binding
+@using SlimeIMWiki.Services
 @using ReactiveUI
-@using SlimeIMWiki.Models.JsonData
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
 
 @inject IServiceProvider ServiceProvider
 @inject IJSInProcessRuntime JS
 @inject ILogger<CharacterSection> Logger
+@inject JsonDataModelService JsonDataModelService
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -13,17 +15,17 @@
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedStart"
-                    Color="@(ViewModel.DisplayCategory == "Battle" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
-                    CommandParameter="@("Battle")">
+                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Battle ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayCategoryCommand"
+                    CommandParameter="CharacterListDisplayCategory.Battle">
                 <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)"
                             Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
-                    Color="@(ViewModel.DisplayCategory == "Protection" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsDisplayCategoryCommand"
-                    CommandParameter="@("Protection")">
+                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Protection ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayCategoryCommand"
+                    CommandParameter="CharacterListDisplayCategory.Protection">
                 <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)"
                             Height="Height.Em(1.5)"/>
                 <Text Display="Display.None.Block.OnTablet">Protection Units</Text>
@@ -34,53 +36,53 @@
     <Div Flex="Flex.Row">
         <Buttons Border="Border.White">
             <Button Size="Size.Small" Color="Color.Dark" Border="Border.RoundedStart"
-                    Command="ViewModel.ChangeCharacterUnitsOrderCommand">
+                    Command="ViewModel.ToggleDisplayOrderCommand">
                 <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Release" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Release")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Release ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Release">
                 <Icon Name="IconName.Clock"/>
                 <Text Display="Display.None.Block.OnTablet">Release</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Health" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Health")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Health">
                 <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icHpShadow.png" Text="Hp"
-                            Style="@(ViewModel.CharacterUnitsCategory == "Health" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Health</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Attack" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Attack")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Attack">
                 <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icAtkShadow.png" Text="Atk"
-                            Style="@(ViewModel.CharacterUnitsCategory == "Attack" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Attack</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Defense" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Defense")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Defense">
                 <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icDefShadow.png" Text="Def"
-                            Style="@(ViewModel.CharacterUnitsCategory == "Defense" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Defense</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Rarity" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Rarity")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Rarity ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Rarity">
                 <Icon Name="IconName.Star"/>
                 <Text Display="Display.None.Block.OnTablet">Rarity</Text>
             </Button>
             <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
-                    Color="@(ViewModel.CharacterUnitsCategory == "Name" ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeCharacterUnitsOrderByCategoryCommand"
-                    CommandParameter="@("Name")">
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Name">
                 <ImageProxy Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
-                            Style="@(ViewModel.CharacterUnitsCategory == "Name" ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? "filter: invert(100%)" : "filter: invert(0%)")"/>
                 <Text Display="Display.None.Block.OnTablet">Name</Text>
             </Button>
         </Buttons>
@@ -103,8 +105,7 @@
                 }
                 else if (unit is ProtectionUnit protectionUnit)
                 {
-                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit"
-                                        DisplayText="@ViewModel.DisplayText(unit)"/>
+                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
                 }
             }
         </Div>
@@ -114,7 +115,6 @@
 @code
 {
     private IJSInProcessObjectReference? _module;
-    private int _renderedHashCode;
 
     private float _unitScrollContainerWidth;
     private float _unitScrollContainerHeight;
@@ -138,15 +138,20 @@
     protected override void OnInitialized()
     {
         ViewModel = ActivatorUtilities.CreateInstance<CharacterSectionViewModel>(ServiceProvider);
-        base.OnInitialized();
-    }
 
-    protected override bool ShouldRender()
-    {
-        var newRenderHashcode = HashCode.Combine(ViewModel, _unitContainerHeight, _startIndex, _endIndex);
-        if (_renderedHashCode == newRenderHashcode) return false;
-        _renderedHashCode = newRenderHashcode;
-        return true;
+        this.WhenActivated(disposable =>
+        {
+            JsonDataModelService.RefreshData().DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.CharacterUnits)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(units => units.ObserveCollectionChanges())
+                .Subscribe(_ => UpdateVisibleItems())
+                .DisposeWith(disposable);
+        });
+        
+        base.OnInitialized();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -157,10 +162,6 @@
 
             UpdateScrollContainer();
             UpdateVisibleItems();
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.CharacterUnitsCount).Subscribe(_ => UpdateVisibleItems());
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
 
         _module?.InvokeVoid("setScrollPosition", "UnitScrollContainer", ViewModel?.ScrollPosition);
@@ -209,17 +210,17 @@
 
         _startIndex = (int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)) * _itemsPerRow - _itemsPerRow * _overscanAboveRowCount;
         _endIndex = _startIndex + _itemsPerRow * (_overscanAboveRowCount + _visibleRowCount + _overscanBelowRowCount);
-        _endIndex = Math.Min(_endIndex, ViewModel.CharacterUnitsCount);
-
-        _unitContainerHeight = MathF.Ceiling((float) ViewModel.CharacterUnitsCount / _itemsPerRow) * (_itemHeight + _itemHeightGap);
-
+        _endIndex = Math.Min(_endIndex, ViewModel.CharacterUnits.Count);
+        
+        _unitContainerHeight = MathF.Ceiling((float) ViewModel.CharacterUnits.Count / _itemsPerRow) * (_itemHeight + _itemHeightGap);
+        
+        InvokeAsync(StateHasChanged);
+        
         Logger.LogTrace("Item Per Row: {itemsPerRow}", _itemsPerRow);
         Logger.LogTrace("Overscan Above Row Count: {renderedRowCount}", _overscanAboveRowCount);
         Logger.LogTrace("Overscan Below Row Count: {renderedRowCount}", _overscanBelowRowCount);
-        Logger.LogTrace("Unit Count: {count}", ViewModel.CharacterUnitsCount);
+        Logger.LogTrace("Unit Count: {count}", ViewModel.CharacterUnits.Count);
         Logger.LogTrace("Index: {start} / {end}", _startIndex, _endIndex);
-
-        StateHasChanged();
     }
 
     protected override void Dispose(bool disposing)

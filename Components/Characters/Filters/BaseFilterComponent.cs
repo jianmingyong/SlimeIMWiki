@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+using DynamicData;
 using Microsoft.AspNetCore.Components;
+using SlimeIMWiki.Models;
 using SlimeIMWiki.Services;
 
 namespace SlimeIMWiki.Components.Characters.Filters;
@@ -7,13 +9,12 @@ namespace SlimeIMWiki.Components.Characters.Filters;
 public class BaseFilterComponent : ComponentBase
 {
     [Inject]
-    public required CharacterListService CharacterListService { get; set; }
+    public required CharacterListDisplayService CharacterListDisplayService { get; set; }
     
     [Parameter]
     public bool IsRemoveMode { get; set; }
-
-    [Parameter]
-    public Filter? Filter { get; set; }
+    
+    protected Filter? Filter { get; set; }
 
     protected void Execute()
     {
@@ -21,14 +22,11 @@ public class BaseFilterComponent : ComponentBase
 
         if (!IsRemoveMode)
         {
-            if (CharacterListService.Filters.All(filter => filter.Key != Filter.Key))
-            {
-                CharacterListService.Filters.Add(Filter);
-            }
+            CharacterListDisplayService.FilterCache.AddOrUpdate(Filter);
         }
         else
         {
-            CharacterListService.Filters.Remove(Filter);
+            CharacterListDisplayService.FilterCache.RemoveKey(Filter.Key);
         }
     }
 }

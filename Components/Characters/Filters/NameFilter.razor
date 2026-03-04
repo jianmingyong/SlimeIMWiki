@@ -1,10 +1,7 @@
 ﻿@using SlimeIMWiki.Models.JsonData
-@using SlimeIMWiki.Services
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@($"{nameof(Search)}_{Search.DisplayValue}")"
-                 IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <Text>@Search.DisplayValue</Text>
 </FilterComponent>
 
@@ -16,16 +13,25 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(Search)}_{Search.DisplayValue}", unit =>
+        Filter ??= new Filter($"{nameof(Search)}_{Search.DisplayValue}", GetType(), Search, unit =>
+        {
+            return unit switch
             {
-                return unit switch
+                BattleUnitData battleUnit => Search.SearchType switch
                 {
-                    BattleUnit battleUnit => Search.IsName ? battleUnit.Name.Equals(Search.Unit.Name, StringComparison.OrdinalIgnoreCase) : battleUnit.Title.Equals(Search.Unit.Title, StringComparison.OrdinalIgnoreCase),
-                    ProtectionUnit protectionUnit => Search.IsName ? protectionUnit.Name.Equals(Search.Unit.Name, StringComparison.OrdinalIgnoreCase) : protectionUnit.Title.Equals(Search.Unit.Title, StringComparison.OrdinalIgnoreCase),
+                    SearchResultType.Name => battleUnit.Name.Equals(Search.SearchValue, StringComparison.OrdinalIgnoreCase),
+                    SearchResultType.Title => battleUnit.Title.Equals(Search.SearchValue, StringComparison.OrdinalIgnoreCase),
                     var _ => false
-                };
-            },
-            @<NameFilter Search="@Search" IsRemoveMode="true" Filter="Filter"/>);
+                },
+                ProtectionUnitData protectionUnit => Search.SearchType switch
+                {
+                    SearchResultType.Name => protectionUnit.Name.Equals(Search.SearchValue, StringComparison.OrdinalIgnoreCase),
+                    SearchResultType.Title => protectionUnit.Title.Equals(Search.SearchValue, StringComparison.OrdinalIgnoreCase),
+                    var _ => false
+                },
+                var _ => false
+            };
+        });
 
         base.OnInitialized();
     }

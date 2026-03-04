@@ -1,4 +1,5 @@
 ﻿using System.Reactive.Disposables.Fluent;
+using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.SourceGenerators;
 using SlimeIMWiki.Models.JsonData;
@@ -9,17 +10,19 @@ namespace SlimeIMWiki.Components.Home;
 public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
-
+    
     [ObservableAsProperty(ReadOnly = false)]
-    private Livestream? _livestream;
+    private string? _livestreamSource;
 
     public LiveStreamViewModel(JsonDataModelService jsonDataModelService)
     {
         this.WhenActivated(disposable =>
         {
             jsonDataModelService
-                .GetLivestream()
-                .ToProperty(this, nameof(Livestream), out _livestreamHelper)
+                .GetObservableLivestream()
+                .OnErrorResumeNext(Observable.Return<Livestream?>(null))
+                .Select(livestream => livestream?.YoutubeLink)
+                .ToProperty(this, nameof(LivestreamSource), out _livestreamSourceHelper)
                 .DisposeWith(disposable);
         });
     }

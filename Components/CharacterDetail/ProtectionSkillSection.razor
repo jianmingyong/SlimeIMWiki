@@ -1,4 +1,9 @@
-﻿@using SlimeIMWiki.Models.JsonData
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+}
 
 <TextDivider Text="PROTECTION SKILL" Margin="Margin.Is2.OnY"/>
 
@@ -22,10 +27,3 @@
         <EffectStyler Text="@Unit.ProtectionSkillEffect"/>
     </Div>
 </Div>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required ProtectionUnit Unit { get; set; }
-}

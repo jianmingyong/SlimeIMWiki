@@ -1,4 +1,9 @@
-﻿@using SlimeIMWiki.Models.JsonData
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+}
 
 <TextDivider Text="DIVINE PROTECTION" Margin="Margin.Is2.OnY"/>
 
@@ -29,10 +34,3 @@
         <EffectStyler Text="@(string.IsNullOrEmpty(Unit.SupportDivineProtectionEffectMax) ? "???" : Unit.SupportDivineProtectionEffectMax)"/>
     </Div>
 </Div>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required ProtectionUnit Unit { get; set; }
-}

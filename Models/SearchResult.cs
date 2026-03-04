@@ -1,5 +1,3 @@
-﻿using SlimeIMWiki.Models.JsonData;
+﻿namespace SlimeIMWiki.Models;
 
-namespace SlimeIMWiki.Models;
-
-public record SearchResult(string DisplayValue, bool IsName, bool IsTitle, ICharacterUnit Unit);
+public record SearchResult(string DisplayValue, SearchResultType SearchType, string SearchValue);

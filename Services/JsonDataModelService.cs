@@ -1,185 +1,202 @@
-﻿using System.Net.Http.Json;
+﻿using System.Collections.Immutable;
+using System.Net.Http.Json;
+using System.Reactive.Disposables;
+using System.Reactive.Disposables.Fluent;
 using System.Reactive.Linq;
-using ReactiveUI;
-using ReactiveUI.SourceGenerators;
+using DynamicData;
 using SlimeIMWiki.Models.JsonData;
 
 namespace SlimeIMWiki.Services;
 
-public sealed partial class JsonDataModelService : ReactiveObject
+public sealed class JsonDataModelService : IDisposable
 {
+    public IObservableCache<BattleUnitData, string> BattleUnitsDataCache { get; }
+    public IObservableCache<BattleAttribute, string> BattleAttributeCache { get; }
+    public IObservableCache<BattleAttackType, string> BattleAttackTypeCache { get; }
+    public IObservableCache<BattleExpertise, string> BattleExpertiseCache { get; }
+
+    public IObservableCache<ProtectionUnitData, string> ProtectionUnitsDataCache { get; }
+    public IObservableCache<ProtectionAttribute, string> ProtectionAttributeCache { get; }
+    public IObservableCache<ProtectionAttackType, string> ProtectionAttackTypeCache { get; }
+
+    public IObservableCache<TacticType, string> TacticTypeCache { get; }
+    public IObservableCache<Force, string> ForceCache { get; }
+    public IObservableCache<FieldBuilding, string> FieldBuildingCache { get; }
+
+    private readonly SourceCache<BattleUnitData, string> _battleUnitCache = new(type => type.Permalink);
+    private readonly SourceCache<BattleAttribute, string> _battleAttributeCache = new(type => type.Name);
+    private readonly SourceCache<BattleAttackType, string> _battleAttackTypeCache = new(type => type.Name);
+    private readonly SourceCache<BattleExpertise, string> _battleExpertiseCache = new(type => type.Name);
+
+    private readonly SourceCache<ProtectionUnitData, string> _protectionUnitCache = new(type => type.Permalink);
+    private readonly SourceCache<ProtectionAttribute, string> _protectionAttributeCache = new(type => type.Name);
+    private readonly SourceCache<ProtectionAttackType, string> _protectionAttackTypeCache = new(type => type.Name);
+
+    private readonly SourceCache<TacticType, string> _tacticTypeCache = new(type => type.Name);
+    private readonly SourceCache<Force, string> _forceCache = new(type => type.Name);
+    private readonly SourceCache<FieldBuilding, string> _fieldBuildingCache = new(type => type.Name);
+
     private readonly HttpClient _httpClient;
     private readonly StaticWebRootAssets _staticWebRootAssets;
 
-    [ObservableAsProperty]
-    private BattleUnit[]? _battleUnits;
-
-    [ObservableAsProperty]
-    private BattleAttackType[]? _battleAttackTypes;
-
-    [ObservableAsProperty]
-    private BattleAttribute[]? _battleAttributes;
-    
-    [ObservableAsProperty]
-    private BattleExpertise[]? _battleExpertise;
-
-    [ObservableAsProperty]
-    private ProtectionUnit[]? _protectionUnits;
-
-    [ObservableAsProperty]
-    private ProtectionAttackType[]? _protectionAttackTypes;
-
-    [ObservableAsProperty]
-    private ProtectionAttribute[]? _protectionAttributes;
-
-    [ObservableAsProperty]
-    private Force[]? _forces;
-
-    [ObservableAsProperty]
-    private TacticType[]? _tacticTypes;
-
-    [ObservableAsProperty]
-    private FieldBuilding[]? _fieldBuildings;
+    private readonly CompositeDisposable _disposables = new();
 
     public JsonDataModelService(HttpClient httpClient, StaticWebRootAssets staticWebRootAssets)
     {
         _httpClient = httpClient;
         _staticWebRootAssets = staticWebRootAssets;
 
-        GetBattleUnits().ToProperty(this, nameof(BattleUnits), out _battleUnitsHelper);
-        GetBattleAttackTypes().ToProperty(this, nameof(BattleAttackTypes), out _battleAttackTypesHelper);
-        GetBattleAttributes().ToProperty(this, nameof(BattleAttributes), out _battleAttributesHelper);
-        GetBattleExpertises().ToProperty(this, nameof(BattleExpertise), out _battleExpertiseHelper);
+        BattleUnitsDataCache = _battleUnitCache.AsObservableCache();
+        _battleUnitCache.DisposeWith(_disposables);
 
-        GetProtectionUnits().ToProperty(this, nameof(ProtectionUnits), out _protectionUnitsHelper);
-        GetProtectionAttackTypes().ToProperty(this, nameof(ProtectionAttackTypes), out _protectionAttackTypesHelper);
-        GetProtectionAttributes().ToProperty(this, nameof(ProtectionAttributes), out _protectionAttributesHelper);
+        BattleAttributeCache = _battleAttributeCache.AsObservableCache();
+        _battleAttributeCache.DisposeWith(_disposables);
 
-        GetForces().ToProperty(this, nameof(Forces), out _forcesHelper);
-        GetTacticTypes().ToProperty(this, nameof(TacticTypes), out _tacticTypesHelper);
-        GetFieldBuildings().ToProperty(this, nameof(FieldBuildings), out _fieldBuildingsHelper);
-    }
+        BattleAttackTypeCache = _battleAttackTypeCache.AsObservableCache();
+        _battleAttackTypeCache.DisposeWith(_disposables);
 
-    public IObservable<BattleAttackType?> GetObservableBattleAttackType(string attackType)
-    {
-        return this
-            .WhenAnyValue(service => service.BattleAttackTypes)
-            .Select(attackTypes => attackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase)));
-    }
+        BattleExpertiseCache = _battleExpertiseCache.AsObservableCache();
+        _battleExpertiseCache.DisposeWith(_disposables);
 
-    public IObservable<BattleAttribute?> GetObservableBattleAttribute(string attribute)
-    {
-        return this
-            .WhenAnyValue(service => service.BattleAttributes)
-            .Select(attributes => attributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase)));
-    }
+        ProtectionUnitsDataCache = _protectionUnitCache.AsObservableCache();
+        _protectionUnitCache.DisposeWith(_disposables);
 
-    public IObservable<BattleExpertise?> GetObservableBattleExpertise(string expertise)
-    {
-        return this
-            .WhenAnyValue(service => service.BattleExpertise)
-            .Select(expertises => expertises?.SingleOrDefault(a => a.Name.Equals(expertise, StringComparison.OrdinalIgnoreCase)));
-    }
+        ProtectionAttributeCache = _protectionAttributeCache.AsObservableCache();
+        _protectionAttributeCache.DisposeWith(_disposables);
 
-    public IObservable<ProtectionAttackType?> GetObservableProtectionAttackType(string attackType)
-    {
-        return this
-            .WhenAnyValue(service => service.ProtectionAttackTypes)
-            .Select(attackTypes => attackTypes?.SingleOrDefault(a => a.Name.Equals(attackType, StringComparison.OrdinalIgnoreCase)));
-    }
+        ProtectionAttackTypeCache = _protectionAttackTypeCache.AsObservableCache();
+        _protectionAttackTypeCache.DisposeWith(_disposables);
 
-    public IObservable<ProtectionAttribute?> GetObservableProtectionAttribute(string attribute)
-    {
-        return this
-            .WhenAnyValue(service => service.ProtectionAttributes)
-            .Select(attributes => attributes?.SingleOrDefault(a => a.Name.Equals(attribute, StringComparison.OrdinalIgnoreCase)));
-    }
+        TacticTypeCache = _tacticTypeCache.AsObservableCache();
+        _tacticTypeCache.DisposeWith(_disposables);
 
-    public IObservable<Force?> GetObservableForce(string force)
-    {
-        return this
-            .WhenAnyValue(service => service.Forces)
-            .Select(forces => forces?.SingleOrDefault(f => f.Name.Equals(force, StringComparison.OrdinalIgnoreCase)));
+        ForceCache = _forceCache.AsObservableCache();
+        _forceCache.DisposeWith(_disposables);
+
+        FieldBuildingCache = _fieldBuildingCache.AsObservableCache();
+        _fieldBuildingCache.DisposeWith(_disposables);
     }
     
-    public IObservable<IEnumerable<Force?>> GetObservableForces(string[] forces)
+    private static void UpdateCache<TObject, TKey>(ISourceCache<TObject, TKey> cache, TObject[]? objects) where TObject : notnull where TKey : notnull
     {
-        return this
-            .WhenAnyValue(service => service.Forces)
-            .Select(f => forces.Select(s => f?.SingleOrDefault(force => force.Name.Equals(s, StringComparison.OrdinalIgnoreCase))));
+        if (objects is null) return;
+                
+        cache.Edit(updater =>
+        {
+            if (updater.Count == 0)
+            {
+                updater.Load(objects);
+                return;
+            }
+
+            updater.AddOrUpdate(objects);
+            updater.RemoveKeys(cache.Keys.Except(objects.Select(o => cache.KeySelector(o))));
+        });
     }
 
-    public IObservable<IEnumerable<FieldBuilding?>> GetObservableFieldBuildings(string[] fieldBuildings)
+    public IDisposable RefreshData()
     {
-        return this
-            .WhenAnyValue(service => service.FieldBuildings)
-            .Select(f => fieldBuildings.Select(s => f?.SingleOrDefault(building => building.Name.Equals(s, StringComparison.OrdinalIgnoreCase))));
-    }
-    
-    public IObservable<TacticType?> GetObservableTacticType(string type)
-    {
-        return this
-            .WhenAnyValue(service => service.TacticTypes)
-            .Select(tacticTypes => tacticTypes?.SingleOrDefault(t => t.Name.Equals(type, StringComparison.OrdinalIgnoreCase)));
+        var disposables = new CompositeDisposable();
+
+        // ReSharper disable once InvokeAsExtensionMember
+        Observable.Zip(
+            GetObservableBattleAttributes().OnErrorResumeNext(Observable.Return<BattleAttribute[]?>(null)),
+            GetObservableBattleAttackTypes().OnErrorResumeNext(Observable.Return<BattleAttackType[]?>(null)),
+            GetObservableBattleExpertises().OnErrorResumeNext(Observable.Return<BattleExpertise[]?>(null)),
+            GetObservableProtectionAttributes().OnErrorResumeNext(Observable.Return<ProtectionAttribute[]?>(null)),
+            GetObservableProtectionAttackTypes().OnErrorResumeNext(Observable.Return<ProtectionAttackType[]?>(null)),
+            GetObservableTacticTypes().OnErrorResumeNext(Observable.Return<TacticType[]?>(null)),
+            GetObservableForces().OnErrorResumeNext(Observable.Return<Force[]?>(null)),
+            GetObservableFieldBuildings().OnErrorResumeNext(Observable.Return<FieldBuilding[]?>(null)),
+            (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) => (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
+        ).Subscribe(tuple =>
+        {
+            UpdateCache(_battleAttributeCache, tuple.arg1);
+            UpdateCache(_battleAttackTypeCache, tuple.arg2);
+            UpdateCache(_battleExpertiseCache, tuple.arg3);
+            UpdateCache(_protectionAttributeCache, tuple.arg4);
+            UpdateCache(_protectionAttackTypeCache, tuple.arg5);
+            UpdateCache(_tacticTypeCache, tuple.arg6);
+            UpdateCache(_forceCache, tuple.arg7);
+            UpdateCache(_fieldBuildingCache, tuple.arg8);
+        }, () =>
+        {
+            GetObservableBattleUnits()
+                .OnErrorResumeNext(Observable.Return<BattleUnitData[]?>(null))
+                .Subscribe(units =>
+                {
+                    UpdateCache(_battleUnitCache, units);
+                })
+                .DisposeWith(disposables);
+
+            GetObservableProtectionUnits()
+                .OnErrorResumeNext(Observable.Return<ProtectionUnitData[]?>(null))
+                .Subscribe(units =>
+                {
+                    UpdateCache(_protectionUnitCache, units);
+                }).DisposeWith(disposables);
+        }).DisposeWith(disposables);
+
+        return disposables;
     }
 
-    public IObservable<Livestream?> GetLivestream()
+    public IObservable<Livestream?> GetObservableLivestream()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.LiveStream, SlimeJsonSerializerContext.Default.Livestream, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.LiveStream, SlimeJsonDataSerializerContext.Default.Livestream, token));
     }
 
-    public FieldBuilding? GetFieldBuilding(string fieldBuilding)
+    private IObservable<BattleUnitData[]?> GetObservableBattleUnits()
     {
-        return FieldBuildings?.SingleOrDefault(f => f.Name.Equals(fieldBuilding, StringComparison.OrdinalIgnoreCase));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleUnits, SlimeJsonDataSerializerContext.Default.BattleUnitDataArray, token));
     }
 
-    private IObservable<BattleUnit[]?> GetBattleUnits()
+    private IObservable<BattleAttribute[]?> GetObservableBattleAttributes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleUnits, SlimeJsonSerializerContext.Default.BattleUnitArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttributes, SlimeJsonDataSerializerContext.Default.BattleAttributeArray, token));
     }
 
-    private IObservable<BattleAttackType[]?> GetBattleAttackTypes()
+    private IObservable<BattleAttackType[]?> GetObservableBattleAttackTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttackTypes, SlimeJsonSerializerContext.Default.BattleAttackTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttackTypes, SlimeJsonDataSerializerContext.Default.BattleAttackTypeArray, token));
     }
 
-    private IObservable<BattleAttribute[]?> GetBattleAttributes()
+    private IObservable<BattleExpertise[]?> GetObservableBattleExpertises()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleAttributes, SlimeJsonSerializerContext.Default.BattleAttributeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleExpertises, SlimeJsonDataSerializerContext.Default.BattleExpertiseArray, token));
     }
 
-    private IObservable<BattleExpertise[]?> GetBattleExpertises()
+    private IObservable<ProtectionUnitData[]?> GetObservableProtectionUnits()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.BattleExpertises, SlimeJsonSerializerContext.Default.BattleExpertiseArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionUnits, SlimeJsonDataSerializerContext.Default.ProtectionUnitDataArray, token));
     }
 
-    private IObservable<ProtectionUnit[]?> GetProtectionUnits()
+    private IObservable<ProtectionAttribute[]?> GetObservableProtectionAttributes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionUnits, SlimeJsonSerializerContext.Default.ProtectionUnitArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttributes, SlimeJsonDataSerializerContext.Default.ProtectionAttributeArray, token));
     }
 
-    private IObservable<ProtectionAttackType[]?> GetProtectionAttackTypes()
+    private IObservable<ProtectionAttackType[]?> GetObservableProtectionAttackTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttackTypes, SlimeJsonSerializerContext.Default.ProtectionAttackTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttackTypes, SlimeJsonDataSerializerContext.Default.ProtectionAttackTypeArray, token));
     }
 
-    private IObservable<ProtectionAttribute[]?> GetProtectionAttributes()
+    private IObservable<TacticType[]?> GetObservableTacticTypes()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.ProtectionAttributes, SlimeJsonSerializerContext.Default.ProtectionAttributeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.TacticTypes, SlimeJsonDataSerializerContext.Default.TacticTypeArray, token));
     }
 
-    private IObservable<Force[]?> GetForces()
+    private IObservable<Force[]?> GetObservableForces()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.Forces, SlimeJsonSerializerContext.Default.ForceArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.Forces, SlimeJsonDataSerializerContext.Default.ForceArray, token));
     }
 
-    private IObservable<TacticType[]?> GetTacticTypes()
+    private IObservable<FieldBuilding[]?> GetObservableFieldBuildings()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.TacticTypes, SlimeJsonSerializerContext.Default.TacticTypeArray, token));
+        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.FieldBuildings, SlimeJsonDataSerializerContext.Default.FieldBuildingArray, token));
     }
 
-    private IObservable<FieldBuilding[]?> GetFieldBuildings()
+    public void Dispose()
     {
-        return Observable.FromAsync(token => _httpClient.GetFromJsonAsync(_staticWebRootAssets.FieldBuildings, SlimeJsonSerializerContext.Default.FieldBuildingArray, token));
+        _disposables.Dispose();
     }
 }

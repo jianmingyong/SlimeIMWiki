@@ -1,9 +1,9 @@
-﻿@using SlimeIMWiki.Models.JsonData
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
-@inherits ReactiveComponentBase<UnitStatusSectionViewModel>
-@inject IServiceProvider ServiceProvider
-
-@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ICharacterUnit Unit { get; set; }
+}
 
 <TextDivider Text="STATS" Margin="Margin.Is2.OnY"/>
 
@@ -97,10 +97,10 @@
                               TextAlignment="TextAlignment.Center"
                               VerticalAlignment="VerticalAlignment.Middle">
                     <Div Flex="Flex.Row.JustifyContent.Center.AlignItems.Center" Gap="Gap.Is2">
-                        <ImageProxy Source="@ViewModel.ExpertiseIcon"
-                                    Text="@battleUnit.Expertise"
+                        <ImageProxy Source="@battleUnit.Expertise.Icon"
+                                    Text="@battleUnit.Expertise.Name"
                                     Height="Height.Em(1.5)"/>
-                        <Div>@battleUnit.Expertise</Div>
+                        <Div>@battleUnit.Expertise.Name</Div>
                     </Div>
                 </TableRowCell>
             </TableRow>
@@ -125,8 +125,8 @@
             <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                           TextAlignment="TextAlignment.Center"
                           VerticalAlignment="VerticalAlignment.Middle">
-                <ImageProxy Source="@ViewModel.TacticTypeIcon"
-                       Text="@Unit.TacticsType"
+                <ImageProxy Source="@Unit.TacticsType.Image"
+                       Text="@Unit.TacticsType.Name"
                        Height="Height.Em(1.5)"/>
             </TableRowCell>
         </TableRow>
@@ -149,16 +149,3 @@
         </TableRow>
     </TableBody>
 </Table>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required ICharacterUnit Unit { get; set; }
-    
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<UnitStatusSectionViewModel>(ServiceProvider, Unit);
-        base.OnInitialized();
-    }
-}

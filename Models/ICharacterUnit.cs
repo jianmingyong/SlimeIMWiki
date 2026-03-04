@@ -1,4 +1,6 @@
-﻿namespace SlimeIMWiki.Models.JsonData;
+﻿using SlimeIMWiki.Models.JsonData;
+
+namespace SlimeIMWiki.Models;
 
 public interface ICharacterUnit
 {
@@ -14,7 +16,6 @@ public interface ICharacterUnit
 
     bool IsEx { get; }
     bool IsAttributeUnbound { get; }
-    
     bool HasAttributeUnbound { get; }
 
     int MaxHealth { get; }
@@ -23,9 +24,9 @@ public interface ICharacterUnit
     int MaxOutput { get; }
 
     string CharacterType { get; }
-    string TacticsType { get; }
+    TacticType TacticsType { get; }
 
-    string[] SuitedFacilities { get; }
+    SuitedFacility[] SuitedFacilities { get; }
 
     DateOnly? ReleaseDate { get; }
     

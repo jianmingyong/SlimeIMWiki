@@ -1,11 +1,5 @@
-﻿@using SlimeIMWiki.Models.JsonData
-@inherits ReactiveComponentBase<UnitIconViewModel>
-@inject IServiceProvider ServiceProvider
-
-@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
-
-<Link To="@($"Characters/{Unit.Permalink}")" 
-      Position="Position.Relative" 
+﻿<Link To="@($"characters/{Unit.Permalink}")"
+      Position="Position.Relative"
       Width="Width.Px(100)" Height="Height.Px(100)"
       Style="user-select: none">
 <Div Position="Position.Absolute.Start.Is0.Top.Is0"
@@ -17,8 +11,8 @@
 </Div>
 
 <Div Position="Position.Absolute.End.Is0.Top.Is0" Width="Width.Is25" Flex="Flex.Column" Style="z-index: 3">
-    <ImageProxy Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.FirstIcon"/>
-    <ImageProxy Width="Width.Is100" Height="Height.Is100" Source="@ViewModel.SecondIcon"/>
+    <ImageProxy Width="Width.Is100" Height="Height.Is100" Source="@_firstIcon" Text="@_firstIconText"/>
+    <ImageProxy Width="Width.Is100" Height="Height.Is100" Source="@_secondIcon" Text="@_secondIconText"/>
 </Div>
 
 @switch (Unit.InitialRarity)
@@ -26,16 +20,16 @@
     case 3:
     {
         <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-               Source="image/rarity/starCharaL3A.png"
-               Style="z-index: 3"/>
+                    Source="image/rarity/starCharaL3A.png"
+                    Style="z-index: 3"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-               Source="image/rarity/frameBlessM3.png"
-               Style="z-index: 2"/>
+                    Source="image/rarity/frameBlessM3.png"
+                    Style="z-index: 2"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-               Source="image/rarity/baseBlessM3.png"
-               Style="z-index: 0"/>
+                    Source="image/rarity/baseBlessM3.png"
+                    Style="z-index: 0"/>
 
         break;
     }
@@ -43,16 +37,16 @@
     case 4:
     {
         <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-               Source="image/rarity/starCharaL4A.png"
-               Style="z-index: 3"/>
+                    Source="image/rarity/starCharaL4A.png"
+                    Style="z-index: 3"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-               Source="image/rarity/frameBlessM4.png"
-               Style="z-index: 2"/>
+                    Source="image/rarity/frameBlessM4.png"
+                    Style="z-index: 2"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-               Source="image/rarity/baseBlessM4.png"
-               Style="z-index: 0"/>
+                    Source="image/rarity/baseBlessM4.png"
+                    Style="z-index: 0"/>
 
         break;
     }
@@ -62,44 +56,44 @@
         @if (Unit.IsEx)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                   Source="image/rarity/starCharaL6UA.png"
-                   Style="z-index: 3"/>
+                        Source="image/rarity/starCharaL6UA.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/frameBlessM6u.png"
-                   Style="z-index: 2"/>
+                        Source="image/rarity/frameBlessM6u.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/baseBlessM6u.png"
-                   Style="z-index: 0"/>
+                        Source="image/rarity/baseBlessM6u.png"
+                        Style="z-index: 0"/>
         }
         else if (Unit.IsAttributeUnbound)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                   Source="image/rarity/starCharaL6UPA.png"
-                   Style="z-index: 3"/>
+                        Source="image/rarity/starCharaL6UPA.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/frameBlessM6up.png"
-                   Style="z-index: 2"/>
+                        Source="image/rarity/frameBlessM6up.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/baseBlessM6up.png"
-                   Style="z-index: 0"/>
+                        Source="image/rarity/baseBlessM6up.png"
+                        Style="z-index: 0"/>
         }
         else
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                   Source="image/rarity/starCharaL5A.png"
-                   Style="z-index: 3"/>
+                        Source="image/rarity/starCharaL5A.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/frameBlessM5.png"
-                   Style="z-index: 2"/>
+                        Source="image/rarity/frameBlessM5.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                   Source="image/rarity/baseBlessM5.png"
-                   Style="z-index: 0"/>
+                        Source="image/rarity/baseBlessM5.png"
+                        Style="z-index: 0"/>
         }
 
         break;
@@ -107,9 +101,10 @@
 }
 
 <ImageProxy Position="Position.Absolute.Start.Is50.Translate.MiddleX"
-       Width="Width.Px(99)" Height="Height.Px(99)"
-       Source="@Unit.Icon"
-       Style="z-index: 1"/>
+            Width="Width.Px(99)" Height="Height.Px(99)"
+            Source="@Unit.Icon"
+            Text="@Unit.Permalink"
+            Style="z-index: 1"/>
 </Link>
 
 @code
@@ -117,14 +112,57 @@
     [Parameter]
     [EditorRequired]
     public required ProtectionUnit Unit { get; set; }
-    
+
     [Parameter]
     [EditorRequired]
     public required string DisplayText { get; set; }
-    
+
+    private string _firstIcon = string.Empty;
+    private string _firstIconText = string.Empty;
+
+    private string _secondIcon = string.Empty;
+    private string _secondIconText = string.Empty;
+
     protected override void OnInitialized()
     {
-        ViewModel = ActivatorUtilities.CreateInstance<UnitIconViewModel>(ServiceProvider, Unit);
+        if (Unit.Forces is not null && Unit.Forces.Length > 0)
+        {
+            _firstIcon = Unit.Forces[0].Icon;
+            _firstIconText = Unit.Forces[0].Name;
+
+            if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
+            {
+                _secondIcon = Unit.Attributes[0].Icon;
+                _secondIconText = Unit.Attributes[0].Name;
+            }
+            else if (Unit.AttackType is not null)
+            {
+                _secondIcon = Unit.AttackType.Icon;
+                _secondIconText = Unit.AttackType.Name;
+            }
+        }
+        else if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
+        {
+            _firstIcon = Unit.Attributes[0].Icon;
+            _firstIconText = Unit.Attributes[0].Name;
+
+            if (Unit.Attributes.Length >= 2)
+            {
+                _secondIcon = Unit.Attributes[1].Icon;
+                _secondIconText = Unit.Attributes[1].Name;
+            }
+            else if (Unit.AttackType is not null)
+            {
+                _secondIcon = Unit.AttackType.Icon;
+                _secondIconText = Unit.AttackType.Name;
+            }
+        }
+        else if (Unit.AttackType is not null)
+        {
+            _firstIcon = Unit.AttackType.Icon;
+            _firstIconText = Unit.AttackType.Name;
+        }
+
         base.OnInitialized();
     }
 }

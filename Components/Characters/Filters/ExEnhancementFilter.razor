@@ -1,7 +1,6 @@
-﻿@using SlimeIMWiki.Services
-@inherits BaseFilterComponent
+﻿@inherits BaseFilterComponent
 
-<FilterComponent Key="EX Enhancement" DisplayText="EX/EXU Enhancement" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent DisplayText="EX/EXU Enhancement" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ImageProxy Class="filterIcon" Source="image/rarity/badgeClassUp.png" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
 </FilterComponent>
 
@@ -9,9 +8,7 @@
 {
     protected override void OnInitialized()
     {
-        Filter ??= new Filter("EX Enhancement", unit => unit.HasAttributeUnbound,
-            @<ExEnhancementFilter IsRemoveMode="true" Filter="Filter"/>);
-
+        Filter ??= new Filter("EX Enhancement", GetType(), null, unit => unit.HasAttributeUnbound);
         base.OnInitialized();
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SlimeIMWiki.Models.JsonData;
 
-public record BattleUnit(
+public record BattleUnitData(
     string Name,
     string Title,
     string Permalink,
@@ -8,6 +8,7 @@ public record BattleUnit(
     bool IsEx,
     bool IsAttributeUnbound,
     bool HasAttributeUnbound,
+    bool HasUltimateManifestation,
     string[] Forces,
     string Attribute,
     string AttackType,
@@ -68,7 +69,7 @@ public record BattleUnit(
     string? ValorTraitIcon,
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
-    string? ValorTraitEffectMax) : ICharacterUnit
+    string? ValorTraitEffectMax) : ICharacterUnitData
 {
     public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
 

@@ -1,10 +1,7 @@
 ﻿@page "/characters/{permalink}"
 @using SlimeIMWiki.Components.CharacterDetail
-@using SlimeIMWiki.Models.JsonData
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
-@inherits ReactiveComponentBase<CharacterDetailViewModel>
+@inherits ReactiveComponentBase<SlimeIMWiki.Components.CharacterDetail.CharacterDetailViewModel>
 @inject IServiceProvider ServiceProvider
-@inject IJSRuntime Js
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -18,11 +15,12 @@ else
 {
     <Div Flex="Flex.Wrap" Margin="Margin.Is5.FromBottom">
         <Div Width="Width.Is100">
-            <ImageProxy Width="Width.Rem(4)" Height="Height.Rem(4)"
-                        Source="image/character_info/btnReturnNormal.png"
-                        Text="Back"
-                        Class="returnButton"
-                        @onclick="ReturnBack"/>
+            <Blazorise.Link To="characters">
+                <ImageProxy Width="Width.Rem(4)" Height="Height.Rem(4)"
+                            Source="image/character_info/btnReturnNormal.png"
+                            Text="Back"
+                            Class="returnButton"/>
+            </Blazorise.Link>
         </Div>
 
         <Div Width="Width.Is50" Display="Display.Block.OnDesktop.None">
@@ -213,10 +211,5 @@ else
     {
         ViewModel = ActivatorUtilities.CreateInstance<CharacterDetailViewModel>(ServiceProvider, Permalink);
         base.OnInitialized();
-    }
-
-    private async Task ReturnBack()
-    {
-        await Js.InvokeVoidAsync("history.back");
     }
 }

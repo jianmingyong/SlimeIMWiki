@@ -1,9 +1,7 @@
 ﻿@using SlimeIMWiki.Models.JsonData
-@using SlimeIMWiki.Services
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
 @inherits BaseFilterComponent
 
-<FilterComponent Key="@($"{nameof(Force)}_{Force.Name}")" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <ImageProxy Source="@Force.Icon" Width="Width.Em(2)" Text="@Force.Name"/>
     <Text>@Force.Name</Text>
 </FilterComponent>
@@ -16,16 +14,15 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(Force)}_{Force.Name}", unit =>
+        Filter ??= new Filter($"{nameof(Force)}_{Force.Name}", GetType(), Force, unit =>
+        {
+            return unit switch
             {
-                return unit switch
-                {
-                    BattleUnit battleUnit => battleUnit.Forces.Contains(Force.Name),
-                    ProtectionUnit protectionUnit => protectionUnit.Forces?.Contains(Force.Name) ?? false,
-                    var _ => false
-                };
-            },
-            @<ForceFilter Force="Force" IsRemoveMode="true" Filter="Filter"/>);
+                BattleUnitData battleUnit => battleUnit.Forces.Any(force => force.Equals(Force.Name, StringComparison.OrdinalIgnoreCase)),
+                ProtectionUnitData protectionUnit => protectionUnit.Forces?.Any(force => force.Equals(Force.Name, StringComparison.OrdinalIgnoreCase)) ?? false,
+                var _ => false
+            };
+        });
 
         base.OnInitialized();
     }

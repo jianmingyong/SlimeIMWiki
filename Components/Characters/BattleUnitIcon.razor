@@ -1,11 +1,4 @@
-﻿@using SlimeIMWiki.Models.JsonData
-@using BattleUnit = SlimeIMWiki.Models.JsonData.BattleUnit
-@inherits ReactiveComponentBase<UnitIconViewModel>
-@inject IServiceProvider ServiceProvider
-
-@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
-
-<Link To="@($"Characters/{Unit.Permalink}")"
+﻿<Link To="@($"characters/{Unit.Permalink}")"
       Position="Position.Relative"
       Width="Width.Px(100)" Height="Height.Px(100)"
       Style="user-select: none">
@@ -27,17 +20,20 @@
 
 <ImageProxy Position="Position.Absolute.End.Is0.Top.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.FirstIcon"
+       Source="@Unit.Attribute.Icon"
+       Text="@Unit.Attribute.Name"
        Style="z-index: 3"/>
 
 <ImageProxy Position="Position.Absolute.End.Is0"
        Width="Width.Is25"
-       Source="@ViewModel.SecondIcon"
+       Source="@Unit.AttackType.Icon"
+       Text="@Unit.AttackType.Name"
        Style="z-index: 3; top: 25%"/>
 
 <ImageProxy Position="Position.Absolute.Start.Is50.Translate.MiddleX"
        Width="Width.Px(99)" Height="Height.Px(99)"
        Source="@Unit.Icon"
+       Text="@Unit.Permalink"
        Style="z-index: 1"/>
 
 @switch (Unit.InitialRarity)
@@ -150,10 +146,4 @@
     [Parameter]
     [EditorRequired]
     public required string DisplayText { get; set; }
-
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<UnitIconViewModel>(ServiceProvider, Unit);
-        base.OnInitialized();
-    }
 }

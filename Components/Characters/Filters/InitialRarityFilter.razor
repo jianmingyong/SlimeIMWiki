@@ -1,8 +1,6 @@
-﻿@using SlimeIMWiki.Services
-@inherits BaseFilterComponent
+﻿@inherits BaseFilterComponent
 
-<FilterComponent Key="@($"{nameof(Rarity)}_{Rarity}")" DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode"
-                 OnClick="Execute">
+<FilterComponent DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <Div Class="filterIcon" Position="Position.Relative"
          Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
         <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
@@ -36,9 +34,7 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", unit => unit.InitialRarity == Rarity,
-            @<InitialRarityFilter Rarity="Rarity" IsRemoveMode="true" Filter="Filter"/>);
-
+        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", GetType(), Rarity, unit => unit.InitialRarity == Rarity);
         base.OnInitialized();
     }
 }

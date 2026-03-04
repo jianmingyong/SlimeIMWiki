@@ -1,4 +1,7 @@
-﻿@using SlimeIMWiki.Services
+﻿@using System.Reactive.Disposables.Fluent
+@using System.Reactive.Linq
+@using ReactiveUI
+@using SlimeIMWiki.Services
 @inherits ReactiveComponentBase<TimersViewModel>
 @inject IServiceProvider ServiceProvider
 @inject IWebStorageService WebStorageService
@@ -52,18 +55,32 @@
     protected override void OnInitialized()
     {
         ViewModel = ActivatorUtilities.CreateInstance<TimersViewModel>(ServiceProvider);
+
+        this.WhenActivated(disposable =>
+        {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(view => view.ViewModel.TimerSelection)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .DistinctUntilChanged()
+                .WhereNotNull()
+                .Subscribe(s =>
+                {
+                    WebStorageService.SetToCookie(nameof(ViewModel.TimerSelection), s, TimeSpan.FromDays(30));
+                }).DisposeWith(disposable);
+        });
+        
         base.OnInitialized();
     }
 
     protected override void OnAfterRender(bool firstRender)
     {
+        base.OnAfterRender(firstRender);
+        
         Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
 
         if (firstRender)
         {
             ViewModel.TimerSelection = WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA";
         }
-
-        base.OnAfterRender(firstRender);
     }
 }
