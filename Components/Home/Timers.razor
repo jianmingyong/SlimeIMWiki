@@ -63,19 +63,16 @@
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                 .DistinctUntilChanged()
                 .WhereNotNull()
-                .Subscribe(s =>
-                {
-                    WebStorageService.SetToCookie(nameof(ViewModel.TimerSelection), s, TimeSpan.FromDays(30));
-                }).DisposeWith(disposable);
+                .Subscribe(s => { WebStorageService.SetToCookie(nameof(ViewModel.TimerSelection), s, TimeSpan.FromDays(30)); }).DisposeWith(disposable);
         });
-        
+
         base.OnInitialized();
     }
 
     protected override void OnAfterRender(bool firstRender)
     {
         base.OnAfterRender(firstRender);
-        
+
         Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
 
         if (firstRender)

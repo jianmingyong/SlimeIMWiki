@@ -16,7 +16,7 @@
                     <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)"
                          Height="Height.Em(1.5)">
                         <ImageProxy Width="Width.Max100" Height="Height.Is100"
-                               Source="image/character_info/icHpShadow.png" Text="Hp"/>
+                                    Source="image/character_info/icHpShadow.png" Text="Hp"/>
                     </Div>
                     <Text>Health</Text>
                 </Div>
@@ -35,7 +35,7 @@
                     <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)"
                          Height="Height.Em(1.5)">
                         <ImageProxy Width="Width.Max100" Height="Height.Is100"
-                               Source="image/character_info/icAtkShadow.png" Text="Atk"/>
+                                    Source="image/character_info/icAtkShadow.png" Text="Atk"/>
                     </Div>
                     <Div>Attack</Div>
                 </Div>
@@ -54,7 +54,7 @@
                     <Div Flex="Flex.JustifyContent.Center" Width="Width.Em(1.5)"
                          Height="Height.Em(1.5)">
                         <ImageProxy Width="Width.Max100" Height="Height.Is100"
-                               Source="image/character_info/icDefShadow.png" Text="Def"/>
+                                    Source="image/character_info/icDefShadow.png" Text="Def"/>
                     </Div>
                     <Div>Defense</Div>
                 </Div>
@@ -83,7 +83,7 @@
                 <Div>@Unit.MaxOutput</Div>
             </TableRowCell>
         </TableRow>
-        
+
         @if (Unit is BattleUnit battleUnit)
         {
             <TableRow>
@@ -105,7 +105,7 @@
                 </TableRowCell>
             </TableRow>
         }
-        
+
         <TableRow>
             <TableHeaderCell Background="Background.Body" TextColor="TextColor.Body"
                              VerticalAlignment="VerticalAlignment.Middle">
@@ -126,8 +126,8 @@
                           TextAlignment="TextAlignment.Center"
                           VerticalAlignment="VerticalAlignment.Middle">
                 <ImageProxy Source="@Unit.TacticsType.Image"
-                       Text="@Unit.TacticsType.Name"
-                       Height="Height.Em(1.5)"/>
+                            Text="@Unit.TacticsType.Name"
+                            Height="Height.Em(1.5)"/>
             </TableRowCell>
         </TableRow>
         <TableRow>

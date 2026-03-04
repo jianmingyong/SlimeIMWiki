@@ -8,7 +8,7 @@ public interface ICharacterUnit
     string Title { get; }
 
     string Permalink { get; }
-    
+
     string Icon { get; }
     string Image { get; }
 
@@ -29,24 +29,24 @@ public interface ICharacterUnit
     SuitedFacility[] SuitedFacilities { get; }
 
     DateOnly? ReleaseDate { get; }
-    
+
     string TraitOneName { get; }
-    
+
     string TraitOneIcon { get; }
-    
+
     string TraitOneEffect { get; }
-    
+
     string TraitOneIconMax { get; }
-    
+
     string TraitOneEffectMax { get; }
-    
+
     string? ValorTraitName { get; }
-    
+
     string? ValorTraitIcon { get; }
-    
+
     string? ValorTraitEffect { get; }
-    
+
     string? ValorTraitIconMax { get; }
-    
+
     string? ValorTraitEffectMax { get; }
 }

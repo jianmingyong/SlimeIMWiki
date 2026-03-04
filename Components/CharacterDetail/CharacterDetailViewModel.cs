@@ -19,7 +19,7 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject
             _unit = BattleUnit.FromBattleUnitData(battleUnit.Value, jsonDataModelService);
             return;
         }
-        
+
         var protectionUnit = jsonDataModelService.ProtectionUnitsDataCache.Lookup(permalink);
 
         if (protectionUnit.HasValue)

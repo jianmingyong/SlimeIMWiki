@@ -3,11 +3,9 @@ using Blazorise;
 
 namespace SlimeIMWiki;
 
-#nullable disable
-
 public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumerable<KeyValuePair<string, Func<string>>>
 {
-    public string BodySecondary { get; set; }
+    public string? BodySecondary { get; set; }
 
     private new Dictionary<string, Func<string>> ColorMap
     {
@@ -49,7 +47,7 @@ public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumera
                 },
                 {
                     "body-secondary",
-                    (Func<string>) (() => BodySecondary)
+                    (Func<string>) (() => BodySecondary ?? "")
                 },
                 {
                     "body",
@@ -62,13 +60,16 @@ public record BootstrapThemeBackgroundOptions : ThemeBackgroundOptions, IEnumera
             };
         }
     }
-    
+
     public new IEnumerator<KeyValuePair<string, Func<string>>> GetEnumerator()
     {
         return ColorMap.GetEnumerator();
     }
-    
-    IEnumerator IEnumerable.GetEnumerator() => ColorMap.GetEnumerator();
-    
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return ColorMap.GetEnumerator();
+    }
+
     public new Func<string> this[string key] => ColorMap[key];
 }

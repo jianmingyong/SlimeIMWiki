@@ -8,17 +8,17 @@ public class StaticWebRootAssets(IConfiguration configuration)
     public Uri BattleAttackTypes => ResolveUri("data/battle_attack_types.json");
     public Uri BattleAttributes => ResolveUri("data/battle_attributes.json");
     public Uri BattleExpertises => ResolveUri("data/battle_expertises.json");
-    
+
     public Uri ProtectionUnits => ResolveUri("data/protection_units.json");
     public Uri ProtectionAttackTypes => ResolveUri("data/protection_attack_types.json");
     public Uri ProtectionAttributes => ResolveUri("data/protection_attributes.json");
-    
+
     public Uri Forces => ResolveUri("data/forces.json");
     public Uri TacticTypes => ResolveUri("data/tactics_types.json");
     public Uri FieldBuildings => ResolveUri("data/field_buildings.json");
-    
+
     public Uri LiveStream => ResolveUri("data/livestream.json");
-    
+
     private readonly bool _useContentDeliveryNetwork = configuration.GetValue<bool>("StaticWebRootAssetsMapping:UseContentDeliveryNetwork");
     private readonly string? _contentDeliveryNetwork = configuration.GetValue<string?>("StaticWebRootAssetsMapping:ContentDeliveryNetwork");
 

@@ -21,50 +21,38 @@ public record BattleUnitData(
     string TacticsType,
     string[] SuitedFacilities,
     DateOnly? ReleaseDate,
-    
     string SecretSkillName,
     string SecretSkillTarget,
-    
     string? SecretSkillNormalEffect,
     string? SecretSkillAttackEffect,
     string? SecretSkillSupportEffect,
-    
     string BattleSkillOneName,
-    
     string BattleSkillOneIcon,
     int BattleSkillOneEffectCost,
     string BattleSkillOneEffect,
-    
     string? BattleSkillOneFusedIcon,
     int? BattleSkillOneFusedEffectCost,
     string? BattleSkillOneFusedEffect,
-    
     string? BattleSkillOneUltimateManifestationIcon,
     int? BattleSkillOneUltimateManifestationEffectCost,
     string? BattleSkillOneUltimateManifestationEffect,
-    
     string BattleSkillTwoName,
-    
     string BattleSkillTwoIcon,
     int BattleSkillTwoEffectCost,
     string BattleSkillTwoEffect,
-    
     string? BattleSkillTwoFusedIcon,
     int? BattleSkillTwoFusedEffectCost,
     string? BattleSkillTwoFusedEffect,
-    
     string TraitOneName,
     string TraitOneIcon,
     string TraitOneEffect,
     string TraitOneIconMax,
     string TraitOneEffectMax,
-    
     string? TraitTwoName,
     string? TraitTwoIcon,
     string? TraitTwoEffect,
     string? TraitTwoIconMax,
     string? TraitTwoEffectMax,
-    
     string? ValorTraitName,
     string? ValorTraitIcon,
     string? ValorTraitEffect,
@@ -85,6 +73,6 @@ public record BattleUnitData(
             return $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
         }
     }
-    
+
     public string Card => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaCard.png";
 }

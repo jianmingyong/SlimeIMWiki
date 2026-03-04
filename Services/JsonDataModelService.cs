@@ -1,5 +1,4 @@
-﻿using System.Collections.Immutable;
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using System.Reactive.Disposables;
 using System.Reactive.Disposables.Fluent;
 using System.Reactive.Linq;
@@ -76,11 +75,11 @@ public sealed class JsonDataModelService : IDisposable
         FieldBuildingCache = _fieldBuildingCache.AsObservableCache();
         _fieldBuildingCache.DisposeWith(_disposables);
     }
-    
+
     private static void UpdateCache<TObject, TKey>(ISourceCache<TObject, TKey> cache, TObject[]? objects) where TObject : notnull where TKey : notnull
     {
         if (objects is null) return;
-                
+
         cache.Edit(updater =>
         {
             if (updater.Count == 0)
@@ -123,18 +122,12 @@ public sealed class JsonDataModelService : IDisposable
         {
             GetObservableBattleUnits()
                 .OnErrorResumeNext(Observable.Return<BattleUnitData[]?>(null))
-                .Subscribe(units =>
-                {
-                    UpdateCache(_battleUnitCache, units);
-                })
+                .Subscribe(units => { UpdateCache(_battleUnitCache, units); })
                 .DisposeWith(disposables);
 
             GetObservableProtectionUnits()
                 .OnErrorResumeNext(Observable.Return<ProtectionUnitData[]?>(null))
-                .Subscribe(units =>
-                {
-                    UpdateCache(_protectionUnitCache, units);
-                }).DisposeWith(disposables);
+                .Subscribe(units => { UpdateCache(_protectionUnitCache, units); }).DisposeWith(disposables);
         }).DisposeWith(disposables);
 
         return disposables;

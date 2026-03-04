@@ -23,30 +23,24 @@ public record ProtectionUnit(
     TacticType TacticsType,
     SuitedFacility[] SuitedFacilities,
     DateOnly? ReleaseDate,
-    
     string DivineProtectionName,
     string DivineProtectionEffect,
     string DivineProtectionEffectMax,
-    
     string SupportDivineProtectionEffect,
     string SupportDivineProtectionEffectMax,
-    
     string ProtectionSkillName,
     string ProtectionSkillIcon,
     string ProtectionSkillEffect,
-    
     string TraitOneName,
     string TraitOneIcon,
     string TraitOneEffect,
     string TraitOneIconMax,
     string TraitOneEffectMax,
-    
     string? ValorTraitName,
     string? ValorTraitIcon,
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
     string? ValorTraitEffectMax,
-    
     string? GuidanceEnhancementTraitEffect) : ICharacterUnit
 {
     public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";

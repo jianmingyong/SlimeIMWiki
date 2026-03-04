@@ -1,18 +1,18 @@
 [
-	{
-		"name": "Physical",
-		"icon": "image/protection/attack_types/physical.png"
-	},
-	{
-		"name": "Magic",
-		"icon": "image/protection/attack_types/magic.png"
-	},
-	{
-		"name": "All",
-		"icon": "image/protection/attack_types/all.png"
-	},
-	{
-		"name": "Special",
-		"icon": "image/protection/attack_types/special.png"
-	}
+  {
+    "name": "Physical",
+    "icon": "image/protection/attack_types/physical.png"
+  },
+  {
+    "name": "Magic",
+    "icon": "image/protection/attack_types/magic.png"
+  },
+  {
+    "name": "All",
+    "icon": "image/protection/attack_types/all.png"
+  },
+  {
+    "name": "Special",
+    "icon": "image/protection/attack_types/special.png"
+  }
 ]

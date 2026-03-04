@@ -4,9 +4,9 @@
          Background="Background.Body" Padding="Padding.Is2" Style="cursor: pointer"
          @onclick="OnClick">
         <Icon Name="IconName.Times"/>
-        
+
         @ChildContent
-        
+
         <Div>@DisplayText</Div>
     </Div>
 }
@@ -22,14 +22,14 @@ else
     [Parameter]
     [EditorRequired]
     public required RenderFragment ChildContent { get; set; }
-    
+
     [Parameter]
     [EditorRequired]
     public required Action OnClick { get; set; }
-    
+
     [Parameter]
     public bool IsRemoveMode { get; set; }
-    
+
     [Parameter]
     public string? DisplayText { get; set; }
 }

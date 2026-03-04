@@ -13,47 +13,47 @@
 @if (Unit.HasAttributeUnbound)
 {
     <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-           Width="Width.Is25"
-           Source="image/rarity/badgeClassUp.png"
-           Style="z-index: 3"/>
+                Width="Width.Is25"
+                Source="image/rarity/badgeClassUp.png"
+                Style="z-index: 3"/>
 }
 
 <ImageProxy Position="Position.Absolute.End.Is0.Top.Is0"
-       Width="Width.Is25"
-       Source="@Unit.Attribute.Icon"
-       Text="@Unit.Attribute.Name"
-       Style="z-index: 3"/>
+            Width="Width.Is25"
+            Source="@Unit.Attribute.Icon"
+            Text="@Unit.Attribute.Name"
+            Style="z-index: 3"/>
 
 <ImageProxy Position="Position.Absolute.End.Is0"
-       Width="Width.Is25"
-       Source="@Unit.AttackType.Icon"
-       Text="@Unit.AttackType.Name"
-       Style="z-index: 3; top: 25%"/>
+            Width="Width.Is25"
+            Source="@Unit.AttackType.Icon"
+            Text="@Unit.AttackType.Name"
+            Style="z-index: 3; top: 25%"/>
 
 <ImageProxy Position="Position.Absolute.Start.Is50.Translate.MiddleX"
-       Width="Width.Px(99)" Height="Height.Px(99)"
-       Source="@Unit.Icon"
-       Text="@Unit.Permalink"
-       Style="z-index: 1"/>
+            Width="Width.Px(99)" Height="Height.Px(99)"
+            Source="@Unit.Icon"
+            Text="@Unit.Permalink"
+            Style="z-index: 1"/>
 
 @switch (Unit.InitialRarity)
 {
     case 3:
     {
         <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-               Width="Width.Is33"
-               Source="image/rarity/starCharaL3A.png"
-               Style="z-index: 3"/>
+                    Width="Width.Is33"
+                    Source="image/rarity/starCharaL3A.png"
+                    Style="z-index: 3"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-               Width="Width.Is100"
-               Source="image/rarity/frameMemberM3.png"
-               Style="z-index: 2"/>
+                    Width="Width.Is100"
+                    Source="image/rarity/frameMemberM3.png"
+                    Style="z-index: 2"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-               Width="Width.Is100"
-               Source="image/rarity/baseMemberM3.png"
-               Style="z-index: 0"/>
+                    Width="Width.Is100"
+                    Source="image/rarity/baseMemberM3.png"
+                    Style="z-index: 0"/>
 
         break;
     }
@@ -61,19 +61,19 @@
     case 4:
     {
         <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-               Width="Width.Is33"
-               Source="image/rarity/starCharaL4A.png"
-               Style="z-index: 3"/>
+                    Width="Width.Is33"
+                    Source="image/rarity/starCharaL4A.png"
+                    Style="z-index: 3"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-               Width="Width.Is100"
-               Source="image/rarity/frameMemberM4.png"
-               Style="z-index: 2"/>
+                    Width="Width.Is100"
+                    Source="image/rarity/frameMemberM4.png"
+                    Style="z-index: 2"/>
 
         <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-               Width="Width.Is100"
-               Source="image/rarity/baseMemberM4.png"
-               Style="z-index: 0"/>
+                    Width="Width.Is100"
+                    Source="image/rarity/baseMemberM4.png"
+                    Style="z-index: 0"/>
 
         break;
     }
@@ -83,53 +83,53 @@
         if (Unit.IsEx)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-                   Width="Width.Is33"
-                   Source="image/rarity/starCharaL6UA.png"
-                   Style="z-index: 3"/>
+                        Width="Width.Is33"
+                        Source="image/rarity/starCharaL6UA.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/frameMemberM6u.png"
-                   Style="z-index: 2"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/frameMemberM6u.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/baseMemberM6u.png"
-                   Style="z-index: 0"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/baseMemberM6u.png"
+                        Style="z-index: 0"/>
         }
         else if (Unit.IsAttributeUnbound)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-                   Width="Width.Is33"
-                   Source="image/rarity/starCharaL6UPA.png"
-                   Style="z-index: 3"/>
+                        Width="Width.Is33"
+                        Source="image/rarity/starCharaL6UPA.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/frameMemberM6up.png"
-                   Style="z-index: 2"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/frameMemberM6up.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/baseMemberM6up.png"
-                   Style="z-index: 0"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/baseMemberM6up.png"
+                        Style="z-index: 0"/>
         }
         else
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-                   Width="Width.Is33"
-                   Source="image/rarity/starCharaL5A.png"
-                   Style="z-index: 3"/>
+                        Width="Width.Is33"
+                        Source="image/rarity/starCharaL5A.png"
+                        Style="z-index: 3"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/frameMemberM5.png"
-                   Style="z-index: 2"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/frameMemberM5.png"
+                        Style="z-index: 2"/>
 
             <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                   Width="Width.Is100"
-                   Source="image/rarity/baseMemberM5.png"
-                   Style="z-index: 0"/>
+                        Width="Width.Is100"
+                        Source="image/rarity/baseMemberM5.png"
+                        Style="z-index: 0"/>
         }
 
         break;

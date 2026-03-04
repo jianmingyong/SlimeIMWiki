@@ -10,7 +10,7 @@ namespace SlimeIMWiki.Components.Home;
 public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
-    
+
     [ObservableAsProperty(ReadOnly = false)]
     private string? _livestreamSource;
 

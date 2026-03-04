@@ -191,7 +191,7 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                 .ThenBy(result => result.DisplayValue);
         }
     }
-    
+
     public void SelectedValueChangedCallback(SearchResult searchResult)
     {
         _characterListDisplayService.FilterCache.AddOrUpdate(new Filter($"Search_{searchResult.DisplayValue}", typeof(NameFilter), searchResult, unit =>

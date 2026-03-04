@@ -10,10 +10,10 @@ public class BaseFilterComponent : ComponentBase
 {
     [Inject]
     public required CharacterListDisplayService CharacterListDisplayService { get; set; }
-    
+
     [Parameter]
     public bool IsRemoveMode { get; set; }
-    
+
     protected Filter? Filter { get; set; }
 
     protected void Execute()

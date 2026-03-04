@@ -37,7 +37,7 @@ public partial class EffectStyler : BaseComponent
                     builder.OpenComponent<Text>(sequenceId++);
                     builder.AddComponentParameter(sequenceId++, nameof(Blazorise.Text.ChildContent), BuildTextContent(sequenceId++, text[currentIndex..match.Index]));
                     builder.CloseComponent();
-                
+
                     builder.OpenComponent<Text>(sequenceId++);
                     builder.AddComponentParameter(sequenceId++, nameof(Style), "color: #00D100");
                     builder.AddComponentParameter(sequenceId++, nameof(Blazorise.Text.ChildContent), BuildTextContent(sequenceId++, text[new Range(match.Index, match.Index + match.Length)]));
@@ -46,11 +46,11 @@ public partial class EffectStyler : BaseComponent
                 else if (match.Groups[2].Success)
                 {
                     var group = match.Groups[2];
-                    
+
                     builder.OpenComponent<Text>(sequenceId++);
                     builder.AddComponentParameter(sequenceId++, nameof(Blazorise.Text.ChildContent), BuildTextContent(sequenceId++, text[currentIndex..(group.Index + 1)]));
                     builder.CloseComponent();
-                    
+
                     builder.OpenComponent<Text>(sequenceId++);
                     builder.AddComponentParameter(sequenceId++, nameof(Style), "color: #00D100");
                     builder.AddComponentParameter(sequenceId++, nameof(Blazorise.Text.ChildContent), BuildTextContent(sequenceId++, text[new Range(group.Index + 1, group.Index + group.Length)]));
@@ -60,7 +60,7 @@ public partial class EffectStyler : BaseComponent
                 {
                     continue;
                 }
-                
+
                 currentIndex = match.Index + match.Length;
             }
 
@@ -70,7 +70,7 @@ public partial class EffectStyler : BaseComponent
                 builder.AddComponentParameter(sequenceId++, nameof(Blazorise.Text.ChildContent), BuildTextContent(sequenceId++, text[currentIndex..]));
                 builder.CloseComponent();
             }
-            
+
             builder.OpenElement(sequenceId++, "div");
             builder.AddContent(sequenceId++, Environment.NewLine);
             builder.CloseElement();

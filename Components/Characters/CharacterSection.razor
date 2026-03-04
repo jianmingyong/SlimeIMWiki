@@ -1,8 +1,8 @@
-﻿@inherits ReactiveComponentBase<CharacterSectionViewModel>
-@using System.Reactive.Disposables.Fluent
+﻿@using System.Reactive.Disposables.Fluent
 @using DynamicData.Binding
-@using SlimeIMWiki.Services
 @using ReactiveUI
+@using SlimeIMWiki.Services
+@inherits ReactiveComponentBase<CharacterSectionViewModel>
 
 @inject IServiceProvider ServiceProvider
 @inject IJSInProcessRuntime JS
@@ -105,7 +105,8 @@
                 }
                 else if (unit is ProtectionUnit protectionUnit)
                 {
-                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit"
+                                        DisplayText="@ViewModel.DisplayText(unit)"/>
                 }
             }
         </Div>
@@ -150,7 +151,7 @@
                 .Subscribe(_ => UpdateVisibleItems())
                 .DisposeWith(disposable);
         });
-        
+
         base.OnInitialized();
     }
 
@@ -182,7 +183,7 @@
 
         _unitScrollContainerWidth = _module.Invoke<float>("getElementWidth", "UnitScrollContainer");
         _unitScrollContainerHeight = _module.Invoke<float>("getElementHeight", "UnitScrollContainer");
-        
+
         Logger.LogTrace("Unit Container Size: {width}, {height}", _unitScrollContainerWidth, _unitScrollContainerHeight);
     }
 
@@ -211,11 +212,11 @@
         _startIndex = (int) MathF.Floor(_scrollPosition / (_itemHeight + _itemHeightGap)) * _itemsPerRow - _itemsPerRow * _overscanAboveRowCount;
         _endIndex = _startIndex + _itemsPerRow * (_overscanAboveRowCount + _visibleRowCount + _overscanBelowRowCount);
         _endIndex = Math.Min(_endIndex, ViewModel.CharacterUnits.Count);
-        
+
         _unitContainerHeight = MathF.Ceiling((float) ViewModel.CharacterUnits.Count / _itemsPerRow) * (_itemHeight + _itemHeightGap);
-        
+
         InvokeAsync(StateHasChanged);
-        
+
         Logger.LogTrace("Item Per Row: {itemsPerRow}", _itemsPerRow);
         Logger.LogTrace("Overscan Above Row Count: {renderedRowCount}", _overscanAboveRowCount);
         Logger.LogTrace("Overscan Below Row Count: {renderedRowCount}", _overscanBelowRowCount);
@@ -229,7 +230,7 @@
         {
             _module?.Dispose();
         }
-        
+
         base.Dispose(disposing);
     }
 }

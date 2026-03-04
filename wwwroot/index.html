@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="This is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment." name="description"/>
+    <meta content="This is a Database for SLIME - Isekai Memories, the That Time I Got Reincarnated as a Slime mobile game developed by WFS and published by Bandai Namco Entertainment."
+          name="description"/>
 
     <title>SlimeIM Wiki</title>
 
     <base href="/"/>
 
-    <link rel="preload" id="webassembly" />
+    <link id="webassembly" rel="preload"/>
 
     <link href="favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
     <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -75,14 +76,15 @@
 <script src="_content/Blazorise.Bootstrap5/modal.js?v=2.0.1.0" type="module"></script>
 <script src="_content/Blazorise.Bootstrap5/tooltip.js?v=2.0.1.0" type="module"></script>
 
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 
 <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
 
 <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });
+        navigator.serviceWorker.register('service-worker.js', {updateViaCache: 'none'});
     }
 </script>
 

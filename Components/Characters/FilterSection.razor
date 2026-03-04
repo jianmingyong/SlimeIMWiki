@@ -57,7 +57,7 @@
 
         <InitialRarityFilter Rarity="5"/>
     </Div>
-    
+
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
         @foreach (var expertise in ViewModel.BattleExpertises)
         {
@@ -127,7 +127,8 @@
         }
         else if (filter.KeyType == typeof(FieldBuildingFilter))
         {
-            <FieldBuildingFilter @key="filter.Key" FieldBuilding="filter.Parameter as FieldBuilding" IsRemoveMode="true"/>
+            <FieldBuildingFilter @key="filter.Key" FieldBuilding="filter.Parameter as FieldBuilding"
+                                 IsRemoveMode="true"/>
         }
         else if (filter.KeyType == typeof(ForceFilter))
         {
@@ -172,14 +173,14 @@
                 .SwitchSelect(expertises => expertises.ObserveCollectionChanges())
                 .Subscribe(_ => InvokeAsync(StateHasChanged))
                 .DisposeWith(disposable);
-            
+
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             this.WhenAnyValue(section => section.ViewModel.Forces)
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                 .SwitchSelect(forces => forces.ObserveCollectionChanges())
                 .Subscribe(_ => InvokeAsync(StateHasChanged))
                 .DisposeWith(disposable);
-            
+
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             this.WhenAnyValue(section => section.ViewModel.FieldBuildings)
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
@@ -194,7 +195,7 @@
                 .Subscribe(_ => InvokeAsync(StateHasChanged))
                 .DisposeWith(disposable);
         });
-        
+
         base.OnInitialized();
     }
 }

@@ -26,10 +26,7 @@ builder.Services.AddSingleton<JsonDataModelService>();
 builder.Services.AddSingleton<CharacterListDisplayService>();
 
 builder.Services
-    .AddBlazorise(options =>
-    {
-        options.ProductToken = GlobalConstants.BlazoriseProductToken;
-    })
+    .AddBlazorise(options => { options.ProductToken = GlobalConstants.BlazoriseProductToken; })
     .AddBootstrap5Providers()
     .AddFontAwesomeIcons();
 

@@ -11,19 +11,19 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
 
     [Reactive]
     private string? _timerSelection;
-    
+
     [Reactive(SetModifier = AccessModifier.Private)]
     private DateTime _timerReset = DateTime.Now;
-    
+
     [Reactive(SetModifier = AccessModifier.Private)]
     private DateTime _timerUpdate = DateTime.Now;
-    
+
     [Reactive(SetModifier = AccessModifier.Private)]
     private TimeSpan _timerResetIn = TimeSpan.Zero;
-    
+
     [Reactive(SetModifier = AccessModifier.Private)]
     private TimeSpan _timerUpdateIn = TimeSpan.Zero;
-    
+
     public TimersViewModel()
     {
         this.WhenActivated(disposable =>
@@ -56,22 +56,19 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
                             break;
                         }
                     }
-                    
+
                     UpdateTimers();
                 }).DisposeWith(disposable);
-            
-            Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ =>
-            {
-                UpdateTimers();
-            }).DisposeWith(disposable);
+
+            Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ => { UpdateTimers(); }).DisposeWith(disposable);
         });
     }
-    
+
     [ReactiveCommand]
     private void RegionChange(string region)
     {
         TimerSelection = region;
-        
+
         switch (region)
         {
             case "NA":
@@ -110,7 +107,7 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
         {
             TimerUpdate = TimerUpdate.AddDays(1);
         }
-                
+
         TimerResetIn = TimerReset - DateTime.Now;
         TimerUpdateIn = TimerUpdate - DateTime.Now;
     }
