@@ -22,9 +22,8 @@ builder.Services.AddSingleton(_ => new HttpClient
 builder.Services.AddSingleton<IJSInProcessRuntime>(provider => (IJSInProcessRuntime) provider.GetRequiredService<IJSRuntime>());
 builder.Services.AddSingleton<IWebStorageService, WebStorageService>();
 builder.Services.AddSingleton<StaticWebRootAssets>();
-builder.Services.AddSingleton<OldJsonDataModelService>();
-builder.Services.AddSingleton<CharacterListDisplayService>();
 builder.Services.AddSingleton<JsonDataModelService>();
+builder.Services.AddSingleton<CharacterListDisplayService>();
 
 builder.Services
     .AddBlazorise(options =>
