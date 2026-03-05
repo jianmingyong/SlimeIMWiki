@@ -1,11 +1,6 @@
 ﻿@using SlimeIMWiki.Models.JsonData
 @inherits BaseFilterComponent
 
-<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ImageProxy Source="@FieldBuilding.Icon" Width="Width.Em(2)" Height="Height.Em(2)" Text="@FieldBuilding.Name"/>
-    <Text>@FieldBuilding.Name</Text>
-</FilterComponent>
-
 @code
 {
     [Parameter]
@@ -19,3 +14,8 @@
         base.OnInitialized();
     }
 }
+
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ImageProxy Source="@FieldBuilding.Icon" Width="Width.Em(2)" Height="Height.Em(2)" Text="@FieldBuilding.Name"/>
+    <Text>@FieldBuilding.Name</Text>
+</FilterComponent>

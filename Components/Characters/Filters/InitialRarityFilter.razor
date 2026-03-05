@@ -1,5 +1,18 @@
 ﻿@inherits BaseFilterComponent
 
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public int Rarity { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", GetType(), Rarity, unit => unit.InitialRarity == Rarity);
+        base.OnInitialized();
+    }
+}
+
 <FilterComponent DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
     <Div Class="filterIcon" Position="Position.Relative"
          Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
@@ -25,16 +38,3 @@
         }
     </Div>
 </FilterComponent>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public int Rarity { get; set; }
-
-    protected override void OnInitialized()
-    {
-        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", GetType(), Rarity, unit => unit.InitialRarity == Rarity);
-        base.OnInitialized();
-    }
-}

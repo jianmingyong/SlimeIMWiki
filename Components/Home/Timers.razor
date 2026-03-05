@@ -3,8 +3,42 @@
 @using ReactiveUI
 @using SlimeIMWiki.Services
 @inherits ReactiveComponentBase<TimersViewModel>
+
 @inject IServiceProvider ServiceProvider
 @inject IWebStorageService WebStorageService
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<TimersViewModel>(ServiceProvider);
+
+        this.WhenActivated(disposable =>
+        {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(view => view.ViewModel.TimerSelection)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .DistinctUntilChanged()
+                .WhereNotNull()
+                .Subscribe(s => { WebStorageService.SetToCookie(nameof(ViewModel.TimerSelection), s, TimeSpan.FromDays(30)); })
+                .DisposeWith(disposable);
+        });
+
+        base.OnInitialized();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+
+        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
+
+        if (firstRender)
+        {
+            ViewModel.TimerSelection = WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA";
+        }
+    }
+}
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -12,20 +46,20 @@
     <Buttons Border="Border.White">
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "NA" ? Color.Light : Color.Dark)"
-                Command="@ViewModel.RegionChangeCommand"
+                Command="ViewModel.RegionChangeCommand"
                 CommandParameter="@("NA")"
                 Border="Border.RoundedStart">
             <Div Padding="Padding.Is3.OnX">NA</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "EU" ? Color.Light : Color.Dark)"
-                Command="@ViewModel.RegionChangeCommand"
+                Command="ViewModel.RegionChangeCommand"
                 CommandParameter="@("EU")">
             <Div Padding="Padding.Is3.OnX">EU</Div>
         </Button>
         <Button Size="Size.Small"
                 Color="@(ViewModel.TimerSelection == "Asia" ? Color.Light : Color.Dark)"
-                Command="@ViewModel.RegionChangeCommand"
+                Command="ViewModel.RegionChangeCommand"
                 CommandParameter="@("Asia")"
                 Border="Border.RoundedEnd">
             <Div Padding="Padding.Is3.OnX">Asia</Div>
@@ -49,35 +83,3 @@
              TextSize="TextSize.Heading2">@ViewModel.TimerUpdateIn.ToString(@"hh\:mm\:ss")</Div>
     </Column>
 </Grid>
-
-@code
-{
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<TimersViewModel>(ServiceProvider);
-
-        this.WhenActivated(disposable =>
-        {
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(view => view.ViewModel.TimerSelection)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .DistinctUntilChanged()
-                .WhereNotNull()
-                .Subscribe(s => { WebStorageService.SetToCookie(nameof(ViewModel.TimerSelection), s, TimeSpan.FromDays(30)); }).DisposeWith(disposable);
-        });
-
-        base.OnInitialized();
-    }
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-
-        Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null");
-
-        if (firstRender)
-        {
-            ViewModel.TimerSelection = WebStorageService.GetFromCookie(nameof(ViewModel.TimerSelection)) ?? "NA";
-        }
-    }
-}

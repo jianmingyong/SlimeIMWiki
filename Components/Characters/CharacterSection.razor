@@ -9,110 +9,6 @@
 @inject ILogger<CharacterSection> Logger
 @inject JsonDataModelService JsonDataModelService
 
-@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
-
-<Div Flex="Flex.Wrap.JustifyContent.Between" Gap="Gap.Is2.OnY" Margin="Margin.Is2.FromBottom">
-    <Div Flex="Flex.Row">
-        <Buttons Border="Border.White">
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedStart"
-                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Battle ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayCategoryCommand"
-                    CommandParameter="CharacterListDisplayCategory.Battle">
-                <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)"
-                            Height="Height.Em(1.5)"/>
-                <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
-                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Protection ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayCategoryCommand"
-                    CommandParameter="CharacterListDisplayCategory.Protection">
-                <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)"
-                            Height="Height.Em(1.5)"/>
-                <Text Display="Display.None.Block.OnTablet">Protection Units</Text>
-            </Button>
-        </Buttons>
-    </Div>
-
-    <Div Flex="Flex.Row">
-        <Buttons Border="Border.White">
-            <Button Size="Size.Small" Color="Color.Dark" Border="Border.RoundedStart"
-                    Command="ViewModel.ToggleDisplayOrderCommand">
-                <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Release ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Release">
-                <Icon Name="IconName.Clock"/>
-                <Text Display="Display.None.Block.OnTablet">Release</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Health">
-                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icHpShadow.png" Text="Hp"
-                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? "filter: invert(100%)" : "filter: invert(0%)")"/>
-                <Text Display="Display.None.Block.OnTablet">Health</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Attack">
-                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icAtkShadow.png" Text="Atk"
-                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? "filter: invert(100%)" : "filter: invert(0%)")"/>
-                <Text Display="Display.None.Block.OnTablet">Attack</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Defense">
-                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icDefShadow.png" Text="Def"
-                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? "filter: invert(100%)" : "filter: invert(0%)")"/>
-                <Text Display="Display.None.Block.OnTablet">Defense</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Rarity ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Rarity">
-                <Icon Name="IconName.Star"/>
-                <Text Display="Display.None.Block.OnTablet">Rarity</Text>
-            </Button>
-            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
-                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? Color.Light : Color.Dark)"
-                    Command="ViewModel.ChangeDisplayOrderCommand"
-                    CommandParameter="CharacterListDisplayOrder.Name">
-                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
-                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? "filter: invert(100%)" : "filter: invert(0%)")"/>
-                <Text Display="Display.None.Block.OnTablet">Name</Text>
-            </Button>
-        </Buttons>
-    </Div>
-</Div>
-
-<Div Background="Background.Body" Position="Position.Relative"
-     Style="height: calc(100vh - 56px - 4rem - 1.5rem); overflow-y: scroll"
-     @onscroll="OnScroll" ElementId="UnitScrollContainer">
-
-    <Div Style="@($"height: {_unitContainerHeight}px")">
-        <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop.Is3.FromBottom"
-             Position="Position.Absolute"
-             Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
-            @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
-            {
-                if (unit is BattleUnit battleUnit)
-                {
-                    <BattleUnitIcon @key="unit.Permalink" Unit="battleUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
-                }
-                else if (unit is ProtectionUnit protectionUnit)
-                {
-                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit"
-                                        DisplayText="@ViewModel.DisplayText(unit)"/>
-                }
-            }
-        </Div>
-    </Div>
-</Div>
-
 @code
 {
     private IJSInProcessObjectReference? _module;
@@ -234,3 +130,107 @@
         base.Dispose(disposing);
     }
 }
+
+@{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
+
+<Div Flex="Flex.Wrap.JustifyContent.Between" Gap="Gap.Is2.OnY" Margin="Margin.Is2.FromBottom">
+    <Div Flex="Flex.Row">
+        <Buttons Border="Border.White">
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedStart"
+                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Battle ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayCategoryCommand"
+                    CommandParameter="CharacterListDisplayCategory.Battle">
+                <ImageProxy Source="image/character_types/icCharaTypePc.png" Width="Width.Em(1.5)"
+                            Height="Height.Em(1.5)"/>
+                <Text Display="Display.None.Block.OnTablet">Battle Units</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
+                    Color="@(ViewModel.DisplayCategory == CharacterListDisplayCategory.Protection ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayCategoryCommand"
+                    CommandParameter="CharacterListDisplayCategory.Protection">
+                <ImageProxy Source="image/character_types/icCharaTypeBless.png" Width="Width.Em(1.5)"
+                            Height="Height.Em(1.5)"/>
+                <Text Display="Display.None.Block.OnTablet">Protection Units</Text>
+            </Button>
+        </Buttons>
+    </Div>
+
+    <Div Flex="Flex.Row">
+        <Buttons Border="Border.White">
+            <Button Size="Size.Small" Color="Color.Dark" Border="Border.RoundedStart"
+                    Command="ViewModel.ToggleDisplayOrderCommand">
+                <Icon Name="@(ViewModel.IsOrderByDescending ? IconName.ChevronDown : IconName.ChevronUp)"/>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Release ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Release">
+                <Icon Name="IconName.Clock"/>
+                <Text Display="Display.None.Block.OnTablet">Release</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Health">
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icHpShadow.png" Text="Hp"
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Health ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Text Display="Display.None.Block.OnTablet">Health</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Attack">
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icAtkShadow.png" Text="Atk"
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Attack ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Text Display="Display.None.Block.OnTablet">Attack</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Defense">
+                <ImageProxy Height="Height.Em(1.5)" Source="image/character_info/icDefShadow.png" Text="Def"
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Defense ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Text Display="Display.None.Block.OnTablet">Defense</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Rarity ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Rarity">
+                <Icon Name="IconName.Star"/>
+                <Text Display="Display.None.Block.OnTablet">Rarity</Text>
+            </Button>
+            <Button Size="Size.Small" Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2" Border="Border.RoundedEnd"
+                    Color="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? Color.Light : Color.Dark)"
+                    Command="ViewModel.ChangeDisplayOrderCommand"
+                    CommandParameter="CharacterListDisplayOrder.Name">
+                <ImageProxy Height="Height.Em(1)" Source="image/character_info/icPopulation.png" Text="Population"
+                            Style="@(ViewModel.DisplayOrder == CharacterListDisplayOrder.Name ? "filter: invert(100%)" : "filter: invert(0%)")"/>
+                <Text Display="Display.None.Block.OnTablet">Name</Text>
+            </Button>
+        </Buttons>
+    </Div>
+</Div>
+
+<Div Background="Background.Body" Position="Position.Relative"
+     Style="height: calc(100vh - 56px - 4rem - 1.5rem); overflow-y: scroll"
+     @onscroll="OnScroll" ElementId="UnitScrollContainer">
+
+    <Div Style="@($"height: {_unitContainerHeight}px")">
+        <Div Flex="Flex.Wrap" Gap="Gap.Is3.OnX.Is5.OnY" Padding="Padding.Is5.FromTop.Is3.FromBottom"
+             Position="Position.Absolute"
+             Style="@($"top: {_startIndex / _itemsPerRow * (_itemHeight + _itemHeightGap)}px")">
+            @foreach (var unit in ViewModel.CharacterUnits.Skip(_startIndex).Take(_endIndex - _startIndex))
+            {
+                if (unit is BattleUnit battleUnit)
+                {
+                    <BattleUnitIcon @key="unit.Permalink" Unit="battleUnit" DisplayText="@ViewModel.DisplayText(unit)"/>
+                }
+                else if (unit is ProtectionUnit protectionUnit)
+                {
+                    <ProtectionUnitIcon @key="unit.Permalink" Unit="protectionUnit"
+                                        DisplayText="@ViewModel.DisplayText(unit)"/>
+                }
+            }
+        </Div>
+    </Div>
+</Div>

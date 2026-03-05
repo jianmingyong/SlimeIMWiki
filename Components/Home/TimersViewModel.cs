@@ -60,7 +60,10 @@ public sealed partial class TimersViewModel : ReactiveObject, IActivatableViewMo
                     UpdateTimers();
                 }).DisposeWith(disposable);
 
-            Observable.Interval(TimeSpan.FromSeconds(1)).Subscribe(_ => { UpdateTimers(); }).DisposeWith(disposable);
+            Observable
+                .Interval(TimeSpan.FromSeconds(1))
+                .Subscribe(_ => { UpdateTimers(); })
+                .DisposeWith(disposable);
         });
     }
 

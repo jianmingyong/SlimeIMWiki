@@ -1,4 +1,64 @@
-﻿<Link To="@($"characters/{Unit.Permalink}")"
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required ProtectionUnit Unit { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public required string DisplayText { get; set; }
+
+    private string _firstIcon = string.Empty;
+    private string _firstIconText = string.Empty;
+
+    private string _secondIcon = string.Empty;
+    private string _secondIconText = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        if (Unit.Forces is not null && Unit.Forces.Length > 0)
+        {
+            _firstIcon = Unit.Forces[0].Icon;
+            _firstIconText = Unit.Forces[0].Name;
+
+            if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
+            {
+                _secondIcon = Unit.Attributes[0].Icon;
+                _secondIconText = Unit.Attributes[0].Name;
+            }
+            else if (Unit.AttackType is not null)
+            {
+                _secondIcon = Unit.AttackType.Icon;
+                _secondIconText = Unit.AttackType.Name;
+            }
+        }
+        else if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
+        {
+            _firstIcon = Unit.Attributes[0].Icon;
+            _firstIconText = Unit.Attributes[0].Name;
+
+            if (Unit.Attributes.Length >= 2)
+            {
+                _secondIcon = Unit.Attributes[1].Icon;
+                _secondIconText = Unit.Attributes[1].Name;
+            }
+            else if (Unit.AttackType is not null)
+            {
+                _secondIcon = Unit.AttackType.Icon;
+                _secondIconText = Unit.AttackType.Name;
+            }
+        }
+        else if (Unit.AttackType is not null)
+        {
+            _firstIcon = Unit.AttackType.Icon;
+            _firstIconText = Unit.AttackType.Name;
+        }
+
+        base.OnInitialized();
+    }
+}
+
+<Link To="@($"characters/{Unit.Permalink}")"
       Position="Position.Relative"
       Width="Width.Px(100)" Height="Height.Px(100)"
       Style="user-select: none">
@@ -106,63 +166,3 @@
             Text="@Unit.Permalink"
             Style="z-index: 1"/>
 </Link>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required ProtectionUnit Unit { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public required string DisplayText { get; set; }
-
-    private string _firstIcon = string.Empty;
-    private string _firstIconText = string.Empty;
-
-    private string _secondIcon = string.Empty;
-    private string _secondIconText = string.Empty;
-
-    protected override void OnInitialized()
-    {
-        if (Unit.Forces is not null && Unit.Forces.Length > 0)
-        {
-            _firstIcon = Unit.Forces[0].Icon;
-            _firstIconText = Unit.Forces[0].Name;
-
-            if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
-            {
-                _secondIcon = Unit.Attributes[0].Icon;
-                _secondIconText = Unit.Attributes[0].Name;
-            }
-            else if (Unit.AttackType is not null)
-            {
-                _secondIcon = Unit.AttackType.Icon;
-                _secondIconText = Unit.AttackType.Name;
-            }
-        }
-        else if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
-        {
-            _firstIcon = Unit.Attributes[0].Icon;
-            _firstIconText = Unit.Attributes[0].Name;
-
-            if (Unit.Attributes.Length >= 2)
-            {
-                _secondIcon = Unit.Attributes[1].Icon;
-                _secondIconText = Unit.Attributes[1].Name;
-            }
-            else if (Unit.AttackType is not null)
-            {
-                _secondIcon = Unit.AttackType.Icon;
-                _secondIconText = Unit.AttackType.Name;
-            }
-        }
-        else if (Unit.AttackType is not null)
-        {
-            _firstIcon = Unit.AttackType.Icon;
-            _firstIconText = Unit.AttackType.Name;
-        }
-
-        base.OnInitialized();
-    }
-}

@@ -9,7 +9,7 @@ namespace SlimeIMWiki.Components.CharacterDetail;
 public sealed partial class CharacterDetailViewModel : ReactiveObject, IActivatableViewModel
 {
     public ViewModelActivator Activator { get; } = new();
-    
+
     [Reactive]
     private ICharacterUnit? _unit;
 
@@ -20,37 +20,36 @@ public sealed partial class CharacterDetailViewModel : ReactiveObject, IActivata
     {
         this.WhenActivated(disposable =>
         {
-            jsonDataModelService.RefreshData().Subscribe(_ =>
-            {
-                var battleUnit = jsonDataModelService.BattleUnitsDataCache.Lookup(permalink);
+            var battleUnit = jsonDataModelService.BattleUnitsDataCache.Lookup(permalink);
 
-                if (battleUnit.HasValue)
+            if (battleUnit.HasValue)
+            {
+                Unit = BattleUnit.FromBattleUnitData(battleUnit.Value, jsonDataModelService);
+                return;
+            }
+
+            var protectionUnit = jsonDataModelService.ProtectionUnitsDataCache.Lookup(permalink);
+
+            if (protectionUnit.HasValue)
+            {
+                Unit = ProtectionUnit.FromProtectionUnitData(protectionUnit.Value, jsonDataModelService);
+            }
+
+            jsonDataModelService.RefreshData().Subscribe(_ => { }, () =>
+            {
+                var battleUnit2 = jsonDataModelService.BattleUnitsDataCache.Lookup(permalink);
+
+                if (battleUnit2.HasValue)
                 {
-                    Unit = BattleUnit.FromBattleUnitData(battleUnit.Value, jsonDataModelService);
+                    Unit = BattleUnit.FromBattleUnitData(battleUnit2.Value, jsonDataModelService);
                     return;
                 }
 
-                var protectionUnit = jsonDataModelService.ProtectionUnitsDataCache.Lookup(permalink);
+                var protectionUnit2 = jsonDataModelService.ProtectionUnitsDataCache.Lookup(permalink);
 
-                if (protectionUnit.HasValue)
+                if (protectionUnit2.HasValue)
                 {
-                    Unit = ProtectionUnit.FromProtectionUnitData(protectionUnit.Value, jsonDataModelService);
-                }
-            }, () =>
-            {
-                var battleUnit = jsonDataModelService.BattleUnitsDataCache.Lookup(permalink);
-
-                if (battleUnit.HasValue)
-                {
-                    Unit = BattleUnit.FromBattleUnitData(battleUnit.Value, jsonDataModelService);
-                    return;
-                }
-
-                var protectionUnit = jsonDataModelService.ProtectionUnitsDataCache.Lookup(permalink);
-
-                if (protectionUnit.HasValue)
-                {
-                    Unit = ProtectionUnit.FromProtectionUnitData(protectionUnit.Value, jsonDataModelService);
+                    Unit = ProtectionUnit.FromProtectionUnitData(protectionUnit2.Value, jsonDataModelService);
                 }
 
                 Loading = false;

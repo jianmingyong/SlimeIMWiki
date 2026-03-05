@@ -1,4 +1,15 @@
-﻿<Link To="@($"characters/{Unit.Permalink}")"
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required BattleUnit Unit { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public required string DisplayText { get; set; }
+}
+
+<Link To="@($"characters/{Unit.Permalink}")"
       Position="Position.Relative"
       Width="Width.Px(100)" Height="Height.Px(100)"
       Style="user-select: none">
@@ -136,14 +147,3 @@
     }
 }
 </Link>
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required BattleUnit Unit { get; set; }
-
-    [Parameter]
-    [EditorRequired]
-    public required string DisplayText { get; set; }
-}

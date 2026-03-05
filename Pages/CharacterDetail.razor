@@ -3,6 +3,19 @@
 @inherits ReactiveComponentBase<SlimeIMWiki.Components.CharacterDetail.CharacterDetailViewModel>
 @inject IServiceProvider ServiceProvider
 
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required string Permalink { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<CharacterDetailViewModel>(ServiceProvider, Permalink);
+        base.OnInitialized();
+    }
+}
+
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
 @if (ViewModel.Unit is null)
@@ -37,7 +50,7 @@ else
         </Div>
 
         <Div Width="Width.Is50.OnDesktop.Is100.OnMobile">
-            <Div Flex="Flex.Wrap">
+            <Div Flex="Flex.Wrap" Gap="Gap.Is2">
                 <Div Width="Width.Is100">
                     <UnitNameSection Unit="ViewModel.Unit"/>
                 </Div>
@@ -46,12 +59,12 @@ else
                     <ImageProxy Source="@ViewModel.Unit.Image" Fluid="true"/>
                 </Div>
 
-                <Div Flex="Flex.Wrap" Width="Width.Is100" Gap="Gap.Is2">
+                <Div Flex="Flex.Wrap.AlignItems" Width="Width.Is100" Gap="Gap.Is2">
                     <Div Flex="Flex.Grow.Is1.Shrink.Is1">
                         <UnitStatusSection Unit="ViewModel.Unit"/>
                     </Div>
 
-                    <Div Flex="Flex.Grow.Is1.Shrink.Is1">
+                    <Div Flex="Flex.Column.Grow.Is1.Shrink.Is1" Gap="Gap.Is2">
                         <UnitForceSection Unit="ViewModel.Unit"/>
                         <UnitSuitedFacilitySection Unit="ViewModel.Unit"/>
                     </Div>
@@ -68,7 +81,11 @@ else
                         case BattleUnit battleUnit:
                             <SecretSkillSection Unit="battleUnit"/>
 
-                            <TextDivider Text="BATTLE SKILLS" Margin="Margin.Is2.OnY"/>
+                            <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2"
+                                 Border="Border.Is1.OnBottom">
+                                <Div TextAlignment="TextAlignment.Center" TextWeight="TextWeight.Bold">BATTLE SKILLS
+                                </Div>
+                            </Div>
 
                             <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
                                 <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
@@ -208,17 +225,4 @@ else
             </Div>
         </Div>
     </Div>
-}
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public required string Permalink { get; set; }
-
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<CharacterDetailViewModel>(ServiceProvider, Permalink);
-        base.OnInitialized();
-    }
 }

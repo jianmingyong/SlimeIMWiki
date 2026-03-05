@@ -1,10 +1,6 @@
 ﻿@using SlimeIMWiki.Models.JsonData
 @inherits BaseFilterComponent
 
-<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <Text>@Search.DisplayValue</Text>
-</FilterComponent>
-
 @code
 {
     [Parameter]
@@ -36,3 +32,7 @@
         base.OnInitialized();
     }
 }
+
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <Text>@Search.DisplayValue</Text>
+</FilterComponent>

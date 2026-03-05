@@ -4,7 +4,63 @@
 @using SlimeIMWiki.Components.Characters.Filters
 @using SlimeIMWiki.Models.JsonData
 @inherits ReactiveComponentBase<FilterSectionViewModel>
+
 @inject IServiceProvider ServiceProvider
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        ViewModel = ActivatorUtilities.CreateInstance<FilterSectionViewModel>(ServiceProvider);
+
+        this.WhenActivated(disposable =>
+        {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.AttackTypes)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(types => types.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.Attributes)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(attributes => attributes.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.BattleExpertises)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(expertises => expertises.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.Forces)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(forces => forces.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.FieldBuildings)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(buildings => buildings.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            this.WhenAnyValue(section => section.ViewModel.Filters)
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                .SwitchSelect(filters => filters.ObserveCollectionChanges())
+                .Subscribe(_ => InvokeAsync(StateHasChanged))
+                .DisposeWith(disposable);
+        });
+
+        base.OnInitialized();
+    }
+}
 
 @{ Debug.Assert(ViewModel != null, nameof(ViewModel) + " != null"); }
 
@@ -144,58 +200,3 @@
         }
     }
 </Div>
-
-@code
-{
-    protected override void OnInitialized()
-    {
-        ViewModel = ActivatorUtilities.CreateInstance<FilterSectionViewModel>(ServiceProvider);
-
-        this.WhenActivated(disposable =>
-        {
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.AttackTypes)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(types => types.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.Attributes)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(attributes => attributes.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.BattleExpertises)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(expertises => expertises.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.Forces)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(forces => forces.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.FieldBuildings)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(buildings => buildings.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.Filters)
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-                .SwitchSelect(filters => filters.ObserveCollectionChanges())
-                .Subscribe(_ => InvokeAsync(StateHasChanged))
-                .DisposeWith(disposable);
-        });
-
-        base.OnInitialized();
-    }
-}

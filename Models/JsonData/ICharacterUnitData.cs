@@ -7,9 +7,6 @@ public interface ICharacterUnitData
 
     string Permalink { get; }
 
-    string Icon { get; }
-    string Image { get; }
-
     int InitialRarity { get; }
 
     bool IsEx { get; }

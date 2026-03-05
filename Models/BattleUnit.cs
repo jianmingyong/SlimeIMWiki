@@ -61,7 +61,15 @@ public record BattleUnit(
     string? ValorTraitIcon,
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
-    string? ValorTraitEffectMax) : ICharacterUnit
+    string? ValorTraitEffectMax,
+    string? SecretSkillEnhancementTrait,
+    string ExAbilityEffectOneName,
+    string ExAbilityEffectOneCondition,
+    string ExAbilityEffectOneEffect,
+    string ExAbilityEffectTwoName,
+    string ExAbilityEffectTwoCondition,
+    string ExAbilityEffectTwoEffect,
+    string? TrueAttributeUnbound) : ICharacterUnit
 {
     public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
 
@@ -156,7 +164,15 @@ public record BattleUnit(
             data.ValorTraitIcon,
             data.ValorTraitEffect,
             data.ValorTraitIconMax,
-            data.ValorTraitEffectMax
+            data.ValorTraitEffectMax,
+            data.SecretSkillEnhancementTrait,
+            data.ExAbilityEffectOneName,
+            data.ExAbilityEffectOneCondition,
+            data.ExAbilityEffectOneEffect,
+            data.ExAbilityEffectTwoName,
+            data.ExAbilityEffectTwoCondition,
+            data.ExAbilityEffectTwoEffect,
+            data.TrueAttributeUnbound
         );
     }
 }

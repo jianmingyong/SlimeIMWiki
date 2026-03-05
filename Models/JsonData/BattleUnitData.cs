@@ -57,22 +57,12 @@ public record BattleUnitData(
     string? ValorTraitIcon,
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
-    string? ValorTraitEffectMax) : ICharacterUnitData
-{
-    public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
-
-    public string Image
-    {
-        get
-        {
-            if (IsEx || IsAttributeUnbound || HasAttributeUnbound)
-            {
-                return $"image/battle/characters/{Permalink}/6/{Permalink}_6_CharaInfo.png";
-            }
-
-            return $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
-        }
-    }
-
-    public string Card => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaCard.png";
-}
+    string? ValorTraitEffectMax,
+    string? SecretSkillEnhancementTrait,
+    string ExAbilityEffectOneName,
+    string ExAbilityEffectOneCondition,
+    string ExAbilityEffectOneEffect,
+    string ExAbilityEffectTwoName,
+    string ExAbilityEffectTwoCondition,
+    string ExAbilityEffectTwoEffect,
+    string? TrueAttributeUnbound) : ICharacterUnitData;

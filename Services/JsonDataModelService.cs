@@ -121,7 +121,6 @@ public sealed class JsonDataModelService : IDisposable
                 UpdateCache(_tacticTypeCache, tuple.arg6);
                 UpdateCache(_forceCache, tuple.arg7);
                 UpdateCache(_fieldBuildingCache, tuple.arg8);
-                observer.OnNext(Unit.Default);
             }, observer.OnError, () =>
             {
                 // ReSharper disable once InvokeAsExtensionMember
@@ -133,8 +132,6 @@ public sealed class JsonDataModelService : IDisposable
                 {
                     UpdateCache(_battleUnitCache, tuple.arg1);
                     UpdateCache(_protectionUnitCache, tuple.arg2);
-
-                    observer.OnNext(Unit.Default);
                 }, observer.OnError, observer.OnCompleted).DisposeWith(disposables);
             }).DisposeWith(disposables);
 

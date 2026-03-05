@@ -1,10 +1,6 @@
 ﻿@using SlimeIMWiki.Models.JsonData
 @inherits BaseFilterComponent
 
-<FilterComponent DisplayText="@AttackType.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
-    <ImageProxy Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
-</FilterComponent>
-
 @code
 {
     [Parameter]
@@ -26,3 +22,7 @@
         base.OnInitialized();
     }
 }
+
+<FilterComponent DisplayText="@AttackType.Name" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ImageProxy Class="filterIcon" Source="@AttackType.Icon" Width="Width.Em(1.5)" Height="Height.Em(1.5)"/>
+</FilterComponent>

@@ -1,20 +1,7 @@
 ﻿@using SlimeIMWiki.Layouts
 @using SlimeIMWiki.Pages
-<Blazorise.ThemeProvider Theme="@theme">
-    <NetworkStatusProvider>
-        <Router AppAssembly="typeof(App).Assembly" NotFoundPage="typeof(NotFound)">
-            <Found Context="routeData">
-                <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)"/>
-                <FocusOnNavigate RouteData="routeData" Selector="h1"/>
-            </Found>
-        </Router>
-    </NetworkStatusProvider>
-    <MessageProvider/>
-    <PageProgressProvider/>
-</Blazorise.ThemeProvider>
-
-@code {
-
+@code
+{
     private readonly Theme theme = new()
     {
         BarOptions = new ThemeBarOptions
@@ -51,5 +38,17 @@
             Body = "rgb(222, 226, 230)"
         }
     };
-
 }
+
+<Blazorise.ThemeProvider Theme="theme">
+    <NetworkStatusProvider>
+        <Router AppAssembly="typeof(App).Assembly" NotFoundPage="typeof(NotFound)">
+            <Found Context="routeData">
+                <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)"/>
+                <FocusOnNavigate RouteData="routeData" Selector="h1"/>
+            </Found>
+        </Router>
+    </NetworkStatusProvider>
+    <MessageProvider/>
+    <PageProgressProvider/>
+</Blazorise.ThemeProvider>

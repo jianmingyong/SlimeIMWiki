@@ -37,20 +37,4 @@ public record ProtectionUnitData(
     string? ValorTraitEffect,
     string? ValorTraitIconMax,
     string? ValorTraitEffectMax,
-    string? GuidanceEnhancementTraitEffect) : ICharacterUnitData
-{
-    public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
-
-    public string Image
-    {
-        get
-        {
-            if (IsEx || IsAttributeUnbound)
-            {
-                return $"image/protection/characters/{Permalink}/6/{Permalink}_6_BlessInfo.png";
-            }
-
-            return $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
-        }
-    }
-}
+    string? GuidanceEnhancementTraitEffect) : ICharacterUnitData;
