@@ -7,6 +7,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Sparkle of Youth"
@@ -79,6 +80,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Determination to Prosper",
@@ -152,6 +154,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Sparkle of Youth"
@@ -224,6 +227,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Sparkle of Youth"
@@ -296,6 +300,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -367,6 +372,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Sparkle of Youth"
@@ -439,6 +445,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -510,6 +517,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -581,6 +589,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -652,6 +661,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Warrior's Mind"
@@ -724,6 +734,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Protector of Peace"
@@ -796,6 +807,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -867,6 +879,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Commander",
@@ -941,6 +954,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind"
     ],
@@ -1012,6 +1026,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Visions of Coleus",
@@ -1085,6 +1100,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki"
@@ -1157,6 +1173,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Warrior's Mind"
@@ -1229,6 +1246,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Lycanthrope's Pride"
     ],
@@ -1300,6 +1318,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Warrior's Mind"
@@ -1372,6 +1391,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Spirit Master"
@@ -1444,6 +1464,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Warrior's Mind"
@@ -1516,6 +1537,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Warrior's Mind"
@@ -1588,6 +1610,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Hyper Heart",
       "Tempest Elite"
@@ -1660,6 +1683,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist"
     ],
@@ -1731,6 +1755,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Determination to Prosper",
@@ -1804,6 +1829,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -1877,6 +1903,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Sparkle of Youth"
@@ -1949,6 +1976,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Hyper Heart",
       "Tempest Elite"
@@ -2021,6 +2049,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Shizu's Will",
@@ -2095,6 +2124,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki"
@@ -2167,6 +2197,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Warrior's Mind"
@@ -2239,6 +2270,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Dungeon Crawler"
@@ -2311,6 +2343,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -2384,6 +2417,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -2456,6 +2490,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Determination to Prosper"
@@ -2528,6 +2563,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -2601,6 +2637,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -2674,6 +2711,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Heart of a Hero",
       "Goddess of Destiny",
@@ -2749,6 +2787,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -2821,6 +2860,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Fount of Wisdom",
@@ -2894,6 +2934,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki",
@@ -2967,6 +3008,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Commander",
@@ -3042,6 +3084,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Tempest Elite"
@@ -3114,6 +3157,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Dragon Haki"
@@ -3186,6 +3230,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -3259,6 +3304,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -3331,6 +3377,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Exalted Champions",
@@ -3404,6 +3451,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Dragon Haki",
@@ -3478,6 +3526,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Demon Lord",
       "Shizu's Will",
@@ -3553,6 +3602,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Ogre's Pride",
@@ -3627,6 +3677,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Octagram Demon Lord",
@@ -3700,6 +3751,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "World of Fantasy",
@@ -3774,6 +3826,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Dragon Haki"
@@ -3846,6 +3899,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Hyper Heart",
@@ -3920,6 +3974,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Ogre's Pride",
@@ -3995,6 +4050,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Dragon Haki",
@@ -4068,6 +4124,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Hyper Heart",
       "Tempest Elite",
@@ -4141,6 +4198,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Octagram Demon Lord"
@@ -4213,6 +4271,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Valentine",
       "Goddess of Destiny",
@@ -4287,6 +4346,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Valentine",
       "World of Fantasy",
@@ -4362,6 +4422,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Commander",
@@ -4436,6 +4497,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Stern of Spirit"
@@ -4508,6 +4570,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Shizu's Will",
@@ -4583,6 +4646,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Tempest Elite",
@@ -4656,6 +4720,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Fount of Wisdom"
@@ -4728,6 +4793,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki"
     ],
@@ -4799,6 +4865,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Primal Demon",
@@ -4872,6 +4939,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Lycanthrope's Pride",
       "Flashback Beatdown Emissary"
@@ -4944,6 +5012,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -5016,6 +5085,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -5088,6 +5158,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Commander",
@@ -5163,6 +5234,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Flashback Beatdown Emissary",
@@ -5236,6 +5308,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Heart of a Hero",
       "Protector of Peace"
@@ -5308,6 +5381,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Octagram Demon Lord",
@@ -5381,6 +5455,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Heart of a Hero",
@@ -5454,6 +5529,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Lycanthrope's Pride",
       "Warrior's Mind"
@@ -5526,6 +5602,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Lycanthrope's Pride",
       "Warrior's Mind"
@@ -5598,6 +5675,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Lycanthrope's Pride",
@@ -5672,6 +5750,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Tempest Elite",
@@ -5745,6 +5824,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "Flashback Beatdown Emissary",
@@ -5818,6 +5898,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "World of Fantasy",
@@ -5892,6 +5973,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Otherworlder",
       "World of Fantasy",
@@ -5966,6 +6048,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Warrior's Mind"
@@ -6038,6 +6121,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Commander"
@@ -6110,6 +6194,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Wielder of Magic",
@@ -6183,6 +6268,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Tempest Elite",
@@ -6256,6 +6342,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Wielder of Magic"
@@ -6328,6 +6415,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Wielder of Magic"
@@ -6400,6 +6488,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Shizu's Will",
@@ -6474,6 +6563,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Ogre's Pride",
@@ -6548,6 +6638,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Ogre's Pride",
@@ -6622,6 +6713,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Heart of a Hero",
       "Shizu's Will",
@@ -6696,6 +6788,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Flashback Beatdown Emissary"
@@ -6768,6 +6861,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Goddess of Destiny",
@@ -6841,6 +6935,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Stern of Spirit"
@@ -6913,6 +7008,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon"
     ],
@@ -6984,6 +7080,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Heart of a Hero",
       "Octagram Demon Lord",
@@ -7057,6 +7154,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "Adventurer",
@@ -7131,6 +7229,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wholehearted Devotion",
       "Fount of Wisdom",
@@ -7205,6 +7304,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "Dungeon Crawler"
@@ -7277,6 +7377,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Antagonist",
@@ -7350,6 +7451,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Schemer",
@@ -7423,6 +7525,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Shizu's Will",
@@ -7498,6 +7601,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Octagram Demon Lord",
@@ -7572,6 +7676,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Dungeon Crawler"
@@ -7644,6 +7749,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Tempest Elite"
@@ -7716,6 +7822,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Flashback Beatdown Emissary"
@@ -7788,6 +7895,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite"
@@ -7860,6 +7968,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Octagram Demon Lord"
@@ -7932,6 +8041,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Octagram Bazaar",
       "Stern of Spirit",
@@ -8005,6 +8115,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Schemer",
@@ -8078,6 +8189,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Heart of a Hero",
@@ -8151,6 +8263,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Dragon Haki"
@@ -8223,6 +8336,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Otherworld Legend",
@@ -8296,6 +8410,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Fount of Wisdom",
@@ -8369,6 +8484,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Octagram Demon Lord",
@@ -8443,6 +8559,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Octagram Demon Lord",
@@ -8517,6 +8634,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Valentine",
       "Lycanthrope's Pride",
@@ -8591,6 +8709,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Valentine",
       "Ogre's Pride",
@@ -8665,6 +8784,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Valentine",
       "Goddess of Destiny",
@@ -8738,6 +8858,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Shizu's Will",
       "Warrior's Mind",
@@ -8811,6 +8932,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wholehearted Devotion",
       "Commander",
@@ -8885,6 +9007,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wholehearted Devotion",
       "Wielder of Magic",
@@ -8958,6 +9081,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Tempest Elite",
@@ -9032,6 +9156,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Shizu's Will",
@@ -9106,6 +9231,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Lycanthrope's Pride",
@@ -9180,6 +9306,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Fount of Wisdom",
       "Shizu's Will",
@@ -9255,6 +9382,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Tempest Elite",
@@ -9329,6 +9457,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Dragon Haki",
@@ -9404,6 +9533,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Heart of a Hero",
@@ -9478,6 +9608,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Heart of a Hero",
@@ -9553,6 +9684,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Tempest Elite",
@@ -9627,6 +9759,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Octagram Demon Lord",
@@ -9702,6 +9835,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Octagram Demon Lord",
@@ -9776,6 +9910,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Primal Demon",
@@ -9849,6 +9984,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Commander",
@@ -9924,6 +10060,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "Fount of Wisdom",
@@ -9998,6 +10135,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "Ogre's Pride",
@@ -10072,6 +10210,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "Wholehearted Devotion",
@@ -10145,6 +10284,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Goddess of Destiny",
       "Primal Demon",
@@ -10218,6 +10358,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Warrior's Mind",
@@ -10291,6 +10432,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Wielder of Magic",
@@ -10364,6 +10506,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Schemer",
@@ -10437,6 +10580,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Goddess of Destiny",
@@ -10507,6 +10651,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Summer Memories",
@@ -10581,6 +10726,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Hyper Heart",
@@ -10656,6 +10802,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Octagram Demon Lord",
@@ -10729,6 +10876,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Goddess of Destiny",
@@ -10802,6 +10950,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Heart of a Hero",
@@ -10875,6 +11024,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Otherworld Legend",
       "Commander",
@@ -10949,6 +11099,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Otherworld Legend",
       "Fount of Wisdom",
@@ -11022,6 +11173,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Otherworld Legend",
       "Ogre's Pride",
@@ -11095,6 +11247,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Otherworld Legend",
       "Dragon Haki",
@@ -11169,6 +11322,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "Tempest Elite",
@@ -11240,6 +11394,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "Hyper Heart",
@@ -11313,6 +11468,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "World of Fantasy",
@@ -11387,6 +11543,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Wielder of Magic",
       "World of Fantasy",
@@ -11463,6 +11620,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Wielder of Magic",
@@ -11533,6 +11691,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Visions of Coleus",
       "Primal Demon",
@@ -11607,6 +11766,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Visions of Coleus",
       "Shizu's Will",
@@ -11680,6 +11840,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Visions of Coleus",
       "Primal Demon",
@@ -11753,6 +11914,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Visions of Coleus",
       "Primal Demon",
@@ -11826,6 +11988,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Pretty Sparkle",
       "World of Fantasy",
@@ -11896,6 +12059,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Pretty Sparkle",
       "Goddess of Destiny",
@@ -11966,6 +12130,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Pretty Sparkle",
       "Wielder of Magic",
@@ -12036,6 +12201,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Pretty Sparkle",
       "Festive Memories",
@@ -12110,6 +12276,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Primal Demon",
@@ -12183,6 +12350,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Shizu's Will",
@@ -12257,6 +12425,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Octagram Demon Lord",
@@ -12332,6 +12501,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "New Year's Blessing",
       "Dragon Haki",
@@ -12405,6 +12575,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Wielder of Magic",
@@ -12475,6 +12646,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Wielder of Magic",
@@ -12545,6 +12717,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Wholehearted Devotion",
@@ -12615,6 +12788,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Adventurer",
@@ -12685,6 +12859,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Wholehearted Devotion",
@@ -12755,6 +12930,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Hyper Heart",
@@ -12828,6 +13004,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Ogre's Pride",
@@ -12901,6 +13078,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Ogre's Pride",
@@ -12975,6 +13153,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tempest Elite",
       "Shizu's Will",
@@ -13050,6 +13229,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Schemer",
@@ -13123,6 +13303,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Tempest Elite",
@@ -13197,6 +13378,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Schemer",
@@ -13270,6 +13452,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Stern of Spirit",
@@ -13343,6 +13526,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Dragon Haki",
@@ -13418,6 +13602,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Octagram Demon Lord",
@@ -13492,6 +13677,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Octagram Demon Lord",
@@ -13566,6 +13752,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Shizu's Will",
@@ -13640,6 +13827,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Heart of a Hero",
@@ -13713,6 +13901,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Otherworlder",
@@ -13787,6 +13976,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Shizu's Will",
@@ -13863,6 +14053,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Heart of a Hero",
@@ -13936,6 +14127,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Stern of Spirit",
       "Antagonist",
@@ -14009,6 +14201,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ten Great Demon Lords",
       "Antagonist",
@@ -14082,6 +14275,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Commander",
       "Primal Demon",
@@ -14155,6 +14349,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Determination to Prosper",
       "Tempest Elite",
@@ -14229,6 +14424,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Determination to Prosper",
       "Octagram Demon Lord",
@@ -14302,6 +14498,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Determination to Prosper",
       "Wielder of Magic",
@@ -14377,6 +14574,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Determination to Prosper",
       "Shizu's Will",
@@ -14452,6 +14650,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -14525,6 +14724,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Wholehearted Devotion",
@@ -14598,6 +14798,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -14672,6 +14873,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -14745,6 +14947,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Protector of Peace",
       "Tempest Elite",
@@ -14820,6 +15023,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Protector of Peace",
       "Shizu's Will",
@@ -14896,6 +15100,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Protector of Peace",
       "Shizu's Will",
@@ -14967,6 +15172,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Protector of Peace",
       "Determination to Prosper",
@@ -15038,6 +15244,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Wielder of Magic",
@@ -15108,6 +15315,7 @@
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": true,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Dragon Haki",
@@ -15178,6 +15386,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Exalted Champions",
       "Octagram Demon Lord",
@@ -15253,6 +15462,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Dragon Haki",
@@ -15328,6 +15538,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Ogre's Pride",
@@ -15402,6 +15613,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Divine General",
       "Otherworld Legend",
@@ -15476,6 +15688,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Divine General",
       "Otherworld Legend",
@@ -15551,6 +15764,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Divine General",
       "Otherworld Legend",
@@ -15626,6 +15840,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Divine General",
       "Otherworld Legend",
@@ -15700,6 +15915,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Divine General",
       "Otherworld Legend",
@@ -15775,6 +15991,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Wielder of Magic",
@@ -15849,6 +16066,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Ogre's Pride",
@@ -15920,6 +16138,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Schemer",
@@ -15991,6 +16210,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Primal Demon",
@@ -16061,6 +16281,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Flashback Beatdown Emissary"
@@ -16133,6 +16354,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Fount of Wisdom",
@@ -16203,6 +16425,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Stern of Spirit",
@@ -16274,6 +16497,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Adventurer",
       "Stern of Spirit",
@@ -16344,6 +16568,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tournament Stalwart",
       "Antagonist",
@@ -16417,6 +16642,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tournament Stalwart",
       "Octagram Demon Lord",
@@ -16492,6 +16718,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tournament Stalwart",
       "Determination to Prosper",
@@ -16568,6 +16795,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tournament Stalwart",
       "Hyper Heart",
@@ -16643,6 +16871,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Sparkle of Youth",
       "Fount of Wisdom",
@@ -16717,6 +16946,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Sparkle of Youth",
       "Fount of Wisdom",
@@ -16791,6 +17021,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Sparkle of Youth",
       "Fount of Wisdom",
@@ -16865,6 +17096,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Sparkle of Youth",
       "Fount of Wisdom",
@@ -16939,6 +17171,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Tempest Elite",
@@ -17013,6 +17246,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Commander",
@@ -17086,6 +17320,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Primal Demon",
@@ -17161,6 +17396,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Warrior's Mind",
       "Primal Demon",
@@ -17235,6 +17471,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Spirit Master",
       "Wielder of Magic",
@@ -17308,6 +17545,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Spirit Master",
       "Octagram Demon Lord",
@@ -17382,6 +17620,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Spirit Master",
       "Dragon Haki",
@@ -17456,6 +17695,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Spirit Master",
       "Primal Demon",
@@ -17530,6 +17770,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": true,
     "forces": [
       "Spirit Master",
       "Octagram Demon Lord",
@@ -17606,6 +17847,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Schemer",
       "Antagonist",
@@ -17679,6 +17921,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Schemer",
       "Wholehearted Devotion",
@@ -17752,6 +17995,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Schemer",
       "Octagram Demon Lord",
@@ -17826,6 +18070,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Schemer",
       "Primal Demon",
@@ -17899,6 +18144,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Determination to Prosper",
@@ -17972,6 +18218,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Determination to Prosper",
@@ -18043,6 +18290,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Spirit Master",
@@ -18114,6 +18362,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "World of Fantasy",
       "Heart of a Hero",
@@ -18185,6 +18434,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Antagonist",
       "Wielder of Magic",
@@ -18259,6 +18509,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Primal Demon",
@@ -18330,6 +18581,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Primal Demon",
@@ -18401,6 +18653,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Summer Memories",
       "Primal Demon",
@@ -18472,6 +18725,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dungeon Crawler",
       "Adventurer",
@@ -18545,6 +18799,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dungeon Crawler",
       "Adventurer",
@@ -18616,6 +18871,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dungeon Crawler",
       "Otherworld Legend",
@@ -18689,6 +18945,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dungeon Crawler",
       "Adventurer",
@@ -18760,6 +19017,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dungeon Crawler",
       "Adventurer",
@@ -18831,6 +19089,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Scourge Wielder",
       "Antagonist",
@@ -18905,6 +19164,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Scourge Wielder",
       "Dungeon Crawler",
@@ -18979,6 +19239,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Scourge Wielder",
       "Heart of a Hero",
@@ -19053,6 +19314,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Scourge Wielder",
       "Octagram Demon Lord",
@@ -19127,6 +19389,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Antagonist",
@@ -19200,6 +19463,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": true,
     "forces": [
       "Dragon Haki",
       "Antagonist",
@@ -19276,6 +19540,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Stern of Spirit",
@@ -19352,6 +19617,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Scourge Wielder",
@@ -19426,6 +19692,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Dragon Haki",
       "Octagram Demon Lord",
@@ -19501,6 +19768,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Dungeon Crawler",
@@ -19574,6 +19842,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Ten Great Demon Lords",
@@ -19650,6 +19919,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Shizu's Will",
@@ -19726,6 +19996,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Festive Memories",
       "Primal Demon",
@@ -19801,6 +20072,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Assault Team",
       "Dungeon Crawler",
@@ -19875,6 +20147,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Assault Team",
       "Dungeon Crawler",
@@ -19950,6 +20223,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Assault Team",
       "Dungeon Crawler",
@@ -20026,6 +20300,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Assault Team",
       "Fount of Wisdom",
@@ -20101,6 +20376,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Assault Team",
       "World of Fantasy",
@@ -20176,6 +20452,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Schemer",
       "Ten Great Demon Lords",
@@ -20250,6 +20527,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Tempest Elite",
@@ -20325,6 +20603,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Ogre's Pride",
       "Commander",
@@ -20400,6 +20679,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Primal Demon",
       "Schemer",
@@ -20475,6 +20755,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tears of the Azure Sea",
       "Fount of Wisdom",
@@ -20548,6 +20829,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
     "forces": [
       "Tears of the Azure Sea",
       "Fount of Wisdom",
@@ -20565,7 +20847,7 @@
     "tactics_type": "Speed",
     "expertise": "Magic Tome",
     "suited_facilities": [
-      "Water Arts Shrine",
+      "Magic Hide Atelier",
       "Monster Museum"
     ],
     "release_date": "2026-02-27",
@@ -20614,5 +20896,78 @@
     "ex_ability_effect_two_condition": "Increases own following status in accordance with the number of magic attack characters assigned to battle slots.",
     "ex_ability_effect_two_effect": "Increases HP by 378\nIncreases ATK by 190\nIncreases DEF by 110",
     "true_attribute_unbound": "True Attribute Unbound (Water+ Attribute)\nConditions: 3 ~ 5 turns\nEffects: Weak Point Damage x1.2 / Super Weak Point Damage x1.3"
+  },
+  {
+    "name": "Rimuru Tempest",
+    "title": "Chancellor of Summer",
+    "permalink": "RimuruMovie2",
+    "initial_rarity": 5,
+    "is_ex": false,
+    "is_attribute_unbound": true,
+    "has_attribute_unbound": false,
+    "has_ultimate_manifestation": false,
+    "forces": [
+      "Tears of the Azure Sea",
+      "Fount of Wisdom",
+      "Octagram Demon Lord",
+      "Shizu's Will",
+      "Summer Memories"
+    ],
+    "attribute": "Dark+",
+    "attack_type": "Magic",
+    "max_health": 0,
+    "max_attack": 0,
+    "max_defense": 0,
+    "max_output": 150,
+    "character_type": "",
+    "tactics_type": "Speed",
+    "expertise": "",
+    "suited_facilities": [],
+    "release_date": "2026-03-06",
+    "secret_skill_name": "",
+    "secret_skill_target": "",
+    "secret_skill_normal_effect": null,
+    "secret_skill_attack_effect": null,
+    "secret_skill_support_effect": null,
+    "battle_skill_one_name": "",
+    "battle_skill_one_icon": "",
+    "battle_skill_one_effect_cost": 0,
+    "battle_skill_one_effect": "",
+    "battle_skill_one_fused_icon": null,
+    "battle_skill_one_fused_effect_cost": null,
+    "battle_skill_one_fused_effect": null,
+    "battle_skill_one_ultimate_manifestation_icon": null,
+    "battle_skill_one_ultimate_manifestation_effect_cost": null,
+    "battle_skill_one_ultimate_manifestation_effect": null,
+    "battle_skill_two_name": "",
+    "battle_skill_two_icon": "",
+    "battle_skill_two_effect_cost": 0,
+    "battle_skill_two_effect": "",
+    "battle_skill_two_fused_icon": null,
+    "battle_skill_two_fused_effect_cost": null,
+    "battle_skill_two_fused_effect": null,
+    "trait_one_name": "",
+    "trait_one_icon": "",
+    "trait_one_effect": "",
+    "trait_one_icon_max": "",
+    "trait_one_effect_max": "",
+    "trait_two_name": null,
+    "trait_two_icon": null,
+    "trait_two_effect": null,
+    "trait_two_icon_max": null,
+    "trait_two_effect_max": null,
+    "valor_trait_name": null,
+    "valor_trait_icon": null,
+    "valor_trait_effect": null,
+    "valor_trait_icon_max": null,
+    "valor_trait_effect_max": null,
+    "secret_skill_enhancement_trait": null,
+    "ex_ability_effect_one_name": "",
+    "ex_ability_effect_one_condition": "",
+    "ex_ability_effect_one_effect": "",
+    "ex_ability_effect_two_name": "",
+    "ex_ability_effect_two_condition": "",
+    "ex_ability_effect_two_effect": "",
+    "true_attribute_unbound": null
   }
 ]
