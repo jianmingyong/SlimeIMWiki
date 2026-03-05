@@ -20,7 +20,7 @@ public sealed partial class LiveStreamViewModel : ReactiveObject, IActivatableVi
         {
             jsonDataModelService
                 .GetObservableLivestream()
-                .OnErrorResumeNext(Observable.Return<Livestream?>(null))
+                .Catch(Observable.Return<Livestream?>(null))
                 .Select(livestream => livestream?.YoutubeLink)
                 .ToProperty(this, nameof(LivestreamSource), out _livestreamSourceHelper)
                 .DisposeWith(disposable);

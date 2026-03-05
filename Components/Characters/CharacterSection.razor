@@ -142,7 +142,7 @@
 
         this.WhenActivated(disposable =>
         {
-            JsonDataModelService.RefreshData().DisposeWith(disposable);
+            JsonDataModelService.RefreshData().Subscribe().DisposeWith(disposable);
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             this.WhenAnyValue(section => section.ViewModel.CharacterUnits)

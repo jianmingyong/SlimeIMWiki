@@ -7,9 +7,18 @@
 
 @if (ViewModel.Unit is null)
 {
-    <Alert Color="Color.Danger" Visible>
-        <AlertMessage>There is no such character. Perhaps you have spelled incorrectly?</AlertMessage>
-    </Alert>
+    if (ViewModel.Loading)
+    {
+        <Alert Color="Color.Info" Visible>
+            <AlertMessage>Loading... Please wait for a second.</AlertMessage>
+        </Alert>
+    }
+    else
+    {
+        <Alert Color="Color.Danger" Visible>
+            <AlertMessage>There is no such character. Perhaps you have spelled incorrectly?</AlertMessage>
+        </Alert>
+    }
 }
 else
 {

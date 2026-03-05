@@ -42,7 +42,7 @@
 @if (NetworkStatus?.IsOnline ?? true)
 {
     <iframe height="500"
-            src="https://api.ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")&phoneType=1"
+            src="https://@(ViewModel.RegionLink).ten-sura-m.wfs.games/web/announcement?region=@ViewModel.RegionCode&language=@(ViewModel.RegionSelection == "Japan" ? "1" : "2")"
             referrerpolicy="strict-origin-when-cross-origin"
             style="width: 100%"></iframe>
 }

@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using System.Reactive;
 using System.Reactive.Disposables;
 using System.Reactive.Disposables.Fluent;
 using System.Reactive.Linq;
@@ -93,44 +94,52 @@ public sealed class JsonDataModelService : IDisposable
         });
     }
 
-    public IDisposable RefreshData()
+    public IObservable<Unit> RefreshData()
     {
-        var disposables = new CompositeDisposable();
-
-        // ReSharper disable once InvokeAsExtensionMember
-        Observable.Zip(
-            GetObservableBattleAttributes().OnErrorResumeNext(Observable.Return<BattleAttribute[]?>(null)),
-            GetObservableBattleAttackTypes().OnErrorResumeNext(Observable.Return<BattleAttackType[]?>(null)),
-            GetObservableBattleExpertises().OnErrorResumeNext(Observable.Return<BattleExpertise[]?>(null)),
-            GetObservableProtectionAttributes().OnErrorResumeNext(Observable.Return<ProtectionAttribute[]?>(null)),
-            GetObservableProtectionAttackTypes().OnErrorResumeNext(Observable.Return<ProtectionAttackType[]?>(null)),
-            GetObservableTacticTypes().OnErrorResumeNext(Observable.Return<TacticType[]?>(null)),
-            GetObservableForces().OnErrorResumeNext(Observable.Return<Force[]?>(null)),
-            GetObservableFieldBuildings().OnErrorResumeNext(Observable.Return<FieldBuilding[]?>(null)),
-            (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) => (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
-        ).Subscribe(tuple =>
+        return Observable.Create<Unit>(observer =>
         {
-            UpdateCache(_battleAttributeCache, tuple.arg1);
-            UpdateCache(_battleAttackTypeCache, tuple.arg2);
-            UpdateCache(_battleExpertiseCache, tuple.arg3);
-            UpdateCache(_protectionAttributeCache, tuple.arg4);
-            UpdateCache(_protectionAttackTypeCache, tuple.arg5);
-            UpdateCache(_tacticTypeCache, tuple.arg6);
-            UpdateCache(_forceCache, tuple.arg7);
-            UpdateCache(_fieldBuildingCache, tuple.arg8);
-        }, () =>
-        {
-            GetObservableBattleUnits()
-                .OnErrorResumeNext(Observable.Return<BattleUnitData[]?>(null))
-                .Subscribe(units => { UpdateCache(_battleUnitCache, units); })
-                .DisposeWith(disposables);
+            var disposables = new CompositeDisposable();
 
-            GetObservableProtectionUnits()
-                .OnErrorResumeNext(Observable.Return<ProtectionUnitData[]?>(null))
-                .Subscribe(units => { UpdateCache(_protectionUnitCache, units); }).DisposeWith(disposables);
-        }).DisposeWith(disposables);
+            // ReSharper disable once InvokeAsExtensionMember
+            Observable.Zip(
+                GetObservableBattleAttributes().Catch(Observable.Return<BattleAttribute[]?>(null)),
+                GetObservableBattleAttackTypes().Catch(Observable.Return<BattleAttackType[]?>(null)),
+                GetObservableBattleExpertises().Catch(Observable.Return<BattleExpertise[]?>(null)),
+                GetObservableProtectionAttributes().Catch(Observable.Return<ProtectionAttribute[]?>(null)),
+                GetObservableProtectionAttackTypes().Catch(Observable.Return<ProtectionAttackType[]?>(null)),
+                GetObservableTacticTypes().Catch(Observable.Return<TacticType[]?>(null)),
+                GetObservableForces().Catch(Observable.Return<Force[]?>(null)),
+                GetObservableFieldBuildings().Catch(Observable.Return<FieldBuilding[]?>(null)),
+                (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) => (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
+            ).Subscribe(tuple =>
+            {
+                UpdateCache(_battleAttributeCache, tuple.arg1);
+                UpdateCache(_battleAttackTypeCache, tuple.arg2);
+                UpdateCache(_battleExpertiseCache, tuple.arg3);
+                UpdateCache(_protectionAttributeCache, tuple.arg4);
+                UpdateCache(_protectionAttackTypeCache, tuple.arg5);
+                UpdateCache(_tacticTypeCache, tuple.arg6);
+                UpdateCache(_forceCache, tuple.arg7);
+                UpdateCache(_fieldBuildingCache, tuple.arg8);
+                observer.OnNext(Unit.Default);
+            }, observer.OnError, () =>
+            {
+                // ReSharper disable once InvokeAsExtensionMember
+                Observable.Zip(
+                    GetObservableBattleUnits().Catch(Observable.Return<BattleUnitData[]?>(null)),
+                    GetObservableProtectionUnits().Catch(Observable.Return<ProtectionUnitData[]?>(null)),
+                    (arg1, arg2) => (arg1, arg2)
+                ).Subscribe(tuple =>
+                {
+                    UpdateCache(_battleUnitCache, tuple.arg1);
+                    UpdateCache(_protectionUnitCache, tuple.arg2);
 
-        return disposables;
+                    observer.OnNext(Unit.Default);
+                }, observer.OnError, observer.OnCompleted).DisposeWith(disposables);
+            }).DisposeWith(disposables);
+
+            return disposables;
+        });
     }
 
     public IObservable<Livestream?> GetObservableLivestream()
