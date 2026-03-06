@@ -1,0 +1,139 @@
+﻿@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required BattleUnit Unit { get; set; }
+}
+
+<Div Background="Background.Body">
+    <Div Flex="Flex.Grow.Is1" Padding="Padding.Is2" Border="Border.Is1.OnBottom">
+        <Div TextAlignment="TextAlignment.Center" TextWeight="TextWeight.Bold">BATTLE SKILLS</Div>
+    </Div>
+
+    <Div Flex="Flex.Column" Padding="Padding.Is2" Gap="Gap.Is2" Border="Border.Is1.OnBottom">
+        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+            <Div Flex="Flex.Column.AlignItems.Center">
+                <Div TextWeight="TextWeight.Bold">@Unit.BattleSkillOneEffectCost</Div>
+                <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                    @if (!string.IsNullOrEmpty(Unit.BattleSkillOneIcon))
+                    {
+                        <Div Position="Position.Absolute" Width="Width.Em(4)" Height="Height.Em(4)">
+                            <ImageProxy Source="image/character_info/baseSkill.png" Width="Width.Is100"/>
+                            @if (!string.IsNullOrEmpty(Unit.BattleSkillOneFusedIcon))
+                            {
+                                <ImageProxy Source="image/character_info/skillIntegrationAfter3.png"
+                                            Position="Position.Absolute" Style="width: 98%; top: 1%; left: 1%"/>
+
+                                <ImageProxy Source="@Unit.BattleSkillOneFusedIcon"
+                                            Position="Position.Absolute" Style="width: 80%; top: 10%; left: 10%"/>
+                            }
+                            else
+                            {
+                                <ImageProxy Source="@Unit.BattleSkillOneIcon"
+                                            Position="Position.Absolute" Style="width: 80%; top: 10%; left: 10%"/>
+                            }
+                        </Div>
+                    }
+                </Div>
+            </Div>
+            <Div>
+                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                    <Div TextWeight="TextWeight.Bold">
+                        @(string.IsNullOrEmpty(Unit.BattleSkillOneName) ? "???" : Unit.BattleSkillOneName)
+                    </Div>
+
+                    @if (Unit.HasUltimateManifestation)
+                    {
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is1"
+                             Style="border-image: url('image/character_info/transformationBeforeBase.png') 5 23 fill stretch; border-width: 5px 23px; border-style: solid; border-image-width: 0">
+                            <ImageProxy Width="Width.Em(1)" Height="Height.Em(1)"
+                                        Source="image/character_info/icTransformationBefore.png"/>
+                            <Text TextSize="TextSize.ExtraSmall">Before Ultimate Manifestation</Text>
+                        </Div>
+                    }
+                </Div>
+
+                <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
+            </Div>
+        </Div>
+
+        <Div>
+            <EffectStyler Text="@Unit.BattleSkillOneEffect"/>
+        </Div>
+
+        @if (Unit.HasUltimateManifestation)
+        {
+            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                <Div Flex="Flex.Column.AlignItems.Center">
+                    <Div TextWeight="TextWeight.Bold">@Unit.BattleSkillOneUltimateManifestationEffectCost</Div>
+                    <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                        @if (!string.IsNullOrEmpty(Unit.BattleSkillOneUltimateManifestationIcon))
+                        {
+                            <ImageProxy Source="@Unit.BattleSkillOneUltimateManifestationIcon" Width="Width.Is100"
+                                        Text="Icon"/>
+                        }
+                    </Div>
+                </Div>
+                <Div>
+                    <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+                        <Div TextWeight="TextWeight.Bold">
+                            @(string.IsNullOrEmpty(Unit.BattleSkillOneName) ? "???" : Unit.BattleSkillOneName)
+                        </Div>
+
+                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is1"
+                             Style="border-image: url('image/character_info/transformationAfterBase.png') 5 23 fill stretch; border-width: 5px 23px; border-style: solid; border-image-width: 0">
+                            <ImageProxy Width="Width.Em(1)" Height="Height.Em(1)"
+                                        Source="image/character_info/icTransformationAfter.png"/>
+                            <Text TextSize="TextSize.ExtraSmall">After Ultimate Manifestation</Text>
+                        </Div>
+                    </Div>
+
+                    <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
+                </Div>
+            </Div>
+
+            <Div>
+                <EffectStyler Text="@Unit.BattleSkillOneUltimateManifestationEffect"/>
+            </Div>
+        }
+    </Div>
+
+    <Div Flex="Flex.Column" Padding="Padding.Is2" Gap="Gap.Is2">
+        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
+            <Div Flex="Flex.Column.AlignItems.Center">
+                <Div TextWeight="TextWeight.Bold">@Unit.BattleSkillTwoEffectCost</Div>
+                <Div Width="Width.Em(4)" Height="Height.Em(4)">
+                    @if (!string.IsNullOrEmpty(Unit.BattleSkillTwoIcon))
+                    {
+                        <Div Position="Position.Absolute" Width="Width.Em(4)" Height="Height.Em(4)">
+                            <ImageProxy Source="image/character_info/baseSkill.png" Width="Width.Is100"/>
+                            @if (!string.IsNullOrEmpty(Unit.BattleSkillTwoFusedIcon))
+                            {
+                                <ImageProxy Source="image/character_info/skillIntegrationAfter3.png"
+                                            Position="Position.Absolute" Style="width: 98%; top: 1%; left: 1%"/>
+
+                                <ImageProxy Source="@Unit.BattleSkillTwoFusedIcon"
+                                            Position="Position.Absolute" Style="width: 80%; top: 10%; left: 10%"/>
+                            }
+                            else
+                            {
+                                <ImageProxy Source="@Unit.BattleSkillTwoIcon"
+                                            Position="Position.Absolute" Style="width: 80%; top: 10%; left: 10%"/>
+                            }
+                        </Div>
+                    }
+                </Div>
+            </Div>
+            <Div>
+                <Div TextWeight="TextWeight.Bold">
+                    @(string.IsNullOrEmpty(Unit.BattleSkillTwoName) ? "???" : Unit.BattleSkillTwoName)
+                </Div>
+                <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
+            </Div>
+        </Div>
+
+        <Div>
+            <EffectStyler Text="@Unit.BattleSkillTwoEffect"/>
+        </Div>
+    </Div>
+</Div>

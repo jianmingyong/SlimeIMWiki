@@ -44,7 +44,7 @@
                 .DisposeWith(disposable);
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            this.WhenAnyValue(section => section.ViewModel.FieldBuildings)
+            this.WhenAnyValue(section => section.ViewModel.SuitedFacilities)
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
                 .SwitchSelect(buildings => buildings.ObserveCollectionChanges())
                 .Subscribe(_ => InvokeAsync(StateHasChanged))
@@ -145,14 +145,15 @@
     <Dropdown>
         <DropdownToggle Color="Color.Dark" Border="Border.White">Suited Facilities</DropdownToggle>
         <DropdownMenu MaxMenuHeight="50vh" Background="Background.Dark">
-            @foreach (var buildingGroup in ViewModel.FieldBuildings)
+            @foreach (var buildingGroup in ViewModel.SuitedFacilities)
             {
                 <DropdownHeader @key="buildingGroup" TextColor="TextColor.White50">@buildingGroup.Key</DropdownHeader>
 
                 @foreach (var building in buildingGroup.Items)
                 {
                     <DropdownItem TextColor="TextColor.Light">
-                        <FieldBuildingFilter @key="building" FieldBuilding="building"/>
+                        <SuitedFacilityFilter @key="@($"{building.FieldBuilding.Name}_{building.Value}")"
+                                              SuitedFacility="building"/>
                     </DropdownItem>
                 }
 
@@ -181,9 +182,9 @@
         {
             <ExpertiseFilter @key="filter.Key" Expertise="filter.Parameter as BattleExpertise" IsRemoveMode="true"/>
         }
-        else if (filter.KeyType == typeof(FieldBuildingFilter))
+        else if (filter.KeyType == typeof(SuitedFacilityFilter))
         {
-            <FieldBuildingFilter @key="filter.Key" FieldBuilding="filter.Parameter as FieldBuilding"
+            <SuitedFacilityFilter @key="filter.Key" SuitedFacility="filter.Parameter as SuitedFacility"
                                  IsRemoveMode="true"/>
         }
         else if (filter.KeyType == typeof(ForceFilter))

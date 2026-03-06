@@ -23,37 +23,31 @@
         {
             <Tooltip Text="Has Attribute Unbound Enhancement">
                 <ImageProxy Width="Width.Em(2)" Source="image/rarity/badgeClassUp.png"/>
+                <Span Style="text-shadow: black 2px 2px">Has EXU Enhancement</Span>
             </Tooltip>
         }
 
         @if (Unit is BattleUnit battleUnit)
         {
-            <Tooltip Text="@(battleUnit.Attribute.Name)">
-                <ImageProxy @key="battleUnit.Attribute.Icon" Width="Width.Em(2)" Source="@(battleUnit.Attribute.Icon)"/>
-                <Text>@(battleUnit.Attribute.Name)</Text>
-            </Tooltip>
+            <ImageProxy Width="Width.Em(2)" Source="@battleUnit.Attribute.Icon" Text="@battleUnit.Attribute.Name"/>
+            <Span Style="text-shadow: black 2px 2px">@(battleUnit.Attribute.Name)</Span>
 
-            <Tooltip Text="@(battleUnit.AttackType.Name)">
-                <ImageProxy Width="Width.Em(2)" Source="@battleUnit.AttackType.Icon"/>
-                <Text>@(battleUnit.AttackType.Name)</Text>
-            </Tooltip>
+            <ImageProxy Width="Width.Em(2)" Source="@battleUnit.AttackType.Icon" Text="@battleUnit.AttackType.Name"/>
+            <Span Style="text-shadow: black 2px 2px">@battleUnit.AttackType.Name</Span>
         }
         else if (Unit is ProtectionUnit protectionUnit)
         {
             foreach (var attribute in protectionUnit.Attributes ?? [])
             {
-                <Tooltip Text="@(attribute.Name)">
-                    <ImageProxy @key="attribute.Icon" Width="Width.Em(2)" Source="@(attribute.Icon)"/>
-                    <Text>@(attribute.Name)</Text>
-                </Tooltip>
+                <ImageProxy Width="Width.Em(2)" Source="@(attribute.Icon)" Text="@(attribute.Name)"/>
+                <Span Style="text-shadow: black 2px 2px">@(attribute.Name)</Span>
             }
 
             @if (protectionUnit.AttackType is not null)
             {
-                <Tooltip Text="@(protectionUnit.AttackType.Name)">
-                    <ImageProxy Width="Width.Em(2)" Source="@protectionUnit.AttackType.Icon"/>
-                    <Text>@(protectionUnit.AttackType.Name)</Text>
-                </Tooltip>
+                <ImageProxy Width="Width.Em(2)" Source="@protectionUnit.AttackType.Icon"
+                            Text="@protectionUnit.AttackType.Name"/>
+                <Span Style="text-shadow: black 2px 2px">@(protectionUnit.AttackType.Name)</Span>
             }
         }
 

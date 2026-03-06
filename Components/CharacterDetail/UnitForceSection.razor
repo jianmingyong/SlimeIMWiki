@@ -6,11 +6,11 @@
 }
 
 <Div Background="Background.Body">
-    <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2" Border="Border.Is1.OnBottom">
+    <Div Flex="Flex.Grow.Is1" Padding="Padding.Is2" Border="Border.Is1.OnBottom">
         <Div TextAlignment="TextAlignment.Center" TextWeight="TextWeight.Bold">FORCES</Div>
     </Div>
 
-    <Div Padding="Padding.Is2" Flex="Flex.Column.OnDesktop.Wrap" Gap="Gap.Is2">
+    <Div Padding="Padding.Is2" Flex="Flex.Column" Gap="Gap.Is2">
         @if (Unit is BattleUnit battleUnit)
         {
             if (battleUnit.Forces.Length == 0)

@@ -70,158 +70,52 @@ else
                     </Div>
                 </Div>
 
-                <Div Width="Width.Is100">
-                    @switch (ViewModel.Unit)
-                    {
-                        case ProtectionUnit protectionUnit:
-                            <DivineProtectionSection Unit="protectionUnit"/>
-                            <ProtectionSkillSection Unit="protectionUnit"/>
-                            break;
-
-                        case BattleUnit battleUnit:
-                            <SecretSkillSection Unit="battleUnit"/>
-
-                            <Div Flex="Flex.Grow.Is1" Background="Background.Body" Padding="Padding.Is2"
-                                 Border="Border.Is1.OnBottom">
-                                <Div TextAlignment="TextAlignment.Center" TextWeight="TextWeight.Bold">BATTLE SKILLS
-                                </Div>
-                            </Div>
-
-                            <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.Column.AlignItems.Center">
-                                        <Div TextWeight="TextWeight.Bold">@battleUnit.BattleSkillOneEffectCost</Div>
-                                        <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                            @if (!string.IsNullOrEmpty(battleUnit.BattleSkillOneIcon))
-                                            {
-                                                <ImageProxy Source="@battleUnit.BattleSkillOneIcon" Width="Width.Is100"
-                                                            Text="Icon"/>
-                                            }
-                                        </Div>
-                                    </Div>
-                                    <Div>
-                                        <Div TextWeight="TextWeight.Bold">
-                                            @(string.IsNullOrEmpty(battleUnit.BattleSkillOneName) ? "???" : battleUnit.BattleSkillOneName)
-                                        </Div>
-                                        <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
-                                    </Div>
-                                </Div>
-
-                                <Div>
-                                    <EffectStyler Text="@battleUnit.BattleSkillOneEffect"/>
-                                </Div>
-                            </Div>
-
-                            <Div Flex="Flex.Column" Background="Background.Body" Margin="Margin.Is2.FromTop"
-                                 Padding="Padding.Is2" Gap="Gap.Is2">
-                                <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                    <Div Flex="Flex.Column.AlignItems.Center">
-                                        <Div TextWeight="TextWeight.Bold">@battleUnit.BattleSkillTwoEffectCost</Div>
-                                        <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                            @if (!string.IsNullOrEmpty(battleUnit.BattleSkillTwoIcon))
-                                            {
-                                                <ImageProxy Source="@battleUnit.BattleSkillTwoIcon" Width="Width.Is100"
-                                                            Text="Icon"/>
-                                            }
-                                        </Div>
-                                    </Div>
-                                    <Div>
-                                        <Div TextWeight="TextWeight.Bold">
-                                            @(string.IsNullOrEmpty(battleUnit.BattleSkillTwoName) ? "???" : battleUnit.BattleSkillTwoName)
-                                        </Div>
-                                        <Div TextSize="TextSize.ExtraSmall" Style="color: yellow">Lv. Max</Div>
-                                    </Div>
-                                </Div>
-
-                                <Div>
-                                    <EffectStyler Text="@battleUnit.BattleSkillTwoEffect"/>
-                                </Div>
-                            </Div>
-                            break;
-                    }
-                </Div>
-
-                <Div Width="Width.Is100">
-                    <TextDivider Text="TRAIT" Margin="Margin.Is2.OnY"/>
-
-                    <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                        <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                            <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
-                                {
-                                    <ImageProxy Source="@ViewModel.Unit.TraitOneIcon" Width="Width.Is100" Text="Icon"/>
-                                }
-                            </Div>
-                            <Div>
-                                <Div TextWeight="TextWeight.Bold">
-                                    @(string.IsNullOrEmpty(ViewModel.Unit.TraitOneName) ? "???" : ViewModel.Unit.TraitOneName)
-                                </Div>
-                                <Div TextSize="TextSize.ExtraSmall">At 3rd Awaken</Div>
-                            </Div>
-                        </Div>
-
-                        <Div>
-                            <EffectStyler Text="@ViewModel.Unit.TraitOneEffectMax"/>
-                        </Div>
+                @if (ViewModel.Unit is ProtectionUnit)
+                {
+                    <Div Width="Width.Is100">
+                        <UnitDivineProtectionSection Unit="@(ViewModel.Unit as ProtectionUnit)"/>
                     </Div>
-                </Div>
+
+                    <Div Width="Width.Is100">
+                        <UnitProtectionSkillSection Unit="@(ViewModel.Unit as ProtectionUnit)"/>
+                    </Div>
+                }
+
+                @if (ViewModel.Unit is BattleUnit)
+                {
+                    <Div Width="Width.Is100">
+                        <UnitSecretSkillSection Unit="@(ViewModel.Unit as BattleUnit)"/>
+                    </Div>
+
+                    <Div Width="Width.Is100">
+                        <UnitBattleSkillSection Unit="@(ViewModel.Unit as BattleUnit)"/>
+                    </Div>
+                }
 
                 <Div Width="Width.Is100">
-                    @if (ViewModel.Unit is BattleUnit { TraitTwoName: not null, TraitTwoEffectMax: not null } battleUnit1)
-                    {
-                        <TextDivider Text="TRAIT 2" Margin="Margin.Is2.OnY"/>
-
-                        <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                    @if (!string.IsNullOrEmpty(battleUnit1.TraitTwoIcon))
-                                    {
-                                        <ImageProxy Source="@battleUnit1.TraitTwoIcon" Width="Width.Is100" Text="Icon"/>
-                                    }
-                                </Div>
-                                <Div>
-                                    <Div TextWeight="TextWeight.Bold">
-                                        @(string.IsNullOrEmpty(battleUnit1.TraitTwoName) ? "???" : battleUnit1.TraitTwoName)
-                                    </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">At 5th Awaken</Div>
-                                </Div>
-                            </Div>
-
-                            <Div>
-                                <EffectStyler Text="@battleUnit1.TraitTwoEffectMax"/>
-                            </Div>
-                        </Div>
-                    }
+                    <UnitTraitOneSection Unit="ViewModel.Unit"/>
                 </Div>
 
-                <Div Width="Width.Is100">
-                    @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
-                    {
-                        <TextDivider Text="VALOR TRAIT" Margin="Margin.Is2.OnY"/>
+                @if (ViewModel.Unit is BattleUnit { TraitTwoName: not null, TraitTwoEffectMax: not null })
+                {
+                    <Div Width="Width.Is100">
+                        <UnitTraitTwoSection Unit="@(ViewModel.Unit as BattleUnit)"/>
+                    </Div>
+                }
 
-                        <Div Flex="Flex.Column" Background="Background.Body" Padding="Padding.Is2" Gap="Gap.Is2">
-                            <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is2">
-                                <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                                    @if (!string.IsNullOrEmpty(ViewModel.Unit.TraitOneIcon))
-                                    {
-                                        <ImageProxy Source="@ViewModel.Unit.ValorTraitIcon" Width="Width.Is100"
-                                                    Text="Icon"/>
-                                    }
-                                </Div>
-                                <Div>
-                                    <Div TextWeight="TextWeight.Bold">
-                                        @(string.IsNullOrEmpty(ViewModel.Unit.ValorTraitName) ? "???" : ViewModel.Unit.ValorTraitName)
-                                    </Div>
-                                    <Div TextSize="TextSize.ExtraSmall">At 2nd Awaken</Div>
-                                </Div>
-                            </Div>
+                @if (ViewModel.Unit.ValorTraitName is not null && ViewModel.Unit.ValorTraitEffectMax is not null)
+                {
+                    <Div Width="Width.Is100">
+                        <UnitValorTraitSection Unit="ViewModel.Unit"/>
+                    </Div>
+                }
 
-                            <Div>
-                                <EffectStyler Text="@ViewModel.Unit.ValorTraitEffectMax"/>
-                            </Div>
-                        </Div>
-                    }
-                </Div>
+                @if (ViewModel.Unit is ProtectionUnit { GuidanceEnhancementTraitEffect: not null })
+                {
+                    <Div Width="Width.Is100">
+                        <UnitGuidanceEnhancementTraitEffectSection Unit="@(ViewModel.Unit as ProtectionUnit)"/>
+                    </Div>
+                }
             </Div>
         </Div>
     </Div>

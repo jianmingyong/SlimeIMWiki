@@ -30,7 +30,7 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
     public ReadOnlyObservableCollection<IGrouping<Force, string, string>> Forces => _forces;
 
-    public ReadOnlyObservableCollection<IGrouping<FieldBuilding, string, string>> FieldBuildings => _fieldBuildings;
+    public ReadOnlyObservableCollection<IGrouping<SuitedFacility, string, string>> SuitedFacilities => _suitedFacilities;
 
     public ReadOnlyObservableCollection<Filter> Filters => _filters;
 
@@ -41,7 +41,7 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
     private ReadOnlyObservableCollection<IAttribute> _attributes = ReadOnlyObservableCollection<IAttribute>.Empty;
     private ReadOnlyObservableCollection<BattleExpertise> _battleExpertises = ReadOnlyObservableCollection<BattleExpertise>.Empty;
     private ReadOnlyObservableCollection<IGrouping<Force, string, string>> _forces = ReadOnlyObservableCollection<IGrouping<Force, string, string>>.Empty;
-    private ReadOnlyObservableCollection<IGrouping<FieldBuilding, string, string>> _fieldBuildings = ReadOnlyObservableCollection<IGrouping<FieldBuilding, string, string>>.Empty;
+    private ReadOnlyObservableCollection<IGrouping<SuitedFacility, string, string>> _suitedFacilities = ReadOnlyObservableCollection<IGrouping<SuitedFacility, string, string>>.Empty;
     private ReadOnlyObservableCollection<Filter> _filters = ReadOnlyObservableCollection<Filter>.Empty;
 
     private readonly CharacterListDisplayService _characterListDisplayService;
@@ -120,16 +120,22 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                 .DisposeWith(disposable);
 
             jsonDataService.FieldBuildingCache.Connect()
-                .AutoRefreshOnObservable(_ => this.ObservableForProperty(model => model._characterListDisplayService.DisplayCategory))
-                .Filter(building => _characterListDisplayService.DisplayCategory switch
-                {
-                    CharacterListDisplayCategory.Battle => !building.Category.Equals("Parameter Enhancement Facilities"),
-                    CharacterListDisplayCategory.Protection => building.Category.Equals("Parameter Enhancement Facilities"),
-                    var _ => true
-                })
-                .GroupWithImmutableState(static group => group.Category)
+                .Filter(this.WhenAnyValue(model => model._characterListDisplayService.DisplayCategory)
+                    .Select<CharacterListDisplayCategory, Func<FieldBuilding, bool>>(category => building => category switch
+                    {
+                        CharacterListDisplayCategory.Battle => !building.Category.Equals("Parameter Enhancement Facilities"),
+                        CharacterListDisplayCategory.Protection => building.Category.Equals("Parameter Enhancement Facilities"),
+                        var _ => true
+                    })
+                )
+                .TransformMany<SuitedFacility, string, FieldBuilding, string>(building =>
+                [
+                    new SuitedFacility(building, building.Category.Equals("Parameter Enhancement Facilities") ? 200 : 30),
+                    new SuitedFacility(building, building.Category.Equals("Parameter Enhancement Facilities") ? 100 : 10)
+                ], facility => $"{facility.FieldBuilding.Name}_{facility.Value}")
+                .GroupWithImmutableState(static group => group.FieldBuilding.Category)
                 .Batch(TimeSpan.FromMilliseconds(1))
-                .Bind(out _fieldBuildings)
+                .Bind(out _suitedFacilities)
                 .Subscribe()
                 .DisposeWith(disposable);
 
