@@ -67,11 +67,14 @@
                 <Div Flex="Flex.Column.AlignItems.Center">
                     <Div TextWeight="TextWeight.Bold">@Unit.BattleSkillOneUltimateManifestationEffectCost</Div>
                     <Div Width="Width.Em(4)" Height="Height.Em(4)">
-                        @if (!string.IsNullOrEmpty(Unit.BattleSkillOneUltimateManifestationIcon))
-                        {
-                            <ImageProxy Source="@Unit.BattleSkillOneUltimateManifestationIcon" Width="Width.Is100"
-                                        Text="Icon"/>
-                        }
+                        <Div Position="Position.Absolute" Width="Width.Em(4)" Height="Height.Em(4)">
+                            <ImageProxy Source="image/character_info/baseSkill.png" Width="Width.Is100"/>
+                            @if (!string.IsNullOrEmpty(Unit.BattleSkillOneUltimateManifestationIcon))
+                            {
+                                <ImageProxy Source="@Unit.BattleSkillOneUltimateManifestationIcon"
+                                            Position="Position.Absolute" Style="width: 80%; top: 10%; left: 10%"/>
+                            }
+                        </Div>
                     </Div>
                 </Div>
                 <Div>
@@ -81,7 +84,7 @@
                         </Div>
 
                         <Div Flex="Flex.Row.AlignItems.Center" Gap="Gap.Is1"
-                             Style="border-image: url('image/character_info/transformationAfterBase.png') 5 23 fill stretch; border-width: 5px 23px; border-style: solid; border-image-width: 0">
+                             Style="border-image: url('image/character_info/transformationAfterBase.png') 5 23 fill stretch; border-width: 5px 23px; border-style: solid">
                             <ImageProxy Width="Width.Em(1)" Height="Height.Em(1)"
                                         Source="image/character_info/icTransformationAfter.png"/>
                             <Text TextSize="TextSize.ExtraSmall">After Ultimate Manifestation</Text>
