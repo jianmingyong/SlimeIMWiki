@@ -1,4 +1,5 @@
-﻿using DynamicData.Kernel;
+﻿using System.Globalization;
+using DynamicData.Kernel;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
@@ -24,7 +25,7 @@ public record BattleUnit(
     BattleExpertise Expertise,
     TacticType TacticsType,
     SuitedFacility[] SuitedFacilities,
-    DateOnly? ReleaseDate,
+    DateTime ReleaseDate,
     string SecretSkillName,
     string SecretSkillTarget,
     string? SecretSkillNormalEffect,
@@ -127,7 +128,7 @@ public record BattleUnit(
             service.BattleExpertiseCache.Lookup(data.Expertise).ValueOr(() => new BattleExpertise(data.Expertise, string.Empty)),
             service.TacticTypeCache.Lookup(data.TacticsType).ValueOr(() => new TacticType(data.TacticsType, string.Empty)),
             data.SuitedFacilities.Select((s, i) => new SuitedFacility(service.FieldBuildingCache.Lookup(s).ValueOr(() => new FieldBuilding(s, string.Empty, string.Empty)), i == 0 ? 30 : 10)).ToArray(),
-            data.ReleaseDate,
+            DateTimeOffset.Parse(data.ReleaseDate, DateTimeFormatInfo.InvariantInfo).AddHours(10).ToOffset(TimeSpan.FromHours(8)).LocalDateTime,
             data.SecretSkillName,
             data.SecretSkillTarget,
             data.SecretSkillNormalEffect,

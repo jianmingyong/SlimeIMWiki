@@ -18,7 +18,7 @@ public record ProtectionUnitData(
     string CharacterType,
     string TacticsType,
     string[] SuitedFacilities,
-    DateOnly? ReleaseDate,
+    string ReleaseDate,
     string DivineProtectionName,
     string DivineProtectionEffect,
     string DivineProtectionEffectMax,

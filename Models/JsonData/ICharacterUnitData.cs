@@ -24,7 +24,7 @@ public interface ICharacterUnitData
 
     string[] SuitedFacilities { get; }
 
-    DateOnly? ReleaseDate { get; }
+    string ReleaseDate { get; }
 
     string TraitOneName { get; }
 

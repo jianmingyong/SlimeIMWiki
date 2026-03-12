@@ -1,4 +1,5 @@
-﻿@code
+﻿@using System.Globalization
+@code
 {
     [Parameter]
     [EditorRequired]
@@ -147,7 +148,7 @@
                 <TableRowCell Background="Background.Dark" TextColor="TextColor.Body"
                               TextAlignment="TextAlignment.Center"
                               VerticalAlignment="VerticalAlignment.Middle">
-                    <Div>@Unit.ReleaseDate</Div>
+                    <Div>@Unit.ReleaseDate.ToString("d", DateTimeFormatInfo.CurrentInfo)</Div>
                 </TableRowCell>
             </TableRow>
         </TableBody>

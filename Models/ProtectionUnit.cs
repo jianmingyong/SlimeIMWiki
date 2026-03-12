@@ -1,4 +1,5 @@
-﻿using DynamicData.Kernel;
+﻿using System.Globalization;
+using DynamicData.Kernel;
 using SlimeIMWiki.Models.JsonData;
 using SlimeIMWiki.Services;
 
@@ -22,7 +23,7 @@ public record ProtectionUnit(
     string CharacterType,
     TacticType TacticsType,
     SuitedFacility[] SuitedFacilities,
-    DateOnly? ReleaseDate,
+    DateTime ReleaseDate,
     string DivineProtectionName,
     string DivineProtectionEffect,
     string DivineProtectionEffectMax,
@@ -78,7 +79,7 @@ public record ProtectionUnit(
             data.CharacterType,
             service.TacticTypeCache.Lookup(data.TacticsType).ValueOr(() => new TacticType(data.TacticsType, string.Empty)),
             data.SuitedFacilities.Select((s, i) => new SuitedFacility(service.FieldBuildingCache.Lookup(s).ValueOr(() => new FieldBuilding(s, string.Empty, string.Empty)), i == 0 ? 200 : 100)).ToArray(),
-            data.ReleaseDate,
+            DateTimeOffset.Parse(data.ReleaseDate, DateTimeFormatInfo.InvariantInfo).AddHours(10).ToOffset(TimeSpan.FromHours(8)).LocalDateTime,
             data.DivineProtectionName,
             data.DivineProtectionEffect,
             data.DivineProtectionEffectMax,

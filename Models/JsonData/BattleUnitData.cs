@@ -20,7 +20,7 @@ public record BattleUnitData(
     string Expertise,
     string TacticsType,
     string[] SuitedFacilities,
-    DateOnly? ReleaseDate,
+    string ReleaseDate,
     string SecretSkillName,
     string SecretSkillTarget,
     string? SecretSkillNormalEffect,
