@@ -4581,9 +4581,9 @@
       "Anti Light+"
     ],
     "attack_type": "Magic",
-    "max_health": 0,
-    "max_attack": 0,
-    "max_defense": 0,
+    "max_health": 3643,
+    "max_attack": 1776,
+    "max_defense": 1504,
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
