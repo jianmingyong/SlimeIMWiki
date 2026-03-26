@@ -1,0 +1,21 @@
+﻿@using SlimeIMWiki.Models.JsonData
+@inherits BaseFilterComponent
+
+@code
+{
+    [Parameter]
+    [EditorRequired]
+    public required TacticType TacticType { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter($"{nameof(TacticType)}_{TacticType.Name}", GetType(), TacticType,
+            unit => unit.TacticsType.Equals(TacticType.Name, StringComparison.OrdinalIgnoreCase));
+
+        base.OnInitialized();
+    }
+}
+
+<FilterComponent IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ImageProxy Class="filterIcon" Source="@TacticType.Image" Height="Height.Em(1.5)"/>
+</FilterComponent>

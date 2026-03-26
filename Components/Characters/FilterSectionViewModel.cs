@@ -26,6 +26,8 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
     public ReadOnlyObservableCollection<IAttribute> Attributes => _attributes;
 
+    public ReadOnlyObservableCollection<TacticType> TacticTypes => _tacticTypes;
+
     public ReadOnlyObservableCollection<BattleExpertise> BattleExpertises => _battleExpertises;
 
     public ReadOnlyObservableCollection<IGrouping<Force, string, string>> Forces => _forces;
@@ -39,6 +41,7 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
     private ReadOnlyObservableCollection<IAttackType> _attackTypes = ReadOnlyObservableCollection<IAttackType>.Empty;
     private ReadOnlyObservableCollection<IAttribute> _attributes = ReadOnlyObservableCollection<IAttribute>.Empty;
+    private ReadOnlyObservableCollection<TacticType> _tacticTypes = ReadOnlyObservableCollection<TacticType>.Empty;
     private ReadOnlyObservableCollection<BattleExpertise> _battleExpertises = ReadOnlyObservableCollection<BattleExpertise>.Empty;
     private ReadOnlyObservableCollection<IGrouping<Force, string, string>> _forces = ReadOnlyObservableCollection<IGrouping<Force, string, string>>.Empty;
     private ReadOnlyObservableCollection<IGrouping<SuitedFacility, string, string>> _suitedFacilities = ReadOnlyObservableCollection<IGrouping<SuitedFacility, string, string>>.Empty;
@@ -92,6 +95,11 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                 })
                 .Do(_ => this.RaisePropertyChanged(nameof(Attributes)))
                 .Switch()
+                .Subscribe()
+                .DisposeWith(disposable);
+
+            jsonDataService.TacticTypeCache.Connect()
+                .Bind(out _tacticTypes)
                 .Subscribe()
                 .DisposeWith(disposable);
 

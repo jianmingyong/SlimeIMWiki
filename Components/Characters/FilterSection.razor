@@ -112,6 +112,21 @@
         <Span>|</Span>
 
         <InitialRarityFilter Rarity="5"/>
+
+        <Span>|</Span>
+
+        <InitialRarityFilter Rarity="6"/>
+
+        <Span>|</Span>
+
+        <InitialRarityFilter Rarity="7"/>
+    </Div>
+
+    <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
+        @foreach (var tacticType in ViewModel.TacticTypes)
+        {
+            <TacticsTypeFilter @key="tacticType" TacticType="tacticType"/>
+        }
     </Div>
 
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
@@ -198,6 +213,10 @@
         else if (filter.KeyType == typeof(NameFilter))
         {
             <NameFilter @key="filter.Key" Search="filter.Parameter as SearchResult" IsRemoveMode="true"/>
+        }
+        else if (filter.KeyType == typeof(TacticsTypeFilter))
+        {
+            <TacticsTypeFilter @key="filter.Key" TacticType="filter.Parameter as TacticType" IsRemoveMode="true"/>
         }
     }
 </Div>

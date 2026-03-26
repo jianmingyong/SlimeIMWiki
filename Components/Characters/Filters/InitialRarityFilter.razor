@@ -6,16 +6,28 @@
     [EditorRequired]
     public int Rarity { get; set; }
 
+    private double _width => 1.5 + 1.5 / 2 * (Rarity - 1) + (Rarity > 5 ? 0.75 : 0);
+
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", GetType(), Rarity, unit => unit.InitialRarity == Rarity);
+        Filter ??= new Filter($"{nameof(Rarity)}_{Rarity}", GetType(), Rarity, unit =>
+        {
+            return Rarity switch
+            {
+                5 => unit is { InitialRarity: 5, IsEx: false, IsAttributeUnbound: false },
+                6 => unit is { InitialRarity: 5, IsEx: true },
+                7 => unit is { InitialRarity: 5, IsAttributeUnbound: true },
+                var _ => unit.InitialRarity == Rarity
+            };
+        });
         base.OnInitialized();
     }
 }
 
-<FilterComponent DisplayText="@Rarity.ToString()" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+<FilterComponent DisplayText="@(Rarity > 5 ? string.Empty : Rarity.ToString())" IsRemoveMode="IsRemoveMode"
+                 OnClick="Execute">
     <Div Class="filterIcon" Position="Position.Relative"
-         Width="Width.Em(1.5 + 1.5 / 2 * (Rarity - 1))" Height="Height.Em(1.5)">
+         Width="Width.Em(_width)" Height="Height.Em(1.5)">
         <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
                     Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
 
@@ -35,6 +47,16 @@
         {
             <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
                         Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 3em"/>
+        }
+
+        @if (Rarity == 6)
+        {
+            <Span Position="Position.Absolute" Width="Width.Ch(3)" Style="z-index: 0; left: 4.5em">EX</Span>
+        }
+
+        @if (Rarity == 7)
+        {
+            <Span Position="Position.Absolute" Width="Width.Ch(4)" Style="z-index: 0; left: 4.5em">EXU</Span>
         }
     </Div>
 </FilterComponent>
