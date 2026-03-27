@@ -508,14 +508,29 @@
     "release_date": "2025-10-17"
   },
   {
-    "name": "Memories by the Waves",
+    "name": "Covert Machinations",
     "category": "Other",
-    "icon": "",
+    "icon": "image/heartprints/skill_still_2500089_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increase speed-type characters' synergy power by 5% (Turns: 1)",
-      "Increase speed-type characters' synergy power by 10% (Turns: 1)",
-      "Increase speed-type characters' synergy power by 15% (Turns: 1)"
+      "Increases speed-type characters' critical power by 5% (Turns: 1)",
+      "Increases speed-type characters' critical power by 10% (Turns: 1)",
+      "Increases speed-type characters' critical power by 15% (Turns: 1)"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Vengeful Blaze Story Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-03-27"
+  },
+  {
+    "name": "Memories by the Waves",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_2500088_L.png",
+    "type": "Heartprint Skill",
+    "descriptions": [
+      "Increases speed-type characters' synergy power by 5% (Turns: 1)",
+      "Increases speed-type characters' synergy power by 10% (Turns: 1)",
+      "Increases speed-type characters' synergy power by 15% (Turns: 1)"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Azure Sea Harbinger Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
@@ -528,9 +543,9 @@
     "icon": "image/heartprints/skill_still_2500087_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increase speed-type characters' Aegis power by 5% (Turns: 1)",
-      "Increase speed-type characters' Aegis power by 10% (Turns: 1)",
-      "Increase speed-type characters' Aegis power by 15% (Turns: 1)"
+      "Increases speed-type characters' Aegis power by 5% (Turns: 1)",
+      "Increases speed-type characters' Aegis power by 10% (Turns: 1)",
+      "Increases speed-type characters' Aegis power by 15% (Turns: 1)"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Epitaph of Fate Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
@@ -544,8 +559,8 @@
     "type": "Heartprint Skill",
     "descriptions": [
       "Increase charge-type characters' synergy power by 5% (Turns: 1)",
-      "Increase charge-type characters' synergy power by 10% (Turns: 1)",
-      "Increase charge-type characters' synergy power by 15% (Turns: 1)"
+      "Increases charge-type characters' synergy power by 10% (Turns: 1)",
+      "Increases charge-type characters' synergy power by 15% (Turns: 1)"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Reloaded World Part 1 Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
@@ -558,9 +573,9 @@
     "icon": "image/heartprints/skill_still_2500083_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increase speed-type characters' pierce power by 5% (Turns: 1)",
-      "Increase speed-type characters' pierce power by 10% (Turns: 1)",
-      "Increase speed-type characters' pierce power by 15% (Turns: 1)"
+      "Increases speed-type characters' pierce power by 5% (Turns: 1)",
+      "Increases speed-type characters' pierce power by 10% (Turns: 1)",
+      "Increases speed-type characters' pierce power by 15% (Turns: 1)"
     ],
     "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Festive Surprise Mission Story Event (Missable)",
     "unlock_material": "No Developing Tool Required",
@@ -573,7 +588,7 @@
     "icon": "image/heartprints/skill_still_2500082_L.png",
     "type": "Heartprint Skill",
     "descriptions": [
-      "Increase charge-type characters' critical damage by 5% (Turns: 1)",
+      "Increases charge-type characters' critical damage by 5% (Turns: 1)",
       "Increase charge-type characters' critical damage by 10% (Turns: 1)",
       "Increase charge-type characters' critical damage by 15% (Turns: 1)"
     ],
@@ -613,14 +628,40 @@
     "release_date": "2025-10-17"
   },
   {
+    "name": "Divine Desserts",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_1103704_L.png",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Water Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Tears of the Azure Sea Premiere Mission Part 2 (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-03-13"
+  },
+  {
     "name": "Close Call",
     "category": "Other",
-    "icon": "",
+    "icon": "image/heartprints/skill_still_1103702_L.png",
     "type": "Heartprint",
     "descriptions": [
       "Increases Wind Attribute effect level by 1"
     ],
-    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nLogin During Azure Sea Harbinger Event",
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nLogin During Azure Sea Harbinger Event* (An unintentional distribution bug)\nComplete Epic EP Extravaganza Azure Sea Overloard Event (Missable)",
+    "unlock_material": "No Developing Tool Required",
+    "unlock_amount": 0,
+    "release_date": "2026-02-27"
+  },
+  {
+    "name": "A Perfect Vacation Day",
+    "category": "Other",
+    "icon": "image/heartprints/skill_still_1103703_L.png",
+    "type": "Heartprint",
+    "descriptions": [
+      "Increases Dark Attribute effect level by 1"
+    ],
+    "unlock_condition": "Unlock total Heartprint and Heartprint Skills: x2\nComplete Tears of the Azure Sea Premiere Mission Part 1 (Missable)",
     "unlock_material": "No Developing Tool Required",
     "unlock_amount": 0,
     "release_date": "2026-02-27"
