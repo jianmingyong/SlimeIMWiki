@@ -92,6 +92,13 @@ else
                     </Div>
                 }
 
+                @if (ViewModel.Unit is BattleUnit battleUnit && (battleUnit.IsAttributeUnbound || battleUnit.HasAttributeUnbound))
+                {
+                    <Div Width="Width.Is100">
+                        <UnitTrueAttributeUnboundSection Unit="@(ViewModel.Unit as BattleUnit)"/>
+                    </Div>
+                }
+
                 <Div Width="Width.Is100">
                     <UnitTraitOneSection Unit="ViewModel.Unit"/>
                 </Div>
@@ -107,6 +114,13 @@ else
                 {
                     <Div Width="Width.Is100">
                         <UnitValorTraitSection Unit="ViewModel.Unit"/>
+                    </Div>
+                }
+
+                @if (ViewModel.Unit is BattleUnit)
+                {
+                    <Div Width="Width.Is100">
+                        <UnitExAbilityEffectSection Unit="@(ViewModel.Unit as BattleUnit)"/>
                     </Div>
                 }
 
