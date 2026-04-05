@@ -45,18 +45,19 @@ jobs:
           sed -i 's|BlazoriseProductToken = "";|BlazoriseProductToken = "${{ secrets.BLAZORISE_PRODUCT_TOKEN }}";|g' "GlobalConstants.cs"
 
       - name: Get latest .NET SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: "10.0"
+          workloads: wasm-tools
 
       - name: Publish app
-        run: dotnet workload install wasm-tools && dotnet publish -c Release -p:CompressionEnabled=false -p:PublishViaGHAction=true
+        run: dotnet publish -c Release -p:CompressionEnabled=false -p:PublishViaGHAction=true
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ env.PUBLISH_DIR }}
 
