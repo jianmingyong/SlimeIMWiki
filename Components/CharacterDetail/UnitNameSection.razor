@@ -51,47 +51,58 @@
             }
         }
 
-        <Div Position="Position.Relative" Width="Width.Em(7)" Height="Height.Em(2)">
+        <Div Position="Position.Relative" Width="Width.Em(8)" Height="Height.Em(2)">
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 5"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 6"/>
 
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 1em"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 5; left: 1em"/>
 
             <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 2em"/>
+                        Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 2em"/>
 
             @if (Unit.InitialRarity >= 4)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 3em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 3em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 3; left: 3em"/>
             }
 
             @if (Unit.InitialRarity >= 5)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 4em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 4em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 2; left: 4em"/>
             }
 
             @if (Unit.IsEx || Unit.IsAttributeUnbound)
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 5em"/>
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 5em"/>
             }
             else
             {
                 <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
-                            Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 5em"/>
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 1; left: 5em"/>
+            }
+
+            @if (Unit.InitialRarity >= 7)
+            {
+                <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
+                            Source="image/character_info/rarityStarOn.png" Style="z-index: 0; left: 6em"/>
+            }
+            else
+            {
+                <ImageProxy Position="Position.Absolute" Width="Width.Em(2)"
+                            Source="image/character_info/rarityStarOff.png" Style="z-index: 0; left: 6em"/>
             }
         </Div>
     </Div>

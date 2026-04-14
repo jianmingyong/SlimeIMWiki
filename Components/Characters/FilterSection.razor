@@ -100,6 +100,13 @@
         <Span>|</Span>
 
         <ExEnhancementFilter/>
+        
+        @if (ViewModel.DisplayCategory == CharacterListDisplayCategory.Battle)
+        {
+            <Span>|</Span>
+            <SecretSkillTargetFilter SecretSkillTarget="Single"/>
+            <SecretSkillTargetFilter SecretSkillTarget="All"/>
+        }
     </Div>
 
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
@@ -120,6 +127,10 @@
         <Span>|</Span>
 
         <InitialRarityFilter Rarity="7"/>
+
+        <Span>|</Span>
+
+        <InitialRarityFilter Rarity="8"/>
     </Div>
 
     <Div Flex="Flex.Wrap.JustifyContent.Center.AlignContent.Center" Gap="Gap.Is2">
@@ -217,6 +228,11 @@
         else if (filter.KeyType == typeof(TacticsTypeFilter))
         {
             <TacticsTypeFilter @key="filter.Key" TacticType="filter.Parameter as TacticType" IsRemoveMode="true"/>
+        }
+        else if (filter.KeyType == typeof(SecretSkillTargetFilter))
+        {
+            <SecretSkillTargetFilter @key="filter.Key" SecretSkillTarget="@(filter.Parameter as string)"
+                                     IsRemoveMode="true"/>
         }
     }
 </Div>

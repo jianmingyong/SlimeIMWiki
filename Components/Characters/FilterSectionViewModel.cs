@@ -16,6 +16,8 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 {
     public ViewModelActivator Activator { get; } = new();
 
+    public CharacterListDisplayCategory DisplayCategory => _characterListDisplayService.DisplayCategory;
+
     public bool IsOrFilter
     {
         get => _characterListDisplayService.IsOrFilter;
