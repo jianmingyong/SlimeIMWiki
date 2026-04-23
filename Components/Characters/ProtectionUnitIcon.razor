@@ -26,10 +26,10 @@
                 _secondIcon = Unit.Attributes[0].Icon;
                 _secondIconText = Unit.Attributes[0].Name;
             }
-            else if (Unit.AttackType is not null)
+            else if (Unit.AttackTypes is not null)
             {
-                _secondIcon = Unit.AttackType.Icon;
-                _secondIconText = Unit.AttackType.Name;
+                _secondIcon = Unit.AttackTypes[0].Icon;
+                _secondIconText = Unit.AttackTypes[0].Name;
             }
         }
         else if (Unit.Attributes is not null && Unit.Attributes.Length > 0)
@@ -42,16 +42,22 @@
                 _secondIcon = Unit.Attributes[1].Icon;
                 _secondIconText = Unit.Attributes[1].Name;
             }
-            else if (Unit.AttackType is not null)
+            else if (Unit.AttackTypes is not null)
             {
-                _secondIcon = Unit.AttackType.Icon;
-                _secondIconText = Unit.AttackType.Name;
+                _secondIcon = Unit.AttackTypes[0].Icon;
+                _secondIconText = Unit.AttackTypes[0].Name;
             }
         }
-        else if (Unit.AttackType is not null)
+        else if (Unit.AttackTypes is not null)
         {
-            _firstIcon = Unit.AttackType.Icon;
-            _firstIconText = Unit.AttackType.Name;
+            _firstIcon = Unit.AttackTypes[0].Icon;
+            _firstIconText = Unit.AttackTypes[0].Name;
+
+            if (Unit.AttackTypes.Length >= 2)
+            {
+                _secondIcon = Unit.AttackTypes[1].Icon;
+                _secondIconText = Unit.AttackTypes[1].Name;
+            }
         }
 
         base.OnInitialized();
@@ -156,6 +162,22 @@
                         Style="z-index: 0"/>
         }
 
+        break;
+    }
+
+    case 7:
+    {
+        <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                    Source="image/rarity/starCharaL7_Epic_Alphabet.png"
+                    Style="z-index: 3"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                    Source="image/rarity/frameBlessM7_Epic.png"
+                    Style="z-index: 2"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                    Source="image/rarity/baseBlessM7_Epic.png"
+                    Style="z-index: 0"/>
         break;
     }
 }

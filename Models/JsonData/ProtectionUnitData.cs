@@ -10,7 +10,7 @@ public record ProtectionUnitData(
     bool HasAttributeUnbound,
     string[]? Forces,
     string[]? Attributes,
-    string? AttackType,
+    string[]? AttackTypes,
     int MaxHealth,
     int MaxAttack,
     int MaxDefense,

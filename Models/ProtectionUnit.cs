@@ -15,7 +15,7 @@ public record ProtectionUnit(
     bool HasAttributeUnbound,
     Force[]? Forces,
     IAttribute[]? Attributes,
-    IAttackType? AttackType,
+    IAttackType[]? AttackTypes,
     int MaxHealth,
     int MaxAttack,
     int MaxDefense,
@@ -50,7 +50,7 @@ public record ProtectionUnit(
     {
         get
         {
-            if (IsEx || IsAttributeUnbound)
+            if (InitialRarity == 5 && (IsEx || IsAttributeUnbound))
             {
                 return $"image/protection/characters/{Permalink}/6/{Permalink}_6_BlessInfo.png";
             }
@@ -71,7 +71,7 @@ public record ProtectionUnit(
             data.HasAttributeUnbound,
             data.Forces?.Select(s => service.ForceCache.Lookup(s).ValueOr(() => new Force(s, string.Empty, string.Empty))).ToArray(),
             data.Attributes?.Select(IAttribute (s) => service.ProtectionAttributeCache.Lookup(s).ValueOr(() => new ProtectionAttribute(s, string.Empty))).ToArray(),
-            data.AttackType is null ? null : service.ProtectionAttackTypeCache.Lookup(data.AttackType).ValueOr(() => new ProtectionAttackType(data.AttackType, string.Empty)),
+            data.AttackTypes?.Select(IAttackType (s) => service.ProtectionAttackTypeCache.Lookup(s).ValueOr(() => new ProtectionAttackType(s, string.Empty))).ToArray(),
             data.MaxHealth,
             data.MaxAttack,
             data.MaxDefense,

@@ -43,11 +43,11 @@
                 <Span Style="text-shadow: black 2px 2px">@(attribute.Name)</Span>
             }
 
-            @if (protectionUnit.AttackType is not null)
+            foreach (var attackType in protectionUnit.AttackTypes ?? [])
             {
-                <ImageProxy Width="Width.Em(2)" Source="@protectionUnit.AttackType.Icon"
-                            Text="@protectionUnit.AttackType.Name"/>
-                <Span Style="text-shadow: black 2px 2px">@(protectionUnit.AttackType.Name)</Span>
+                <ImageProxy Width="Width.Em(2)" Source="@attackType.Icon"
+                            Text="@attackType.Name"/>
+                <Span Style="text-shadow: black 2px 2px">@(attackType.Name)</Span>
             }
         }
 

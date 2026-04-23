@@ -14,7 +14,7 @@
             return unit switch
             {
                 BattleUnitData battleUnit => battleUnit.AttackType.Equals(AttackType.Name, StringComparison.OrdinalIgnoreCase),
-                ProtectionUnitData protectionUnit => protectionUnit.AttackType?.Equals(AttackType.Name, StringComparison.OrdinalIgnoreCase) ?? false,
+                ProtectionUnitData protectionUnit => protectionUnit.AttackTypes?.Any(s => s.Equals(AttackType.Name, StringComparison.OrdinalIgnoreCase)) ?? false,
                 var _ => false
             };
         });
