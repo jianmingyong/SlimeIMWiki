@@ -7,6 +7,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -18,10 +19,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Space Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Space Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Building a Base",
     "divine_protection_effect": "Increases M-ATK by 11%",
@@ -51,6 +52,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -62,10 +64,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Earth Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Earth Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Charitable Smile",
     "divine_protection_effect": "Increases P-ATK by 11%",
@@ -95,6 +97,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -106,10 +109,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Dark Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Dark Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Blooming Smile",
     "divine_protection_effect": "Increases P-ATK by 11%",
@@ -139,6 +142,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -150,10 +154,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Wind Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Wind Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Jewelcraft",
     "divine_protection_effect": "Increases M-ATK by 11%",
@@ -183,6 +187,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -194,10 +199,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Light Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Light Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Healthy Food Master",
     "divine_protection_effect": "Increases P-ATK by 11%",
@@ -227,6 +232,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -238,10 +244,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Fire Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Fire Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Forged Armor",
     "divine_protection_effect": "Increases P-ATK by 11%",
@@ -271,6 +277,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -282,10 +289,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection",
-      "Water Magic Device"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Water Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Peek Into the Future",
     "divine_protection_effect": "Increases M-ATK by 11%",
@@ -315,6 +322,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Light",
@@ -327,10 +335,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Happy Happy Happy",
     "divine_protection_effect": "Increases light ATK by 13%\nIncreases water ATK by 5%",
@@ -360,6 +368,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Space",
@@ -372,10 +381,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Wind Magic Device"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Wind Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Lab Results",
     "divine_protection_effect": "Increases space ATK by 13%\nIncreases wind ATK by 5%",
@@ -405,6 +414,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Wind",
@@ -417,10 +427,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Dark Magic Device"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Dark Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Guildmaster's Lead",
     "divine_protection_effect": "Increases wind ATK by 13%\nIncreases dark ATK by 5%",
@@ -450,6 +460,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Dark",
@@ -462,10 +473,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Falling Lightning",
     "divine_protection_effect": "Increases dark ATK by 13%\nIncreases space ATK by 5%",
@@ -495,6 +506,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Fire",
@@ -507,10 +519,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Earth Magic Device"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Earth Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Burning Invasion",
     "divine_protection_effect": "Increases fire ATK by 13%\nIncreases earth ATK by 5%",
@@ -540,6 +552,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Water",
@@ -552,10 +565,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Light Magic Device"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Light Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Tough Business",
     "divine_protection_effect": "Increases water ATK by 13%\nIncreases light ATK by 5%",
@@ -585,6 +598,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Earth",
@@ -597,10 +611,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Fire Magic Device"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Fire Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Sophisticated Armor",
     "divine_protection_effect": "Increases earth ATK by 13%\nIncreases fire ATK by 5%",
@@ -630,6 +644,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Water"
@@ -641,10 +656,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Terrifying Winds",
     "divine_protection_effect": "Increases water ATK by 13%",
@@ -674,6 +689,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Light",
@@ -686,10 +702,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Earth Magic Device"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Earth Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Prank Illusion",
     "divine_protection_effect": "Increases light ATK by 16%\nIncreases earth ATK by 8%",
@@ -719,6 +735,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Water",
@@ -731,10 +748,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Space Magic Device"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Space Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Eternal Dragon Empress",
     "divine_protection_effect": "Increases water ATK by 16%\nIncreases space ATK by 8%",
@@ -764,6 +781,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Space",
@@ -776,10 +794,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Wind Magic Device"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Wind Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Swimming Calamity",
     "divine_protection_effect": "Increases space ATK by 16%\nIncreases wind ATK by 8%",
@@ -809,6 +827,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Dark",
@@ -821,10 +840,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Fire Magic Device"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Fire Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Unending Thirst",
     "divine_protection_effect": "Increases dark ATK by 16%\nIncreases fire ATK by 8%",
@@ -854,6 +873,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Earth",
@@ -866,10 +886,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Water Magic Device"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Water Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Spirit Engineering Crystal",
     "divine_protection_effect": "Increases earth ATK by 16%\nIncreases water ATK by 8%",
@@ -899,6 +919,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Wind",
@@ -911,10 +932,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Dark Magic Device"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Dark Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Ambition of the Four True Dragons",
     "divine_protection_effect": "Increases wind ATK by 16%\nIncreases dark ATK by 8%",
@@ -944,6 +965,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Fire",
@@ -956,10 +978,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Light Magic Device"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Light Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Burning Siege",
     "divine_protection_effect": "Increases fire ATK by 16%\nIncreases light ATK by 8%",
@@ -989,6 +1011,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Dark",
@@ -1001,10 +1024,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Fire Magic Device"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Fire Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-10-28",
     "divine_protection_name": "Unconcealed Power",
     "divine_protection_effect": "Increases dark ATK by 16%\nIncreases fire ATK by 8%",
@@ -1034,6 +1057,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Wind",
@@ -1046,10 +1070,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Water Magic Device"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Water Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-11-30",
     "divine_protection_name": "Training of the Maid",
     "divine_protection_effect": "Increases wind ATK by 16%\nIncreases water ATK by 8%",
@@ -1079,6 +1103,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Fire",
@@ -1091,10 +1116,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Wind Magic Device"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Wind Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2021-12-31",
     "divine_protection_name": "Hour of Prosperity",
     "divine_protection_effect": "Increases fire ATK by 16%\nIncreases wind ATK by 8%",
@@ -1124,6 +1149,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Light",
@@ -1136,10 +1162,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Earth Magic Device"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Earth Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-01-28",
     "divine_protection_name": "Feelings Concealed",
     "divine_protection_effect": "Increases light ATK by 16%\nIncreases earth ATK by 8%",
@@ -1169,6 +1195,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Water",
@@ -1181,10 +1208,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Light Magic Device"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Light Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-02-28",
     "divine_protection_name": "Just Path",
     "divine_protection_effect": "Increases water ATK by 16%\nIncreases light ATK by 8%",
@@ -1214,6 +1241,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Earth",
@@ -1226,10 +1254,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Fire Magic Device"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Fire Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-03-30",
     "divine_protection_name": "Steadfast Swordsman",
     "divine_protection_effect": "Increases earth ATK by 16%\nIncreases fire ATK by 8%",
@@ -1259,6 +1287,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Space",
@@ -1271,10 +1300,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Dark Magic Device"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Dark Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-04-25",
     "divine_protection_name": "Supreme Flight",
     "divine_protection_effect": "Increases space ATK by 16%\nIncreases dark ATK by 8%",
@@ -1304,6 +1333,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Dark",
@@ -1316,10 +1346,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Space Magic Device"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Space Magic Device",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-05-10",
     "divine_protection_name": "Demon Lord's Resolve",
     "divine_protection_effect": "Increases dark ATK by 16%\nIncreases space ATK by 8%",
@@ -1349,6 +1379,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Light"
@@ -1362,10 +1393,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-05-31",
     "divine_protection_name": "Ceremonial Light",
     "divine_protection_effect": "Increases light ATK by 12%\nIncreases P-ATK by 10%",
@@ -1395,6 +1426,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Wind"
@@ -1408,10 +1440,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-06-30",
     "divine_protection_name": "Scare 'Em Good",
     "divine_protection_effect": "Increases wind ATK by 12%\nIncreases M-ATK by 10%",
@@ -1441,6 +1473,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Water"
@@ -1454,10 +1487,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-07-29",
     "divine_protection_name": "Wild Summer Break",
     "divine_protection_effect": "Increases water ATK by 12%\nIncreases M-ATK by 10%",
@@ -1487,6 +1520,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Space"
@@ -1500,10 +1534,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-08-30",
     "divine_protection_name": "Joyous Banquet",
     "divine_protection_effect": "Increases space ATK by 12%\nIncreases P-ATK by 10%",
@@ -1533,6 +1567,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Earth"
@@ -1546,10 +1581,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-09-30",
     "divine_protection_name": "Spell Master",
     "divine_protection_effect": "Increases Earth ATK by 12%\nIncreases M-ATK by 10%",
@@ -1579,6 +1614,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Dark"
@@ -1592,10 +1628,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-10-28",
     "divine_protection_name": "Destructive Storm",
     "divine_protection_effect": "Increases Dark ATK by 12%\nIncreases M-ATK by 10%",
@@ -1625,6 +1661,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Fire"
@@ -1638,10 +1675,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-11-25",
     "divine_protection_name": "Pomp Purple Crown",
     "divine_protection_effect": "Increases fire ATK by 12%\nIncreases P-ATK by 10%",
@@ -1671,6 +1708,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Light"
@@ -1684,10 +1722,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2022-12-29",
     "divine_protection_name": "Moonlit Banquet",
     "divine_protection_effect": "Increases Light ATK by 12%\nIncreases M-ATK by 10%",
@@ -1717,6 +1755,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": [
       "Space"
@@ -1730,10 +1769,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-01-31",
     "divine_protection_name": "Thrilling Cooking",
     "divine_protection_effect": "Increases Space ATK by 12%\nIncreases M-ATK by 10%",
@@ -1763,6 +1802,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Fount of Wisdom",
       "Flashback Beatdown Emissary"
@@ -1777,10 +1817,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-02-28",
     "divine_protection_name": "Effortless Erudition",
     "divine_protection_effect": "Increases damage done by Fount of Wisdom Force characters to water attribute enemies by 30%; increases Shizu's Will and Fount of Wisdom Force characters' ATK by 12%",
@@ -1806,10 +1846,11 @@
     "name": "Diablo",
     "title": "Fanatical Student",
     "permalink": "DiabloSchool2023",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Fount of Wisdom",
       "Primal Demon"
@@ -1824,10 +1865,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-02-28",
     "divine_protection_name": "Omniscient Grasp",
     "divine_protection_effect": "Increases damage done by Fount of Wisdom Force characters to water attribute enemies by 60%; increases Primal Demon and Fount of Wisdom Force characters' ATK by 20%",
@@ -1857,6 +1898,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Octagram Bazaar"
     ],
@@ -1868,9 +1910,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": null,
+    "suited_facility_two_rate": 100,
     "release_date": "2023-03-29",
     "divine_protection_name": "Octagram Assembly",
     "divine_protection_effect": "Increases all allies' ATK and DEF by 15%; further increases Octagram Bazaar Force characters' ATK and DEF by 15%",
@@ -1900,6 +1943,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "World of Fantasy",
       "Flashback Beatdown Emissary"
@@ -1914,10 +1958,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-03-29",
     "divine_protection_name": "Soothing Shadows",
     "divine_protection_effect": "Increases damage done by World of Fantasy Force characters to fire attribute enemies by 30%; increases Ogre's Pride and World of Fantasy Force characters' ATK by 12%",
@@ -1943,10 +1987,11 @@
     "name": "Frey",
     "title": "Angelic Entertainer",
     "permalink": "FreyAmusementPark",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "World of Fantasy",
       "Ten Great Demon Lords"
@@ -1961,10 +2006,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-03-29",
     "divine_protection_name": "Heavenly Leap",
     "divine_protection_effect": "Increases damage done by World of Fantasy Force characters to fire attribute enemies by 60%; increases Ten Great Demon Lords and World of Fantasy Force characters' ATK by 20%",
@@ -1994,6 +2039,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Warrior's Mind",
       "Flashback Beatdown Emissary"
@@ -2008,10 +2054,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-04-28",
     "divine_protection_name": "Living Day-to-Day",
     "divine_protection_effect": "Increases damage done by Warrior's Mind Force characters to space attribute enemies by 30%; increases Octagram Demon Lord and Warrior's Mind Force characters' ATK by 12%",
@@ -2037,10 +2083,11 @@
     "name": "Velzard",
     "title": "White Ice Queen",
     "permalink": "WerzardHA2023",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Warrior's Mind"
     ],
@@ -2056,10 +2103,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-04-28",
     "divine_protection_name": "Dragon Devotion Unbending",
     "divine_protection_effect": "Increases damage done by physical characters to space attribute enemies by 50%; increases Warrior's Mind Force characters' ATK and DEF by 20%",
@@ -2089,6 +2136,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Goddess of Destiny",
       "Flashback Beatdown Emissary"
@@ -2103,10 +2151,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-05-31",
     "divine_protection_name": "Blessed Charmblossom",
     "divine_protection_effect": "Increase damage done by Goddess of Destiny Force characters to dark attribute enemies by 30%; increases Wielder of Magic and Goddess of Destiny Force characters' ATK by 12%",
@@ -2132,10 +2180,11 @@
     "name": "Myulan",
     "title": "Bewitching Bride",
     "permalink": "MjurranWedding2023",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Goddess of Destiny",
       "Wholehearted Devotion"
@@ -2150,10 +2199,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-05-31",
     "divine_protection_name": "Honored Bouquet",
     "divine_protection_effect": "Increase damage done by Goddess of Destiny Force characters to dark attribute enemies by 60%; increases Wholehearted Devotion and Goddess of Destiny Force characters' ATK and DEF by 20%",
@@ -2183,6 +2232,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Adventurer",
       "Ogre's Pride",
@@ -2198,10 +2248,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-06-30",
     "divine_protection_name": "Luminous Grace",
     "divine_protection_effect": "Increases damage done by Adventurer Force characters to earth attribute enemies by 30%; increases Ogre's Pride and Adventurer Force characters' ATK by 12%",
@@ -2227,10 +2277,11 @@
     "name": "Rimuru Tempest",
     "title": "Crimson Demon Chancellor",
     "permalink": "RimuruMegumin",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Adventurer",
       "Shizu's Will"
@@ -2245,10 +2296,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-06-30",
     "divine_protection_name": "Otherworld Hocus Explosus",
     "divine_protection_effect": "Increases damage done by Adventurer Force characters to earth attribute enemies by 60%; increases Shizu's Will and Adventurer Force characters' ATK and DEF by 20%",
@@ -2278,6 +2329,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Summer Memories",
       "Flashback Beatdown Emissary"
@@ -2292,10 +2344,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-07-28",
     "divine_protection_name": "Wave Rider",
     "divine_protection_effect": "Increases damage done by Summer Memories Force characters to light attribute enemies by 30%; increases Shizu's Will and Summer Memories Force characters' ATK by 12%",
@@ -2321,10 +2373,11 @@
     "name": "Treyni",
     "title": "Summer Lotus Bliss",
     "permalink": "TreyniSwimsuit2023",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Summer Memories",
       "Commander"
@@ -2339,10 +2392,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-07-28",
     "divine_protection_name": "Summer Odyssey",
     "divine_protection_effect": "Increases damage done by Summer Memories Force characters to light attribute enemies by 60%; increases Commander and Summer Memories Force characters' ATK and DEF by 20%",
@@ -2372,6 +2425,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Otherworld Legend",
       "Flashback Beatdown Emissary"
@@ -2386,10 +2440,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-08-30",
     "divine_protection_name": "Snake Eye Glare",
     "divine_protection_effect": "Increases damage done by Otherworld Legend Force characters to water attribute enemies by 30%; increases Lycanthrope's Pride and Otherworld Legend Force characters' ATK by 12%",
@@ -2415,10 +2469,11 @@
     "name": "Velzard",
     "title": "Trickster Ice Dragon",
     "permalink": "WerzardNordic",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Otherworld Legend",
       "Dragon Haki"
@@ -2433,10 +2488,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type EX",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-08-30",
     "divine_protection_name": "Shrewd Operator",
     "divine_protection_effect": "Increases damage done by Otherworld Legend Force characters to water attribute enemies by 60%; increases Dragon Haki and Otherworld Legend Force characters' ATK and DEF by 20%",
@@ -2466,6 +2521,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Wielder of Magic",
       "Flashback Beatdown Emissary"
@@ -2480,10 +2536,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-09-29",
     "divine_protection_name": "Halloween Stack",
     "divine_protection_effect": "Increases damage done by Wielder of Magic Force characters to fire attribute enemies by 30%; increases Tempest Elite and Wielder of Magic Force characters' ATK by 12%",
@@ -2509,10 +2565,11 @@
     "name": "Milim Nava",
     "title": "Talisman Spiritstealer",
     "permalink": "MilimHalloween2023",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Wielder of Magic",
       "Octagram Demon Lord"
@@ -2527,10 +2584,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-09-29",
     "divine_protection_name": "Dragoncrest Talisman",
     "divine_protection_effect": "Increases damage done by Wielder of Magic Force characters to fire attribute enemies by 60%; increases Octagram Demon Lord and Wielder of Magic Force characters' ATK and DEF by 20%",
@@ -2560,6 +2617,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Visions of Coleus",
       "Flashback Beatdown Emissary"
@@ -2574,10 +2632,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-10-31",
     "divine_protection_name": "Arcane Thread Fetters",
     "divine_protection_effect": "Increases damage done by Visions of Coleus Force characters to wind attribute enemies by 30%; increases Shizu's will and Visions of Coleus Force characters' ATK by 12%",
@@ -2603,10 +2661,11 @@
     "name": "Luminus Valentine",
     "title": "Night Rose Queen",
     "permalink": "Luminous2Anniv",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Visions of Coleus"
     ],
@@ -2622,10 +2681,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-10-31",
     "divine_protection_name": "Night Sky Thorn",
     "divine_protection_effect": "Increases damage done by Visions of Coleus Force characters to wind attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -2655,6 +2714,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Pretty Sparkle",
       "Shizu's Will",
@@ -2670,10 +2730,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-11-29",
     "divine_protection_name": "Pure Excitement",
     "divine_protection_effect": "Increases damage done by Pretty Sparkle Force characters to Space attribute enemies by 30%; increases Shizu's Will and Pretty Sparkle Force characters' ATK by 12%",
@@ -2699,10 +2759,11 @@
     "name": "Rimuru Tempest",
     "title": "Chancellor Idol",
     "permalink": "RimuruImasml",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Pretty Sparkle"
     ],
@@ -2718,10 +2779,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type EX",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-11-29",
     "divine_protection_name": "Tempest Headliner",
     "divine_protection_effect": "Increases damage done by Pretty Sparkle Force characters to Space attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, decreases the skill cost by 10 for vanguard allies (Cannot go below each skill's initial cost)",
@@ -2751,6 +2812,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "New Year's Blessing",
       "Flashback Beatdown Emissary"
@@ -2765,10 +2827,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-12-29",
     "divine_protection_name": "Red Ogrelike",
     "divine_protection_effect": "Increases damage done by New Year's Blessing Force characters to dark attribute enemies by 30%; increases Ogre's Pride and New Year's Blessing Force characters' ATK by 12%",
@@ -2794,10 +2856,11 @@
     "name": "Shion",
     "title": "Purple Ogre Fox Spirit",
     "permalink": "Shion1kuji2024",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "New Year's Blessing"
     ],
@@ -2813,10 +2876,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2023-12-29",
     "divine_protection_name": "Mystical Maneuver",
     "divine_protection_effect": "Increases damage done by New Year's Blessing Force characters to dark attribute enemies by 60%; increases physical characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -2846,6 +2909,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Stern of Spirit",
       "Tempest Elite",
@@ -2861,10 +2925,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-01-26",
     "divine_protection_name": "Demonstrating Wisdom",
     "divine_protection_effect": "Increases damage done by Stern of Spirit Force characters to light attribute enemies by 30%; increases Tempest Elite and Stern of Spirit Force characters' ATK by 12%",
@@ -2890,10 +2954,11 @@
     "name": "Rimuru Tempest",
     "title": "Chancellor of the Dead",
     "permalink": "RimuruAinz",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Stern of Spirit"
     ],
@@ -2909,10 +2974,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-01-26",
     "divine_protection_name": "Evil in the Underworld",
     "divine_protection_effect": "Increases damage done by Stern of Spirit Force characters to light attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onwards, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -2942,6 +3007,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tempest Elite",
       "Flashback Beatdown Emissary"
@@ -2956,10 +3022,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-02-29",
     "divine_protection_name": "Call to Action",
     "divine_protection_effect": "Increases damage done by Tempest Elite Force characters to earth attribute enemies by 30%; increases Wholehearted Devotion and Tempest Elite Force characters' ATK by 12%",
@@ -2985,10 +3051,11 @@
     "name": "Treyni",
     "title": "Great Forest's Secretary",
     "permalink": "TreyniCoschange",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tempest Elite"
     ],
@@ -3004,10 +3071,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-02-29",
     "divine_protection_name": "Nurtured Abundance",
     "divine_protection_effect": "Increases damage done by Tempest Elite Force characters to earth attribute enemies by 60%; increases physical characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -3037,6 +3104,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Primal Demon",
       "Flashback Beatdown Emissary"
@@ -3051,10 +3119,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-03-29",
     "divine_protection_name": "Order Execution",
     "divine_protection_effect": "Increases damage done by Primal Demon Force characters to wind attribute enemies by 30%; increases Stern of Spirit and Primal Demon Force characters' ATK by 12%",
@@ -3080,10 +3148,11 @@
     "name": "Violet",
     "title": "Controlling Purple Demon",
     "permalink": "VioletGothic",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Primal Demon"
     ],
@@ -3099,10 +3168,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-03-29",
     "divine_protection_name": "Cruel Banquet",
     "divine_protection_effect": "Increases damage done by Primal Demon Force characters to wind attribute enemies by 60%; increases physical characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onwards, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -3132,6 +3201,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Exalted Champions",
       "Flashback Beatdown Emissary"
@@ -3146,10 +3216,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-04-26",
     "divine_protection_name": "Binding Time",
     "divine_protection_effect": "Increases damage done by Exalted Champions Force characters to water attribute enemies by 30%; increases Schemer and Exalted Champions Force characters' ATK by 12%",
@@ -3175,10 +3245,11 @@
     "name": "Velzard",
     "title": "Majestic Mythical Beast",
     "permalink": "WerzardHA2024",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Exalted Champions"
     ],
@@ -3194,10 +3265,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-04-26",
     "divine_protection_name": "Blooming Bouquet",
     "divine_protection_effect": "Increases damage done by Exalted Champions Force characters to water attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -3227,6 +3298,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Commander",
       "Flashback Beatdown Emissary"
@@ -3241,10 +3313,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-05-29",
     "divine_protection_name": "All-Out Onslaught",
     "divine_protection_effect": "Increases damage done by Commander Force characters to light attribute enemies by 30%; increases Tempest Elite and Commander Force characters' ATK by 12%",
@@ -3270,10 +3342,11 @@
     "name": "Renard Jester",
     "title": "Noble of Light",
     "permalink": "LeonardDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Commander"
     ],
@@ -3289,10 +3362,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-05-29",
     "divine_protection_name": "Holy Sorcerer's True Power",
     "divine_protection_effect": "Increases damage done by Commander Force characters to light attribute enemies by 60%; increases physical characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -3322,6 +3395,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Determination to Prosper",
       "Flashback Beatdown Emissary"
@@ -3336,10 +3410,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-06-27",
     "divine_protection_name": "Paladin of Water",
     "divine_protection_effect": "Increases damage done by Determination to Prosper Force characters to space attribute enemies by 30%; increase Wielder of Magic and Determination to Prosper Force characters' ATK by 12%",
@@ -3365,10 +3439,11 @@
     "name": "Maribel Rozzo",
     "title": "Plotting Heiress",
     "permalink": "MariabellDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Determination to Prosper"
     ],
@@ -3384,10 +3459,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-06-27",
     "divine_protection_name": "Greed",
     "divine_protection_effect": "Increases damage done by Determination to Prosper Force characters to space attribute enemies by 60%; increase magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, decreases the skill cost by 10 for all allies including rearguard (Cannot go below each skill's initial cost)",
@@ -3417,6 +3492,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Flashback Beatdown Emissary"
     ],
@@ -3432,10 +3508,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-07-29",
     "divine_protection_name": "Pining of the Heart",
     "divine_protection_effect": "Increases damage done by magic characters to earth attribute enemies by 20%; increases fire characters' ATK by 10%",
@@ -3461,10 +3537,11 @@
     "name": "Benimaru",
     "title": "Heaven Soaring Oni",
     "permalink": "BenimaruTengu",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Ogre's Pride"
     ],
@@ -3480,10 +3557,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-07-29",
     "divine_protection_name": "Commanding Black Flame",
     "divine_protection_effect": "Increases damage done by Orge's Pride Force characters to earth attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -3513,6 +3590,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Protector of Peace",
       "Flashback Beatdown Emissary"
@@ -3527,10 +3605,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-08-30",
     "divine_protection_name": "Queen's Descent",
     "divine_protection_effect": "Increases damage done by Protector of Peace Force characters to fire attribute enemies by 30%; increases Determination to Prosper and Protector of Peace Force characters' ATK by 12%",
@@ -3556,10 +3634,11 @@
     "name": "Masayuki Honjo",
     "title": "The Lightspeed Hero",
     "permalink": "MasayukiDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Protector of Peace"
     ],
@@ -3575,10 +3654,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-08-30",
     "divine_protection_name": "Chosen One",
     "divine_protection_effect": "Increases damage done by Protector of Peace Force characters to fire attribute enemies by 60%; increases physical characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -3608,6 +3687,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Antagonist",
       "Flashback Beatdown Emissary"
@@ -3622,10 +3702,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-09-27",
     "divine_protection_name": "Mirror Queen's Respite",
     "divine_protection_effect": "Increases damage done by Antagonist Force characters to dark attribute enemies by 30%; increases Antagonist Force characters' ATK by 12%",
@@ -3651,10 +3731,11 @@
     "name": "Emils",
     "title": "Mad City Lord",
     "permalink": "RimuruAnotherRe",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": true,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Antagonist",
       "Exalted Champions"
@@ -3671,10 +3752,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-09-27",
     "divine_protection_name": "Resplendent Soul",
     "divine_protection_effect": "Increases damage done by Antagonist and Exalted Champions Force characters to dark attribute enemies by 60%; increases magic characters' ATK and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -3700,10 +3781,11 @@
     "name": "Guy Crimson",
     "title": "Blazing Red Octagram",
     "permalink": "Guy3Anniv",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Octagram Demon Lord"
     ],
@@ -3719,10 +3801,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-10-17",
     "divine_protection_name": "Crimson Star Aura",
     "divine_protection_effect": "Increases damage done by Octogram Demon Lord for characters to light attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -3752,6 +3834,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Divine General",
       "Flashback Beatdown Emissary"
@@ -3766,10 +3849,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-10-28",
     "divine_protection_name": "Calm Forge Flame",
     "divine_protection_effect": "Increases damage done by Divine General Force characters to wind attribute enemies by 30%; increases Divine General Force characters' ATK by 12%",
@@ -3795,10 +3878,11 @@
     "name": "Elmesia El Ru Thalion",
     "title": "Avatar of Seas",
     "permalink": "Elmesia3Anniv",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Divine General"
     ],
@@ -3814,10 +3898,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-10-28",
     "divine_protection_name": "Maelstrom Spell",
     "divine_protection_effect": "Increases damage done by Divine General Force characters to wind attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -3847,6 +3931,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Festive Memories",
       "Flashback Beatdown Emissary"
@@ -3861,10 +3946,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-11-27",
     "divine_protection_name": "Joyous Gift",
     "divine_protection_effect": "Increases damage done by Festive Memories Force characters to earth attribute enemies by 30%; increases Festive Memories Force characters' ATK by 12%",
@@ -3890,10 +3975,11 @@
     "name": "Albis",
     "title": "Alluring Love",
     "permalink": "AlbisXmas2024",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Festive Memories"
     ],
@@ -3909,10 +3995,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type EX",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-11-27",
     "divine_protection_name": "Enticing Snake Eye",
     "divine_protection_effect": "Increases damage done by Festive Memories Force characters to earth attribute enemies by 100%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, decreases the skill cost by 10 for all allies including rearguard (Cannot go below each skill's initial cost)",
@@ -3942,6 +4028,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Flashback Beatdown Emissary"
     ],
@@ -3957,10 +4044,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-12-20",
     "divine_protection_name": "Magic-Sensing Milim Eye",
     "divine_protection_effect": "Increases damage done by magic characters to dark attribute enemies by 20%; increases magic characters' ATK by 10%",
@@ -3986,10 +4073,11 @@
     "name": "Himmel",
     "title": "The Hero",
     "permalink": "HimmelDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Adventurer"
     ],
@@ -4005,10 +4093,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2024-12-20",
     "divine_protection_name": "Demon King Vanquisher",
     "divine_protection_effect": "Increases damage done by Adventurer Force characters to dark attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -4038,6 +4126,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tournament Stalwart",
       "Flashback Beatdown Emissary"
@@ -4052,10 +4141,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-01-20",
     "divine_protection_name": "Faith in Bravery",
     "divine_protection_effect": "Increases damage done by Tournament Stalwart Force characters to water attribute enemies by 30%; increases Tournament Stalwart Force characters' ATK by 12%",
@@ -4081,10 +4170,11 @@
     "name": "Veldora Tempest",
     "title": "Wild Storm Dragon",
     "permalink": "VeldoraCreator01",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tournament Stalwart"
     ],
@@ -4100,10 +4190,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-01-20",
     "divine_protection_name": "Storm of Fury",
     "divine_protection_effect": "Increases damage done by Tournament Stalwart Force characters to water attribute enemies by 100%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -4133,6 +4223,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Sparkle of Youth",
       "Flashback Beatdown Emissary"
@@ -4147,10 +4238,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-02-28",
     "divine_protection_name": "Fervent Leader",
     "divine_protection_effect": "Increases damage done by Sparkle of Youth Force characters to fire attribute enemies by 30%; increases Sparkle of Youth Force characters' ATK by 12%",
@@ -4176,10 +4267,11 @@
     "name": "Masayuki Honjo",
     "title": "Lightspeed Exchange Student",
     "permalink": "MasayukiSchool2025",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Sparkle of Youth"
     ],
@@ -4195,10 +4287,10 @@
     "max_output": 220,
     "character_type": "Defense Growth Type EX",
     "tactics_type": "Defense",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-02-28",
     "divine_protection_name": "Revolutionary Hero",
     "divine_protection_effect": "Increases damage done by Sparkle of Youth Force characters to fire attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, decreases the skill cost by 10 for all allies including rearguard (Cannot go below each skill's initial cost)",
@@ -4228,6 +4320,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Warrior's Mind",
       "Flashback Beatdown Emissary"
@@ -4242,10 +4335,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-03-28",
     "divine_protection_name": "Homemade Comfort Chips",
     "divine_protection_effect": "Increases damage done by Warrior's Mind Force characters to light attribute enemies by 30%; increases Warrior's Mind Force characters' ATK by 12%",
@@ -4271,10 +4364,11 @@
     "name": "Shuna",
     "title": "Oracle Commander",
     "permalink": "ShunaMilitary",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Warrior's Mind"
     ],
@@ -4290,10 +4384,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-03-28",
     "divine_protection_name": "Luminous Lead",
     "divine_protection_effect": "Increases damage done by Warrior's Mind Force characters to light attribute enemies by 100%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -4323,6 +4417,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Spirit Master",
       "Flashback Beatdown Emissary"
@@ -4337,10 +4432,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-04-25",
     "divine_protection_name": "Spirit Trial",
     "divine_protection_effect": "Increases damage done by Spirit Master Force characters to space attribute enemies by 30%; increases Spirit Master Force characters' ATK by 12%",
@@ -4366,10 +4461,11 @@
     "name": "Masked Hero",
     "title": "Veiled Armaments",
     "permalink": "MaskedHeroHA2025",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Spirit Master",
       "Heart of a Hero"
@@ -4386,10 +4482,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-04-25",
     "divine_protection_name": "Fantastical Recess",
     "divine_protection_effect": "Increases damage done by Spirit Master and Heart of a Hero Force characters to space attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -4419,6 +4515,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Schemer",
       "Flashback Beatdown Emissary"
@@ -4433,10 +4530,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-05-30",
     "divine_protection_name": "Sleuth's Honor",
     "divine_protection_effect": "Increases damage done by Schemer Force characters to wind attribute enemies by 30%; increases Schemer Force characters' ATK by 12%",
@@ -4462,10 +4559,11 @@
     "name": "Souei",
     "title": "Azure Moon Phantom",
     "permalink": "SoeiPhantom",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Schemer"
     ],
@@ -4481,10 +4579,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-05-30",
     "divine_protection_name": "Shadow Infiltration",
     "divine_protection_effect": "Increases damage done by Schemer Force characters to wind attribute enemies by 100%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -4514,6 +4612,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "World of Fantasy",
       "Flashback Beatdown Emissary"
@@ -4528,10 +4627,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-06-27",
     "divine_protection_name": "Fang Blade",
     "divine_protection_effect": "Increases damage done by World of Fantasy Force characters to earth attribute enemies by 30%; increases World of Fantasy Force characters' ATK by 12%",
@@ -4557,10 +4656,11 @@
     "name": "Rimuru Tempest",
     "title": "Enforcer of Justice",
     "permalink": "RimuruTales",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "World of Fantasy"
     ],
@@ -4576,10 +4676,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-06-27",
     "divine_protection_name": "Azure Edge",
     "divine_protection_effect": "Increases damage done by World of Fantasy Force characters to earth attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -4609,6 +4709,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Summer Memories",
       "Flashback Beatdown Emissary"
@@ -4623,10 +4724,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-07-30",
     "divine_protection_name": "Endless Summer",
     "divine_protection_effect": "Increases damage done by Summer Memories Force characters to light attribute enemies by 30%; increases Summer Memories Force characters' ATK by 12%",
@@ -4652,10 +4753,11 @@
     "name": "Guy Crimson",
     "title": "Red Surf King",
     "permalink": "GuySwimsuit2025",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Summer Memories"
     ],
@@ -4671,10 +4773,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Light Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Light Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-07-30",
     "divine_protection_name": "Scarlet Blaze",
     "divine_protection_effect": "Increases damage done by Summer Memories Force characters to light attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -4704,6 +4806,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Dungeon Crawler",
       "Flashback Beatdown Emissary"
@@ -4718,10 +4821,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-08-29",
     "divine_protection_name": "Artel Assist",
     "divine_protection_effect": "Increases damage done by Dungeon Crawler Force characters to water attribute enemies by 30%; increases Dungeon Crawler Force characters' ATK by 12%",
@@ -4747,10 +4850,11 @@
     "name": "Hestia",
     "title": "Goddess of the Hearth",
     "permalink": "HestiaDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Dungeon Crawler",
       "Otherworld Legend"
@@ -4767,10 +4871,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-08-29",
     "divine_protection_name": "Protective Fire",
     "divine_protection_effect": "Increases damage done by Dungeon Crawler and Otherworld Legend Force characters to water attribute enemies by 100%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -4800,6 +4904,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Scourge Wielder",
       "Flashback Beatdown Emissary"
@@ -4815,10 +4920,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-09-29",
     "divine_protection_name": "Charming Mask",
     "divine_protection_effect": "Increases damage done by Scourge Wielder Force characters to light attribute and dark attribute enemies by 30%; increases Scourge Wielder Force characters' ATK by 12%",
@@ -4844,10 +4949,11 @@
     "name": "Elmesia El Ru Thalion",
     "title": "Key Sovereign",
     "permalink": "ElmesiaDevil",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Scourge Wielder"
     ],
@@ -4864,10 +4970,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Dark Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Dark Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-09-29",
     "divine_protection_name": "Unbinding Blessing",
     "divine_protection_effect": "Increases damage done by Scourge Wielder Force characters to light attribute enemies by 100%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -4897,6 +5003,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Dragon Haki",
       "Flashback Beatdown Emissary"
@@ -4911,10 +5018,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-10-31",
     "divine_protection_name": "Faithful Aid",
     "divine_protection_effect": "Increases damage done by Dragon Haki Force characters to fire attribute enemies by 30%; increases Dragon Haki Force characters' ATK by 12%",
@@ -4940,10 +5047,11 @@
     "name": "Veldora Tempest",
     "title": "Oathbound Storm Dragon",
     "permalink": "Veldora4Anniv",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Dragon Haki",
       "Exalted Champions"
@@ -4960,10 +5068,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-10-31",
     "divine_protection_name": "Guiding Alliance",
     "divine_protection_effect": "Increases damage done by Dragon Haki and Exalted Champions Force characters to fire attribute enemies by 110%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -4993,6 +5101,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Festive Memories",
       "Flashback Beatdown Emissary"
@@ -5007,10 +5116,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-11-28",
     "divine_protection_name": "Divine Howl",
     "divine_protection_effect": "Increase damage done by Festive Memories Force characters to space attribute enemies by 30%; increases Festive Memories Force characters' ATK by 12%",
@@ -5036,10 +5145,11 @@
     "name": "Diablo",
     "title": "Umbral Wolf",
     "permalink": "DiabloXmas2025",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Festive Memories"
     ],
@@ -5055,10 +5165,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Space Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Space Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-11-28",
     "divine_protection_name": "Mark of Affection",
     "divine_protection_effect": "Increases damage done by Festive Memories Force characters to space attribute enemies by 110%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -5088,6 +5198,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Assault Team",
       "Dungeon Crawler",
@@ -5104,10 +5215,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-12-19",
     "divine_protection_name": "Wind's Guidance",
     "divine_protection_effect": "Increases damage done by Assault Team and Dungeon Crawler Force characters to wind and dark attribute enemies by 30%; increases Assault Team and Dungeon Crawler Force characters' ATK by 12%",
@@ -5133,10 +5244,11 @@
     "name": "Rimuru Tempest",
     "title": "Azure-Winged Fairy",
     "permalink": "RaphaelAsuna",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Assault Team",
       "Dungeon Crawler"
@@ -5154,10 +5266,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Charge",
-    "suited_facilities": [
-      "Wind Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Wind Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2025-12-19",
     "divine_protection_name": "Heavenly Insight",
     "divine_protection_effect": "Increases damage done by Assault Team and Dungeon Crawler Force characters to wind and dark attribute enemies by 110%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onward, increases skill cost limit by 50 until the end of battle (Max: 999)",
@@ -5187,6 +5299,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Flashback Beatdown Emissary"
     ],
@@ -5202,10 +5315,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-01-27",
     "divine_protection_name": "Shadowy Twilight Pathway",
     "divine_protection_effect": "Increases damage done by physical characters to earth attribute enemies by 20%; increases physical characters' ATK by 10%",
@@ -5231,10 +5344,11 @@
     "name": "Shion",
     "title": "Purple Ogre of Repose",
     "permalink": "ShionMovieRevival",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Ogre's Pride",
       "Schemer"
@@ -5251,10 +5365,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Earth Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Earth Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-01-27",
     "divine_protection_name": "Sworn Friendship Staff",
     "divine_protection_effect": "Increases damage done by Orge's Pride and Schemer Force characters to earth attribute enemies by 110%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onwards, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -5284,6 +5398,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tears of the Azure Sea",
       "Fount of Wisdom",
@@ -5301,10 +5416,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-02-27",
     "divine_protection_name": "Cool Breeze Swordsmanship",
     "divine_protection_effect": "Increases damage done by Tears of the Azure Sea and Fount of Wisdom Force characters to fire attribute enemies by 30%; increases Tears of the Azure Sea and Fount of Wisdom Force characters' ATK by 12%",
@@ -5330,10 +5445,11 @@
     "name": "Yura",
     "title": "Water Dragon Priestess",
     "permalink": "YuraDefault",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Tears of the Azure Sea",
       "Fount of Wisdom"
@@ -5350,10 +5466,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Fire Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Fire Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-02-27",
     "divine_protection_name": "Azure Sea's Blessing",
     "divine_protection_effect": "Increases damage done by Tears of the Azure Seas and Fount of Wisdom Force characters to fire attribute enemies by 110%; increases magic characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onwards, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -5383,6 +5499,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": null,
@@ -5392,9 +5509,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Neutral",
-    "suited_facilities": [
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": null,
+    "suited_facility_two_rate": 100,
     "release_date": "2026-03-13",
     "divine_protection_name": "Timeless Summer Insight",
     "divine_protection_effect": "Increases all allies' ATK by 20%; increases DEF by 10%",
@@ -5424,6 +5542,7 @@
     "is_ex": false,
     "is_attribute_unbound": false,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Heart of a Hero",
       "Stern of Spirit",
@@ -5439,10 +5558,10 @@
     "max_output": 220,
     "character_type": "Balance Growth Type",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-03-27",
     "divine_protection_name": "Chancellor's Crunch Call",
     "divine_protection_effect": "Increases damage done by Heart of a Hero and Stern of Spirit Force characters to water attribute enemies by 30%; increases Heart of a Hero and Stern of Spirit Force characters' ATK by 12%",
@@ -5468,10 +5587,11 @@
     "name": "Shizue Izawa",
     "title": "Dark-Clad Conqueror",
     "permalink": "ShizuBlackHero",
-    "initial_rarity": 5,
+    "initial_rarity": 6,
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": [
       "Heart of a Hero",
       "Stern of Spirit"
@@ -5488,10 +5608,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [
-      "Water Magic Device",
-      "Symbol of Protection"
-    ],
+    "suited_facility_one_name": "Water Magic Device",
+    "suited_facility_one_rate": 200,
+    "suited_facility_two_name": "Symbol of Protection",
+    "suited_facility_two_rate": 100,
     "release_date": "2026-03-27",
     "divine_protection_name": "Incorruptible Flame",
     "divine_protection_effect": "Increases damage done by Heart of a Hero and Stern of Spirit Force characters to water attribute enemies by 110%; increases physical characters' ATK and DEF by 25%\nAt the beginning of each turn from turn 2 onwards, increases skill points by 30 (Max 4 times; can exceed cost limit)",
@@ -5521,6 +5641,7 @@
     "is_ex": false,
     "is_attribute_unbound": true,
     "has_attribute_unbound": false,
+    "has_ultimate": false,
     "forces": null,
     "attributes": null,
     "attack_types": [
@@ -5533,7 +5654,10 @@
     "max_output": 220,
     "character_type": "Attack Growth Type EX",
     "tactics_type": "Speed",
-    "suited_facilities": [],
+    "suited_facility_one_name": "Symbol of Protection",
+    "suited_facility_one_rate": 250,
+    "suited_facility_two_name": null,
+    "suited_facility_two_rate": null,
     "release_date": "2026-04-17",
     "divine_protection_name": "Eternal Tundra",
     "divine_protection_effect": "Increases all allies' physical/magic attack damage by 84%; Increases all allies' HP, ATK, and DEF by 20%\nAt the beginning of each turn from turn 2 onward, increases skill points by 30 (Max 4 times; can exceed cost limit)",

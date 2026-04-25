@@ -5,9 +5,7 @@
     [Parameter]
     [EditorRequired]
     public int Rarity { get; set; }
-
-    private double DisplayWidth => 1.5 + 1.5 / 2 * (Rarity - 1) + (Rarity is 6 or 7 ? 1.5 : 0) + (Rarity is 8 ? -0.75 : 0);
-
+    
     private string RarityDisplay =>
         Rarity switch
         {
@@ -22,9 +20,8 @@
         {
             return Rarity switch
             {
-                5 => unit is { InitialRarity: 5, IsEx: false, IsAttributeUnbound: false },
-                6 => unit is { InitialRarity: 5 or 6, IsEx: true },
-                7 => unit is { InitialRarity: 5 or 6, IsAttributeUnbound: true },
+                6 => unit is { InitialRarity: 6, IsEx: true },
+                7 => unit is { InitialRarity: 6, IsAttributeUnbound: true },
                 8 => unit is { InitialRarity: 7 },
                 var _ => unit.InitialRarity == Rarity
             };
@@ -35,49 +32,27 @@
 
 <FilterComponent DisplayText="@(RarityDisplay)" IsRemoveMode="IsRemoveMode"
                  OnClick="Execute">
-    <Div Class="filterIcon" Position="Position.Relative"
-         Width="Width.Em(DisplayWidth)" Height="Height.Em(1.5)">
-        <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                    Source="image/character_info/rarityStarOn.png" Style="z-index: 7"/>
-
-        <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                    Source="image/character_info/rarityStarOn.png" Style="z-index: 6; left: 0.75em"/>
-
-        <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                    Source="image/character_info/rarityStarOn.png" Style="z-index: 5; left: 1.5em"/>
-
-        @if (Rarity > 3)
+    <Div Class="filterIcon" Flex="Flex.Row.JustifyContent.Center.AlignItems.Center">
+        @if (Rarity <= 5)
         {
-            <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 4; left: 2.25em"/>
-        }
-
-        @if (Rarity > 4)
-        {
-            <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 3; left: 3em"/>
-        }
-
-        @if (Rarity > 5)
-        {
-            <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 2; left: 3.75em"/>
-        }
-
-        @if (Rarity > 7)
-        {
-            <ImageProxy Position="Position.Absolute" Width="Width.Em(1.5)"
-                        Source="image/character_info/rarityStarOn.png" Style="z-index: 1; left: 4.5em"/>
+            <ImageProxy Height="Height.Em(1.5)" Source="@($"image/rarity/starCharaL{Rarity}A.png")"/>
         }
 
         @if (Rarity == 6)
         {
-            <Span Position="Position.Absolute" Style="z-index: 0; left: 5.25em">EX</Span>
+            <ImageProxy Height="Height.Em(1.5)" Source="@("image/rarity/starCharaL6UA.png")"/>
+            <Span>EX</Span>
         }
 
         @if (Rarity == 7)
         {
-            <Span Position="Position.Absolute" Style="z-index: 0; left: 5.25em">EXU</Span>
+            <ImageProxy Height="Height.Em(1.5)" Source="@("image/rarity/starCharaL6UPA.png")"/>
+            <Span>EXU</Span>
+        }
+        
+        @if (Rarity == 8)
+        {
+            <ImageProxy Height="Height.Em(1.5)" Source="@("image/rarity/starCharaL7_Epic_Alphabet.png")"/>
         }
     </Div>
 </FilterComponent>

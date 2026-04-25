@@ -8,12 +8,14 @@
 
     protected override void OnInitialized()
     {
-        Filter ??= new Filter($"{nameof(SuitedFacility)}_{SuitedFacility.FieldBuilding.Name}_{SuitedFacility.Value}", GetType(), SuitedFacility, unit =>
-        {
-            return unit.SuitedFacilities.Index().Any(tuple =>
-                (tuple.Index == 0 ? SuitedFacility.Value is 200 or 30 : SuitedFacility.Value is 100 or 10) &&
-                tuple.Item.Equals(SuitedFacility.FieldBuilding.Name, StringComparison.OrdinalIgnoreCase));
-        });
+        Filter ??= new Filter(
+            $"{nameof(SuitedFacility)}_{SuitedFacility.FieldBuilding.Name}_{SuitedFacility.Value}",
+            GetType(),
+            SuitedFacility,
+            unit =>
+                (unit.SuitedFacilityOneName.Equals(SuitedFacility.FieldBuilding.Name, StringComparison.OrdinalIgnoreCase) && unit.SuitedFacilityOneRate == SuitedFacility.Value) ||
+                (unit.SuitedFacilityTwoName is not null && unit.SuitedFacilityTwoName.Equals(SuitedFacility.FieldBuilding.Name, StringComparison.OrdinalIgnoreCase) && unit.SuitedFacilityTwoRate == SuitedFacility.Value)
+        );
 
         base.OnInitialized();
     }

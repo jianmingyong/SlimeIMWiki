@@ -13,6 +13,7 @@ public record BattleUnit(
     bool IsEx,
     bool IsAttributeUnbound,
     bool HasAttributeUnbound,
+    bool HasUltimate,
     bool HasUltimateManifestation,
     Force[] Forces,
     IAttribute Attribute,
@@ -72,35 +73,13 @@ public record BattleUnit(
     string ExAbilityEffectTwoEffect,
     string? TrueAttributeUnbound) : ICharacterUnit
 {
-    public string Icon => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaPartyM.png";
+    public string Icon => $"image/battle/characters/{Permalink}/{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}/{Permalink}_{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}_CharaPartyM.png";
 
-    public string IconAfter => $"image/battle/characters/{Permalink}After/{InitialRarity}/{Permalink}After_{InitialRarity}_CharaPartyM.png";
+    public string IconAfter => $"image/battle/characters/{Permalink}After/{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}/{Permalink}After_{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}_CharaPartyM.png";
 
-    public string Image
-    {
-        get
-        {
-            if (IsEx || IsAttributeUnbound || HasAttributeUnbound)
-            {
-                return $"image/battle/characters/{Permalink}/6/{Permalink}_6_CharaInfo.png";
-            }
+    public string Image => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
 
-            return $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
-        }
-    }
-
-    public string ImageAfter
-    {
-        get
-        {
-            if (IsEx || IsAttributeUnbound || HasAttributeUnbound)
-            {
-                return $"image/battle/characters/{Permalink}After/6/{Permalink}_6_CharaInfo.png";
-            }
-
-            return $"image/battle/characters/{Permalink}After/{InitialRarity}/{Permalink}After_{InitialRarity}_CharaInfo.png";
-        }
-    }
+    public string ImageAfter => $"image/battle/characters/{Permalink}After/{InitialRarity}/{Permalink}After_{InitialRarity}_CharaInfo.png";
 
     public string Card => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaCard.png";
 
@@ -116,6 +95,7 @@ public record BattleUnit(
             data.IsEx,
             data.IsAttributeUnbound,
             data.HasAttributeUnbound,
+            data.HasUltimate,
             data.HasUltimateManifestation,
             data.Forces.Select(s => service.ForceCache.Lookup(s).ValueOr(() => new Force(s, string.Empty, string.Empty))).ToArray(),
             service.BattleAttributeCache.Lookup(data.Attribute).ValueOr(() => new BattleAttribute(data.Attribute, string.Empty)),
@@ -127,7 +107,9 @@ public record BattleUnit(
             data.CharacterType,
             service.BattleExpertiseCache.Lookup(data.Expertise).ValueOr(() => new BattleExpertise(data.Expertise, string.Empty)),
             service.TacticTypeCache.Lookup(data.TacticsType).ValueOr(() => new TacticType(data.TacticsType, string.Empty)),
-            data.SuitedFacilities.Select((s, i) => new SuitedFacility(service.FieldBuildingCache.Lookup(s).ValueOr(() => new FieldBuilding(s, string.Empty, string.Empty)), i == 0 ? 30 : 10)).ToArray(),
+            data.SuitedFacilityTwoName is not null
+                ? [new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityOneName).ValueOr(() => new FieldBuilding(data.SuitedFacilityOneName, string.Empty, string.Empty)), data.SuitedFacilityOneRate), new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityTwoName).ValueOr(() => new FieldBuilding(data.SuitedFacilityTwoName, string.Empty, string.Empty)), data.SuitedFacilityTwoRate ?? 0)]
+                : [new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityOneName).ValueOr(() => new FieldBuilding(data.SuitedFacilityOneName, string.Empty, string.Empty)), data.SuitedFacilityOneRate)],
             DateTimeOffset.Parse(data.ReleaseDate, DateTimeFormatInfo.InvariantInfo).AddHours(10).ToOffset(TimeSpan.FromHours(8)).LocalDateTime,
             data.SecretSkillName,
             data.SecretSkillTarget,

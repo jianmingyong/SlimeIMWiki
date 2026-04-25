@@ -91,6 +91,26 @@
 
     case 5:
     {
+        <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
+                    Width="Width.Is33"
+                    Source="image/rarity/starCharaL5A.png"
+                    Style="z-index: 3"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
+                    Width="Width.Is100"
+                    Source="image/rarity/frameMemberM5.png"
+                    Style="z-index: 2"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
+                    Width="Width.Is100"
+                    Source="image/rarity/baseMemberM5.png"
+                    Style="z-index: 0"/>
+
+        break;
+    }
+
+    case 6:
+    {
         if (Unit.IsEx)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
@@ -125,24 +145,27 @@
                         Source="image/rarity/baseMemberM6up.png"
                         Style="z-index: 0"/>
         }
-        else
-        {
-            <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
-                        Width="Width.Is33"
-                        Source="image/rarity/starCharaL5A.png"
-                        Style="z-index: 3"/>
+        
+        break;
+    }
 
-            <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                        Width="Width.Is100"
-                        Source="image/rarity/frameMemberM5.png"
-                        Style="z-index: 2"/>
+    case 7:
+    {
+        <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0"
+                    Width="Width.Is33"
+                    Source="image/rarity/starCharaL7_Epic_Alphabet.png"
+                    Style="z-index: 3"/>
 
-            <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
-                        Width="Width.Is100"
-                        Source="image/rarity/baseMemberM5.png"
-                        Style="z-index: 0"/>
-        }
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
+                    Width="Width.Px(108)" Height="Height.Px(108)"
+                    Source="image/rarity/frameMemberM7_Epic.png"
+                    Style="z-index: 2; transform: translate(-4px, -4px)"/>
 
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0"
+                    Width="Width.Is100"
+                    Source="image/rarity/baseMemberM7_Epic.png"
+                    Style="z-index: 0"/>
+        
         break;
     }
 }

@@ -1,0 +1,15 @@
+﻿@inherits BaseFilterComponent
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        Filter ??= new Filter("Ultimate Enhancement", GetType(), null, unit => unit.HasUltimate);
+        base.OnInitialized();
+    }
+}
+
+<FilterComponent DisplayText="Ultimate Enhancement" IsRemoveMode="IsRemoveMode" OnClick="Execute">
+    <ImageProxy Class="filterIcon" Source="image/rarity/badgeClassUpEpic.png" Width="Width.Em(1.5)"
+                Height="Height.Em(1.5)"/>
+</FilterComponent>

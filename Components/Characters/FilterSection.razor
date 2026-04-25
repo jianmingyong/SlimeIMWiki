@@ -100,6 +100,7 @@
         <Span>|</Span>
 
         <ExEnhancementFilter/>
+        <UltimateEnhancementFilter/>
         
         @if (ViewModel.DisplayCategory == CharacterListDisplayCategory.Battle)
         {
@@ -203,6 +204,10 @@
         else if (filter.KeyType == typeof(ExEnhancementFilter))
         {
             <ExEnhancementFilter @key="filter.Key" IsRemoveMode="true"/>
+        }
+        else if (filter.KeyType == typeof(UltimateEnhancementFilter))
+        {
+            <UltimateEnhancementFilter @key="filter.Key" IsRemoveMode="true"/>
         }
         else if (filter.KeyType == typeof(ExpertiseFilter))
         {

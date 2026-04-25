@@ -13,6 +13,7 @@ public record ProtectionUnit(
     bool IsEx,
     bool IsAttributeUnbound,
     bool HasAttributeUnbound,
+    bool HasUltimate,
     Force[]? Forces,
     IAttribute[]? Attributes,
     IAttackType[]? AttackTypes,
@@ -44,20 +45,8 @@ public record ProtectionUnit(
     string? ValorTraitEffectMax,
     string? GuidanceEnhancementTraitEffect) : ICharacterUnit
 {
-    public string Icon => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessPartyM.png";
-
-    public string Image
-    {
-        get
-        {
-            if (InitialRarity == 5 && (IsEx || IsAttributeUnbound))
-            {
-                return $"image/protection/characters/{Permalink}/6/{Permalink}_6_BlessInfo.png";
-            }
-
-            return $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
-        }
-    }
+    public string Icon => $"image/protection/characters/{Permalink}/{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}/{Permalink}_{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}_BlessPartyM.png";
+    public string Image => $"image/protection/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_BlessInfo.png";
 
     public static ProtectionUnit FromProtectionUnitData(ProtectionUnitData data, JsonDataModelService service)
     {
@@ -69,6 +58,7 @@ public record ProtectionUnit(
             data.IsEx,
             data.IsAttributeUnbound,
             data.HasAttributeUnbound,
+            data.HasUltimate,
             data.Forces?.Select(s => service.ForceCache.Lookup(s).ValueOr(() => new Force(s, string.Empty, string.Empty))).ToArray(),
             data.Attributes?.Select(IAttribute (s) => service.ProtectionAttributeCache.Lookup(s).ValueOr(() => new ProtectionAttribute(s, string.Empty))).ToArray(),
             data.AttackTypes?.Select(IAttackType (s) => service.ProtectionAttackTypeCache.Lookup(s).ValueOr(() => new ProtectionAttackType(s, string.Empty))).ToArray(),
@@ -78,7 +68,9 @@ public record ProtectionUnit(
             data.MaxOutput,
             data.CharacterType,
             service.TacticTypeCache.Lookup(data.TacticsType).ValueOr(() => new TacticType(data.TacticsType, string.Empty)),
-            data.SuitedFacilities.Select((s, i) => new SuitedFacility(service.FieldBuildingCache.Lookup(s).ValueOr(() => new FieldBuilding(s, string.Empty, string.Empty)), i == 0 ? 200 : 100)).ToArray(),
+            data.SuitedFacilityTwoName is not null
+                ? [new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityOneName).ValueOr(() => new FieldBuilding(data.SuitedFacilityOneName, string.Empty, string.Empty)), data.SuitedFacilityOneRate), new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityTwoName).ValueOr(() => new FieldBuilding(data.SuitedFacilityTwoName, string.Empty, string.Empty)), data.SuitedFacilityTwoRate ?? 0)]
+                : [new SuitedFacility(service.FieldBuildingCache.Lookup(data.SuitedFacilityOneName).ValueOr(() => new FieldBuilding(data.SuitedFacilityOneName, string.Empty, string.Empty)), data.SuitedFacilityOneRate)],
             DateTimeOffset.Parse(data.ReleaseDate, DateTimeFormatInfo.InvariantInfo).AddHours(10).ToOffset(TimeSpan.FromHours(8)).LocalDateTime,
             data.DivineProtectionName,
             data.DivineProtectionEffect,

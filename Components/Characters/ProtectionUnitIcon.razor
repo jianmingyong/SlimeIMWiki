@@ -119,6 +119,23 @@
 
     case 5:
     {
+        <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
+                    Source="image/rarity/starCharaL5A.png"
+                    Style="z-index: 3"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                    Source="image/rarity/frameBlessM5.png"
+                    Style="z-index: 2"/>
+
+        <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
+                    Source="image/rarity/baseBlessM5.png"
+                    Style="z-index: 0"/>
+
+        break;
+    }
+
+    case 6:
+    {
         @if (Unit.IsEx)
         {
             <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
@@ -147,21 +164,7 @@
                         Source="image/rarity/baseBlessM6up.png"
                         Style="z-index: 0"/>
         }
-        else
-        {
-            <ImageProxy Position="Position.Absolute.Start.Is0.Bottom.Is0" Width="Width.Is33"
-                        Source="image/rarity/starCharaL5A.png"
-                        Style="z-index: 3"/>
-
-            <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                        Source="image/rarity/frameBlessM5.png"
-                        Style="z-index: 2"/>
-
-            <ImageProxy Position="Position.Absolute.Start.Is0.Top.Is0" Width="Width.Is100"
-                        Source="image/rarity/baseBlessM5.png"
-                        Style="z-index: 0"/>
-        }
-
+        
         break;
     }
 

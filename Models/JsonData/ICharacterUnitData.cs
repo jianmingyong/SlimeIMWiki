@@ -13,6 +13,7 @@ public interface ICharacterUnitData
     bool IsAttributeUnbound { get; }
 
     bool HasAttributeUnbound { get; }
+    bool HasUltimate { get; }
 
     int MaxHealth { get; }
     int MaxAttack { get; }
@@ -21,8 +22,12 @@ public interface ICharacterUnitData
 
     string CharacterType { get; }
     string TacticsType { get; }
-
-    string[] SuitedFacilities { get; }
+    
+    string SuitedFacilityOneName { get; }
+    int SuitedFacilityOneRate { get; }
+    
+    string? SuitedFacilityTwoName { get; }
+    int? SuitedFacilityTwoRate { get; }
 
     string ReleaseDate { get; }
 
