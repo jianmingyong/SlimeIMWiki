@@ -73,18 +73,20 @@ public record BattleUnit(
     string ExAbilityEffectTwoEffect,
     string? TrueAttributeUnbound) : ICharacterUnit
 {
-    public string Icon => $"image/battle/characters/{Permalink}/{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}/{Permalink}_{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}_CharaPartyM.png";
+    public string Icon => $"image/battle/characters/{Permalink}/{Rarity}/{Permalink}_{Rarity}_CharaPartyM.png";
 
-    public string IconAfter => $"image/battle/characters/{Permalink}After/{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}/{Permalink}After_{(InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity)}_CharaPartyM.png";
+    public string IconAfter => $"image/battle/characters/{Permalink}After/{Rarity}/{Permalink}After_{Rarity}_CharaPartyM.png";
 
-    public string Image => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaInfo.png";
+    public string Image => $"image/battle/characters/{Permalink}/{Rarity}/{Permalink}_{Rarity}_CharaInfo.png";
 
-    public string ImageAfter => $"image/battle/characters/{Permalink}After/{InitialRarity}/{Permalink}After_{InitialRarity}_CharaInfo.png";
+    public string ImageAfter => $"image/battle/characters/{Permalink}After/{Rarity}/{Permalink}After_{Rarity}_CharaInfo.png";
 
-    public string Card => $"image/battle/characters/{Permalink}/{InitialRarity}/{Permalink}_{InitialRarity}_CharaCard.png";
+    public string Card => $"image/battle/characters/{Permalink}/{Rarity}/{Permalink}_{Rarity}_CharaCard.png";
 
-    public string CardAfter => $"image/battle/characters/{Permalink}After/{InitialRarity}/{Permalink}After_{InitialRarity}_CharaCard.png";
+    public string CardAfter => $"image/battle/characters/{Permalink}After/{Rarity}/{Permalink}After_{Rarity}_CharaCard.png";
 
+    private int Rarity => InitialRarity == 6 && (IsEx || IsAttributeUnbound) ? 5 : InitialRarity;
+    
     public static BattleUnit FromBattleUnitData(BattleUnitData data, JsonDataModelService service)
     {
         return new BattleUnit(
