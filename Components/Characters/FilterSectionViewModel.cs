@@ -23,7 +23,7 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
         get => _characterListDisplayService.IsOrFilter;
         set => _characterListDisplayService.IsOrFilter = value;
     }
-
+    
     public ReadOnlyObservableCollection<IAttackType> AttackTypes => _attackTypes;
 
     public ReadOnlyObservableCollection<IAttribute> Attributes => _attributes;
@@ -40,6 +40,9 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
 
     [Reactive]
     private IEnumerable<SearchResult> _searchResults = [];
+
+    [Reactive]
+    private string _searchFacility = string.Empty;
 
     private ReadOnlyObservableCollection<IAttackType> _attackTypes = ReadOnlyObservableCollection<IAttackType>.Empty;
     private ReadOnlyObservableCollection<IAttribute> _attributes = ReadOnlyObservableCollection<IAttribute>.Empty;
@@ -130,11 +133,11 @@ public sealed partial class FilterSectionViewModel : ReactiveObject, IActivatabl
                 .DisposeWith(disposable);
 
             jsonDataService.FieldBuildingCache.Connect()
-                .Filter(this.WhenAnyValue(model => model._characterListDisplayService.DisplayCategory)
-                    .Select<CharacterListDisplayCategory, Func<FieldBuilding, bool>>(category => building => category switch
+                .Filter(this.WhenAnyValue(model => model._characterListDisplayService.DisplayCategory, model => model.SearchFacility)
+                    .Select<(CharacterListDisplayCategory, string), Func<FieldBuilding, bool>>(property => building => property.Item1 switch
                     {
-                        CharacterListDisplayCategory.Battle => !building.Category.Equals("Parameter Enhancement Facilities"),
-                        CharacterListDisplayCategory.Protection => building.Category.Equals("Parameter Enhancement Facilities"),
+                        CharacterListDisplayCategory.Battle => !building.Category.Equals("Parameter Enhancement Facilities") && (string.IsNullOrWhiteSpace(property.Item2) || building.Name.Contains(property.Item2, StringComparison.OrdinalIgnoreCase)),
+                        CharacterListDisplayCategory.Protection => building.Category.Equals("Parameter Enhancement Facilities") && (string.IsNullOrWhiteSpace(property.Item2) || building.Name.Contains(property.Item2, StringComparison.OrdinalIgnoreCase)),
                         var _ => true
                     })
                 )

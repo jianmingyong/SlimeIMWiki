@@ -41,6 +41,10 @@ div.loading {
     filter: brightness(100%);
 }
 
+.dropdown-divider {
+    border-top: 1px solid rgb(248, 249, 250) !important;
+}
+
 .dropdown-item:hover {
     color: rgb(33, 37, 41) !important;
     background-color: rgb(248, 249, 250) !important;
